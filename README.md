@@ -108,6 +108,9 @@ Inventory data is stored in the adapter data directory (`shelfmate.json`), not i
 A JSON backup can be downloaded and imported in the app (Settings). An import replaces all data; the previous state is kept as `shelfmate.json.bak`.
 
 ## Changelog
+### 0.1.7 (2026-10-20)
+- Change: "Generate EAN" no longer asks for confirmation
+
 ### 0.1.6 (2026-10-20)
 - New: products with the same product type (group, e.g. flour) are grouped in the overview and can be expanded; the "reorder" mark appears once for the group
 
