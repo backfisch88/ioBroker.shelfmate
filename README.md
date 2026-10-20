@@ -16,6 +16,7 @@ German short description: [README.de.md](README.de.md)
 
 - Scan product barcodes and storage location QR codes with the phone camera
 - Products without a barcode: create your own EAN-13 code and print the label; upload your own product image (compressed automatically)
+- Printable EAN and QR labels in your own label size (Settings, e.g. 50 × 30 mm)
 - Product master data from Open Food Facts (name, brand, package size, Nutri-Score, categories), editable
 - Storage areas and locations with printable QR codes
 - Stock per location, history of all bookings, offline queue in the app
@@ -111,6 +112,7 @@ A JSON backup can be downloaded and imported in the app (Settings). An import re
 - New: "New product" button in the scanner
 - New: own EAN-13 codes for products without a barcode, with a label preview and a printable label
 - New: upload your own product image (scaled down and compressed automatically)
+- New: label size (width × height in mm) in the app settings; EAN and QR labels follow its aspect ratio
 - Chore: merged the unpublished 0.1.1 entry into 0.1.2
 
 ### 0.1.3 (2026-10-20)
