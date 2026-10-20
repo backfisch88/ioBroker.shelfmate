@@ -27,6 +27,7 @@ German short description: [README.de.md](README.de.md)
 - JSON backup: download and import in the app
 - Built-in HTTPS web server that uses the certificates of your ioBroker installation (self-signed, own or Let's Encrypt collections)
 - Optional access key for the API
+- The app and the HTML data points use the ioBroker system language (de, en, ru, pt, nl, fr, it, es, pl, uk, zh-cn)
 
 
 ## Requirements
@@ -106,6 +107,7 @@ A JSON backup can be downloaded and imported in the app (Settings). An import re
 
 ## Changelog
 ### **WORK IN PROGRESS**
+- New: the app and the HTML data points follow the ioBroker system language (11 languages)
 
 ### 0.1.2 (2026-10-20)
 - New: best-before date (off / per product / per stocking) with warning and data points `stats.expiring*`

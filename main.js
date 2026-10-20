@@ -7,6 +7,7 @@ const utils = require('@iobroker/adapter-core');
 const { WebServer } = require('@iobroker/webserver');
 const { Inventory, clean } = require('./lib/core');
 const { Shopping } = require('./lib/shopping');
+const { texts } = require('./lib/i18n');
 const { ShelfMateServer } = require('./lib/server');
 
 const DATA_FILE = 'shelfmate.json';
@@ -19,28 +20,30 @@ const esc = v => String(v).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;',
 
 /**
  * @param {object[]} items inventory list
+ * @param {Record<string, string>} t texts
  */
-function inventoryHtml(items) {
+function inventoryHtml(items, t) {
     const rows = items
         .map(
             i =>
                 `<tr><td>${esc(i.name)}</td><td>${i.amount} ${esc(i.unit)}</td><td>${esc(i.places.map(x => `${x.place} (${x.amount})`).join(', '))}</td></tr>`,
         )
         .join('');
-    return `<table><thead><tr><th>Product</th><th>Amount</th><th>Location</th></tr></thead><tbody>${rows}</tbody></table>`;
+    return `<table><thead><tr><th>${esc(t.product)}</th><th>${esc(t.amount)}</th><th>${esc(t.location)}</th></tr></thead><tbody>${rows}</tbody></table>`;
 }
 
 /**
  * @param {object[]} items expiring products
+ * @param {Record<string, string>} t texts
  */
-function expiringHtml(items) {
+function expiringHtml(items, t) {
     const rows = items
         .map(
             i =>
-                `<tr><td>${esc(i.name)}</td><td>${esc(i.date)}</td><td>${i.expired ? 'expired' : `${i.days} d`}</td><td>${i.amount}</td><td>${esc(i.place)}</td></tr>`,
+                `<tr><td>${esc(i.name)}</td><td>${esc(i.date)}</td><td>${i.expired ? esc(t.expired) : `${i.days} ${esc(t.days)}`}</td><td>${i.amount}</td><td>${esc(i.place)}</td></tr>`,
         )
         .join('');
-    return `<table><thead><tr><th>Product</th><th>Best before</th><th>Remaining</th><th>Amount</th><th>Location</th></tr></thead><tbody>${rows}</tbody></table>`;
+    return `<table><thead><tr><th>${esc(t.product)}</th><th>${esc(t.bestBefore)}</th><th>${esc(t.remaining)}</th><th>${esc(t.amount)}</th><th>${esc(t.location)}</th></tr></thead><tbody>${rows}</tbody></table>`;
 }
 
 class Shelfmate extends utils.Adapter {
@@ -68,6 +71,12 @@ class Shelfmate extends utils.Adapter {
     async onReady() {
         await this.setState('info.connection', false, true);
         await this.createObjects();
+        try {
+            const sys = await this.getForeignObjectAsync('system.config');
+            this.lang = (sys && sys.common && sys.common.language) || 'en';
+        } catch {
+            this.lang = 'en';
+        }
 
         const port = Number(this.config.port);
         if (!Number.isInteger(port) || port < 1 || port > 65535) {
@@ -211,7 +220,7 @@ class Shelfmate extends utils.Adapter {
             ready: true,
             bring,
             shopping: !!this.shopping && this.shopping.mode !== 'off',
-            config: this.bestBeforeConfig(),
+            config: { ...this.bestBeforeConfig(), lang: this.lang || 'en' },
         };
     }
 
@@ -351,10 +360,10 @@ class Shelfmate extends utils.Adapter {
             this.setState('stats.lowStockCount', low.length, true),
             this.setState('stats.lowStockList', JSON.stringify(low), true),
             this.setState('stats.inventory', JSON.stringify(items), true),
-            this.setState('stats.inventoryHtml', inventoryHtml(items), true),
+            this.setState('stats.inventoryHtml', inventoryHtml(items, texts(this.lang)), true),
             this.setState('stats.expiringCount', expiring.length, true),
             this.setState('stats.expiring', JSON.stringify(expiring), true),
-            this.setState('stats.expiringHtml', expiringHtml(expiring), true),
+            this.setState('stats.expiringHtml', expiringHtml(expiring, texts(this.lang)), true),
         ]);
     }
 

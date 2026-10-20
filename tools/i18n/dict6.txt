@@ -1,0 +1,5 @@
+Lebensmittel|Food|Продукты питания|Alimentos|Voeding|Alimentation|Alimentari|Alimentos|Żywność|Продукти харчування|食品
+Drogerie|Drugstore|Бытовая химия и косметика|Drogaria|Drogisterij|Droguerie|Drogheria|Droguería|Drogeria|Побутова хімія й косметика|日化用品
+Haushalt|Household|Хозяйственные товары|Casa|Huishouden|Maison|Casa|Hogar|Dom|Господарські товари|家居用品
+Tierbedarf|Pet supplies|Товары для животных|Artigos para animais|Dierbenodigdheden|Articles pour animaux|Articoli per animali|Artículos para mascotas|Artykuły dla zwierząt|Товари для тварин|宠物用品
+Sonstiges|Other|Прочее|Outros|Overig|Autre|Altro|Otros|Inne|Інше|其他
