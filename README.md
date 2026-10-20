@@ -81,7 +81,15 @@ A JSON backup can be downloaded and imported in the app (Settings). An import re
 
 ## Changelog
 ### **WORK IN PROGRESS**
-- New: initial release (inventory, shopping list via script / Bring! / Bring special, JSON backup)
+
+### 0.1.1 (2026-10-20)
+- New: data points `stats.inventory` (JSON) and `stats.inventoryHtml` (table for VIS) with everything in stock
+- New: separate options to remove items from the shopping list when refilled and when unticked in the app
+- Fix: an item removed from the list in the app is no longer marked again until Bring! reports the change
+- Chore: README and package updates
+
+### 0.1.0 (2026-10-20)
+- New: initial release (inventory, barcode / QR scanner, shopping list via script / Bring! / Bring special, JSON backup)
 
 ## License
 MIT License

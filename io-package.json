@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "shelfmate",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "news": {
+            "0.1.1": {
+                "en": "Added inventory overview data points (JSON and HTML for VIS), separate options for removing items from the shopping list, README improvements",
+                "de": "Datenpunkte für die Lagerübersicht (JSON und HTML für VIS), getrennte Optionen zum Entfernen von der Einkaufsliste, README verbessert",
+                "ru": "Добавлены датапоинты обзора склада (JSON и HTML для VIS), отдельные опции удаления из списка покупок, улучшен README",
+                "pt": "Adicionados pontos de dados com a visão geral do stock (JSON e HTML para VIS), opções separadas para remover da lista de compras, README melhorado",
+                "nl": "Datapunten voor het voorraadoverzicht toegevoegd (JSON en HTML voor VIS), aparte opties om van de boodschappenlijst te verwijderen, README verbeterd",
+                "fr": "Ajout de points de données d'aperçu du stock (JSON et HTML pour VIS), options séparées pour retirer de la liste de courses, README amélioré",
+                "it": "Aggiunti datapoint con la panoramica delle scorte (JSON e HTML per VIS), opzioni separate per rimuovere dalla lista della spesa, README migliorato",
+                "es": "Añadidos puntos de datos con el resumen del stock (JSON y HTML para VIS), opciones separadas para quitar de la lista de la compra, README mejorado",
+                "pl": "Dodano punkty danych z przeglądem zapasów (JSON i HTML dla VIS), osobne opcje usuwania z listy zakupów, ulepszony README",
+                "uk": "Додано датапоінти огляду запасів (JSON і HTML для VIS), окремі опції видалення зі списку покупок, покращено README",
+                "zh-cn": "新增库存概览数据点（JSON 和适用于 VIS 的 HTML），清单移除选项已拆分，改进 README"
+            },
             "0.1.0": {
                 "en": "initial release",
                 "de": "Erstveröffentlichung",
