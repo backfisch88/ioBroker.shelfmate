@@ -109,7 +109,7 @@ A JSON backup can be downloaded and imported in the app (Settings). An import re
 ## Changelog
 ### 0.1.4 (2026-10-20)
 - New: "New product" button in the scanner
-- New: own EAN-13 codes for products without a barcode, with a printable label
+- New: own EAN-13 codes for products without a barcode, with a label preview and a printable label
 - New: upload your own product image (scaled down and compressed automatically)
 - Chore: merged the unpublished 0.1.1 entry into 0.1.2
 
