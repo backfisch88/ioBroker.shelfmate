@@ -15,6 +15,7 @@ German short description: [README.de.md](README.de.md)
 ## Features
 
 - Scan product barcodes and storage location QR codes with the phone camera
+- Products without a barcode: create your own EAN-13 code and print the label; upload your own product image (compressed automatically)
 - Product master data from Open Food Facts (name, brand, package size, Nutri-Score, categories), editable
 - Storage areas and locations with printable QR codes
 - Stock per location, history of all bookings, offline queue in the app
@@ -106,20 +107,23 @@ Inventory data is stored in the adapter data directory (`shelfmate.json`), not i
 A JSON backup can be downloaded and imported in the app (Settings). An import replaces all data; the previous state is kept as `shelfmate.json.bak`.
 
 ## Changelog
+### 0.1.4 (2026-10-20)
+- New: "New product" button in the scanner
+- New: own EAN-13 codes for products without a barcode, with a printable label
+- New: upload your own product image (scaled down and compressed automatically)
+- Chore: merged the unpublished 0.1.1 entry into 0.1.2
+
 ### 0.1.3 (2026-10-20)
 - New: the app and the HTML data points follow the ioBroker system language (11 languages)
 - New: Open Food Facts lookups use the app language (English as fallback)
 - New: button in the settings that creates a self-signed certificate
 
 ### 0.1.2 (2026-10-20)
-- New: best-before date (off / per product / per stocking) with warning and data points `stats.expiring*`
-- Fix: moving stock between locations keeps the best-before dates
-
-### 0.1.1 (2026-10-20)
 - New: data points `stats.inventory` (JSON) and `stats.inventoryHtml` (table for VIS) with everything in stock
 - New: separate options to remove items from the shopping list when refilled and when unticked in the app
 - Fix: an item removed from the list in the app is no longer marked again until Bring! reports the change
-- Chore: README and package updates
+- New: best-before date (off / per product / per stocking) with warning and data points `stats.expiring*`
+- Fix: moving stock between locations keeps the best-before dates
 
 ### 0.1.0 (2026-10-20)
 - New: initial release (inventory, barcode / QR scanner, shopping list via script / Bring! / Bring special, JSON backup)
