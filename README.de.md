@@ -13,6 +13,7 @@ ShelfMate ist ein Haushalts-Vorratslager für ioBroker. Es läuft als installier
 - Optional: Artikel von der Liste entfernen, wenn wieder aufgefüllt, und/oder wenn der Haken in der App entfernt wird
 - Lagerübersicht und ablaufende Produkte als Datenpunkte (JSON und HTML-Tabelle für VIS)
 - JSON-Backup: Download und Import in der App
+- App und HTML-Datenpunkte nutzen die ioBroker-Systemsprache (11 Sprachen)
 - Eigener HTTPS-Server mit den ioBroker-Zertifikaten, optionaler Zugriffsschlüssel
 
 ## Installation

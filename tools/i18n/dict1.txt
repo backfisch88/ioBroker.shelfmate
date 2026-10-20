@@ -1,0 +1,72 @@
+Übersicht|Overview|Обзор|Visão geral|Overzicht|Aperçu|Panoramica|Resumen|Przegląd|Огляд|概览
+Scannen|Scan|Сканировать|Digitalizar|Scannen|Scanner|Scansiona|Escanear|Skanuj|Сканувати|扫描
+Lagerorte|Locations|Места хранения|Locais|Opslaglocaties|Emplacements|Posizioni|Ubicaciones|Lokalizacje|Місця зберігання|存放位置
+Lagerort|Location|Место хранения|Local|Opslaglocatie|Emplacement|Posizione|Ubicación|Lokalizacja|Місце зберігання|存放位置
+Verlauf|History|История|Histórico|Geschiedenis|Historique|Cronologia|Historial|Historia|Історія|历史
+Einstellungen|Settings|Настройки|Definições|Instellingen|Paramètres|Impostazioni|Ajustes|Ustawienia|Налаштування|设置
+Meine Vorräte|My supplies|Мои запасы|Os meus mantimentos|Mijn voorraad|Mes provisions|Le mie scorte|Mis provisiones|Moje zapasy|Мої запаси|我的库存
+Deine Vorräte im Überblick|Your supplies at a glance|Ваши запасы с первого взгляда|As suas reservas num relance|Je voorraad in één oogopslag|Vos provisions en un coup d'œil|Le tue scorte a colpo d'occhio|Tus provisiones de un vistazo|Twoje zapasy w skrócie|Ваші запаси одним поглядом|库存一目了然
+Produkte|Products|Продукты|Produtos|Producten|Produits|Prodotti|Productos|Produkty|Продукти|产品
+Produkt|Product|Продукт|Produto|Product|Produit|Prodotto|Producto|Produkt|Продукт|产品
+Suchen|Search|Поиск|Pesquisar|Zoeken|Rechercher|Cerca|Buscar|Szukaj|Пошук|搜索
+Alle Kategorien|All categories|Все категории|Todas as categorias|Alle categorieën|Toutes les catégories|Tutte le categorie|Todas las categorías|Wszystkie kategorie|Усі категорії|所有类别
+Alle Lagerorte|All locations|Все места хранения|Todos os locais|Alle locaties|Tous les emplacements|Tutte le posizioni|Todas las ubicaciones|Wszystkie lokalizacje|Усі місця зберігання|所有位置
+Keine Produkte gefunden. Scanne einen Barcode oder lege ein Produkt an.|No products found. Scan a barcode or create a product.|Продукты не найдены. Отсканируйте штрихкод или создайте продукт.|Nenhum produto encontrado. Leia um código de barras ou crie um produto.|Geen producten gevonden. Scan een barcode of maak een product aan.|Aucun produit trouvé. Scannez un code-barres ou créez un produit.|Nessun prodotto trovato. Scansiona un codice a barre o crea un prodotto.|No se encontraron productos. Escanea un código de barras o crea un producto.|Nie znaleziono produktów. Zeskanuj kod kreskowy lub utwórz produkt.|Продуктів не знайдено. Скануйте штрихкод або створіть продукт.|未找到产品。请扫描条形码或创建产品。
+nachkaufen|reorder|докупить|repor|bijkopen|à racheter|da riacquistare|reponer|dokupić|докупити|需补货
+Unter Mindestbestand|Below minimum stock|Ниже минимального запаса|Abaixo do stock mínimo|Onder minimumvoorraad|Sous le stock minimum|Sotto la scorta minima|Por debajo del mínimo|Poniżej minimum|Нижче мінімального запасу|低于最低库存
+Leer|Empty|Пусто|Vazio|Leeg|Vide|Vuoto|Vacío|Pusto|Порожньо|空
+Stück|pcs|шт.|un.|stuks|pcs|pz.|uds.|szt.|шт.|件
+Stück / Packungen|Pieces / packs|Штуки / упаковки|Unidades / embalagens|Stuks / verpakkingen|Pièces / paquets|Pezzi / confezioni|Unidades / paquetes|Sztuki / opakowania|Штуки / упаковки|件 / 包
+Gewicht (g / kg)|Weight (g / kg)|Вес (г / кг)|Peso (g / kg)|Gewicht (g / kg)|Poids (g / kg)|Peso (g / kg)|Peso (g / kg)|Waga (g / kg)|Вага (г / кг)|重量（g / kg）
+Volumen (ml / l)|Volume (ml / l)|Объём (мл / л)|Volume (ml / l)|Volume (ml / l)|Volume (ml / l)|Volume (ml / l)|Volumen (ml / l)|Objętość (ml / l)|Об'єм (мл / л)|容量（ml / l）
+Packung|Pack|Упаковка|Embalagem|Verpakking|Paquet|Confezione|Paquete|Opakowanie|Упаковка|包
+Zur Einkaufsliste|To shopping list|В список покупок|Para a lista de compras|Naar boodschappenlijst|Vers la liste de courses|Alla lista della spesa|A la lista de la compra|Do listy zakupów|До списку покупок|加入购物清单
+🛒 Zur Einkaufsliste|🛒 To shopping list|🛒 В список покупок|🛒 Para a lista de compras|🛒 Naar boodschappenlijst|🛒 Vers la liste de courses|🛒 Alla lista della spesa|🛒 A la lista de la compra|🛒 Do listy zakupów|🛒 До списку покупок|🛒 加入购物清单
+✓ Auf der Einkaufsliste (antippen zum Entfernen)|✓ On the shopping list (tap to remove)|✓ В списке покупок (нажмите, чтобы убрать)|✓ Na lista de compras (toque para remover)|✓ Op de boodschappenlijst (tik om te verwijderen)|✓ Sur la liste de courses (toucher pour retirer)|✓ Nella lista della spesa (tocca per rimuovere)|✓ En la lista de la compra (toca para quitar)|✓ Na liście zakupów (dotknij, aby usunąć)|✓ У списку покупок (торкніться, щоб прибрати)|✓ 已在购物清单（点按移除）
+Gesamtbestand|Total stock|Общий запас|Stock total|Totale voorraad|Stock total|Scorta totale|Existencias totales|Łączny zapas|Загальний запас|总库存
+Packungsinhalt:|Package size:|Содержимое упаковки:|Conteúdo da embalagem:|Inhoud verpakking:|Contenu du paquet :|Contenuto della confezione:|Contenido del envase:|Zawartość opakowania:|Вміст упаковки:|包装内容：
+Noch kein Bestand vorhanden|No stock yet|Запасов пока нет|Ainda sem stock|Nog geen voorraad|Pas encore de stock|Nessuna scorta ancora|Aún sin existencias|Brak zapasów|Запасів ще немає|暂无库存
+Noch keine Buchungen|No bookings yet|Записей пока нет|Ainda sem movimentos|Nog geen boekingen|Pas encore de mouvements|Ancora nessuna registrazione|Aún sin movimientos|Brak zapisów|Записів ще немає|暂无记录
+Noch keine Bereiche|No areas yet|Областей пока нет|Ainda sem áreas|Nog geen gebieden|Pas encore de zones|Nessuna area ancora|Aún sin áreas|Brak obszarów|Областей ще немає|暂无区域
+Noch keine Lagerorte|No locations yet|Мест хранения пока нет|Ainda sem locais|Nog geen locaties|Pas encore d'emplacements|Nessuna posizione ancora|Aún sin ubicaciones|Brak lokalizacji|Місць зберігання ще немає|暂无位置
++ Einlagern|+ Stock in|+ Добавить|+ Armazenar|+ Inslaan|+ Ajouter|+ Carica|+ Almacenar|+ Dodaj|+ Додати|+ 入库
+− Entnehmen|− Take out|− Взять|− Retirar|− Uitnemen|− Retirer|− Preleva|− Retirar|− Pobierz|− Взяти|− 取出
+⇄ Verschieben|⇄ Move|⇄ Переместить|⇄ Mover|⇄ Verplaatsen|⇄ Déplacer|⇄ Sposta|⇄ Mover|⇄ Przenieś|⇄ Перемістити|⇄ 移动
+Bearbeiten|Edit|Изменить|Editar|Bewerken|Modifier|Modifica|Editar|Edytuj|Редагувати|编辑
+Löschen|Delete|Удалить|Eliminar|Verwijderen|Supprimer|Elimina|Eliminar|Usuń|Видалити|删除
+Einlagern|Stock in|Добавить на склад|Armazenar|Inslaan|Mettre en stock|Carica|Almacenar|Przyjmij|Прийняти|入库
+Einlagern speichern|Save stock in|Сохранить поступление|Guardar entrada|Inslag opslaan|Enregistrer l'entrée|Salva carico|Guardar entrada|Zapisz przyjęcie|Зберегти надходження|保存入库
+Entnehmen speichern|Save take out|Сохранить списание|Guardar saída|Uitname opslaan|Enregistrer la sortie|Salva prelievo|Guardar salida|Zapisz pobranie|Зберегти видачу|保存取出
+Einlagern · {1}|Stock in · {1}|Поступление · {1}|Entrada · {1}|Inslag · {1}|Entrée · {1}|Carico · {1}|Entrada · {1}|Przyjęcie · {1}|Надходження · {1}|入库 · {1}
+Entnehmen · {1}|Take out · {1}|Списание · {1}|Saída · {1}|Uitname · {1}|Sortie · {1}|Prelievo · {1}|Salida · {1}|Pobranie · {1}|Видача · {1}|取出 · {1}
+Verschieben · {1}|Move · {1}|Перемещение · {1}|Mover · {1}|Verplaatsen · {1}|Déplacer · {1}|Sposta · {1}|Mover · {1}|Przenieś · {1}|Переміщення · {1}|移动 · {1}
+Verschieben|Move|Переместить|Mover|Verplaatsen|Déplacer|Sposta|Mover|Przenieś|Перемістити|移动
+Verschoben|Moved|Перемещено|Movido|Verplaatst|Déplacé|Spostato|Movido|Przeniesiono|Переміщено|已移动
+Von|From|Откуда|De|Van|De|Da|Desde|Z|Звідки|从
+Nach|To|Куда|Para|Naar|Vers|A|A|Do|Куди|到
+Alles|All|Всё|Tudo|Alles|Tout|Tutto|Todo|Wszystko|Усе|全部
+Menge in {1}|Quantity in {1}|Количество в {1}|Quantidade em {1}|Hoeveelheid in {1}|Quantité en {1}|Quantità in {1}|Cantidad en {1}|Ilość w {1}|Кількість у {1}|数量单位： {1}
+Bei Gewicht und Volumen in der Basiseinheit (g / ml) buchen.|For weight and volume book in the base unit (g / ml).|Для веса и объёма вводите в базовых единицах (г / мл).|Para peso e volume, registe na unidade base (g / ml).|Boek gewicht en volume in de basiseenheid (g / ml).|Pour le poids et le volume, saisissez dans l'unité de base (g / ml).|Per peso e volume registra nell'unità base (g / ml).|Para peso y volumen, registra en la unidad base (g / ml).|Wagę i objętość księguj w jednostce podstawowej (g / ml).|Для ваги й об'єму вводьте в базових одиницях (г / мл).|重量和容量请以基本单位（g / ml）记录。
+MHD (optional)|Best before (optional)|Срок годности (необязательно)|Validade (opcional)|THT (optioneel)|DLC (facultatif)|Scadenza (facoltativo)|Caducidad (opcional)|Termin ważności (opcjonalnie)|Термін придатності (необов'язково)|保质期（可选）
+MHD|Best before|Срок годности|Validade|THT|DLC|Scadenza|Caducidad|Termin ważności|Термін придатності|保质期
+Mindesthaltbarkeit (MHD)|Best-before date|Срок годности|Data de validade|Houdbaarheidsdatum|Date limite|Data di scadenza|Fecha de caducidad|Termin ważności|Термін придатності|保质期
+Optional. Das Produkt wird vor Ablauf markiert.|Optional. The product is marked before it expires.|Необязательно. Продукт будет помечен перед истечением срока.|Opcional. O produto é assinalado antes de expirar.|Optioneel. Het product wordt gemarkeerd voordat het verloopt.|Facultatif. Le produit est signalé avant son expiration.|Facoltativo. Il prodotto viene segnalato prima della scadenza.|Opcional. El producto se marca antes de caducar.|Opcjonalnie. Produkt zostanie oznaczony przed upływem terminu.|Необов'язково. Продукт буде позначено перед закінченням терміну.|可选。产品到期前会被标记。
+MHD abgelaufen|Expired|Срок истёк|Expirado|Verlopen|Périmé|Scaduto|Caducado|Przeterminowany|Термін минув|已过期
+MHD heute|Expires today|Срок истекает сегодня|Expira hoje|Verloopt vandaag|Expire aujourd'hui|Scade oggi|Caduca hoy|Wygasa dziś|Термін спливає сьогодні|今天到期
+MHD in {1} Tag|Expires in {1} day|Срок истекает через {1} дн.|Expira em {1} dia|Verloopt over {1} dag|Expire dans {1} jour|Scade tra {1} giorno|Caduca en {1} día|Wygasa za {1} dzień|Термін спливає через {1} день|{1} 天后到期
+MHD in {1} Tagen|Expires in {1} days|Срок истекает через {1} дн.|Expira em {1} dias|Verloopt over {1} dagen|Expire dans {1} jours|Scade tra {1} giorni|Caduca en {1} días|Wygasa za {1} dni|Термін спливає через {1} дн.|{1} 天后到期
+MHD {1} · {2} · {3} · {4} · {5}|Best before {1} · {2} · {3} · {4} · {5}|Срок годности {1} · {2} · {3} · {4} · {5}|Validade {1} · {2} · {3} · {4} · {5}|THT {1} · {2} · {3} · {4} · {5}|DLC {1} · {2} · {3} · {4} · {5}|Scadenza {1} · {2} · {3} · {4} · {5}|Caducidad {1} · {2} · {3} · {4} · {5}|Termin {1} · {2} · {3} · {4} · {5}|Термін {1} · {2} · {3} · {4} · {5}|保质期 {1} · {2} · {3} · {4} · {5}
+MHD {1} · {2}|Best before {1} · {2}|Срок годности {1} · {2}|Validade {1} · {2}|THT {1} · {2}|DLC {1} · {2}|Scadenza {1} · {2}|Caducidad {1} · {2}|Termin {1} · {2}|Термін {1} · {2}|保质期 {1} · {2}
+Typ {1}: insgesamt {2} · Mindestbestand {3}|Type {1}: {2} in total · minimum stock {3}|Тип {1}: всего {2} · мин. запас {3}|Tipo {1}: {2} no total · stock mínimo {3}|Type {1}: {2} in totaal · minimumvoorraad {3}|Type {1} : {2} au total · stock minimum {3}|Tipo {1}: {2} in totale · scorta minima {3}|Tipo {1}: {2} en total · mínimo {3}|Typ {1}: razem {2} · minimum {3}|Тип {1}: усього {2} · мін. запас {3}|类型 {1}：共 {2} · 最低库存 {3}
+Typ {1}: insgesamt {2}|Type {1}: {2} in total|Тип {1}: всего {2}|Tipo {1}: {2} no total|Type {1}: {2} in totaal|Type {1} : {2} au total|Tipo {1}: {2} in totale|Tipo {1}: {2} en total|Typ {1}: razem {2}|Тип {1}: усього {2}|类型 {1}：共 {2}
+Nur {1} vorhanden|Only {1} available|Доступно только {1}|Apenas {1} disponível|Slechts {1} beschikbaar|Seulement {1} disponible|Solo {1} disponibile|Solo {1} disponible|Dostępne tylko {1}|Доступно лише {1}|仅有 {1}
+Ungültige Menge|Invalid quantity|Недопустимое количество|Quantidade inválida|Ongeldige hoeveelheid|Quantité invalide|Quantità non valida|Cantidad no válida|Nieprawidłowa ilość|Недійсна кількість|数量无效
+Ungültige Menge (max. {1})|Invalid quantity (max. {1})|Недопустимое количество (макс. {1})|Quantidade inválida (máx. {1})|Ongeldige hoeveelheid (max. {1})|Quantité invalide (max. {1})|Quantità non valida (max {1})|Cantidad no válida (máx. {1})|Nieprawidłowa ilość (maks. {1})|Недійсна кількість (макс. {1})|数量无效（最多 {1}）
+Bestand gespeichert|Stock saved|Запас сохранён|Stock guardado|Voorraad opgeslagen|Stock enregistré|Scorta salvata|Existencias guardadas|Zapas zapisany|Запас збережено|库存已保存
+Lagerort fehlt|Location missing|Не указано место хранения|Falta o local|Locatie ontbreekt|Emplacement manquant|Posizione mancante|Falta la ubicación|Brak lokalizacji|Не вказано місце зберігання|缺少位置
+Ziel-Lagerort wählen|Choose a target location|Выберите место назначения|Escolha o local de destino|Kies een doellocatie|Choisissez l'emplacement de destination|Scegli la posizione di destinazione|Elige la ubicación de destino|Wybierz lokalizację docelową|Виберіть місце призначення|请选择目标位置
+▦ Lagerort-QR scannen|▦ Scan location QR|▦ Сканировать QR места|▦ Ler QR do local|▦ Locatie-QR scannen|▦ Scanner le QR de l'emplacement|▦ Scansiona QR della posizione|▦ Escanear QR de ubicación|▦ Skanuj QR lokalizacji|▦ Сканувати QR місця|▦ 扫描位置二维码
+▦ QR-Code scannen|▦ Scan QR code|▦ Сканировать QR-код|▦ Ler código QR|▦ QR-code scannen|▦ Scanner le code QR|▦ Scansiona codice QR|▦ Escanear código QR|▦ Skanuj kod QR|▦ Сканувати QR-код|▦ 扫描二维码
+▣ Scannen|▣ Scan|▣ Сканировать|▣ Digitalizar|▣ Scannen|▣ Scanner|▣ Scansiona|▣ Escanear|▣ Skanuj|▣ Сканувати|▣ 扫描
+← Zurück|← Back|← Назад|← Voltar|← Terug|← Retour|← Indietro|← Atrás|← Wstecz|← Назад|← 返回
+← Übersicht|← Overview|← Обзор|← Visão geral|← Overzicht|← Aperçu|← Panoramica|← Resumen|← Przegląd|← Огляд|← 概览
