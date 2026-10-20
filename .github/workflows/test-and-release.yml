@@ -106,6 +106,11 @@ jobs:
         with:
           node-version: '24.x'
           registry-url: 'https://registry.npmjs.org'
+      - name: Check that the tag matches the package version
+        run: |
+          TAG="${{ github.event.release.tag_name || inputs.tag || github.ref_name }}"
+          VER=$(node -p "require('./package.json').version")
+          if [ "$TAG" != "v$VER" ]; then echo "Tag $TAG does not match package.json version $VER"; exit 1; fi
       - run: npm ci
       - run: npm run lint
       - run: npm run test:package
