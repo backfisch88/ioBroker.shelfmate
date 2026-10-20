@@ -34,5 +34,7 @@
     "bbProduct": "按产品",
     "bbBatch": "按入库",
     "bestBeforeWarnDays": "到期前提醒（天）",
-    "bestBeforeWarnDaysHelp": "此期间内到期的产品会被标记并列入数据点"
+    "bestBeforeWarnDaysHelp": "此期间内到期的产品会被标记并列入数据点",
+    "createCert": "创建自签名证书",
+    "createCertHelp": "为此服务器（主机名和 IP 地址）创建证书，保存到 ioBroker 证书中并自动选用。请通过 .cer 下载在设备上安装。"
 }

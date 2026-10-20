@@ -53,6 +53,7 @@ Install via the ioBroker Admin UI (Adapters). Then add an instance and open `htt
 | --- | --- |
 | Port / bind address | Where the web server listens (default `8120`, all interfaces) |
 | Use HTTPS | Uses the certificate selected below. The default is the self-signed ioBroker certificate |
+| Create self-signed certificate | Button: creates a certificate for this server (host name and IP addresses, valid 825 days), stores it in the ioBroker certificates and selects it. Restart the instance afterwards |
 | Certificates | Choose public / private / chained certificate of the ioBroker certificate store, or a certificate collection (for example from the `acme` adapter) |
 | Access key | Optional. If set, the app asks for the key once per device |
 | Shopping list mode | See below |
@@ -107,6 +108,7 @@ A JSON backup can be downloaded and imported in the app (Settings). An import re
 ## Changelog
 ### 0.1.2 (2026-10-20)
 - New: the app and the HTML data points follow the ioBroker system language (11 languages)
+- New: button in the settings that creates a self-signed certificate
 - New: Open Food Facts lookups use the app language (English as fallback)
 - New: data points `stats.inventory` (JSON) and `stats.inventoryHtml` (table for VIS) with everything in stock
 - New: separate options to remove items from the shopping list when refilled and when unticked in the app

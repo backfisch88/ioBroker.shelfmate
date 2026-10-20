@@ -34,5 +34,7 @@
     "bbProduct": "Per product",
     "bbBatch": "Per inslag",
     "bestBeforeWarnDays": "Waarschuwen vóór verloop (dagen)",
-    "bestBeforeWarnDaysHelp": "Producten die binnen deze periode verlopen worden gemarkeerd en in de datapunten vermeld"
+    "bestBeforeWarnDaysHelp": "Producten die binnen deze periode verlopen worden gemarkeerd en in de datapunten vermeld",
+    "createCert": "Zelfondertekend certificaat maken",
+    "createCertHelp": "Maakt een certificaat voor deze server (hostnaam en IP-adressen), slaat het op in de ioBroker-certificaten en selecteert het. Installeer het op je apparaten via de .cer-download."
 }

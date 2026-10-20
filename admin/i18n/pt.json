@@ -34,5 +34,7 @@
     "bbProduct": "Por produto",
     "bbBatch": "Por entrada",
     "bestBeforeWarnDays": "Avisar antes de expirar (dias)",
-    "bestBeforeWarnDaysHelp": "Produtos que expiram neste período são marcados e listados nos pontos de dados"
+    "bestBeforeWarnDaysHelp": "Produtos que expiram neste período são marcados e listados nos pontos de dados",
+    "createCert": "Criar certificado autoassinado",
+    "createCertHelp": "Cria um certificado para este servidor (nome do host e endereços IP), guarda-o nos certificados do ioBroker e seleciona-o. Instale-o nos dispositivos através da transferência .cer."
 }
