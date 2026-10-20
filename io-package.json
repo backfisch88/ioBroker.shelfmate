@@ -4,17 +4,17 @@
         "version": "0.1.7",
         "news": {
             "0.1.7": {
-                "en": "\"Generate EAN\" no longer asks for confirmation",
-                "de": "„EAN erzeugen\" fragt nicht mehr nach",
-                "ru": "«Создать EAN» больше не запрашивает подтверждение",
-                "pt": "«Gerar EAN» já não pede confirmação",
-                "nl": "«EAN genereren» vraagt niet meer om bevestiging",
-                "fr": "« Générer un EAN » ne demande plus de confirmation",
-                "it": "«Genera EAN» non chiede più conferma",
-                "es": "«Generar EAN» ya no pide confirmación",
-                "pl": "„Wygeneruj EAN” nie pyta już o potwierdzenie",
-                "uk": "«Створити EAN» більше не просить підтвердження",
-                "zh-cn": "“生成 EAN”不再弹出确认"
+                "en": "\"Generate EAN\" no longer asks for confirmation; brand on the EAN label",
+                "de": "„EAN erzeugen\" fragt nicht mehr nach; Hersteller auf dem EAN-Etikett",
+                "ru": "«Создать EAN» больше не запрашивает подтверждение; бренд на этикетке EAN",
+                "pt": "«Gerar EAN» já não pede confirmação; marca na etiqueta EAN",
+                "nl": "«EAN genereren» vraagt niet meer om bevestiging; merk op het EAN-etiket",
+                "fr": "« Générer un EAN » ne demande plus de confirmation; marque sur l'étiquette EAN",
+                "it": "«Genera EAN» non chiede più conferma; marchio sull'etichetta EAN",
+                "es": "«Generar EAN» ya no pide confirmación; marca en la etiqueta EAN",
+                "pl": "„Wygeneruj EAN” nie pyta już o potwierdzenie; marka na etykiecie EAN",
+                "uk": "«Створити EAN» більше не просить підтвердження; бренд на етикетці EAN",
+                "zh-cn": "“生成 EAN”不再弹出确认; EAN 标签上显示品牌"
             },
             "0.1.6": {
                 "en": "Products with the same product type are grouped in the overview and can be expanded",
