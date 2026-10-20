@@ -127,7 +127,9 @@
         "bringListId": "",
         "removeOnRestock": false,
         "removeOnUncheck": true,
-        "shoppingRemoveItemId": ""
+        "shoppingRemoveItemId": "",
+        "bestBeforeMode": "off",
+        "bestBeforeWarnDays": 7
     },
     "objects": [],
     "instanceObjects": [

@@ -19,6 +19,7 @@ German short description: [README.de.md](README.de.md)
 - Storage areas and locations with printable QR codes
 - Stock per location, history of all bookings, offline queue in the app
 - Product groups: "Flour" from several brands counts as one item
+- Optional best-before date (MHD) per product or per stocking, with warning before expiry
 - Minimum stock per product or group with automatic shopping-list entry
 - Shopping list modes: **off**, **script** (via data points) or **directly via the Bring! adapter**
 - Built-in HTTPS web server that uses the certificates of your ioBroker installation (self-signed, own or Let's Encrypt collections)
@@ -44,6 +45,8 @@ Install via the ioBroker Admin UI. Until the adapter is listed in the official r
 | Certificates | Choose public / private / chained certificate of the ioBroker certificate store, or a certificate collection (for example from the `acme` adapter) |
 | Access key | Optional. If set, the app asks for the key once per device |
 | Shopping list mode | See below |
+| Best-before date | **Off**, **per product** (one date on each product) or **per stocking** (a date for every booking of stock; removing uses the oldest date first) |
+| Warn before expiry | Days before the date from which products are marked and listed in the data points |
 
 ### Shopping list
 
@@ -74,6 +77,7 @@ Camera access and the offline mode need a certificate the phone trusts. With a s
 | `stats.lowStockCount`, `stats.lowStockList` | Items at or below the minimum stock |
 | `stats.inventory` | Everything in stock as JSON (name, amount, unit, minimum, low flag, locations) |
 | `stats.inventoryHtml` | Same as a simple HTML table, e.g. for a VIS html widget |
+| `stats.expiringCount`, `stats.expiring`, `stats.expiringHtml` | Products that are expired or expire within the warning period (count, JSON, HTML table) |
 | `shopping.addItem` | Write an item name (`ack=false`) to put it on the shopping list |
 
 Inventory data is stored in the adapter data directory (`shelfmate.json`), not in the object database.
@@ -81,6 +85,7 @@ A JSON backup can be downloaded and imported in the app (Settings). An import re
 
 ## Changelog
 ### **WORK IN PROGRESS**
+- New: best-before date (off / per product / per stocking) with warning and data points `stats.expiring*`
 
 ### 0.1.1 (2026-10-20)
 - New: data points `stats.inventory` (JSON) and `stats.inventoryHtml` (table for VIS) with everything in stock

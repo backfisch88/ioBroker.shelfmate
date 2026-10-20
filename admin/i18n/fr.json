@@ -26,5 +26,13 @@
     "shoppingRemoveItemId": "État recevant les articles à retirer (facultatif)",
     "shoppingRemoveItemIdHelp": "Le nom de l'article est écrit dans cet état avec ack=false. Active le retrait via la coche dans l'application et l'option ci-dessous",
     "removeOnUncheck": "Retirer de la liste quand je décoche dans l'app",
-    "removeOnUncheckHelp": "Un appui sur la coche dans l'app retire aussi l'article de la liste"
+    "removeOnUncheckHelp": "Un appui sur la coche dans l'app retire aussi l'article de la liste",
+    "hBestBefore": "Date limite de consommation",
+    "bestBeforeMode": "Date limite",
+    "bestBeforeModeHelp": "Désactivé : non utilisé. Par produit : une date par produit. Par entrée : une date à chaque entrée en stock, la plus ancienne sort en premier.",
+    "bbOff": "Désactivé",
+    "bbProduct": "Par produit",
+    "bbBatch": "Par entrée",
+    "bestBeforeWarnDays": "Avertir avant expiration (jours)",
+    "bestBeforeWarnDaysHelp": "Les produits expirant dans cette période sont marqués et listés dans les points de données"
 }

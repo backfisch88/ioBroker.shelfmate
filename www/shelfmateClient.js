@@ -6,7 +6,7 @@
 (function () {
   'use strict';
   var ROOT = '0_userdata.0.Kuechenlager';
-  var KEYS = { products: '.data.productsJson', inventory: '.data.inventoryJson', locations: '.data.locationsJson', history: '.data.historyJson', areas: '.data.areasJson' };
+  var KEYS = { products: '.data.productsJson', inventory: '.data.inventoryJson', locations: '.data.locationsJson', history: '.data.historyJson', areas: '.data.areasJson', batches: '.data.batchesJson', config: '.data.configJson' };
   var IDS = {};
   Object.keys(KEYS).forEach(function (k) { IDS[k] = ROOT + KEYS[k]; });
   var ID_COMMAND = ROOT + '.api.commandJson';

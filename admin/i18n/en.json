@@ -26,5 +26,13 @@
     "shoppingRemoveItemId": "State that receives items to remove (optional)",
     "shoppingRemoveItemIdHelp": "The item name is written to this state with ack=false. Enables removing via the cart tick in the app and the option below",
     "removeOnUncheck": "Remove from the list when I untick the check mark in the app",
-    "removeOnUncheckHelp": "Tapping the check mark in the app also takes the item off the list"
+    "removeOnUncheckHelp": "Tapping the check mark in the app also takes the item off the list",
+    "hBestBefore": "Best-before date",
+    "bestBeforeMode": "Best-before date (MHD)",
+    "bestBeforeModeHelp": "Off: not used. Per product: one date on each product. Per stocking: a date for every booking of stock, the oldest is used first when removing.",
+    "bbOff": "Off",
+    "bbProduct": "Per product",
+    "bbBatch": "Per stocking",
+    "bestBeforeWarnDays": "Warn before expiry (days)",
+    "bestBeforeWarnDaysHelp": "Products expiring within this period are marked and listed in the data points"
 }
