@@ -1,0 +1,211 @@
+{
+    "i18n": true,
+    "type": "panel",
+    "items": {
+        "_hServer": {
+            "type": "header",
+            "text": "hServer",
+            "size": 3,
+            "newLine": true,
+            "xs": 12
+        },
+        "port": {
+            "type": "number",
+            "label": "port",
+            "min": 1,
+            "max": 65535,
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "bind": {
+            "type": "ip",
+            "listenOnAllPorts": true,
+            "label": "bind",
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "secure": {
+            "type": "checkbox",
+            "label": "secure",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "certPublic": {
+            "type": "certificate",
+            "certType": "public",
+            "label": "certPublic",
+            "hidden": "!data.secure",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "certPrivate": {
+            "type": "certificate",
+            "certType": "private",
+            "label": "certPrivate",
+            "hidden": "!data.secure",
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "certChained": {
+            "type": "certificate",
+            "certType": "chained",
+            "label": "certChained",
+            "hidden": "!data.secure",
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "leCollection": {
+            "type": "certCollection",
+            "label": "leCollection",
+            "hidden": "!data.secure",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "accessKey": {
+            "type": "password",
+            "label": "accessKey",
+            "help": "accessKeyHelp",
+            "visible": true,
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "_hShop": {
+            "type": "header",
+            "text": "hShop",
+            "size": 3,
+            "newLine": true,
+            "xs": 12
+        },
+        "shoppingMode": {
+            "type": "select",
+            "label": "shoppingMode",
+            "options": [
+                {
+                    "value": "off",
+                    "label": "modeOff"
+                },
+                {
+                    "value": "script",
+                    "label": "modeScript"
+                },
+                {
+                    "value": "bring",
+                    "label": "modeBring"
+                },
+                {
+                    "value": "bringSpecial",
+                    "label": "modeBringSpecial"
+                }
+            ],
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "shoppingAddItemId": {
+            "type": "objectId",
+            "label": "shoppingAddItemId",
+            "help": "shoppingAddItemIdHelp",
+            "hidden": "data.shoppingMode !== 'script'",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 8,
+            "xl": 8
+        },
+        "shoppingContentId": {
+            "type": "objectId",
+            "label": "shoppingContentId",
+            "help": "shoppingContentIdHelp",
+            "hidden": "data.shoppingMode !== 'script'",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 8,
+            "xl": 8
+        },
+        "shoppingRemoveItemId": {
+            "type": "objectId",
+            "label": "shoppingRemoveItemId",
+            "help": "shoppingRemoveItemIdHelp",
+            "hidden": "data.shoppingMode !== 'script'",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 8,
+            "xl": 8
+        },
+        "bringListId": {
+            "type": "selectSendTo",
+            "command": "getBringLists",
+            "manual": true,
+            "label": "bringListId",
+            "help": "bringListIdHelp",
+            "hidden": "data.shoppingMode !== 'bring' && data.shoppingMode !== 'bringSpecial'",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 8,
+            "xl": 8
+        },
+        "removeOnRestock": {
+            "type": "checkbox",
+            "label": "removeOnRestock",
+            "help": "removeOnRestockHelp",
+            "hidden": "data.shoppingMode === 'off' || (data.shoppingMode === 'script' && !data.shoppingRemoveItemId)",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 8,
+            "xl": 8
+        },
+        "removeOnUncheck": {
+            "type": "checkbox",
+            "label": "removeOnUncheck",
+            "help": "removeOnUncheckHelp",
+            "hidden": "data.shoppingMode === 'off' || (data.shoppingMode === 'script' && !data.shoppingRemoveItemId)",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 8,
+            "xl": 8
+        }
+    }
+}
