@@ -18,7 +18,7 @@ ShelfMate ist ein Haushalts-Vorratslager für ioBroker. Es läuft als installier
 
 ## Installation
 
-Über den Admin ("Aus eigener URL installieren") mit `https://github.com/backfisch88/ioBroker.shelfmate`.
+Über den Admin (Adapter).
 Danach eine Instanz anlegen und `https://<Host>:8120/` öffnen. Voraussetzungen: js-controller >= 6.0.11, admin >= 7.6.20, Node.js >= 22.
 
 ## Datenpunkte
