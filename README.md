@@ -109,6 +109,7 @@ A JSON backup can be downloaded and imported in the app (Settings). An import re
 
 ## Changelog
 ### 0.1.7 (2026-10-20)
+- New: the brand is printed on the EAN label in front of the product name (long names wrap to two lines)
 - Change: "Generate EAN" no longer asks for confirmation
 
 ### 0.1.6 (2026-10-20)
