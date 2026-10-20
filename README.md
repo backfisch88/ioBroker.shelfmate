@@ -37,8 +37,7 @@ German short description: [README.de.md](README.de.md)
 
 ## Installation
 
-Install via the ioBroker Admin UI. Until the adapter is listed in the official repository, use "Install from custom URL" with
-`https://github.com/backfisch88/ioBroker.shelfmate`. Then add an instance and open `https://<host>:8120/`.
+Install via the ioBroker Admin UI (Adapters). Then add an instance and open `https://<host>:8120/`.
 
 ## Usage
 

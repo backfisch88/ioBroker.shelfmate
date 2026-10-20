@@ -414,7 +414,11 @@ class Shelfmate extends utils.Adapter {
             return;
         }
         if (this.shopping && id === this.shopping.contentId && state.ack) {
-            this.web?.broadcast('bring', await this.shopping.content());
+            try {
+                this.web?.broadcast('bring', await this.shopping.content());
+            } catch (e) {
+                this.log.debug(`Shopping list update failed: ${e.message}`);
+            }
         }
     }
 
