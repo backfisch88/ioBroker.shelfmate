@@ -14,6 +14,7 @@ German short description: [README.de.md](README.de.md)
 
 ## Features
 
+- Scan product barcodes and storage location QR codes with the phone camera
 - Product master data from Open Food Facts (name, brand, package size, Nutri-Score, categories), editable
 - Storage areas and locations with printable QR codes
 - Stock per location, history of all bookings, offline queue in the app
@@ -23,7 +24,6 @@ German short description: [README.de.md](README.de.md)
 - Built-in HTTPS web server that uses the certificates of your ioBroker installation (self-signed, own or Let's Encrypt collections)
 - Optional access key for the API
 
-> **Work in progress:** the barcode / QR scanner (phone camera) is taken over unchanged from the original app and will be reworked.
 
 ## Requirements
 
@@ -82,7 +82,6 @@ A JSON backup can be downloaded and imported in the app (Settings). An import re
 ## Changelog
 ### **WORK IN PROGRESS**
 - New: initial release (inventory, shopping list via script / Bring! / Bring special, JSON backup)
-- WIP: barcode / QR scanner (to be reworked)
 
 ## License
 MIT License
