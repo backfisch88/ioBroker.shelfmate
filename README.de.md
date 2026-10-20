@@ -11,7 +11,7 @@ ShelfMate ist ein Haushalts-Vorratslager für ioBroker. Es läuft als installier
 - Eigener HTTPS-Server mit den ioBroker-Zertifikaten, optionaler Zugriffsschlüssel
 - Optional: Artikel von der Liste entfernen, wenn wieder aufgefüllt, und/oder wenn der Haken in der App entfernt wird
 
-> **In Arbeit:** Barcode-/QR-Scanner per Handykamera ist noch nicht verfügbar. Produkte und Lagerorte werden manuell angelegt.
+> **In Arbeit:** Der Barcode-/QR-Scanner (Handykamera) ist unverändert aus der alten App übernommen und wird noch überarbeitet.
 
 ## Installation
 
