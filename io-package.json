@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "shelfmate",
-        "version": "0.1.5",
+        "version": "0.1.6",
         "news": {
+            "0.1.6": {
+                "en": "Products with the same product type are grouped in the overview and can be expanded",
+                "de": "Produkte mit gleichem Produkttyp werden in der Übersicht gruppiert und lassen sich aufklappen",
+                "ru": "Продукты одного типа группируются в обзоре и раскрываются",
+                "pt": "Produtos do mesmo tipo são agrupados na vista geral e podem ser expandidos",
+                "nl": "Producten van hetzelfde type worden in het overzicht gegroepeerd en kunnen worden uitgeklapt",
+                "fr": "Les produits du même type sont regroupés dans l'aperçu et peuvent être dépliés",
+                "it": "I prodotti dello stesso tipo sono raggruppati nella panoramica e possono essere espansi",
+                "es": "Los productos del mismo tipo se agrupan en la vista general y se pueden desplegar",
+                "pl": "Produkty tego samego typu są grupowane w przeglądzie i można je rozwinąć",
+                "uk": "Продукти одного типу групуються в огляді й розгортаються",
+                "zh-cn": "概览中相同产品类型的产品会分组显示，可展开"
+            },
             "0.1.5": {
                 "en": "adjustable label size; barcode of Open Food Facts products is locked, fixed Nutri-Score A display",
                 "de": "einstellbare Etikettengröße; Barcode von Open-Food-Facts-Produkten gesperrt, Anzeige des Nutri-Score A korrigiert",
