@@ -1,0 +1,143 @@
+{
+    "common": {
+        "name": "shelfmate",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "uk": "Початкова версія",
+                "zh-cn": "首次出版"
+            }
+        },
+        "titleLang": {
+            "en": "ShelfMate",
+            "de": "ShelfMate",
+            "ru": "ShelfMate",
+            "pt": "ShelfMate",
+            "nl": "ShelfMate",
+            "fr": "ShelfMate",
+            "it": "ShelfMate",
+            "es": "ShelfMate",
+            "pl": "ShelfMate",
+            "uk": "ShelfMate",
+            "zh-cn": "ShelfMate"
+        },
+        "desc": {
+            "en": "Household inventory with barcode scanning, storage locations, minimum stock and shopping list",
+            "de": "Haushaltsvorrat mit Barcode-Scan, Lagerorten, Mindestbestand und Einkaufsliste",
+            "ru": "Домашний инвентарь со сканированием штрихкодов, местами хранения, минимальным запасом и списком покупок",
+            "pt": "Inventário doméstico com leitura de códigos de barras, locais de armazenamento, estoque mínimo e lista de compras",
+            "nl": "Huishoudelijke voorraad met barcodescan, opslaglocaties, minimumvoorraad en boodschappenlijst",
+            "fr": "Inventaire domestique avec scan de codes-barres, emplacements de stockage, stock minimum et liste de courses",
+            "it": "Inventario domestico con scansione di codici a barre, ubicazioni, scorta minima e lista della spesa",
+            "es": "Inventario doméstico con escaneo de códigos de barras, ubicaciones, existencias mínimas y lista de la compra",
+            "pl": "Domowy spis zapasów ze skanowaniem kodów kreskowych, miejscami przechowywania, minimalnym stanem i listą zakupów",
+            "uk": "Домашній інвентар зі скануванням штрихкодів, місцями зберігання, мінімальним запасом і списком покупок",
+            "zh-cn": "家庭库存管理：条码扫描、存放位置、最低库存和购物清单"
+        },
+        "authors": [
+            "Henrik Schoenhofen"
+        ],
+        "keywords": [
+            "inventory",
+            "barcode",
+            "pantry",
+            "shopping list",
+            "kitchen"
+        ],
+        "licenseInformation": {
+            "type": "free",
+            "license": "MIT"
+        },
+        "platform": "Javascript/Node.js",
+        "icon": "shelfmate.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/backfisch88/ioBroker.ShelfMate/main/admin/shelfmate.png",
+        "readme": "https://github.com/backfisch88/ioBroker.ShelfMate/blob/main/README.md",
+        "loglevel": "info",
+        "tier": 3,
+        "mode": "daemon",
+        "type": "household",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "push",
+        "adminUI": {
+            "config": "json"
+        },
+        "dependencies": [
+            {
+                "js-controller": ">=6.0.11"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=7.0.23"
+            }
+        ],
+        "localLinks": {
+            "_default": {
+                "link": "%protocol%://%ip%:%port%/",
+                "name": {
+                    "en": "ShelfMate"
+                },
+                "icon": "shelfmate.png"
+            }
+        },
+        "messagebox": true
+    },
+    "protectedNative": [
+        "accessKey"
+    ],
+    "encryptedNative": [
+        "accessKey"
+    ],
+    "native": {
+        "port": 8120,
+        "bind": "0.0.0.0",
+        "secure": true,
+        "certPublic": "defaultPublic",
+        "certPrivate": "defaultPrivate",
+        "certChained": "",
+        "leCollection": false,
+        "accessKey": "",
+        "shoppingMode": "off",
+        "shoppingAddItemId": "",
+        "shoppingContentId": "",
+        "bringListId": "",
+        "removeOnRestock": false,
+        "removeOnUncheck": true,
+        "shoppingRemoveItemId": ""
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Web server is running",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}

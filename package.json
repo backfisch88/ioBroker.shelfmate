@@ -1,0 +1,60 @@
+{
+  "name": "iobroker.shelfmate",
+  "version": "0.0.1",
+  "description": "Household inventory with barcode scanning, storage locations, minimum stock and shopping list",
+  "author": {
+    "name": "Henrik Schoenhofen",
+    "email": "henrik.schoenhofen@icloud.com"
+  },
+  "contributors": [],
+  "homepage": "https://github.com/backfisch88/ioBroker.ShelfMate",
+  "license": "MIT",
+  "keywords": [
+    "inventory",
+    "barcode",
+    "pantry",
+    "shopping list",
+    "kitchen"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/backfisch88/ioBroker.ShelfMate.git"
+  },
+  "engines": {
+    "node": ">= 20"
+  },
+  "dependencies": {
+    "@iobroker/adapter-core": "^3.4.3",
+    "@iobroker/webserver": "^3.3.1"
+  },
+  "devDependencies": {
+    "@iobroker/adapter-dev": "^1.5.0",
+    "@iobroker/dev-server": "^0.8.0",
+    "@iobroker/eslint-config": "^2.3.4",
+    "@iobroker/testing": "^6.3.1"
+  },
+  "main": "main.js",
+  "files": [
+    "admin{,/!(src)/**}/!(tsconfig|tsconfig.*|.eslintrc).{json,json5}",
+    "admin{,/!(src)/**}/*.{html,css,png,svg,jpg,js}",
+    "lib/",
+    "!lib/**/*.test.js",
+    "www/",
+    "io-package.json",
+    "LICENSE",
+    "main.js"
+  ],
+  "scripts": {
+    "test:js": "mocha --config test/mocharc.custom.json \"{!(node_modules|test)/**/*.test.js,*.test.js,test/**/test!(PackageFiles|Startup).js}\"",
+    "test:package": "mocha test/package --exit",
+    "test:integration": "mocha test/integration --exit",
+    "test": "npm run test:js && npm run test:package",
+    "lint": "eslint -c eslint.config.mjs .",
+    "translate": "translate-adapter",
+    "dev-server": "dev-server"
+  },
+  "bugs": {
+    "url": "https://github.com/backfisch88/ioBroker.ShelfMate/issues"
+  },
+  "readmeFilename": "README.md"
+}
