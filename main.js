@@ -12,6 +12,24 @@ const { ShelfMateServer } = require('./lib/server');
 const DATA_FILE = 'shelfmate.json';
 const SAVE_DELAY_MS = 500;
 
+/**
+ * @param {string} v text
+ */
+const esc = v => String(v).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+
+/**
+ * @param {object[]} items inventory list
+ */
+function inventoryHtml(items) {
+    const rows = items
+        .map(
+            i =>
+                `<tr><td>${esc(i.name)}</td><td>${i.amount} ${esc(i.unit)}</td><td>${esc(i.places.map(x => `${x.place} (${x.amount})`).join(', '))}</td></tr>`,
+        )
+        .join('');
+    return `<table><thead><tr><th>Product</th><th>Amount</th><th>Location</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+
 class Shelfmate extends utils.Adapter {
     /**
      * @param {Partial<utils.AdapterOptions>} [options] adapter options
@@ -105,6 +123,8 @@ class Shelfmate extends utils.Adapter {
             ['stats.locations', 'Number of storage locations', 'number', 'value', false],
             ['stats.lowStockCount', 'Products at or below minimum stock', 'number', 'value', false],
             ['stats.lowStockList', 'Names at or below minimum stock (JSON)', 'string', 'json', false],
+            ['stats.inventory', 'Everything in stock (JSON)', 'string', 'json', false],
+            ['stats.inventoryHtml', 'Everything in stock (HTML table for VIS)', 'string', 'html', false],
             ['shopping.addItem', 'Add an item to the shopping list', 'string', 'text', true],
         ];
         await this.setObjectNotExistsAsync('stats', { type: 'channel', common: { name: 'Statistics' }, native: {} });
@@ -284,11 +304,14 @@ class Shelfmate extends utils.Adapter {
 
     async updateStats() {
         const low = this.inv.lowStockNames();
+        const items = this.inv.inventoryList();
         await Promise.all([
             this.setState('stats.products', Object.keys(this.inv.data.products).length, true),
             this.setState('stats.locations', Object.keys(this.inv.data.locations).length, true),
             this.setState('stats.lowStockCount', low.length, true),
             this.setState('stats.lowStockList', JSON.stringify(low), true),
+            this.setState('stats.inventory', JSON.stringify(items), true),
+            this.setState('stats.inventoryHtml', inventoryHtml(items), true),
         ]);
     }
 

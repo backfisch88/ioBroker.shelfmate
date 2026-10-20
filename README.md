@@ -72,6 +72,8 @@ Camera access and the offline mode need a certificate the phone trusts. With a s
 | `info.connection` | `true` while the web server is running |
 | `stats.products`, `stats.locations` | Counts |
 | `stats.lowStockCount`, `stats.lowStockList` | Items at or below the minimum stock |
+| `stats.inventory` | Everything in stock as JSON (name, amount, unit, minimum, low flag, locations) |
+| `stats.inventoryHtml` | Same as a simple HTML table, e.g. for a VIS html widget |
 | `shopping.addItem` | Write an item name (`ack=false`) to put it on the shopping list |
 
 Inventory data is stored in the adapter data directory (`shelfmate.json`), not in the object database.
