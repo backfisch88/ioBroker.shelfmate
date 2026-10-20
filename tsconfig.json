@@ -1,0 +1,15 @@
+{
+    "extends": "@tsconfig/node22/tsconfig.json",
+    "compilerOptions": {
+        "target": "es2022",
+        "module": "node16",
+        "moduleResolution": "node16",
+        "allowJs": true,
+        "checkJs": false,
+        "noEmit": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true
+    },
+    "include": ["main.js", "lib/**/*.js", "test/**/*.js"],
+    "exclude": ["node_modules/**", "www/**"]
+}
