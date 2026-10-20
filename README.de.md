@@ -13,7 +13,7 @@ ShelfMate ist ein Haushalts-Vorratslager für ioBroker. Es läuft als installier
 
 ## Installation
 
-Per Admin ("Aus eigener URL installieren") oder `iobroker url https://github.com/backfisch88/ioBroker.ShelfMate`.
+Per Admin ("Aus eigener URL installieren") oder `iobroker url https://github.com/backfisch88/ioBroker.shelfmate`.
 Danach eine Instanz anlegen und `https://<Host>:8120/` öffnen. Die vollständige Beschreibung steht in der englischen [README.md](README.md).
 
 ## Lizenz

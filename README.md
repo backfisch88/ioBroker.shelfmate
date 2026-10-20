@@ -1,10 +1,16 @@
-![Logo](admin/shelfmate.png)
+<p align="center"><img src="admin/shelfmate.png" alt="ShelfMate" width="160"></p>
+
+[![NPM version](https://img.shields.io/npm/v/iobroker.shelfmate.svg)](https://www.npmjs.com/package/iobroker.shelfmate)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 # ioBroker.shelfmate
 
-ShelfMate is a household inventory for ioBroker. Scan a product barcode, scan the QR code of a storage location,
-and ShelfMate knows what is where. It runs as an installable web app (iPhone home screen / Android) that is served
-directly by the adapter.
+Household inventory for ioBroker, served as an installable web app (iPhone home screen / Android) directly by the adapter.
+Know what is where, get warned at minimum stock and put missing items on your shopping list automatically.
+
+German short description: [README.de.md](README.de.md)
+
+---
 
 ## Features
 
@@ -19,18 +25,13 @@ directly by the adapter.
 
 ## Requirements
 
-- js-controller >= 6.0.11, admin >= 7.0.23, Node.js >= 20
-- A device with a camera in a secure context (HTTPS) if you want to scan with the phone camera
+- js-controller >= 6.0.11, admin >= 7.6.20, Node.js >= 22
+- HTTPS with a certificate the phone trusts if you want to use the camera for scanning and the offline mode
 
 ## Installation
 
-Until the adapter is available in the official repository, install it from GitHub with the ioBroker admin UI (Adapters → "Install from custom URL") or:
-
-```
-iobroker url https://github.com/backfisch88/ioBroker.ShelfMate
-```
-
-Then add an instance in the admin UI and open `https://<host>:8120/`.
+Install via the ioBroker Admin UI. Until the adapter is listed in the official repository, use "Install from custom URL" with
+`https://github.com/backfisch88/ioBroker.shelfmate`. Then add an instance and open `https://<host>:8120/`.
 
 ## Configuration
 
@@ -62,7 +63,7 @@ With Bring, Bring special or Script (with a remove state) there are two independ
 Camera access and the offline mode need a certificate the phone trusts. With a self-signed certificate, download the ioBroker certificate in the app (Settings), install the profile and enable full trust. A certificate from a public CA (for example Let's Encrypt via the
 `acme` adapter) needs no installation.
 
-## Data points
+## Datapoints
 
 | State | Description |
 | --- | --- |
@@ -76,9 +77,15 @@ A JSON backup can be downloaded and imported in the app (Settings). An import re
 
 ## Changelog
 ### **WORK IN PROGRESS**
-- (Henrik Schoenhofen) initial release
+- New: initial release
 
 ## License
 MIT License
 
-Copyright (c) 2026 Henrik Schoenhofen
+Copyright (c) 2026 Henrik Schoenhofen <henrik.schoenhofen@icloud.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
