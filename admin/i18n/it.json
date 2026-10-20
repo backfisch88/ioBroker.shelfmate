@@ -26,5 +26,13 @@
     "shoppingRemoveItemId": "Stato che riceve gli articoli da rimuovere (facoltativo)",
     "shoppingRemoveItemIdHelp": "Il nome dell'articolo viene scritto in questo stato con ack=false. Abilita la rimozione tramite la spunta nell'app e l'opzione sotto",
     "removeOnUncheck": "Rimuovi dalla lista quando tolgo la spunta nell'app",
-    "removeOnUncheckHelp": "Toccando la spunta nell'app l'articolo viene tolto anche dalla lista"
+    "removeOnUncheckHelp": "Toccando la spunta nell'app l'articolo viene tolto anche dalla lista",
+    "hBestBefore": "Data di scadenza",
+    "bestBeforeMode": "Data di scadenza",
+    "bestBeforeModeHelp": "Disattivato: non usato. Per prodotto: una data per prodotto. Per carico: una data a ogni carico, allo scarico si usa prima la più vecchia.",
+    "bbOff": "Disattivato",
+    "bbProduct": "Per prodotto",
+    "bbBatch": "Per carico",
+    "bestBeforeWarnDays": "Avvisa prima della scadenza (giorni)",
+    "bestBeforeWarnDaysHelp": "I prodotti in scadenza in questo periodo vengono evidenziati ed elencati nei datapoint"
 }

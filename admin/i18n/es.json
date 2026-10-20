@@ -26,5 +26,13 @@
     "shoppingRemoveItemId": "Estado que recibe artículos a quitar (opcional)",
     "shoppingRemoveItemIdHelp": "El nombre del artículo se escribe en este estado con ack=false. Activa quitar con la marca de la app y la opción de abajo",
     "removeOnUncheck": "Quitar de la lista cuando desmarco la casilla en la app",
-    "removeOnUncheckHelp": "Al tocar la marca en la app, el artículo también se quita de la lista"
+    "removeOnUncheckHelp": "Al tocar la marca en la app, el artículo también se quita de la lista",
+    "hBestBefore": "Fecha de caducidad",
+    "bestBeforeMode": "Fecha de caducidad",
+    "bestBeforeModeHelp": "Desactivado: no se usa. Por producto: una fecha por producto. Por entrada: una fecha en cada entrada de stock, al retirar se usa primero la más antigua.",
+    "bbOff": "Desactivado",
+    "bbProduct": "Por producto",
+    "bbBatch": "Por entrada",
+    "bestBeforeWarnDays": "Avisar antes de caducar (días)",
+    "bestBeforeWarnDaysHelp": "Los productos que caducan en este periodo se marcan y se listan en los puntos de datos"
 }

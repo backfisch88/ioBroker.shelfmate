@@ -26,5 +26,13 @@
     "shoppingRemoveItemId": "Status voor te verwijderen items (optioneel)",
     "shoppingRemoveItemIdHelp": "De artikelnaam wordt met ack=false naar deze status geschreven. Maakt verwijderen via het vinkje in de app en de optie hieronder mogelijk",
     "removeOnUncheck": "Van de lijst halen als ik het vinkje in de app weghaal",
-    "removeOnUncheckHelp": "Tikken op het vinkje in de app haalt het item ook van de lijst"
+    "removeOnUncheckHelp": "Tikken op het vinkje in de app haalt het item ook van de lijst",
+    "hBestBefore": "Houdbaarheidsdatum",
+    "bestBeforeMode": "Houdbaarheidsdatum",
+    "bestBeforeModeHelp": "Uit: niet gebruikt. Per product: één datum per product. Per inslag: een datum bij elke inslag, bij uitnemen gaat de oudste eerst.",
+    "bbOff": "Uit",
+    "bbProduct": "Per product",
+    "bbBatch": "Per inslag",
+    "bestBeforeWarnDays": "Waarschuwen vóór verloop (dagen)",
+    "bestBeforeWarnDaysHelp": "Producten die binnen deze periode verlopen worden gemarkeerd en in de datapunten vermeld"
 }

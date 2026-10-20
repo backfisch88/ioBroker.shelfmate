@@ -26,5 +26,13 @@
     "shoppingRemoveItemId": "Datenpunkt zum Entfernen von Einträgen (optional)",
     "shoppingRemoveItemIdHelp": "Der Artikelname wird mit ack=false in diesen Datenpunkt geschrieben. Aktiviert das Entfernen über den Haken in der App und die Option darunter",
     "removeOnUncheck": "Von der Liste entfernen, wenn ich den Haken in der App entferne",
-    "removeOnUncheckHelp": "Das Antippen des Hakens in der App nimmt den Artikel auch von der Liste"
+    "removeOnUncheckHelp": "Das Antippen des Hakens in der App nimmt den Artikel auch von der Liste",
+    "hBestBefore": "Mindesthaltbarkeit (MHD)",
+    "bestBeforeMode": "MHD",
+    "bestBeforeModeHelp": "Aus: nicht genutzt. Pro Produkt: ein Datum am Produkt. Pro Einlagerung: Datum bei jeder Einlagerung, beim Entnehmen wird das älteste zuerst verbraucht.",
+    "bbOff": "Aus",
+    "bbProduct": "Pro Produkt",
+    "bbBatch": "Pro Einlagerung",
+    "bestBeforeWarnDays": "Warnen vor Ablauf (Tage)",
+    "bestBeforeWarnDaysHelp": "Produkte, die in diesem Zeitraum ablaufen, werden markiert und in den Datenpunkten gelistet"
 }

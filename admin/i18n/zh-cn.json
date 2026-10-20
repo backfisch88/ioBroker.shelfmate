@@ -26,5 +26,13 @@
     "shoppingRemoveItemId": "接收待移除条目的状态（可选）",
     "shoppingRemoveItemIdHelp": "商品名称将以 ack=false 写入此状态。启用应用中的勾选移除及下方选项",
     "removeOnUncheck": "在应用中取消勾选时从清单中移除",
-    "removeOnUncheckHelp": "在应用中点按勾选标记时，也会将该商品从清单中移除"
+    "removeOnUncheckHelp": "在应用中点按勾选标记时，也会将该商品从清单中移除",
+    "hBestBefore": "保质期",
+    "bestBeforeMode": "保质期",
+    "bestBeforeModeHelp": "关闭：不使用。按产品：每个产品一个日期。按入库：每次入库一个日期，取出时先用最早的。",
+    "bbOff": "关闭",
+    "bbProduct": "按产品",
+    "bbBatch": "按入库",
+    "bestBeforeWarnDays": "到期前提醒（天）",
+    "bestBeforeWarnDaysHelp": "此期间内到期的产品会被标记并列入数据点"
 }

@@ -30,6 +30,19 @@ function inventoryHtml(items) {
     return `<table><thead><tr><th>Product</th><th>Amount</th><th>Location</th></tr></thead><tbody>${rows}</tbody></table>`;
 }
 
+/**
+ * @param {object[]} items expiring products
+ */
+function expiringHtml(items) {
+    const rows = items
+        .map(
+            i =>
+                `<tr><td>${esc(i.name)}</td><td>${esc(i.date)}</td><td>${i.expired ? 'expired' : `${i.days} d`}</td><td>${i.amount}</td><td>${esc(i.place)}</td></tr>`,
+        )
+        .join('');
+    return `<table><thead><tr><th>Product</th><th>Best before</th><th>Remaining</th><th>Amount</th><th>Location</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+
 class Shelfmate extends utils.Adapter {
     /**
      * @param {Partial<utils.AdapterOptions>} [options] adapter options
@@ -73,6 +86,8 @@ class Shelfmate extends utils.Adapter {
         }
         await this.subscribeStatesAsync('shopping.addItem');
         await this.updateStats();
+        // expiry changes with the date, not only with bookings
+        this.setInterval(() => this.updateStats().catch(e => this.log.debug(`Statistics: ${e.message}`)), 3600000);
 
         this.web = new ShelfMateServer({
             wwwDir: path.join(__dirname, 'www'),
@@ -125,6 +140,9 @@ class Shelfmate extends utils.Adapter {
             ['stats.lowStockList', 'Names at or below minimum stock (JSON)', 'string', 'json', false],
             ['stats.inventory', 'Everything in stock (JSON)', 'string', 'json', false],
             ['stats.inventoryHtml', 'Everything in stock (HTML table for VIS)', 'string', 'html', false],
+            ['stats.expiringCount', 'Products expired or expiring soon', 'number', 'value', false],
+            ['stats.expiring', 'Products expired or expiring soon (JSON)', 'string', 'json', false],
+            ['stats.expiringHtml', 'Products expired or expiring soon (HTML table for VIS)', 'string', 'html', false],
             ['shopping.addItem', 'Add an item to the shopping list', 'string', 'text', true],
         ];
         await this.setObjectNotExistsAsync('stats', { type: 'channel', common: { name: 'Statistics' }, native: {} });
@@ -188,7 +206,13 @@ class Shelfmate extends utils.Adapter {
         } catch (e) {
             this.log.debug(`Shopping list unavailable: ${e.message}`);
         }
-        return { ...this.inv.data, ready: true, bring, shopping: !!this.shopping && this.shopping.mode !== 'off' };
+        return {
+            ...this.inv.data,
+            ready: true,
+            bring,
+            shopping: !!this.shopping && this.shopping.mode !== 'off',
+            config: this.bestBeforeConfig(),
+        };
     }
 
     /**
@@ -302,9 +326,25 @@ class Shelfmate extends utils.Adapter {
         }
     }
 
+    /**
+     * Best-before settings, validated.
+     *
+     * @returns {{bestBeforeMode: 'off' | 'product' | 'batch', bestBeforeWarnDays: number}} settings
+     */
+    bestBeforeConfig() {
+        const mode = ['product', 'batch'].includes(this.config.bestBeforeMode) ? this.config.bestBeforeMode : 'off';
+        const days = Math.floor(Number(this.config.bestBeforeWarnDays));
+        return {
+            bestBeforeMode: mode,
+            bestBeforeWarnDays: Number.isFinite(days) && days >= 0 && days <= 365 ? days : 7,
+        };
+    }
+
     async updateStats() {
         const low = this.inv.lowStockNames();
         const items = this.inv.inventoryList();
+        const bb = this.bestBeforeConfig();
+        const expiring = this.inv.expiryList(bb.bestBeforeMode, bb.bestBeforeWarnDays);
         await Promise.all([
             this.setState('stats.products', Object.keys(this.inv.data.products).length, true),
             this.setState('stats.locations', Object.keys(this.inv.data.locations).length, true),
@@ -312,6 +352,9 @@ class Shelfmate extends utils.Adapter {
             this.setState('stats.lowStockList', JSON.stringify(low), true),
             this.setState('stats.inventory', JSON.stringify(items), true),
             this.setState('stats.inventoryHtml', inventoryHtml(items), true),
+            this.setState('stats.expiringCount', expiring.length, true),
+            this.setState('stats.expiring', JSON.stringify(expiring), true),
+            this.setState('stats.expiringHtml', expiringHtml(expiring), true),
         ]);
     }
 

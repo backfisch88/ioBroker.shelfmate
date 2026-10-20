@@ -206,6 +206,52 @@
             "md": 12,
             "lg": 8,
             "xl": 8
+        },
+        "_hBb": {
+            "type": "header",
+            "text": "hBestBefore",
+            "size": 3,
+            "newLine": true,
+            "xs": 12
+        },
+        "bestBeforeMode": {
+            "type": "select",
+            "label": "bestBeforeMode",
+            "help": "bestBeforeModeHelp",
+            "options": [
+                {
+                    "value": "off",
+                    "label": "bbOff"
+                },
+                {
+                    "value": "product",
+                    "label": "bbProduct"
+                },
+                {
+                    "value": "batch",
+                    "label": "bbBatch"
+                }
+            ],
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "bestBeforeWarnDays": {
+            "type": "number",
+            "label": "bestBeforeWarnDays",
+            "help": "bestBeforeWarnDaysHelp",
+            "min": 0,
+            "max": 365,
+            "hidden": "data.bestBeforeMode === 'off'",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
         }
     }
 }

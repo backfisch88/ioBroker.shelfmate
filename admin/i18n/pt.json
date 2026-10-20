@@ -26,5 +26,13 @@
     "shoppingRemoveItemId": "Estado que recebe itens a remover (opcional)",
     "shoppingRemoveItemIdHelp": "O nome do item é escrito neste estado com ack=false. Ativa a remoção pelo visto na app e a opção abaixo",
     "removeOnUncheck": "Remover da lista quando eu desmarcar o visto na app",
-    "removeOnUncheckHelp": "Tocar no visto na app também retira o item da lista"
+    "removeOnUncheckHelp": "Tocar no visto na app também retira o item da lista",
+    "hBestBefore": "Data de validade",
+    "bestBeforeMode": "Data de validade",
+    "bestBeforeModeHelp": "Desligado: não usado. Por produto: uma data em cada produto. Por entrada: uma data em cada entrada de stock, na saída usa-se primeiro a mais antiga.",
+    "bbOff": "Desligado",
+    "bbProduct": "Por produto",
+    "bbBatch": "Por entrada",
+    "bestBeforeWarnDays": "Avisar antes de expirar (dias)",
+    "bestBeforeWarnDaysHelp": "Produtos que expiram neste período são marcados e listados nos pontos de dados"
 }

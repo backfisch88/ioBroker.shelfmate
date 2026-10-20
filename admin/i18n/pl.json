@@ -26,5 +26,13 @@
     "shoppingRemoveItemId": "Stan odbierający pozycje do usunięcia (opcjonalnie)",
     "shoppingRemoveItemIdHelp": "Nazwa produktu jest zapisywana w tym stanie z ack=false. Włącza usuwanie przez haczyk w aplikacji i opcję poniżej",
     "removeOnUncheck": "Usuń z listy, gdy odznaczę haczyk w aplikacji",
-    "removeOnUncheckHelp": "Dotknięcie haczyka w aplikacji usuwa pozycję także z listy"
+    "removeOnUncheckHelp": "Dotknięcie haczyka w aplikacji usuwa pozycję także z listy",
+    "hBestBefore": "Termin ważności",
+    "bestBeforeMode": "Termin ważności",
+    "bestBeforeModeHelp": "Wył.: nieużywane. Na produkt: jedna data przy produkcie. Na dostawę: data przy każdym przyjęciu, przy pobraniu najpierw najstarsza.",
+    "bbOff": "Wył.",
+    "bbProduct": "Na produkt",
+    "bbBatch": "Na dostawę",
+    "bestBeforeWarnDays": "Ostrzegaj przed upływem (dni)",
+    "bestBeforeWarnDaysHelp": "Produkty wygasające w tym okresie są oznaczane i wymieniane w punktach danych"
 }
