@@ -12,6 +12,8 @@ on:
       # pre-releases
       - "v[0-9]+.[0-9]+.[0-9]+-**"
   pull_request: {}
+  release:
+    types: [published]
   workflow_dispatch:
     inputs:
       tag:
@@ -63,7 +65,8 @@ jobs:
 #  # Deploys the final package to NPM
 #  deploy:
 
-  # Creates a GitHub release for every version tag (v*). Does NOT publish to npm.
+  # Creates a DRAFT GitHub release for every version tag (v*). Does NOT publish to npm.
+  # Publishing the draft on GitHub (button "Publish release") is the explicit command that releases to npm.
   github-release:
     needs: [check-and-lint, adapter-tests]
     if: |
@@ -78,12 +81,12 @@ jobs:
       - name: Create GitHub release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release create "${{ github.ref_name }}" --title "${{ github.ref_name }}" --generate-notes ${{ contains(github.ref_name, '-') && '--prerelease' || '' }}
+        run: gh release create "${{ github.ref_name }}" --draft --title "${{ github.ref_name }}" --generate-notes ${{ contains(github.ref_name, '-') && '--prerelease' || '' }}
 
-  # Publishes to npm ONLY when started manually (Actions -> Test and Release -> Run workflow).
+  # Publishes to npm ONLY when a release is published by hand (or the workflow is started manually).
   # Uses npm trusted publishing (OIDC), no secret needed.
   npm-publish:
-    if: github.event_name == 'workflow_dispatch'
+    if: github.event_name == 'release' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -91,7 +94,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ inputs.tag }}
+          ref: ${{ github.event.release.tag_name || inputs.tag }}
       - uses: actions/setup-node@v4
         with:
           node-version: '24.x'
