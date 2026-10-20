@@ -113,6 +113,8 @@ A JSON backup can be downloaded and imported in the app (Settings). An import re
 - New: own EAN-13 codes for products without a barcode, with a label preview and a printable label
 - New: upload your own product image (scaled down and compressed automatically)
 - New: label size (width × height in mm) in the app settings; EAN and QR labels follow its aspect ratio
+- New: the barcode of products taken from Open Food Facts is locked (greyed out); the label can still be printed
+- Fix: the Nutri-Score letter A was shown as "Nach" because of a translation lookup error
 - Chore: merged the unpublished 0.1.1 entry into 0.1.2
 
 ### 0.1.3 (2026-10-20)

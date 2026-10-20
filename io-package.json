@@ -4,17 +4,17 @@
         "version": "0.1.4",
         "news": {
             "0.1.4": {
-                "en": "New product button in the scanner, own EAN codes with printable label, own product image upload (compressed); adjustable label size",
-                "de": "Button „Neues Produkt\" im Scanner, eigene EAN-Codes mit druckbarem Etikett, eigenes Produktbild hochladen (komprimiert); einstellbare Etikettengröße",
-                "ru": "Кнопка «Новый товар» в сканере, собственные коды EAN с печатной этикеткой, загрузка своего изображения товара (со сжатием); настраиваемый размер этикетки",
-                "pt": "Botão de novo produto no scanner, códigos EAN próprios com etiqueta imprimível, carregar imagem própria do produto (comprimida); tamanho de etiqueta ajustável",
-                "nl": "Knop nieuw product in de scanner, eigen EAN-codes met afdrukbaar etiket, eigen productafbeelding uploaden (gecomprimeerd); instelbaar etiketformaat",
-                "fr": "Bouton nouveau produit dans le scanner, codes EAN personnalisés avec étiquette imprimable, téléversement de sa propre image de produit (compressée); taille d'étiquette réglable",
-                "it": "Pulsante nuovo prodotto nello scanner, codici EAN propri con etichetta stampabile, caricamento di un'immagine prodotto propria (compressa); dimensione etichetta regolabile",
-                "es": "Botón de producto nuevo en el escáner, códigos EAN propios con etiqueta imprimible, subir imagen propia del producto (comprimida); tamaño de etiqueta ajustable",
-                "pl": "Przycisk nowego produktu w skanerze, własne kody EAN z etykietą do druku, własny obraz produktu (skompresowany); regulowany rozmiar etykiety",
-                "uk": "Кнопка «Новий товар» у сканері, власні коди EAN з етикеткою для друку, завантаження власного зображення товару (стиснене); налаштовуваний розмір етикетки",
-                "zh-cn": "扫描页新增“新产品”按钮，可生成自有 EAN 码并打印标签，可上传自己的产品图片（自动压缩）; 可调节标签尺寸"
+                "en": "New product button in the scanner, own EAN codes with printable label, own product image upload (compressed); adjustable label size; barcode of Open Food Facts products is locked, fixed Nutri-Score A display",
+                "de": "Button „Neues Produkt\" im Scanner, eigene EAN-Codes mit druckbarem Etikett, eigenes Produktbild hochladen (komprimiert); einstellbare Etikettengröße; Barcode von Open-Food-Facts-Produkten gesperrt, Anzeige des Nutri-Score A korrigiert",
+                "ru": "Кнопка «Новый товар» в сканере, собственные коды EAN с печатной этикеткой, загрузка своего изображения товара (со сжатием); настраиваемый размер этикетки; штрихкод товаров из Open Food Facts заблокирован, исправлено отображение Nutri-Score A",
+                "pt": "Botão de novo produto no scanner, códigos EAN próprios com etiqueta imprimível, carregar imagem própria do produto (comprimida); tamanho de etiqueta ajustável; código de barras de produtos do Open Food Facts bloqueado, corrigida a exibição do Nutri-Score A",
+                "nl": "Knop nieuw product in de scanner, eigen EAN-codes met afdrukbaar etiket, eigen productafbeelding uploaden (gecomprimeerd); instelbaar etiketformaat; barcode van Open Food Facts-producten vergrendeld, weergave Nutri-Score A hersteld",
+                "fr": "Bouton nouveau produit dans le scanner, codes EAN personnalisés avec étiquette imprimable, téléversement de sa propre image de produit (compressée); taille d'étiquette réglable; code-barres des produits Open Food Facts verrouillé, affichage du Nutri-Score A corrigé",
+                "it": "Pulsante nuovo prodotto nello scanner, codici EAN propri con etichetta stampabile, caricamento di un'immagine prodotto propria (compressa); dimensione etichetta regolabile; codice a barre dei prodotti Open Food Facts bloccato, corretta la visualizzazione del Nutri-Score A",
+                "es": "Botón de producto nuevo en el escáner, códigos EAN propios con etiqueta imprimible, subir imagen propia del producto (comprimida); tamaño de etiqueta ajustable; código de barras de productos de Open Food Facts bloqueado, corregida la visualización del Nutri-Score A",
+                "pl": "Przycisk nowego produktu w skanerze, własne kody EAN z etykietą do druku, własny obraz produktu (skompresowany); regulowany rozmiar etykiety; kod kreskowy produktów z Open Food Facts zablokowany, poprawiono wyświetlanie Nutri-Score A",
+                "uk": "Кнопка «Новий товар» у сканері, власні коди EAN з етикеткою для друку, завантаження власного зображення товару (стиснене); налаштовуваний розмір етикетки; штрихкод товарів з Open Food Facts заблоковано, виправлено відображення Nutri-Score A",
+                "zh-cn": "扫描页新增“新产品”按钮，可生成自有 EAN 码并打印标签，可上传自己的产品图片（自动压缩）; 可调节标签尺寸; Open Food Facts 产品的条形码已锁定，修复 Nutri-Score A 的显示"
             },
             "0.1.3": {
                 "en": "app, HTML data points and Open Food Facts follow the system language; button to create a self-signed certificate",
