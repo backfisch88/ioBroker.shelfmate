@@ -1,5 +1,5 @@
 /* Küchenlager Offline-Cache: Seite zuerst aus dem Netz (damit Updates ankommen), sonst aus dem Cache. */
-const CACHE = 'shelfmate-v7';
+const CACHE = 'shelfmate-v8';
 const IMG = 'shelfmate-img-v1';
 const PAGE = new URL('./', self.registration.scope).href;
 const CORE = [PAGE, new URL('shelfmateClient.js', self.registration.scope).href];
