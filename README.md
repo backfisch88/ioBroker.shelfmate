@@ -106,15 +106,20 @@ Inventory data is stored in the adapter data directory (`shelfmate.json`), not i
 A JSON backup can be downloaded and imported in the app (Settings). An import replaces all data; the previous state is kept as `shelfmate.json.bak`.
 
 ## Changelog
-### 0.1.2 (2026-10-20)
+### 0.1.3 (2026-10-20)
 - New: the app and the HTML data points follow the ioBroker system language (11 languages)
-- New: button in the settings that creates a self-signed certificate
 - New: Open Food Facts lookups use the app language (English as fallback)
+- New: button in the settings that creates a self-signed certificate
+
+### 0.1.2 (2026-10-20)
+- New: best-before date (off / per product / per stocking) with warning and data points `stats.expiring*`
+- Fix: moving stock between locations keeps the best-before dates
+
+### 0.1.1 (2026-10-20)
 - New: data points `stats.inventory` (JSON) and `stats.inventoryHtml` (table for VIS) with everything in stock
 - New: separate options to remove items from the shopping list when refilled and when unticked in the app
 - Fix: an item removed from the list in the app is no longer marked again until Bring! reports the change
-- New: best-before date (off / per product / per stocking) with warning and data points `stats.expiring*`
-- Fix: moving stock between locations keeps the best-before dates
+- Chore: README and package updates
 
 ### 0.1.0 (2026-10-20)
 - New: initial release (inventory, barcode / QR scanner, shopping list via script / Bring! / Bring special, JSON backup)
