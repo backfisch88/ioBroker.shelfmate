@@ -21,7 +21,10 @@ German short description: [README.de.md](README.de.md)
 - Product groups: "Flour" from several brands counts as one item
 - Optional best-before date (MHD) per product or per stocking, with warning before expiry
 - Minimum stock per product or group with automatic shopping-list entry
-- Shopping list modes: **off**, **script** (via data points) or **directly via the Bring! adapter**
+- Shopping list modes: **off**, **script** (via data points), **Bring!** or **Bring! special** (counts quantities up instead of skipping duplicates)
+- Optional removal from the shopping list when the stock is refilled and/or when the check mark is removed in the app
+- Overview of everything in stock as data points (JSON and HTML table for VIS)
+- JSON backup: download and import in the app
 - Built-in HTTPS web server that uses the certificates of your ioBroker installation (self-signed, own or Let's Encrypt collections)
 - Optional access key for the API
 
@@ -36,6 +39,14 @@ German short description: [README.de.md](README.de.md)
 Install via the ioBroker Admin UI. Until the adapter is listed in the official repository, use "Install from custom URL" with
 `https://github.com/backfisch88/ioBroker.shelfmate`. Then add an instance and open `https://<host>:8120/`.
 
+## Usage
+
+1. Open `https://<host>:8120/` on your phone and add the page to the home screen.
+2. Create storage areas and locations (Settings / Locations). Print the QR code of a location and attach it to the shelf.
+3. Add products: scan the barcode (name, brand, size and Nutri-Score come from Open Food Facts) or enter them by hand. Optionally set a product group, a minimum stock and a best-before date.
+4. Book stock in and out per location, or move it between locations. Scan the location QR code to select the location.
+5. When the stock falls to the minimum, the product is put on the shopping list. In the overview the check mark shows which products are on the list; tapping it removes the product again (see below).
+
 ## Configuration
 
 | Setting | Description |
@@ -47,6 +58,16 @@ Install via the ioBroker Admin UI. Until the adapter is listed in the official r
 | Shopping list mode | See below |
 | Best-before date | **Off**, **per product** (one date on each product) or **per stocking** (a date for every booking of stock; removing uses the oldest date first) |
 | Warn before expiry | Days before the date from which products are marked and listed in the data points |
+
+### Best-before date
+
+Choose the mode in the settings:
+
+- **Off**: no best-before handling.
+- **Per product**: each product has one optional date (product form). Products at or after the date are marked in the overview and detail view.
+- **Per stocking**: when you book stock in you can enter a date. Several dates per product and location are kept; booking out and moving always use the oldest date first.
+
+Products that are expired or expire within the configured warning period get a badge ("expires in 3 days" / "expired") and are listed in the data points `stats.expiring*`.
 
 ### Shopping list
 
