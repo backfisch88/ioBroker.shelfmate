@@ -34,5 +34,7 @@
     "bbProduct": "Na produkt",
     "bbBatch": "Na dostawę",
     "bestBeforeWarnDays": "Ostrzegaj przed upływem (dni)",
-    "bestBeforeWarnDaysHelp": "Produkty wygasające w tym okresie są oznaczane i wymieniane w punktach danych"
+    "bestBeforeWarnDaysHelp": "Produkty wygasające w tym okresie są oznaczane i wymieniane w punktach danych",
+    "createCert": "Utwórz certyfikat z podpisem własnym",
+    "createCertHelp": "Tworzy certyfikat dla tego serwera (nazwa hosta i adresy IP), zapisuje go w certyfikatach ioBroker i wybiera go. Zainstaluj go na urządzeniach przez pobranie pliku .cer."
 }

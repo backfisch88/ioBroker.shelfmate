@@ -5,6 +5,7 @@ const path = require('node:path');
 const crypto = require('node:crypto');
 const utils = require('@iobroker/adapter-core');
 const { WebServer } = require('@iobroker/webserver');
+const { createCertificate, NAMES } = require('./lib/cert');
 const { Inventory, clean } = require('./lib/core');
 const { Shopping } = require('./lib/shopping');
 const { texts } = require('./lib/i18n');
@@ -423,11 +424,43 @@ class Shelfmate extends utils.Adapter {
     }
 
     /**
+     * Creates a self-signed certificate and stores it in the ioBroker certificate collection.
+     *
+     * @returns {Promise<object>} answer for the admin UI
+     */
+    async makeCertificate() {
+        try {
+            const r = createCertificate();
+            const obj = await this.getForeignObjectAsync('system.certificates');
+            if (!obj) {
+                return { error: 'Certificate collection not found' };
+            }
+            obj.native = obj.native || {};
+            obj.native.certificates = obj.native.certificates || {};
+            obj.native.certificates[NAMES.pub] = r.cert;
+            obj.native.certificates[NAMES.priv] = r.key;
+            await this.setForeignObjectAsync('system.certificates', obj);
+            this.log.info(`Self-signed certificate created, valid until ${r.notAfter.toISOString().slice(0, 10)}`);
+            return {
+                result: `OK ${r.notAfter.toISOString().slice(0, 10)}: ${r.names.join(', ')}`,
+                native: { secure: true, certPublic: NAMES.pub, certPrivate: NAMES.priv, certChained: '' },
+            };
+        } catch (e) {
+            this.log.error(`Cannot create the certificate: ${e.message}`);
+            return { error: e.message };
+        }
+    }
+
+    /**
      * Answers the admin UI: list of the Bring! lists found in this installation.
      *
      * @param {ioBroker.Message} obj message
      */
     async onMessage(obj) {
+        if (obj && obj.command === 'createCertificate' && obj.callback) {
+            this.sendTo(obj.from, obj.command, await this.makeCertificate(), obj.callback);
+            return;
+        }
         if (!obj || obj.command !== 'getBringLists' || !obj.callback) {
             return;
         }

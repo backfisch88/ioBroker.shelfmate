@@ -34,5 +34,7 @@
     "bbProduct": "Pro Produkt",
     "bbBatch": "Pro Einlagerung",
     "bestBeforeWarnDays": "Warnen vor Ablauf (Tage)",
-    "bestBeforeWarnDaysHelp": "Produkte, die in diesem Zeitraum ablaufen, werden markiert und in den Datenpunkten gelistet"
+    "bestBeforeWarnDaysHelp": "Produkte, die in diesem Zeitraum ablaufen, werden markiert und in den Datenpunkten gelistet",
+    "createCert": "Selbstsigniertes Zertifikat erstellen",
+    "createCertHelp": "Erstellt ein Zertifikat für diesen Server (Hostname und IP-Adressen), legt es in den ioBroker-Zertifikaten ab und wählt es aus. Auf den Geräten über den .cer-Download installieren."
 }

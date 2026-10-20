@@ -34,5 +34,7 @@
     "bbProduct": "Per product",
     "bbBatch": "Per stocking",
     "bestBeforeWarnDays": "Warn before expiry (days)",
-    "bestBeforeWarnDaysHelp": "Products expiring within this period are marked and listed in the data points"
+    "bestBeforeWarnDaysHelp": "Products expiring within this period are marked and listed in the data points",
+    "createCert": "Create self-signed certificate",
+    "createCertHelp": "Creates a certificate for this host (host name and IP addresses), stores it in the ioBroker certificates and selects it. Install it on your devices via the .cer download."
 }

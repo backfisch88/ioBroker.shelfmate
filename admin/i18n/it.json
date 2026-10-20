@@ -34,5 +34,7 @@
     "bbProduct": "Per prodotto",
     "bbBatch": "Per carico",
     "bestBeforeWarnDays": "Avvisa prima della scadenza (giorni)",
-    "bestBeforeWarnDaysHelp": "I prodotti in scadenza in questo periodo vengono evidenziati ed elencati nei datapoint"
+    "bestBeforeWarnDaysHelp": "I prodotti in scadenza in questo periodo vengono evidenziati ed elencati nei datapoint",
+    "createCert": "Crea certificato autofirmato",
+    "createCertHelp": "Crea un certificato per questo server (nome host e indirizzi IP), lo salva nei certificati di ioBroker e lo seleziona. Installalo sui dispositivi tramite il download .cer."
 }
