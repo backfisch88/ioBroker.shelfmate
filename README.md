@@ -23,10 +23,12 @@ German short description: [README.de.md](README.de.md)
 - Built-in HTTPS web server that uses the certificates of your ioBroker installation (self-signed, own or Let's Encrypt collections)
 - Optional access key for the API
 
+> **Work in progress:** barcode / QR scanning with the phone camera is not available yet. Products and locations are entered manually.
+
 ## Requirements
 
 - js-controller >= 6.0.11, admin >= 7.6.20, Node.js >= 22
-- HTTPS with a certificate the phone trusts if you want to use the camera for scanning and the offline mode
+- HTTPS with a certificate the phone trusts for the offline mode
 
 ## Installation
 
@@ -60,7 +62,7 @@ With Bring, Bring special or Script (with a remove state) there are two independ
 
 ### Trusting the certificate on iPhone
 
-Camera access and the offline mode need a certificate the phone trusts. With a self-signed certificate, download the ioBroker certificate in the app (Settings), install the profile and enable full trust. A certificate from a public CA (for example Let's Encrypt via the
+The offline mode needs a certificate the phone trusts. With a self-signed certificate, download the ioBroker certificate in the app (Settings), install the profile and enable full trust. A certificate from a public CA (for example Let's Encrypt via the
 `acme` adapter) needs no installation.
 
 ## Datapoints
@@ -77,7 +79,8 @@ A JSON backup can be downloaded and imported in the app (Settings). An import re
 
 ## Changelog
 ### **WORK IN PROGRESS**
-- New: initial release
+- New: initial release (inventory, shopping list via script / Bring! / Bring special, JSON backup)
+- WIP: barcode / QR scanner
 
 ## License
 MIT License
