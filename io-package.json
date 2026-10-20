@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "shelfmate",
-        "version": "0.1.1",
+        "version": "0.1.2",
         "news": {
+            "0.1.2": {
+                "en": "Best-before date (off / per product / per stocking) with warning and data points, moving stock keeps the dates",
+                "de": "Mindesthaltbarkeit (aus / pro Produkt / pro Einlagerung) mit Warnung und Datenpunkten, Verschieben behält die Daten",
+                "ru": "Срок годности (выкл. / по продукту / по закладке) с предупреждением и датапоинтами, при перемещении даты сохраняются",
+                "pt": "Data de validade (desligado / por produto / por entrada) com aviso e pontos de dados, mover o stock mantém as datas",
+                "nl": "Houdbaarheidsdatum (uit / per product / per inslag) met waarschuwing en datapunten, verplaatsen behoudt de data",
+                "fr": "Date limite (désactivé / par produit / par entrée) avec avertissement et points de données, le déplacement conserve les dates",
+                "it": "Data di scadenza (disattivato / per prodotto / per carico) con avviso e datapoint, lo spostamento mantiene le date",
+                "es": "Fecha de caducidad (desactivado / por producto / por entrada) con aviso y puntos de datos, al mover se conservan las fechas",
+                "pl": "Termin ważności (wył. / na produkt / na dostawę) z ostrzeżeniem i punktami danych, przenoszenie zachowuje daty",
+                "uk": "Термін придатності (вимк. / за продуктом / за надходженням) з попередженням і датапоінтами, переміщення зберігає дати",
+                "zh-cn": "保质期（关闭 / 按产品 / 按入库），含提醒和数据点，移动库存时保留日期"
+            },
             "0.1.1": {
                 "en": "Added inventory overview data points (JSON and HTML for VIS), separate options for removing items from the shopping list, README improvements",
                 "de": "Datenpunkte für die Lagerübersicht (JSON und HTML für VIS), getrennte Optionen zum Entfernen von der Einkaufsliste, README verbessert",

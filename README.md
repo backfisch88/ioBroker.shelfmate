@@ -85,7 +85,10 @@ A JSON backup can be downloaded and imported in the app (Settings). An import re
 
 ## Changelog
 ### **WORK IN PROGRESS**
+
+### 0.1.2 (2026-10-20)
 - New: best-before date (off / per product / per stocking) with warning and data points `stats.expiring*`
+- Fix: moving stock between locations keeps the best-before dates
 
 ### 0.1.1 (2026-10-20)
 - New: data points `stats.inventory` (JSON) and `stats.inventoryHtml` (table for VIS) with everything in stock

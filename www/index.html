@@ -350,9 +350,13 @@ function renderMove(p){
   if(!f||!t||f===t){toast('Ziel-Lagerort wählen');return}
   if(!Number.isFinite(q)||q<=0||q>max()||(p.type==='count'&&!Number.isInteger(q))){toast('Ungültige Menge (max. '+fmt(max())+')');return}
   try{
+   let left=q;const parts=[];
+   for(const b of [...(((data.batches||{})[p.id]||{})[f]||[])].sort((x,y)=>x.d.localeCompare(y.d))){if(left<=0)break;const k=Math.min(b.q,left);if(k>0){parts.push({d:b.d,q:k});left=Math.round((left-k)*1000)/1000}}
+   if(left>0)parts.push({d:'',q:left});
    await command('changeStock',{productId:p.id,locationId:f,delta:-q});
-   try{await command('changeStock',{productId:p.id,locationId:t,delta:q})}
-   catch(e){try{await command('changeStock',{productId:p.id,locationId:f,delta:q})}catch(_){}throw e}
+   const done=[];
+   try{for(const x of parts){await command('changeStock',{productId:p.id,locationId:t,delta:x.q,bestBefore:x.d||undefined});done.push(x)}}
+   catch(e){try{for(const x of done)await command('changeStock',{productId:p.id,locationId:t,delta:-x.q});for(const x of parts)await command('changeStock',{productId:p.id,locationId:f,delta:x.q,bestBefore:x.d||undefined})}catch(_){}throw e}
    lastPlace=t;localStorage.setItem('kuechenlager-place',t);toast('Verschoben');go('detail');
   }catch(e){toast(e.message)}
  };
