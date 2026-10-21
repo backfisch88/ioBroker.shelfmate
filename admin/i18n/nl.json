@@ -36,5 +36,16 @@
     "bestBeforeWarnDays": "Waarschuwen vóór verloop (dagen)",
     "bestBeforeWarnDaysHelp": "Producten die binnen deze periode verlopen worden gemarkeerd en in de datapunten vermeld",
     "createCert": "Zelfondertekend certificaat maken",
-    "createCertHelp": "Maakt een certificaat voor deze server (hostnaam en IP-adressen), slaat het op in de ioBroker-certificaten en selecteert het. Installeer het op je apparaten via de .cer-download."
+    "createCertHelp": "Maakt een certificaat voor deze server (hostnaam en IP-adressen), slaat het op in de ioBroker-certificaten en selecteert het. Installeer het op je apparaten via de .cer-download.",
+    "hNotify": "Meldingen",
+    "notifyAdapter": "Meldingsadapter",
+    "notifyAdapterHelp": "Geïnstalleerde instanties zoals telegram, telegrammenu2, pushover, signal, whatsapp, matrix of email. Leeg = geen meldingen",
+    "notifyTarget": "Ontvanger (optioneel)",
+    "notifyTargetHelp": "Chat-ID bij telegram, e-mailadres bij email. Leeg = standaardontvanger van de adapter",
+    "notifyArea": "Gebied in telegrammenu2",
+    "notifyAreaHelp": "Moet een in telegrammenu2 al goedgekeurd gebied zijn",
+    "notifyLow": "Melden bij bereiken van de minimumvoorraad",
+    "notifyExpiry": "Dagelijks bericht over verlopen en bijna verlopen producten",
+    "notifyTime": "Tijdstip van het dagelijkse bericht (UU:MM)",
+    "notifyTest": "Testbericht verzenden"
 }

@@ -36,5 +36,16 @@
     "bestBeforeWarnDays": "Warnen vor Ablauf (Tage)",
     "bestBeforeWarnDaysHelp": "Produkte, die in diesem Zeitraum ablaufen, werden markiert und in den Datenpunkten gelistet",
     "createCert": "Selbstsigniertes Zertifikat erstellen",
-    "createCertHelp": "Erstellt ein Zertifikat für diesen Server (Hostname und IP-Adressen), legt es in den ioBroker-Zertifikaten ab und wählt es aus. Auf den Geräten über den .cer-Download installieren."
+    "createCertHelp": "Erstellt ein Zertifikat für diesen Server (Hostname und IP-Adressen), legt es in den ioBroker-Zertifikaten ab und wählt es aus. Auf den Geräten über den .cer-Download installieren.",
+    "hNotify": "Benachrichtigungen",
+    "notifyAdapter": "Benachrichtigungs-Adapter",
+    "notifyAdapterHelp": "Installierte Instanzen wie telegram, telegrammenu2, pushover, signal, whatsapp, matrix oder email. Leer = keine Benachrichtigungen",
+    "notifyTarget": "Empfänger (optional)",
+    "notifyTargetHelp": "Chat-ID bei telegram, E-Mail-Adresse bei email. Leer = Standardempfänger des Adapters",
+    "notifyArea": "Bereich in telegrammenu2",
+    "notifyAreaHelp": "Muss ein in telegrammenu2 bereits freigegebener Bereich sein",
+    "notifyLow": "Meldung bei Erreichen des Mindestbestands",
+    "notifyExpiry": "Tägliche Meldung zu abgelaufenen und bald ablaufenden Produkten",
+    "notifyTime": "Uhrzeit der täglichen Meldung (HH:MM)",
+    "notifyTest": "Testnachricht senden"
 }

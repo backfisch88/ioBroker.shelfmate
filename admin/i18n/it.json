@@ -36,5 +36,16 @@
     "bestBeforeWarnDays": "Avvisa prima della scadenza (giorni)",
     "bestBeforeWarnDaysHelp": "I prodotti in scadenza in questo periodo vengono evidenziati ed elencati nei datapoint",
     "createCert": "Crea certificato autofirmato",
-    "createCertHelp": "Crea un certificato per questo server (nome host e indirizzi IP), lo salva nei certificati di ioBroker e lo seleziona. Installalo sui dispositivi tramite il download .cer."
+    "createCertHelp": "Crea un certificato per questo server (nome host e indirizzi IP), lo salva nei certificati di ioBroker e lo seleziona. Installalo sui dispositivi tramite il download .cer.",
+    "hNotify": "Notifiche",
+    "notifyAdapter": "Adattatore di notifica",
+    "notifyAdapterHelp": "Istanze installate come telegram, telegrammenu2, pushover, signal, whatsapp, matrix o email. Vuoto = nessuna notifica",
+    "notifyTarget": "Destinatario (facoltativo)",
+    "notifyTargetHelp": "ID chat per telegram, indirizzo per email. Vuoto = destinatario predefinito dell'adattatore",
+    "notifyArea": "Area in telegrammenu2",
+    "notifyAreaHelp": "Deve essere un'area già approvata in telegrammenu2",
+    "notifyLow": "Avvisa al raggiungimento della scorta minima",
+    "notifyExpiry": "Messaggio giornaliero su prodotti scaduti o in scadenza",
+    "notifyTime": "Ora del messaggio giornaliero (HH:MM)",
+    "notifyTest": "Invia messaggio di prova"
 }

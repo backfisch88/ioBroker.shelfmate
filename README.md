@@ -26,6 +26,9 @@ German short description: [README.de.md](README.de.md)
 - Shopping list modes: **off**, **script** (via data points), **Bring!** or **Bring! special** (counts quantities up instead of skipping duplicates)
 - Optional removal from the shopping list when the stock is refilled and/or when the check mark is removed in the app
 - Overview of everything in stock as data points (JSON and HTML table for VIS)
+- Notifications through Telegram, telegrammenu2, Pushover, Signal, WhatsApp, Matrix or e-mail: minimum stock reached, daily message about expired and expiring products
+- Consumption of the last 30 days per product with a suggestion for the minimum stock
+- Device name per phone, shown in the history for every booking
 - JSON backup: download and import in the app
 - Built-in HTTPS web server that uses the certificates of your ioBroker installation (self-signed, own or Let's Encrypt collections)
 - Optional access key for the API
@@ -60,6 +63,7 @@ Install via the ioBroker Admin UI (Adapters). Then add an instance and open `htt
 | Access key | Optional. If set, the app asks for the key once per device |
 | Shopping list mode | See below |
 | Best-before date | **Off**, **per product** (one date on each product) or **per stocking** (a date for every booking of stock; removing uses the oldest date first) |
+| Notification adapter | Installed instance for messages (telegram, telegrammenu2, pushover, signal, whatsapp, matrix, email). Optional recipient (chat ID or e-mail address), the area for telegrammenu2, a test button, and the options "minimum stock reached" and "daily message about expired products" with its time |
 | Warn before expiry | Days before the date from which products are marked and listed in the data points |
 
 ### Best-before date
@@ -101,6 +105,7 @@ Camera access and the offline mode need a certificate the phone trusts. With a s
 | `stats.lowStockCount`, `stats.lowStockList` | Items at or below the minimum stock |
 | `stats.inventory` | Everything in stock as JSON (name, amount, unit, minimum, low flag, locations) |
 | `stats.inventoryHtml` | Same as a simple HTML table, e.g. for a VIS html widget |
+| `stats.consumption` | Consumption of the last 30 days per product (JSON, moves between locations do not count) |
 | `stats.expiringCount`, `stats.expiring`, `stats.expiringHtml` | Products that are expired or expire within the warning period (count, JSON, HTML table) |
 | `shopping.addItem` | Write an item name (`ack=false`) to put it on the shopping list |
 
@@ -109,19 +114,21 @@ A JSON backup can be downloaded and imported in the app (Settings). An import or
 
 ## Work in progress and roadmap
 
-ShelfMate is under active development. Planned and possible features (no promises, no order):
+ShelfMate is under active development. Planned features (no promises, no order):
 
-- **External barcode scanner** (planned): a USB or Bluetooth hand scanner at the shelf, so you can book stock in and out without taking out the phone
-- Stocktaking mode: count what is really on the shelf and correct the stock in one pass
-- Notifications for products that are about to expire or run low (data point and/or message adapters such as Telegram)
-- Consumption statistics and a suggestion for the minimum stock based on the history
-- CSV import and export in addition to the JSON backup
-- Device name per phone (for example "iPhone of Henrik") that is shown in the history for every booking, without any user management
-- More label templates (for example with best-before date)
+- **Stocktaking mode**: count what is really on the shelf per storage location, either as a list (target quantity, enter the counted quantity) or by scanning every item; the variant can be chosen in the settings. Later also for a whole area, location after location. Corrections appear in the history as "Stocktaking"
+- **External barcode scanner** (USB or Bluetooth, keyboard mode): configurable prefix and suffix, scans are told apart from typing by their speed, control barcodes such as "stock in" / "take out" to work without the display
+- **Export** of the stock as CSV and as a printable PDF
+- **More label templates**: "opened on", freezer label ("frozen on" / "best before"), box label with contents list, large shelf label, QR-only label
 
 Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
 ## Changelog
+### 0.1.11 (2026-10-21)
+- New: notifications through any installed notification adapter (Telegram, telegrammenu2, Pushover, Signal, WhatsApp, Matrix, e-mail): minimum stock reached and a daily message about expired / expiring products, with a test button
+- New: consumption of the last 30 days per product in the app and as data point `stats.consumption`, with a suggestion for the minimum stock
+- New: device name in the settings, shown in the history for every booking
+
 ### 0.1.10 (2026-10-21)
 - Maintenance: repository checker fixes (Node 26 in the test matrix, workflow, metadata, Node.js >= 22.12); the certificate collection is chosen from a drop-down list
 

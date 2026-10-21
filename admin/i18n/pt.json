@@ -36,5 +36,16 @@
     "bestBeforeWarnDays": "Avisar antes de expirar (dias)",
     "bestBeforeWarnDaysHelp": "Produtos que expiram neste período são marcados e listados nos pontos de dados",
     "createCert": "Criar certificado autoassinado",
-    "createCertHelp": "Cria um certificado para este servidor (nome do host e endereços IP), guarda-o nos certificados do ioBroker e seleciona-o. Instale-o nos dispositivos através da transferência .cer."
+    "createCertHelp": "Cria um certificado para este servidor (nome do host e endereços IP), guarda-o nos certificados do ioBroker e seleciona-o. Instale-o nos dispositivos através da transferência .cer.",
+    "hNotify": "Notificações",
+    "notifyAdapter": "Adaptador de notificações",
+    "notifyAdapterHelp": "Instâncias instaladas como telegram, telegrammenu2, pushover, signal, whatsapp, matrix ou email. Vazio = sem notificações",
+    "notifyTarget": "Destinatário (opcional)",
+    "notifyTargetHelp": "ID do chat para telegram, endereço para email. Vazio = destinatário padrão do adaptador",
+    "notifyArea": "Área no telegrammenu2",
+    "notifyAreaHelp": "Tem de ser uma área já aprovada no telegrammenu2",
+    "notifyLow": "Avisar ao atingir o stock mínimo",
+    "notifyExpiry": "Aviso diário sobre produtos expirados e a expirar",
+    "notifyTime": "Hora do aviso diário (HH:MM)",
+    "notifyTest": "Enviar mensagem de teste"
 }

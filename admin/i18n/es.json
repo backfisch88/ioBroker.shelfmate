@@ -36,5 +36,16 @@
     "bestBeforeWarnDays": "Avisar antes de caducar (días)",
     "bestBeforeWarnDaysHelp": "Los productos que caducan en este periodo se marcan y se listan en los puntos de datos",
     "createCert": "Crear certificado autofirmado",
-    "createCertHelp": "Crea un certificado para este servidor (nombre de host y direcciones IP), lo guarda en los certificados de ioBroker y lo selecciona. Instálalo en los dispositivos mediante la descarga .cer."
+    "createCertHelp": "Crea un certificado para este servidor (nombre de host y direcciones IP), lo guarda en los certificados de ioBroker y lo selecciona. Instálalo en los dispositivos mediante la descarga .cer.",
+    "hNotify": "Notificaciones",
+    "notifyAdapter": "Adaptador de notificaciones",
+    "notifyAdapterHelp": "Instancias instaladas como telegram, telegrammenu2, pushover, signal, whatsapp, matrix o email. Vacío = sin notificaciones",
+    "notifyTarget": "Destinatario (opcional)",
+    "notifyTargetHelp": "ID de chat para telegram, dirección para email. Vacío = destinatario predeterminado del adaptador",
+    "notifyArea": "Área en telegrammenu2",
+    "notifyAreaHelp": "Debe ser un área ya aprobada en telegrammenu2",
+    "notifyLow": "Avisar al alcanzar el stock mínimo",
+    "notifyExpiry": "Mensaje diario sobre productos caducados o a punto de caducar",
+    "notifyTime": "Hora del mensaje diario (HH:MM)",
+    "notifyTest": "Enviar mensaje de prueba"
 }

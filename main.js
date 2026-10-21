@@ -9,6 +9,7 @@ const { createCertificate, NAMES } = require('./lib/cert');
 const { Inventory, clean } = require('./lib/core');
 const { Shopping } = require('./lib/shopping');
 const { texts } = require('./lib/i18n');
+const { NOTIFY_ADAPTERS, TEXT: NOTIFY_TEXT, lowText, expiryText, msUntil, deliver } = require('./lib/notify');
 const { ShelfMateServer } = require('./lib/server');
 
 const DATA_FILE = 'shelfmate.json';
@@ -99,6 +100,8 @@ class Shelfmate extends utils.Adapter {
         // expiry changes with the date, not only with bookings
         this.setInterval(() => this.updateStats().catch(e => this.log.debug(`Statistics: ${e.message}`)), 3600000);
 
+        this.scheduleNotify();
+
         this.web = new ShelfMateServer({
             wwwDir: path.join(__dirname, 'www'),
             accessKey: this.config.accessKey ? String(this.config.accessKey) : '',
@@ -150,6 +153,7 @@ class Shelfmate extends utils.Adapter {
             ['stats.lowStockList', 'Names at or below minimum stock (JSON)', 'string', 'json', false],
             ['stats.inventory', 'Everything in stock (JSON)', 'string', 'json', false],
             ['stats.inventoryHtml', 'Everything in stock (HTML table for VIS)', 'string', 'html', false],
+            ['stats.consumption', 'Consumption of the last 30 days (JSON)', 'string', 'json', false],
             ['stats.expiringCount', 'Products expired or expiring soon', 'number', 'value', false],
             ['stats.expiring', 'Products expired or expiring soon (JSON)', 'string', 'json', false],
             ['stats.expiringHtml', 'Products expired or expiring soon (HTML table for VIS)', 'string', 'html', false],
@@ -284,6 +288,9 @@ class Shelfmate extends utils.Adapter {
      * @param {string} [restock] name to take off the shopping list again, may be empty
      */
     async afterChange(reorder, restock) {
+        if (reorder && this.config.notifyLow) {
+            this.notify(lowText(this.lang, reorder), 'info');
+        }
         if (reorder) {
             try {
                 const added = await this.shopping?.add(reorder);
@@ -363,6 +370,7 @@ class Shelfmate extends utils.Adapter {
             this.setState('stats.lowStockList', JSON.stringify(low), true),
             this.setState('stats.inventory', JSON.stringify(items), true),
             this.setState('stats.inventoryHtml', inventoryHtml(items, texts(this.lang)), true),
+            this.setState('stats.consumption', JSON.stringify(this.inv.consumption(30)), true),
             this.setState('stats.expiringCount', expiring.length, true),
             this.setState('stats.expiring', JSON.stringify(expiring), true),
             this.setState('stats.expiringHtml', expiringHtml(expiring, texts(this.lang)), true),
@@ -462,6 +470,38 @@ class Shelfmate extends utils.Adapter {
             this.sendTo(obj.from, obj.command, await this.makeCertificate(), obj.callback);
             return;
         }
+        if (obj && obj.command === 'getNotifAdapters' && obj.callback) {
+            let adapters = [];
+            try {
+                const view = await this.getObjectViewAsync('system', 'instance', {
+                    startkey: 'system.adapter.',
+                    endkey: 'system.adapter.\u9999',
+                });
+                adapters = (view.rows || [])
+                    .map(r => r.id.replace('system.adapter.', ''))
+                    .filter(id => NOTIFY_ADAPTERS.some(n => id.startsWith(n)) || id.startsWith('telegrammenu2'))
+                    .map(id => ({ label: id, value: id }));
+            } catch (e) {
+                this.log.warn(`Could not read the notification adapters: ${e.message}`);
+            }
+            this.sendTo(obj.from, obj.command, adapters, obj.callback);
+            return;
+        }
+        if (obj && obj.command === 'testNotification' && obj.callback) {
+            const msg = obj.message || {};
+            if (!msg.notifyAdapter) {
+                this.sendTo(obj.from, obj.command, { error: 'No notification adapter selected' }, obj.callback);
+                return;
+            }
+            const clean = v => (v && v !== 'undefined' ? String(v) : '');
+            deliver(
+                this,
+                { instance: String(msg.notifyAdapter), target: clean(msg.target), area: clean(msg.area) },
+                (NOTIFY_TEXT[this.lang] || NOTIFY_TEXT.en).test,
+            );
+            this.sendTo(obj.from, obj.command, { result: 'OK' }, obj.callback);
+            return;
+        }
         if (obj && obj.command === 'getCertCollections' && obj.callback) {
             let collections = [];
             try {
@@ -499,12 +539,68 @@ class Shelfmate extends utils.Adapter {
     }
 
     /**
+     * Send a message through the selected notification adapter.
+     *
+     * @param {string} message text
+     * @param {'info' | 'warn' | 'error'} severity telegrammenu2 message type
+     */
+    notify(message, severity = 'info') {
+        const instance = String(this.config.notifyAdapter || '');
+        if (!instance || !message) {
+            return;
+        }
+        try {
+            deliver(
+                this,
+                {
+                    instance,
+                    target: String(this.config.notifyTarget || ''),
+                    area: String(this.config.notifyArea || ''),
+                },
+                message,
+                severity,
+            );
+        } catch (e) {
+            this.log.warn(`Could not send the notification: ${e.message}`);
+        }
+    }
+
+    /**
+     * Plan the daily message about expired and expiring products.
+     */
+    scheduleNotify() {
+        if (this.notifyTimer) {
+            this.clearTimeout(this.notifyTimer);
+            this.notifyTimer = null;
+        }
+        const bb = this.bestBeforeConfig();
+        if (!this.config.notifyAdapter || !this.config.notifyExpiry || bb.bestBeforeMode === 'off') {
+            return;
+        }
+        this.notifyTimer = this.setTimeout(
+            () => {
+                this.notifyTimer = null;
+                const list = this.inv.expiryList(bb.bestBeforeMode, bb.bestBeforeWarnDays);
+                const message = expiryText(this.lang, list);
+                this.notify(message, list.some(x => x.expired) ? 'warn' : 'info');
+                if (!this.closing) {
+                    this.scheduleNotify();
+                }
+            },
+            msUntil(String(this.config.notifyTime || '08:00')),
+        );
+    }
+
+    /**
      * @param {() => void} callback completion callback
      */
     async onUnload(callback) {
         try {
             this.closing = true;
             this.shopping?.stop();
+            if (this.notifyTimer) {
+                this.clearTimeout(this.notifyTimer);
+            }
             this.web?.stop(h => this.clearInterval(h));
             if (this.httpServer) {
                 this.httpServer.close();

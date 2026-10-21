@@ -23,19 +23,16 @@ Danach eine Instanz anlegen und `https://<Host>:8120/` öffnen. Voraussetzungen:
 
 ## Datenpunkte
 
-`stats.products`, `stats.locations`, `stats.lowStockCount`, `stats.lowStockList`, `stats.inventory`, `stats.inventoryHtml`, `stats.expiringCount`, `stats.expiring`, `stats.expiringHtml`, `shopping.addItem`, `info.connection`.
+`stats.products`, `stats.locations`, `stats.lowStockCount`, `stats.lowStockList`, `stats.inventory`, `stats.inventoryHtml`, `stats.consumption`, `stats.expiringCount`, `stats.expiring`, `stats.expiringHtml`, `shopping.addItem`, `info.connection`.
 
 ## In Arbeit und geplant
 
-ShelfMate wird aktiv weiterentwickelt. Geplant bzw. denkbar (ohne Zusage, ohne Reihenfolge):
+ShelfMate wird aktiv weiterentwickelt. Geplant (ohne Zusage, ohne Reihenfolge):
 
-- **Externer Barcode-Scanner** (geplant): USB- oder Bluetooth-Handscanner am Regal, um ohne Handy ein- und auszubuchen
-- Inventurmodus: tatsächlichen Bestand zählen und in einem Durchgang korrigieren
-- Benachrichtigung bei ablaufenden oder knappen Produkten (Datenpunkt und/oder Nachrichten-Adapter wie Telegram)
-- Verbrauchsstatistik und Vorschlag für den Mindestbestand anhand des Verlaufs
-- CSV-Import und -Export zusätzlich zum JSON-Backup
-- Gerätename pro Handy (z. B. „iPhone von Henrik“), der im Verlauf bei jeder Buchung steht, ganz ohne Benutzerverwaltung
-- Weitere Etiketten-Vorlagen (z. B. mit MHD)
+- **Inventurmodus**: pro Lagerort zählen, entweder als Liste (Soll-Menge, gezählte Menge eintragen) oder per Scan jedes Artikels; die Variante wählst du in den Einstellungen. Später auch für einen ganzen Bereich. Korrekturen erscheinen im Verlauf als „Inventur“
+- **Externer Barcode-Scanner** (USB oder Bluetooth, Tastaturmodus): Prefix und Suffix einstellbar, Scan wird am Tempo vom Tippen unterschieden, Steuer-Barcodes wie „Einlagern“ / „Entnehmen“ zum Arbeiten ohne Display
+- **Export** des Bestands als CSV und als druckbares PDF
+- **Weitere Etiketten-Vorlagen**: „Geöffnet am“, Gefrierfach-Etikett („Eingefroren am“ / „Haltbar bis“), Boxen-Etikett mit Inhaltsliste, großes Regal-Etikett, Nur-QR-Etikett
 
 Ideen und Fehler gerne als [GitHub-Issue](https://github.com/backfisch88/ioBroker.shelfmate/issues) melden.
 

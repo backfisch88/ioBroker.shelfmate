@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "shelfmate",
-        "version": "0.1.10",
+        "version": "0.1.11",
         "news": {
+            "0.1.11": {
+                "en": "New: notifications (Telegram, telegrammenu2, Pushover, ...), consumption statistics and device name in the history",
+                "de": "Neu: Benachrichtigungen (Telegram, telegrammenu2, Pushover, ...), Verbrauchsstatistik und Gerätename im Verlauf",
+                "ru": "Новое: уведомления (Telegram, telegrammenu2, Pushover, ...), статистика расхода и имя устройства в истории",
+                "pt": "Novo: notificações (Telegram, telegrammenu2, Pushover, ...), estatística de consumo e nome do dispositivo no histórico",
+                "nl": "Nieuw: meldingen (Telegram, telegrammenu2, Pushover, ...), verbruiksstatistiek en apparaatnaam in de geschiedenis",
+                "fr": "Nouveau : notifications (Telegram, telegrammenu2, Pushover, ...), statistique de consommation et nom de l'appareil dans l'historique",
+                "it": "Novità: notifiche (Telegram, telegrammenu2, Pushover, ...), statistica dei consumi e nome del dispositivo nella cronologia",
+                "es": "Novedad: notificaciones (Telegram, telegrammenu2, Pushover, ...), estadística de consumo y nombre del dispositivo en el historial",
+                "pl": "Nowość: powiadomienia (Telegram, telegrammenu2, Pushover, ...), statystyka zużycia i nazwa urządzenia w historii",
+                "uk": "Нове: сповіщення (Telegram, telegrammenu2, Pushover, ...), статистика витрат та назва пристрою в історії",
+                "zh-cn": "新增：通知（Telegram、telegrammenu2、Pushover 等）、消耗统计以及历史记录中的设备名称"
+            },
             "0.1.10": {
                 "en": "Maintenance: repository checker fixes (Node 26 tests, workflow, metadata)",
                 "de": "Wartung: Korrekturen aus dem Repository-Checker (Node-26-Tests, Workflow, Metadaten)",
@@ -80,19 +93,6 @@
                 "pl": "regulowany rozmiar etykiety; kod kreskowy produktów z Open Food Facts zablokowany, poprawiono wyświetlanie Nutri-Score A",
                 "uk": "налаштовуваний розмір етикетки; штрихкод товарів з Open Food Facts заблоковано, виправлено відображення Nutri-Score A",
                 "zh-cn": "可调节标签尺寸; Open Food Facts 产品的条形码已锁定，修复 Nutri-Score A 的显示"
-            },
-            "0.1.4": {
-                "en": "New product button in the scanner, own EAN codes with printable label, own product image upload (compressed)",
-                "de": "Button „Neues Produkt\" im Scanner, eigene EAN-Codes mit druckbarem Etikett, eigenes Produktbild hochladen (komprimiert)",
-                "ru": "Кнопка «Новый товар» в сканере, собственные коды EAN с печатной этикеткой, загрузка своего изображения товара (со сжатием)",
-                "pt": "Botão de novo produto no scanner, códigos EAN próprios com etiqueta imprimível, carregar imagem própria do produto (comprimida)",
-                "nl": "Knop nieuw product in de scanner, eigen EAN-codes met afdrukbaar etiket, eigen productafbeelding uploaden (gecomprimeerd)",
-                "fr": "Bouton nouveau produit dans le scanner, codes EAN personnalisés avec étiquette imprimable, téléversement de sa propre image de produit (compressée)",
-                "it": "Pulsante nuovo prodotto nello scanner, codici EAN propri con etichetta stampabile, caricamento di un'immagine prodotto propria (compressa)",
-                "es": "Botón de producto nuevo en el escáner, códigos EAN propios con etiqueta imprimible, subir imagen propia del producto (comprimida)",
-                "pl": "Przycisk nowego produktu w skanerze, własne kody EAN z etykietą do druku, własny obraz produktu (skompresowany)",
-                "uk": "Кнопка «Новий товар» у сканері, власні коди EAN з етикеткою для друку, завантаження власного зображення товару (стиснене)",
-                "zh-cn": "扫描页新增“新产品”按钮，可生成自有 EAN 码并打印标签，可上传自己的产品图片（自动压缩）"
             }
         },
         "titleLang": {
@@ -194,7 +194,13 @@
         "removeOnUncheck": true,
         "shoppingRemoveItemId": "",
         "bestBeforeMode": "off",
-        "bestBeforeWarnDays": 7
+        "bestBeforeWarnDays": 7,
+        "notifyAdapter": "",
+        "notifyTarget": "",
+        "notifyArea": "ShelfMate",
+        "notifyLow": false,
+        "notifyExpiry": false,
+        "notifyTime": "08:00"
     },
     "objects": [],
     "instanceObjects": [

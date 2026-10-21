@@ -270,6 +270,98 @@
             "md": 6,
             "lg": 4,
             "xl": 4
+        },
+        "_hNotify": {
+            "type": "header",
+            "text": "hNotify",
+            "size": 3,
+            "newLine": true,
+            "xs": 12
+        },
+        "notifyAdapter": {
+            "type": "selectSendTo",
+            "command": "getNotifAdapters",
+            "manual": true,
+            "label": "notifyAdapter",
+            "help": "notifyAdapterHelp",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "notifyTarget": {
+            "type": "text",
+            "label": "notifyTarget",
+            "help": "notifyTargetHelp",
+            "hidden": "!data.notifyAdapter",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "notifyArea": {
+            "type": "text",
+            "label": "notifyArea",
+            "help": "notifyAreaHelp",
+            "hidden": "!String(data.notifyAdapter).startsWith('telegrammenu2')",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "notifyLow": {
+            "type": "checkbox",
+            "label": "notifyLow",
+            "hidden": "!data.notifyAdapter",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "notifyExpiry": {
+            "type": "checkbox",
+            "label": "notifyExpiry",
+            "hidden": "!data.notifyAdapter || data.bestBeforeMode === 'off'",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "notifyTime": {
+            "type": "text",
+            "label": "notifyTime",
+            "hidden": "!data.notifyAdapter || !data.notifyExpiry || data.bestBeforeMode === 'off'",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "notifyTest": {
+            "type": "sendTo",
+            "command": "testNotification",
+            "jsonData": "{\"notifyAdapter\":\"${data.notifyAdapter}\",\"target\":\"${data.notifyTarget}\",\"area\":\"${data.notifyArea}\"}",
+            "label": "notifyTest",
+            "variant": "outlined",
+            "showProcess": true,
+            "hidden": "!data.notifyAdapter",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
         }
     }
 }

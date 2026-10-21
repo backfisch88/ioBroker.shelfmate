@@ -36,5 +36,16 @@
     "bestBeforeWarnDays": "Warn before expiry (days)",
     "bestBeforeWarnDaysHelp": "Products expiring within this period are marked and listed in the data points",
     "createCert": "Create self-signed certificate",
-    "createCertHelp": "Creates a certificate for this host (host name and IP addresses), stores it in the ioBroker certificates and selects it. Install it on your devices via the .cer download."
+    "createCertHelp": "Creates a certificate for this host (host name and IP addresses), stores it in the ioBroker certificates and selects it. Install it on your devices via the .cer download.",
+    "hNotify": "Notifications",
+    "notifyAdapter": "Notification adapter",
+    "notifyAdapterHelp": "Installed instances such as telegram, telegrammenu2, pushover, signal, whatsapp, matrix or email. Empty = no notifications",
+    "notifyTarget": "Recipient (optional)",
+    "notifyTargetHelp": "Chat ID for telegram, e-mail address for email. Empty = default recipient of the adapter",
+    "notifyArea": "Area in telegrammenu2",
+    "notifyAreaHelp": "Must be an area that is already approved in telegrammenu2",
+    "notifyLow": "Message when the minimum stock is reached",
+    "notifyExpiry": "Daily message about expired and expiring products",
+    "notifyTime": "Time of the daily message (HH:MM)",
+    "notifyTest": "Send test message"
 }

@@ -36,5 +36,16 @@
     "bestBeforeWarnDays": "Ostrzegaj przed upływem (dni)",
     "bestBeforeWarnDaysHelp": "Produkty wygasające w tym okresie są oznaczane i wymieniane w punktach danych",
     "createCert": "Utwórz certyfikat z podpisem własnym",
-    "createCertHelp": "Tworzy certyfikat dla tego serwera (nazwa hosta i adresy IP), zapisuje go w certyfikatach ioBroker i wybiera go. Zainstaluj go na urządzeniach przez pobranie pliku .cer."
+    "createCertHelp": "Tworzy certyfikat dla tego serwera (nazwa hosta i adresy IP), zapisuje go w certyfikatach ioBroker i wybiera go. Zainstaluj go na urządzeniach przez pobranie pliku .cer.",
+    "hNotify": "Powiadomienia",
+    "notifyAdapter": "Adapter powiadomień",
+    "notifyAdapterHelp": "Zainstalowane instancje, np. telegram, telegrammenu2, pushover, signal, whatsapp, matrix lub email. Puste = brak powiadomień",
+    "notifyTarget": "Odbiorca (opcjonalnie)",
+    "notifyTargetHelp": "ID czatu dla telegram, adres dla email. Puste = domyślny odbiorca adaptera",
+    "notifyArea": "Obszar w telegrammenu2",
+    "notifyAreaHelp": "Musi być obszarem już zatwierdzonym w telegrammenu2",
+    "notifyLow": "Powiadom po osiągnięciu minimalnego zapasu",
+    "notifyExpiry": "Codzienna wiadomość o przeterminowanych i wkrótce przeterminowanych produktach",
+    "notifyTime": "Godzina codziennej wiadomości (GG:MM)",
+    "notifyTest": "Wyślij wiadomość testową"
 }
