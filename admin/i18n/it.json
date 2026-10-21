@@ -65,5 +65,7 @@
     "scannerDevice": "Scanner (dispositivo tastiera sul server)",
     "scannerDeviceHelp": "Il dongle dello scanner wireless compare qui come tastiera. L'utente ioBroker ha bisogno del gruppo \"input\" (adduser iobroker input).",
     "scannerPrefix": "Prefisso dello scanner (rimuovere)",
-    "scannerSuffix": "Suffisso dello scanner (rimuovere)"
+    "scannerSuffix": "Suffisso dello scanner (rimuovere)",
+    "autoShelfLife": "Suggerisci la conservazione per i prodotti secchi",
+    "autoShelfLifeHelp": "Per i prodotti senza durata propria, pasta, riso, conserve e simili ricevono una scadenza suggerita all'inserimento. I prodotti freschi non ne ricevono."
 }

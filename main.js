@@ -251,6 +251,7 @@ class Shelfmate extends utils.Adapter {
                 ...this.bestBeforeConfig(),
                 lang: this.lang || 'en',
                 labelButtons: this.labelButtons(),
+                autoShelfLife: this.config.autoShelfLife !== false,
                 inventoryDays: this.inventoryDays(),
             },
         };
@@ -283,6 +284,7 @@ class Shelfmate extends utils.Adapter {
         let result;
         try {
             this.inv.bbMode = this.bestBeforeConfig().bestBeforeMode;
+            this.inv.autoShelf = this.config.autoShelfLife !== false;
             const r = this.inv.handle(cmd);
             this.scheduleSave();
             result = {
@@ -488,6 +490,7 @@ class Shelfmate extends utils.Adapter {
      */
     scanBook(cmd) {
         this.inv.bbMode = this.bestBeforeConfig().bestBeforeMode;
+        this.inv.autoShelf = this.config.autoShelfLife !== false;
         const r = this.inv.handle(cmd);
         this.scheduleSave();
         this.afterChange(r.reorder, r.restock).catch(e => this.log.warn(`Post-processing failed: ${e.message}`));

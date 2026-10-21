@@ -65,5 +65,7 @@
     "scannerDevice": "Scanner (Tastatur-Gerät am Server)",
     "scannerDeviceHelp": "Der Dongle des Funk-Scanners erscheint hier als Tastatur. Der ioBroker-Benutzer braucht die Gruppe \"input\" (adduser iobroker input).",
     "scannerPrefix": "Prefix des Scanners (entfernen)",
-    "scannerSuffix": "Suffix des Scanners (entfernen)"
+    "scannerSuffix": "Suffix des Scanners (entfernen)",
+    "autoShelfLife": "Haltbarkeit für Trockenware vorschlagen",
+    "autoShelfLifeHelp": "Für Produkte ohne eigene Haltbarkeit wird bei Nudeln, Reis, Konserven und Ähnlichem beim Einlagern ein MHD vorgeschlagen. Frische Ware bekommt keins."
 }

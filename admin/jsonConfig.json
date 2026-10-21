@@ -271,6 +271,18 @@
             "lg": 4,
             "xl": 4
         },
+        "autoShelfLife": {
+            "type": "checkbox",
+            "label": "autoShelfLife",
+            "help": "autoShelfLifeHelp",
+            "hidden": "data.bestBeforeMode !== 'batch'",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
         "_hNotify": {
             "type": "header",
             "text": "hNotify",

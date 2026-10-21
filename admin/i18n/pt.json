@@ -65,5 +65,7 @@
     "scannerDevice": "Leitor (dispositivo de teclado no servidor)",
     "scannerDeviceHelp": "O dongle do leitor sem fios aparece aqui como teclado. O utilizador do ioBroker precisa do grupo \"input\" (adduser iobroker input).",
     "scannerPrefix": "Prefixo do leitor (remover)",
-    "scannerSuffix": "Sufixo do leitor (remover)"
+    "scannerSuffix": "Sufixo do leitor (remover)",
+    "autoShelfLife": "Sugerir validade para produtos secos",
+    "autoShelfLifeHelp": "Para produtos sem validade própria, massa, arroz, conservas e semelhantes recebem uma validade sugerida ao armazenar. Produtos frescos não recebem."
 }

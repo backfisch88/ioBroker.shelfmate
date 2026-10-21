@@ -65,5 +65,7 @@
     "scannerDevice": "Escáner (dispositivo de teclado en el servidor)",
     "scannerDeviceHelp": "El dongle del escáner inalámbrico aparece aquí como teclado. El usuario de ioBroker necesita el grupo \"input\" (adduser iobroker input).",
     "scannerPrefix": "Prefijo del escáner (quitar)",
-    "scannerSuffix": "Sufijo del escáner (quitar)"
+    "scannerSuffix": "Sufijo del escáner (quitar)",
+    "autoShelfLife": "Sugerir caducidad para productos secos",
+    "autoShelfLifeHelp": "Para productos sin caducidad propia, la pasta, el arroz, las conservas y similares reciben una fecha sugerida al almacenar. Los productos frescos no."
 }

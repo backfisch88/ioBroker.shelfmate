@@ -65,5 +65,7 @@
     "scannerDevice": "Scanner (keyboard device on the server)",
     "scannerDeviceHelp": "The dongle of the wireless scanner appears here as a keyboard. The ioBroker user needs the group \"input\" (adduser iobroker input).",
     "scannerPrefix": "Prefix of the scanner (remove)",
-    "scannerSuffix": "Suffix of the scanner (remove)"
+    "scannerSuffix": "Suffix of the scanner (remove)",
+    "autoShelfLife": "Suggest a shelf life for dry goods",
+    "autoShelfLifeHelp": "For products without their own shelf life, pasta, rice, tins and similar get a suggested best-before date when stocking. Fresh goods get none."
 }

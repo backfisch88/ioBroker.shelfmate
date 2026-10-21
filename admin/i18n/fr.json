@@ -65,5 +65,7 @@
     "scannerDevice": "Scanner (périphérique clavier sur le serveur)",
     "scannerDeviceHelp": "Le dongle du scanner sans fil apparaît ici comme clavier. L'utilisateur ioBroker a besoin du groupe \"input\" (adduser iobroker input).",
     "scannerPrefix": "Préfixe du scanner (supprimer)",
-    "scannerSuffix": "Suffixe du scanner (supprimer)"
+    "scannerSuffix": "Suffixe du scanner (supprimer)",
+    "autoShelfLife": "Proposer une durée de conservation pour les produits secs",
+    "autoShelfLifeHelp": "Pour les produits sans durée propre, les pâtes, le riz, les conserves et similaires reçoivent une DLC suggérée au stockage. Les produits frais n'en reçoivent pas."
 }

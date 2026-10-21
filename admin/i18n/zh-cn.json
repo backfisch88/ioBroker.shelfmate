@@ -65,5 +65,7 @@
     "scannerDevice": "扫描器（服务器上的键盘设备）",
     "scannerDeviceHelp": "无线扫描器的接收器在此显示为键盘。ioBroker 用户需要加入 \"input\" 组（adduser iobroker input）。",
     "scannerPrefix": "扫描器前缀（移除）",
-    "scannerSuffix": "扫描器后缀（移除）"
+    "scannerSuffix": "扫描器后缀（移除）",
+    "autoShelfLife": "为干货建议保质期",
+    "autoShelfLifeHelp": "对于没有自己保质期的产品，入库时会为面食、大米、罐头等建议保质期。生鲜食品不会。"
 }

@@ -109,7 +109,7 @@ Choose the mode in the settings:
 
 - **Off**: no best-before handling.
 - **Per product**: each product has one optional date (product form). Products at or after the date are marked in the overview and detail view.
-- **Standard shelf life** (optional, per product, only with "per stocking"): the best-before date is pre-filled when you stock in (pasta, for example, a year ahead).
+- **Standard shelf life** (optional, per product, only with "per stocking"): the best-before date is pre-filled when you stock in (pasta, for example, a year ahead). Products without an own value get a suggestion from a built-in list of dry goods (pasta, rice, flour, tins, sweets, drinks that keep and similar, matched on name, category and tags); fresh goods such as yoghurt get none. The suggestion can be switched off in the adapter settings.
 - **Opened** (optional, per product): "Mark as opened" on the product page splits one package off. If you entered a shelf life after opening, it gets that date (or the earlier best-before date). Opened packages are listed separately and used first.
 - "Undo opening" on the product page turns one opened package back into a normal one.
 - **Spoiled**: when taking out, choose "Spoiled" instead of "Used". It leaves the consumption statistics and is summed up in the history for 30 days.
@@ -233,6 +233,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 
 ## Changelog
 ### **WORK IN PROGRESS**
+- New: suggested shelf life for dry goods from a built-in list (can be switched off)
 - Fixed: white screen when the app is opened without a connection to the server (barcode script now comes from the cache and no longer blocks the page)
 - Changed: the access key is now stored encrypted; if you had set one, enter it again once in the adapter settings
 - Fixed: missing translations (loading texts, opened lines)

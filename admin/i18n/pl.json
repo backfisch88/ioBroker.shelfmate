@@ -65,5 +65,7 @@
     "scannerDevice": "Skaner (urządzenie klawiatury na serwerze)",
     "scannerDeviceHelp": "Dongle skanera bezprzewodowego pojawia się tu jako klawiatura. Użytkownik ioBroker potrzebuje grupy \"input\" (adduser iobroker input).",
     "scannerPrefix": "Prefiks skanera (usuń)",
-    "scannerSuffix": "Sufiks skanera (usuń)"
+    "scannerSuffix": "Sufiks skanera (usuń)",
+    "autoShelfLife": "Sugeruj termin przydatności dla produktów suchych",
+    "autoShelfLifeHelp": "Dla produktów bez własnego terminu makaron, ryż, konserwy i podobne dostają przy dodawaniu sugerowaną datę ważności. Świeże produkty jej nie dostają."
 }

@@ -65,5 +65,7 @@
     "scannerDevice": "Scanner (toetsenbordapparaat op de server)",
     "scannerDeviceHelp": "De dongle van de draadloze scanner verschijnt hier als toetsenbord. De ioBroker-gebruiker heeft de groep \"input\" nodig (adduser iobroker input).",
     "scannerPrefix": "Prefix van de scanner (verwijderen)",
-    "scannerSuffix": "Suffix van de scanner (verwijderen)"
+    "scannerSuffix": "Suffix van de scanner (verwijderen)",
+    "autoShelfLife": "Houdbaarheid voorstellen voor droge waren",
+    "autoShelfLifeHelp": "Voor producten zonder eigen houdbaarheid krijgen pasta, rijst, conserven en dergelijke bij het inruimen een voorgestelde THT. Verse waren krijgen er geen."
 }
