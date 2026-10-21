@@ -245,7 +245,7 @@ class Shelfmate extends utils.Adapter {
             return this.seen.get(id);
         }
         const before = JSON.stringify(this.inv.data);
-        if (cmd && cmd.action === 'importData') {
+        if (cmd && (cmd.action === 'importData' || cmd.action === 'resetData')) {
             await this.saveNow().catch(() => {});
             await fs.promises.copyFile(this.dataPath, `${this.dataPath}.bak`).catch(() => {});
         }

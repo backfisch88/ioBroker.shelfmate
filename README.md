@@ -105,9 +105,13 @@ Camera access and the offline mode need a certificate the phone trusts. With a s
 | `shopping.addItem` | Write an item name (`ack=false`) to put it on the shopping list |
 
 Inventory data is stored in the adapter data directory (`shelfmate.json`), not in the object database.
-A JSON backup can be downloaded and imported in the app (Settings). An import replaces all data; the previous state is kept as `shelfmate.json.bak`.
+A JSON backup can be downloaded and imported in the app (Settings). An import or "Delete all data" replaces all data; the previous state is kept as `shelfmate.json.bak`.
 
 ## Changelog
+### 0.1.8 (2026-10-21)
+- New: "Delete all data" button in the settings (two confirmations; the previous state is kept as `shelfmate.json.bak`)
+- Fix: confirmation dialogs are now translated
+
 ### 0.1.7 (2026-10-20)
 - New: the brand is printed on the EAN label in front of the product name (long names wrap to two lines)
 - Change: "Generate EAN" no longer asks for confirmation
