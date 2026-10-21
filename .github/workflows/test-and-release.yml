@@ -59,8 +59,7 @@ jobs:
           # Uncomment the following line if your adapter cannot be installed using 'npm ci'
           # install-command: 'npm install'
 
-  # Creates a DRAFT GitHub release for every version tag (v*). Does NOT publish to npm.
-  # Publishing the draft on GitHub (button "Publish release") is the explicit command that releases to npm.
+  # Creates the GitHub release for every version tag (v*); pre-release tags (v1.2.3-beta.1) are marked as pre-release.
   github-release:
     needs: [check-and-lint, adapter-tests]
     if: |
@@ -108,4 +107,10 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run test:package
-      - run: npm publish --access public
+      - name: Publish to npm (pre-release versions only get the "next" tag, never "latest")
+        run: |
+          VER=$(node -p "require('./package.json').version")
+          case "$VER" in
+            *-*) npm publish --access public --tag next ;;
+            *) npm publish --access public ;;
+          esac
