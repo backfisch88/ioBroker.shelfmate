@@ -187,7 +187,7 @@ ShelfMate is under active development. Planned features (no promises, no order):
 Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
 ## Changelog
-### **WORK IN PROGRESS**
+### 0.1.11 (2026-10-21)
 - New: notifications through any installed notification adapter (Telegram, telegrammenu2, Pushover, Signal, WhatsApp, Matrix, e-mail): minimum stock reached and a daily message about expired / expiring products, with a test button
 - New: consumption of the last 30 days per product in the app and as data point `stats.consumption`, with a suggestion for the minimum stock
 - New: stocktaking per storage location (list or scan variant, chosen in the settings)
