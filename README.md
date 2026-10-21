@@ -116,7 +116,7 @@ Choose the mode in the settings:
 - "Undo opening" on the product page turns one opened package back into a normal one.
 - **Spoiled**: when taking out, choose "Spoiled" instead of "Used". It leaves the consumption statistics and is summed up in the history for 30 days.
 - **Undo**: the history has a button that reverts the last booking, and the scanner has the code `SM:UNDO`.
-- **Adding or changing a date later** (per stocking): on the product page every package is listed on its own line with a date field (quick input as below) and the buttons +1, +3, +5, +10 days. It saves when you leave the field or tap a button, shows up in the history and can be undone. Headless, scan `SM:DATE:<days>` and then the product to date all unopened stock at once.
+- **Adding or changing a date later** (per stocking): on the product page "Edit best-before dates" unfolds every unopened package on its own line with a date field (quick input as below) and the buttons +1, +3, +5, +10 days. Save applies all lines at once, shows up in the history and can be undone. Headless, scan `SM:DATE:<days>` and then the product to date all unopened stock at once.
 - **Quick date input**: the best-before field is a text field. `+3d` is in 3 days, `+2w` in 2 weeks, `+1m` in a month, `+1y` in a year, `12/26` is the end of December 2026 (as printed on many packs), `2412` or `24.12.` is the next 24 December, `24.12.26` a full date, `x` means no date. A preview below the field shows what was understood. Buttons for +1 to +14 days, +3w, +1m, +3m, +6m and +1y fill it with one tap.
 - **Per stocking**: when you book stock in you can enter a date. Several dates per product and location are kept; booking out and moving always use the oldest date first.
 
