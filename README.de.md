@@ -48,6 +48,8 @@ Produkt von Hand anlegen und einen eigenen EAN-13-Code erzeugen lassen. Den Code
 3. Fällt der Bestand auf den Mindestbestand, kommt das Produkt auf die Liste. Der Haken in der Übersicht zeigt, was auf der Liste steht; antippen nimmt es wieder herunter.
 
 ### Mindesthaltbarkeit
+Optional kannst du je Produkt eine Standard-Haltbarkeit in Tagen eintragen (MHD wird beim Einlagern damit vorbelegt, bei „pro Einlagerung“) und eine Haltbarkeit nach dem Öffnen. „Als geöffnet markieren“ auf der Produktseite trennt eine Packung ab, offene Packungen werden getrennt aufgeführt und zuerst verbraucht. Beim Entnehmen kannst du „Verdorben“ statt „Verbraucht“ wählen, das zählt nicht in den Verbrauch. In der Historie macht ein Knopf die letzte Buchung rückgängig.
+
 Modus in den Adapter-Einstellungen wählen: pro Produkt oder pro Einlagerung. Bei „pro Einlagerung“ gibst du das Datum beim Einlagern an, beim Entnehmen wird immer das älteste zuerst verbraucht. Abgelaufene und bald ablaufende Produkte werden markiert und können per Benachrichtigung gemeldet werden.
 
 ### Ein ganzes Regal einräumen
@@ -73,6 +75,7 @@ Ein- und Auslagern mit gescannten Codes, ohne die App zu öffnen. Eingeschaltet 
 - Produkt zweimal: entnimmt 1. Kommt kein Lagerort, wird dort entnommen, wo der Artikel das kürzeste MHD hat (ohne MHD: wo am meisten liegt).
 - Produkt zweimal, dann Lagerort-Code: entnimmt 1 genau an diesem Lagerort.
 - Lagerort-Code allein: startet den Einräum-Modus. Jedes danach gescannte Produkt wird an diesem Lagerort eingelagert (je 1, sofort gebucht). Derselbe Lagerort-Code beendet ihn, ein anderer wechselt zu diesem Lagerort, und nach 5 Minuten ohne Scan endet er von selbst. Praktisch für ein ganzes Regal, zum Beispiel mit Babygläschen.
+- `SM:UNDO` macht die letzte Buchung rückgängig (außer Verschieben und Inventur). `SM:SPOIL` und danach das Produkt entnimmt 1 als verdorben, `SM:OPEN` und danach das Produkt markiert 1 Stück als geöffnet.
 - `SM:QTY:5` und danach die Buchung: Die nächste Buchung zählt 5 statt 1. `SM:CANCEL` verwirft einen wartenden Scan.
 - Die Zeit zwischen den Codes stellst du in den Adapter-Einstellungen ein (3 bis 120 Sekunden, Standard 10).
 

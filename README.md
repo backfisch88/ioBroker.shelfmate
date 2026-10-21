@@ -90,6 +90,9 @@ Books stock in and out with scanned codes, without opening the app. It is switch
 | location code alone | starts stocking mode: every product scanned afterwards is stocked in at that location (1 each, booked right away); the same location code again finishes it, another location code switches to that location, and after 5 minutes without a scan it ends by itself |
 | `SM:QTY:5`, then the above | the next booking counts 5 instead of 1 |
 | `SM:CANCEL` | forgets the waiting scan |
+| `SM:UNDO` | undoes the last booking (not moves and stocktakes) |
+| `SM:SPOIL`, then the product | takes out 1 as spoiled instead of used |
+| `SM:OPEN`, then the product | marks 1 unit as opened |
 
 Products by weight or volume are booked in whole packages (the package size has to be given in g, kg, ml or l). The stocktaking stays in the app, it needs the display.
 
@@ -105,6 +108,10 @@ Choose the mode in the settings:
 
 - **Off**: no best-before handling.
 - **Per product**: each product has one optional date (product form). Products at or after the date are marked in the overview and detail view.
+- **Standard shelf life** (optional, per product, only with "per stocking"): the best-before date is pre-filled when you stock in (pasta, for example, a year ahead).
+- **Opened** (optional, per product): "Mark as opened" on the product page splits one package off. If you entered a shelf life after opening, it gets that date (or the earlier best-before date). Opened packages are listed separately and used first.
+- **Spoiled**: when taking out, choose "Spoiled" instead of "Used". It leaves the consumption statistics and is summed up in the history for 30 days.
+- **Undo**: the history has a button that reverts the last booking, and the scanner has the code `SM:UNDO`.
 - **Per stocking**: when you book stock in you can enter a date. Several dates per product and location are kept; booking out and moving always use the oldest date first.
 
 Products that are expired or expire within the configured warning period get a badge ("expires in 3 days" / "expired") and are listed in the data points `stats.expiring*`.
@@ -224,6 +231,8 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 
 ## Changelog
 ### **WORK IN PROGRESS**
+- New: optional standard shelf life and shelf life after opening per product
+- New: mark a unit as opened, mark stock as spoiled, undo the last booking (app and scanner codes)
 - New: scanner mode: book stock in and out with scanned codes through data points (`scanner.input`, `scanner.active`, `scanner.result`), without the app
 - New: a wireless scanner whose dongle sits in the ioBroker host (keyboard device) is read directly, with prefix and suffix
 - New: own label size for the shelf label, the box label and the full-page code (A6, A5, A4), the small label size stays the default

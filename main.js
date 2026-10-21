@@ -282,6 +282,7 @@ class Shelfmate extends utils.Adapter {
         }
         let result;
         try {
+            this.inv.bbMode = this.bestBeforeConfig().bestBeforeMode;
             const r = this.inv.handle(cmd);
             this.scheduleSave();
             result = {
@@ -486,6 +487,7 @@ class Shelfmate extends utils.Adapter {
      * @param {object} cmd command
      */
     scanBook(cmd) {
+        this.inv.bbMode = this.bestBeforeConfig().bestBeforeMode;
         const r = this.inv.handle(cmd);
         this.scheduleSave();
         this.afterChange(r.reorder, r.restock).catch(e => this.log.warn(`Post-processing failed: ${e.message}`));
