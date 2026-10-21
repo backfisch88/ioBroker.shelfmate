@@ -48,7 +48,7 @@ Produkt von Hand anlegen und einen eigenen EAN-13-Code erzeugen lassen. Den Code
 3. Fällt der Bestand auf den Mindestbestand, kommt das Produkt auf die Liste. Der Haken in der Übersicht zeigt, was auf der Liste steht; antippen nimmt es wieder herunter.
 
 ### Mindesthaltbarkeit
-Optional kannst du je Produkt eine Standard-Haltbarkeit in Tagen eintragen (MHD wird beim Einlagern damit vorbelegt, bei „pro Einlagerung“) und eine Haltbarkeit nach dem Öffnen. „Als geöffnet markieren“ auf der Produktseite trennt eine Packung ab, offene Packungen werden getrennt aufgeführt und zuerst verbraucht; „Öffnen rückgängig“ macht das wieder rückgängig. Beim Entnehmen kannst du „Verdorben“ statt „Verbraucht“ wählen, das zählt nicht in den Verbrauch. In der Historie macht ein Knopf die letzte Buchung rückgängig.
+Optional kannst du je Produkt eine Standard-Haltbarkeit in Tagen eintragen (MHD wird beim Einlagern damit vorbelegt, bei „pro Einlagerung“) und eine Haltbarkeit nach dem Öffnen. „Als geöffnet markieren“ auf der Produktseite trennt eine Packung ab, offene Packungen werden getrennt aufgeführt und zuerst verbraucht; „Öffnen rückgängig“ macht das wieder rückgängig. Beim Entnehmen kannst du „Verdorben“ statt „Verbraucht“ wählen, das zählt nicht in den Verbrauch. In der Historie macht ein Knopf die letzte Buchung rückgängig. In den Einstellungen setzt „Statistik zurücksetzen“ Verbrauch und Vorschläge auf null, die Historie bleibt.
 
 Modus in den Adapter-Einstellungen wählen: pro Produkt oder pro Einlagerung. Bei „pro Einlagerung“ gibst du das Datum beim Einlagern an, beim Entnehmen wird immer das älteste zuerst verbraucht. Abgelaufene und bald ablaufende Produkte werden markiert und können per Benachrichtigung gemeldet werden.
 
