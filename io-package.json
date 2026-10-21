@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "shelfmate",
-        "version": "0.1.7",
+        "version": "0.1.8",
         "news": {
+            "0.1.8": {
+                "en": "New: \"Delete all data\" button in the settings (with two confirmations and automatic backup); confirmation dialogs are translated",
+                "de": "Neu: Button „Alle Daten löschen\" in den Einstellungen (mit zwei Rückfragen und automatischer Sicherung); Rückfragen sind übersetzt",
+                "ru": "Новое: кнопка «Удалить все данные» в настройках (два подтверждения и автоматическая резервная копия); диалоги подтверждения переведены",
+                "pt": "Novo: botão «Apagar todos os dados» nas definições (com duas confirmações e cópia de segurança automática); diálogos de confirmação traduzidos",
+                "nl": "Nieuw: knop «Alle gegevens wissen» in de instellingen (met twee bevestigingen en automatische back-up); bevestigingsvragen vertaald",
+                "fr": "Nouveau : bouton « Supprimer toutes les données » dans les réglages (deux confirmations et sauvegarde automatique); dialogues de confirmation traduits",
+                "it": "Novità: pulsante «Elimina tutti i dati» nelle impostazioni (con due conferme e backup automatico); finestre di conferma tradotte",
+                "es": "Novedad: botón «Borrar todos los datos» en los ajustes (con dos confirmaciones y copia de seguridad automática); diálogos de confirmación traducidos",
+                "pl": "Nowość: przycisk „Usuń wszystkie dane” w ustawieniach (dwa potwierdzenia i automatyczna kopia zapasowa); okna potwierdzeń przetłumaczone",
+                "uk": "Нове: кнопка «Видалити всі дані» в налаштуваннях (два підтвердження та автоматична резервна копія); діалоги підтвердження перекладено",
+                "zh-cn": "新增：设置中的“删除所有数据”按钮（两次确认并自动备份）；确认对话框已翻译"
+            },
             "0.1.7": {
                 "en": "\"Generate EAN\" no longer asks for confirmation; brand on the EAN label",
                 "de": "„EAN erzeugen\" fragt nicht mehr nach; Hersteller auf dem EAN-Etikett",
