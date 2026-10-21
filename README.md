@@ -145,14 +145,22 @@ Under **Settings / Data**: **JSON backup** (download and import again), **Stock 
 ### Offline use
 After the certificate is trusted (see below), the app also starts without a connection. Bookings and shopping-list entries made offline are queued and sent automatically when the connection is back.
 
-### Trusting the certificate on iPhone
+### Certificate and installing it on the phone
 
-Camera access and the offline mode need a certificate the phone trusts. With a self-signed certificate, download the ioBroker certificate in the app (Settings), install the profile and enable full trust. A certificate from a public CA (for example Let's Encrypt via the
-`acme` adapter) needs no installation.
+Camera access and the offline mode need HTTPS with a certificate the phone trusts.
+
+1. In the adapter settings switch on **Use HTTPS** and choose a certificate. The easiest way is the button **Create self-signed certificate**: it creates a certificate for the host name and the IP addresses of the ioBroker host, stores it in the ioBroker certificates and selects it. Save the settings; the instance restarts. Alternatively select your own certificate or a certificate collection (for example Let's Encrypt).
+2. A certificate from a public CA (for example Let's Encrypt via the `acme` adapter) needs no installation on the phone. Skip the next steps.
+3. With a self-signed certificate on **iPhone** (tested):
+   1. Open `https://<host>:8120/` in Safari and go to **Settings / Offline mode** in the app. Tap **Load ioBroker certificate** (the file is also available directly at `https://<host>:8120/iobrokerZertifikat.cer`) and choose "Allow".
+   2. iPhone **Settings / General / VPN & Device Management**: tap the downloaded profile and **Install**.
+   3. iPhone **Settings / General / About / Certificate Trust Settings**: switch the certificate on.
+   4. Close the app and open it again. Under **Offline mode** tap **Check again**.
+4. **Android and other systems** are not tested. The certificate can be downloaded the same way (`https://<host>:8120/iobrokerZertifikat.cer`) and is normally installed as a CA certificate in the system settings (security / credentials). The menu names differ between devices and versions.
 
 ## Printing labels
 
-The labels are created as PNG images in the label size you set in the app, and are shared or saved from the phone. The author prints them on a Niimbot B1 label printer that is set up as an AirPrint printer through CUPS on a Linux machine, so the phone can print straight to it. Setting up a printer is not part of this adapter; search for "Niimbot CUPS AirPrint" if you want to do the same.
+The labels are created as PNG images in the label size you set in the app, and are shared or saved from the phone. I print them on a Niimbot B1 label printer that I set up as an AirPrint printer through CUPS on a Linux machine, so the phone can print straight to it. Setting up a printer is not part of this adapter; search for "Niimbot CUPS AirPrint" if you want to do the same.
 
 ## Datapoints
 
