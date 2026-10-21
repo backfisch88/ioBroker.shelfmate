@@ -233,6 +233,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 
 ## Changelog
 ### **WORK IN PROGRESS**
+- Fixed: white screen when the app is opened without a connection to the server (barcode script now comes from the cache and no longer blocks the page)
 - Changed: the access key is now stored encrypted; if you had set one, enter it again once in the adapter settings
 - Fixed: missing translations (loading texts, opened lines)
 - Changed: all emojis in the app replaced by one consistent set of flat, multicolour SVG icons
