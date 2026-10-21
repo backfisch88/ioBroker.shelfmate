@@ -108,6 +108,9 @@ Inventory data is stored in the adapter data directory (`shelfmate.json`), not i
 A JSON backup can be downloaded and imported in the app (Settings). An import or "Delete all data" replaces all data; the previous state is kept as `shelfmate.json.bak`.
 
 ## Changelog
+### 0.1.9 (2026-10-21)
+- New: adding to or removing from the shopping list works offline; the change is queued and sent once the connection is back
+
 ### 0.1.8 (2026-10-21)
 - New: "Delete all data" button in the settings (two confirmations; the previous state is kept as `shelfmate.json.bak`)
 - New: a new installation (and "Delete all data") starts with an example area and location (e.g. "Pantry · Shelf 1") in the ioBroker system language and the Barilla Fusilli No. 98 from Open Food Facts as example product
