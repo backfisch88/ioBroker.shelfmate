@@ -56,3 +56,17 @@ Vorschlag Mindestbestand {1}|Suggested minimum stock {1}|Рекомендуем�
 Verwerfen|Dismiss|Отклонить|Descartar|Verwerpen|Ignorer|Scarta|Descartar|Odrzuć|Відхилити|忽略
 Aus der Gruppe nehmen|Remove from the group|Убрать из группы|Remover do grupo|Uit de groep halen|Retirer du groupe|Rimuovi dal gruppo|Quitar del grupo|Usuń z grupy|Прибрати з групи|从分组中移除
 Mindestbestand gesetzt|Minimum stock set|Минимальный запас задан|Stock mínimo definido|Minimumvoorraad ingesteld|Stock minimum défini|Scorta minima impostata|Stock mínimo establecido|Minimalny zapas ustawiony|Мінімальний запас задано|已设置最低库存
+Inventur|Stocktaking|Инвентаризация|Inventário|Inventarisatie|Inventaire|Inventario|Inventario|Inwentaryzacja|Інвентаризація|盘点
+Variante|Mode|Вариант|Variante|Variant|Variante|Variante|Variante|Wariant|Варіант|方式
+Liste|List|Список|Lista|Lijst|Liste|Elenco|Lista|Lista|Список|列表
+Scannen|Scan|Сканировать|Digitalizar|Scannen|Scanner|Scansiona|Escanear|Skanuj|Сканувати|扫描
+Barcode scannen oder eingeben|Scan or enter a barcode|Отсканируйте или введите штрихкод|Digitalize ou introduza um código de barras|Scan of typ een barcode|Scannez ou saisissez un code-barres|Scansiona o inserisci un codice a barre|Escanea o introduce un código de barras|Zeskanuj lub wpisz kod kreskowy|Скануйте або введіть штрихкод|扫描或输入条码
+Soll: {1} {2}|Expected: {1} {2}|Ожидается: {1} {2}|Esperado: {1} {2}|Verwacht: {1} {2}|Attendu : {1} {2}|Atteso: {1} {2}|Esperado: {1} {2}|Oczekiwane: {1} {2}|Очікується: {1} {2}|应有：{1} {2}
+Stimmt|Correct|Верно|Correto|Klopt|Exact|Esatto|Correcto|Zgadza się|Вірно|正确
+Hier ist nichts eingelagert|Nothing is stored here|Здесь ничего не хранится|Não há nada armazenado aqui|Hier ligt niets|Rien n'est stocké ici|Qui non c'è nulla|Aquí no hay nada almacenado|Nic tu nie jest przechowywane|Тут нічого не зберігається|这里没有存放任何东西
+Inventur abschließen|Finish stocktaking|Завершить инвентаризацию|Concluir inventário|Inventarisatie afronden|Terminer l'inventaire|Termina inventario|Terminar inventario|Zakończ inwentaryzację|Завершити інвентаризацію|完成盘点
+Unbekannter Barcode|Unknown barcode|Неизвестный штрихкод|Código de barras desconhecido|Onbekende barcode|Code-barres inconnu|Codice a barre sconosciuto|Código de barras desconocido|Nieznany kod kreskowy|Невідомий штрихкод|未知条码
+Keine Abweichungen|No differences|Расхождений нет|Sem diferenças|Geen verschillen|Aucun écart|Nessuna differenza|Sin diferencias|Brak różnic|Розбіжностей немає|没有差异
+Inventur gespeichert|Stocktaking saved|Инвентаризация сохранена|Inventário guardado|Inventarisatie opgeslagen|Inventaire enregistré|Inventario salvato|Inventario guardado|Inwentaryzacja zapisana|Інвентаризацію збережено|盘点已保存
+Inventur abschließen und den Bestand korrigieren?|Finish stocktaking and correct the stock?|Завершить инвентаризацию и скорректировать запас?|Concluir o inventário e corrigir o stock?|Inventarisatie afronden en de voorraad corrigeren?|Terminer l'inventaire et corriger le stock ?|Terminare l'inventario e correggere la scorta?|¿Terminar el inventario y corregir el stock?|Zakończyć inwentaryzację i skorygować zapas?|Завершити інвентаризацію та скоригувати запас?|完成盘点并更正库存？
+Anzahl muss ganzzahlig sein: {1}|The quantity must be a whole number: {1}|Количество должно быть целым: {1}|A quantidade tem de ser um número inteiro: {1}|Aantal moet een geheel getal zijn: {1}|La quantité doit être un nombre entier : {1}|La quantità deve essere un numero intero: {1}|La cantidad debe ser un número entero: {1}|Ilość musi być liczbą całkowitą: {1}|Кількість має бути цілою: {1}|数量必须为整数：{1}

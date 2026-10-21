@@ -27,9 +27,10 @@ German short description: [README.de.md](README.de.md)
 - Optional removal from the shopping list when the stock is refilled and/or when the check mark is removed in the app
 - Overview of everything in stock as data points (JSON and HTML table for VIS)
 - Notifications through Telegram, telegrammenu2, Pushover, Signal, WhatsApp, Matrix or e-mail: minimum stock reached, daily message about expired and expiring products
-- Consumption of the last 30 days per product with a suggestion for the minimum stock
+- Consumption of the last 30 days per product with a suggestion for the minimum stock that you can apply or dismiss with one tap
 - Device name per phone, shown in the history for every booking
-- Group suggestions: products with similar names ("Flour", "Flour (Type 405)") can be combined into one group
+- Stocktaking per storage location (Storage locations / Stocktaking): either as a list (expected quantity, enter the counted quantity or tap ✓) or by scanning every item with the camera field or a hand scanner; the variant is chosen in the settings. Corrections appear in the history as "Stocktaking"
+- Group suggestions: products with similar names ("Flour", "Flour (Type 405)") can be combined into one group; single products can be removed from a suggestion
 - Label templates: "opened on", freezer label, large shelf label, box label with contents list, QR-only label. The adapter settings let you choose which label buttons the app shows
 - JSON backup: download and import in the app
 - Built-in HTTPS web server that uses the certificates of your ioBroker installation (self-signed, own or Let's Encrypt collections)
@@ -119,7 +120,7 @@ A JSON backup can be downloaded and imported in the app (Settings). An import or
 
 ShelfMate is under active development. Planned features (no promises, no order):
 
-- **Stocktaking mode**: count what is really on the shelf per storage location, either as a list (target quantity, enter the counted quantity) or by scanning every item; the variant can be chosen in the settings. Later also for a whole area, location after location. Corrections appear in the history as "Stocktaking"
+- **Stocktaking for a whole area**: go through all storage locations of an area one after the other
 - **External barcode scanner** (USB or Bluetooth, keyboard mode): configurable prefix and suffix, scans are told apart from typing by their speed, control barcodes such as "stock in" / "take out" to work without the display
 - **Export** of the stock as CSV and as a printable PDF
 
@@ -129,6 +130,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 ### **WORK IN PROGRESS**
 - New: notifications through any installed notification adapter (Telegram, telegrammenu2, Pushover, Signal, WhatsApp, Matrix, e-mail): minimum stock reached and a daily message about expired / expiring products, with a test button
 - New: consumption of the last 30 days per product in the app and as data point `stats.consumption`, with a suggestion for the minimum stock
+- New: stocktaking per storage location (list or scan variant, chosen in the settings)
 - New: device name in the settings, shown in the history for every booking
 - New: group suggestions (Settings / Data): products with similar names can be combined into one group with one tap
 - New: more label templates ("opened on", freezer, large shelf, box with contents, QR only); the adapter settings choose which label buttons the app shows
