@@ -151,6 +151,11 @@ Create the product by hand and let the app generate its own EAN-13 code. Print t
 ### Best-before date
 Choose the mode in the adapter settings: per product or per stocking. With "per stocking" you enter the date when you book stock in, and taking out always uses the oldest date first. Expired and soon expiring products are marked and can be reported by notification.
 
+### Stocking a whole shelf by scanning
+1. Open **Locations / Stocking**.
+2. Scan the QR code of the location (or choose it in the list), then scan the products one after another with the camera, a scanner or by typing the EAN. Every scan counts 1, the list shows the quantities and I can correct them.
+3. Scan the same location code again (or tap **Stock in**). Everything is booked in at once. Products by weight or volume count as whole packages and need the package size in g or ml.
+
 ### Stocktaking by scanning
 1. Open **Locations / Stocktaking** and choose the variant **Scan** (settings or on the page).
 2. Scan the QR code of the location. "Stocktaking started" confirms it.
@@ -221,6 +226,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 - New: scanner mode: book stock in and out with scanned codes through data points (`scanner.input`, `scanner.active`, `scanner.result`), without the app
 - New: a wireless scanner whose dongle sits in the ioBroker host (keyboard device) is read directly, with prefix and suffix
 - New: own label size for the shelf label, the box label and the full-page code (A6, A5, A4), the small label size stays the default
+- New: stocking page in the app (location, products, location again) for whole shelves
 - New: stocking mode for the scanner: scan a location, then all products, then the location again (for example a shelf of baby food jars)
 - New: setting for location labels: QR code or Code 128 barcode (for scanners without 2D)
 - New: short scanner code for locations (`SM:L:<id>`) and a printable sheet with quantity and cancel codes

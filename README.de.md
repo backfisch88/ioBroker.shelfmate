@@ -50,6 +50,11 @@ Produkt von Hand anlegen und einen eigenen EAN-13-Code erzeugen lassen. Den Code
 ### Mindesthaltbarkeit
 Modus in den Adapter-Einstellungen wählen: pro Produkt oder pro Einlagerung. Bei „pro Einlagerung“ gibst du das Datum beim Einlagern an, beim Entnehmen wird immer das älteste zuerst verbraucht. Abgelaufene und bald ablaufende Produkte werden markiert und können per Benachrichtigung gemeldet werden.
 
+### Ein ganzes Regal einräumen
+1. **Lagerorte / Einräumen** öffnen.
+2. Den QR-Code des Lagerorts scannen (oder in der Liste wählen), dann die Produkte nacheinander mit der Kamera, einem Scanner oder per Eintippen der EAN scannen. Jeder Scan zählt 1, die Liste zeigt die Mengen und ich kann sie korrigieren.
+3. Denselben Lagerort-Code nochmal scannen (oder **Einlagern** tippen). Alles wird auf einmal eingelagert. Produkte nach Gewicht oder Volumen zählen als ganze Packungen und brauchen die Packungsgröße in g oder ml.
+
 ### Inventur per Scan
 1. **Lagerorte / Inventur** öffnen und die Variante **Scannen** wählen (Einstellungen oder auf der Seite).
 2. Den QR-Code des Lagerorts scannen. „Inventur gestartet“ bestätigt das.
