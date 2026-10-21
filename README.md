@@ -197,6 +197,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 - New: export of the stock as CSV or as a PDF in the settings under "Data"
 - Change: minimum stock suggestions only for regularly used products (removals on at least 4 days in at least 3 different weeks)
 - New: tutorials for the main functions in the README
+- New: on wide screens (tablet, desktop) products, storage locations and the history are shown in two or three columns; the phone layout is unchanged
 - Change: stocktaking by scanning shows product images and a summary per finished location; a location is finished only by scanning its own QR code again
 - New: stocktaking by scanning: scan a location QR, then its products, then the same location QR again to finish it (also with the camera); a summary shows which locations of the area are done
 - Chore: non-critical Dependabot updates are merged automatically after the checks
