@@ -57,5 +57,6 @@
     "lbShelf": "Etiqueta grande de estante (ubicación)",
     "lbBox": "Etiqueta de caja con contenido (ubicación)",
     "lbOpened": "Etiqueta «Abierto el» (producto)",
-    "lbFreezer": "Etiqueta de congelador (producto)"
+    "lbFreezer": "Etiqueta de congelador (producto)",
+    "notifyInventoryDays": "Recordatorio de inventario cada … días (0 = desactivado)"
 }

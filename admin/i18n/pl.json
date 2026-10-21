@@ -57,5 +57,6 @@
     "lbShelf": "Duża etykieta półki (miejsce)",
     "lbBox": "Etykieta pudełka z zawartością (miejsce)",
     "lbOpened": "Etykieta „Otwarto dnia” (produkt)",
-    "lbFreezer": "Etykieta do zamrażarki (produkt)"
+    "lbFreezer": "Etykieta do zamrażarki (produkt)",
+    "notifyInventoryDays": "Przypomnienie o inwentaryzacji co … dni (0 = wyłączone)"
 }

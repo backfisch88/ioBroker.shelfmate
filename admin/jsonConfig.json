@@ -337,10 +337,23 @@
             "lg": 4,
             "xl": 4
         },
+        "notifyInventoryDays": {
+            "type": "number",
+            "label": "notifyInventoryDays",
+            "min": 0,
+            "max": 365,
+            "hidden": "!data.notifyAdapter",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
         "notifyTime": {
             "type": "text",
             "label": "notifyTime",
-            "hidden": "!data.notifyAdapter || !data.notifyExpiry || data.bestBeforeMode === 'off'",
+            "hidden": "!data.notifyAdapter || ((!data.notifyExpiry || data.bestBeforeMode === 'off') && !(data.notifyInventoryDays > 0))",
             "newLine": true,
             "xs": 12,
             "sm": 12,

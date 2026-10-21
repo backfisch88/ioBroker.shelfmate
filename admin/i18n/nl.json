@@ -57,5 +57,6 @@
     "lbShelf": "Groot schapetiket (locatie)",
     "lbBox": "Doosetiket met inhoud (locatie)",
     "lbOpened": "Etiket «Geopend op» (product)",
-    "lbFreezer": "Vriezeretiket (product)"
+    "lbFreezer": "Vriezeretiket (product)",
+    "notifyInventoryDays": "Inventarisatieherinnering elke … dagen (0 = uit)"
 }

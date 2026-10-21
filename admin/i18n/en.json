@@ -57,5 +57,6 @@
     "lbShelf": "Large shelf label (storage location)",
     "lbBox": "Box label with contents (storage location)",
     "lbOpened": "\"Opened on\" label (product)",
-    "lbFreezer": "Freezer label (product)"
+    "lbFreezer": "Freezer label (product)",
+    "notifyInventoryDays": "Remind about a stocktaking every … days (0 = off)"
 }

@@ -21,6 +21,10 @@ ShelfMate ist ein Haushalts-Vorratslager für ioBroker. Es läuft als installier
 - App und HTML-Datenpunkte nutzen die ioBroker-Systemsprache (11 Sprachen)
 - Eigener HTTPS-Server mit den ioBroker-Zertifikaten, optionaler Zugriffsschlüssel
 
+## Etiketten drucken
+
+Die Etiketten entstehen als PNG-Bilder in der eingestellten Etikettengröße und werden vom Handy geteilt oder gespeichert. Der Autor druckt sie auf einem Niimbot B1, der über CUPS auf einem Linux-Rechner als AirPrint-Drucker eingerichtet ist, sodass das Handy direkt drucken kann. Die Druckereinrichtung gehört nicht zum Adapter; Stichwort zum Suchen: „Niimbot CUPS AirPrint“.
+
 ## Installation
 
 Über den Admin (Adapter).

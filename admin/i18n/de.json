@@ -57,5 +57,6 @@
     "lbShelf": "Großes Regal-Etikett (Lagerort)",
     "lbBox": "Boxen-Etikett mit Inhalt (Lagerort)",
     "lbOpened": "„Geöffnet am“-Etikett (Produkt)",
-    "lbFreezer": "Gefrierfach-Etikett (Produkt)"
+    "lbFreezer": "Gefrierfach-Etikett (Produkt)",
+    "notifyInventoryDays": "Inventur-Erinnerung alle … Tage (0 = aus)"
 }

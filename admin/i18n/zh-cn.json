@@ -57,5 +57,6 @@
     "lbShelf": "大号货架标签（存放位置）",
     "lbBox": "带内容清单的箱子标签（存放位置）",
     "lbOpened": "“开封日期”标签（商品）",
-    "lbFreezer": "冷冻标签（商品）"
+    "lbFreezer": "冷冻标签（商品）",
+    "notifyInventoryDays": "每 … 天提醒盘点（0 = 关闭）"
 }

@@ -57,5 +57,6 @@
     "lbShelf": "Etiqueta grande de prateleira (local)",
     "lbBox": "Etiqueta de caixa com conteúdo (local)",
     "lbOpened": "Etiqueta «Aberto em» (produto)",
-    "lbFreezer": "Etiqueta de congelador (produto)"
+    "lbFreezer": "Etiqueta de congelador (produto)",
+    "notifyInventoryDays": "Lembrar de um inventário a cada … dias (0 = desligado)"
 }

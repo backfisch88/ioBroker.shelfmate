@@ -57,5 +57,6 @@
     "lbShelf": "Grande étiquette d'étagère (emplacement)",
     "lbBox": "Étiquette de boîte avec contenu (emplacement)",
     "lbOpened": "Étiquette « Ouvert le » (produit)",
-    "lbFreezer": "Étiquette congélateur (produit)"
+    "lbFreezer": "Étiquette congélateur (produit)",
+    "notifyInventoryDays": "Rappel d'inventaire tous les … jours (0 = désactivé)"
 }

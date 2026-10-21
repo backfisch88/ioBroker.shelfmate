@@ -153,6 +153,7 @@ class Shelfmate extends utils.Adapter {
             ['stats.lowStockList', 'Names at or below minimum stock (JSON)', 'string', 'json', false],
             ['stats.inventory', 'Everything in stock (JSON)', 'string', 'json', false],
             ['stats.inventoryHtml', 'Everything in stock (HTML table for VIS)', 'string', 'html', false],
+            ['stats.lastInventoryReminder', 'Time of the last stocktaking reminder', 'number', 'date', false],
             ['stats.consumption', 'Consumption of the last 30 days (JSON)', 'string', 'json', false],
             ['stats.expiringCount', 'Products expired or expiring soon', 'number', 'value', false],
             ['stats.expiring', 'Products expired or expiring soon (JSON)', 'string', 'json', false],
@@ -586,21 +587,57 @@ class Shelfmate extends utils.Adapter {
             this.notifyTimer = null;
         }
         const bb = this.bestBeforeConfig();
-        if (!this.config.notifyAdapter || !this.config.notifyExpiry || bb.bestBeforeMode === 'off') {
+        const expiry = !!this.config.notifyExpiry && bb.bestBeforeMode !== 'off';
+        if (!this.config.notifyAdapter || (!expiry && this.inventoryDays() <= 0)) {
             return;
         }
         this.notifyTimer = this.setTimeout(
             () => {
                 this.notifyTimer = null;
-                const list = this.inv.expiryList(bb.bestBeforeMode, bb.bestBeforeWarnDays);
-                const message = expiryText(this.lang, list);
-                this.notify(message, list.some(x => x.expired) ? 'warn' : 'info');
+                if (expiry) {
+                    const list = this.inv.expiryList(bb.bestBeforeMode, bb.bestBeforeWarnDays);
+                    const message = expiryText(this.lang, list);
+                    this.notify(message, list.some(x => x.expired) ? 'warn' : 'info');
+                }
+                this.inventoryReminder().catch(e => this.log.debug(`Stocktaking reminder: ${e.message}`));
                 if (!this.closing) {
                     this.scheduleNotify();
                 }
             },
             msUntil(String(this.config.notifyTime || '08:00')),
         );
+    }
+
+    /**
+     * Days between stocktaking reminders, 0 = off.
+     *
+     * @returns {number} days
+     */
+    inventoryDays() {
+        const n = Math.floor(Number(this.config.notifyInventoryDays));
+        return Number.isFinite(n) && n > 0 && n <= 365 ? n : 0;
+    }
+
+    /**
+     * Remind about a stocktaking when the last one (or the last reminder) is older than the configured interval.
+     */
+    async inventoryReminder() {
+        const days = this.inventoryDays();
+        if (!days) {
+            return;
+        }
+        const last = this.inv.data.history.filter(h => h.kind === 'stocktake').map(h => Date.parse(h.time));
+        const state = await this.getStateAsync('stats.lastInventoryReminder');
+        const ref = Math.max(0, Number(state && state.val) || 0, ...last);
+        const now = Date.now();
+        if (!ref) {
+            await this.setState('stats.lastInventoryReminder', now, true);
+            return;
+        }
+        if (now - ref >= days * 86400000 - 3600000) {
+            this.notify((NOTIFY_TEXT[this.lang] || NOTIFY_TEXT.en).inventory, 'info');
+            await this.setState('stats.lastInventoryReminder', now, true);
+        }
     }
 
     /**

@@ -204,7 +204,8 @@
         "labelButtons": [
             "ean",
             "qr"
-        ]
+        ],
+        "notifyInventoryDays": 0
     },
     "objects": [],
     "instanceObjects": [

@@ -28,8 +28,9 @@ German short description: [README.de.md](README.de.md)
 - Overview of everything in stock as data points (JSON and HTML table for VIS)
 - Notifications through Telegram, telegrammenu2, Pushover, Signal, WhatsApp, Matrix or e-mail: minimum stock reached, daily message about expired and expiring products
 - Consumption of the last 30 days per product with a suggestion for the minimum stock that you can apply or dismiss with one tap
+- A bulb icon in the header collects all suggestions (group suggestions, minimum stock) in one place
 - Device name per phone, shown in the history for every booking
-- Stocktaking per storage location (Storage locations / Stocktaking): either as a list (expected quantity, enter the counted quantity or tap ✓) or by scanning every item with the camera field or a hand scanner; the variant is chosen in the settings. Corrections appear in the history as "Stocktaking"
+- Stocktaking per storage location (Storage locations / Stocktaking): either as a list (expected quantity; type the counted quantity, tap ✓ for "correct", rows you leave empty stay unchanged) or by scanning every item (each scan counts +1, items that were not scanned count as 0) with the camera in continuous mode or a keyboard-style scanner; the variant is chosen in the settings. Corrections appear in the history as "Stocktaking"
 - Group suggestions: products with similar names ("Flour", "Flour (Type 405)") can be combined into one group; single products can be removed from a suggestion
 - Label templates: "opened on", freezer label, large shelf label, box label with contents list, QR-only label. The adapter settings let you choose which label buttons the app shows
 - JSON backup: download and import in the app
@@ -68,6 +69,7 @@ Install via the ioBroker Admin UI (Adapters). Then add an instance and open `htt
 | Best-before date | **Off**, **per product** (one date on each product) or **per stocking** (a date for every booking of stock; removing uses the oldest date first) |
 | Notification adapter | Installed instance for messages (telegram, telegrammenu2, pushover, signal, whatsapp, matrix, email). Optional recipient (chat ID or e-mail address), the area for telegrammenu2, a test button, and the options "minimum stock reached" and "daily message about expired products" with its time |
 | Label buttons | Which label buttons the app shows (EAN, QR, QR only, large shelf label, box label, "opened on", freezer label) |
+| Stocktaking reminder | Optional message every N days when no stocktaking was done in that time (0 = off), sent at the time of the daily message |
 | Warn before expiry | Days before the date from which products are marked and listed in the data points |
 
 ### Best-before date
@@ -100,6 +102,10 @@ With Bring, Bring special or Script (with a remove state) there are two independ
 Camera access and the offline mode need a certificate the phone trusts. With a self-signed certificate, download the ioBroker certificate in the app (Settings), install the profile and enable full trust. A certificate from a public CA (for example Let's Encrypt via the
 `acme` adapter) needs no installation.
 
+## Printing labels
+
+The labels are created as PNG images in the label size you set in the app, and are shared or saved from the phone. The author prints them on a Niimbot B1 label printer that is set up as an AirPrint printer through CUPS on a Linux machine, so the phone can print straight to it. Setting up a printer is not part of this adapter; search for "Niimbot CUPS AirPrint" if you want to do the same.
+
 ## Datapoints
 
 | State | Description |
@@ -131,6 +137,8 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 - New: notifications through any installed notification adapter (Telegram, telegrammenu2, Pushover, Signal, WhatsApp, Matrix, e-mail): minimum stock reached and a daily message about expired / expiring products, with a test button
 - New: consumption of the last 30 days per product in the app and as data point `stats.consumption`, with a suggestion for the minimum stock
 - New: stocktaking per storage location (list or scan variant, chosen in the settings)
+- New: stocktaking reminder (interval in days) in the notification settings
+- New: bulb icon in the header with all suggestions; group suggestions show product images and package sizes and keep the scroll position
 - New: device name in the settings, shown in the history for every booking
 - New: group suggestions (Settings / Data): products with similar names can be combined into one group with one tap
 - New: more label templates ("opened on", freezer, large shelf, box with contents, QR only); the adapter settings choose which label buttons the app shows
