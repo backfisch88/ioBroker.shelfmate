@@ -232,6 +232,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 
 ## Changelog
 ### **WORK IN PROGRESS**
+- New: opened products carry a 📭 symbol in the overview
 - Fixed: product, location and history lists no longer flicker on background updates
 - Changed: the tab menu stays visible on every page
 - New: "Reset statistics" button in the settings (history is kept)
