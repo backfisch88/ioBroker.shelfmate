@@ -155,6 +155,7 @@ Choose the mode in the adapter settings: per product or per stocking. With "per 
 1. Open **Locations / Stocking**.
 2. Scan the QR code of the location (or choose it in the list), then scan the products one after another with the camera, a scanner or by typing the EAN. Every scan counts 1, the list shows the quantities and I can correct them.
 3. Scan the same location code again (or tap **Stock in**). Everything is booked in at once. Products by weight or volume count as whole packages and need the package size in g or ml.
+4. A barcode that is not in the list yet is looked up in Open Food Facts and the product is created and counted right away. If the databases do not know it either, I get a product called "Unknown product <barcode>" that counts too, and it shows up as a suggestion (light bulb, "Edit new products") until I have edited and saved it.
 
 ### Stocktaking by scanning
 1. Open **Locations / Stocktaking** and choose the variant **Scan** (settings or on the page).
@@ -226,6 +227,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 - New: scanner mode: book stock in and out with scanned codes through data points (`scanner.input`, `scanner.active`, `scanner.result`), without the app
 - New: a wireless scanner whose dongle sits in the ioBroker host (keyboard device) is read directly, with prefix and suffix
 - New: own label size for the shelf label, the box label and the full-page code (A6, A5, A4), the small label size stays the default
+- New: unknown barcodes are created from Open Food Facts while stocking; products without data show up as a suggestion to edit
 - New: stocking page in the app (location, products, location again) for whole shelves
 - New: stocking mode for the scanner: scan a location, then all products, then the location again (for example a shelf of baby food jars)
 - New: setting for location labels: QR code or Code 128 barcode (for scanners without 2D)

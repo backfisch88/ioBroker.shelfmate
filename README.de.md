@@ -54,6 +54,7 @@ Modus in den Adapter-Einstellungen wählen: pro Produkt oder pro Einlagerung. Be
 1. **Lagerorte / Einräumen** öffnen.
 2. Den QR-Code des Lagerorts scannen (oder in der Liste wählen), dann die Produkte nacheinander mit der Kamera, einem Scanner oder per Eintippen der EAN scannen. Jeder Scan zählt 1, die Liste zeigt die Mengen und ich kann sie korrigieren.
 3. Denselben Lagerort-Code nochmal scannen (oder **Einlagern** tippen). Alles wird auf einmal eingelagert. Produkte nach Gewicht oder Volumen zählen als ganze Packungen und brauchen die Packungsgröße in g oder ml.
+4. Ein Barcode, der noch nicht in der Liste ist, wird bei Open Food Facts gesucht, das Produkt wird angelegt und gleich mitgezählt. Kennen ihn die Datenbanken auch nicht, entsteht ein Produkt „Unbekanntes Produkt <Barcode>“, das ebenfalls zählt und als Vorschlag erscheint (Glühbirne, „Neue Produkte bearbeiten“), bis ich es bearbeitet und gespeichert habe.
 
 ### Inventur per Scan
 1. **Lagerorte / Inventur** öffnen und die Variante **Scannen** wählen (Einstellungen oder auf der Seite).
