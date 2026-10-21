@@ -115,6 +115,7 @@ Choose the mode in the settings:
 - "Undo opening" on the product page turns one opened package back into a normal one.
 - **Spoiled**: when taking out, choose "Spoiled" instead of "Used". It leaves the consumption statistics and is summed up in the history for 30 days.
 - **Undo**: the history has a button that reverts the last booking, and the scanner has the code `SM:UNDO`.
+- **Quick date input**: the best-before field is a text field. `+3d` is in 3 days, `+2w` in 2 weeks, `+1m` in a month, `+1y` in a year, `12/26` is the end of December 2026 (as printed on many packs), `2412` or `24.12.` is the next 24 December, `24.12.26` a full date, `x` means no date. A preview below the field shows what was understood.
 - **Per stocking**: when you book stock in you can enter a date. Several dates per product and location are kept; booking out and moving always use the oldest date first.
 
 Products that are expired or expire within the configured warning period get a badge ("expires in 3 days" / "expired") and are listed in the data points `stats.expiring*`.
@@ -234,6 +235,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 
 ## Changelog
 ### **WORK IN PROGRESS**
+- New: quick date input for the best-before date (`+3d`, `+2w`, `+1m`, `+1y`, `12/26`, `2412`, `24.12.26`, `tomorrow`, `x` = no date), with a live preview
 - New: suggestions while typing in the search (product names, brands, tags)
 - New: suggested shelf life for dry goods from a built-in list (can be switched off)
 - Fixed: white screen when the app is opened without a connection to the server (barcode script now comes from the cache and no longer blocks the page)
