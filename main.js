@@ -626,7 +626,10 @@ class Shelfmate extends utils.Adapter {
         if (!days) {
             return;
         }
-        const last = this.inv.data.history.filter(h => h.kind === 'stocktake').map(h => Date.parse(h.time));
+        const last = [
+            ...this.inv.data.history.filter(h => h.kind === 'stocktake').map(h => Date.parse(h.time)),
+            ...Object.values(this.inv.data.locations).map(l => Date.parse(l.stocktake || '') || 0),
+        ];
         const state = await this.getStateAsync('stats.lastInventoryReminder');
         const ref = Math.max(0, Number(state && state.val) || 0, ...last);
         const now = Date.now();
