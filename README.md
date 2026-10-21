@@ -30,7 +30,7 @@ German short description: [README.de.md](README.de.md)
 - Consumption of the last 30 days per product with a suggestion for the minimum stock that you can apply or dismiss with one tap
 - A bulb icon in the header collects all suggestions (group suggestions, minimum stock) in one place
 - Device name per phone, shown in the history for every booking
-- Stocktaking per storage location (Storage locations / Stocktaking): either as a list (expected quantity; type the counted quantity, tap ✓ for "correct", rows you leave empty stay unchanged) or by scanning every item (each scan counts +1, items that were not scanned count as 0) with the camera in continuous mode or a keyboard-style scanner; the variant is chosen in the settings. Corrections appear in the history as "Stocktaking"
+- Stocktaking per storage location: as a list (expected quantity; type the counted quantity or tap ✓) or by scanning (scan the location QR, then every item, then the same QR again to finish; works with the camera or a keyboard-style scanner). Product images are shown, a summary confirms each finished location, and corrections appear in the history as "Stocktaking"
 - Group suggestions: products with similar names ("Flour", "Flour (Type 405)") can be combined into one group; single products can be removed from a suggestion
 - Label templates: "opened on", freezer label, large shelf label, box label with contents list, QR-only label. The adapter settings let you choose which label buttons the app shows
 - JSON backup: download and import in the app
@@ -97,6 +97,54 @@ With Bring, Bring special or Script (with a remove state) there are two independ
 - **Remove from the list when the stock is refilled**: when the stock rises above the minimum again, the item is taken off the list (default: off).
 - **Remove from the list when I untick the check mark in the app**: tapping the check mark of a listed item in the app also removes it from the list (default: on). If disabled, only the mark in the app is cleared.
 
+## Tutorials
+
+Short walk-throughs of the main functions. All of them are done in the app.
+
+### Book stock in and out
+1. Tap **Scan** and hold the barcode in front of the camera (or type it in).
+2. A known product opens directly; an unknown one is looked up on Open Food Facts and pre-filled. Check it and save.
+3. Choose **Stock in**, **Take out** or **Move**, set the quantity and the storage location, and save.
+4. Tip: scan the QR code of the shelf instead of choosing the location from the list.
+
+### Storage locations and labels
+1. Open **Locations**, create an area (for example "Pantry") and a location ("Shelf 1").
+2. Open the location. Its QR code is shown there; the label buttons create the label as an image (QR only, large shelf label, box label with contents).
+3. Set your label size under **Settings / Labels** once (for example 50 × 30 mm). In the adapter settings you choose which label buttons the app shows.
+4. Print the image (see "Printing labels") and attach it to the shelf or box.
+
+### Products without a barcode
+Create the product by hand and let the app generate its own EAN-13 code. Print that code as a label and stick it on the item. Upload your own product image if you like; it is compressed automatically.
+
+### Minimum stock and shopping list
+1. Open a product and set a **minimum stock**. For products from one group (for example all kinds of flour) set it on the group; the stock counts together.
+2. Choose the shopping-list mode in the adapter settings (see "Shopping list").
+3. When the stock falls to the minimum, the product is put on the list. The check mark in the overview shows what is on the list; tap it to take the product off again.
+
+### Best-before date
+Choose the mode in the adapter settings: per product or per stocking. With "per stocking" you enter the date when you book stock in, and taking out always uses the oldest date first. Expired and soon expiring products are marked and can be reported by notification.
+
+### Stocktaking by scanning
+1. Open **Locations / Stocktaking** and choose the variant **Scan** (settings or on the page).
+2. Scan the QR code of the location. "Stocktaking started" confirms it.
+3. Scan every item of that location; each scan counts +1 (the same item twice means two).
+4. Scan the **same** location QR code again. The stocktaking of that location is finished: the stock is corrected, the location is marked as done, and a summary shows what was counted (with the expected quantity where it differs).
+5. Scan the QR code of the next location to continue. Another location is only accepted after the current one is finished.
+
+The page also shows which locations of the area are done and which are still open. Items you did not scan count as 0. Prefer to check by hand? Use the variant **List**: type the counted quantity or tap ✓ for "correct". Corrections appear in the history as "Stocktaking". A reminder interval can be set in the notification settings.
+
+### Suggestions (bulb icon)
+The bulb in the header collects three kinds of hints: group suggestions (similar products that could count together; you can drop single products from a suggestion or have it ignored), minimum stock suggestions (only for products you use regularly; ✓ applies, ✕ dismisses) and a due stocking. Nothing is changed without a tap.
+
+### Notifications
+Select a notification adapter in the adapter settings, enter the target (for example a chat ID) and use the test button. You can be told when the minimum stock is reached, get a daily message about expired and expiring products at a time of your choice, and be reminded of a stocktaking every N days.
+
+### Export and backup
+Under **Settings / Data**: **JSON backup** (download and import again), **Stock as CSV** (for Excel and similar) and **Stock as PDF** (a printable list grouped by location; it opens the share sheet so you can save or print it).
+
+### Offline use
+After the certificate is trusted (see below), the app also starts without a connection. Bookings and shopping-list entries made offline are queued and sent automatically when the connection is back.
+
 ### Trusting the certificate on iPhone
 
 Camera access and the offline mode need a certificate the phone trusts. With a self-signed certificate, download the ioBroker certificate in the app (Settings), install the profile and enable full trust. A certificate from a public CA (for example Let's Encrypt via the
@@ -140,8 +188,10 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 - New: device name in the settings, shown in the history for every booking
 - New: export of the stock as CSV or as a PDF in the settings under "Data"
 - Change: minimum stock suggestions only for regularly used products (removals on at least 4 days in at least 3 different weeks)
-- New: stocktaking by scanning: scan a location QR, then its products, then the next location QR, which finishes the previous location automatically (also with the camera); a summary shows which locations of the area are done
-- Chore: Dependabot minor and patch updates are merged automatically after the checks, major updates stay manual
+- New: tutorials for the main functions in the README
+- Change: stocktaking by scanning shows product images and a summary per finished location; a location is finished only by scanning its own QR code again
+- New: stocktaking by scanning: scan a location QR, then its products, then the same location QR again to finish it (also with the camera); a summary shows which locations of the area are done
+- Chore: non-critical Dependabot updates are merged automatically after the checks
 - New: group suggestions (Settings / Data): products with similar names can be combined into one group with one tap
 - New: more label templates ("opened on", freezer, large shelf, box with contents, QR only); the adapter settings choose which label buttons the app shows
 
