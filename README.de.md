@@ -34,7 +34,7 @@ ShelfMate wird aktiv weiterentwickelt. Geplant bzw. denkbar (ohne Zusage, ohne R
 - Benachrichtigung bei ablaufenden oder knappen Produkten (Datenpunkt und/oder Nachrichten-Adapter wie Telegram)
 - Verbrauchsstatistik und Vorschlag für den Mindestbestand anhand des Verlaufs
 - CSV-Import und -Export zusätzlich zum JSON-Backup
-- Mehrere Benutzer mit eigenen Einträgen im Verlauf
+- Gerätename pro Handy (z. B. „iPhone von Henrik“), der im Verlauf bei jeder Buchung steht, ganz ohne Benutzerverwaltung
 - Weitere Etiketten-Vorlagen (z. B. mit MHD)
 
 Ideen und Fehler gerne als [GitHub-Issue](https://github.com/backfisch88/ioBroker.shelfmate/issues) melden.

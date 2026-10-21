@@ -116,7 +116,7 @@ ShelfMate is under active development. Planned and possible features (no promise
 - Notifications for products that are about to expire or run low (data point and/or message adapters such as Telegram)
 - Consumption statistics and a suggestion for the minimum stock based on the history
 - CSV import and export in addition to the JSON backup
-- Several users with their own entries in the history
+- Device name per phone (for example "iPhone of Henrik") that is shown in the history for every booking, without any user management
 - More label templates (for example with best-before date)
 
 Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisch88/ioBroker.shelfmate/issues).
