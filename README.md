@@ -110,6 +110,7 @@ Choose the mode in the settings:
 - **Per product**: each product has one optional date (product form). Products at or after the date are marked in the overview and detail view.
 - **Standard shelf life** (optional, per product, only with "per stocking"): the best-before date is pre-filled when you stock in (pasta, for example, a year ahead).
 - **Opened** (optional, per product): "Mark as opened" on the product page splits one package off. If you entered a shelf life after opening, it gets that date (or the earlier best-before date). Opened packages are listed separately and used first.
+- "Undo opening" on the product page turns one opened package back into a normal one.
 - **Spoiled**: when taking out, choose "Spoiled" instead of "Used". It leaves the consumption statistics and is summed up in the history for 30 days.
 - **Undo**: the history has a button that reverts the last booking, and the scanner has the code `SM:UNDO`.
 - **Per stocking**: when you book stock in you can enter a date. Several dates per product and location are kept; booking out and moving always use the oldest date first.
