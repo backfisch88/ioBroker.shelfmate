@@ -31,8 +31,9 @@ ShelfMate wird aktiv weiterentwickelt. Geplant (ohne Zusage, ohne Reihenfolge):
 
 - **Inventurmodus**: pro Lagerort zählen, entweder als Liste (Soll-Menge, gezählte Menge eintragen) oder per Scan jedes Artikels; die Variante wählst du in den Einstellungen. Später auch für einen ganzen Bereich. Korrekturen erscheinen im Verlauf als „Inventur“
 - **Externer Barcode-Scanner** (USB oder Bluetooth, Tastaturmodus): Prefix und Suffix einstellbar, Scan wird am Tempo vom Tippen unterschieden, Steuer-Barcodes wie „Einlagern“ / „Entnehmen“ zum Arbeiten ohne Display
+- **Gruppen-Vorschläge**: Die App durchsucht die Produktnamen und schlägt vor, was zusammengehört (z. B. „Mehl“ und „Mehl (Typ 405)“), um es in einer Gruppe zusammenzufassen
 - **Export** des Bestands als CSV und als druckbares PDF
-- **Weitere Etiketten-Vorlagen**: „Geöffnet am“, Gefrierfach-Etikett („Eingefroren am“ / „Haltbar bis“), Boxen-Etikett mit Inhaltsliste, großes Regal-Etikett, Nur-QR-Etikett
+- **Weitere Etiketten-Vorlagen**: „Geöffnet am“, Gefrierfach-Etikett („Eingefroren am“ / „Haltbar bis“), Boxen-Etikett mit Inhaltsliste, großes Regal-Etikett, Nur-QR-Etikett. In den Adapter-Einstellungen wählst du, welche Etiketten-Knöpfe in der App erscheinen, damit jeder es knapp oder ausführlich halten kann
 
 Ideen und Fehler gerne als [GitHub-Issue](https://github.com/backfisch88/ioBroker.shelfmate/issues) melden.
 

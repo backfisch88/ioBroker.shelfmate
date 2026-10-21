@@ -118,13 +118,14 @@ ShelfMate is under active development. Planned features (no promises, no order):
 
 - **Stocktaking mode**: count what is really on the shelf per storage location, either as a list (target quantity, enter the counted quantity) or by scanning every item; the variant can be chosen in the settings. Later also for a whole area, location after location. Corrections appear in the history as "Stocktaking"
 - **External barcode scanner** (USB or Bluetooth, keyboard mode): configurable prefix and suffix, scans are told apart from typing by their speed, control barcodes such as "stock in" / "take out" to work without the display
+- **Group suggestions**: the app scans the product names and suggests products that belong together (for example "Flour" and "Flour (Type 405)") to be combined into one group
 - **Export** of the stock as CSV and as a printable PDF
-- **More label templates**: "opened on", freezer label ("frozen on" / "best before"), box label with contents list, large shelf label, QR-only label
+- **More label templates**: "opened on", freezer label ("frozen on" / "best before"), box label with contents list, large shelf label, QR-only label. In the adapter settings you choose which label buttons appear in the app, so everybody can keep it as short or as full as they like
 
 Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
 ## Changelog
-### 0.1.11 (2026-10-21)
+### **WORK IN PROGRESS**
 - New: notifications through any installed notification adapter (Telegram, telegrammenu2, Pushover, Signal, WhatsApp, Matrix, e-mail): minimum stock reached and a daily message about expired / expiring products, with a test button
 - New: consumption of the last 30 days per product in the app and as data point `stats.consumption`, with a suggestion for the minimum stock
 - New: device name in the settings, shown in the history for every booking
