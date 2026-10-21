@@ -87,6 +87,7 @@ Books stock in and out with scanned codes, without opening the app. It is switch
 | product, then location code | stocks in 1 at that location |
 | product twice | takes out 1, from the location with the nearest best-before date (without dates: the biggest stock) when no location follows in time |
 | product twice, then location code | takes out 1 from exactly that location |
+| location code alone | starts stocking mode: every product scanned afterwards is stocked in at that location (1 each, booked right away); the same location code again finishes it, another location code switches to that location, and after 5 minutes without a scan it ends by itself |
 | `SM:QTY:5`, then the above | the next booking counts 5 instead of 1 |
 | `SM:CANCEL` | forgets the waiting scan |
 
@@ -220,6 +221,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 - New: scanner mode: book stock in and out with scanned codes through data points (`scanner.input`, `scanner.active`, `scanner.result`), without the app
 - New: a wireless scanner whose dongle sits in the ioBroker host (keyboard device) is read directly, with prefix and suffix
 - New: own label size for the shelf label, the box label and the full-page code (A6, A5, A4), the small label size stays the default
+- New: stocking mode for the scanner: scan a location, then all products, then the location again (for example a shelf of baby food jars)
 - New: setting for location labels: QR code or Code 128 barcode (for scanners without 2D)
 - New: short scanner code for locations (`SM:L:<id>`) and a printable sheet with quantity and cancel codes
 
