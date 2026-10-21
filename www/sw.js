@@ -1,11 +1,12 @@
 /* Küchenlager Offline-Cache: Seite zuerst aus dem Netz (damit Updates ankommen), sonst aus dem Cache. */
-const CACHE = 'shelfmate-v44';
+const CACHE = 'shelfmate-v45';
 const IMG = 'shelfmate-img-v1';
 const PAGE = new URL('./', self.registration.scope).href;
 const CORE = [
   PAGE,
   new URL('shelfmateClient.js', self.registration.scope).href,
   new URL('i18n.js', self.registration.scope).href,
+  new URL('code128.js', self.registration.scope).href,
 ];
 const CDN = ['https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js'];
 

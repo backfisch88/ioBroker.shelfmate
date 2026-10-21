@@ -75,6 +75,8 @@ Die Inventur bleibt in der App, sie braucht das Display.
 
 Weil der Scanner mit US-Tastaturlayout tippt, können Umlaute und manche Sonderzeichen verloren gehen. Für Lagerorte nutze ich deshalb den kurzen Scanner-Code: Im Lagerort-Editor tippe ich „Kurzen Scanner-Code verwenden“, speichere und drucke das Etikett neu (alte Etiketten gelten weiter). Unter Einstellungen druckt „Steuer-Codes als PDF“ die Mengen-Codes und den Abbrechen-Code. Der Scanner hat kein Display, das Ergebnis jedes Scans steht in `scanner.result`.
 
+**Scanner ohne 2D (nur Strichcode).** Für einen Scanner, der nur 1D-Codes liest, stelle ich „Code auf Lagerort-Etiketten“ auf „Strichcode“. Alle Lagerort-Etiketten (auch Box- und Regal-Etikett) zeigen dann oben den Namen und darunter nur einen Code-128-Strichcode, das Steuer-Code-Blatt wird ebenfalls als Strichcodes gedruckt. Der Lagerort muss vorher gespeichert sein, weil der Code seine kurze ID enthält (`SM:L:<8 Zeichen>`). Das passt auf ein Etikett mit 50 × 30 mm.
+
 ### Vorschläge (Glühbirne)
 Die Glühbirne oben sammelt drei Arten von Hinweisen: Gruppen-Vorschläge (ähnliche Produkte, die gemeinsam zählen könnten; einzelne Produkte lassen sich herausnehmen, ein Vorschlag lässt sich ignorieren), Mindestbestand-Vorschläge (nur für regelmäßig verbrauchte Produkte; ✓ übernimmt, ✕ verwirft) und eine fällige Inventur. Ohne Antippen ändert sich nichts.
 

@@ -96,6 +96,8 @@ Products by weight or volume are booked in whole packages (the package size has 
 
 Because the scanner types with a US keyboard layout, umlauts and some special characters can get lost. For locations I therefore use the short scanner code: in the location editor I tap "Use the short scanner code", save, and print the label again (old labels keep working). In the settings the button "Control codes as PDF" prints the quantity codes and the cancel code. The scanner has no display, the result of every scan is in `scanner.result`.
 
+**Scanner without 2D (barcode only).** For a scanner that reads 1D codes only, I switch the setting "Code on location labels" to "Barcode". All location labels (also the box and shelf labels) then show the name on top and only a Code 128 barcode below, and the control codes sheet is printed as barcodes too. The location has to be saved first, because the code contains its short id (`SM:L:<8 characters>`). It fits a 50 × 30 mm label.
+
 ### Best-before date
 
 Choose the mode in the settings:
@@ -217,6 +219,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 ### **WORK IN PROGRESS**
 - New: scanner mode: book stock in and out with scanned codes through data points (`scanner.input`, `scanner.active`, `scanner.result`), without the app
 - New: a wireless scanner whose dongle sits in the ioBroker host (keyboard device) is read directly, with prefix and suffix
+- New: setting for location labels: QR code or Code 128 barcode (for scanners without 2D)
 - New: short scanner code for locations (`SM:L:<id>`) and a printable sheet with quantity and cancel codes
 
 ### 0.1.13 (2026-10-21)
