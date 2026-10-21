@@ -571,6 +571,7 @@ async function startCamera(){
       else{go('booking');toast('QR-Code keinem Lagerort zugeordnet')}
     }else lookupBarcode(code);
   },()=>{});
+  if(currentPage!=='scanner'||qrScanner!==scanner){try{await scanner.stop()}catch(_){}try{await scanner.clear()}catch(_){}if(qrScanner===scanner)qrScanner=null;return}
   scannerRun=true;setupTorch(scanner);
   status.textContent=qrMode?'Lagerort-QR scannen':'Barcode vor die Kamera halten';
  }catch(e){

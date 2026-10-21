@@ -188,6 +188,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 
 ## Changelog
 ### 0.1.12 (2026-10-21)
+- Fix: the camera is switched off reliably when you leave the scanner while it is still starting (the camera indicator stayed on)
 - Fix: the product list no longer flickers (it was redrawn every few seconds, even without changes); expanded groups span the full row on wide screens
 - New: on wide screens (tablet, desktop) products, storage locations and the history are shown in two or three columns; the phone layout is unchanged
 
