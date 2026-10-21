@@ -20,6 +20,7 @@ German short description: [README.de.md](README.de.md)
 - Product master data from Open Food Facts (name, brand, package size, Nutri-Score, categories), editable
 - Storage areas and locations with printable QR codes
 - Stock per location, history of all bookings, offline queue in the app
+- Search with suggestions while typing ("Nut" suggests "Nutella")
 - Product groups: "Flour" from several brands counts as one item
 - Optional best-before date (MHD) per product or per stocking, with warning before expiry
 - Optional standard shelf life and shelf life after opening, opened and spoiled marking, undo of the last booking
@@ -233,6 +234,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 
 ## Changelog
 ### **WORK IN PROGRESS**
+- New: suggestions while typing in the search (product names, brands, tags)
 - New: suggested shelf life for dry goods from a built-in list (can be switched off)
 - Fixed: white screen when the app is opened without a connection to the server (barcode script now comes from the cache and no longer blocks the page)
 - Changed: the access key is now stored encrypted; if you had set one, enter it again once in the adapter settings
