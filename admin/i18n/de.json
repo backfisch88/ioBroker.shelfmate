@@ -69,5 +69,6 @@
     "autoShelfLife": "Haltbarkeit für Trockenware vorschlagen",
     "autoShelfLifeHelp": "Für Produkte ohne eigene Haltbarkeit wird bei Nudeln, Reis, Konserven und Ähnlichem beim Einlagern ein MHD vorgeschlagen. Frische Ware bekommt keins.",
     "dateFormat": "Datumsformat",
-    "dateFormatHelp": "Format aller Datumsangaben in der Web-App, zum Beispiel beim MHD."
+    "dateFormatHelp": "Format aller Datumsangaben in der Web-App, zum Beispiel beim MHD.",
+    "hGeneral": "Allgemein"
 }

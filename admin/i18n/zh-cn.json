@@ -69,5 +69,6 @@
     "autoShelfLife": "为干货建议保质期",
     "autoShelfLifeHelp": "对于没有自己保质期的产品，入库时会为面食、大米、罐头等建议保质期。生鲜食品不会。",
     "dateFormat": "日期格式",
-    "dateFormatHelp": "网页应用中所有日期的格式，例如保质期。"
+    "dateFormatHelp": "网页应用中所有日期的格式，例如保质期。",
+    "hGeneral": "常规"
 }

@@ -27,7 +27,7 @@
         [365, 'glasur|kuvertüre|fondant|zuckerguss|zuckerschrift|lebkuchengewürz', 'glasur|kuvertüre|zuckerguss'],
         [730, 'backpulver|natron|vanillezucker|vanillinzucker|gelatine|speisefarbe|backfarbe|lebensmittelfarbe|back- und speisefarben', 'speisefarbe|backfarbe|lebensmittelfarbe'],
         [540, 'puddingpulver|pudding-pulver|vanille pudding|vanillepudding|götterspeise|soßenbinder|saucenbinder|dessertsauce pulver', ''],
-        [365, 'kartoffelmehl|maisstärke|kartoffelstärke|backerbsen|suppeneinlage|semmelknödel|knödelbrot|knödelpulver|kartoffelknödel pulver|kartoffelpüree pulver|püreeflocken|kartoffelflocken', 'backerbsen'],
+        [365, 'kartoffelmehl|maisstärke|kartoffelstärke|backerbsen|suppeneinlage|frittaten|flädle|semmelknödel|knödelbrot|knödelpulver|kartoffelknödel pulver|kartoffelpüree pulver|püreeflocken|kartoffelflocken', 'backerbsen'],
         // Nudeln, Reis, Getreide, Hülsenfrüchte
         [365, 'nudel|pasta|teigwaren|spaghetti|fusilli|penne|makkaroni|tagliatelle|farfalle|lasagne|cannelloni|rigatoni|tortiglioni|linguine|bucatini|capellini|vermicelli|conchiglie|orecchiette|radiatori|rotelle|gemelli|cellentani|pipe rigate|farfalline|stelline|risoni|orzo|kritharaki|fregola|spätzle|spirelli|tortellini getrocknet|ramen|udon|soba|couscous|bulgur|quinoa|hirse|polenta|grieß|graupen|buchweizen|amaranth|dinkelkörner|weizenkörner|zartweizen|ebly', 'nudeln|nudel|pasta'],
         [365, 'reis|basmati|jasmin|risotto|arborio|carnaroli|sushi-reis|parboiled|milchreis|wildreis|langkorn|rundkorn', 'basmatireis|jasminreis|milchreis|risottoreis|parboiled'],
@@ -68,15 +68,17 @@
 
     /**
      * @param {string} text product name, category, group and tags as one text
+     * @param {string} [name] product name (and group): only this is checked for fresh goods, categories and tags often mention milk or meat
      * @returns {number} suggested shelf life in days, 0 if unknown
      */
-    function guessShelfLife(text) {
+    function guessShelfLife(text, name) {
         const t = String(text || '').toLowerCase();
         if (!t) {
             return 0;
         }
-        const soup = /suppe|brei(pulver)?\b|milchbrei/.test(t) && !/frisch|kühl|gekühlt/.test(t);
-        if (!soup && EXCLUDE.test(t)) {
+        const n = String(name === undefined ? t : name).toLowerCase();
+        const soup = /suppe|brei(pulver)?\b|milchbrei/.test(n) && !/frisch|kühl|gekühlt/.test(n);
+        if (!soup && EXCLUDE.test(n)) {
             return 0;
         }
         for (const [days, re] of RULES) {

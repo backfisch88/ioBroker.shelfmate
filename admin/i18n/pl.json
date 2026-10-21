@@ -69,5 +69,6 @@
     "autoShelfLife": "Sugeruj termin przydatności dla produktów suchych",
     "autoShelfLifeHelp": "Dla produktów bez własnego terminu makaron, ryż, konserwy i podobne dostają przy dodawaniu sugerowaną datę ważności. Świeże produkty jej nie dostają.",
     "dateFormat": "Format daty",
-    "dateFormatHelp": "Format wszystkich dat w aplikacji webowej, na przykład daty ważności."
+    "dateFormatHelp": "Format wszystkich dat w aplikacji webowej, na przykład daty ważności.",
+    "hGeneral": "Ogólne"
 }

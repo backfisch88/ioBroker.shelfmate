@@ -69,5 +69,6 @@
     "autoShelfLife": "Houdbaarheid voorstellen voor droge waren",
     "autoShelfLifeHelp": "Voor producten zonder eigen houdbaarheid krijgen pasta, rijst, conserven en dergelijke bij het inruimen een voorgestelde THT. Verse waren krijgen er geen.",
     "dateFormat": "Datumnotatie",
-    "dateFormatHelp": "Notatie van alle datums in de web-app, bijvoorbeeld de THT."
+    "dateFormatHelp": "Notatie van alle datums in de web-app, bijvoorbeeld de THT.",
+    "hGeneral": "Algemeen"
 }
