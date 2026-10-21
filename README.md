@@ -109,7 +109,7 @@ A JSON backup can be downloaded and imported in the app (Settings). An import or
 
 ## Changelog
 ### 0.1.10 (2026-10-21)
-- Maintenance: repository checker fixes (Node 26 in the test matrix, workflow, metadata, Node.js >= 22.12)
+- Maintenance: repository checker fixes (Node 26 in the test matrix, workflow, metadata, Node.js >= 22.12); the certificate collection is chosen from a drop-down list
 
 ### 0.1.9 (2026-10-21)
 - New: adding to or removing from the shopping list works offline; the change is queued and sent once the connection is back

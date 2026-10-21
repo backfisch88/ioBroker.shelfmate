@@ -462,6 +462,20 @@ class Shelfmate extends utils.Adapter {
             this.sendTo(obj.from, obj.command, await this.makeCertificate(), obj.callback);
             return;
         }
+        if (obj && obj.command === 'getCertCollections' && obj.callback) {
+            let collections = [];
+            try {
+                const certs = await this.getForeignObjectAsync('system.certificates');
+                collections = Object.keys((certs && certs.native && certs.native.collections) || {}).map(name => ({
+                    label: name,
+                    value: name,
+                }));
+            } catch (e) {
+                this.log.warn(`Could not read the certificate collections: ${e.message}`);
+            }
+            this.sendTo(obj.from, obj.command, collections, obj.callback);
+            return;
+        }
         if (!obj || obj.command !== 'getBringLists' || !obj.callback) {
             return;
         }
