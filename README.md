@@ -126,7 +126,6 @@ A JSON backup can be downloaded and imported in the app (Settings). An import or
 
 ShelfMate is under active development. Planned features (no promises, no order):
 
-- **Stocktaking for a whole area**: go through all storage locations of an area one after the other
 - **External barcode scanner** (USB or Bluetooth, keyboard mode): configurable prefix and suffix, scans are told apart from typing by their speed, control barcodes such as "stock in" / "take out" to work without the display
 
 Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisch88/ioBroker.shelfmate/issues).
@@ -141,6 +140,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 - New: device name in the settings, shown in the history for every booking
 - New: export of the stock as CSV or as a PDF in the settings under "Data"
 - Change: minimum stock suggestions only for regularly used products (removals on at least 4 days in at least 3 different weeks)
+- New: stocktaking by scanning: scan a location QR, then its products, then the next location QR, which finishes the previous location automatically (also with the camera); a summary shows which locations of the area are done
 - Chore: Dependabot minor and patch updates are merged automatically after the checks, major updates stay manual
 - New: group suggestions (Settings / Data): products with similar names can be combined into one group with one tap
 - New: more label templates ("opened on", freezer, large shelf, box with contents, QR only); the adapter settings choose which label buttons the app shows
