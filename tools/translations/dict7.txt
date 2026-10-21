@@ -224,3 +224,6 @@ Produkte mit eigener Standard-Haltbarkeit in Tagen. Ohne eigenen Wert gilt der e
 Tage|Days|Дней|Dias|Dagen|Jours|Giorni|Días|Dni|Днів|天
 
 keins|none|нет|nenhuma|geen|aucune|nessuna|ninguna|brak|немає|无
+Backup & Export|Backup & export|Резервная копия и экспорт|Cópia de segurança e exportação|Back-up en export|Sauvegarde et export|Backup ed esportazione|Copia de seguridad y exportación|Kopia zapasowa i eksport|Резервна копія та експорт|备份与导出
+Datenbank|Database|База данных|Base de dados|Database|Base de données|Database|Base de datos|Baza danych|База даних|数据库
+Haltbarkeit|Shelf life|Срок хранения|Durabilidade|Houdbaarheid|Durée de conservation|Durata di conservazione|Duración|Trwałość|Термін зберігання|保质期
