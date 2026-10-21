@@ -89,9 +89,52 @@
         return 0;
     }
 
+    // Haltbarkeit nach dem Öffnen (Tage), Spezielles zuerst. Gleicher Aufbau wie oben, hier auch für Frisches.
+    const OPENED = [
+        [1, 'hackfleisch|hack|mett|tartar', ''],
+        [2, 'fleisch|geflügel|hähnchen|hühnchen|steak|filet|fisch|lachs|garnelen|frischmilch|sahne|schlagsahne|tomaten dose|dosentomaten|passierte tomaten|gehackte tomaten|pizzatomaten|passata|mais dose', 'passata'],
+        [3, 'milch|h-milch|milch haltbar|kondensmilch|kokosmilch|quark|frischkäse|schmand|crème fraîche|creme fraiche|aufschnitt|schinken|wurst|salami|tofu|hummus|konserve|dose|ananas|pfirsiche|mandarinen|fruchtcocktail|kichererbsen dose|bohnen dose|linsen dose', 'konserve|vollmilch|fettarme milch|laktosefreie milch'],
+        [4, 'hafermilch|haferdrink|sojamilch|sojadrink|mandelmilch|mandeldrink|reismilch|reisdrink|kokosdrink|erbsendrink|cashewdrink|barista', 'drink'],
+        [5, 'joghurt|yoghurt|skyr|kefir|buttermilch|apfelmus|apfelmark|saft|nudelsauce|tomatensauce|pastasauce|bolognese|currysauce|sauce glas|suppe|erbsensuppe|gnocchi|pasta frisch|tortellini|fertiggericht', 'nudelsauce|tomatensauce|saft'],
+        [7, 'pesto|oliven|sauerkraut|preiselbeeren|rotkohl|rote bete|kapern|champignons|artischocken|antipasti|getrocknete tomaten|käse|scheibenkäse|mozzarella|feta|salat|hefe|backhefe|kaffeeweißer', 'pesto|antipasti'],
+        [14, 'essiggurken|gurken im glas|silberzwiebeln|pfefferoni|hummus|margarine|butter', ''],
+        [30, 'marmelade|konfitüre|gelee|sirup|mayonnaise|mayo|remoulade|dressing|salatsauce|grillsauce|bbq|chips|snack|popcorn|salzstangen|brezeln|nachos|flips|kekse|keks|gebäck|waffeln|kaffee|espresso|kaffeebohnen|kaffeepads', 'marmelade|konfitüre|chips'],
+        [60, 'müsli|granola|cornflakes|flakes|porridge|haferflocken|knäckebrot|zwieback|reiswaffeln|maiswaffeln|cerealien|kindermüsli|kinderporridge|kakao|trinkschokolade|instantkaffee|milchpulver|brühe|brühwürfel|bouillon|backpulver|trockenhefe|nüsse|mandeln|erdnüsse|cashew|walnuss|haselnuss|studentenfutter|trockenfrüchte|rosinen|datteln', 'müsli|granola|nüsse'],
+        [90, 'ketchup|senf|sojasauce|worcestersauce|teriyaki|sriracha|sambal|tabasco|ajvar|harissa|currypaste|nutella|nuss-nougat|nussnougat|erdnussbutter|erdnusscreme|tahin|schokocreme|honigaufstrich|speiseöl|olivenöl|sonnenblumenöl|rapsöl|kokosöl|sesamöl|pflanzenöl|schokolade|kuvertüre|schokotropfen|riegel|bonbon|gummibär|fruchtgummi|marshmallow|lakritz|pralinen|streusel|glasur|fondant|mehl|panko|paniermehl|sesam|leinsamen|chiasamen|kürbiskern|sonnenblumenkern|kokosraspel|kokosflocken', 'ketchup|senf'],
+        [180, 'tee|kräutertee|früchtetee|schwarztee|grüntee|rooibos|gewürz|pfeffer|masala|curry|paprikapulver|zimt|kurkuma|oregano|basilikum|thymian|rosmarin|lorbeer|muskat|koriander|kümmel|majoran|salbei|vanille|speisestärke|maisstärke|kartoffelstärke|gelatine|puddingpulver|götterspeise', 'gewürz|tee'],
+        [365, 'zucker|honig|essig|salz|nudel|pasta|reis|linsen|couscous|bulgur|quinoa|polenta|grieß|graupen|buchweizen|hirse|kichererbsen|trockenerbsen|trockenbohnen', 'zucker|honig|nudeln|reis'],
+    ].map(([days, start, anywhere]) => {
+        const parts = [];
+        if (start) {
+            parts.push(`(?:^|[^${L}])(?:${start})`);
+        }
+        if (anywhere) {
+            parts.push(`(?:${anywhere})`);
+        }
+        return [days, new RegExp(parts.join('|'))];
+    });
+
+    /**
+     * @param {string} text product name, category, group and tags as one text
+     * @returns {number} suggested shelf life after opening in days, 0 if unknown
+     */
+    function guessOpenedDays(text) {
+        const t = String(text || '').toLowerCase();
+        if (!t) {
+            return 0;
+        }
+        for (const [days, re] of OPENED) {
+            if (re.test(t)) {
+                return days;
+            }
+        }
+        return 0;
+    }
+
     if (typeof module === 'object' && module.exports) {
-        module.exports = { guessShelfLife };
+        module.exports = { guessShelfLife, guessOpenedDays };
     } else {
         root.guessShelfLife = guessShelfLife;
+        root.guessOpenedDays = guessOpenedDays;
     }
 })(typeof window !== 'undefined' ? window : globalThis);

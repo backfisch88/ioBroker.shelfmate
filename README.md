@@ -240,6 +240,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 ### **WORK IN PROGRESS**
 - New: status filters on the overview (opened, best before soon, expired, reorder, empty), search suggestions as a dropdown under the search field, expired and soon-to-expire batches highlighted
 - New: a product without its own shelf life takes the one of its product group; settings list to review, change and remove all own shelf lives
+- New: shelf life after opening is suggested automatically as well (own value, product group, then the list); same switch as the standard shelf life
 - Improved: much larger standard shelf life list (specific words first, compound words, soups, spices, baking, drinks), fixed wrongly excluded products such as milk porridge and chopped tomatoes
 - New: date format setting (31.10.2026, 31/10/2026 or 2026-10-31) applied to all dates in the web app
 - New: set the best-before date of every package of existing stock on its own line on the product page, or headless for all unopened stock with the scanner codes `SM:DATE:<days>` (undoable)
