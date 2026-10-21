@@ -115,6 +115,7 @@ Choose the mode in the settings:
 - "Undo opening" on the product page turns one opened package back into a normal one.
 - **Spoiled**: when taking out, choose "Spoiled" instead of "Used". It leaves the consumption statistics and is summed up in the history for 30 days.
 - **Undo**: the history has a button that reverts the last booking, and the scanner has the code `SM:UNDO`.
+- **Adding or changing a date later** (per stocking): on the product page every line has an edit button. Stock without a date shows as "No best-before date"; tap it, optionally enter how many of it, and type or tap the date. The same works to correct a date or to remove it. It shows up in the history and can be undone.
 - **Quick date input**: the best-before field is a text field. `+3d` is in 3 days, `+2w` in 2 weeks, `+1m` in a month, `+1y` in a year, `12/26` is the end of December 2026 (as printed on many packs), `2412` or `24.12.` is the next 24 December, `24.12.26` a full date, `x` means no date. A preview below the field shows what was understood. Buttons for +1 to +14 days, +3w, +1m, +3m, +6m and +1y fill it with one tap.
 - **Per stocking**: when you book stock in you can enter a date. Several dates per product and location are kept; booking out and moving always use the oldest date first.
 
@@ -235,6 +236,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 
 ## Changelog
 ### **WORK IN PROGRESS**
+- New: add or change the best-before date of existing stock on the product page (with quantity, undoable)
 - New: quick date input for the best-before date (`+3d`, `+2w`, `+1m`, `+1y`, `12/26`, `2412`, `24.12.26`, `tomorrow`, `x` = no date), with a live preview
 - New: suggestions while typing in the search (product names, brands, tags)
 - New: suggested shelf life for dry goods from a built-in list (can be switched off)
