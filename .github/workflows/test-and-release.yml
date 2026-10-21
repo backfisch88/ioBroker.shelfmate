@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: ioBroker/testing-action-check@v1
+      - uses: ioBroker/testing-action-check@v2
         with:
           node-version: '22.x'
           # Uncomment the following line if your adapter cannot be installed using 'npm ci'
@@ -42,12 +42,13 @@ jobs:
 
   # Runs adapter tests on all supported node versions and OSes
   adapter-tests:
+    needs: [check-and-lint]
     if: contains(github.event.head_commit.message, '[skip ci]') == false
 
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node-version: [22.x, 24.x]
+        node-version: [22.x, 24.x, 26.x]
         os: [ubuntu-latest, windows-latest, macos-latest]
 
     steps:
@@ -57,13 +58,6 @@ jobs:
           os: ${{ matrix.os }}
           # Uncomment the following line if your adapter cannot be installed using 'npm ci'
           # install-command: 'npm install'
-
-# TODO: To enable automatic npm releases, set up trusted publishing in your npm account
-# See https://docs.npmjs.com/trusted-publishers for more details
-# Then uncomment the following block:
-
-#  # Deploys the final package to NPM
-#  deploy:
 
   # Creates a DRAFT GitHub release for every version tag (v*). Does NOT publish to npm.
   # Publishing the draft on GitHub (button "Publish release") is the explicit command that releases to npm.
@@ -86,10 +80,10 @@ jobs:
   # Pushing a version tag (v1.2.3) publishes the GitHub release and then npm. Pre-release tags (v1.2.3-beta.1)
   # only create a GitHub pre-release. A release published by hand or a manual start also publishes to npm.
   # Uses npm trusted publishing (OIDC), no secret needed.
-  npm-publish:
+  deploy:
     needs: [github-release]
     if: |
-      always() && (
+      !cancelled() && (
         github.event_name == 'release' ||
         github.event_name == 'workflow_dispatch' ||
         (needs.github-release.result == 'success' && contains(github.ref_name, '-') == false)

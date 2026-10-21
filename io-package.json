@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "shelfmate",
-        "version": "0.1.9",
+        "version": "0.1.10",
         "news": {
+            "0.1.10": {
+                "en": "Maintenance: repository checker fixes (Node 26 tests, workflow, metadata)",
+                "de": "Wartung: Korrekturen aus dem Repository-Checker (Node-26-Tests, Workflow, Metadaten)",
+                "ru": "Обслуживание: исправления по результатам проверки репозитория (тесты Node 26, workflow, метаданные)",
+                "pt": "Manutenção: correções do verificador de repositório (testes Node 26, workflow, metadados)",
+                "nl": "Onderhoud: correcties uit de repository-checker (Node 26-tests, workflow, metadata)",
+                "fr": "Maintenance : corrections du vérificateur de dépôt (tests Node 26, workflow, métadonnées)",
+                "it": "Manutenzione: correzioni dal controllo del repository (test Node 26, workflow, metadati)",
+                "es": "Mantenimiento: correcciones del verificador del repositorio (pruebas Node 26, workflow, metadatos)",
+                "pl": "Konserwacja: poprawki z weryfikatora repozytorium (testy Node 26, workflow, metadane)",
+                "uk": "Обслуговування: виправлення за результатами перевірки репозиторію (тести Node 26, workflow, метадані)",
+                "zh-cn": "维护：仓库检查器修复（Node 26 测试、工作流、元数据）"
+            },
             "0.1.9": {
                 "en": "Shopping list: items are queued while offline and sent once the connection is back",
                 "de": "Einkaufsliste: Einträge werden offline vorgemerkt und bei Verbindung gesendet",
@@ -80,45 +93,6 @@
                 "pl": "Przycisk nowego produktu w skanerze, własne kody EAN z etykietą do druku, własny obraz produktu (skompresowany)",
                 "uk": "Кнопка «Новий товар» у сканері, власні коди EAN з етикеткою для друку, завантаження власного зображення товару (стиснене)",
                 "zh-cn": "扫描页新增“新产品”按钮，可生成自有 EAN 码并打印标签，可上传自己的产品图片（自动压缩）"
-            },
-            "0.1.3": {
-                "en": "app, HTML data points and Open Food Facts follow the system language; button to create a self-signed certificate",
-                "de": "App, HTML-Datenpunkte und Open Food Facts folgen der Systemsprache; Button zum Erstellen eines selbstsignierten Zertifikats",
-                "ru": "приложение, HTML-датапоинты и Open Food Facts используют язык системы; кнопка создания самоподписанного сертификата",
-                "pt": "app, pontos de dados HTML e Open Food Facts seguem o idioma do sistema; botão para criar um certificado autoassinado",
-                "nl": "app, HTML-datapunten en Open Food Facts volgen de systeemtaal; knop om een zelfondertekend certificaat te maken",
-                "fr": "l'app, les points de données HTML et Open Food Facts suivent la langue du système; bouton pour créer un certificat auto-signé",
-                "it": "app, datapoint HTML e Open Food Facts seguono la lingua di sistema; pulsante per creare un certificato autofirmato",
-                "es": "la app, los puntos de datos HTML y Open Food Facts siguen el idioma del sistema; botón para crear un certificado autofirmado",
-                "pl": "aplikacja, punkty danych HTML i Open Food Facts używają języka systemu; przycisk tworzenia certyfikatu z podpisem własnym",
-                "uk": "застосунок, HTML-датапоінти та Open Food Facts використовують мову системи; кнопка створення самопідписаного сертифіката",
-                "zh-cn": "应用、HTML 数据点和 Open Food Facts 跟随系统语言; 新增创建自签名证书的按钮"
-            },
-            "0.1.2": {
-                "en": "Added inventory overview data points (JSON and HTML for VIS), separate options for removing items from the shopping list, README improvements; Best-before date (off / per product / per stocking) with warning and data points, moving stock keeps the dates",
-                "de": "Datenpunkte für die Lagerübersicht (JSON und HTML für VIS), getrennte Optionen zum Entfernen von der Einkaufsliste, README verbessert; Mindesthaltbarkeit (aus / pro Produkt / pro Einlagerung) mit Warnung und Datenpunkten, Verschieben behält die Daten",
-                "ru": "Добавлены датапоинты обзора склада (JSON и HTML для VIS), отдельные опции удаления из списка покупок, улучшен README; Срок годности (выкл. / по продукту / по закладке) с предупреждением и датапоинтами, при перемещении даты сохраняются",
-                "pt": "Adicionados pontos de dados com a visão geral do stock (JSON e HTML para VIS), opções separadas para remover da lista de compras, README melhorado; Data de validade (desligado / por produto / por entrada) com aviso e pontos de dados, mover o stock mantém as datas",
-                "nl": "Datapunten voor het voorraadoverzicht toegevoegd (JSON en HTML voor VIS), aparte opties om van de boodschappenlijst te verwijderen, README verbeterd; Houdbaarheidsdatum (uit / per product / per inslag) met waarschuwing en datapunten, verplaatsen behoudt de data",
-                "fr": "Ajout de points de données d'aperçu du stock (JSON et HTML pour VIS), options séparées pour retirer de la liste de courses, README amélioré; Date limite (désactivé / par produit / par entrée) avec avertissement et points de données, le déplacement conserve les dates",
-                "it": "Aggiunti datapoint con la panoramica delle scorte (JSON e HTML per VIS), opzioni separate per rimuovere dalla lista della spesa, README migliorato; Data di scadenza (disattivato / per prodotto / per carico) con avviso e datapoint, lo spostamento mantiene le date",
-                "es": "Añadidos puntos de datos con el resumen del stock (JSON y HTML para VIS), opciones separadas para quitar de la lista de la compra, README mejorado; Fecha de caducidad (desactivado / por producto / por entrada) con aviso y puntos de datos, al mover se conservan las fechas",
-                "pl": "Dodano punkty danych z przeglądem zapasów (JSON i HTML dla VIS), osobne opcje usuwania z listy zakupów, ulepszony README; Termin ważności (wył. / na produkt / na dostawę) z ostrzeżeniem i punktami danych, przenoszenie zachowuje daty",
-                "uk": "Додано датапоінти огляду запасів (JSON і HTML для VIS), окремі опції видалення зі списку покупок, покращено README; Термін придатності (вимк. / за продуктом / за надходженням) з попередженням і датапоінтами, переміщення зберігає дати",
-                "zh-cn": "新增库存概览数据点（JSON 和适用于 VIS 的 HTML），清单移除选项已拆分，改进 README; 保质期（关闭 / 按产品 / 按入库），含提醒和数据点，移动库存时保留日期"
-            },
-            "0.1.0": {
-                "en": "initial release",
-                "de": "Erstveröffentlichung",
-                "ru": "Начальная версия",
-                "pt": "lançamento inicial",
-                "nl": "Eerste uitgave",
-                "fr": "Première version",
-                "it": "Versione iniziale",
-                "es": "Versión inicial",
-                "pl": "Pierwsze wydanie",
-                "uk": "Початкова версія",
-                "zh-cn": "首次出版"
             }
         },
         "titleLang": {
@@ -148,7 +122,7 @@
             "zh-cn": "家庭库存管理：条码扫描、存放位置、最低库存和购物清单"
         },
         "authors": [
-            "Henrik Schoenhofen"
+            "Henrik Schoenhofen <henrik.schoenhofen@icloud.com>"
         ],
         "keywords": [
             "inventory",

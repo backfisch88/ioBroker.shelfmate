@@ -1,6 +1,6 @@
 {
   "name": "iobroker.shelfmate",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Household inventory with barcode scanning, storage locations, minimum stock and shopping list",
   "author": {
     "name": "Henrik Schoenhofen",
@@ -22,7 +22,7 @@
     "url": "https://github.com/backfisch88/ioBroker.shelfmate.git"
   },
   "engines": {
-    "node": ">= 22"
+    "node": ">=22.12.0"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^3.4.3",

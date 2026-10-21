@@ -34,7 +34,7 @@ German short description: [README.de.md](README.de.md)
 
 ## Requirements
 
-- js-controller >= 6.0.11, admin >= 7.6.20, Node.js >= 22
+- js-controller >= 6.0.11, admin >= 7.6.20, Node.js >= 22.12
 - HTTPS with a certificate the phone trusts (needed for the camera scanner and the offline mode)
 
 ## Installation
@@ -108,6 +108,9 @@ Inventory data is stored in the adapter data directory (`shelfmate.json`), not i
 A JSON backup can be downloaded and imported in the app (Settings). An import or "Delete all data" replaces all data; the previous state is kept as `shelfmate.json.bak`.
 
 ## Changelog
+### 0.1.10 (2026-10-21)
+- Maintenance: repository checker fixes (Node 26 in the test matrix, workflow, metadata, Node.js >= 22.12)
+
 ### 0.1.9 (2026-10-21)
 - New: adding to or removing from the shopping list works offline; the change is queued and sent once the connection is back
 
@@ -139,15 +142,7 @@ A JSON backup can be downloaded and imported in the app (Settings). An import or
 - New: Open Food Facts lookups use the app language (English as fallback)
 - New: button in the settings that creates a self-signed certificate
 
-### 0.1.2 (2026-10-20)
-- New: data points `stats.inventory` (JSON) and `stats.inventoryHtml` (table for VIS) with everything in stock
-- New: separate options to remove items from the shopping list when refilled and when unticked in the app
-- Fix: an item removed from the list in the app is no longer marked again until Bring! reports the change
-- New: best-before date (off / per product / per stocking) with warning and data points `stats.expiring*`
-- Fix: moving stock between locations keeps the best-before dates
-
-### 0.1.0 (2026-10-20)
-- New: initial release (inventory, barcode / QR scanner, shopping list via script / Bring! / Bring special, JSON backup)
+Older entries: [CHANGELOG_OLD.md](CHANGELOG_OLD.md)
 
 ## License
 MIT License
