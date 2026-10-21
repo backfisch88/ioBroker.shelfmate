@@ -67,5 +67,7 @@
     "scannerPrefix": "Prefixo do leitor (remover)",
     "scannerSuffix": "Sufixo do leitor (remover)",
     "autoShelfLife": "Sugerir validade para produtos secos",
-    "autoShelfLifeHelp": "Para produtos sem validade própria, massa, arroz, conservas e semelhantes recebem uma validade sugerida ao armazenar. Produtos frescos não recebem."
+    "autoShelfLifeHelp": "Para produtos sem validade própria, massa, arroz, conservas e semelhantes recebem uma validade sugerida ao armazenar. Produtos frescos não recebem.",
+    "dateFormat": "Formato da data",
+    "dateFormatHelp": "Formato de todas as datas na aplicação web, por exemplo a validade."
 }

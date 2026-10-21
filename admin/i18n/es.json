@@ -67,5 +67,7 @@
     "scannerPrefix": "Prefijo del escáner (quitar)",
     "scannerSuffix": "Sufijo del escáner (quitar)",
     "autoShelfLife": "Sugerir caducidad para productos secos",
-    "autoShelfLifeHelp": "Para productos sin caducidad propia, la pasta, el arroz, las conservas y similares reciben una fecha sugerida al almacenar. Los productos frescos no."
+    "autoShelfLifeHelp": "Para productos sin caducidad propia, la pasta, el arroz, las conservas y similares reciben una fecha sugerida al almacenar. Los productos frescos no.",
+    "dateFormat": "Formato de fecha",
+    "dateFormatHelp": "Formato de todas las fechas en la aplicación web, por ejemplo la caducidad."
 }

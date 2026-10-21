@@ -67,5 +67,7 @@
     "scannerPrefix": "Prefisso dello scanner (rimuovere)",
     "scannerSuffix": "Suffisso dello scanner (rimuovere)",
     "autoShelfLife": "Suggerisci la conservazione per i prodotti secchi",
-    "autoShelfLifeHelp": "Per i prodotti senza durata propria, pasta, riso, conserve e simili ricevono una scadenza suggerita all'inserimento. I prodotti freschi non ne ricevono."
+    "autoShelfLifeHelp": "Per i prodotti senza durata propria, pasta, riso, conserve e simili ricevono una scadenza suggerita all'inserimento. I prodotti freschi non ne ricevono.",
+    "dateFormat": "Formato della data",
+    "dateFormatHelp": "Formato di tutte le date nell'app web, ad esempio la scadenza."
 }

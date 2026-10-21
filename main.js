@@ -252,6 +252,7 @@ class Shelfmate extends utils.Adapter {
                 lang: this.lang || 'en',
                 labelButtons: this.labelButtons(),
                 autoShelfLife: this.config.autoShelfLife !== false,
+                dateFormat: ['dmy', 'slash', 'iso'].includes(this.config.dateFormat) ? this.config.dateFormat : 'dmy',
                 inventoryDays: this.inventoryDays(),
             },
         };

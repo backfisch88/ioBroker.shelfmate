@@ -202,6 +202,7 @@
         "bestBeforeMode": "off",
         "bestBeforeWarnDays": 7,
         "autoShelfLife": true,
+        "dateFormat": "dmy",
         "notifyAdapter": "",
         "notifyTarget": "",
         "notifyArea": "ShelfMate",

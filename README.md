@@ -69,6 +69,7 @@ Install via the ioBroker Admin UI (Adapters). Then add an instance and open `htt
 | Access key | Optional. If set, the app asks for the key once per device |
 | Shopping list mode | See below |
 | Best-before date | **Off**, **per product** (one date on each product) or **per stocking** (a date for every booking of stock; removing uses the oldest date first) |
+| Date format | How all dates in the web app are shown: `31.10.2026`, `31/10/2026` or `2026-10-31` |
 | Notification adapter | Installed instance for messages (telegram, telegrammenu2, pushover, signal, whatsapp, matrix, email). Optional recipient (chat ID or e-mail address), the area for telegrammenu2, a test button, and the options "minimum stock reached" and "daily message about expired products" with its time |
 | Label buttons | Which label buttons the app shows (EAN, QR, QR only, large shelf label, box label, "opened on", freezer label) |
 | Stocktaking reminder | Optional message every N days when no stocktaking was done in that time (0 = off), sent at the time of the daily message |
@@ -237,6 +238,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 
 ## Changelog
 ### **WORK IN PROGRESS**
+- New: date format setting (31.10.2026, 31/10/2026 or 2026-10-31) applied to all dates in the web app
 - New: set the best-before date of every package of existing stock on its own line on the product page, or headless for all unopened stock with the scanner codes `SM:DATE:<days>` (undoable)
 - New: quick date input for the best-before date (`+3d`, `+2w`, `+1m`, `+1y`, `12/26`, `2412`, `24.12.26`, `tomorrow`, `x` = no date), with a live preview
 - New: suggestions while typing in the search (product names, brands, tags)

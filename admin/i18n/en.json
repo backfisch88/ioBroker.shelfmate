@@ -67,5 +67,7 @@
     "scannerPrefix": "Prefix of the scanner (remove)",
     "scannerSuffix": "Suffix of the scanner (remove)",
     "autoShelfLife": "Suggest a shelf life for dry goods",
-    "autoShelfLifeHelp": "For products without their own shelf life, pasta, rice, tins and similar get a suggested best-before date when stocking. Fresh goods get none."
+    "autoShelfLifeHelp": "For products without their own shelf life, pasta, rice, tins and similar get a suggested best-before date when stocking. Fresh goods get none.",
+    "dateFormat": "Date format",
+    "dateFormatHelp": "Format of all dates in the web app, for example the best-before date."
 }

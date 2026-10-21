@@ -271,6 +271,22 @@
             "lg": 4,
             "xl": 4
         },
+        "dateFormat": {
+            "type": "select",
+            "label": "dateFormat",
+            "help": "dateFormatHelp",
+            "options": [
+                { "label": "31.10.2026", "value": "dmy" },
+                { "label": "31/10/2026", "value": "slash" },
+                { "label": "2026-10-31", "value": "iso" }
+            ],
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
         "autoShelfLife": {
             "type": "checkbox",
             "label": "autoShelfLife",
