@@ -36,7 +36,7 @@ Kurze Abläufe zu den wichtigsten Funktionen, alles in der App.
 ### Lagerorte und Etiketten
 1. Unter **Lagerorte** einen Bereich (z. B. „Speisekammer“) und einen Lagerort („Regal 1“) anlegen.
 2. Den Lagerort öffnen: Dort steht sein QR-Code, die Etiketten-Knöpfe erzeugen das Etikett als Bild (nur QR, großes Regal-Etikett, Boxen-Etikett mit Inhalt).
-3. Die Etikettengröße einmal unter **Einstellungen / Etiketten** eintragen (z. B. 50 × 30 mm). Welche Knöpfe die App zeigt, stellst du in den Adapter-Einstellungen ein.
+3. Die Etikettengröße einmal unter **Einstellungen / Etiketten** eintragen (z. B. 50 × 30 mm). Für das große Regal-Etikett, das Boxen-Etikett und den vollflächigen Code stelle ich dort eine eigene Größe ein (A6, A5 oder A4). Dort wähle ich auch, ob Lagerort-Etiketten einen QR-Code oder einen Code-128-Strichcode tragen (oben der Name, darunter nur der Strichcode; der Lagerort muss vorher gespeichert sein). Welche Knöpfe die App zeigt, stellst du in den Adapter-Einstellungen ein.
 4. Das Bild drucken (siehe „Etiketten drucken“) und an Regal oder Box kleben.
 
 ### Produkte ohne Barcode
@@ -71,7 +71,7 @@ Ein- und Auslagern mit gescannten Codes, ohne die App zu öffnen. Eingeschaltet 
 
 Die Inventur bleibt in der App, sie braucht das Display.
 
-**Funk-Scanner anschließen (getestet vorgesehen: Tera HW0009 mit 2.4G-Dongle).** Ich stecke den Dongle in den ioBroker-Rechner, der ihn als Tastatur erkennt, ein Treiber ist nicht nötig. Am Scanner wähle ich den 2.4G-Modus und koppele ihn mit den Barcodes aus der Anleitung mit dem Dongle. Das Tastaturlayout lasse ich auf US und das Ende des Codes auf Enter. In den Adapter-Einstellungen wähle ich bei „Scanner“ das Gerät aus und schalte den Modus über `scanner.active` ein. Der ioBroker-Benutzer braucht Zugriff auf das Gerät: `sudo adduser iobroker input` und die Instanz neu starten. Den Rest übernimmt der Adapter. Hat der Scanner einen Prefix oder Suffix, trage ich denselben Text in den beiden Einstellungen ein. Jeder Code landet auch in `scanner.lastCode`.
+**Funk-Scanner anschließen (vorgesehen: Tera HW0009 mit 2.4G-Dongle).** Ich stecke den Dongle in den ioBroker-Rechner, der ihn als Tastatur erkennt, ein Treiber ist nicht nötig. Am Scanner wähle ich den 2.4G-Modus und koppele ihn mit den Barcodes aus der Anleitung mit dem Dongle. Das Tastaturlayout lasse ich auf US und das Ende des Codes auf Enter. In den Adapter-Einstellungen wähle ich bei „Scanner“ das Gerät aus und schalte den Modus über `scanner.active` ein. Der ioBroker-Benutzer braucht Zugriff auf das Gerät: `sudo adduser iobroker input` und die Instanz neu starten. Den Rest übernimmt der Adapter. Hat der Scanner einen Prefix oder Suffix, trage ich denselben Text in den beiden Einstellungen ein. Jeder Code landet auch in `scanner.lastCode`.
 
 Weil der Scanner mit US-Tastaturlayout tippt, können Umlaute und manche Sonderzeichen verloren gehen. Für Lagerorte nutze ich deshalb den kurzen Scanner-Code: Im Lagerort-Editor tippe ich „Kurzen Scanner-Code verwenden“, speichere und drucke das Etikett neu (alte Etiketten gelten weiter). Unter Einstellungen druckt „Steuer-Codes als PDF“ die Mengen-Codes und den Abbrechen-Code. Der Scanner hat kein Display, das Ergebnis jedes Scans steht in `scanner.result`.
 

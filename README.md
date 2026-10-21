@@ -92,7 +92,7 @@ Books stock in and out with scanned codes, without opening the app. It is switch
 
 Products by weight or volume are booked in whole packages (the package size has to be given in g, kg, ml or l). The stocktaking stays in the app, it needs the display.
 
-**Connecting a wireless scanner (tested layout: Tera HW0009 with its 2.4G dongle).** I plug the dongle into the ioBroker host. The host sees it as a keyboard, so no driver is needed. On the scanner I select the 2.4G mode and pair it with the dongle using the barcodes from its manual, and I leave the keyboard layout on US and the end of the code on Enter. In the adapter settings I choose the device in "Scanner", and I switch the mode on with `scanner.active`. The ioBroker user needs access to the device: `sudo adduser iobroker input` and a restart of the instance. The adapter reads the device itself, a scanner that was set to prefix or suffix only needs the same text in the two settings. Every code is also written to `scanner.lastCode`.
+**Connecting a wireless scanner (intended: Tera HW0009 with its 2.4G dongle).** I plug the dongle into the ioBroker host. The host sees it as a keyboard, so no driver is needed. On the scanner I select the 2.4G mode and pair it with the dongle using the barcodes from its manual, and I leave the keyboard layout on US and the end of the code on Enter. In the adapter settings I choose the device in "Scanner", and I switch the mode on with `scanner.active`. The ioBroker user needs access to the device: `sudo adduser iobroker input` and a restart of the instance. The adapter reads the device itself, a scanner that was set to prefix or suffix only needs the same text in the two settings. Every code is also written to `scanner.lastCode`.
 
 Because the scanner types with a US keyboard layout, umlauts and some special characters can get lost. For locations I therefore use the short scanner code: in the location editor I tap "Use the short scanner code", save, and print the label again (old labels keep working). In the settings the button "Control codes as PDF" prints the quantity codes and the cancel code. The scanner has no display, the result of every scan is in `scanner.result`.
 
@@ -136,7 +136,7 @@ Short walk-throughs of the main functions. All of them are done in the app.
 ### Storage locations and labels
 1. Open **Locations**, create an area (for example "Pantry") and a location ("Shelf 1").
 2. Open the location. Its QR code is shown there; the label buttons create the label as an image (QR only, large shelf label, box label with contents).
-3. Set your label size under **Settings / Labels** once (for example 50 × 30 mm). In the adapter settings you choose which label buttons the app shows.
+3. Set your label size under **Settings / Labels** once (for example 50 × 30 mm). For the shelf label, the box label and the full-page code I can choose a separate size there (A6, A5 or A4). I also choose there whether location labels carry a QR code or a Code 128 barcode (name on top, only the barcode below; the location has to be saved first). In the adapter settings you choose which label buttons the app shows.
 4. Print the image (see "Printing labels") and attach it to the shelf or box.
 
 ### Products without a barcode
