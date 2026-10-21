@@ -187,6 +187,9 @@ ShelfMate is under active development. Planned features (no promises, no order):
 Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
 ## Changelog
+### 0.1.12 (2026-10-21)
+- New: on wide screens (tablet, desktop) products, storage locations and the history are shown in two or three columns; the phone layout is unchanged
+
 ### 0.1.11 (2026-10-21)
 - New: notifications through any installed notification adapter (Telegram, telegrammenu2, Pushover, Signal, WhatsApp, Matrix, e-mail): minimum stock reached and a daily message about expired / expiring products, with a test button
 - New: consumption of the last 30 days per product in the app and as data point `stats.consumption`, with a suggestion for the minimum stock
@@ -197,7 +200,6 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 - New: export of the stock as CSV or as a PDF in the settings under "Data"
 - Change: minimum stock suggestions only for regularly used products (removals on at least 4 days in at least 3 different weeks)
 - New: tutorials for the main functions in the README
-- New: on wide screens (tablet, desktop) products, storage locations and the history are shown in two or three columns; the phone layout is unchanged
 - Change: stocktaking by scanning shows product images and a summary per finished location; a location is finished only by scanning its own QR code again
 - New: stocktaking by scanning: scan a location QR, then its products, then the same location QR again to finish it (also with the camera); a summary shows which locations of the area are done
 - Chore: non-critical Dependabot updates are merged automatically after the checks

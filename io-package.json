@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "shelfmate",
-        "version": "0.1.11",
+        "version": "0.1.12",
         "news": {
+            "0.1.12": {
+                "en": "New: products, storage locations and history are shown in several columns on tablets and desktops",
+                "de": "Neu: Produkte, Lagerorte und Verlauf werden auf Tablets und Desktops in mehreren Spalten angezeigt",
+                "ru": "Новое: товары, места хранения и история отображаются в несколько столбцов на планшетах и компьютерах",
+                "pt": "Novo: produtos, locais e histórico são mostrados em várias colunas em tablets e computadores",
+                "nl": "Nieuw: producten, locaties en geschiedenis worden op tablets en desktops in meerdere kolommen getoond",
+                "fr": "Nouveau : produits, emplacements et historique s'affichent sur plusieurs colonnes sur tablette et ordinateur",
+                "it": "Novità: prodotti, luoghi e cronologia sono mostrati su più colonne su tablet e desktop",
+                "es": "Novedad: productos, ubicaciones e historial se muestran en varias columnas en tabletas y ordenadores",
+                "pl": "Nowość: produkty, miejsca i historia są wyświetlane w kilku kolumnach na tabletach i komputerach",
+                "uk": "Нове: товари, місця зберігання та історія відображаються в кілька стовпців на планшетах і комп'ютерах",
+                "zh-cn": "新增：在平板和桌面设备上，商品、位置和历史记录以多列显示"
+            },
             "0.1.11": {
                 "en": "New: notifications (Telegram, telegrammenu2, Pushover, ...), consumption statistics and device name in the history",
                 "de": "Neu: Benachrichtigungen (Telegram, telegrammenu2, Pushover, ...), Verbrauchsstatistik und Gerätename im Verlauf",
@@ -80,19 +93,6 @@
                 "pl": "Produkty tego samego typu są grupowane w przeglądzie i można je rozwinąć",
                 "uk": "Продукти одного типу групуються в огляді й розгортаються",
                 "zh-cn": "概览中相同产品类型的产品会分组显示，可展开"
-            },
-            "0.1.5": {
-                "en": "adjustable label size; barcode of Open Food Facts products is locked, fixed Nutri-Score A display",
-                "de": "einstellbare Etikettengröße; Barcode von Open-Food-Facts-Produkten gesperrt, Anzeige des Nutri-Score A korrigiert",
-                "ru": "настраиваемый размер этикетки; штрихкод товаров из Open Food Facts заблокирован, исправлено отображение Nutri-Score A",
-                "pt": "tamanho de etiqueta ajustável; código de barras de produtos do Open Food Facts bloqueado, corrigida a exibição do Nutri-Score A",
-                "nl": "instelbaar etiketformaat; barcode van Open Food Facts-producten vergrendeld, weergave Nutri-Score A hersteld",
-                "fr": "taille d'étiquette réglable; code-barres des produits Open Food Facts verrouillé, affichage du Nutri-Score A corrigé",
-                "it": "dimensione etichetta regolabile; codice a barre dei prodotti Open Food Facts bloccato, corretta la visualizzazione del Nutri-Score A",
-                "es": "tamaño de etiqueta ajustable; código de barras de productos de Open Food Facts bloqueado, corregida la visualización del Nutri-Score A",
-                "pl": "regulowany rozmiar etykiety; kod kreskowy produktów z Open Food Facts zablokowany, poprawiono wyświetlanie Nutri-Score A",
-                "uk": "налаштовуваний розмір етикетки; штрихкод товарів з Open Food Facts заблоковано, виправлено відображення Nutri-Score A",
-                "zh-cn": "可调节标签尺寸; Open Food Facts 产品的条形码已锁定，修复 Nutri-Score A 的显示"
             }
         },
         "titleLang": {
