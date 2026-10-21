@@ -1,0 +1,5 @@
+# Automatically merge Dependabot patch and minor updates.
+# Major updates require manual review.
+
+- match:
+    update_type: 'semver:minor'
