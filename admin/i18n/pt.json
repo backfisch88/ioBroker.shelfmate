@@ -61,5 +61,9 @@
     "notifyInventoryDays": "Lembrar uma vez de um inventário após … dias sem inventário (0 = desligado)",
     "hScanner": "Leitor (modo sem ecrã)",
     "scannerTimeout": "Tempo entre produto e local (segundos)",
-    "scannerTimeoutHelp": "Após ler o produto, o código do local tem de seguir neste tempo. Ler o produto duas vezes significa retirar. O modo liga-se pelo ponto de dados scanner.active."
+    "scannerTimeoutHelp": "Após ler o produto, o código do local tem de seguir neste tempo. Ler o produto duas vezes significa retirar. O modo liga-se pelo ponto de dados scanner.active.",
+    "scannerDevice": "Leitor (dispositivo de teclado no servidor)",
+    "scannerDeviceHelp": "O dongle do leitor sem fios aparece aqui como teclado. O utilizador do ioBroker precisa do grupo \"input\" (adduser iobroker input).",
+    "scannerPrefix": "Prefixo do leitor (remover)",
+    "scannerSuffix": "Sufixo do leitor (remover)"
 }

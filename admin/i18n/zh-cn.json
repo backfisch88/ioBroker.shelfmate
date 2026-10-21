@@ -61,5 +61,9 @@
     "notifyInventoryDays": "超过 … 天未盘点时提醒一次（0 = 关闭）",
     "hScanner": "扫描器（无屏幕模式）",
     "scannerTimeout": "商品与位置之间的时间（秒）",
-    "scannerTimeoutHelp": "扫描商品后，位置码须在此时间内跟上。连续扫描两次商品表示取出。通过数据点 scanner.active 开启该模式。"
+    "scannerTimeoutHelp": "扫描商品后，位置码须在此时间内跟上。连续扫描两次商品表示取出。通过数据点 scanner.active 开启该模式。",
+    "scannerDevice": "扫描器（服务器上的键盘设备）",
+    "scannerDeviceHelp": "无线扫描器的接收器在此显示为键盘。ioBroker 用户需要加入 \"input\" 组（adduser iobroker input）。",
+    "scannerPrefix": "扫描器前缀（移除）",
+    "scannerSuffix": "扫描器后缀（移除）"
 }

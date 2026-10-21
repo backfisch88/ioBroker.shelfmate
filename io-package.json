@@ -4,17 +4,17 @@
         "version": "0.1.14",
         "news": {
             "0.1.14": {
-                "en": "New: scanner mode - book stock in and out with scanned codes via data points, without the app",
-                "de": "Neu: Scanner-Modus - Ein- und Auslagern per gescannten Codes über Datenpunkte, ohne die App",
-                "ru": "Новое: режим сканера - приход и расход по отсканированным кодам через объекты, без приложения",
-                "pt": "Novo: modo scanner - entrada e saída de stock com códigos lidos através de pontos de dados, sem a app",
-                "nl": "Nieuw: scannermodus - in- en uitboeken met gescande codes via datapunten, zonder de app",
-                "fr": "Nouveau : mode scanner - entrées et sorties de stock par codes scannés via des points de données, sans l'app",
-                "it": "Novità: modalità scanner - carico e scarico con codici scansionati tramite punti dati, senza l'app",
-                "es": "Novedad: modo escáner - entradas y salidas de stock con códigos escaneados mediante puntos de datos, sin la app",
-                "pl": "Nowość: tryb skanera - przyjęcia i wydania zeskanowanymi kodami przez punkty danych, bez aplikacji",
-                "uk": "Нове: режим сканера - надходження та видача за відсканованими кодами через об'єкти, без застосунку",
-                "zh-cn": "新增：扫描器模式 - 通过数据点使用扫描的代码入库和出库，无需应用"
+                "en": "New: scanner mode - book stock in and out with scanned codes via data points, without the app (also with a wireless scanner on the server)",
+                "de": "Neu: Scanner-Modus - Ein- und Auslagern per gescannten Codes über Datenpunkte, ohne die App (auch mit Funk-Scanner am Server)",
+                "ru": "Новое: режим сканера - приход и расход по отсканированным кодам через объекты, без приложения (также с беспроводным сканером на сервере)",
+                "pt": "Novo: modo scanner - entrada e saída de stock com códigos lidos através de pontos de dados, sem a app (também com leitor sem fios no servidor)",
+                "nl": "Nieuw: scannermodus - in- en uitboeken met gescande codes via datapunten, zonder de app (ook met draadloze scanner op de server)",
+                "fr": "Nouveau : mode scanner - entrées et sorties de stock par codes scannés via des points de données, sans l'app (aussi avec un scanner sans fil sur le serveur)",
+                "it": "Novità: modalità scanner - carico e scarico con codici scansionati tramite punti dati, senza l'app (anche con scanner wireless sul server)",
+                "es": "Novedad: modo escáner - entradas y salidas de stock con códigos escaneados mediante puntos de datos, sin la app (también con escáner inalámbrico en el servidor)",
+                "pl": "Nowość: tryb skanera - przyjęcia i wydania zeskanowanymi kodami przez punkty danych, bez aplikacji (także ze skanerem bezprzewodowym na serwerze)",
+                "uk": "Нове: режим сканера - надходження та видача за відсканованими кодами через об'єкти, без застосунку (також з бездротовим сканером на сервері)",
+                "zh-cn": "新增：扫描器模式 - 通过数据点使用扫描的代码入库和出库，无需应用（也支持服务器上的无线扫描器）"
             },
             "0.1.13": {
                 "en": "New: area filter in the overview. Fixes: flickering product list, camera stayed on, stocktaking rows on small screens",
@@ -206,7 +206,10 @@
             "qr"
         ],
         "notifyInventoryDays": 0,
-        "scannerTimeout": 10
+        "scannerTimeout": 10,
+        "scannerDevice": "",
+        "scannerPrefix": "",
+        "scannerSuffix": ""
     },
     "objects": [],
     "instanceObjects": [

@@ -61,5 +61,9 @@
     "notifyInventoryDays": "Remind once about a stocktaking after … days without one (0 = off)",
     "hScanner": "Scanner (headless mode)",
     "scannerTimeout": "Time between product and location (seconds)",
-    "scannerTimeoutHelp": "After a product scan the location code has to follow within this time. Two scans of the product mean take out. Switch the mode on with the data point scanner.active."
+    "scannerTimeoutHelp": "After a product scan the location code has to follow within this time. Two scans of the product mean take out. Switch the mode on with the data point scanner.active.",
+    "scannerDevice": "Scanner (keyboard device on the server)",
+    "scannerDeviceHelp": "The dongle of the wireless scanner appears here as a keyboard. The ioBroker user needs the group \"input\" (adduser iobroker input).",
+    "scannerPrefix": "Prefix of the scanner (remove)",
+    "scannerSuffix": "Suffix of the scanner (remove)"
 }

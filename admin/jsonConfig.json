@@ -444,6 +444,40 @@
             "md": 6,
             "lg": 4,
             "xl": 4
+        },
+        "scannerDevice": {
+            "type": "selectSendTo",
+            "command": "getInputDevices",
+            "manual": true,
+            "label": "scannerDevice",
+            "help": "scannerDeviceHelp",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "scannerPrefix": {
+            "type": "text",
+            "label": "scannerPrefix",
+            "maxLength": 16,
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "scannerSuffix": {
+            "type": "text",
+            "label": "scannerSuffix",
+            "maxLength": 16,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
         }
     }
 }

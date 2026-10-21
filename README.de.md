@@ -61,7 +61,7 @@ Die Seite zeigt auch, welche Lagerorte des Bereichs fertig und welche noch offen
 
 ### Scanner-Modus (ohne App)
 
-Ein- und Auslagern mit gescannten Codes, ohne die App zu öffnen. Eingeschaltet wird er mit dem Datenpunkt `scanner.active`, die Codes kommen in `scanner.input` an. Die Anbindung eines Scanners am Rechner (mit Prefix und Suffix) folgt in einer späteren Version.
+Ein- und Auslagern mit gescannten Codes, ohne die App zu öffnen. Eingeschaltet wird er mit dem Datenpunkt `scanner.active`, die Codes kommen in `scanner.input` an, oder direkt von einem Scanner, der am ioBroker-Rechner steckt und dort als Tastatur erscheint (siehe unten).
 
 - Produkt, dann Lagerort-Code: lagert 1 an diesem Lagerort ein.
 - Produkt zweimal: entnimmt 1. Kommt kein Lagerort, wird dort entnommen, wo der Artikel das kürzeste MHD hat (ohne MHD: wo am meisten liegt).
@@ -70,6 +70,10 @@ Ein- und Auslagern mit gescannten Codes, ohne die App zu öffnen. Eingeschaltet 
 - Die Zeit zwischen den Codes stellst du in den Adapter-Einstellungen ein (3 bis 120 Sekunden, Standard 10).
 
 Die Inventur bleibt in der App, sie braucht das Display.
+
+**Funk-Scanner anschließen (getestet vorgesehen: Tera HW0009 mit 2.4G-Dongle).** Ich stecke den Dongle in den ioBroker-Rechner, der ihn als Tastatur erkennt, ein Treiber ist nicht nötig. Am Scanner wähle ich den 2.4G-Modus und koppele ihn mit den Barcodes aus der Anleitung mit dem Dongle. Das Tastaturlayout lasse ich auf US und das Ende des Codes auf Enter. In den Adapter-Einstellungen wähle ich bei „Scanner“ das Gerät aus und schalte den Modus über `scanner.active` ein. Der ioBroker-Benutzer braucht Zugriff auf das Gerät: `sudo adduser iobroker input` und die Instanz neu starten. Den Rest übernimmt der Adapter. Hat der Scanner einen Prefix oder Suffix, trage ich denselben Text in den beiden Einstellungen ein. Jeder Code landet auch in `scanner.lastCode`.
+
+Weil der Scanner mit US-Tastaturlayout tippt, können Umlaute und manche Sonderzeichen verloren gehen. Für Lagerorte nutze ich deshalb den kurzen Scanner-Code: Im Lagerort-Editor tippe ich „Kurzen Scanner-Code verwenden“, speichere und drucke das Etikett neu (alte Etiketten gelten weiter). Unter Einstellungen druckt „Steuer-Codes als PDF“ die Mengen-Codes und den Abbrechen-Code. Der Scanner hat kein Display, das Ergebnis jedes Scans steht in `scanner.result`.
 
 ### Vorschläge (Glühbirne)
 Die Glühbirne oben sammelt drei Arten von Hinweisen: Gruppen-Vorschläge (ähnliche Produkte, die gemeinsam zählen könnten; einzelne Produkte lassen sich herausnehmen, ein Vorschlag lässt sich ignorieren), Mindestbestand-Vorschläge (nur für regelmäßig verbrauchte Produkte; ✓ übernimmt, ✕ verwirft) und eine fällige Inventur. Ohne Antippen ändert sich nichts.
@@ -113,7 +117,7 @@ Danach eine Instanz anlegen und `https://<Host>:8120/` öffnen. Voraussetzungen:
 
 ShelfMate wird aktiv weiterentwickelt. Geplant (ohne Zusage, ohne Reihenfolge):
 
-- **Scanner-Anbindung**: externen USB- oder Bluetooth-Scanner (Tastaturmodus) direkt am ioBroker-Rechner auslesen, mit Prefix und Suffix; druckbare Steuer-Codes für Mengen
+- **Scanner-Anbindung**: Scanner mit seriellem Anschluss (USB-Kabel) und Bluetooth-Scanner direkt am Rechner
 
 Ideen und Fehler gerne als [GitHub-Issue](https://github.com/backfisch88/ioBroker.shelfmate/issues) melden.
 

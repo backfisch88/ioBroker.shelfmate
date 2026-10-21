@@ -61,5 +61,9 @@
     "notifyInventoryDays": "Eenmalige inventarisatieherinnering na … dagen zonder inventarisatie (0 = uit)",
     "hScanner": "Scanner (headless-modus)",
     "scannerTimeout": "Tijd tussen product en locatie (seconden)",
-    "scannerTimeoutHelp": "Na het product moet de locatiecode binnen deze tijd volgen. Het product tweemaal scannen betekent uitnemen. De modus schakel je in met het datapunt scanner.active."
+    "scannerTimeoutHelp": "Na het product moet de locatiecode binnen deze tijd volgen. Het product tweemaal scannen betekent uitnemen. De modus schakel je in met het datapunt scanner.active.",
+    "scannerDevice": "Scanner (toetsenbordapparaat op de server)",
+    "scannerDeviceHelp": "De dongle van de draadloze scanner verschijnt hier als toetsenbord. De ioBroker-gebruiker heeft de groep \"input\" nodig (adduser iobroker input).",
+    "scannerPrefix": "Prefix van de scanner (verwijderen)",
+    "scannerSuffix": "Suffix van de scanner (verwijderen)"
 }

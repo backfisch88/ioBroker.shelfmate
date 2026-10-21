@@ -74,11 +74,13 @@ Install via the ioBroker Admin UI (Adapters). Then add an instance and open `htt
 
 ### Scanner mode (without the app)
 
-Books stock in and out with scanned codes, without opening the app. It is switched on with the data point `scanner.active`. Codes arrive in `scanner.input`; the scanner connection itself (an external scanner on the host with prefix and suffix) follows in a later version.
+Books stock in and out with scanned codes, without opening the app. It is switched on with the data point `scanner.active`. Codes arrive in `scanner.input`, or directly from a scanner that is plugged into the ioBroker host and shows up there as a keyboard (see below).
 
 | Setting | Description |
 | --- | --- |
 | Time between product and location | Seconds (3 to 120, default 10) in which the second code has to follow the first |
+| Scanner (keyboard device on the server) | The device of the scanner's USB dongle, chosen from a list |
+| Prefix / suffix of the scanner | Text that the scanner puts before or after every code and that I remove again (optional) |
 
 | Scan | Result |
 | --- | --- |
@@ -89,6 +91,10 @@ Books stock in and out with scanned codes, without opening the app. It is switch
 | `SM:CANCEL` | forgets the waiting scan |
 
 Products by weight or volume are booked in whole packages (the package size has to be given in g, kg, ml or l). The stocktaking stays in the app, it needs the display.
+
+**Connecting a wireless scanner (tested layout: Tera HW0009 with its 2.4G dongle).** I plug the dongle into the ioBroker host. The host sees it as a keyboard, so no driver is needed. On the scanner I select the 2.4G mode and pair it with the dongle using the barcodes from its manual, and I leave the keyboard layout on US and the end of the code on Enter. In the adapter settings I choose the device in "Scanner", and I switch the mode on with `scanner.active`. The ioBroker user needs access to the device: `sudo adduser iobroker input` and a restart of the instance. The adapter reads the device itself, a scanner that was set to prefix or suffix only needs the same text in the two settings. Every code is also written to `scanner.lastCode`.
+
+Because the scanner types with a US keyboard layout, umlauts and some special characters can get lost. For locations I therefore use the short scanner code: in the location editor I tap "Use the short scanner code", save, and print the label again (old labels keep working). In the settings the button "Control codes as PDF" prints the quantity codes and the cancel code. The scanner has no display, the result of every scan is in `scanner.result`.
 
 ### Best-before date
 
@@ -203,13 +209,15 @@ A JSON backup can be downloaded and imported in the app (Settings). An import or
 
 ShelfMate is under active development. Planned features (no promises, no order):
 
-- **Scanner connection**: read an external USB or Bluetooth scanner (keyboard mode) on the ioBroker host directly, with prefix and suffix; printable control codes for quantities
+- **Scanner connection**: a serial (USB cable) scanner and Bluetooth scanners directly on the host
 
 Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
 ## Changelog
 ### **WORK IN PROGRESS**
 - New: scanner mode: book stock in and out with scanned codes through data points (`scanner.input`, `scanner.active`, `scanner.result`), without the app
+- New: a wireless scanner whose dongle sits in the ioBroker host (keyboard device) is read directly, with prefix and suffix
+- New: short scanner code for locations (`SM:L:<id>`) and a printable sheet with quantity and cancel codes
 
 ### 0.1.13 (2026-10-21)
 - New: area filter in the overview; the location filter then only offers the locations of that area

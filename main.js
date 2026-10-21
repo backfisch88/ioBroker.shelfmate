@@ -12,6 +12,7 @@ const { texts } = require('./lib/i18n');
 const { NOTIFY_ADAPTERS, TEXT: NOTIFY_TEXT, lowText, expiryText, msUntil, deliver } = require('./lib/notify');
 const { ShelfMateServer } = require('./lib/server');
 const { ScanEngine } = require('./lib/scanner');
+const { InputReader, listDevices } = require('./lib/inputDevice');
 
 const DATA_FILE = 'shelfmate.json';
 const SAVE_DELAY_MS = 500;
@@ -108,6 +109,7 @@ class Shelfmate extends utils.Adapter {
             lang: this.lang,
             run: cmd => this.scanBook(cmd),
         });
+        this.startScannerDevice();
         await this.updateStats();
         // expiry changes with the date, not only with bookings
         this.setInterval(() => this.updateStats().catch(e => this.log.debug(`Statistics: ${e.message}`)), 3600000);
@@ -518,6 +520,28 @@ class Shelfmate extends utils.Adapter {
         await this.setState('scanner.result', r.text, true);
     }
 
+    /** Reads the keyboard-like scanner chosen in the settings. */
+    startScannerDevice() {
+        const path = String(this.config.scannerDevice || '').trim();
+        if (!path || !path.startsWith('/dev/input/')) {
+            return;
+        }
+        this.reader = new InputReader({
+            path,
+            prefix: String(this.config.scannerPrefix || ''),
+            suffix: String(this.config.scannerSuffix || ''),
+            setTimeout: (fn, ms) => this.setTimeout(fn, ms),
+            clearTimeout: h => h && this.clearTimeout(h),
+            log: this.log,
+            onScan: text => {
+                if (!this.closing) {
+                    this.handleScan(text).catch(e => this.log.warn(`Scan failed: ${e.message}`));
+                }
+            },
+        });
+        this.reader.start();
+    }
+
     armScanTimer() {
         this.clearTimeout(this.scanTimer);
         const at = this.scanEngine.deadline;
@@ -618,6 +642,10 @@ class Shelfmate extends utils.Adapter {
                 this.log.warn(`Could not read the certificate collections: ${e.message}`);
             }
             this.sendTo(obj.from, obj.command, collections, obj.callback);
+            return;
+        }
+        if (obj && obj.command === 'getInputDevices' && obj.callback) {
+            this.sendTo(obj.from, obj.command, listDevices(), obj.callback);
             return;
         }
         if (!obj || obj.command !== 'getBringLists' || !obj.callback) {
@@ -744,6 +772,7 @@ class Shelfmate extends utils.Adapter {
         try {
             this.closing = true;
             this.shopping?.stop();
+            this.reader?.stop();
             if (this.notifyTimer) {
                 this.clearTimeout(this.notifyTimer);
             }

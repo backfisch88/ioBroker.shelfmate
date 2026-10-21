@@ -61,5 +61,9 @@
     "notifyInventoryDays": "Recordatorio único de inventario tras … días sin inventario (0 = desactivado)",
     "hScanner": "Escáner (modo sin pantalla)",
     "scannerTimeout": "Tiempo entre producto y ubicación (segundos)",
-    "scannerTimeoutHelp": "Tras el producto, el código de la ubicación debe llegar en este tiempo. Escanear el producto dos veces significa retirar. El modo se activa con el punto de datos scanner.active."
+    "scannerTimeoutHelp": "Tras el producto, el código de la ubicación debe llegar en este tiempo. Escanear el producto dos veces significa retirar. El modo se activa con el punto de datos scanner.active.",
+    "scannerDevice": "Escáner (dispositivo de teclado en el servidor)",
+    "scannerDeviceHelp": "El dongle del escáner inalámbrico aparece aquí como teclado. El usuario de ioBroker necesita el grupo \"input\" (adduser iobroker input).",
+    "scannerPrefix": "Prefijo del escáner (quitar)",
+    "scannerSuffix": "Sufijo del escáner (quitar)"
 }

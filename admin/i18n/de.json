@@ -61,5 +61,9 @@
     "notifyInventoryDays": "Einmalige Inventur-Erinnerung nach … Tagen ohne Inventur (0 = aus)",
     "hScanner": "Scanner (headless-Modus)",
     "scannerTimeout": "Zeit zwischen Produkt und Lagerort (Sekunden)",
-    "scannerTimeoutHelp": "Nach dem Produkt muss der Lagerort-Code innerhalb dieser Zeit folgen. Zweimal das Produkt scannen heißt entnehmen. Der Modus wird über den Datenpunkt scanner.active eingeschaltet."
+    "scannerTimeoutHelp": "Nach dem Produkt muss der Lagerort-Code innerhalb dieser Zeit folgen. Zweimal das Produkt scannen heißt entnehmen. Der Modus wird über den Datenpunkt scanner.active eingeschaltet.",
+    "scannerDevice": "Scanner (Tastatur-Gerät am Server)",
+    "scannerDeviceHelp": "Der Dongle des Funk-Scanners erscheint hier als Tastatur. Der ioBroker-Benutzer braucht die Gruppe \"input\" (adduser iobroker input).",
+    "scannerPrefix": "Prefix des Scanners (entfernen)",
+    "scannerSuffix": "Suffix des Scanners (entfernen)"
 }

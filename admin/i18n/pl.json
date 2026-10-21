@@ -61,5 +61,9 @@
     "notifyInventoryDays": "Jednorazowe przypomnienie o inwentaryzacji po … dniach bez niej (0 = wyłączone)",
     "hScanner": "Skaner (tryb bez ekranu)",
     "scannerTimeout": "Czas między produktem a miejscem (sekundy)",
-    "scannerTimeoutHelp": "Po produkcie kod miejsca musi pojawić się w tym czasie. Dwa skany produktu oznaczają pobranie. Tryb włącza się punktem danych scanner.active."
+    "scannerTimeoutHelp": "Po produkcie kod miejsca musi pojawić się w tym czasie. Dwa skany produktu oznaczają pobranie. Tryb włącza się punktem danych scanner.active.",
+    "scannerDevice": "Skaner (urządzenie klawiatury na serwerze)",
+    "scannerDeviceHelp": "Dongle skanera bezprzewodowego pojawia się tu jako klawiatura. Użytkownik ioBroker potrzebuje grupy \"input\" (adduser iobroker input).",
+    "scannerPrefix": "Prefiks skanera (usuń)",
+    "scannerSuffix": "Sufiks skanera (usuń)"
 }
