@@ -3,8 +3,18 @@ updates:
   - package-ecosystem: npm
     directory: "/"
     schedule:
-      interval: monthly
+      interval: cron
+      cronjob: "43 5 * * 1"
+      timezone: Europe/Berlin
+    cooldown:
+      default: 7
+      default-days: 7
+    ignore:
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
-      interval: monthly
+      interval: cron
+      cronjob: "17 6 * * 1"
+      timezone: Europe/Berlin
