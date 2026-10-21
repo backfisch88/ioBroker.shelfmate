@@ -139,7 +139,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 - New: stocktaking reminder (interval in days) in the notification settings; a stocktaking without differences also counts as done and shows "Last stocktaking" per location
 - New: bulb icon in the header with all suggestions; group suggestions show product images and package sizes and keep the scroll position
 - New: device name in the settings, shown in the history for every booking
-- New: export of the stock as CSV or as a printable list (print dialog, "Save as PDF") in the settings under "Data"
+- New: export of the stock as CSV or as a PDF in the settings under "Data"
 - New: group suggestions (Settings / Data): products with similar names can be combined into one group with one tap
 - New: more label templates ("opened on", freezer, large shelf, box with contents, QR only); the adapter settings choose which label buttons the app shows
 

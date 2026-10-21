@@ -87,7 +87,7 @@ Vorschläge ansehen|View suggestions|Посмотреть предложения
 Inventur fällig|Stocktaking due|Пора провести инвентаризацию|Inventário em atraso|Inventarisatie nodig|Inventaire à faire|Inventario da fare|Inventario pendiente|Czas na inwentaryzację|Час для інвентаризації|该盘点了
 Noch nie eine Inventur gemacht|No stocktaking done yet|Инвентаризация ещё не проводилась|Ainda não foi feito nenhum inventário|Nog geen inventarisatie gedaan|Aucun inventaire effectué|Nessun inventario ancora fatto|Aún no se ha hecho ningún inventario|Nie wykonano jeszcze inwentaryzacji|Інвентаризацію ще не проводили|尚未进行盘点
 Bestand als CSV|Stock as CSV|Запасы в CSV|Stock em CSV|Voorraad als CSV|Stock en CSV|Scorte in CSV|Stock en CSV|Zapasy jako CSV|Запаси у CSV|库存导出为 CSV
-Bestand drucken / als PDF|Print stock / as PDF|Печать запасов / в PDF|Imprimir stock / como PDF|Voorraad afdrukken / als PDF|Imprimer le stock / en PDF|Stampa scorte / come PDF|Imprimir stock / como PDF|Drukuj zapasy / jako PDF|Друк запасів / у PDF|打印库存 / 保存为 PDF
+Bestand als PDF|Stock as PDF|Запасы в PDF|Stock em PDF|Voorraad als PDF|Stock en PDF|Scorte in PDF|Stock en PDF|Zapasy jako PDF|Запаси у PDF|库存导出为 PDF
 Bestand|Stock|Запасы|Stock|Voorraad|Stock|Scorte|Existencias|Zapasy|Запаси|库存
 Barcode|Barcode|Штрихкод|Código de barras|Barcode|Code-barres|Codice a barre|Código de barras|Kod kreskowy|Штрихкод|条码
 Menge|Quantity|Количество|Quantidade|Aantal|Quantité|Quantità|Cantidad|Ilość|Кількість|数量
