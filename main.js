@@ -178,13 +178,14 @@ class Shelfmate extends utils.Adapter {
     async loadData() {
         try {
             const raw = await fs.promises.readFile(this.dataPath, 'utf8');
-            this.inv = new Inventory(JSON.parse(raw));
+            this.inv = new Inventory(JSON.parse(raw), this.lang);
             return;
         } catch (e) {
             if (e.code !== 'ENOENT') {
                 this.log.error(`Data file is damaged (${e.message}) - keeping a copy and starting empty`);
                 await fs.promises.copyFile(this.dataPath, `${this.dataPath}.damaged`).catch(() => {});
             }
+            this.inv = new Inventory(undefined, this.lang);
         }
     }
 
@@ -263,7 +264,7 @@ class Shelfmate extends utils.Adapter {
             };
             this.afterChange(r.reorder, r.restock).catch(e => this.log.warn(`Post-processing failed: ${e.message}`));
         } catch (e) {
-            this.inv = new Inventory(JSON.parse(before));
+            this.inv = new Inventory(JSON.parse(before), this.lang);
             result = { id, ok: false, error: e.message || String(e) };
             this.log.debug(`${clean(cmd && cmd.action, 40) || 'command'}: ${result.error}`);
         }

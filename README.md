@@ -110,7 +110,7 @@ A JSON backup can be downloaded and imported in the app (Settings). An import or
 ## Changelog
 ### 0.1.8 (2026-10-21)
 - New: "Delete all data" button in the settings (two confirmations; the previous state is kept as `shelfmate.json.bak`)
-- New: a new installation (and "Delete all data") starts with the example location "Speisekammer · Regal 1" and the Barilla Fusilli No. 98 from Open Food Facts as example product
+- New: a new installation (and "Delete all data") starts with an example area and location (e.g. "Pantry · Shelf 1") in the ioBroker system language and the Barilla Fusilli No. 98 from Open Food Facts as example product
 - Fix: confirmation dialogs are now translated
 
 ### 0.1.7 (2026-10-20)
