@@ -209,3 +209,7 @@ MHD in 365 Tagen|Best before in 365 days|Срок годности через 36
 MHD entfernen|Remove best-before date|Удалить срок годности|Remover validade|THT verwijderen|Supprimer la DLC|Rimuovi scadenza|Quitar caducidad|Usuń datę ważności|Прибрати термін придатності|移除保质期
 MHD bearbeiten|Edit best-before dates|Изменить сроки годности|Editar validades|THT bewerken|Modifier les DLC|Modifica scadenze|Editar caducidades|Edytuj daty ważności|Редагувати терміни придатності|编辑保质期
 Geöffnete Packungen bleiben unverändert.|Opened packages stay unchanged.|Открытые упаковки не меняются.|As embalagens abertas não são alteradas.|Geopende verpakkingen blijven ongewijzigd.|Les emballages ouverts restent inchangés.|Le confezioni aperte restano invariate.|Los envases abiertos no cambian.|Otwarte opakowania pozostają bez zmian.|Відкриті упаковки не змінюються.|已开封的包装保持不变。
+MHD bald|Best before soon|Скоро срок годности|Validade próxima|THT bijna|DLC bientôt|Scadenza vicina|Caducidad próxima|Wkrótce termin ważności|Незабаром термін придатності|即将到期
+Abgelaufen|Expired|Просрочено|Expirado|Verlopen|Périmé|Scaduto|Caducado|Przeterminowane|Прострочено|已过期
+abgelaufen|expired|просрочено|expirado|verlopen|périmé|scaduto|caducado|przeterminowane|прострочено|已过期
+bald|soon|скоро|em breve|binnenkort|bientôt|presto|pronto|wkrótce|незабаром|即将
