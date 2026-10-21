@@ -213,3 +213,9 @@ MHD bald|Best before soon|Скоро срок годности|Validade próxima
 Abgelaufen|Expired|Просрочено|Expirado|Verlopen|Périmé|Scaduto|Caducado|Przeterminowane|Прострочено|已过期
 abgelaufen|expired|просрочено|expirado|verlopen|périmé|scaduto|caducado|przeterminowane|прострочено|已过期
 bald|soon|скоро|em breve|binnenkort|bientôt|presto|pronto|wkrótce|незабаром|即将
+Haltbarkeiten verwalten|Manage shelf lives|Управление сроками хранения|Gerir durabilidades|Houdbaarheden beheren|Gérer les durées de conservation|Gestisci le durate di conservazione|Gestionar duraciones|Zarządzaj trwałością|Керувати термінами зберігання|管理保质期
+Keine eigenen Haltbarkeiten eingetragen.|No own shelf lives entered.|Собственные сроки не заданы.|Nenhuma durabilidade própria definida.|Geen eigen houdbaarheden ingevoerd.|Aucune durée propre saisie.|Nessuna durata propria inserita.|No hay duraciones propias.|Brak własnych wartości.|Власні терміни не задано.|没有自定义保质期。
+Alle eigenen Werte entfernen|Remove all own values|Удалить все собственные значения|Remover todos os valores próprios|Alle eigen waarden verwijderen|Supprimer toutes les valeurs propres|Rimuovi tutti i valori propri|Quitar todos los valores propios|Usuń wszystkie własne wartości|Видалити всі власні значення|移除所有自定义值
+Alle eigenen Haltbarkeiten entfernen?|Remove all own shelf lives?|Удалить все собственные сроки?|Remover todas as durabilidades próprias?|Alle eigen houdbaarheden verwijderen?|Supprimer toutes les durées propres ?|Rimuovere tutte le durate proprie?|¿Quitar todas las duraciones propias?|Usunąć wszystkie własne wartości?|Видалити всі власні терміни?|移除所有自定义保质期？
+Entfernen|Remove|Удалить|Remover|Verwijderen|Supprimer|Rimuovi|Quitar|Usuń|Видалити|移除
+Gespeichert|Saved|Сохранено|Guardado|Opgeslagen|Enregistré|Salvato|Guardado|Zapisano|Збережено|已保存
