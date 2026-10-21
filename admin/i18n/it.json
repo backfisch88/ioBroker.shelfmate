@@ -47,5 +47,15 @@
     "notifyLow": "Avvisa al raggiungimento della scorta minima",
     "notifyExpiry": "Messaggio giornaliero su prodotti scaduti o in scadenza",
     "notifyTime": "Ora del messaggio giornaliero (HH:MM)",
-    "notifyTest": "Invia messaggio di prova"
+    "notifyTest": "Invia messaggio di prova",
+    "hLabels": "Etichette",
+    "labelButtons": "Pulsanti etichette nell'app",
+    "labelButtonsHelp": "Scegli quali pulsanti etichetta mostra l'app, per tenerla essenziale come preferisci",
+    "lbEan": "Etichetta EAN (modulo prodotto)",
+    "lbQr": "Etichetta QR (luogo)",
+    "lbQrOnly": "Solo QR (luogo)",
+    "lbShelf": "Etichetta grande per scaffale (luogo)",
+    "lbBox": "Etichetta scatola con contenuto (luogo)",
+    "lbOpened": "Etichetta «Aperto il» (prodotto)",
+    "lbFreezer": "Etichetta freezer (prodotto)"
 }

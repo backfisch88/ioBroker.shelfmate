@@ -47,5 +47,15 @@
     "notifyLow": "Powiadom po osiągnięciu minimalnego zapasu",
     "notifyExpiry": "Codzienna wiadomość o przeterminowanych i wkrótce przeterminowanych produktach",
     "notifyTime": "Godzina codziennej wiadomości (GG:MM)",
-    "notifyTest": "Wyślij wiadomość testową"
+    "notifyTest": "Wyślij wiadomość testową",
+    "hLabels": "Etykiety",
+    "labelButtons": "Przyciski etykiet w aplikacji",
+    "labelButtonsHelp": "Wybierz, które przyciski etykiet pokazuje aplikacja, aby była tak zwięzła, jak chcesz",
+    "lbEan": "Etykieta EAN (formularz produktu)",
+    "lbQr": "Etykieta QR (miejsce)",
+    "lbQrOnly": "Tylko QR (miejsce)",
+    "lbShelf": "Duża etykieta półki (miejsce)",
+    "lbBox": "Etykieta pudełka z zawartością (miejsce)",
+    "lbOpened": "Etykieta „Otwarto dnia” (produkt)",
+    "lbFreezer": "Etykieta do zamrażarki (produkt)"
 }

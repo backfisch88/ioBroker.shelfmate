@@ -29,6 +29,8 @@ German short description: [README.de.md](README.de.md)
 - Notifications through Telegram, telegrammenu2, Pushover, Signal, WhatsApp, Matrix or e-mail: minimum stock reached, daily message about expired and expiring products
 - Consumption of the last 30 days per product with a suggestion for the minimum stock
 - Device name per phone, shown in the history for every booking
+- Group suggestions: products with similar names ("Flour", "Flour (Type 405)") can be combined into one group
+- Label templates: "opened on", freezer label, large shelf label, box label with contents list, QR-only label. The adapter settings let you choose which label buttons the app shows
 - JSON backup: download and import in the app
 - Built-in HTTPS web server that uses the certificates of your ioBroker installation (self-signed, own or Let's Encrypt collections)
 - Optional access key for the API
@@ -64,6 +66,7 @@ Install via the ioBroker Admin UI (Adapters). Then add an instance and open `htt
 | Shopping list mode | See below |
 | Best-before date | **Off**, **per product** (one date on each product) or **per stocking** (a date for every booking of stock; removing uses the oldest date first) |
 | Notification adapter | Installed instance for messages (telegram, telegrammenu2, pushover, signal, whatsapp, matrix, email). Optional recipient (chat ID or e-mail address), the area for telegrammenu2, a test button, and the options "minimum stock reached" and "daily message about expired products" with its time |
+| Label buttons | Which label buttons the app shows (EAN, QR, QR only, large shelf label, box label, "opened on", freezer label) |
 | Warn before expiry | Days before the date from which products are marked and listed in the data points |
 
 ### Best-before date
@@ -118,9 +121,7 @@ ShelfMate is under active development. Planned features (no promises, no order):
 
 - **Stocktaking mode**: count what is really on the shelf per storage location, either as a list (target quantity, enter the counted quantity) or by scanning every item; the variant can be chosen in the settings. Later also for a whole area, location after location. Corrections appear in the history as "Stocktaking"
 - **External barcode scanner** (USB or Bluetooth, keyboard mode): configurable prefix and suffix, scans are told apart from typing by their speed, control barcodes such as "stock in" / "take out" to work without the display
-- **Group suggestions**: the app scans the product names and suggests products that belong together (for example "Flour" and "Flour (Type 405)") to be combined into one group
 - **Export** of the stock as CSV and as a printable PDF
-- **More label templates**: "opened on", freezer label ("frozen on" / "best before"), box label with contents list, large shelf label, QR-only label. In the adapter settings you choose which label buttons appear in the app, so everybody can keep it as short or as full as they like
 
 Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
@@ -130,6 +131,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 - New: consumption of the last 30 days per product in the app and as data point `stats.consumption`, with a suggestion for the minimum stock
 - New: device name in the settings, shown in the history for every booking
 - New: group suggestions (Settings / Data): products with similar names can be combined into one group with one tap
+- New: more label templates ("opened on", freezer, large shelf, box with contents, QR only); the adapter settings choose which label buttons the app shows
 
 ### 0.1.10 (2026-10-21)
 - Maintenance: repository checker fixes (Node 26 in the test matrix, workflow, metadata, Node.js >= 22.12); the certificate collection is chosen from a drop-down list

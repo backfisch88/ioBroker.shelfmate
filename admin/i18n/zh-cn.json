@@ -47,5 +47,15 @@
     "notifyLow": "达到最低库存时通知",
     "notifyExpiry": "每日通知已过期和即将过期的商品",
     "notifyTime": "每日通知时间 (HH:MM)",
-    "notifyTest": "发送测试消息"
+    "notifyTest": "发送测试消息",
+    "hLabels": "标签",
+    "labelButtons": "应用中的标签按钮",
+    "labelButtonsHelp": "选择应用中显示哪些标签按钮，以保持界面简洁",
+    "lbEan": "EAN 标签（商品表单）",
+    "lbQr": "QR 标签（存放位置）",
+    "lbQrOnly": "仅 QR（存放位置）",
+    "lbShelf": "大号货架标签（存放位置）",
+    "lbBox": "带内容清单的箱子标签（存放位置）",
+    "lbOpened": "“开封日期”标签（商品）",
+    "lbFreezer": "冷冻标签（商品）"
 }

@@ -47,5 +47,15 @@
     "notifyLow": "Avisar al alcanzar el stock mínimo",
     "notifyExpiry": "Mensaje diario sobre productos caducados o a punto de caducar",
     "notifyTime": "Hora del mensaje diario (HH:MM)",
-    "notifyTest": "Enviar mensaje de prueba"
+    "notifyTest": "Enviar mensaje de prueba",
+    "hLabels": "Etiquetas",
+    "labelButtons": "Botones de etiquetas en la app",
+    "labelButtonsHelp": "Elige qué botones de etiquetas muestra la app para mantenerla tan sencilla como quieras",
+    "lbEan": "Etiqueta EAN (formulario del producto)",
+    "lbQr": "Etiqueta QR (ubicación)",
+    "lbQrOnly": "Solo QR (ubicación)",
+    "lbShelf": "Etiqueta grande de estante (ubicación)",
+    "lbBox": "Etiqueta de caja con contenido (ubicación)",
+    "lbOpened": "Etiqueta «Abierto el» (producto)",
+    "lbFreezer": "Etiqueta de congelador (producto)"
 }

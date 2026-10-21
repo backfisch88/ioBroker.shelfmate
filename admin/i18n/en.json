@@ -47,5 +47,15 @@
     "notifyLow": "Message when the minimum stock is reached",
     "notifyExpiry": "Daily message about expired and expiring products",
     "notifyTime": "Time of the daily message (HH:MM)",
-    "notifyTest": "Send test message"
+    "notifyTest": "Send test message",
+    "hLabels": "Labels",
+    "labelButtons": "Label buttons in the app",
+    "labelButtonsHelp": "Choose which label buttons the app shows, so it stays as short as you like",
+    "lbEan": "EAN label (product form)",
+    "lbQr": "QR label (storage location)",
+    "lbQrOnly": "QR-only label (storage location)",
+    "lbShelf": "Large shelf label (storage location)",
+    "lbBox": "Box label with contents (storage location)",
+    "lbOpened": "\"Opened on\" label (product)",
+    "lbFreezer": "Freezer label (product)"
 }

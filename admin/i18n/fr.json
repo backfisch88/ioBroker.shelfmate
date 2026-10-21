@@ -47,5 +47,15 @@
     "notifyLow": "Notifier à l'atteinte du stock minimum",
     "notifyExpiry": "Message quotidien sur les produits périmés ou bientôt périmés",
     "notifyTime": "Heure du message quotidien (HH:MM)",
-    "notifyTest": "Envoyer un message de test"
+    "notifyTest": "Envoyer un message de test",
+    "hLabels": "Étiquettes",
+    "labelButtons": "Boutons d'étiquettes dans l'appli",
+    "labelButtonsHelp": "Choisissez les boutons d'étiquettes affichés dans l'appli pour la garder aussi sobre que vous le souhaitez",
+    "lbEan": "Étiquette EAN (formulaire du produit)",
+    "lbQr": "Étiquette QR (emplacement)",
+    "lbQrOnly": "QR seul (emplacement)",
+    "lbShelf": "Grande étiquette d'étagère (emplacement)",
+    "lbBox": "Étiquette de boîte avec contenu (emplacement)",
+    "lbOpened": "Étiquette « Ouvert le » (produit)",
+    "lbFreezer": "Étiquette congélateur (produit)"
 }

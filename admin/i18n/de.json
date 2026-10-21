@@ -47,5 +47,15 @@
     "notifyLow": "Meldung bei Erreichen des Mindestbestands",
     "notifyExpiry": "Tägliche Meldung zu abgelaufenen und bald ablaufenden Produkten",
     "notifyTime": "Uhrzeit der täglichen Meldung (HH:MM)",
-    "notifyTest": "Testnachricht senden"
+    "notifyTest": "Testnachricht senden",
+    "hLabels": "Etiketten",
+    "labelButtons": "Etiketten-Knöpfe in der App",
+    "labelButtonsHelp": "Wähle, welche Etiketten-Knöpfe die App zeigt, damit sie so knapp bleibt, wie du möchtest",
+    "lbEan": "EAN-Etikett (Produktformular)",
+    "lbQr": "QR-Etikett (Lagerort)",
+    "lbQrOnly": "Nur-QR-Etikett (Lagerort)",
+    "lbShelf": "Großes Regal-Etikett (Lagerort)",
+    "lbBox": "Boxen-Etikett mit Inhalt (Lagerort)",
+    "lbOpened": "„Geöffnet am“-Etikett (Produkt)",
+    "lbFreezer": "Gefrierfach-Etikett (Produkt)"
 }

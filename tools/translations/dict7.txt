@@ -44,3 +44,11 @@ Zusammenfassen|Combine|Объединить|Agrupar|Samenvoegen|Regrouper|Raggru
 Nicht vorschlagen|Do not suggest|Не предлагать|Não sugerir|Niet voorstellen|Ne plus suggérer|Non suggerire|No sugerir|Nie proponuj|Не пропонувати|不再建议
 Gruppenname fehlt|Group name missing|Не указано название группы|Falta o nome do grupo|Groepsnaam ontbreekt|Nom du groupe manquant|Nome del gruppo mancante|Falta el nombre del grupo|Brak nazwy grupy|Не вказано назву групи|缺少分组名称
 Gruppe angelegt|Group created|Группа создана|Grupo criado|Groep aangemaakt|Groupe créé|Gruppo creato|Grupo creado|Grupa utworzona|Групу створено|已创建分组
+Regal-Etikett (groß)|Large shelf label|Большая этикетка полки|Etiqueta grande de prateleira|Groot schapetiket|Grande étiquette d'étagère|Etichetta grande per scaffale|Etiqueta grande de estante|Duża etykieta półki|Велика етикетка полиці|大号货架标签
+Box-Etikett mit Inhalt|Box label with contents|Этикетка коробки с содержимым|Etiqueta de caixa com conteúdo|Doosetiket met inhoud|Étiquette de boîte avec contenu|Etichetta scatola con contenuto|Etiqueta de caja con contenido|Etykieta pudełka z zawartością|Етикетка коробки з вмістом|带内容清单的箱子标签
+Nur-QR-Etikett|QR-only label|Только QR|Só QR|Alleen QR|QR seul|Solo QR|Solo QR|Tylko QR|Лише QR|仅 QR
+🏷 Geöffnet-Etikett|🏷 Opened label|🏷 Этикетка «Вскрыто»|🏷 Etiqueta «Aberto»|🏷 Etiket «Geopend»|🏷 Étiquette « Ouvert »|🏷 Etichetta «Aperto»|🏷 Etiqueta «Abierto»|🏷 Etykieta „Otwarto”|🏷 Етикетка «Відкрито»|🏷 开封标签
+❄ Gefrier-Etikett|❄ Freezer label|❄ Этикетка для морозилки|❄ Etiqueta de congelador|❄ Vriezeretiket|❄ Étiquette congélateur|❄ Etichetta freezer|❄ Etiqueta de congelador|❄ Etykieta do zamrażarki|❄ Етикетка для морозилки|❄ 冷冻标签
+Geöffnet am|Opened on|Вскрыто|Aberto em|Geopend op|Ouvert le|Aperto il|Abierto el|Otwarto dnia|Відкрито|开封日期
+Eingefroren am|Frozen on|Заморожено|Congelado em|Ingevroren op|Congelé le|Congelato il|Congelado el|Zamrożono dnia|Заморожено|冷冻日期
+Haltbar bis|Best before|Годен до|Validade até|Houdbaar tot|À consommer avant|Da consumare entro|Consumir antes de|Najlepsze do|Придатне до|保质期至

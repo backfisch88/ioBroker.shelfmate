@@ -362,6 +362,55 @@
             "md": 6,
             "lg": 4,
             "xl": 4
+        },
+        "_hLabels": {
+            "type": "header",
+            "text": "hLabels",
+            "size": 3,
+            "newLine": true,
+            "xs": 12
+        },
+        "labelButtons": {
+            "type": "select",
+            "multiple": true,
+            "label": "labelButtons",
+            "help": "labelButtonsHelp",
+            "options": [
+                {
+                    "label": "lbEan",
+                    "value": "ean"
+                },
+                {
+                    "label": "lbQr",
+                    "value": "qr"
+                },
+                {
+                    "label": "lbQrOnly",
+                    "value": "qrOnly"
+                },
+                {
+                    "label": "lbShelf",
+                    "value": "shelf"
+                },
+                {
+                    "label": "lbBox",
+                    "value": "box"
+                },
+                {
+                    "label": "lbOpened",
+                    "value": "opened"
+                },
+                {
+                    "label": "lbFreezer",
+                    "value": "freezer"
+                }
+            ],
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 8,
+            "xl": 8
         }
     }
 }

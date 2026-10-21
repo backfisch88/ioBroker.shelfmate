@@ -200,7 +200,11 @@
         "notifyArea": "ShelfMate",
         "notifyLow": false,
         "notifyExpiry": false,
-        "notifyTime": "08:00"
+        "notifyTime": "08:00",
+        "labelButtons": [
+            "ean",
+            "qr"
+        ]
     },
     "objects": [],
     "instanceObjects": [

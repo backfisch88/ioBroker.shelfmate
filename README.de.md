@@ -12,6 +12,10 @@ ShelfMate ist ein Haushalts-Vorratslager für ioBroker. Es läuft als installier
 - Einkaufsliste: **Aus**, **Script** (Datenpunkte), **Bring** oder **Bring Spezial** (zählt Mengen hoch statt Duplikate)
 - Optional: Artikel von der Liste entfernen, wenn wieder aufgefüllt, und/oder wenn der Haken in der App entfernt wird
 - Lagerübersicht und ablaufende Produkte als Datenpunkte (JSON und HTML-Tabelle für VIS)
+- Benachrichtigungen über Telegram, telegrammenu2, Pushover, Signal, WhatsApp, Matrix oder E-Mail (Mindestbestand erreicht, tägliche Meldung zu ablaufenden Produkten)
+- Verbrauch der letzten 30 Tage mit Vorschlag für den Mindestbestand, Gerätename im Verlauf
+- Gruppen-Vorschläge für ähnlich benannte Produkte
+- Etiketten: EAN, QR, Nur-QR, großes Regal-Etikett, Boxen-Etikett mit Inhalt, „Geöffnet am“, Gefrierfach – welche Knöpfe die App zeigt, stellst du im Adapter ein
 - JSON-Backup: Download und Import in der App
 - App und HTML-Datenpunkte nutzen die ioBroker-Systemsprache (11 Sprachen)
 - Eigener HTTPS-Server mit den ioBroker-Zertifikaten, optionaler Zugriffsschlüssel
@@ -31,9 +35,7 @@ ShelfMate wird aktiv weiterentwickelt. Geplant (ohne Zusage, ohne Reihenfolge):
 
 - **Inventurmodus**: pro Lagerort zählen, entweder als Liste (Soll-Menge, gezählte Menge eintragen) oder per Scan jedes Artikels; die Variante wählst du in den Einstellungen. Später auch für einen ganzen Bereich. Korrekturen erscheinen im Verlauf als „Inventur“
 - **Externer Barcode-Scanner** (USB oder Bluetooth, Tastaturmodus): Prefix und Suffix einstellbar, Scan wird am Tempo vom Tippen unterschieden, Steuer-Barcodes wie „Einlagern“ / „Entnehmen“ zum Arbeiten ohne Display
-- **Gruppen-Vorschläge**: Die App durchsucht die Produktnamen und schlägt vor, was zusammengehört (z. B. „Mehl“ und „Mehl (Typ 405)“), um es in einer Gruppe zusammenzufassen
 - **Export** des Bestands als CSV und als druckbares PDF
-- **Weitere Etiketten-Vorlagen**: „Geöffnet am“, Gefrierfach-Etikett („Eingefroren am“ / „Haltbar bis“), Boxen-Etikett mit Inhaltsliste, großes Regal-Etikett, Nur-QR-Etikett. In den Adapter-Einstellungen wählst du, welche Etiketten-Knöpfe in der App erscheinen, damit jeder es knapp oder ausführlich halten kann
 
 Ideen und Fehler gerne als [GitHub-Issue](https://github.com/backfisch88/ioBroker.shelfmate/issues) melden.
 

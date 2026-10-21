@@ -226,7 +226,7 @@ class Shelfmate extends utils.Adapter {
             ready: true,
             bring,
             shopping: !!this.shopping && this.shopping.mode !== 'off',
-            config: { ...this.bestBeforeConfig(), lang: this.lang || 'en' },
+            config: { ...this.bestBeforeConfig(), lang: this.lang || 'en', labelButtons: this.labelButtons() },
         };
     }
 
@@ -357,6 +357,17 @@ class Shelfmate extends utils.Adapter {
             bestBeforeMode: mode,
             bestBeforeWarnDays: Number.isFinite(days) && days >= 0 && days <= 365 ? days : 7,
         };
+    }
+
+    /**
+     * Label buttons chosen in the settings.
+     *
+     * @returns {string[]} names of the enabled buttons
+     */
+    labelButtons() {
+        const known = ['ean', 'qr', 'qrOnly', 'shelf', 'box', 'opened', 'freezer'];
+        const a = Array.isArray(this.config.labelButtons) ? this.config.labelButtons : ['ean', 'qr'];
+        return a.filter(x => known.includes(x));
     }
 
     async updateStats() {
