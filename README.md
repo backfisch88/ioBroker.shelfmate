@@ -107,6 +107,20 @@ Camera access and the offline mode need a certificate the phone trusts. With a s
 Inventory data is stored in the adapter data directory (`shelfmate.json`), not in the object database.
 A JSON backup can be downloaded and imported in the app (Settings). An import or "Delete all data" replaces all data; the previous state is kept as `shelfmate.json.bak`.
 
+## Work in progress and roadmap
+
+ShelfMate is under active development. Planned and possible features (no promises, no order):
+
+- **External barcode scanner** (planned): a USB or Bluetooth hand scanner at the shelf, so you can book stock in and out without taking out the phone
+- Stocktaking mode: count what is really on the shelf and correct the stock in one pass
+- Notifications for products that are about to expire or run low (data point and/or message adapters such as Telegram)
+- Consumption statistics and a suggestion for the minimum stock based on the history
+- CSV import and export in addition to the JSON backup
+- Several users with their own entries in the history
+- More label templates (for example with best-before date)
+
+Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisch88/ioBroker.shelfmate/issues).
+
 ## Changelog
 ### 0.1.10 (2026-10-21)
 - Maintenance: repository checker fixes (Node 26 in the test matrix, workflow, metadata, Node.js >= 22.12); the certificate collection is chosen from a drop-down list
