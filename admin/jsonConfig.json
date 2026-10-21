@@ -92,7 +92,9 @@
             "xl": 4
         },
         "leCollection": {
-            "type": "certCollection",
+            "type": "selectSendTo",
+            "command": "getCertCollections",
+            "manual": true,
             "label": "leCollection",
             "hidden": "!data.secure",
             "newLine": true,
