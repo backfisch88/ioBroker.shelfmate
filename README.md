@@ -232,6 +232,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 
 ## Changelog
 ### **WORK IN PROGRESS**
+- Changed: the tab menu stays visible on every page
 - New: "Reset statistics" button in the settings (history is kept)
 - New: optional standard shelf life and shelf life after opening per product
 - New: mark a unit as opened, mark stock as spoiled, undo the last booking (app and scanner codes)
