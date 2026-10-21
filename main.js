@@ -265,6 +265,7 @@ class Shelfmate extends utils.Adapter {
                 productId: r.productId,
                 locationId: r.locationId,
                 total: r.total,
+                suggestions: r.suggestions,
             };
             this.afterChange(r.reorder, r.restock).catch(e => this.log.warn(`Post-processing failed: ${e.message}`));
         } catch (e) {

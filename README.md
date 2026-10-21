@@ -129,6 +129,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 - New: notifications through any installed notification adapter (Telegram, telegrammenu2, Pushover, Signal, WhatsApp, Matrix, e-mail): minimum stock reached and a daily message about expired / expiring products, with a test button
 - New: consumption of the last 30 days per product in the app and as data point `stats.consumption`, with a suggestion for the minimum stock
 - New: device name in the settings, shown in the history for every booking
+- New: group suggestions (Settings / Data): products with similar names can be combined into one group with one tap
 
 ### 0.1.10 (2026-10-21)
 - Maintenance: repository checker fixes (Node 26 in the test matrix, workflow, metadata, Node.js >= 22.12); the certificate collection is chosen from a drop-down list
