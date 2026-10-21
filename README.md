@@ -219,6 +219,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 ### **WORK IN PROGRESS**
 - New: scanner mode: book stock in and out with scanned codes through data points (`scanner.input`, `scanner.active`, `scanner.result`), without the app
 - New: a wireless scanner whose dongle sits in the ioBroker host (keyboard device) is read directly, with prefix and suffix
+- New: own label size for the shelf label, the box label and the full-page code (A6, A5, A4), the small label size stays the default
 - New: setting for location labels: QR code or Code 128 barcode (for scanners without 2D)
 - New: short scanner code for locations (`SM:L:<id>`) and a printable sheet with quantity and cancel codes
 
