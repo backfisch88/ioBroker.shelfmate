@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "shelfmate",
-        "version": "0.1.8",
+        "version": "0.1.9",
         "news": {
+            "0.1.9": {
+                "en": "Shopping list: items are queued while offline and sent once the connection is back",
+                "de": "Einkaufsliste: Einträge werden offline vorgemerkt und bei Verbindung gesendet",
+                "ru": "Список покупок: записи ставятся в очередь офлайн и отправляются после подключения",
+                "pt": "Lista de compras: os itens ficam em fila offline e são enviados quando houver ligação",
+                "nl": "Boodschappenlijst: items worden offline in de wachtrij gezet en verstuurd zodra er verbinding is",
+                "fr": "Liste de courses : les éléments sont mis en file d'attente hors ligne et envoyés à la reconnexion",
+                "it": "Lista della spesa: gli elementi vengono messi in coda offline e inviati alla riconnessione",
+                "es": "Lista de la compra: los elementos se ponen en cola sin conexión y se envían al reconectar",
+                "pl": "Lista zakupów: pozycje są kolejkowane offline i wysyłane po połączeniu",
+                "uk": "Список покупок: записи ставляться в чергу офлайн і надсилаються після підключення",
+                "zh-cn": "购物清单：离线时条目进入队列，恢复连接后发送"
+            },
             "0.1.8": {
                 "en": "New: \"Delete all data\" button in the settings (with two confirmations and automatic backup); confirmation dialogs are translated",
                 "de": "Neu: Button „Alle Daten löschen\" in den Einstellungen (mit zwei Rückfragen und automatischer Sicherung); Rückfragen sind übersetzt",
