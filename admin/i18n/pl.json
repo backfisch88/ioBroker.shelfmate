@@ -46,7 +46,7 @@
     "notifyAreaHelp": "Musi być obszarem już zatwierdzonym w telegrammenu2",
     "notifyLow": "Powiadom po osiągnięciu minimalnego zapasu",
     "notifyExpiry": "Codzienna wiadomość o przeterminowanych i wkrótce przeterminowanych produktach",
-    "notifyTime": "Godzina codziennej wiadomości (GG:MM)",
+    "notifyTime": "Godzina codziennych wiadomości (GG:MM)",
     "notifyTest": "Wyślij wiadomość testową",
     "hLabels": "Etykiety",
     "labelButtons": "Przyciski etykiet w aplikacji",
@@ -58,5 +58,5 @@
     "lbBox": "Etykieta pudełka z zawartością (miejsce)",
     "lbOpened": "Etykieta „Otwarto dnia” (produkt)",
     "lbFreezer": "Etykieta do zamrażarki (produkt)",
-    "notifyInventoryDays": "Przypomnienie o inwentaryzacji co … dni (0 = wyłączone)"
+    "notifyInventoryDays": "Jednorazowe przypomnienie o inwentaryzacji po … dniach bez niej (0 = wyłączone)"
 }

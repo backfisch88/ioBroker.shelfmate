@@ -46,7 +46,7 @@
     "notifyAreaHelp": "Tem de ser uma área já aprovada no telegrammenu2",
     "notifyLow": "Avisar ao atingir o stock mínimo",
     "notifyExpiry": "Aviso diário sobre produtos expirados e a expirar",
-    "notifyTime": "Hora do aviso diário (HH:MM)",
+    "notifyTime": "Hora dos avisos diários (HH:MM)",
     "notifyTest": "Enviar mensagem de teste",
     "hLabels": "Etiquetas",
     "labelButtons": "Botões de etiquetas na app",
@@ -58,5 +58,5 @@
     "lbBox": "Etiqueta de caixa com conteúdo (local)",
     "lbOpened": "Etiqueta «Aberto em» (produto)",
     "lbFreezer": "Etiqueta de congelador (produto)",
-    "notifyInventoryDays": "Lembrar de um inventário a cada … dias (0 = desligado)"
+    "notifyInventoryDays": "Lembrar uma vez de um inventário após … dias sem inventário (0 = desligado)"
 }

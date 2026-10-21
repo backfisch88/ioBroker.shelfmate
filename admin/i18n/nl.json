@@ -46,7 +46,7 @@
     "notifyAreaHelp": "Moet een in telegrammenu2 al goedgekeurd gebied zijn",
     "notifyLow": "Melden bij bereiken van de minimumvoorraad",
     "notifyExpiry": "Dagelijks bericht over verlopen en bijna verlopen producten",
-    "notifyTime": "Tijdstip van het dagelijkse bericht (UU:MM)",
+    "notifyTime": "Tijdstip van de dagelijkse berichten (UU:MM)",
     "notifyTest": "Testbericht verzenden",
     "hLabels": "Etiketten",
     "labelButtons": "Etiketknoppen in de app",
@@ -58,5 +58,5 @@
     "lbBox": "Doosetiket met inhoud (locatie)",
     "lbOpened": "Etiket «Geopend op» (product)",
     "lbFreezer": "Vriezeretiket (product)",
-    "notifyInventoryDays": "Inventarisatieherinnering elke … dagen (0 = uit)"
+    "notifyInventoryDays": "Eenmalige inventarisatieherinnering na … dagen zonder inventarisatie (0 = uit)"
 }

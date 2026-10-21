@@ -353,7 +353,7 @@
         "notifyTime": {
             "type": "text",
             "label": "notifyTime",
-            "hidden": "!data.notifyAdapter || ((!data.notifyExpiry || data.bestBeforeMode === 'off') && !(data.notifyInventoryDays > 0))",
+            "hidden": "!data.notifyAdapter",
             "newLine": true,
             "xs": 12,
             "sm": 12,

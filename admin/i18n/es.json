@@ -46,7 +46,7 @@
     "notifyAreaHelp": "Debe ser un área ya aprobada en telegrammenu2",
     "notifyLow": "Avisar al alcanzar el stock mínimo",
     "notifyExpiry": "Mensaje diario sobre productos caducados o a punto de caducar",
-    "notifyTime": "Hora del mensaje diario (HH:MM)",
+    "notifyTime": "Hora de los mensajes diarios (HH:MM)",
     "notifyTest": "Enviar mensaje de prueba",
     "hLabels": "Etiquetas",
     "labelButtons": "Botones de etiquetas en la app",
@@ -58,5 +58,5 @@
     "lbBox": "Etiqueta de caja con contenido (ubicación)",
     "lbOpened": "Etiqueta «Abierto el» (producto)",
     "lbFreezer": "Etiqueta de congelador (producto)",
-    "notifyInventoryDays": "Recordatorio de inventario cada … días (0 = desactivado)"
+    "notifyInventoryDays": "Recordatorio único de inventario tras … días sin inventario (0 = desactivado)"
 }

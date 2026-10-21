@@ -153,6 +153,7 @@ class Shelfmate extends utils.Adapter {
             ['stats.lowStockList', 'Names at or below minimum stock (JSON)', 'string', 'json', false],
             ['stats.inventory', 'Everything in stock (JSON)', 'string', 'json', false],
             ['stats.inventoryHtml', 'Everything in stock (HTML table for VIS)', 'string', 'html', false],
+            ['stats.inventoryReminderStart', 'Start of the stocktaking reminder interval', 'number', 'date', false],
             ['stats.lastInventoryReminder', 'Time of the last stocktaking reminder', 'number', 'date', false],
             ['stats.consumption', 'Consumption of the last 30 days (JSON)', 'string', 'json', false],
             ['stats.expiringCount', 'Products expired or expiring soon', 'number', 'value', false],
@@ -227,7 +228,12 @@ class Shelfmate extends utils.Adapter {
             ready: true,
             bring,
             shopping: !!this.shopping && this.shopping.mode !== 'off',
-            config: { ...this.bestBeforeConfig(), lang: this.lang || 'en', labelButtons: this.labelButtons() },
+            config: {
+                ...this.bestBeforeConfig(),
+                lang: this.lang || 'en',
+                labelButtons: this.labelButtons(),
+                inventoryDays: this.inventoryDays(),
+            },
         };
     }
 
@@ -626,18 +632,21 @@ class Shelfmate extends utils.Adapter {
         if (!days) {
             return;
         }
-        const last = [
+        const now = Date.now();
+        const lastStock = Math.max(
+            0,
             ...this.inv.data.history.filter(h => h.kind === 'stocktake').map(h => Date.parse(h.time)),
             ...Object.values(this.inv.data.locations).map(l => Date.parse(l.stocktake || '') || 0),
-        ];
-        const state = await this.getStateAsync('stats.lastInventoryReminder');
-        const ref = Math.max(0, Number(state && state.val) || 0, ...last);
-        const now = Date.now();
-        if (!ref) {
-            await this.setState('stats.lastInventoryReminder', now, true);
-            return;
+        );
+        let start = Number((await this.getStateAsync('stats.inventoryReminderStart'))?.val) || 0;
+        if (!start) {
+            start = now;
+            await this.setState('stats.inventoryReminderStart', start, true);
         }
-        if (now - ref >= days * 86400000 - 3600000) {
+        const due = (lastStock || start) + days * 86400000 - 3600000;
+        const sent = Number((await this.getStateAsync('stats.lastInventoryReminder'))?.val) || 0;
+        // one message per due stocktaking: nothing more until a stocktaking has been done
+        if (now >= due && sent < due) {
             this.notify((NOTIFY_TEXT[this.lang] || NOTIFY_TEXT.en).inventory, 'info');
             await this.setState('stats.lastInventoryReminder', now, true);
         }

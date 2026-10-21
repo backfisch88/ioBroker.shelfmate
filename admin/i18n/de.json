@@ -46,7 +46,7 @@
     "notifyAreaHelp": "Muss ein in telegrammenu2 bereits freigegebener Bereich sein",
     "notifyLow": "Meldung bei Erreichen des Mindestbestands",
     "notifyExpiry": "Tägliche Meldung zu abgelaufenen und bald ablaufenden Produkten",
-    "notifyTime": "Uhrzeit der täglichen Meldung (HH:MM)",
+    "notifyTime": "Uhrzeit der täglichen Meldungen (HH:MM)",
     "notifyTest": "Testnachricht senden",
     "hLabels": "Etiketten",
     "labelButtons": "Etiketten-Knöpfe in der App",
@@ -58,5 +58,5 @@
     "lbBox": "Boxen-Etikett mit Inhalt (Lagerort)",
     "lbOpened": "„Geöffnet am“-Etikett (Produkt)",
     "lbFreezer": "Gefrierfach-Etikett (Produkt)",
-    "notifyInventoryDays": "Inventur-Erinnerung alle … Tage (0 = aus)"
+    "notifyInventoryDays": "Einmalige Inventur-Erinnerung nach … Tagen ohne Inventur (0 = aus)"
 }

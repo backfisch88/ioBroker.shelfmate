@@ -46,7 +46,7 @@
     "notifyAreaHelp": "Must be an area that is already approved in telegrammenu2",
     "notifyLow": "Message when the minimum stock is reached",
     "notifyExpiry": "Daily message about expired and expiring products",
-    "notifyTime": "Time of the daily message (HH:MM)",
+    "notifyTime": "Time of the daily messages (HH:MM)",
     "notifyTest": "Send test message",
     "hLabels": "Labels",
     "labelButtons": "Label buttons in the app",
@@ -58,5 +58,5 @@
     "lbBox": "Box label with contents (storage location)",
     "lbOpened": "\"Opened on\" label (product)",
     "lbFreezer": "Freezer label (product)",
-    "notifyInventoryDays": "Remind about a stocktaking every … days (0 = off)"
+    "notifyInventoryDays": "Remind once about a stocktaking after … days without one (0 = off)"
 }

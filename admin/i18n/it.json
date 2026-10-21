@@ -46,7 +46,7 @@
     "notifyAreaHelp": "Deve essere un'area già approvata in telegrammenu2",
     "notifyLow": "Avvisa al raggiungimento della scorta minima",
     "notifyExpiry": "Messaggio giornaliero su prodotti scaduti o in scadenza",
-    "notifyTime": "Ora del messaggio giornaliero (HH:MM)",
+    "notifyTime": "Ora dei messaggi giornalieri (HH:MM)",
     "notifyTest": "Invia messaggio di prova",
     "hLabels": "Etichette",
     "labelButtons": "Pulsanti etichette nell'app",
@@ -58,5 +58,5 @@
     "lbBox": "Etichetta scatola con contenuto (luogo)",
     "lbOpened": "Etichetta «Aperto il» (prodotto)",
     "lbFreezer": "Etichetta freezer (prodotto)",
-    "notifyInventoryDays": "Promemoria inventario ogni … giorni (0 = disattivato)"
+    "notifyInventoryDays": "Promemoria unico di inventario dopo … giorni senza inventario (0 = disattivato)"
 }
