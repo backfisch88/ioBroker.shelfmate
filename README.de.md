@@ -15,6 +15,7 @@ ShelfMate ist ein Haushalts-Vorratslager für ioBroker. Es läuft als installier
 - Benachrichtigungen über Telegram, telegrammenu2, Pushover, Signal, WhatsApp, Matrix oder E-Mail (Mindestbestand erreicht, tägliche Meldung zu ablaufenden Produkten)
 - Verbrauch der letzten 30 Tage mit Vorschlag für den Mindestbestand, Gerätename im Verlauf
 - Export des Bestands als CSV oder PDF
+- Mindestbestand-Vorschläge nur noch für regelmäßig verbrauchte Produkte (Entnahmen an mind. 4 Tagen in mind. 3 verschiedenen Wochen)
 - Inventur pro Lagerort (Liste oder Scan-Variante, in den Einstellungen wählbar), Korrekturen erscheinen im Verlauf als „Inventur“
 - Gruppen-Vorschläge für ähnlich benannte Produkte
 - Etiketten: EAN, QR, Nur-QR, großes Regal-Etikett, Boxen-Etikett mit Inhalt, „Geöffnet am“, Gefrierfach – welche Knöpfe die App zeigt, stellst du im Adapter ein
