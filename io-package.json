@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "shelfmate",
-        "version": "0.1.12",
+        "version": "0.1.13",
         "news": {
+            "0.1.13": {
+                "en": "New: area filter in the overview. Fixes: flickering product list, camera stayed on, stocktaking rows on small screens",
+                "de": "Neu: Bereichsfilter in der Übersicht. Korrekturen: flackernde Produktliste, Kamera blieb an, Inventur-Zeilen auf kleinen Displays",
+                "ru": "Новое: фильтр по области в обзоре. Исправления: мерцание списка товаров, камера оставалась включённой, строки инвентаризации на малых экранах",
+                "pt": "Novo: filtro por área na visão geral. Correções: lista de produtos a piscar, câmara que ficava ligada, linhas do inventário em ecrãs pequenos",
+                "nl": "Nieuw: gebiedsfilter in het overzicht. Correcties: flikkerende productlijst, camera bleef aan, inventarisatieregels op kleine schermen",
+                "fr": "Nouveau : filtre par zone dans la vue d'ensemble. Corrections : liste de produits qui clignote, caméra restée allumée, lignes d'inventaire sur petits écrans",
+                "it": "Novità: filtro per area nella panoramica. Correzioni: elenco prodotti che sfarfalla, fotocamera rimasta accesa, righe dell'inventario su schermi piccoli",
+                "es": "Novedad: filtro por zona en la vista general. Correcciones: lista de productos parpadeante, cámara que seguía encendida, filas del inventario en pantallas pequeñas",
+                "pl": "Nowość: filtr obszaru w przeglądzie. Poprawki: migająca lista produktów, kamera pozostawała włączona, wiersze inwentaryzacji na małych ekranach",
+                "uk": "Нове: фільтр за зоною в огляді. Виправлення: миготіння списку товарів, камера залишалася ввімкненою, рядки інвентаризації на малих екранах",
+                "zh-cn": "新增：概览中的区域筛选。修复：商品列表闪烁、相机保持开启、小屏幕上的盘点行布局"
+            },
             "0.1.12": {
                 "en": "New: products, storage locations and history are shown in several columns on tablets and desktops",
                 "de": "Neu: Produkte, Lagerorte und Verlauf werden auf Tablets und Desktops in mehreren Spalten angezeigt",
@@ -80,19 +93,6 @@
                 "pl": "„Wygeneruj EAN” nie pyta już o potwierdzenie; marka na etykiecie EAN",
                 "uk": "«Створити EAN» більше не просить підтвердження; бренд на етикетці EAN",
                 "zh-cn": "“生成 EAN”不再弹出确认; EAN 标签上显示品牌"
-            },
-            "0.1.6": {
-                "en": "Products with the same product type are grouped in the overview and can be expanded",
-                "de": "Produkte mit gleichem Produkttyp werden in der Übersicht gruppiert und lassen sich aufklappen",
-                "ru": "Продукты одного типа группируются в обзоре и раскрываются",
-                "pt": "Produtos do mesmo tipo são agrupados na vista geral e podem ser expandidos",
-                "nl": "Producten van hetzelfde type worden in het overzicht gegroepeerd en kunnen worden uitgeklapt",
-                "fr": "Les produits du même type sont regroupés dans l'aperçu et peuvent être dépliés",
-                "it": "I prodotti dello stesso tipo sono raggruppati nella panoramica e possono essere espansi",
-                "es": "Los productos del mismo tipo se agrupan en la vista general y se pueden desplegar",
-                "pl": "Produkty tego samego typu są grupowane w przeglądzie i można je rozwinąć",
-                "uk": "Продукти одного типу групуються в огляді й розгортаються",
-                "zh-cn": "概览中相同产品类型的产品会分组显示，可展开"
             }
         },
         "titleLang": {

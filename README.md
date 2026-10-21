@@ -187,10 +187,13 @@ ShelfMate is under active development. Planned features (no promises, no order):
 Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
 ## Changelog
-### 0.1.12 (2026-10-21)
+### 0.1.13 (2026-10-21)
 - New: area filter in the overview; the location filter then only offers the locations of that area
 - Fix: the camera is switched off reliably when you leave the scanner while it is still starting (the camera indicator stayed on)
 - Fix: the product list no longer flickers (it was redrawn every few seconds, even without changes); expanded groups span the full row on wide screens
+- Fix: stocktaking rows keep the input field and check mark side by side, also with long product names
+
+### 0.1.12 (2026-10-21)
 - New: on wide screens (tablet, desktop) products, storage locations and the history are shown in two or three columns; the phone layout is unchanged
 
 ### 0.1.11 (2026-10-21)
