@@ -58,5 +58,8 @@
     "lbBox": "Etiqueta de caja con contenido (ubicación)",
     "lbOpened": "Etiqueta «Abierto el» (producto)",
     "lbFreezer": "Etiqueta de congelador (producto)",
-    "notifyInventoryDays": "Recordatorio único de inventario tras … días sin inventario (0 = desactivado)"
+    "notifyInventoryDays": "Recordatorio único de inventario tras … días sin inventario (0 = desactivado)",
+    "hScanner": "Escáner (modo sin pantalla)",
+    "scannerTimeout": "Tiempo entre producto y ubicación (segundos)",
+    "scannerTimeoutHelp": "Tras el producto, el código de la ubicación debe llegar en este tiempo. Escanear el producto dos veces significa retirar. El modo se activa con el punto de datos scanner.active."
 }

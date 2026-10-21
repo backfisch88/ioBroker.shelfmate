@@ -58,5 +58,8 @@
     "lbBox": "Etichetta scatola con contenuto (luogo)",
     "lbOpened": "Etichetta «Aperto il» (prodotto)",
     "lbFreezer": "Etichetta freezer (prodotto)",
-    "notifyInventoryDays": "Promemoria unico di inventario dopo … giorni senza inventario (0 = disattivato)"
+    "notifyInventoryDays": "Promemoria unico di inventario dopo … giorni senza inventario (0 = disattivato)",
+    "hScanner": "Scanner (modalità senza schermo)",
+    "scannerTimeout": "Tempo tra prodotto e luogo (secondi)",
+    "scannerTimeoutHelp": "Dopo il prodotto, il codice del luogo deve seguire entro questo tempo. Due scansioni del prodotto significano prelievo. La modalità si attiva con il punto dati scanner.active."
 }

@@ -72,6 +72,24 @@ Install via the ioBroker Admin UI (Adapters). Then add an instance and open `htt
 | Stocktaking reminder | Optional message every N days when no stocktaking was done in that time (0 = off), sent at the time of the daily message |
 | Warn before expiry | Days before the date from which products are marked and listed in the data points |
 
+### Scanner mode (without the app)
+
+Books stock in and out with scanned codes, without opening the app. It is switched on with the data point `scanner.active`. Codes arrive in `scanner.input`; the scanner connection itself (an external scanner on the host with prefix and suffix) follows in a later version.
+
+| Setting | Description |
+| --- | --- |
+| Time between product and location | Seconds (3 to 120, default 10) in which the second code has to follow the first |
+
+| Scan | Result |
+| --- | --- |
+| product, then location code | stocks in 1 at that location |
+| product twice | takes out 1, from the location with the nearest best-before date (without dates: the biggest stock) when no location follows in time |
+| product twice, then location code | takes out 1 from exactly that location |
+| `SM:QTY:5`, then the above | the next booking counts 5 instead of 1 |
+| `SM:CANCEL` | forgets the waiting scan |
+
+Products by weight or volume are booked in whole packages (the package size has to be given in g, kg, ml or l). The stocktaking stays in the app, it needs the display.
+
 ### Best-before date
 
 Choose the mode in the settings:
@@ -174,6 +192,9 @@ The labels are created as PNG images in the label size you set in the app, and a
 | `stats.consumption` | Consumption of the last 30 days per product (JSON, moves between locations do not count) |
 | `stats.expiringCount`, `stats.expiring`, `stats.expiringHtml` | Products that are expired or expire within the warning period (count, JSON, HTML table) |
 | `shopping.addItem` | Write an item name (`ack=false`) to put it on the shopping list |
+| `scanner.active` | Switch for the scanner mode (see below) |
+| `scanner.input` | Write a scanned code here (`ack=false`); a scanner connected to the host will do this later |
+| `scanner.lastCode`, `scanner.result` | Last code and the result of the last scan in scanner mode (for example "Fusilli ×1 stocked in at Shelf 1") |
 
 Inventory data is stored in the adapter data directory (`shelfmate.json`), not in the object database.
 A JSON backup can be downloaded and imported in the app (Settings). An import or "Delete all data" replaces all data; the previous state is kept as `shelfmate.json.bak`.
@@ -182,11 +203,14 @@ A JSON backup can be downloaded and imported in the app (Settings). An import or
 
 ShelfMate is under active development. Planned features (no promises, no order):
 
-- **External barcode scanner** (USB or Bluetooth, keyboard mode): configurable prefix and suffix, scans are told apart from typing by their speed, control barcodes such as "stock in" / "take out" to work without the display
+- **Scanner connection**: read an external USB or Bluetooth scanner (keyboard mode) on the ioBroker host directly, with prefix and suffix; printable control codes for quantities
 
 Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
 ## Changelog
+### **WORK IN PROGRESS**
+- New: scanner mode: book stock in and out with scanned codes through data points (`scanner.input`, `scanner.active`, `scanner.result`), without the app
+
 ### 0.1.13 (2026-10-21)
 - New: area filter in the overview; the location filter then only offers the locations of that area
 - Fix: the camera is switched off reliably when you leave the scanner while it is still starting (the camera indicator stayed on)

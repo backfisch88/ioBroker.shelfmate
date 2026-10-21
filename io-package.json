@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "shelfmate",
-        "version": "0.1.13",
+        "version": "0.1.14",
         "news": {
+            "0.1.14": {
+                "en": "New: scanner mode - book stock in and out with scanned codes via data points, without the app",
+                "de": "Neu: Scanner-Modus - Ein- und Auslagern per gescannten Codes über Datenpunkte, ohne die App",
+                "ru": "Новое: режим сканера - приход и расход по отсканированным кодам через объекты, без приложения",
+                "pt": "Novo: modo scanner - entrada e saída de stock com códigos lidos através de pontos de dados, sem a app",
+                "nl": "Nieuw: scannermodus - in- en uitboeken met gescande codes via datapunten, zonder de app",
+                "fr": "Nouveau : mode scanner - entrées et sorties de stock par codes scannés via des points de données, sans l'app",
+                "it": "Novità: modalità scanner - carico e scarico con codici scansionati tramite punti dati, senza l'app",
+                "es": "Novedad: modo escáner - entradas y salidas de stock con códigos escaneados mediante puntos de datos, sin la app",
+                "pl": "Nowość: tryb skanera - przyjęcia i wydania zeskanowanymi kodami przez punkty danych, bez aplikacji",
+                "uk": "Нове: режим сканера - надходження та видача за відсканованими кодами через об'єкти, без застосунку",
+                "zh-cn": "新增：扫描器模式 - 通过数据点使用扫描的代码入库和出库，无需应用"
+            },
             "0.1.13": {
                 "en": "New: area filter in the overview. Fixes: flickering product list, camera stayed on, stocktaking rows on small screens",
                 "de": "Neu: Bereichsfilter in der Übersicht. Korrekturen: flackernde Produktliste, Kamera blieb an, Inventur-Zeilen auf kleinen Displays",
@@ -80,19 +93,6 @@
                 "pl": "Nowość: przycisk „Usuń wszystkie dane” w ustawieniach (dwa potwierdzenia i automatyczna kopia zapasowa); okna potwierdzeń przetłumaczone",
                 "uk": "Нове: кнопка «Видалити всі дані» в налаштуваннях (два підтвердження та автоматична резервна копія); діалоги підтвердження перекладено",
                 "zh-cn": "新增：设置中的“删除所有数据”按钮（两次确认并自动备份）；确认对话框已翻译"
-            },
-            "0.1.7": {
-                "en": "\"Generate EAN\" no longer asks for confirmation; brand on the EAN label",
-                "de": "„EAN erzeugen\" fragt nicht mehr nach; Hersteller auf dem EAN-Etikett",
-                "ru": "«Создать EAN» больше не запрашивает подтверждение; бренд на этикетке EAN",
-                "pt": "«Gerar EAN» já não pede confirmação; marca na etiqueta EAN",
-                "nl": "«EAN genereren» vraagt niet meer om bevestiging; merk op het EAN-etiket",
-                "fr": "« Générer un EAN » ne demande plus de confirmation; marque sur l'étiquette EAN",
-                "it": "«Genera EAN» non chiede più conferma; marchio sull'etichetta EAN",
-                "es": "«Generar EAN» ya no pide confirmación; marca en la etiqueta EAN",
-                "pl": "„Wygeneruj EAN” nie pyta już o potwierdzenie; marka na etykiecie EAN",
-                "uk": "«Створити EAN» більше не просить підтвердження; бренд на етикетці EAN",
-                "zh-cn": "“生成 EAN”不再弹出确认; EAN 标签上显示品牌"
             }
         },
         "titleLang": {
@@ -205,7 +205,8 @@
             "ean",
             "qr"
         ],
-        "notifyInventoryDays": 0
+        "notifyInventoryDays": 0,
+        "scannerTimeout": 10
     },
     "objects": [],
     "instanceObjects": [

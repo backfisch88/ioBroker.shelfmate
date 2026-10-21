@@ -59,6 +59,18 @@ Modus in den Adapter-Einstellungen wählen: pro Produkt oder pro Einlagerung. Be
 
 Die Seite zeigt auch, welche Lagerorte des Bereichs fertig und welche noch offen sind. Nicht gescannte Artikel zählen als 0. Lieber von Hand prüfen? Variante **Liste**: gezählte Menge eintippen oder ✓ für „stimmt“. Korrekturen stehen im Verlauf als „Inventur“. Eine Erinnerung im Intervall stellst du bei den Benachrichtigungen ein.
 
+### Scanner-Modus (ohne App)
+
+Ein- und Auslagern mit gescannten Codes, ohne die App zu öffnen. Eingeschaltet wird er mit dem Datenpunkt `scanner.active`, die Codes kommen in `scanner.input` an. Die Anbindung eines Scanners am Rechner (mit Prefix und Suffix) folgt in einer späteren Version.
+
+- Produkt, dann Lagerort-Code: lagert 1 an diesem Lagerort ein.
+- Produkt zweimal: entnimmt 1. Kommt kein Lagerort, wird dort entnommen, wo der Artikel das kürzeste MHD hat (ohne MHD: wo am meisten liegt).
+- Produkt zweimal, dann Lagerort-Code: entnimmt 1 genau an diesem Lagerort.
+- `SM:QTY:5` und danach die Buchung: Die nächste Buchung zählt 5 statt 1. `SM:CANCEL` verwirft einen wartenden Scan.
+- Die Zeit zwischen den Codes stellst du in den Adapter-Einstellungen ein (3 bis 120 Sekunden, Standard 10).
+
+Die Inventur bleibt in der App, sie braucht das Display.
+
 ### Vorschläge (Glühbirne)
 Die Glühbirne oben sammelt drei Arten von Hinweisen: Gruppen-Vorschläge (ähnliche Produkte, die gemeinsam zählen könnten; einzelne Produkte lassen sich herausnehmen, ein Vorschlag lässt sich ignorieren), Mindestbestand-Vorschläge (nur für regelmäßig verbrauchte Produkte; ✓ übernimmt, ✕ verwirft) und eine fällige Inventur. Ohne Antippen ändert sich nichts.
 
@@ -95,13 +107,13 @@ Danach eine Instanz anlegen und `https://<Host>:8120/` öffnen. Voraussetzungen:
 
 ## Datenpunkte
 
-`stats.products`, `stats.locations`, `stats.lowStockCount`, `stats.lowStockList`, `stats.inventory`, `stats.inventoryHtml`, `stats.consumption`, `stats.expiringCount`, `stats.expiring`, `stats.expiringHtml`, `shopping.addItem`, `info.connection`.
+`stats.products`, `stats.locations`, `stats.lowStockCount`, `stats.lowStockList`, `stats.inventory`, `stats.inventoryHtml`, `stats.consumption`, `stats.expiringCount`, `stats.expiring`, `stats.expiringHtml`, `shopping.addItem`, `scanner.active`, `scanner.input`, `scanner.lastCode`, `scanner.result`, `info.connection`.
 
 ## In Arbeit und geplant
 
 ShelfMate wird aktiv weiterentwickelt. Geplant (ohne Zusage, ohne Reihenfolge):
 
-- **Externer Barcode-Scanner** (USB oder Bluetooth, Tastaturmodus): Prefix und Suffix einstellbar, Scan wird am Tempo vom Tippen unterschieden, Steuer-Barcodes wie „Einlagern“ / „Entnehmen“ zum Arbeiten ohne Display
+- **Scanner-Anbindung**: externen USB- oder Bluetooth-Scanner (Tastaturmodus) direkt am ioBroker-Rechner auslesen, mit Prefix und Suffix; druckbare Steuer-Codes für Mengen
 
 Ideen und Fehler gerne als [GitHub-Issue](https://github.com/backfisch88/ioBroker.shelfmate/issues) melden.
 

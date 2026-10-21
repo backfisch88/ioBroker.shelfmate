@@ -424,6 +424,26 @@
             "md": 12,
             "lg": 8,
             "xl": 8
+        },
+        "_hScanner": {
+            "type": "header",
+            "text": "hScanner",
+            "size": 3,
+            "newLine": true,
+            "xs": 12
+        },
+        "scannerTimeout": {
+            "type": "number",
+            "label": "scannerTimeout",
+            "help": "scannerTimeoutHelp",
+            "min": 3,
+            "max": 120,
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
         }
     }
 }

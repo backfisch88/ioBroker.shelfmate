@@ -11,6 +11,7 @@ const { Shopping } = require('./lib/shopping');
 const { texts } = require('./lib/i18n');
 const { NOTIFY_ADAPTERS, TEXT: NOTIFY_TEXT, lowText, expiryText, msUntil, deliver } = require('./lib/notify');
 const { ShelfMateServer } = require('./lib/server');
+const { ScanEngine } = require('./lib/scanner');
 
 const DATA_FILE = 'shelfmate.json';
 const SAVE_DELAY_MS = 500;
@@ -96,6 +97,17 @@ class Shelfmate extends utils.Adapter {
             await this.subscribeForeignStatesAsync(id);
         }
         await this.subscribeStatesAsync('shopping.addItem');
+        await this.subscribeStatesAsync('scanner.input');
+        await this.subscribeStatesAsync('scanner.active');
+        if ((await this.getStateAsync('scanner.active')) === null) {
+            await this.setState('scanner.active', false, true);
+        }
+        const wait = Number(this.config.scannerTimeout);
+        this.scanEngine = new ScanEngine(this.inv, {
+            timeoutMs: (Number.isFinite(wait) && wait >= 3 && wait <= 120 ? wait : 10) * 1000,
+            lang: this.lang,
+            run: cmd => this.scanBook(cmd),
+        });
         await this.updateStats();
         // expiry changes with the date, not only with bookings
         this.setInterval(() => this.updateStats().catch(e => this.log.debug(`Statistics: ${e.message}`)), 3600000);
@@ -160,6 +172,10 @@ class Shelfmate extends utils.Adapter {
             ['stats.expiring', 'Products expired or expiring soon (JSON)', 'string', 'json', false],
             ['stats.expiringHtml', 'Products expired or expiring soon (HTML table for VIS)', 'string', 'html', false],
             ['shopping.addItem', 'Add an item to the shopping list', 'string', 'text', true],
+            ['scanner.input', 'Scanned code (write a code here to simulate a scan)', 'string', 'text', true],
+            ['scanner.lastCode', 'Last scanned code', 'string', 'text', false],
+            ['scanner.result', 'Result of the last scan in scanner mode', 'string', 'text', false],
+            ['scanner.active', 'Scanner mode: bookings by scanned codes without the app', 'boolean', 'switch', true],
         ];
         await this.setObjectNotExistsAsync('stats', { type: 'channel', common: { name: 'Statistics' }, native: {} });
         await this.setObjectNotExistsAsync('shopping', {
@@ -167,6 +183,7 @@ class Shelfmate extends utils.Adapter {
             common: { name: 'Shopping list' },
             native: {},
         });
+        await this.setObjectNotExistsAsync('scanner', { type: 'channel', common: { name: 'Scanner' }, native: {} });
         await Promise.all(
             states.map(([id, name, type, role, write]) =>
                 this.setObjectNotExistsAsync(id, {
@@ -434,6 +451,16 @@ class Shelfmate extends utils.Adapter {
         }
         const own = id.startsWith(`${this.namespace}.`);
         if (own) {
+            if (id === `${this.namespace}.scanner.input` && !state.ack) {
+                await this.handleScan(String(state.val ?? ''));
+                await this.setState('scanner.input', state.val, true);
+            } else if (id === `${this.namespace}.scanner.active` && !state.ack) {
+                if (!state.val) {
+                    this.scanEngine.handle('SM:CANCEL');
+                    this.clearTimeout(this.scanTimer);
+                }
+                await this.setState('scanner.active', !!state.val, true);
+            }
             if (id === `${this.namespace}.shopping.addItem` && !state.ack) {
                 const r = await this.addToList(String(state.val ?? ''));
                 if (r.ok) {
@@ -449,6 +476,64 @@ class Shelfmate extends utils.Adapter {
                 this.log.debug(`Shopping list update failed: ${e.message}`);
             }
         }
+    }
+
+    /**
+     * Booking made by the scanner mode: same follow-up as a booking from the app.
+     *
+     * @param {object} cmd command
+     */
+    scanBook(cmd) {
+        const r = this.inv.handle(cmd);
+        this.scheduleSave();
+        this.afterChange(r.reorder, r.restock).catch(e => this.log.warn(`Post-processing failed: ${e.message}`));
+        return r;
+    }
+
+    /**
+     * @param {string} code scanned code
+     */
+    async handleScan(code) {
+        const text = code.trim().slice(0, 400);
+        if (!text) {
+            return;
+        }
+        await this.setState('scanner.lastCode', text, true);
+        if ((await this.getStateAsync('scanner.active'))?.val !== true) {
+            return;
+        }
+        this.scanEngine.inv = this.inv;
+        await this.publishScan(this.scanEngine.handle(text));
+        this.armScanTimer();
+    }
+
+    /**
+     * @param {{text: string, ok: boolean, earlier?: object}} r result of the scan engine
+     */
+    async publishScan(r) {
+        if (r.earlier) {
+            await this.publishScan(r.earlier);
+        }
+        this.log.debug(`Scanner: ${r.text}`);
+        await this.setState('scanner.result', r.text, true);
+    }
+
+    armScanTimer() {
+        this.clearTimeout(this.scanTimer);
+        const at = this.scanEngine.deadline;
+        if (!at || this.closing) {
+            return;
+        }
+        this.scanTimer = this.setTimeout(
+            async () => {
+                this.scanEngine.inv = this.inv;
+                const r = this.scanEngine.flush(Date.now());
+                if (r) {
+                    await this.publishScan(r);
+                }
+            },
+            Math.max(0, at - Date.now()) + 50,
+        );
     }
 
     /**
@@ -661,6 +746,9 @@ class Shelfmate extends utils.Adapter {
             this.shopping?.stop();
             if (this.notifyTimer) {
                 this.clearTimeout(this.notifyTimer);
+            }
+            if (this.scanTimer) {
+                this.clearTimeout(this.scanTimer);
             }
             this.web?.stop(h => this.clearInterval(h));
             if (this.httpServer) {

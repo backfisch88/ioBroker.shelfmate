@@ -58,5 +58,8 @@
     "lbBox": "Box label with contents (storage location)",
     "lbOpened": "\"Opened on\" label (product)",
     "lbFreezer": "Freezer label (product)",
-    "notifyInventoryDays": "Remind once about a stocktaking after … days without one (0 = off)"
+    "notifyInventoryDays": "Remind once about a stocktaking after … days without one (0 = off)",
+    "hScanner": "Scanner (headless mode)",
+    "scannerTimeout": "Time between product and location (seconds)",
+    "scannerTimeoutHelp": "After a product scan the location code has to follow within this time. Two scans of the product mean take out. Switch the mode on with the data point scanner.active."
 }

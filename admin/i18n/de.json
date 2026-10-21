@@ -58,5 +58,8 @@
     "lbBox": "Boxen-Etikett mit Inhalt (Lagerort)",
     "lbOpened": "„Geöffnet am“-Etikett (Produkt)",
     "lbFreezer": "Gefrierfach-Etikett (Produkt)",
-    "notifyInventoryDays": "Einmalige Inventur-Erinnerung nach … Tagen ohne Inventur (0 = aus)"
+    "notifyInventoryDays": "Einmalige Inventur-Erinnerung nach … Tagen ohne Inventur (0 = aus)",
+    "hScanner": "Scanner (headless-Modus)",
+    "scannerTimeout": "Zeit zwischen Produkt und Lagerort (Sekunden)",
+    "scannerTimeoutHelp": "Nach dem Produkt muss der Lagerort-Code innerhalb dieser Zeit folgen. Zweimal das Produkt scannen heißt entnehmen. Der Modus wird über den Datenpunkt scanner.active eingeschaltet."
 }

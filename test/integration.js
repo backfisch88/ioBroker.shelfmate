@@ -124,6 +124,64 @@ tests.integration(path.join(__dirname, '..'), {
             });
         });
 
+        suite('ShelfMate scanner mode', getHarness => {
+            it('books by scanned codes only while the mode is on', async function () {
+                this.timeout(90000);
+                const harness = getHarness();
+                await harness.changeAdapterConfig('shelfmate', { native: { port: 18122, scannerTimeout: 3 } });
+                await harness.startAdapterAndWait();
+                let ok = false;
+                for (let i = 0; i < 30 && !ok; i++) {
+                    try {
+                        await get(18122, '/api/snapshot');
+                        ok = true;
+                    } catch {
+                        await new Promise(resolve => setTimeout(resolve, 500));
+                    }
+                }
+                const loc = await post(18122, '/api/command', {
+                    id: 's1',
+                    action: 'saveLocation',
+                    location: { group: 'Home', name: 'Shelf', qr: 'Home\nShelf' },
+                });
+                const prod = await post(18122, '/api/command', {
+                    id: 's2',
+                    action: 'saveProduct',
+                    product: { name: 'Scanpasta', type: 'count', ean: '4000000000017' },
+                });
+                const scan = async code => {
+                    await harness.states.setStateAsync('shelfmate.0.scanner.input', { val: code, ack: false });
+                    await new Promise(resolve => setTimeout(resolve, 600));
+                };
+                const stock = async () => {
+                    const snap = JSON.parse((await get(18122, '/api/snapshot')).body);
+                    return Number(((snap.inventory || snap.data?.inventory || {})[prod.productId] || {})[loc.locationId] || 0);
+                };
+                await scan('4000000000017');
+                await scan('Home\nShelf');
+                if ((await stock()) !== 0) {
+                    throw new Error('Booked although the scanner mode was off');
+                }
+                await harness.states.setStateAsync('shelfmate.0.scanner.active', { val: true, ack: false });
+                await new Promise(resolve => setTimeout(resolve, 600));
+                await scan('4000000000017');
+                await scan('Home\nShelf');
+                if ((await stock()) !== 1) {
+                    throw new Error(`Stock in failed: ${await stock()}`);
+                }
+                await scan('4000000000017');
+                await scan('4000000000017');
+                await new Promise(resolve => setTimeout(resolve, 4500));
+                if ((await stock()) !== 0) {
+                    throw new Error(`Automatic take out failed: ${await stock()}`);
+                }
+                const result = await harness.states.getStateAsync('shelfmate.0.scanner.result');
+                if (!result || !/Scanpasta/.test(String(result.val))) {
+                    throw new Error(`Unexpected result: ${JSON.stringify(result)}`);
+                }
+            });
+        });
+
         suite('ShelfMate web server', getHarness => {
             it('serves the app and an empty snapshot over HTTPS with the ioBroker certificate', async function () {
                 this.timeout(60000);

@@ -58,5 +58,8 @@
     "lbBox": "Doosetiket met inhoud (locatie)",
     "lbOpened": "Etiket «Geopend op» (product)",
     "lbFreezer": "Vriezeretiket (product)",
-    "notifyInventoryDays": "Eenmalige inventarisatieherinnering na … dagen zonder inventarisatie (0 = uit)"
+    "notifyInventoryDays": "Eenmalige inventarisatieherinnering na … dagen zonder inventarisatie (0 = uit)",
+    "hScanner": "Scanner (headless-modus)",
+    "scannerTimeout": "Tijd tussen product en locatie (seconden)",
+    "scannerTimeoutHelp": "Na het product moet de locatiecode binnen deze tijd volgen. Het product tweemaal scannen betekent uitnemen. De modus schakel je in met het datapunt scanner.active."
 }

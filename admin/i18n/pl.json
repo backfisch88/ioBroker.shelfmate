@@ -58,5 +58,8 @@
     "lbBox": "Etykieta pudełka z zawartością (miejsce)",
     "lbOpened": "Etykieta „Otwarto dnia” (produkt)",
     "lbFreezer": "Etykieta do zamrażarki (produkt)",
-    "notifyInventoryDays": "Jednorazowe przypomnienie o inwentaryzacji po … dniach bez niej (0 = wyłączone)"
+    "notifyInventoryDays": "Jednorazowe przypomnienie o inwentaryzacji po … dniach bez niej (0 = wyłączone)",
+    "hScanner": "Skaner (tryb bez ekranu)",
+    "scannerTimeout": "Czas między produktem a miejscem (sekundy)",
+    "scannerTimeoutHelp": "Po produkcie kod miejsca musi pojawić się w tym czasie. Dwa skany produktu oznaczają pobranie. Tryb włącza się punktem danych scanner.active."
 }
