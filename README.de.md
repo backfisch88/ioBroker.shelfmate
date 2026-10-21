@@ -77,7 +77,7 @@ Ein- und Auslagern mit gescannten Codes, ohne die App zu öffnen. Eingeschaltet 
 - Produkt zweimal: entnimmt 1. Kommt kein Lagerort, wird dort entnommen, wo der Artikel das kürzeste MHD hat (ohne MHD: wo am meisten liegt).
 - Produkt zweimal, dann Lagerort-Code: entnimmt 1 genau an diesem Lagerort.
 - Lagerort-Code allein: startet den Einräum-Modus. Jedes danach gescannte Produkt wird an diesem Lagerort eingelagert (je 1, sofort gebucht). Derselbe Lagerort-Code beendet ihn, ein anderer wechselt zu diesem Lagerort, und nach 5 Minuten ohne Scan endet er von selbst. Praktisch für ein ganzes Regal, zum Beispiel mit Babygläschen.
-- `SM:UNDO` macht die letzte Buchung rückgängig (außer Verschieben und Inventur). `SM:SPOIL` und danach das Produkt entnimmt 1 als verdorben, `SM:OPEN` und danach das Produkt markiert 1 Stück als geöffnet.
+- `SM:UNDO` macht die letzte Buchung rückgängig (außer Verschieben und Inventur). `SM:SPOIL` und danach das Produkt entnimmt 1 als verdorben, `SM:OPEN` und danach das Produkt markiert 1 Stück als geöffnet. `SM:DATE:<Tage>` und danach das Produkt setzt das MHD des gesamten ungeöffneten Bestands auf heute plus die Tage (`SM:DATE:0` entfernt es). Die Codes stehen auf der zweiten Seite des Steuer-Code-PDFs.
 - `SM:QTY:5` und danach die Buchung: Die nächste Buchung zählt 5 statt 1. `SM:CANCEL` verwirft einen wartenden Scan.
 - Die Zeit zwischen den Codes stellst du in den Adapter-Einstellungen ein (3 bis 120 Sekunden, Standard 10).
 
