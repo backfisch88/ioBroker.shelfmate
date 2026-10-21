@@ -170,3 +170,6 @@ Mit der Kamera scannen|Scan with the camera|Сканировать камеро�
 Als geöffnet markieren|Mark as opened|Отметить как вскрытое|Marcar como aberto|Markeren als geopend|Marquer comme ouvert|Segna come aperto|Marcar como abierto|Oznacz jako otwarte|Позначити як відкрите|标记为已开封
 Letzte Buchung rückgängig|Undo last booking|Отменить последнюю операцию|Desfazer último registo|Laatste boeking ongedaan maken|Annuler la dernière opération|Annulla l'ultima registrazione|Deshacer el último registro|Cofnij ostatnie zdarzenie|Скасувати останню операцію|撤销上次记录
 Öffnen rückgängig|Undo opening|Отменить вскрытие|Desfazer abertura|Openen ongedaan maken|Annuler l'ouverture|Annulla apertura|Deshacer apertura|Cofnij otwarcie|Скасувати відкриття|撤销开封
+wird geprüft …|checking …|проверяется …|a verificar …|wordt gecontroleerd …|vérification …|verifica in corso …|comprobando …|sprawdzanie …|перевірка …|检查中 …
+Scanner wird geladen …|Loading scanner …|Сканер загружается …|A carregar o leitor …|Scanner wordt geladen …|Chargement du scanner …|Caricamento dello scanner …|Cargando el escáner …|Ładowanie skanera …|Завантаження сканера …|正在加载扫描器 …
+Lese ein … {1} / {2}|Reading … {1} / {2}|Считывание … {1} / {2}|A ler … {1} / {2}|Inlezen … {1} / {2}|Lecture … {1} / {2}|Lettura … {1} / {2}|Leyendo … {1} / {2}|Wczytywanie … {1} / {2}|Зчитування … {1} / {2}|读取中 … {1} / {2}

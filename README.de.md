@@ -9,6 +9,7 @@ ShelfMate ist ein Haushalts-Vorratslager für ioBroker. Es läuft als installier
 - Bestand pro Lagerort, Verschieben, Historie, Offline-Warteschlange in der App
 - Produktgruppen und Mindestbestand mit automatischem Eintrag auf die Einkaufsliste
 - Mindesthaltbarkeit (MHD): aus / pro Produkt / pro Einlagerung, mit Warnung vor Ablauf
+- Optional: Standard-Haltbarkeit, Haltbarkeit nach dem Öffnen, Geöffnet und Verdorben markieren, letzte Buchung rückgängig
 - Einkaufsliste: **Aus**, **Script** (Datenpunkte), **Bring** oder **Bring Spezial** (zählt Mengen hoch statt Duplikate)
 - Optional: Artikel von der Liste entfernen, wenn wieder aufgefüllt, und/oder wenn der Haken in der App entfernt wird
 - Lagerübersicht und ablaufende Produkte als Datenpunkte (JSON und HTML-Tabelle für VIS)

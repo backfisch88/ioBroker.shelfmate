@@ -22,6 +22,7 @@ German short description: [README.de.md](README.de.md)
 - Stock per location, history of all bookings, offline queue in the app
 - Product groups: "Flour" from several brands counts as one item
 - Optional best-before date (MHD) per product or per stocking, with warning before expiry
+- Optional standard shelf life and shelf life after opening, opened and spoiled marking, undo of the last booking
 - Minimum stock per product or group with automatic shopping-list entry
 - Shopping list modes: **off**, **script** (via data points), **Bring!** or **Bring! special** (counts quantities up instead of skipping duplicates)
 - Optional removal from the shopping list when the stock is refilled and/or when the check mark is removed in the app
@@ -232,6 +233,8 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 
 ## Changelog
 ### **WORK IN PROGRESS**
+- Changed: the access key is now stored encrypted; if you had set one, enter it again once in the adapter settings
+- Fixed: missing translations (loading texts, opened lines)
 - Changed: all emojis in the app replaced by one consistent set of flat, multicolour SVG icons
 - New: opened products carry a 📭 symbol in the overview
 - Fixed: product, location and history lists no longer flicker on background updates

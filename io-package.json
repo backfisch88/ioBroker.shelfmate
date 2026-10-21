@@ -177,6 +177,12 @@
     "encryptedNative": [
         "accessKey"
     ],
+    "protectedNative": [
+        "accessKey"
+    ],
+    "encryptedNative": [
+        "accessKey"
+    ],
     "native": {
         "port": 8120,
         "bind": "0.0.0.0",
