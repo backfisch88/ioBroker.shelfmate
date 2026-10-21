@@ -102,3 +102,4 @@ Inventur abgeschlossen: {1}|Stocktaking finished: {1}|Инвентаризаци
 Inventur gestartet: {1}|Stocktaking started: {1}|Инвентаризация начата: {1}|Inventário iniciado: {1}|Inventarisatie gestart: {1}|Inventaire démarré : {1}|Inventario avviato: {1}|Inventario iniciado: {1}|Inwentaryzacja rozpoczęta: {1}|Інвентаризацію розпочато: {1}|盘点开始：{1}
 
 Erst abschließen: {1}|Finish first: {1}|Сначала завершите: {1}|Conclua primeiro: {1}|Rond eerst af: {1}|Terminez d'abord : {1}|Concludi prima: {1}|Finaliza primero: {1}|Najpierw zakończ: {1}|Спершу завершіть: {1}|请先完成：{1}
+Alle Bereiche|All areas|Все области|Todas as áreas|Alle gebieden|Toutes les zones|Tutte le aree|Todas las zonas|Wszystkie obszary|Усі зони|所有区域
