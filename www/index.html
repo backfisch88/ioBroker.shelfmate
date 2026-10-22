@@ -195,7 +195,7 @@ textarea{border-radius:16px!important}
 @media(prefers-reduced-motion:reduce){.product,.stat,.arearow{transition:none}.product:active,.stat:active{transform:none}}
 /* Breite Displays (iPad quer): Menü bleibt offen, sanfterer Rand unten, Scan-Knopf neben der Leiste */
 @media(min-width:900px){
-#edgeBot{left:calc(50% - 250px);right:calc(50% - 250px);height:calc(var(--barB,12px) + 62px + 22px);background:linear-gradient(to top,var(--bg) 35%,transparent);backdrop-filter:blur(3px)!important;-webkit-backdrop-filter:blur(3px)!important;-webkit-mask-image:linear-gradient(to top,#000 45%,transparent);mask-image:linear-gradient(to top,#000 45%,transparent)}
+#edgeBot{left:0;right:0;height:calc(var(--barB,12px) + 62px + 22px);background:linear-gradient(to top,var(--bg) 35%,transparent);backdrop-filter:none!important;-webkit-backdrop-filter:none!important;-webkit-mask-image:linear-gradient(to top,#000 45%,transparent);mask-image:linear-gradient(to top,#000 45%,transparent)}
 .float{left:calc(50% + 254px)!important;right:auto!important;bottom:max(12px,calc(env(safe-area-inset-bottom) - 9px))!important;height:62px!important;padding:0 24px!important;border-radius:31px!important}
 }
 /* Menü-Morphing: Glas liegt auf .tabBack, Breite/Position/Fortschritt per Feder (JS) */
