@@ -144,7 +144,7 @@ I use this to compare the ingredients of my planned recipes with what I have at 
 
 1. Write the ingredients to `check.request`, one per line (or separated by semicolons), or as a JSON array of texts or `{"name","amount","unit"}`. Within a line commas separate name, qualifier and amount, in the form my recipe app delivers them: `Zwiebeln, rot, 1`, `Cherrytomaten, bunt, 500g`, `Salz, 0.5 tl`, `Basilikum`. An amount in front of the name (`380g Linguine`, `2EL Olivenöl`) or behind it (`Mehl 200g`) works too. `kg`, `g`, `l`, `ml`, `cl` and pieces are understood, `EL`, `TL` and the like only count as "present". The same ingredient twice is added up.
 2. An ingredient is found by product name, product group or tag, so `Mehl` adds up all products of the group Mehl. With an amount in g or ml the stock is compared (500 g in stock, 200 g needed: fine); a counted product with a package size like `1 kg` is converted. Without an amount, stock above zero is enough. Unknown ingredients count as missing, so things that are not food still end up on the list.
-3. `check.result` holds the result per ingredient (wanted, have, ok, missing amount), `check.available` and `check.missing` hold the names, `check.allAvailable` is `true` if nothing is missing.
+3. `check.result` holds the result per ingredient (wanted, have, ok, missing amount), `check.available` and `check.missing` hold the lines as they came, one per line, so `check.missing` can go to the shopping list as it is, `check.allAvailable` is `true` if nothing is missing.
 4. With "Put missing ingredients on the shopping list" in the adapter settings the missing ones go to the shopping list after every check, each line as it came. In the Bring special mode the merging of the specification does the rest (`Cherrytomaten, bunt, 500g` twice becomes `bunt 500g + 500g`), in the other modes only the name is written. Otherwise write `true` to `check.addMissing` when I want them on the list.
 
 ## Tutorials
@@ -231,7 +231,7 @@ The labels are created as PNG images in the label size you set in the app, and a
 | `stats.expiringCount`, `stats.expiring`, `stats.expiringHtml` | Products that are expired or expire within the warning period (count, JSON, HTML table) |
 | `shopping.addItem` | Write an item name (`ack=false`) to put it on the shopping list |
 | `check.request` | Write ingredients here (`ack=false`) to compare them with the stock, see "Ingredient check" |
-| `check.result`, `check.available`, `check.missing`, `check.allAvailable` | Result of the last check (JSON per ingredient, comma separated lists, true if everything is in stock) |
+| `check.result`, `check.available`, `check.missing`, `check.allAvailable` | Result of the last check (JSON per ingredient, lists with one line per ingredient, true if everything is in stock) |
 | `check.addMissing` | Button: put the missing ingredients of the last check on the shopping list |
 | `scanner.active` | Switch for the scanner mode (see below) |
 | `scanner.input` | Write a scanned code here (`ack=false`); a scanner connected to the host will do this later |

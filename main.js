@@ -178,16 +178,16 @@ class Shelfmate extends utils.Adapter {
             ['stats.expiring', 'Products expired or expiring soon (JSON)', 'string', 'json', false],
             ['stats.expiringHtml', 'Products expired or expiring soon (HTML table for VIS)', 'string', 'html', false],
             ['shopping.addItem', 'Add an item to the shopping list', 'string', 'text', true],
+            ['check.request', 'Ingredients to check against the stock (one per line, or JSON)', 'string', 'text', true],
+            ['check.result', 'Result of the last check per ingredient (JSON)', 'string', 'json', false],
+            ['check.available', 'Ingredients that are in stock (one line each, as they came)', 'string', 'text', false],
             [
-                'check.request',
-                'Ingredients to check against the stock (one per line, or JSON)',
+                'check.missing',
+                'Ingredients that are missing or not enough (one line each, as they came)',
                 'string',
                 'text',
-                true,
+                false,
             ],
-            ['check.result', 'Result of the last check per ingredient (JSON)', 'string', 'json', false],
-            ['check.available', 'Ingredients that are in stock (comma separated)', 'string', 'text', false],
-            ['check.missing', 'Ingredients that are missing or not enough (comma separated)', 'string', 'text', false],
             ['check.allAvailable', 'Everything of the last check is in stock', 'boolean', 'indicator', false],
             [
                 'check.addMissing',
@@ -381,7 +381,7 @@ class Shelfmate extends utils.Adapter {
     async runCheck(request) {
         const result = checkItems(this.inv.data, parseItems(request));
         this.lastCheck = result;
-        const text = r => (r.length ? r.map(x => x.name).join(', ') : '');
+        const text = r => r.flatMap(x => x.lines || [x.name]).join('\n');
         await this.setState('check.result', JSON.stringify(result), true);
         await this.setState('check.available', text(result.filter(x => x.ok)), true);
         await this.setState('check.missing', text(result.filter(x => !x.ok)), true);
