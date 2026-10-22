@@ -164,6 +164,18 @@ body:has(#app section.active>.navback:not([hidden])) .head .greet{padding-left:5
 .dark #tabs.pill-nav{background:rgba(26,26,26,.5)}
 .dark #tabs .tabBubble{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.2)}
 @media(prefers-reduced-transparency:reduce){.float{background:#fff!important}.dark .float{background:#1c1c1e!important}}
+#tabs.pill-nav{transition:scale .38s cubic-bezier(.34,1.5,.64,1),width .42s cubic-bezier(.32,.72,0,1),left .42s cubic-bezier(.32,.72,0,1),transform .42s cubic-bezier(.32,.72,0,1)}
+#tabs.pill-nav button{transition:flex-grow .42s cubic-bezier(.32,.72,0,1),opacity .22s ease,padding .42s cubic-bezier(.32,.72,0,1)}
+#tabs.pill-nav.mini{width:62px!important;left:max(25px,calc(50% - 240px));transform:translateX(0)}
+#tabs.pill-nav.mini button{flex:0 0 0!important;padding:0!important;opacity:0;overflow:hidden;pointer-events:none}
+#tabs.pill-nav.mini button.active{flex:1 1 0!important;opacity:1;font-size:0!important;pointer-events:auto}
+#tabs.pill-nav.mini button.active .ic{margin:0}
+#tabs.pill-nav.mini .tabBubble{opacity:0!important}
+.float{transition:bottom .42s cubic-bezier(.32,.72,0,1),width .42s cubic-bezier(.32,.72,0,1),height .42s cubic-bezier(.32,.72,0,1),right .42s cubic-bezier(.32,.72,0,1),padding .42s cubic-bezier(.32,.72,0,1)}
+body.miniNav .float{bottom:max(12px,calc(env(safe-area-inset-bottom) - 9px))!important;right:max(25px,calc(50% - 240px))!important;width:62px;height:62px;padding:0!important;font-size:0!important;display:flex;align-items:center;justify-content:center}
+body.miniNav .float .ic{width:26px;height:26px;margin:0}
+.noFx #tabs.pill-nav,.noFx #tabs.pill-nav button,.noFx .float{transition:none!important}
+#edgeBot{transition:opacity .3s ease}body.miniNav #edgeBot{opacity:0}
 @media(prefers-contrast:more){#tabs.pill-nav,.glassAlert,.navback{border-color:#555}.dark #tabs.pill-nav,.dark .glassAlert,.dark .navback{border-color:#ccc}#tabs.pill-nav button{color:#111}.dark #tabs.pill-nav button{color:#fff}}
 
 
@@ -925,7 +937,7 @@ function askConfirm(msg){return new Promise(res=>{
   const TI={overview:'house',scanner:'tabScan',locations:'tabBox',history:'clock',settings:'sliders'};
   nav.querySelectorAll('button').forEach(b=>{if(TI[b.dataset.tab])b.insertAdjacentHTML('afterbegin',ic(TI[b.dataset.tab],true))});
   const bub=document.createElement('span');bub.className='tabBubble';bub.setAttribute('aria-hidden','true');nav.prepend(bub);
-  let cur=null,drag=null;
+  let cur=null,drag=null,mini=false;
   function place(anim){const b=nav.querySelector('button.active');if(!b){bub.style.display='none';return}bub.style.display='';
     const to={l:b.offsetLeft-2,w:b.offsetWidth+4};
     if(cur&&anim&&fxOn()&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)&&(cur.l!==to.l||cur.w!==to.w)){
@@ -933,13 +945,16 @@ function askConfirm(msg){return new Promise(res=>{
       bub.animate([{left:cur.l+'px',width:cur.w+'px'},{left:to.l+'px',width:to.w+'px'}],{duration:340,delay:70,easing:'cubic-bezier(.22,1,.36,1)',fill:'backwards'});
       clearTimeout(place.t);place.t=setTimeout(()=>{if(!drag){bub.classList.remove('lift');nav.classList.remove('held')}},420)}
     bub.style.left=to.l+'px';bub.style.width=to.w+'px';cur=to}
-  nav.addEventListener('pointerdown',e=>{if(!fxOn()||e.button>0)return;drag={x:e.clientX,moved:false};const t=e.target.closest&&e.target.closest('button');if(t&&t.classList.contains('active')){bub.classList.add('lift');nav.classList.add('held')}});
+  nav.addEventListener('pointerdown',e=>{if(!fxOn()||e.button>0||mini)return;drag={x:e.clientX,moved:false};const t=e.target.closest&&e.target.closest('button');if(t&&t.classList.contains('active')){bub.classList.add('lift');nav.classList.add('held')}});
   addEventListener('pointermove',e=>{if(!drag)return;if(!drag.moved&&Math.abs(e.clientX-drag.x)<8)return;if(!drag.moved){bub.classList.add('lift');nav.classList.add('held')}drag.moved=true;const r=nav.getBoundingClientRect(),w=cur?cur.w:60;let l=e.clientX-r.left-w/2;l=Math.max(-7,Math.min(r.width-w+7,l));bub.getAnimations().forEach(a=>a.cancel());bub.style.left=l+'px'});
   const end=e=>{if(!drag)return;const d=drag;drag=null;const rel=()=>{bub.classList.remove('lift');nav.classList.remove('held')};if(!d.moved){rel();return}setTimeout(rel,250);
     const sup=ev=>{ev.stopPropagation();ev.preventDefault()};addEventListener('click',sup,{capture:true,once:true});setTimeout(()=>removeEventListener('click',sup,true),50);
     const el=document.elementFromPoint(e.clientX,e.clientY),b=el&&el.closest&&el.closest('#tabs button');
     if(b&&!b.classList.contains('active'))b.click();else place(true)};
   addEventListener('pointerup',end);addEventListener('pointercancel',()=>{if(drag){drag=null;bub.classList.remove('lift');nav.classList.remove('held');place(false)}});
+  function setMini(v){if(v===mini)return;mini=v;nav.classList.toggle('mini',v);document.body.classList.toggle('miniNav',v);if(v){bub.style.opacity='0'}else{setTimeout(()=>{place(false);bub.style.opacity=''},400)}}
+  nav.addEventListener('click',e=>{if(mini){e.stopPropagation();e.preventDefault();setMini(false)}},true);
+  let ly=scrollY;addEventListener('scroll',()=>{const y=scrollY;if(!fxOn()){if(mini)setMini(false);ly=y;return}const d=y-ly;if(y<40){setMini(false);ly=y}else if(d>10){setMini(true);ly=y}else if(d<-10){setMini(false);ly=y}},{passive:true});
   new MutationObserver(()=>place(true)).observe(nav,{attributes:true,subtree:true,attributeFilter:['class']});
   addEventListener('resize',()=>place(false));
   if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>place(false));
