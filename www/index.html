@@ -803,7 +803,7 @@ function listSwap(box,html){
   let gone=0;old.forEach((o,k)=>{if(seen.has(k)||gone>=3)return;gone++;const g=o.el.cloneNode(true);g.classList.add('ghost');g.style.cssText='top:'+o.top+'px;left:'+o.left+'px;width:'+o.w+'px;height:'+o.h+'px';box.appendChild(g);setTimeout(()=>g.remove(),170)});
 }
 (function(){
-  const SAFE=['detail','shelfPage','sugPage','minSug','groupSug'];
+  let prev=null;
   let sx=0,sy=0,t0=0,dx=0,act=false,started=false,box=null,dimEl=null,shell=null,from=null,W=1;
   const back=()=>document.querySelector('#app section.active [id^="back"]:not([hidden])');
   const targetOf=()=>{const b=back();if(!b)return null;const real=window.go;let id=null;window.go=x=>{id=x};try{b.click()}catch(e){}finally{window.go=real}return id&&id!==currentPage?id:null};
@@ -819,19 +819,20 @@ function listSwap(box,html){
     bx.querySelectorAll('video,canvas').forEach(e=>e.remove());
     return bx}
   function cleanup(){if(box)box.remove();if(dimEl)dimEl.remove();if(shell){shell.style.transition='';shell.style.transform='';shell.classList.remove('under')}box=dimEl=shell=null;started=false;act=false}
-  document.addEventListener('touchstart',e=>{if(!swipeOn()||started||e.touches.length!==1||!SAFE.includes(currentPage))return;const t=e.touches[0];if(t.clientX>24||!back())return;sx=t.clientX;sy=t.clientY;t0=Date.now();dx=0;act=true;W=innerWidth},{passive:true});
+  document.addEventListener('touchstart',e=>{if(!swipeOn()||started||e.touches.length!==1||!klSub.includes(currentPage))return;const t=e.touches[0];if(t.clientX>24||!back())return;sx=t.clientX;sy=t.clientY;t0=Date.now();dx=0;act=true;W=innerWidth},{passive:true});
   document.addEventListener('touchmove',e=>{if(!act)return;const t=e.touches[0];dx=t.clientX-sx;const dy=t.clientY-sy;
     if(!started){if(Math.abs(dy)>Math.abs(dx)&&dx<24){act=false;return}if(dx<10)return;
-      const id=targetOf();if(!id){act=false;return}
-      from=currentPage;box=snapshot();dimEl=document.createElement('div');dimEl.className='snapDim';document.body.append(dimEl,box);
+      const id=targetOf();if(!id||id==='scanner'){act=false;return}
+      from=currentPage;prev={page:currentPage,h:$('heading').textContent,s:$('subtitle').textContent,y:window.scrollY||0,tabs:[...document.querySelectorAll('#tabs button')].map(b=>b.classList.contains('active'))};box=snapshot();dimEl=document.createElement('div');dimEl.className='snapDim';document.body.append(dimEl,box);
       go(id);shell=document.querySelector('.shell');shell.classList.add('under');started=true}
     e.preventDefault();const q=Math.max(0,Math.min(1,dx/W));
     box.style.transform='translateX('+Math.max(0,dx)+'px)';shell.style.transform='translateX('+(-(1-q)*W*.3)+'px)';dimEl.style.opacity=String(.14*(1-q))},{passive:false});
+  function restore(){if(!prev)return;currentPage=prev.page;document.querySelectorAll('#app section').forEach(x=>x.classList.toggle('active',x.id===prev.page));$('heading').textContent=prev.h;$('subtitle').textContent=prev.s;document.querySelectorAll('#tabs button').forEach((b,i)=>b.classList.toggle('active',!!prev.tabs[i]));window.scrollTo(0,prev.y)}
   function finish(){if(!act)return;if(!started){act=false;return}
     const v=dx/Math.max(1,Date.now()-t0),commit=dx>W*.5||(v>.35&&dx>30),b=box,sh=shell,d=dimEl,f=from;
     act=false;
     if(commit){const T='.35s cubic-bezier(0,0,.6,1)';b.style.transition=sh.style.transition='transform '+T;d.style.transition='opacity '+T;b.style.transform='translateX('+W+'px)';sh.style.transform='translateX(0)';d.style.opacity='0';setTimeout(cleanup,360)}
-    else{const T='.3s cubic-bezier(.32,.72,0,1)';b.style.transition=sh.style.transition='transform '+T;d.style.transition='opacity '+T;b.style.transform='translateX(0)';sh.style.transform='translateX(-'+W*.3+'px)';d.style.opacity='.14';setTimeout(()=>{go(f);cleanup()},310)}}
+    else{const T='.3s cubic-bezier(.32,.72,0,1)';b.style.transition=sh.style.transition='transform '+T;d.style.transition='opacity '+T;b.style.transform='translateX(0)';sh.style.transform='translateX(-'+W*.3+'px)';d.style.opacity='.14';setTimeout(()=>{restore();cleanup()},310)}}
   document.addEventListener('touchend',finish,{passive:true});
   document.addEventListener('touchcancel',finish,{passive:true});
 })();
