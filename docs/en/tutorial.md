@@ -709,6 +709,16 @@ If the scanner uses a prefix or suffix, the matching settings in ShelfMate must 
 
 Every recognised code is stored in `scanner.lastCode`. The result is in `scanner.result`.
 
+### Connecting the scanner by Bluetooth
+
+If the scanner should be far from the ioBroker host (for example in the kitchen), pair it directly over Bluetooth. The charging station then only charges.
+
+1. On the scanner, scan "Bluetooth HID" and then "Pairing" (manual of the Tera HW0009, page 4).
+2. On the ioBroker host start `bluetoothctl` and enter `scan on`, `pair <address>`, `trust <address>` and `connect <address>`. The scanner is called "BarCode Scanner HID".
+3. In the ShelfMate settings choose the device with the "(Bluetooth)" suffix.
+
+ShelfMate finds the device by its name, so it picks the scanner up again when it reconnects after power saving. Pressing the trigger wakes it up.
+
 ### Short location codes
 
 Because some scanners work with a US keyboard layout, special characters or umlauts can cause problems.

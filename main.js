@@ -621,7 +621,7 @@ class Shelfmate extends utils.Adapter {
     /** Reads the keyboard-like scanner chosen in the settings. */
     startScannerDevice() {
         const path = String(this.config.scannerDevice || '').trim();
-        if (!path || !path.startsWith('/dev/input/')) {
+        if (!path || !(path.startsWith('/dev/input/') || path.startsWith('name:'))) {
             return;
         }
         this.reader = new InputReader({

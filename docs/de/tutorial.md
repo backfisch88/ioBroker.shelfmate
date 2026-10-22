@@ -709,6 +709,16 @@ Falls der Scanner mit einem Präfix oder Suffix arbeitet, müssen die entspreche
 
 Jeder erkannte Code wird in `scanner.lastCode` gespeichert. Das Ergebnis steht in `scanner.result`.
 
+### Scanner per Bluetooth anschließen
+
+Wenn der Scanner weit weg vom ioBroker-Rechner stehen soll (zum Beispiel in der Küche), koppelst du ihn direkt per Bluetooth. Die Ladestation dient dann nur zum Laden.
+
+1. Am Scanner die Codes „Bluetooth HID" und danach „Koppelung" scannen (Handbuch des Tera HW0009, Seite 4).
+2. Auf dem ioBroker-Rechner `bluetoothctl` starten und nacheinander `scan on`, `pair <Adresse>`, `trust <Adresse>` und `connect <Adresse>` eingeben. Der Scanner heißt „BarCode Scanner HID".
+3. In den ShelfMate-Einstellungen das Gerät mit dem Zusatz „(Bluetooth)" auswählen.
+
+ShelfMate sucht das Gerät über den Namen. Es findet den Scanner deshalb auch wieder, wenn er nach dem Energiesparmodus neu verbindet. Ein Druck auf den Auslöser weckt ihn.
+
 ### Kurze Lagerort-Codes
 
 Da einige Scanner mit US-Tastaturlayout arbeiten, können Sonderzeichen oder Umlaute Probleme verursachen.
