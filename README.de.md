@@ -2,12 +2,12 @@
 
 # ioBroker.shelfmate
 
-Haushalts-Vorratslager für ioBroker, ausgeliefert als installierbare Web-App (iPhone-Homescreen / Android) direkt vom Adapter.
-Ich sehe, was wo liegt, werde beim Mindestbestand gewarnt und lasse Fehlendes automatisch auf die Einkaufsliste setzen.
+Vorratsverwaltung für zu Hause in ioBroker. Der Adapter liefert sie als Web-App aus, die man aufs Handy legen kann (iPhone-Homescreen / Android).
+Ich sehe, was wo liegt, werde bei Mindestbestand gewarnt, und was fehlt, kommt automatisch auf die Einkaufsliste.
 
 English version: [README.md](README.md)
 
-Schritt-für-Schritt-Anleitungen: [Anleitung](docs/de/tutorial.md) (Deutsch), [Tutorial](docs/en/tutorial.md) (English)
+Anleitungen: [Anleitung](docs/de/tutorial.md) (Deutsch), [Tutorial](docs/en/tutorial.md) (English)
 
 ---
 
@@ -15,40 +15,40 @@ Schritt-für-Schritt-Anleitungen: [Anleitung](docs/de/tutorial.md) (Deutsch), [T
 
 - Barcodes und QR-Codes der Lagerorte per Handykamera scannen
 - Produkte ohne Barcode: eigenen EAN-13-Code erzeugen und das Etikett drucken, eigenes Produktbild hochladen (wird automatisch verkleinert)
-- Druckbare EAN- und QR-Etiketten in deiner eigenen Etikettengröße (Einstellungen, zum Beispiel 50 × 30 mm)
-- Produktstammdaten von Open Food Facts (Name, Marke, Packungsgröße, Nutri-Score, Kategorien), bearbeitbar und jederzeit neu ladbar
+- Druckbare EAN- und QR-Etiketten in der eigenen Etikettengröße (Einstellungen, zum Beispiel 50 × 30 mm)
+- Produktdaten von Open Food Facts (Name, Marke, Packungsgröße, Nutri-Score, Kategorien), änderbar und jederzeit neu ladbar
 - Lagerbereiche und Lagerorte mit druckbaren QR-Codes
 - Bestand pro Lagerort, Historie aller Buchungen, Offline-Warteschlange in der App
 - Suche mit Vorschlägen beim Tippen („Nut“ schlägt „Nutella“ vor)
 - Produktgruppen: „Mehl“ mehrerer Marken zählt als ein Artikel
 - Optionales Mindesthaltbarkeitsdatum (MHD) pro Produkt oder pro Einlagerung, mit Warnung vor Ablauf
-- Optional: Standard-Haltbarkeit und Haltbarkeit nach dem Öffnen, auf Wunsch automatisch eingetragen (ein kleines Funken-Symbol zeigt, was nicht von Hand eingegeben wurde), Geöffnet und Verdorben markieren, letzte Buchung rückgängig
+- Optional: Standard-Haltbarkeit und Haltbarkeit nach dem Öffnen, auf Wunsch automatisch eingetragen (ein kleines Funken-Symbol zeigt, was ich nicht selbst getippt habe), Geöffnet und Verdorben markieren, letzte Buchung rückgängig
 - Zutaten-Prüfung: vergleicht eine Zutatenliste (zum Beispiel aus einer Rezept-App) mit dem Bestand und setzt nur das Fehlende auf die Einkaufsliste
 - Mindestbestand pro Produkt oder Gruppe mit automatischem Eintrag auf die Einkaufsliste
 - Einkaufsliste: **Aus**, **Script** (Datenpunkte), **Bring!** oder **Bring! Spezial** (zählt Mengen hoch statt Duplikate zu überspringen)
 - Optional: Artikel von der Liste nehmen, wenn wieder aufgefüllt, und/oder wenn der Haken in der App entfernt wird
-- Alles im Bestand als Datenpunkte (JSON und HTML-Tabelle für VIS)
+- Der ganze Bestand als Datenpunkte (JSON und HTML-Tabelle für VIS)
 - Benachrichtigungen über Telegram, telegrammenu2, Pushover, Signal, WhatsApp, Matrix oder E-Mail: Mindestbestand erreicht, tägliche Meldung zu abgelaufenen und bald ablaufenden Produkten
-- Verbrauch der letzten 30 Tage pro Produkt mit Vorschlag für den Mindestbestand, den ich mit einem Tipp übernehme oder verwerfe
+- Verbrauch der letzten 30 Tage pro Produkt mit Vorschlag für den Mindestbestand, den ich mit einem Tipp übernehme oder ablehne
 - Eine Glühbirne in der Kopfzeile sammelt alle Vorschläge (Gruppen, Mindestbestand, fällige Inventur)
 - Gerätename pro Handy, in der Historie bei jeder Buchung zu sehen
 - Inventur pro Lagerort als Liste oder per Scan (Lagerort-QR, dann die Produkte, dann nochmal denselben QR), mit Kamera oder Tastatur-Scanner
 - Gruppen-Vorschläge für ähnlich benannte Produkte
-- Etiketten-Vorlagen: „Geöffnet am“, Gefrierfach, großes Regal-Etikett, Boxen-Etikett mit Inhalt, nur QR. Welche Knöpfe die App zeigt, stelle ich im Adapter ein
+- Etiketten: „Geöffnet am“, Gefrierfach, großes Regal-Etikett, Boxen-Etikett mit Inhalt, nur QR. Welche Knöpfe die App zeigt, stelle ich im Adapter ein
 - Scanner-Modus ohne App: Ein- und Auslagern mit gescannten Codes über Datenpunkte
 - JSON-Backup, Export als CSV oder PDF
-- Eigener HTTPS-Server mit den Zertifikaten deiner ioBroker-Installation (selbstsigniert, eigene oder Let's Encrypt)
+- Eigener HTTPS-Server mit den Zertifikaten der ioBroker-Installation (selbstsigniert, eigene oder Let's Encrypt)
 - Optionaler Zugriffsschlüssel für die API
 - App und HTML-Datenpunkte nutzen die ioBroker-Systemsprache (de, en, ru, pt, nl, fr, it, es, pl, uk, zh-cn)
 
 ## Voraussetzungen
 
 - js-controller >= 6.0.11, admin >= 7.6.20, Node.js >= 22.12
-- HTTPS mit einem Zertifikat, dem das Handy vertraut (nötig für den Kamera-Scanner und den Offline-Modus)
+- HTTPS mit einem Zertifikat, dem das Handy vertraut (wird für die Kamera und den Offline-Modus gebraucht)
 
 ## Installation
 
-Über die ioBroker-Admin-Oberfläche installieren (Adapter). Danach eine Instanz anlegen und `https://<Host>:8120/` öffnen.
+Ganz normal über den Adapter-Reiter im ioBroker-Admin installieren. Danach eine Instanz anlegen und `https://<Host>:8120/` öffnen.
 
 ## Schnellstart
 
@@ -62,14 +62,14 @@ Schritt-für-Schritt-Anleitungen: [Anleitung](docs/de/tutorial.md) (Deutsch), [T
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| Port / Bind-Adresse | Wo der Webserver lauscht (Standard `8120`, alle Schnittstellen) |
+| Port / Bind-Adresse | Auf welchem Port und welcher Adresse der Webserver läuft (Standard `8120`, alle Schnittstellen) |
 | HTTPS verwenden | Nutzt das unten gewählte Zertifikat. Standard ist das selbstsignierte ioBroker-Zertifikat |
 | Selbstsigniertes Zertifikat erzeugen | Knopf: erzeugt ein Zertifikat für diesen Server (Hostname und IP-Adressen, 825 Tage gültig), legt es in den ioBroker-Zertifikaten ab und wählt es aus. Danach die Instanz neu starten |
 | Zertifikate | Öffentliches / privates / Chain-Zertifikat aus dem ioBroker-Zertifikatsspeicher oder eine Zertifikatssammlung (zum Beispiel vom `acme`-Adapter) |
 | Zugriffsschlüssel | Optional. Ist einer gesetzt, fragt die App einmal pro Gerät danach |
 | Einkaufslisten-Modus | Aus, Script, Bring oder Bring Spezial, siehe [Anleitung](docs/de/tutorial.md#einkaufslisten-modi) |
 | Mindesthaltbarkeit | **Aus**, **pro Produkt** (ein Datum am Produkt) oder **pro Einlagerung** (ein Datum bei jeder Einlagerung; beim Entnehmen zuerst das älteste) |
-| Datumsformat | Wie alle Daten in der Web-App angezeigt werden: `31.10.2026`, `31/10/2026` oder `2026-10-31` |
+| Datumsformat | Wie Daten in der App angezeigt werden: `31.10.2026`, `31/10/2026` oder `2026-10-31` |
 | Benachrichtigungs-Adapter | Installierte Instanz für Nachrichten (telegram, telegrammenu2, pushover, signal, whatsapp, matrix, email). Optional Empfänger (Chat-ID oder E-Mail-Adresse), der Bereich für telegrammenu2, ein Test-Knopf und die Optionen „Mindestbestand erreicht“ und „tägliche Meldung zu abgelaufenen Produkten“ mit Uhrzeit |
 | Haltbarkeit automatisch eintragen | Wann die Standard-Haltbarkeit als MHD eingetragen wird: **immer**, **nur ohne App** (Scanner-Modus und Datenpunkte, wo niemand ein Datum tippen kann) oder **nie** (dann auch keine Vorschläge) |
 | Was automatisch eingetragen wird | **Alles mit Standard-Haltbarkeit** oder **nur Trockenware aus der eingebauten Liste** (eigene und Gruppenwerte werden dann nie automatisch eingetragen) |
@@ -81,7 +81,7 @@ Schritt-für-Schritt-Anleitungen: [Anleitung](docs/de/tutorial.md) (Deutsch), [T
 
 ## Dokumentation
 
-- [Anleitung (Deutsch)](docs/de/tutorial.md): die App im Überblick, Produkte bearbeiten, automatische Werte und das Funken-Symbol, Mindesthaltbarkeit, Einkaufsliste, Zutaten-Prüfung, Scanner-Modus, Inventur, Etiketten, Zertifikat und die Einstellungen im Detail
+- [Anleitung (Deutsch)](docs/de/tutorial.md): die App im Überblick, Produkte bearbeiten, automatische Werte und das Funken-Symbol, Mindesthaltbarkeit, Einkaufsliste, Zutaten-Prüfung, Scanner-Modus, Inventur, Etiketten und Zertifikat
 - [Tutorial (English)](docs/en/tutorial.md): dasselbe auf Englisch
 
 ## Datenpunkte
@@ -104,15 +104,15 @@ Schritt-für-Schritt-Anleitungen: [Anleitung](docs/de/tutorial.md) (Deutsch), [T
 | `scanner.lastCode`, `scanner.result` | Letzter Code und Ergebnis des letzten Scans im Scanner-Modus (zum Beispiel „Fusilli ×1 eingelagert in Regal 1“) |
 
 Die Bestandsdaten liegen im Datenverzeichnis des Adapters (`shelfmate.json`), nicht in der Objektdatenbank.
-Ein JSON-Backup lässt sich in der App herunterladen und importieren (Einstellungen). Ein Import oder „Alle Daten löschen“ ersetzt alle Daten; der vorherige Stand bleibt als `shelfmate.json.bak` erhalten.
+Ein JSON-Backup kann ich in der App herunterladen und wieder einspielen (Einstellungen). Ein Import oder „Alle Daten löschen“ ersetzt alle Daten. Der alte Stand bleibt als `shelfmate.json.bak` erhalten.
 
 ## In Arbeit und Ausblick
 
-ShelfMate wird aktiv weiterentwickelt. Geplant (ohne Versprechen, ohne Reihenfolge):
+ShelfMate entwickle ich weiter. Geplant ist (ohne Gewähr und ohne feste Reihenfolge):
 
 - **Scanner-Anbindung**: serielle (USB-Kabel) und Bluetooth-Scanner direkt am Host
 
-Ideen und Fehlerberichte gern als [GitHub-Issues](https://github.com/backfisch88/ioBroker.shelfmate/issues).
+Ideen und Fehler gern als [GitHub-Issues](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
 ## Änderungsverlauf
 
@@ -120,4 +120,4 @@ Der Änderungsverlauf steht in der englischen [README.md](README.md#changelog).
 
 ## Lizenz
 
-MIT License, Copyright (c) 2026 Henrik Schoenhofen <henrik.schoenhofen@icloud.com>. Der vollständige Text steht in der Datei [LICENSE](LICENSE).
+MIT-Lizenz, Copyright (c) 2026 Henrik Schoenhofen <henrik.schoenhofen@icloud.com>. Der volle Text steht in [LICENSE](LICENSE).
