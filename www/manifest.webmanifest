@@ -1,8 +1,8 @@
 {
   "name": "ShelfMate",
   "short_name": "ShelfMate",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#f0e7df",
   "theme_color": "#f6f1ea",
@@ -18,7 +18,7 @@
       "type": "image/png"
     }
   ],
-  "id": "/",
+  "id": "./",
   "display_override": [
     "standalone"
   ]
