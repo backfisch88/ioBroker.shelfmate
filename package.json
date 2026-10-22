@@ -48,6 +48,7 @@
     "lib/",
     "!lib/**/*.test.js",
     "www/",
+    "docs/",
     "io-package.json",
     "LICENSE",
     "main.js"
