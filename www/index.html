@@ -73,7 +73,13 @@ body{background:var(--bg)!important;font-family:var(--sans);font-variant-numeric
 .float{background:var(--sage-soft);border-radius:999px;box-shadow:0 6px 18px var(--shade)}
 @media(max-width:620px){.shell{padding:18px 16px 55px}.top{margin-bottom:20px}.top h1{font-size:26px}.tabs{width:100%;overflow-x:auto}.tabs button{padding:8px 12px}.card{padding:18px 16px}.stat{padding:14px 12px}.stat strong{font-size:26px}}
 @media(max-width:380px){.tabs button{font-size:11.5px;padding:8px 7px}}
-@media(prefers-reduced-motion:reduce){.product,.button{transition:none}}
+.button,.cartBtn,button.tagLink{transition:transform .16s cubic-bezier(.23,1,.32,1)}
+.toast:not(.hidden){animation:toastIn .18s cubic-bezier(.23,1,.32,1)}
+@keyframes toastIn{from{opacity:0;transform:translateX(-50%) translateY(8px)}}
+button:focus-visible,summary:focus-visible,a:focus-visible,input.switch:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.pillbar button,.theme-dock button{position:relative}
+.pillbar button::before,.theme-dock button::before{content:'';position:absolute;inset:-7px}
+@media(prefers-reduced-motion:reduce){.product,.button,.cartBtn,button.tagLink,input.switch,input.switch::after{transition:none}.toast:not(.hidden){animation:none}}
 
 /* ---- Kopfzeile 1:1 aus liveHomeApp ---- */
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
