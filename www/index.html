@@ -100,7 +100,7 @@ body.d .tabBubble,.dark .tabBubble{background:linear-gradient(180deg,rgba(255,25
 #tabs.pill-nav button::before{display:none}
 #tabs.pill-nav button .ic{width:25px;height:25px;margin:0 0 1px;vertical-align:0;fill:currentColor;stroke:none}
 #tabs.pill-nav button.active,.dark #tabs.pill-nav button.active{color:var(--accent);letter-spacing:-.1px}
-:root{--mt:.9s;--me:cubic-bezier(.32,.72,0,1)}@supports(transition-timing-function:linear(0,1)){:root{--me:linear(0.0,0.0455,0.1501,0.2789,0.4104,0.5326,0.6394,0.7288,0.8011,0.8579,0.9013,0.9336,0.9572,0.9738,0.9853,0.9929,0.9977,1.0006,1.0021,1.0028,1)}}
+:root{--mt:.9s;--me:cubic-bezier(.32,.72,0,1)}
 #tabs.pill-nav{transition:scale .38s cubic-bezier(.34,1.5,.64,1)}
 #tabs.pill-nav.held{scale:1.025}
 #tabs .tabBubble{top:4px;height:54px;border-radius:27px;background:rgba(112,112,128,.14);border:1px solid rgba(255,255,255,.45);box-shadow:inset 0 1px 1px rgba(255,255,255,.55),inset 0 -1px 2px rgba(0,0,0,.05);transition:scale .24s cubic-bezier(.34,1.5,.64,1),background .18s,box-shadow .18s,border-color .18s}
@@ -166,19 +166,19 @@ body:has(#app section.active>.navback:not([hidden])) .head .greet{padding-left:5
 .dark #tabs .tabBubble{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.2)}
 @media(prefers-reduced-transparency:reduce){.float{background:#fff!important}.dark .float{background:#1c1c1e!important}}
 #tabs.pill-nav{transition:scale .38s cubic-bezier(.34,1.5,.64,1),width var(--mt) var(--me),left var(--mt) var(--me),transform var(--mt) var(--me)}
-#tabs.pill-nav button{transition:flex-grow var(--mt) var(--me),opacity .5s ease,padding var(--mt) var(--me),font-size var(--mt) var(--me),line-height var(--mt) var(--me),gap var(--mt) var(--me)}
+#tabs.pill-nav button{transition:flex-grow var(--mt) var(--me),padding var(--mt) var(--me),line-height var(--mt) var(--me),gap var(--mt) var(--me),opacity .3s ease .6s,color .3s ease .6s}
 #tabs.pill-nav.mini{width:62px!important;left:max(25px,calc(50% - 240px));transform:translateX(0)}
 #tabs.pill-nav.mini{overflow:hidden!important}
 #tabs.pill-nav.mini button{flex:0 0 0!important;padding:0!important;opacity:0;overflow:hidden;pointer-events:none}
-#tabs.pill-nav.mini button.active{flex:1 1 0!important;opacity:1;font-size:0!important;pointer-events:auto}
+#tabs.pill-nav.mini button.active{flex:1 1 0!important;opacity:1;color:transparent!important;pointer-events:auto}#tabs.pill-nav.mini button.active .ic{color:var(--accent)}
 #tabs.pill-nav.mini button.active{line-height:0!important;gap:0!important}#tabs.pill-nav.mini button.active .ic{margin:0}
 #tabs.pill-nav.mini .tabBubble{opacity:0!important}
 .float{display:flex;align-items:center;justify-content:center;white-space:nowrap;overflow:hidden;transition:bottom var(--mt) var(--me),width var(--mt) var(--me),height var(--mt) var(--me),right var(--mt) var(--me),padding var(--mt) var(--me),font-size var(--mt) var(--me)}
 .float .ic{transition:width var(--mt) var(--me),height var(--mt) var(--me),margin var(--mt) var(--me)}
 body.miniNav .float{bottom:max(12px,calc(env(safe-area-inset-bottom) - 9px))!important;right:max(25px,calc(50% - 240px))!important;width:62px;height:62px;padding:0!important;font-size:0!important;display:flex;align-items:center;justify-content:center}
 body.miniNav .float .ic{width:26px;height:26px;margin:0}
-#tabs.pill-nav.mini,body.miniNav .float{--me:cubic-bezier(.7,0,.9,.6)}@supports(transition-timing-function:linear(0,1)){#tabs.pill-nav.mini,body.miniNav .float{--me:linear(0,-0.0028,-0.0021,-0.0006,0.0023,0.0071,0.0147,0.0262,0.0428,0.0664,0.0987,0.1421,0.1989,0.2712,0.3606,0.4674,0.5896,0.7211,0.8499,0.9545,1)}}
-#tabs.pill-nav.mini button{transition:flex-grow var(--mt) var(--me),opacity .5s cubic-bezier(.42,0,1,1) .4s,padding var(--mt) var(--me),font-size var(--mt) var(--me),line-height var(--mt) var(--me),gap var(--mt) var(--me)}
+#tabs.pill-nav.mini,body.miniNav .float{--me:cubic-bezier(1,0,.68,.28)}
+#tabs.pill-nav.mini button{transition:flex-grow var(--mt) var(--me),padding var(--mt) var(--me),line-height var(--mt) var(--me),gap var(--mt) var(--me),opacity .3s ease 0s,color .3s ease 0s}
 .noFx #tabs.pill-nav,.noFx #tabs.pill-nav button,.noFx .float{transition:none!important}
 #edgeBot{transition:opacity .3s ease}body.miniNav #edgeBot{opacity:0}
 @media(prefers-contrast:more){#tabs.pill-nav,.glassAlert,.navback{border-color:#555}.dark #tabs.pill-nav,.dark .glassAlert,.dark .navback{border-color:#ccc}#tabs.pill-nav button{color:#111}.dark #tabs.pill-nav button{color:#fff}}
