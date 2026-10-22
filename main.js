@@ -532,7 +532,7 @@ class Shelfmate extends utils.Adapter {
             }
             if (id === `${this.namespace}.check.request` && !state.ack) {
                 await this.runCheck(String(state.val ?? ''));
-                await this.setState('check.request', state.val, true);
+                await this.setState('check.request', '', true);
             } else if (id === `${this.namespace}.check.addMissing` && !state.ack) {
                 await this.addMissingToList();
             }
