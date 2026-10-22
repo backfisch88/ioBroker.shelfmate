@@ -105,10 +105,10 @@ Sobald das Zertifikat vertraut ist, startet die App auch ohne Verbindung. Buchun
 
 Damit vergleiche ich die Zutaten meiner geplanten Rezepte mit dem, was ich zu Hause habe. ShelfMate kennt keine Rezepte, es bekommt nur eine Zutatenliste und sagt, was da ist.
 
-1. Die Zutaten in `check.request` schreiben: durch Komma, Semikolon oder Zeilen getrennt (`200 g Mehl, 3 Eier, Milch`) oder als JSON-Liste mit Texten oder `{"name","amount","unit"}`. Die Menge darf vor oder hinter dem Namen stehen (`200 g Mehl`, `Mehl 200g`). `kg`, `g`, `l`, `ml`, `cl` und Stück werden verstanden, `EL`, `TL` und Ähnliches zählen nur als „vorhanden“. Gleiche Zutaten werden addiert.
+1. Die Zutaten in `check.request` schreiben, eine pro Zeile (oder durch Semikolon getrennt) oder als JSON-Liste mit Texten oder `{"name","amount","unit"}`. In einer Zeile trennen Kommas Name, Zusatz und Menge, so wie meine Rezept-App sie liefert: `Zwiebeln, rot, 1`, `Cherrytomaten, bunt, 500g`, `Salz, 0.5 tl`, `Basilikum`. Eine Menge vor dem Namen (`380g Linguine`, `2EL Olivenöl`) oder dahinter (`Mehl 200g`) geht auch. `kg`, `g`, `l`, `ml`, `cl` und Stück werden verstanden, `EL`, `TL` und Ähnliches zählen nur als „vorhanden“. Gleiche Zutaten werden addiert.
 2. Gefunden wird über Produktname, Gruppe oder Tag, `Mehl` zählt also alle Produkte der Gruppe Mehl zusammen. Bei Mengen in g oder ml wird der Bestand verglichen (500 g da, 200 g gebraucht: passt), Zählprodukte mit Packungsgröße wie `1 kg` werden umgerechnet. Ohne Menge reicht Bestand über null. Unbekannte Zutaten gelten als fehlend, damit auch Nicht-Lebensmittel auf der Liste landen.
 3. `check.result` enthält das Ergebnis je Zutat, `check.available` und `check.missing` die Namen, `check.allAvailable` ist `true`, wenn nichts fehlt.
-4. Mit „Fehlende Zutaten auf die Einkaufsliste setzen“ in den Adapter-Einstellungen kommen die fehlenden nach jeder Prüfung (nur mit Namen) auf die Einkaufsliste. Sonst schreibe ich `true` in `check.addMissing`, wenn ich sie auf der Liste haben will.
+4. Mit „Fehlende Zutaten auf die Einkaufsliste setzen“ in den Adapter-Einstellungen kommen die fehlenden nach jeder Prüfung auf die Einkaufsliste, jede Zeile so, wie sie kam. Im Modus „Bring Spezial“ erledigt das Zusammenführen der Spezifikation den Rest (`Cherrytomaten, bunt, 500g` zweimal wird zu `bunt 500g + 500g`), in den anderen Modi wird nur der Name geschrieben. Sonst schreibe ich `true` in `check.addMissing`, wenn ich sie auf der Liste haben will.
 
 ## Zertifikat und Installation auf dem Handy
 

@@ -180,7 +180,7 @@ class Shelfmate extends utils.Adapter {
             ['shopping.addItem', 'Add an item to the shopping list', 'string', 'text', true],
             [
                 'check.request',
-                'Ingredients to check against the stock (comma separated, one per line or JSON)',
+                'Ingredients to check against the stock (one per line, or JSON)',
                 'string',
                 'text',
                 true,
@@ -397,10 +397,12 @@ class Shelfmate extends utils.Adapter {
     async addMissingToList() {
         for (const x of this.lastCheck || []) {
             if (!x.ok) {
-                const r = await this.addToList(x.name);
-                if (!r.ok) {
-                    this.log.warn(`Ingredient check: ${x.name} not added: ${r.error}`);
-                    break;
+                for (const line of x.lines || [x.name]) {
+                    const r = await this.addToList(line);
+                    if (!r.ok) {
+                        this.log.warn(`Ingredient check: ${x.name} not added: ${r.error}`);
+                        return;
+                    }
                 }
             }
         }
