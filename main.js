@@ -278,7 +278,8 @@ class Shelfmate extends utils.Adapter {
                 ...this.bestBeforeConfig(),
                 lang: this.lang || 'en',
                 labelButtons: this.labelButtons(),
-                autoShelfLife: this.config.autoShelfLife !== false,
+                autoShelfLife: this.autoShelfMode() !== 'off',
+                autoShelfMode: this.autoShelfMode(),
                 dateFormat: ['dmy', 'slash', 'iso'].includes(this.config.dateFormat) ? this.config.dateFormat : 'dmy',
                 inventoryDays: this.inventoryDays(),
             },
@@ -312,7 +313,7 @@ class Shelfmate extends utils.Adapter {
         let result;
         try {
             this.inv.bbMode = this.bestBeforeConfig().bestBeforeMode;
-            this.inv.autoShelf = this.config.autoShelfLife !== false;
+            this.applyAuto(true);
             const r = this.inv.handle(cmd);
             this.scheduleSave();
             result = {
@@ -439,6 +440,26 @@ class Shelfmate extends utils.Adapter {
     }
 
     /**
+     * When the standard shelf life is filled in automatically.
+     *
+     * @returns {'always' | 'headless' | 'off'} mode
+     */
+    autoShelfMode() {
+        return ['always', 'headless', 'off'].includes(this.config.autoShelfMode) ? this.config.autoShelfMode : 'always';
+    }
+
+    /**
+     * Switches the automatic shelf life on or off for the next booking.
+     *
+     * @param {boolean} fromApp booking comes from the app (someone can type a date)
+     */
+    applyAuto(fromApp) {
+        const mode = this.autoShelfMode();
+        this.inv.autoShelf = mode !== 'off';
+        this.inv.autoDate = fromApp ? mode === 'always' : mode !== 'off';
+    }
+
+    /**
      * Best-before settings, validated.
      *
      * @returns {{bestBeforeMode: 'off' | 'product' | 'batch', bestBeforeWarnDays: number}} settings
@@ -560,7 +581,7 @@ class Shelfmate extends utils.Adapter {
      */
     scanBook(cmd) {
         this.inv.bbMode = this.bestBeforeConfig().bestBeforeMode;
-        this.inv.autoShelf = this.config.autoShelfLife !== false;
+        this.applyAuto(false);
         const r = this.inv.handle(cmd);
         this.scheduleSave();
         this.afterChange(r.reorder, r.restock).catch(e => this.log.warn(`Post-processing failed: ${e.message}`));

@@ -201,7 +201,7 @@
         "shoppingRemoveItemId": "",
         "bestBeforeMode": "off",
         "bestBeforeWarnDays": 7,
-        "autoShelfLife": true,
+        "autoShelfMode": "always",
         "dateFormat": "dmy",
         "checkAddMissing": false,
         "notifyAdapter": "",

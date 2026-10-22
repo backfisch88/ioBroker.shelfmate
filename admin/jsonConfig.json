@@ -312,11 +312,25 @@
             "lg": 4,
             "xl": 4
         },
-        "autoShelfLife": {
-            "type": "checkbox",
-            "label": "autoShelfLife",
-            "help": "autoShelfLifeHelp",
-            "hidden": "data.bestBeforeMode !== 'batch'",
+        "autoShelfMode": {
+            "type": "select",
+            "label": "autoShelfMode",
+            "help": "autoShelfModeHelp",
+            "options": [
+                {
+                    "value": "always",
+                    "label": "asAlways"
+                },
+                {
+                    "value": "headless",
+                    "label": "asHeadless"
+                },
+                {
+                    "value": "off",
+                    "label": "asOff"
+                }
+            ],
+            "hidden": "data.bestBeforeMode === 'off'",
             "newLine": true,
             "xs": 12,
             "sm": 12,
