@@ -93,13 +93,15 @@ body.d .tabBubble,.dark .tabBubble{background:linear-gradient(180deg,rgba(255,25
 .noFx .tabBubble{display:none}
 /* iOS-Stil: Tab-Leiste unten als schwebendes Glas */
 .head{grid-template-areas:"greet tools"}
-#tabs.pill-nav{position:fixed!important;left:50%;bottom:calc(10px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:20;width:min(calc(100vw - 28px),440px)!important;height:64px;padding:4px;gap:0;border-radius:32px;overflow:visible!important;background:rgba(255,255,255,.58);backdrop-filter:blur(24px) saturate(180%)!important;-webkit-backdrop-filter:blur(24px) saturate(180%)!important;border:1px solid rgba(255,255,255,.65);box-shadow:0 10px 34px rgba(60,45,40,.18),inset 0 1px 0 rgba(255,255,255,.75)}
-.dark #tabs.pill-nav{background:rgba(44,37,50,.58);border-color:rgba(255,255,255,.12);box-shadow:0 10px 34px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.14)}
+#tabs.pill-nav{position:fixed!important;left:50%;bottom:calc(10px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:20;width:min(calc(100vw - 28px),440px)!important;height:64px;padding:4px;gap:0;border-radius:32px;overflow:visible!important;background:rgba(255,255,255,.30);backdrop-filter:blur(14px) saturate(200%) brightness(1.05)!important;-webkit-backdrop-filter:blur(14px) saturate(200%) brightness(1.05)!important;border:1px solid rgba(255,255,255,.55);box-shadow:0 12px 40px rgba(50,40,40,.18),inset 0 1px 1px rgba(255,255,255,.9),inset 0 -1px 1px rgba(255,255,255,.35),inset 0 0 18px rgba(255,255,255,.18);touch-action:none;user-select:none;-webkit-user-select:none}
+.dark #tabs.pill-nav{background:rgba(40,34,46,.34);border-color:rgba(255,255,255,.14);box-shadow:0 12px 40px rgba(0,0,0,.45),inset 0 1px 1px rgba(255,255,255,.22),inset 0 -1px 1px rgba(255,255,255,.06)}
 #tabs.pill-nav button{flex:1 1 0!important;min-width:0;height:56px;line-height:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-size:10.5px!important;font-weight:500;padding:0 2px!important;border-radius:28px;white-space:nowrap;-webkit-tap-highlight-color:transparent}
 #tabs.pill-nav button::before{display:none}
 #tabs.pill-nav button .ic{width:22px;height:22px;margin:0;vertical-align:0}
 #tabs.pill-nav button.active{color:var(--accent);font-weight:600}
-#tabs .tabBubble{top:4px;height:54px;border-radius:27px}
+#tabs .tabBubble{top:-5px;height:74px;border-radius:37px;background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(255,255,255,.22));border:1px solid rgba(255,255,255,.85);box-shadow:0 8px 26px rgba(40,30,30,.18),inset 0 2px 2px rgba(255,255,255,.95),inset 0 -2px 5px rgba(255,255,255,.45),inset 0 0 16px rgba(255,255,255,.3);transition:scale .24s cubic-bezier(.23,1,.32,1),box-shadow .24s}
+#tabs .tabBubble.lift{scale:1.12 1.1;box-shadow:0 14px 34px rgba(40,30,30,.22),inset 0 2px 2px rgba(255,255,255,1),inset 0 -2px 6px rgba(255,255,255,.55),inset 0 0 20px rgba(255,255,255,.4)}
+.dark #tabs .tabBubble{background:linear-gradient(180deg,rgba(255,255,255,.2),rgba(255,255,255,.07));border-color:rgba(255,255,255,.3);box-shadow:0 8px 26px rgba(0,0,0,.4),inset 0 2px 2px rgba(255,255,255,.35),inset 0 -2px 5px rgba(255,255,255,.1)}
 .noFx #tabs.pill-nav button.active{background:var(--card-strong)}
 .shell{padding-bottom:calc(112px + env(safe-area-inset-bottom))!important}
 .float{bottom:calc(88px + env(safe-area-inset-bottom))!important}
@@ -825,11 +827,19 @@ function listSwap(box,html){
   const bub=document.createElement('span');bub.className='tabBubble';bub.setAttribute('aria-hidden','true');nav.prepend(bub);
   let cur=null;
   function place(anim){const b=nav.querySelector('button.active');if(!b){bub.style.display='none';return}bub.style.display='';
-    const to={l:b.offsetLeft,w:b.offsetWidth};
+    const to={l:b.offsetLeft-7,w:b.offsetWidth+14};
     if(cur&&anim&&fxOn()&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)&&(cur.l!==to.l||cur.w!==to.w)){
       const l1=Math.min(cur.l,to.l),r1=Math.max(cur.l+cur.w,to.l+to.w);
       bub.animate([{left:cur.l+'px',width:cur.w+'px',transform:'scaleY(1)'},{left:l1+'px',width:(r1-l1)+'px',transform:'scaleY(.88)',offset:.5},{left:to.l+'px',width:to.w+'px',transform:'scaleY(1)'}],{duration:440,easing:'cubic-bezier(.32,.72,0,1)'})}
     bub.style.left=to.l+'px';bub.style.width=to.w+'px';cur=to}
+  let drag=null;
+  nav.addEventListener('pointerdown',e=>{if(!fxOn()||e.button>0)return;drag={x:e.clientX,moved:false};bub.classList.add('lift')});
+  addEventListener('pointermove',e=>{if(!drag)return;if(!drag.moved&&Math.abs(e.clientX-drag.x)<8)return;drag.moved=true;const r=nav.getBoundingClientRect(),w=cur?cur.w:60;let l=e.clientX-r.left-w/2;l=Math.max(-7,Math.min(r.width-w+7,l));bub.getAnimations().forEach(a=>a.cancel());bub.style.left=l+'px'});
+  const end=e=>{if(!drag)return;const d=drag;drag=null;bub.classList.remove('lift');if(!d.moved)return;
+    const sup=ev=>{ev.stopPropagation();ev.preventDefault()};addEventListener('click',sup,{capture:true,once:true});setTimeout(()=>removeEventListener('click',sup,true),50);
+    const el=document.elementFromPoint(e.clientX,e.clientY),b=el&&el.closest&&el.closest('#tabs button');
+    if(b&&!b.classList.contains('active'))b.click();else place(true)};
+  addEventListener('pointerup',end);addEventListener('pointercancel',()=>{if(drag){drag=null;bub.classList.remove('lift');place(false)}});
   new MutationObserver(()=>place(true)).observe(nav,{attributes:true,subtree:true,attributeFilter:['class']});
   addEventListener('resize',()=>place(false));
   if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>place(false));
