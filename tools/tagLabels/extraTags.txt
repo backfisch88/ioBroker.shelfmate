@@ -1,0 +1,985 @@
+acacia-honeys|Akazienhonig|Acacia honey|Акациевый мёд|Mel de acácia|Acaciahoning|Miel d'acacia|Miele di acacia|Miel de acacia|Miód akacjowy|Акацієвий мед|洋槐蜜
+acar|Acar (eingelegtes Gemüse)|Acar|Ачар|Acar|Acar|Acar|Acar|Acar|Acar|Ачар|阿查酸菜
+acidic-apples|Säuerliche Äpfel|Tart apples|Кислые яблоки|Maçãs ácidas|Zure appels|Pommes acidulées|Mele acidule|Manzanas ácidas|Kwaśne jabłka|Кислі яблука|酸苹果
+acras|Acras|Acras|Акра|Acras|Accra's|Acras|Acras|Acras|Acras|Акра|阿克拉炸饼
+advent-calendars|Adventskalender|Advent calendars|Адвент-календари|Calendários do Advento|Adventskalenders|Calendriers de l'Avent|Calendari dell'Avvento|Calendarios de Adviento|Kalendarze adwentowe|Адвент-календарі|降临节日历
+albacore|Weißer Thun|Albacore tuna|Длинноплавниковый тунец|Atum-branco|Witte tonijn|Germon|Tonno albacora|Atún blanco|Tuńczyk biały|Білий тунець|长鳍金枪鱼
+alcoholic-beverages|Alkoholische Getränke|Alcoholic drinks|Алкогольные напитки|Bebidas alcoólicas|Alcoholische dranken|Boissons alcoolisées|Bevande alcoliche|Bebidas alcohólicas|Napoje alkoholowe|Алкогольні напої|含酒精饮料
+alfajores|Alfajores|Alfajores|Альфахорес|Alfajores|Alfajores|Alfajores|Alfajores|Alfajores|Alfajores|Альфахорес|阿尔法霍饼干
+alfalfa-seeds|Alfalfasamen|Alfalfa seeds|Семена люцерны|Sementes de alfalfa|Alfalfazaad|Graines de luzerne|Semi di erba medica|Semillas de alfalfa|Nasiona lucerny|Насіння люцерни|苜蓿籽
+alfalfa-sprouts|Alfalfasprossen|Alfalfa sprouts|Ростки люцерны|Rebentos de alfalfa|Alfalfakiemen|Pousses de luzerne|Germogli di erba medica|Brotes de alfalfa|Kiełki lucerny|Паростки люцерни|苜蓿芽
+allium-neapolitanum|Neapolitanischer Lauch|Neapolitan garlic|Чеснок неаполитанский|Alho napolitano|Napolitaanse look|Ail de Naples|Aglio napoletano|Ajo napolitano|Czosnek neapolitański|Часник неаполітанський|那不勒斯韭葱
+almond-cakes|Mandelkuchen|Almond cakes|Миндальные пирожные|Bolos de amêndoa|Amandelcakes|Gâteaux aux amandes|Dolci alle mandorle|Pasteles de almendra|Ciasta migdałowe|Мигдалеві тістечка|杏仁蛋糕
+almond-cookies|Mandelkekse|Almond cookies|Миндальное печенье|Bolachas de amêndoa|Amandelkoekjes|Biscuits aux amandes|Biscotti alle mandorle|Galletas de almendra|Ciasteczka migdałowe|Мигдалеве печиво|杏仁饼干
+almond-turron|Mandel-Turrón|Almond turrón|Туррон миндальный|Torrão de amêndoa|Amandel-turrón|Touron aux amandes|Torrone alle mandorle|Turrón de almendra|Turrón migdałowy|Туррон мигдалевий|杏仁牛轧糖
+anchovy|Sardellen|Anchovies|Анчоусы|Anchovas|Ansjovis|Anchois|Acciughe|Anchoas|Anchois|Анчоуси|凤尾鱼
+anchovy-fillets|Sardellenfilets|Anchovy fillets|Филе анчоусов|Filetes de anchova|Ansjovisfilets|Filets d'anchois|Filetti di acciughe|Filetes de anchoa|Filety z anchois|Філе анчоусів|凤尾鱼片
+anglers|Seeteufel|Monkfish|Морской чёрт|Tamboril|Zeeduivel|Lotte|Rana pescatrice|Rape|Żabnica|Морський чорт|鮟鱇鱼
+animal-fats|Tierische Fette|Animal fats|Животные жиры|Gorduras animais|Dierlijke vetten|Graisses animales|Grassi animali|Grasas animales|Tłuszcze zwierzęce|Тваринні жири|动物脂肪
+anticaking-agents|Rieselhilfen|Anti-caking agents|Антислёживающие вещества|Antiaglomerantes|Antiklontermiddelen|Antiagglomérants|Antiagglomeranti|Antiaglomerantes|Substancje przeciwzbrylające|Речовини проти злежування|抗结块剂
+apple-compotes|Apfelkompott|Apple compote|Яблочный компот|Compota de maçã|Appelcompote|Compote de pommes|Composta di mele|Compota de manzana|Kompot jabłkowy|Яблучний компот|苹果蜜饯
+apple-nectars|Apfelnektar|Apple nectar|Яблочный нектар|Néctar de maçã|Appelnectar|Nectar de pomme|Nettare di mela|Néctar de manzana|Nektar jabłkowy|Яблучний нектар|苹果果汁饮料
+apple-pies|Apfelkuchen|Apple pie|Яблочный пирог|Tarte de maçã|Appeltaart|Tarte aux pommes|Torta di mele|Tarta de manzana|Szarlotka|Яблучний пиріг|苹果派
+apricot-nectars|Aprikosennektar|Apricot nectar|Абрикосовый нектар|Néctar de alperce|Abrikozennectar|Nectar d'abricot|Nettare di albicocca|Néctar de albaricoque|Nektar morelowy|Абрикосовий нектар|杏果汁饮料
+arabica-coffees|Arabica-Kaffee|Arabica coffee|Кофе арабика|Café arábica|Arabicakoffie|Café arabica|Caffè arabica|Café arábica|Kawa arabica|Кава арабіка|阿拉比卡咖啡
+arame-seaweeds|Arame-Algen|Arame seaweed|Водоросли араме|Algas arame|Arame-zeewier|Algues arame|Alghe arame|Algas arame|Algi arame|Водорості арамe|荒布海藻
+armagnac|Armagnac|Armagnac|Арманьяк|Armagnac|Armagnac|Armagnac|Armagnac|Armañac|Armaniak|Арманьяк|雅文邑
+aromatic-plants|Würzpflanzen|Aromatic plants|Ароматические растения|Plantas aromáticas|Aromatische planten|Plantes aromatiques|Piante aromatiche|Plantas aromáticas|Rośliny aromatyczne|Ароматичні рослини|芳香植物
+aromatic-rices|Aromareis|Aromatic rice|Ароматный рис|Arroz aromático|Aromatische rijst|Riz aromatique|Riso aromatico|Arroz aromático|Ryż aromatyczny|Ароматний рис|香米
+artichokes|Artischocken|Artichokes|Артишоки|Alcachofras|Artisjokken|Artichauts|Carciofi|Alcachofas|Karczochy|Артишоки|洋蓟
+artificial-sugar-substitutes|Künstliche Zuckerersatzstoffe|Artificial sweeteners|Искусственные заменители сахара|Adoçantes artificiais|Kunstmatige zoetstoffen|Édulcorants artificiels|Dolcificanti artificiali|Edulcorantes artificiales|Sztuczne słodziki|Штучні замінники цукру|人工甜味剂
+artificially-sweetened-beverages|Getränke mit Süßstoff|Artificially sweetened drinks|Напитки с подсластителем|Bebidas com adoçantes|Dranken met zoetstof|Boissons édulcorées|Bevande dolcificate artificialmente|Bebidas con edulcorantes|Napoje z substancjami słodzącymi|Напої з підсолоджувачем|人工甜味饮料
+artisan-products|Handwerklich hergestellt|Artisan products|Ремесленные продукты|Produtos artesanais|Ambachtelijke producten|Produits artisanaux|Prodotti artigianali|Productos artesanos|Produkty rzemieślnicze|Ремісничі продукти|手工产品
+artisanal-spirits|Craft-Spirituosen|Craft spirits|Крафтовые спиртные напитки|Destilados artesanais|Ambachtelijke gedistilleerde dranken|Spiritueux artisanaux|Distillati artigianali|Destilados artesanales|Kraftowe alkohole|Крафтові міцні напої|手工烈酒
+asparagus|Spargel|Asparagus|Спаржа|Espargos|Asperges|Asperges|Asparagi|Espárragos|Szparagi|Спаржа|芦笋
+asparagus-soups|Spargelsuppen|Asparagus soups|Спаржевые супы|Sopas de espargos|Aspergesoepen|Soupes d'asperges|Zuppe di asparagi|Sopas de espárragos|Zupy szparagowe|Спаржеві супи|芦笋汤
+aspartame|Aspartam|Aspartame|Аспартам|Aspartame|Aspartaam|Aspartame|Aspartame|Aspartamo|Aspartam|Аспартам|阿斯巴甜
+ayran|Ayran|Ayran|Айран|Ayran|Ayran|Ayran|Ayran|Ayran|Ayran|Айран|酸奶饮料艾兰
+baby-drinks|Babygetränke|Baby drinks|Детские напитки|Bebidas para bebés|Babydranken|Boissons pour bébé|Bevande per neonati|Bebidas para bebés|Napoje dla niemowląt|Дитячі напої|婴儿饮品
+baguette-sandwiches|Baguette-Sandwiches|Baguette sandwiches|Сэндвичи на багете|Sanduíches de baguete|Stokbroodsandwiches|Sandwichs baguette|Panini con baguette|Sándwiches de baguette|Kanapki z bagietki|Сендвічі з багета|法棍三明治
+baking-powder-or-raising-agent|Backtriebmittel|Raising agents|Разрыхлители теста|Fermentos químicos|Rijsmiddelen|Agents levants|Agenti lievitanti|Levaduras químicas|Środki spulchniające|Розпушувачі тіста|膨松剂
+barley-flours|Gerstenmehl|Barley flour|Ячменная мука|Farinha de cevada|Gerstemeel|Farine d'orge|Farina d'orzo|Harina de cebada|Mąka jęczmienna|Ячмінне борошно|大麦粉
+bean-dishes|Bohnengerichte|Bean dishes|Блюда из фасоли|Pratos de feijão|Bonengerechten|Plats de haricots|Piatti di fagioli|Platos de alubias|Dania z fasoli|Страви з квасолі|豆类菜肴
+bechamel-sauces|Béchamelsaucen|Béchamel sauces|Соусы бешамель|Molhos béchamel|Bechamelsauzen|Sauces béchamel|Salse besciamella|Salsas bechamel|Sosy beszamelowe|Соуси бешамель|白酱
+bee-products|Bienenprodukte|Bee products|Продукты пчеловодства|Produtos apícolas|Bijenproducten|Produits de la ruche|Prodotti apistici|Productos apícolas|Produkty pszczele|Продукти бджільництва|蜂产品
+beef-and-its-products|Rindfleischprodukte|Beef products|Говядина и продукты из неё|Carne de vaca e derivados|Rundvlees en producten|Bœuf et produits dérivés|Manzo e derivati|Ternera y derivados|Wołowina i produkty|Яловичина та продукти з неї|牛肉及其制品
+beef-carpaccio|Rindercarpaccio|Beef carpaccio|Карпаччо из говядины|Carpaccio de vaca|Rundercarpaccio|Carpaccio de bœuf|Carpaccio di manzo|Carpaccio de ternera|Carpaccio wołowe|Карпаччо з яловичини|牛肉卡帕奇欧
+beef-jerkies|Rinder-Trockenfleisch|Beef jerky|Вяленая говядина|Carne de vaca seca|Rundvleesjerky|Viande de bœuf séchée|Carne secca di manzo|Cecina de ternera|Suszona wołowina|В'ялена яловичина|牛肉干
+beef-preparations|Rindfleischzubereitungen|Beef preparations|Мясные полуфабрикаты из говядины|Preparados de carne de vaca|Rundvleesbereidingen|Préparations de bœuf|Preparazioni di manzo|Preparados de ternera|Przetwory wołowe|Яловичі напівфабрикати|牛肉制品
+beef-skewers|Rinderspieße|Beef skewers|Шашлычки из говядины|Espetadas de vaca|Rundvleesspiesjes|Brochettes de bœuf|Spiedini di manzo|Brochetas de ternera|Szaszłyki wołowe|Шашлики з яловичини|牛肉串
+beef-tongues|Rinderzunge|Beef tongue|Говяжий язык|Língua de vaca|Rundertong|Langue de bœuf|Lingua di manzo|Lengua de ternera|Ozór wołowy|Яловичий язик|牛舌
+beets-salads|Rote-Bete-Salate|Beetroot salads|Салаты из свёклы|Saladas de beterraba|Rodebietensalades|Salades de betteraves|Insalate di barbabietole|Ensaladas de remolacha|Sałatki z buraków|Салати з буряка|甜菜沙拉
+berry-jams|Beerenmarmelade|Berry jams|Ягодные джемы|Doces de frutos vermelhos|Bessenjam|Confitures de fruits rouges|Confetture di frutti di bosco|Mermeladas de frutos rojos|Dżemy jagodowe|Ягідні джеми|浆果果酱
+beverage-preparations|Getränkezubereitungen|Beverage preparations|Составы для напитков|Preparados para bebidas|Drankbereidingen|Préparations pour boissons|Preparati per bevande|Preparados para bebidas|Preparaty do napojów|Основи для напоїв|饮料制备品
+bifidus-yogurts|Bifidus-Joghurt|Bifidus yoghurts|Йогурты с бифидобактериями|Iogurtes com bífidus|Bifidusyoghurt|Yaourts au bifidus|Yogurt al bifidus|Yogures con bífidus|Jogurty z bifidusem|Йогурти з біфідобактеріями|双歧杆菌酸奶
+biscuits-and-crackers|Kekse & Cracker|Biscuits & crackers|Печенье и крекеры|Bolachas e biscoitos|Koekjes en crackers|Biscuits et crackers|Biscotti e cracker|Galletas y crackers|Ciastka i krakersy|Печиво та крекери|饼干和薄脆饼
+biscuits-or-cookies-variety-packs|Kekssortimente|Biscuit assortments|Ассорти печенья|Sortidos de bolachas|Koekjesassortimenten|Assortiments de biscuits|Assortimenti di biscotti|Surtidos de galletas|Zestawy ciastek|Асорті печива|饼干什锦装
+black-grapes|Dunkle Trauben|Black grapes|Тёмный виноград|Uvas pretas|Blauwe druiven|Raisins noirs|Uva nera|Uvas negras|Ciemne winogrona|Темний виноград|黑葡萄
+black-pitted-olives|Schwarze entkernte Oliven|Black pitted olives|Чёрные маслины без косточки|Azeitonas pretas sem caroço|Zwarte ontpitte olijven|Olives noires dénoyautées|Olive nere denocciolate|Aceitunas negras sin hueso|Czarne oliwki bez pestek|Чорні маслини без кісточок|去核黑橄榄
+black-pudding|Blutwurst|Black pudding|Кровяная колбаса|Morcela|Bloedworst|Boudin noir|Sanguinaccio|Morcilla|Kaszanka|Кров'янка|血肠
+black-seedless-grapes|Dunkle kernlose Trauben|Black seedless grapes|Тёмный виноград без косточек|Uvas pretas sem grainha|Blauwe pitloze druiven|Raisins noirs sans pépins|Uva nera senza semi|Uvas negras sin pepitas|Ciemne winogrona bezpestkowe|Темний виноград без кісточок|无籽黑葡萄
+blackcurrant-syrups|Schwarze-Johannisbeer-Sirup|Blackcurrant syrup|Сироп из чёрной смородины|Xarope de groselha-preta|Zwarte-bessensiroop|Sirop de cassis|Sciroppo di ribes nero|Sirope de grosella negra|Syrop z czarnej porzeczki|Сироп з чорної смородини|黑加仑糖浆
+blackcurrants|Schwarze Johannisbeeren|Blackcurrants|Чёрная смородина|Groselhas-pretas|Zwarte bessen|Cassis|Ribes nero|Grosellas negras|Czarne porzeczki|Чорна смородина|黑加仑
+blanched-almonds|Blanchierte Mandeln|Blanched almonds|Бланшированный миндаль|Amêndoas branqueadas|Gepelde amandelen|Amandes blanchies|Mandorle pelate|Almendras blanqueadas|Migdały blanszowane|Бланшований мигдаль|去皮杏仁
+blanched-shelled-hazelnuts|Blanchierte Haselnüsse|Blanched hazelnuts|Бланшированный фундук|Avelãs branqueadas|Gepelde hazelnoten|Noisettes blanchies|Nocciole pelate|Avellanas blanqueadas|Orzechy laskowe blanszowane|Бланшований фундук|去皮榛子
+blueberry-juices|Heidelbeersaft|Blueberry juice|Черничный сок|Sumo de mirtilo|Blauwebessensap|Jus de myrtille|Succo di mirtillo|Zumo de arándano|Sok jagodowy|Чорничний сік|蓝莓汁
+bolognese-linguine|Linguine Bolognese|Linguine bolognese|Лингуине болоньезе|Linguine à bolonhesa|Linguine bolognese|Linguine bolognaise|Linguine alla bolognese|Linguine a la boloñesa|Linguine bolognese|Лінгвіні болоньєзе|肉酱扁面条
+bolognese-style-pasta|Nudeln Bolognese|Pasta bolognese|Паста болоньезе|Massa à bolonhesa|Pasta bolognese|Pâtes bolognaise|Pasta alla bolognese|Pasta a la boloñesa|Makaron bolognese|Паста болоньєзе|肉酱意面
+bouillon-pots|Brühe im Becher|Stock pots|Бульон в баночках|Caldos em pote|Bouillonpotjes|Bouillons en pot|Brodo in vasetto|Caldo en tarro|Buliony w słoiczkach|Бульйон у баночках|高汤罐
+bouquet-garni|Kräutersträußchen|Bouquet garni|Букет гарни|Bouquet garni|Bouquet garni|Bouquet garni|Mazzetto aromatico|Ramillete de hierbas|Bukiet ziół|Букет гарні|香草束
+braised-hams|Geschmorter Schinken|Braised ham|Тушёная ветчина|Fiambre estufado|Gestoofde ham|Jambon braisé|Prosciutto brasato|Jamón braseado|Szynka duszona|Тушкована шинка|炖火腿
+bran|Kleie|Bran|Отруби|Farelo|Zemelen|Son|Crusca|Salvado|Otręby|Висівки|麸皮
+brandys|Weinbrand|Brandy|Бренди|Brandy|Brandewijn|Brandy|Brandy|Brandy|Brandy|Бренді|白兰地
+bread-flours|Brotmehl|Bread flour|Хлебопекарная мука|Farinha para pão|Broodmeel|Farine à pain|Farina per pane|Harina para pan|Mąka chlebowa|Хлібопекарське борошно|面包粉
+breaded-cheeses|Panierter Käse|Breaded cheese|Сыр в панировке|Queijo panado|Gepaneerde kaas|Fromage pané|Formaggio impanato|Queso empanado|Ser panierowany|Сир у паніровці|裹面包屑奶酪
+breaded-chicken|Paniertes Hähnchen|Breaded chicken|Курица в панировке|Frango panado|Gepaneerde kip|Poulet pané|Pollo impanato|Pollo empanado|Kurczak w panierce|Курка в паніровці|裹面包屑鸡肉
+breaded-chicken-cutlets|Panierte Hähnchenschnitzel|Breaded chicken cutlets|Куриные шницели в панировке|Escalopes de frango panados|Gepaneerde kipschnitzels|Escalopes de poulet panées|Cotolette di pollo impanate|Filetes de pollo empanados|Sznycle z kurczaka panierowane|Курячі шніцелі в паніровці|裹面包屑鸡排
+breaded-fish|Panierter Fisch|Breaded fish|Рыба в панировке|Peixe panado|Gepaneerde vis|Poisson pané|Pesce impanato|Pescado empanado|Ryba w panierce|Риба в паніровці|裹面包屑鱼
+breadsticks|Brotstangen|Breadsticks|Хлебные палочки|Palitos de pão|Broodstengels|Gressins|Grissini|Picos de pan|Paluszki chlebowe|Хлібні палички|面包棒
+breakfasts|Frühstück|Breakfast|Завтраки|Pequenos-almoços|Ontbijt|Petits-déjeuners|Colazioni|Desayunos|Śniadania|Сніданки|早餐
+brined-cheeses|Käse in Salzlake|Brined cheese|Сыры в рассоле|Queijos em salmoura|Kaas in pekel|Fromages en saumure|Formaggi in salamoia|Quesos en salmuera|Sery w solance|Сири в розсолі|盐水奶酪
+brioches|Brioche|Brioche|Бриошь|Brioches|Brioche|Brioches|Brioche|Brioches|Brioszki|Бріоші|布里欧修
+british-sea-products|Britische Meeresprodukte|British seafood|Британские морепродукты|Produtos do mar britânicos|Britse zeeproducten|Produits de la mer britanniques|Prodotti ittici britannici|Productos del mar británicos|Brytyjskie produkty morskie|Британські морепродукти|英国海产品
+brown-flax-seeds|Braune Leinsamen|Brown flaxseeds|Коричневые семена льна|Sementes de linhaça castanhas|Bruin lijnzaad|Graines de lin brun|Semi di lino marroni|Semillas de lino marrón|Brązowe siemię lniane|Коричневе насіння льону|棕亚麻籽
+buckwheat-flours|Buchweizenmehl|Buckwheat flour|Гречневая мука|Farinha de trigo-sarraceno|Boekweitmeel|Farine de sarrasin|Farina di grano saraceno|Harina de trigo sarraceno|Mąka gryczana|Гречане борошно|荞麦粉
+buffalo-cheeses|Büffelmilchkäse|Buffalo cheese|Сыры из молока буйволицы|Queijos de búfala|Buffelkaas|Fromages de bufflonne|Formaggi di bufala|Quesos de búfala|Sery z mleka bawolego|Сири з буйволиного молока|水牛奶酪
+butter-fat|Butterfett|Butterfat|Молочный жир|Gordura de manteiga|Boterolie|Matière grasse laitière|Grasso del burro|Grasa de mantequilla|Tłuszcz maślany|Молочний жир|乳脂
+buttermilks|Buttermilch|Buttermilk|Пахта|Leitelho|Karnemelk|Babeurre|Latticello|Suero de mantequilla|Maślanka|Маслянка|酪乳
+calf-tongue|Kalbszunge|Veal tongue|Телячий язык|Língua de vitela|Kalfstong|Langue de veau|Lingua di vitello|Lengua de ternera|Ozór cielęcy|Телячий язик|小牛舌
+calissons|Calissons|Calissons|Калиссоны|Calissons|Calissons|Calissons|Calissons|Calissons|Calissons|Калісони|卡里颂糖
+calvados|Calvados|Calvados|Кальвадос|Calvados|Calvados|Calvados|Calvados|Calvados|Calvados|Кальвадос|卡尔瓦多斯
+camargue-rices|Camargue-Reis|Camargue rice|Рис из Камарга|Arroz da Camarga|Camargue-rijst|Riz de Camargue|Riso della Camargue|Arroz de la Camarga|Ryż z Camargue|Рис із Камарга|卡马格大米
+camomile-teas|Kamillentee|Chamomile tea|Ромашковый чай|Chá de camomila|Kamillethee|Infusion de camomille|Tè alla camomilla|Té de manzanilla|Herbata rumiankowa|Ромашковий чай|洋甘菊茶
+canned-artichokes|Artischocken in der Dose|Canned artichokes|Артишоки консервированные|Alcachofras em conserva|Artisjokken in blik|Artichauts en conserve|Carciofi in scatola|Alcachofas en conserva|Karczochy w puszce|Артишоки консервовані|罐装洋蓟
+canned-asparagus|Spargel in der Dose|Canned asparagus|Спаржа консервированная|Espargos em conserva|Asperges in blik|Asperges en conserve|Asparagi in scatola|Espárragos en conserva|Szparagi w puszce|Спаржа консервована|罐装芦笋
+canned-cereals|Getreide in der Dose|Canned cereals|Консервированные злаки|Cereais em conserva|Granen in blik|Céréales en conserve|Cereali in scatola|Cereales en conserva|Zboża w puszce|Консервовані злаки|罐装谷物
+canned-champignon-mushrooms|Champignons in der Dose|Canned mushrooms|Консервированные шампиньоны|Cogumelos em conserva|Champignons in blik|Champignons en conserve|Champignon in scatola|Champiñones en conserva|Pieczarki w puszce|Консервовані печериці|罐装蘑菇
+canned-chickpeas|Kichererbsen in der Dose|Canned chickpeas|Консервированный нут|Grão-de-bico em conserva|Kikkererwten in blik|Pois chiches en conserve|Ceci in scatola|Garbanzos en conserva|Ciecierzyca w puszce|Консервований нут|罐装鹰嘴豆
+canned-common-beans|Bohnen in der Dose|Canned beans|Консервированная фасоль|Feijão em conserva|Bonen in blik|Haricots en conserve|Fagioli in scatola|Alubias en conserva|Fasola w puszce|Консервована квасоля|罐装菜豆
+canned-corn|Mais in der Dose|Canned sweetcorn|Консервированная кукуруза|Milho em conserva|Maïs in blik|Maïs en conserve|Mais in scatola|Maíz en conserva|Kukurydza w puszce|Консервована кукурудза|罐装玉米
+canned-fishes|Fischkonserven|Canned fish|Рыбные консервы|Conservas de peixe|Vis in blik|Conserves de poisson|Pesce in scatola|Conservas de pescado|Konserwy rybne|Рибні консерви|鱼罐头
+canned-green-beans|Grüne Bohnen in der Dose|Canned green beans|Консервированная стручковая фасоль|Feijão-verde em conserva|Sperziebonen in blik|Haricots verts en conserve|Fagiolini in scatola|Judías verdes en conserva|Fasolka szparagowa w puszce|Консервована стручкова квасоля|罐装四季豆
+canned-legume-sprouts|Hülsenfruchtsprossen im Glas|Canned bean sprouts|Консервированные ростки бобовых|Rebentos de leguminosas em conserva|Peulvruchtkiemen in blik|Germes de légumineuses en conserve|Germogli di legumi in scatola|Brotes de legumbres en conserva|Kiełki roślin strączkowych w puszce|Консервовані паростки бобових|罐装豆芽
+canned-meats|Fleischkonserven|Canned meat|Мясные консервы|Conservas de carne|Vlees in blik|Conserves de viande|Carne in scatola|Conservas de carne|Konserwy mięsne|М'ясні консерви|肉罐头
+canned-mussels|Miesmuscheln in der Dose|Canned mussels|Консервированные мидии|Mexilhões em conserva|Mosselen in blik|Moules en conserve|Cozze in scatola|Mejillones en conserva|Małże w puszce|Консервовані мідії|罐装贻贝
+canned-nuts|Nüsse in der Dose|Canned nuts|Орехи в банке|Frutos secos em lata|Noten in blik|Noix en boîte|Frutta secca in barattolo|Frutos secos en lata|Orzechy w puszce|Горіхи в банці|罐装坚果
+canned-pineapples|Ananas in der Dose|Canned pineapple|Консервированные ананасы|Ananás em conserva|Ananas in blik|Ananas en conserve|Ananas in scatola|Piña en conserva|Ananas w puszce|Консервовані ананаси|罐装菠萝
+canned-plant-based-foods|Pflanzliche Konserven|Canned plant-based foods|Консервированные растительные продукты|Conservas vegetais|Plantaardige conserven|Conserves végétales|Conserve vegetali|Conservas vegetales|Konserwy roślinne|Консервовані рослинні продукти|植物性罐头食品
+canned-potatoes|Kartoffeln in der Dose|Canned potatoes|Консервированный картофель|Batatas em conserva|Aardappelen in blik|Pommes de terre en conserve|Patate in scatola|Patatas en conserva|Ziemniaki w puszce|Консервована картопля|罐装土豆
+canned-raviolis|Ravioli in der Dose|Canned ravioli|Консервированные равиоли|Ravioli em conserva|Ravioli in blik|Raviolis en conserve|Ravioli in scatola|Ravioli en conserva|Ravioli w puszce|Консервовані равіолі|罐装意式饺子
+canned-sardines|Sardinen in der Dose|Canned sardines|Консервированные сардины|Sardinhas em conserva|Sardines in blik|Sardines en conserve|Sardine in scatola|Sardinas en conserva|Sardynki w puszce|Консервовані сардини|沙丁鱼罐头
+canned-seaweeds|Algen in der Dose|Canned seaweed|Консервированные водоросли|Algas em conserva|Zeewier in blik|Algues en conserve|Alghe in scatola|Algas en conserva|Algi w puszce|Консервовані водорості|罐装海藻
+canned-soups|Dosensuppen|Canned soups|Консервированные супы|Sopas em lata|Soep in blik|Soupes en conserve|Zuppe in scatola|Sopas en lata|Zupy w puszce|Консервовані супи|罐装汤
+canned-sprouts|Sprossen in der Dose|Canned sprouts|Консервированные ростки|Rebentos em conserva|Kiemen in blik|Pousses en conserve|Germogli in scatola|Brotes en conserva|Kiełki w puszce|Консервовані паростки|罐装芽菜
+canned-tunas|Thunfisch in der Dose|Canned tuna|Консервированный тунец|Atum em conserva|Tonijn in blik|Thon en conserve|Tonno in scatola|Atún en conserva|Tuńczyk w puszce|Консервований тунець|金枪鱼罐头
+canned-vegetable-soups|Gemüsesuppen in der Dose|Canned vegetable soups|Консервированные овощные супы|Sopas de legumes em lata|Groentesoepen in blik|Soupes de légumes en conserve|Zuppe di verdure in scatola|Sopas de verduras en lata|Zupy warzywne w puszce|Консервовані овочеві супи|罐装蔬菜汤
+cantal|Cantal|Cantal|Канталь|Cantal|Cantal|Cantal|Cantal|Cantal|Cantal|Канталь|康塔尔奶酪
+cantaloupe-melons|Cantaloupe-Melone|Cantaloupe melon|Канталупа|Melão cantalupo|Cantaloupemeloen|Melon cantaloup|Melone cantalupo|Melón cantalupo|Melon kantalupa|Диня канталупа|哈密瓜
+cantucci|Cantuccini|Cantucci|Кантуччи|Cantucci|Cantucci|Cantuccini|Cantucci|Cantucci|Cantucci|Кантуччі|意式杏仁脆饼
+capon|Kapaun|Capon|Каплун|Capão|Kapoen|Chapon|Cappone|Capón|Kapłon|Каплун|阉鸡
+capsules|Kapseln|Capsules|Капсулы|Cápsulas|Capsules|Capsules|Capsule|Cápsulas|Kapsułki|Капсули|胶囊
+caramel-chocolates|Karamellschokolade|Caramel chocolate|Шоколад с карамелью|Chocolates com caramelo|Karamelchocolade|Chocolats au caramel|Cioccolatini al caramello|Chocolates con caramelo|Czekolada z karmelem|Шоколад з карамеллю|焦糖巧克力
+caramel-creamy-puddings|Karamellpudding|Caramel pudding|Карамельный пудинг|Pudim de caramelo|Karamelpudding|Crème au caramel|Budino al caramello|Natillas de caramelo|Budyń karmelowy|Карамельний пудинг|焦糖布丁
+caramelized-almonds|Gebrannte Mandeln|Caramelised almonds|Миндаль в карамели|Amêndoas caramelizadas|Gebrande amandelen|Amandes caramélisées|Mandorle caramellate|Almendras caramelizadas|Migdały w karmelu|Мигдаль у карамелі|焦糖杏仁
+caramelized-nuts|Karamellisierte Nüsse|Caramelised nuts|Орехи в карамели|Frutos secos caramelizados|Gekaramelliseerde noten|Noix caramélisées|Frutta secca caramellata|Frutos secos caramelizados|Orzechy w karmelu|Горіхи в карамелі|焦糖坚果
+caramels|Karamellbonbons|Caramels|Карамель|Caramelos|Karamels|Caramels|Caramelle|Caramelos|Karmelki|Карамель|焦糖糖果
+carbonara-style-pasta|Nudeln Carbonara|Pasta carbonara|Паста карбонара|Massa à carbonara|Pasta carbonara|Pâtes carbonara|Pasta alla carbonara|Pasta a la carbonara|Makaron carbonara|Паста карбонара|培根蛋奶面
+carbonated-fruit-soft-drink|Fruchtlimonade mit Kohlensäure|Fizzy fruit drinks|Газированные фруктовые напитки|Refrigerantes de fruta gaseificados|Koolzuurhoudende frisdrank met fruit|Boissons gazeuses aux fruits|Bevande gassate alla frutta|Refrescos de frutas con gas|Napoje owocowe gazowane|Газовані фруктові напої|碳酸水果饮料
+carbonated-mineral-waters|Mineralwasser mit Kohlensäure|Sparkling mineral water|Газированная минеральная вода|Águas minerais gaseificadas|Koolzuurhoudend mineraalwater|Eaux minérales gazeuses|Acque minerali gassate|Aguas minerales con gas|Woda mineralna gazowana|Газована мінеральна вода|含气矿泉水
+carbonated-natural-mineral-waters|Natürliches Mineralwasser mit Kohlensäure|Sparkling natural mineral water|Газированная природная минеральная вода|Águas minerais naturais gaseificadas|Koolzuurhoudend natuurlijk mineraalwater|Eaux minérales naturelles gazeuses|Acque minerali naturali gassate|Aguas minerales naturales con gas|Naturalna woda mineralna gazowana|Газована природна мінеральна вода|含气天然矿泉水
+carbonated-waters|Sprudelwasser|Sparkling water|Газированная вода|Águas gaseificadas|Bruiswater|Eaux gazeuses|Acque gassate|Aguas con gas|Woda gazowana|Газована вода|气泡水
+cardoons|Kardonen|Cardoons|Кардон|Cardos|Kardoen|Cardons|Cardi|Cardos|Karczochy hiszpańskie|Кардон|刺菜蓟
+carrot-juices|Karottensaft|Carrot juice|Морковный сок|Sumo de cenoura|Wortelsap|Jus de carotte|Succo di carota|Zumo de zanahoria|Sok z marchwi|Морквяний сік|胡萝卜汁
+carrot-soups|Karottensuppe|Carrot soup|Морковный суп|Sopa de cenoura|Wortelsoep|Soupe de carottes|Zuppa di carote|Sopa de zanahoria|Zupa marchewkowa|Морквяний суп|胡萝卜汤
+cassava-crisps|Maniok-Chips|Cassava crisps|Чипсы из маниоки|Batatas fritas de mandioca|Cassavechips|Chips de manioc|Patatine di manioca|Chips de yuca|Chipsy z manioku|Чипси з маніоки|木薯片
+caviar-substitutes|Kaviarersatz|Caviar substitutes|Заменители икры|Substitutos de caviar|Kaviaarvervangers|Substituts de caviar|Succedanei del caviale|Sucedáneos de caviar|Substytuty kawioru|Замінники ікри|鱼子酱替代品
+caviars|Kaviar|Caviar|Икра|Caviar|Kaviaar|Caviar|Caviale|Caviar|Kawior|Ікра|鱼子酱
+celery-stalk|Staudensellerie|Celery stalks|Стебли сельдерея|Talos de aipo|Bleekselderij|Branches de céleri|Coste di sedano|Tallos de apio|Łodygi selera|Стебла селери|芹菜茎
+cereal-based-drinks|Getreidedrinks|Cereal drinks|Злаковые напитки|Bebidas de cereais|Graandranken|Boissons aux céréales|Bevande ai cereali|Bebidas de cereales|Napoje zbożowe|Злакові напої|谷物饮品
+cereal-brans|Getreidekleie|Cereal bran|Зерновые отруби|Farelos de cereais|Graanzemelen|Sons de céréales|Crusche di cereali|Salvados de cereales|Otręby zbożowe|Зернові висівки|谷物麸皮
+cereal-germs|Getreidekeime|Cereal germ|Зародыши злаков|Gérmen de cereais|Graankiemen|Germes de céréales|Germi di cereali|Germen de cereales|Kiełki zbóż|Зародки злаків|谷物胚芽
+cereal-oils|Getreideöle|Cereal oils|Масла из злаков|Óleos de cereais|Graanoliën|Huiles de céréales|Oli di cereali|Aceites de cereales|Oleje zbożowe|Олії зі злаків|谷物油
+cereal-pastas|Getreidenudeln|Cereal pasta|Макароны из злаков|Massas de cereais|Graanpasta|Pâtes de céréales|Pasta di cereali|Pasta de cereales|Makarony zbożowe|Макарони зі злаків|谷物面食
+cereal-semolinas|Getreidegrieß|Cereal semolina|Манная крупа из злаков|Sêmolas de cereais|Graangries|Semoules de céréales|Semole di cereali|Sémolas de cereales|Kasze manny zbożowe|Манні крупи зі злаків|谷物粗粉
+cereal-starches|Getreidestärke|Cereal starch|Крахмал из злаков|Amidos de cereais|Graanzetmeel|Amidons de céréales|Amidi di cereali|Almidones de cereales|Skrobia zbożowa|Крохмаль зі злаків|谷物淀粉
+cereal-syrups|Getreidesirup|Cereal syrup|Сироп из злаков|Xaropes de cereais|Graansiroop|Sirops de céréales|Sciroppi di cereali|Siropes de cereales|Syropy zbożowe|Сиропи зі злаків|谷物糖浆
+cereals-and-potatoes|Getreide & Kartoffeln|Cereals & potatoes|Злаки и картофель|Cereais e batatas|Granen en aardappelen|Céréales et pommes de terre|Cereali e patate|Cereales y patatas|Zboża i ziemniaki|Злаки та картопля|谷物和土豆
+cereals-based-beverages|Getränke auf Getreidebasis|Cereal-based beverages|Напитки на основе злаков|Bebidas à base de cereais|Dranken op basis van granen|Boissons à base de céréales|Bevande a base di cereali|Bebidas a base de cereales|Napoje na bazie zbóż|Напої на основі злаків|谷物基饮料
+cervelat|Zervelatwurst|Cervelat|Сервелат|Cervelat|Cervelaat|Cervelas|Cervelat|Cervelat|Cervelat|Сервелат|瑞士香肠
+champagnes|Champagner|Champagne|Шампанское|Champanhe|Champagne|Champagne|Champagne|Champán|Szampan|Шампанське|香槟
+cheese-and-onion-crisps|Chips Käse-Zwiebel|Cheese & onion crisps|Чипсы сыр и лук|Batatas fritas de queijo e cebola|Chips kaas-ui|Chips fromage-oignon|Patatine formaggio e cipolla|Patatas fritas de queso y cebolla|Chipsy serowo-cebulowe|Чипси сир і цибуля|芝士洋葱薯片
+cheese-pizzas|Käsepizza|Cheese pizzas|Сырные пиццы|Pizzas de queijo|Kaaspizza's|Pizzas au fromage|Pizze ai formaggi|Pizzas de queso|Pizze serowe|Сирні піци|奶酪披萨
+cheese-ravioli|Käse-Ravioli|Cheese ravioli|Равиоли с сыром|Ravioli de queijo|Ravioli met kaas|Raviolis au fromage|Ravioli ai formaggi|Ravioli de queso|Ravioli z serem|Равіолі з сиром|奶酪意式饺子
+cheese-sandwiches|Käsesandwiches|Cheese sandwiches|Сэндвичи с сыром|Sanduíches de queijo|Kaassandwiches|Sandwichs au fromage|Panini al formaggio|Sándwiches de queso|Kanapki z serem|Сендвічі з сиром|奶酪三明治
+cheese-spreads|Streichkäse|Cheese spreads|Плавленый сыр|Queijo para barrar|Smeerkaas|Fromages à tartiner|Formaggi spalmabili|Quesos para untar|Sery do smarowania|Плавлені сири|奶酪酱
+cheese-substitutes|Käseersatz|Cheese substitutes|Заменители сыра|Substitutos de queijo|Kaasvervangers|Substituts de fromage|Sostituti del formaggio|Sustitutos de queso|Substytuty sera|Замінники сиру|奶酪替代品
+cheeseburgers|Cheeseburger|Cheeseburgers|Чизбургеры|Cheeseburgers|Cheeseburgers|Cheeseburgers|Cheeseburger|Cheeseburgers|Cheeseburgery|Чізбургери|芝士汉堡
+cheesecakes|Käsekuchen|Cheesecakes|Чизкейки|Cheesecakes|Cheesecakes|Cheesecakes|Cheesecake|Tartas de queso|Serniki|Чізкейки|芝士蛋糕
+chestnut-flours|Kastanienmehl|Chestnut flour|Каштановая мука|Farinha de castanha|Kastanjemeel|Farine de châtaigne|Farina di castagne|Harina de castaña|Mąka kasztanowa|Каштанове борошно|栗子粉
+chestnut-spreads|Maronencreme|Chestnut spread|Каштановый крем|Creme de castanha|Kastanjepasta|Crème de marrons|Crema di marroni|Crema de castañas|Krem z kasztanów|Каштановий крем|栗子酱
+chestnuts|Maronen|Chestnuts|Каштаны|Castanhas|Kastanjes|Châtaignes|Castagne|Castañas|Kasztany|Каштани|栗子
+chicken-and-its-products|Hähnchenprodukte|Chicken products|Курица и продукты из неё|Frango e derivados|Kip en producten|Poulet et produits dérivés|Pollo e derivati|Pollo y derivados|Kurczak i produkty|Курка та продукти з неї|鸡肉及其制品
+chicken-curry|Hähnchencurry|Chicken curry|Куриное карри|Caril de frango|Kipcurry|Curry de poulet|Curry di pollo|Curry de pollo|Curry z kurczaka|Куряче каррі|咖喱鸡
+chicken-drumsticks|Hähnchenkeulen|Chicken drumsticks|Куриные голени|Coxas de frango|Kippenpoten|Pilons de poulet|Cosce di pollo|Muslos de pollo|Pałki z kurczaka|Курячі гомілки|鸡腿
+chicken-eggs|Hühnereier|Chicken eggs|Куриные яйца|Ovos de galinha|Kippeneieren|Œufs de poule|Uova di gallina|Huevos de gallina|Jaja kurze|Курячі яйця|鸡蛋
+chicken-nuggets|Chicken Nuggets|Chicken nuggets|Куриные наггетсы|Nuggets de frango|Kipnuggets|Nuggets de poulet|Nuggets di pollo|Nuggets de pollo|Nuggetsy z kurczaka|Курячі нагетси|鸡块
+chicken-preparations|Hähnchenzubereitungen|Chicken preparations|Куриные полуфабрикаты|Preparados de frango|Kipbereidingen|Préparations de poulet|Preparazioni di pollo|Preparados de pollo|Przetwory z kurczaka|Курячі напівфабрикати|鸡肉制品
+chicken-rillettes|Hähnchen-Rillettes|Chicken rillettes|Куриные рийеты|Rillettes de frango|Kiprillettes|Rillettes de poulet|Rillettes di pollo|Rillettes de pollo|Rillettes z kurczaka|Курячі рієти|鸡肉酱
+chicken-sandwiches|Hähnchensandwiches|Chicken sandwiches|Сэндвичи с курицей|Sanduíches de frango|Kipsandwiches|Sandwichs au poulet|Panini al pollo|Sándwiches de pollo|Kanapki z kurczakiem|Сендвічі з куркою|鸡肉三明治
+chicken-skewers|Hähnchenspieße|Chicken skewers|Куриные шашлычки|Espetadas de frango|Kipspiesjes|Brochettes de poulet|Spiedini di pollo|Brochetas de pollo|Szaszłyki z kurczaka|Курячі шашлики|鸡肉串
+chicken-tajine|Hähnchen-Tajine|Chicken tagine|Куриный тажин|Tagine de frango|Kiptajine|Tajine de poulet|Tajine di pollo|Tajín de pollo|Tadżin z kurczakiem|Курячий таджин|鸡肉塔吉锅
+chicken-tikka-masala|Chicken Tikka Masala|Chicken tikka masala|Курица тикка масала|Frango tikka masala|Kip tikka masala|Poulet tikka masala|Pollo tikka masala|Pollo tikka masala|Kurczak tikka masala|Курка тікка масала|玛莎拉烤鸡
+chicken-wraps|Hähnchen-Wraps|Chicken wraps|Врапы с курицей|Wraps de frango|Kipwraps|Wraps au poulet|Wrap al pollo|Wraps de pollo|Wrapy z kurczakiem|Врапи з куркою|鸡肉卷饼
+chickens|Hühner|Chickens|Курица|Frangos|Kippen|Poulets|Polli|Pollos|Kurczaki|Курки|鸡
+chives|Schnittlauch|Chives|Зелёный лук|Cebolinho|Bieslook|Ciboulette|Erba cipollina|Cebollino|Szczypiorek|Зелений лук|香葱
+chocolate-cakes|Schokoladenkuchen|Chocolate cakes|Шоколадные торты|Bolos de chocolate|Chocoladecakes|Gâteaux au chocolat|Torte al cioccolato|Pasteles de chocolate|Ciasta czekoladowe|Шоколадні торти|巧克力蛋糕
+chocolate-candies|Schokoladenkonfekt|Chocolate sweets|Шоколадные конфеты|Bombons de chocolate|Chocoladesnoepjes|Bonbons au chocolat|Cioccolatini|Bombones de chocolate|Cukierki czekoladowe|Шоколадні цукерки|巧克力糖果
+chocolate-cereal-bars|Müsliriegel mit Schokolade|Chocolate cereal bars|Злаковые батончики с шоколадом|Barras de cereais com chocolate|Mueslirepen met chocolade|Barres de céréales au chocolat|Barrette di cereali al cioccolato|Barritas de cereales con chocolate|Batony zbożowe z czekoladą|Злакові батончики з шоколадом|巧克力谷物棒
+chocolate-cereals|Schokoflocken|Chocolate cereals|Шоколадные хлопья|Cereais de chocolate|Chocoladegranen|Céréales au chocolat|Cereali al cioccolato|Cereales de chocolate|Płatki czekoladowe|Шоколадні пластівці|巧克力麦片
+chocolate-chip-cookies|Cookies mit Schokostückchen|Chocolate chip cookies|Печенье с шоколадной крошкой|Bolachas com pepitas de chocolate|Chocoladekoekjes|Cookies aux pépites de chocolat|Cookie con gocce di cioccolato|Galletas con pepitas de chocolate|Ciasteczka z kawałkami czekolady|Печиво з шоколадною крихтою|巧克力曲奇
+chocolate-covered-biscuits|Schokokekse|Chocolate-covered biscuits|Печенье в шоколаде|Bolachas com cobertura de chocolate|Chocoladebiscuits|Biscuits nappés de chocolat|Biscotti ricoperti di cioccolato|Galletas cubiertas de chocolate|Ciastka w czekoladzie|Печиво в шоколаді|巧克力饼干
+chocolate-covered-cherries|Schokokirschen|Chocolate-covered cherries|Вишня в шоколаде|Cerejas cobertas de chocolate|Chocoladekersen|Cerises enrobées de chocolat|Ciliegie ricoperte di cioccolato|Cerezas cubiertas de chocolate|Wiśnie w czekoladzie|Вишні в шоколаді|巧克力樱桃
+chocolate-covered-fruits|Schokofrüchte|Chocolate-covered fruit|Фрукты в шоколаде|Fruta coberta de chocolate|Fruit met chocolade|Fruits enrobés de chocolat|Frutta ricoperta di cioccolato|Fruta cubierta de chocolate|Owoce w czekoladzie|Фрукти в шоколаді|巧克力水果
+chocolate-creamy-puddings|Schokoladenpudding|Chocolate pudding|Шоколадный пудинг|Pudim de chocolate|Chocoladepudding|Crème dessert au chocolat|Budino al cioccolato|Natillas de chocolate|Budyń czekoladowy|Шоколадний пудинг|巧克力布丁
+chocolate-croissant|Schokocroissants|Pain au chocolat|Круассаны с шоколадом|Croissants de chocolate|Chocoladecroissants|Pains au chocolat|Cornetti al cioccolato|Cruasanes de chocolate|Croissanty czekoladowe|Круасани з шоколадом|巧克力羊角面包
+chocolate-desserts|Schokoladendesserts|Chocolate desserts|Шоколадные десерты|Sobremesas de chocolate|Chocoladedesserts|Desserts au chocolat|Dessert al cioccolato|Postres de chocolate|Desery czekoladowe|Шоколадні десерти|巧克力甜点
+chocolate-milks|Schokomilch|Chocolate milk|Шоколадное молоко|Leite com chocolate|Chocolademelk|Lait chocolaté|Latte al cioccolato|Leche con chocolate|Mleko czekoladowe|Шоколадне молоко|巧克力牛奶
+chocolate-molds|Schokoladenfiguren|Chocolate moulds|Шоколадные фигурки|Figuras de chocolate|Chocoladefiguren|Moulages en chocolat|Figure di cioccolato|Figuras de chocolate|Figurki czekoladowe|Шоколадні фігурки|巧克力造型
+chocolate-mousses|Mousse au Chocolat|Chocolate mousse|Шоколадный мусс|Mousse de chocolate|Chocolademousse|Mousse au chocolat|Mousse al cioccolato|Mousse de chocolate|Mus czekoladowy|Шоколадний мус|巧克力慕斯
+chocolate-sculptures|Schokoladenskulpturen|Chocolate sculptures|Шоколадные скульптуры|Esculturas de chocolate|Chocoladesculpturen|Sculptures en chocolat|Sculture di cioccolato|Esculturas de chocolate|Rzeźby czekoladowe|Шоколадні скульптури|巧克力雕塑
+chocolate-turron|Schokoladen-Turrón|Chocolate turrón|Туррон шоколадный|Torrão de chocolate|Chocolade-turrón|Touron au chocolat|Torrone al cioccolato|Turrón de chocolate|Turrón czekoladowy|Туррон шоколадний|巧克力牛轧糖
+chopped-olives|Gehackte Oliven|Chopped olives|Рубленые маслины|Azeitonas picadas|Gehakte olijven|Olives hachées|Olive tritate|Aceitunas picadas|Posiekane oliwki|Нарізані маслини|切碎橄榄
+chorizos|Chorizo|Chorizo|Чоризо|Chouriço|Chorizo|Chorizo|Chorizo|Chorizo|Chorizo|Чорізо|西班牙辣香肠
+christmas-chocolates|Weihnachtsschokolade|Christmas chocolates|Рождественский шоколад|Chocolates de Natal|Kerstchocolade|Chocolats de Noël|Cioccolatini natalizi|Chocolates navideños|Czekoladki świąteczne|Різдвяний шоколад|圣诞巧克力
+christmas-foods-and-drinks|Weihnachtliche Spezialitäten|Christmas food & drink|Рождественские продукты и напитки|Comida e bebida de Natal|Kerstproducten|Produits de Noël|Prodotti natalizi|Productos navideños|Produkty świąteczne|Різдвяні продукти та напої|圣诞食品和饮料
+christmas-sweets|Weihnachtssüßigkeiten|Christmas sweets|Рождественские сладости|Doces de Natal|Kerstsnoep|Confiseries de Noël|Dolci natalizi|Dulces navideños|Słodycze świąteczne|Різдвяні солодощі|圣诞糖果
+citrus-honeys|Zitrushonig|Citrus honey|Цитрусовый мёд|Mel de citrinos|Citrushoning|Miel d'agrumes|Miele di agrumi|Miel de cítricos|Miód cytrusowy|Цитрусовий мед|柑橘蜜
+citrus-jams|Zitrusmarmelade|Citrus jam|Цитрусовый джем|Doce de citrinos|Citrusjam|Confiture d'agrumes|Marmellata di agrumi|Mermelada de cítricos|Dżem cytrusowy|Цитрусовий джем|柑橘果酱
+clafoutis|Clafoutis|Clafoutis|Клафути|Clafoutis|Clafoutis|Clafoutis|Clafoutis|Clafoutis|Clafoutis|Клафуті|克拉芙缇
+clementine-juices|Clementinensaft|Clementine juice|Сок клементина|Sumo de clementina|Clementinesap|Jus de clémentine|Succo di clementina|Zumo de clementina|Sok z klementynek|Сік клементина|克莱门汀橘汁
+coarse-grained-salts|Grobes Salz|Coarse salt|Крупная соль|Sal grosso|Grof zout|Gros sel|Sale grosso|Sal gruesa|Sól gruboziarnista|Крупна сіль|粗盐
+coated-peanuts|Überzogene Erdnüsse|Coated peanuts|Арахис в глазури|Amendoins revestidos|Gecoate pinda's|Cacahuètes enrobées|Arachidi ricoperte|Cacahuetes recubiertos|Orzeszki ziemne w otoczce|Арахіс у глазурі|裹衣花生
+cochayuyo-seaweeds|Cochayuyo-Algen|Cochayuyo seaweed|Водоросли кочаую|Algas cochayuyo|Cochayuyo-zeewier|Algues cochayuyo|Alghe cochayuyo|Algas cochayuyo|Algi cochayuyo|Водорості кочаюйо|智利海带
+coco-white-beans|Weiße Cocobohnen|Coco white beans|Белая фасоль коко|Feijão coco branco|Witte cocobonen|Haricots coco blancs|Fagioli cocco bianchi|Alubias coco blancas|Fasola coco biała|Біла квасоля коко|白椰豆
+cocoa-and-chocolate-powders|Kakao- & Schokoladenpulver|Cocoa & chocolate powders|Какао и шоколадные порошки|Cacau e chocolate em pó|Cacao- en chocoladepoeder|Poudres de cacao et de chocolat|Polveri di cacao e cioccolato|Cacao y chocolate en polvo|Kakao i czekolada w proszku|Какао та шоколадні порошки|可可和巧克力粉
+cod-brandade|Brandade|Cod brandade|Брандад из трески|Brandade de bacalhau|Kabeljauwbrandade|Brandade de morue|Brandade di merluzzo|Brandada de bacalao|Brandade z dorsza|Брандад з тріски|鳕鱼泥
+cod-fillets|Kabeljaufilets|Cod fillets|Филе трески|Filetes de bacalhau|Kabeljauwfilets|Filets de cabillaud|Filetti di merluzzo|Filetes de bacalao|Filety z dorsza|Філе тріски|鳕鱼片
+cod-livers|Kabeljauleber|Cod liver|Печень трески|Fígado de bacalhau|Kabeljauwlever|Foie de morue|Fegato di merluzzo|Hígado de bacalao|Wątroba dorsza|Печінка тріски|鳕鱼肝
+coffee-desserts|Kaffeedesserts|Coffee desserts|Кофейные десерты|Sobremesas de café|Koffiedesserts|Desserts au café|Dessert al caffè|Postres de café|Desery kawowe|Кавові десерти|咖啡甜点
+coffee-drinks|Kaffeegetränke|Coffee drinks|Кофейные напитки|Bebidas de café|Koffiedranken|Boissons au café|Bevande al caffè|Bebidas de café|Napoje kawowe|Кавові напої|咖啡饮品
+cold-soups|Kalte Suppen|Cold soups|Холодные супы|Sopas frias|Koude soepen|Soupes froides|Zuppe fredde|Sopas frías|Zupy na zimno|Холодні супи|冷汤
+cold-starters|Kalte Vorspeisen|Cold starters|Холодные закуски|Entradas frias|Koude voorgerechten|Entrées froides|Antipasti freddi|Entrantes fríos|Zimne przystawki|Холодні закуски|冷盘
+common-beans|Gartenbohnen|Common beans|Фасоль обыкновенная|Feijões comuns|Gewone bonen|Haricots communs|Fagioli comuni|Alubias|Fasola zwykła|Квасоля звичайна|普通菜豆
+common-wheat-flours|Weizenmehl (Weichweizen)|Common wheat flour|Мука из мягкой пшеницы|Farinha de trigo mole|Meel van zachte tarwe|Farine de blé tendre|Farina di grano tenero|Harina de trigo blando|Mąka z pszenicy zwyczajnej|Борошно з м'якої пшениці|普通小麦粉
+common-wheats|Weichweizen|Common wheat|Мягкая пшеница|Trigo mole|Zachte tarwe|Blé tendre|Grano tenero|Trigo blando|Pszenica zwyczajna|М'яка пшениця|普通小麦
+condiment-pastes|Würzpasten|Condiment pastes|Приправы-пасты|Pastas condimentares|Kruidenpasta's|Pâtes condimentaires|Paste condimentari|Pastas condimentarias|Pasty przyprawowe|Приправи-пасти|调味酱
+condiments|Würzmittel|Condiments|Приправы и соусы|Condimentos|Specerijen en sauzen|Condiments|Condimenti|Condimentos|Przyprawy i sosy|Приправи та соуси|调味品
+conference-pears|Conference-Birnen|Conference pears|Груши Конференция|Peras Conference|Conference-peren|Poires Conférence|Pere Conference|Peras Conference|Gruszki Konferencja|Груші Конференція|会议梨
+cooked-chicken|Gekochtes Hähnchen|Cooked chicken|Варёная курица|Frango cozido|Gekookte kip|Poulet cuit|Pollo cotto|Pollo cocido|Gotowany kurczak|Варена курка|熟鸡肉
+cooked-gnocchis|Gekochte Gnocchi|Cooked gnocchi|Готовые ньокки|Nhoque cozido|Gekookte gnocchi|Gnocchis cuits|Gnocchi cotti|Ñoquis cocidos|Gotowane gnocchi|Готові ньоккі|熟意式团子
+cooked-poultries|Gekochtes Geflügel|Cooked poultry|Варёная птица|Aves cozidas|Gekookt gevogelte|Volaille cuite|Pollame cotto|Aves cocidas|Gotowany drób|Варена птиця|熟禽肉
+cooked-shrimps|Gekochte Garnelen|Cooked prawns|Варёные креветки|Camarões cozidos|Gekookte garnalen|Crevettes cuites|Gamberi cotti|Gambas cocidas|Gotowane krewetki|Варені креветки|熟虾
+cooking-helpers|Kochhelfer|Cooking helpers|Кулинарные помощники|Auxiliares de cozinha|Kookhulpmiddelen|Aides culinaires|Ausiliari da cucina|Auxiliares de cocina|Pomocniki kuchenne|Кулінарні помічники|烹饪辅料
+coppa|Coppa|Coppa|Коппа|Coppa|Coppa|Coppa|Coppa|Coppa|Coppa|Коппа|科帕火腿
+coriander-leaves|Korianderblätter|Coriander leaves|Листья кинзы|Folhas de coentros|Korianderblad|Feuilles de coriandre|Foglie di coriandolo|Hojas de cilantro|Liście kolendry|Листя коріандру|香菜叶
+corn-semolinas|Maisgrieß|Corn semolina|Кукурузная крупа|Sêmolas de milho|Maisgries|Semoules de maïs|Semole di mais|Sémolas de maíz|Kasza kukurydziana|Кукурудзяна крупа|玉米粗粉
+country-style-pates|Landpastete|Country-style pâté|Деревенский паштет|Patês rústicos|Landelijke paté|Pâtés de campagne|Paté di campagna|Patés de campiña|Pasztety wiejskie|Паштети по-селянськи|乡村肉酱
+cow-burrata|Burrata (Kuhmilch)|Cow's milk burrata|Буррата из коровьего молока|Burrata de leite de vaca|Burrata van koemelk|Burrata au lait de vache|Burrata di latte vaccino|Burrata de leche de vaca|Burrata z mleka krowiego|Буррата з коров'ячого молока|牛奶布拉塔奶酪
+cow-cheeses|Kuhmilchkäse|Cow's milk cheese|Сыры из коровьего молока|Queijos de vaca|Koeienkaas|Fromages de vache|Formaggi vaccini|Quesos de vaca|Sery z mleka krowiego|Сири з коров'ячого молока|牛奶奶酪
+cow-milk-yogurts|Kuhmilchjoghurt|Cow's milk yoghurt|Йогурты из коровьего молока|Iogurtes de leite de vaca|Koeienmelkyoghurt|Yaourts au lait de vache|Yogurt di latte vaccino|Yogures de leche de vaca|Jogurty z mleka krowiego|Йогурти з коров'ячого молока|牛奶酸奶
+cow-mozzarella|Mozzarella (Kuhmilch)|Cow's milk mozzarella|Моцарелла из коровьего молока|Mozzarela de leite de vaca|Mozzarella van koemelk|Mozzarella au lait de vache|Mozzarella di latte vaccino|Mozzarella de leche de vaca|Mozzarella z mleka krowiego|Моцарела з коров'ячого молока|牛奶马苏里拉
+crab|Krabben|Crab|Краб|Caranguejo|Krab|Crabe|Granchio|Cangrejo|Krab|Краб|螃蟹
+crabgrass|Fingerhirse|Crabgrass|Росичка|Milhã|Vingergras|Digitaire|Digitaria|Pasto de cangrejo|Palusznik|Росичка|马唐草
+cracked-marinated-green-olives|Marinierte grüne Oliven (gebrochen)|Cracked marinated green olives|Маринованные зелёные оливки колотые|Azeitonas verdes partidas marinadas|Gemarineerde gebroken groene olijven|Olives vertes cassées marinées|Olive verdi schiacciate marinate|Aceitunas verdes partidas aliñadas|Marynowane zielone oliwki łamane|Мариновані зелені оливки колоті|腌制裂口绿橄榄
+cracked-olives|Gebrochene Oliven|Cracked olives|Колотые оливки|Azeitonas partidas|Gebroken olijven|Olives cassées|Olive schiacciate|Aceitunas partidas|Oliwki łamane|Колоті оливки|裂口橄榄
+cream-cheeses|Frischkäse|Cream cheese|Сливочный сыр|Queijo creme|Roomkaas|Fromage frais|Formaggio fresco spalmabile|Queso crema|Serek śmietankowy|Вершковий сир|奶油奶酪
+cream-of-mushroom-soups|Champignoncremesuppe|Cream of mushroom soup|Грибной крем-суп|Creme de cogumelos|Champignonroomsoep|Velouté de champignons|Crema di funghi|Crema de champiñones|Zupa krem z pieczarek|Грибний крем-суп|奶油蘑菇汤
+cream-of-vegetable-soups|Gemüsecremesuppe|Cream of vegetable soup|Овощной крем-суп|Creme de legumes|Groenteroomsoep|Velouté de légumes|Crema di verdure|Crema de verduras|Zupa krem z warzyw|Овочевий крем-суп|奶油蔬菜汤
+cream-puff|Windbeutel|Cream puffs|Профитроли|Carolinas|Soesjes|Choux à la crème|Bignè|Lionesas|Ptysie|Профітролі|奶油泡芙
+cream-soups|Cremesuppen|Cream soups|Крем-супы|Cremes|Roomsoepen|Veloutés|Vellutate|Cremas|Zupy krem|Крем-супи|奶油汤
+creamy-almond-turron|Cremiges Mandel-Turrón|Creamy almond turrón|Туррон миндальный кремовый|Torrão cremoso de amêndoa|Romige amandel-turrón|Touron crémeux aux amandes|Torrone cremoso alle mandorle|Turrón de almendra cremoso|Kremowy turrón migdałowy|Туррон мигдалевий кремовий|奶油杏仁牛轧糖
+creamy-puddings|Pudding & Cremedesserts|Creamy puddings|Кремовые пудинги|Pudins cremosos|Roompuddingen|Crèmes desserts|Budini cremosi|Natillas|Kremowe budynie|Кремові пудинги|奶油布丁
+crepes|Crêpes|Crêpes|Блины-крепы|Crepes|Crêpes|Crêpes|Crêpes|Crepes|Naleśniki francuskie|Креп-млинці|可丽饼
+crepes-and-pancakes|Crêpes & Pfannkuchen|Crêpes & pancakes|Крепы и блинчики|Crepes e panquecas|Crêpes en pannenkoeken|Crêpes et galettes|Crêpes e pancake|Crepes y tortitas|Naleśniki|Крепи та млинці|可丽饼和煎饼
+crepes-dentelle|Crêpes dentelle|Crêpes dentelle|Крепы-дантель|Crêpes dentelle|Crêpes dentelle|Crêpes dentelle|Crêpes dentelle|Crêpes dentelle|Crêpes dentelle|Креп-дантель|法式蕾丝薄饼
+crispy-biscuits|Knusprige Kekse|Crispy biscuits|Хрустящее печенье|Bolachas estaladiças|Knapperige koekjes|Biscuits croustillants|Biscotti croccanti|Galletas crujientes|Chrupiące ciastka|Хрусткі печива|脆饼干
+croutons|Croûtons|Croutons|Сухарики для салата|Croutons|Croutons|Croûtons|Crostini|Picatostes|Grzanki|Грінки для салату|面包丁
+crumbles|Crumble|Crumbles|Крамбл|Crumbles|Crumbles|Crumbles|Crumble|Crumbles|Crumble|Крамбл|酥粒甜点
+crunchy-almond-turron|Knuspriges Mandel-Turrón|Crunchy almond turrón|Туррон миндальный хрустящий|Torrão crocante de amêndoa|Krokante amandel-turrón|Touron croquant aux amandes|Torrone croccante alle mandorle|Turrón de almendra crujiente|Chrupiący turrón migdałowy|Туррон мигдалевий хрусткий|脆杏仁牛轧糖
+crunchy-cereal-clusters|Knuspercluster|Crunchy cereal clusters|Хрустящие злаковые кластеры|Clusters de cereais crocantes|Knapperige graanclusters|Clusters de céréales croustillants|Cluster croccanti di cereali|Clusters crujientes de cereales|Chrupiące klastry zbożowe|Хрусткі злакові кластери|脆谷物块
+crunchy-peanut-butters|Erdnussbutter (stückig)|Crunchy peanut butter|Арахисовая паста с кусочками|Manteiga de amendoim crocante|Pindakaas met stukjes|Beurre de cacahuète croquant|Burro di arachidi croccante|Mantequilla de cacahuete crujiente|Masło orzechowe chrupiące|Арахісова паста з шматочками|颗粒花生酱
+crustaceans|Krebstiere|Crustaceans|Ракообразные|Crustáceos|Schaaldieren|Crustacés|Crostacei|Crustáceos|Skorupiaki|Ракоподібні|甲壳类
+cucumber-salads|Gurkensalate|Cucumber salads|Салаты из огурцов|Saladas de pepino|Komkommersalades|Salades de concombre|Insalate di cetrioli|Ensaladas de pepino|Sałatki z ogórków|Салати з огірків|黄瓜沙拉
+culinary-plants|Kulinarische Pflanzen|Culinary plants|Пищевые растения|Plantas culinárias|Culinaire planten|Plantes culinaires|Piante culinarie|Plantas culinarias|Rośliny kulinarne|Харчові рослини|食用植物
+cured-sausages|Rohwurst|Cured sausages|Сырокопчёные колбасы|Enchidos curados|Gedroogde worsten|Saucisses sèches|Salumi stagionati|Embutidos curados|Kiełbasy surowe dojrzewające|Сиров'ялені ковбаси|腊肠
+dairy-desserts|Milchdesserts|Dairy desserts|Молочные десерты|Sobremesas lácteas|Zuiveldesserts|Desserts lactés|Dessert al latte|Postres lácteos|Desery mleczne|Молочні десерти|乳制甜点
+dairy-mousses|Milchmousse|Dairy mousses|Молочные муссы|Mousses lácteas|Zuivelmousses|Mousses lactées|Mousse al latte|Mousses lácteas|Musy mleczne|Молочні муси|乳制慕斯
+dairy-spreads|Milchstreichfett|Dairy spreads|Молочные спреды|Cremes de barrar lácteos|Zuivelsmeersels|Pâtes à tartiner laitières|Creme spalmabili lattiero-casearie|Cremas lácteas para untar|Masła mieszane do smarowania|Молочні спреди|乳制抹酱
+dairy-substitutes|Milchersatz|Dairy substitutes|Заменители молочных продуктов|Substitutos de lacticínios|Zuivelvervangers|Substituts laitiers|Sostituti dei latticini|Sustitutos lácteos|Zamienniki nabiału|Замінники молочних продуктів|乳制品替代品
+dark-chocolate-biscuits|Kekse mit Zartbitterschokolade|Dark chocolate biscuits|Печенье с тёмным шоколадом|Bolachas de chocolate negro|Koekjes met pure chocolade|Biscuits au chocolat noir|Biscotti al cioccolato fondente|Galletas de chocolate negro|Ciastka z gorzką czekoladą|Печиво з чорним шоколадом|黑巧克力饼干
+decaffeinated-coffees|Entkoffeinierter Kaffee|Decaffeinated coffee|Кофе без кофеина|Café descafeinado|Cafeïnevrije koffie|Cafés décaféinés|Caffè decaffeinato|Café descafeinado|Kawa bezkofeinowa|Кава без кофеїну|低咖啡因咖啡
+decorticated-lentils|Geschälte Linsen|Hulled lentils|Очищенная чечевица|Lentilhas descascadas|Gepelde linzen|Lentilles décortiquées|Lenticchie decorticate|Lentejas peladas|Soczewica łuskana|Очищена сочевиця|去皮扁豆
+decorticated-red-lentils|Geschälte rote Linsen|Hulled red lentils|Очищенная красная чечевица|Lentilhas vermelhas descascadas|Gepelde rode linzen|Lentilles corail décortiquées|Lenticchie rosse decorticate|Lentejas rojas peladas|Soczewica czerwona łuskana|Очищена червона сочевиця|去皮红扁豆
+dehydrated-beverages|Getränkepulver|Dehydrated beverages|Сухие напитки|Bebidas desidratadas|Gedroogde dranken|Boissons déshydratées|Bevande disidratate|Bebidas deshidratadas|Napoje w proszku|Сухі напої|脱水饮料
+dehydrated-broths|Instantbrühe|Dehydrated broths|Сухие бульоны|Caldos desidratados|Gedroogde bouillons|Bouillons déshydratés|Brodi disidratati|Caldos deshidratados|Buliony w proszku|Сухі бульйони|脱水高汤
+dehydrated-soups|Instantsuppen|Dehydrated soups|Сухие супы|Sopas desidratadas|Gedroogde soepen|Soupes déshydratées|Zuppe disidratate|Sopas deshidratadas|Zupy instant|Сухі супи|脱水汤
+dehydrated-vegetable-bouillons|Gemüsebrühe (instant)|Dehydrated vegetable bouillons|Сухие овощные бульоны|Caldos de legumes desidratados|Gedroogde groentebouillons|Bouillons de légumes déshydratés|Brodi vegetali disidratati|Caldos vegetales deshidratados|Buliony warzywne w proszku|Сухі овочеві бульйони|脱水蔬菜高汤
+dehydrated-vegetable-soups|Gemüsesuppenpulver|Dehydrated vegetable soups|Сухие овощные супы|Sopas de legumes desidratadas|Gedroogde groentesoepen|Soupes de légumes déshydratées|Zuppe di verdure disidratate|Sopas de verduras deshidratadas|Zupy warzywne w proszku|Сухі овочеві супи|脱水蔬菜汤
+dessert-mixes|Dessertmischungen|Dessert mixes|Смеси для десертов|Misturas para sobremesas|Dessertmixen|Préparations pour desserts|Preparati per dolci|Preparados para postres|Mieszanki do deserów|Суміші для десертів|甜点预拌粉
+dessert-sauces|Dessertsaucen|Dessert sauces|Десертные соусы|Molhos para sobremesas|Dessertsauzen|Sauces pour desserts|Salse per dolci|Salsas para postres|Sosy do deserów|Десертні соуси|甜点酱
+diet-beverages|Kalorienarme Getränke|Diet beverages|Диетические напитки|Bebidas dietéticas|Dieetdranken|Boissons light|Bevande dietetiche|Bebidas light|Napoje dietetyczne|Дієтичні напої|低热量饮料
+diet-sodas|Kalorienarme Limonaden|Diet sodas|Диетические газировки|Refrigerantes dietéticos|Dieetfrisdranken|Sodas light|Bibite gassate dietetiche|Refrescos light|Napoje gazowane dietetyczne|Дієтичні газовані напої|低热量汽水
+dishes-that-may-contain-horse-meat|Gerichte mit möglichem Pferdefleisch|Dishes that may contain horse meat|Блюда, которые могут содержать конину|Pratos que podem conter carne de cavalo|Gerechten die paardenvlees kunnen bevatten|Plats pouvant contenir de la viande de cheval|Piatti che possono contenere carne di cavallo|Platos que pueden contener carne de caballo|Dania mogące zawierać koninę|Страви, що можуть містити конину|可能含马肉的菜肴
+distilled-beverages|Destillierte Getränke|Distilled beverages|Дистиллированные напитки|Bebidas destiladas|Gedistilleerde dranken|Boissons distillées|Bevande distillate|Bebidas destiladas|Napoje destylowane|Дистильовані напої|蒸馏酒
+doogh-and-ayran|Dugh & Ayran|Doogh and ayran|Дуг и айран|Doogh e ayran|Doogh en ayran|Doogh et ayran|Doogh e ayran|Doogh y ayran|Doogh i ayran|Дуг та айран|多格和艾兰
+double-cheeseburgers|Doppel-Cheeseburger|Double cheeseburgers|Двойные чизбургеры|Cheeseburgers duplos|Dubbele cheeseburgers|Double cheeseburgers|Doppi cheeseburger|Cheeseburgers dobles|Podwójne cheeseburgery|Подвійні чізбургери|双层芝士汉堡
+double-crust-pies|Gedeckte Pasteten|Double crust pies|Закрытые пироги|Tartes de massa dupla|Gesloten taarten|Tourtes à deux croûtes|Torte a doppia crosta|Tartas de doble masa|Pasztety z podwójnym ciastem|Закриті пироги|双层酥皮派
+dried-aromatic-plants|Getrocknete Kräuter|Dried aromatic plants|Сушёные ароматические растения|Plantas aromáticas secas|Gedroogde kruiden|Plantes aromatiques séchées|Piante aromatiche essiccate|Plantas aromáticas secas|Suszone rośliny aromatyczne|Сушені ароматичні рослини|干香草
+dried-cherry-tomatoes|Getrocknete Kirschtomaten|Dried cherry tomatoes|Вяленые томаты черри|Tomates cereja secos|Gedroogde kerstomaten|Tomates cerises séchées|Pomodorini secchi|Tomates cherry secos|Suszone pomidorki koktajlowe|В'ялені томати черрі|干樱桃番茄
+dried-coconuts|Getrocknete Kokosnuss|Dried coconut|Сушёный кокос|Coco seco|Gedroogde kokos|Noix de coco séchée|Cocco essiccato|Coco seco|Suszony kokos|Сушений кокос|椰干
+dried-green-lentils|Getrocknete grüne Linsen|Dried green lentils|Сушёная зелёная чечевица|Lentilhas verdes secas|Gedroogde groene linzen|Lentilles vertes sèches|Lenticchie verdi secche|Lentejas verdes secas|Suszona zielona soczewica|Сушена зелена сочевиця|干绿扁豆
+dried-hams|Rohschinken|Dried hams|Сыровяленая ветчина|Presuntos curados|Gedroogde hammen|Jambons secs|Prosciutti stagionati|Jamones curados|Szynki surowe dojrzewające|Сиров'ялена шинка|风干火腿
+dried-lentils|Getrocknete Linsen|Dried lentils|Сушёная чечевица|Lentilhas secas|Gedroogde linzen|Lentilles sèches|Lenticchie secche|Lentejas secas|Suszona soczewica|Сушена сочевиця|干扁豆
+dried-meals|Trockenmahlzeiten|Dried meals|Сухие готовые блюда|Refeições desidratadas|Gedroogde maaltijden|Plats déshydratés|Piatti disidratati|Platos deshidratados|Dania instant|Сухі готові страви|脱水餐
+dried-meats|Trockenfleisch|Dried meats|Вяленое мясо|Carnes secas|Gedroogd vlees|Viandes séchées|Carni essiccate|Carnes secas|Mięso suszone|В'ялене м'ясо|肉干
+dried-mushrooms|Getrocknete Pilze|Dried mushrooms|Сушёные грибы|Cogumelos secos|Gedroogde paddenstoelen|Champignons séchés|Funghi secchi|Setas secas|Suszone grzyby|Сушені гриби|干蘑菇
+dried-nori-seaweeds|Getrocknete Nori-Algen|Dried nori seaweed|Сушёные водоросли нори|Algas nori secas|Gedroogd nori-zeewier|Algues nori séchées|Alghe nori essiccate|Algas nori secas|Suszone algi nori|Сушені водорості норі|干紫菜
+dried-peppercorns|Getrocknete Pfefferkörner|Dried peppercorns|Сушёные зёрна перца|Pimenta seca em grão|Gedroogde peperkorrels|Grains de poivre séchés|Pepe in grani essiccato|Granos de pimienta secos|Suszony pieprz ziarnisty|Сушені зерна перцю|干胡椒粒
+dried-plant-based-foods|Getrocknete pflanzliche Lebensmittel|Dried plant-based foods|Сушёные растительные продукты|Alimentos vegetais secos|Gedroogde plantaardige voeding|Aliments végétaux séchés|Alimenti vegetali essiccati|Alimentos vegetales secos|Suszone produkty roślinne|Сушені рослинні продукти|干植物性食品
+dried-products|Trockenprodukte|Dried products|Сушёные продукты|Produtos secos|Gedroogde producten|Produits séchés|Prodotti essiccati|Productos secos|Produkty suszone|Сушені продукти|干制品
+dried-products-to-be-rehydrated|Trockenprodukte zum Aufbereiten|Dried products to be rehydrated|Сухие продукты для восстановления|Produtos secos para reidratar|Gedroogde producten om te rehydrateren|Produits séchés à réhydrater|Prodotti secchi da reidratare|Productos secos para rehidratar|Produkty suszone do rehydratacji|Сухі продукти для відновлення|需复水的干制品
+dried-sea-lettuce-seaweeds|Getrockneter Meersalat|Dried sea lettuce|Сушёный морской салат|Alface-do-mar seca|Gedroogde zeesla|Laitue de mer séchée|Lattuga di mare essiccata|Lechuga de mar seca|Suszona sałata morska|Сушений морський салат|干海莴苣
+dried-seaweeds|Getrocknete Algen|Dried seaweed|Сушёные водоросли|Algas secas|Gedroogd zeewier|Algues séchées|Alghe essiccate|Algas secas|Suszone algi|Сушені водорості|干海藻
+dried-vegetables|Getrocknetes Gemüse|Dried vegetables|Сушёные овощи|Legumes secos|Gedroogde groenten|Légumes séchés|Verdure essiccate|Verduras secas|Suszone warzywa|Сушені овочі|干蔬菜
+dry-biscuits|Trockenkekse|Dry biscuits|Сухое печенье|Bolachas secas|Droge koekjes|Biscuits secs|Biscotti secchi|Galletas secas|Ciastka suche|Сухе печиво|干饼干
+dry-egg-pastas|Trockene Eiernudeln|Dry egg pasta|Сухие яичные макароны|Massa de ovos seca|Droge eierpasta|Pâtes aux œufs sèches|Pasta all'uovo secca|Pasta al huevo seca|Suchy makaron jajeczny|Сухі яєчні макарони|干蛋面
+dry-pastas|Trockene Nudeln|Dry pasta|Сухие макароны|Massas secas|Droge pasta|Pâtes sèches|Pasta secca|Pasta seca|Makaron suchy|Сухі макарони|干面食
+duchesse-potatoes|Herzoginkartoffeln|Duchess potatoes|Картофель дюшес|Batatas duquesa|Hertogin-aardappelen|Pommes duchesse|Patate duchessa|Patatas duquesa|Ziemniaki księżnej|Картопля дюшес|公爵夫人土豆
+duck-legs|Entenkeulen|Duck legs|Утиные ножки|Coxas de pato|Eendenpoten|Cuisses de canard|Cosce di anatra|Muslos de pato|Udka z kaczki|Качині ніжки|鸭腿
+duck-rillettes|Enten-Rillettes|Duck rillettes|Утиные рийеты|Rillettes de pato|Eendenrillettes|Rillettes de canard|Rillettes di anatra|Rillettes de pato|Rillettes z kaczki|Качині рієти|鸭肉酱
+duck-terrines|Ententerrinen|Duck terrines|Утиные террины|Terrinas de pato|Eendenterrines|Terrines de canard|Terrine di anatra|Terrinas de pato|Terriny z kaczki|Качині терини|鸭肉冻派
+dulse-seaweeds|Dulse-Algen|Dulse seaweed|Водоросли дульсе|Algas dulse|Dulse-zeewier|Algues dulse|Alghe dulse|Algas dulse|Algi dulse|Водорості дульсе|紫菜
+durum-wheat-pasta|Hartweizennudeln|Durum wheat pasta|Макароны из твёрдой пшеницы|Massa de trigo duro|Pasta van durumtarwe|Pâtes de blé dur|Pasta di grano duro|Pasta de trigo duro|Makaron z pszenicy durum|Макарони з твердої пшениці|硬粒小麦面食
+durum-wheat-spaghetti|Hartweizenspaghetti|Durum wheat spaghetti|Спагетти из твёрдой пшеницы|Esparguete de trigo duro|Spaghetti van durumtarwe|Spaghetti de blé dur|Spaghetti di grano duro|Espaguetis de trigo duro|Spaghetti z pszenicy durum|Спагетті з твердої пшениці|硬粒小麦意面
+easter-eggs|Ostereier|Easter eggs|Пасхальные яйца|Ovos de Páscoa|Paaseieren|Œufs de Pâques|Uova di Pasqua|Huevos de Pascua|Pisanki|Великодні яйця|复活节彩蛋
+easter-foods-and-drinks|Osterspezialitäten|Easter food & drink|Пасхальные продукты и напитки|Comida e bebida de Páscoa|Paasproducten|Produits de Pâques|Prodotti pasquali|Productos de Pascua|Produkty wielkanocne|Великодні продукти та напої|复活节食品和饮料
+eaux-de-vie|Obstbrände|Eaux-de-vie|Эо-де-ви|Aguardentes|Eaux-de-vie|Eaux-de-vie|Acquaviti|Aguardientes|Eaux-de-vie|О-де-ві|白兰地烈酒
+eclairs|Eclairs|Éclairs|Эклеры|Éclairs|Eclairs|Éclairs|Éclair|Éclairs|Eklery|Еклери|闪电泡芙
+egg-free-mayonnaises|Eifreie Mayonnaise|Egg-free mayonnaise|Майонез без яиц|Maionese sem ovo|Eivrije mayonaise|Mayonnaises sans œuf|Maionese senza uova|Mayonesas sin huevo|Majonezy bez jaj|Майонез без яєць|无蛋蛋黄酱
+egg-pastas|Eiernudeln|Egg pasta|Яичные макароны|Massa de ovos|Eierpasta|Pâtes aux œufs|Pasta all'uovo|Pasta al huevo|Makaron jajeczny|Яєчні макарони|蛋面
+egg-white|Eiweiß|Egg white|Яичный белок|Clara de ovo|Eiwit|Blanc d'œuf|Albume|Clara de huevo|Białko jaja|Яєчний білок|蛋清
+einkorn-wheat-flours|Einkornmehl|Einkorn flour|Мука из однозернянки|Farinha de trigo-einkorn|Eenkoornmeel|Farine de petit épeautre|Farina di farro monococco|Harina de escanda menor|Mąka płaskurkowa|Борошно з однозернянки|单粒小麦粉
+elderberry-products|Holunderprodukte|Elderberry products|Продукты из бузины|Produtos de sabugueiro|Vlierbesproducten|Produits au sureau|Prodotti al sambuco|Productos de saúco|Produkty z czarnego bzu|Продукти з бузини|接骨木产品
+energy-bars|Energieriegel|Energy bars|Энергетические батончики|Barras energéticas|Energierepen|Barres énergétiques|Barrette energetiche|Barritas energéticas|Batony energetyczne|Енергетичні батончики|能量棒
+extra-virgin-olive-oils|Natives Olivenöl extra|Extra virgin olive oil|Оливковое масло extra virgin|Azeite virgem extra|Extra vierge olijfolie|Huile d'olive vierge extra|Olio extravergine di oliva|Aceite de oliva virgen extra|Oliwa z oliwek extra virgin|Оливкова олія extra virgin|特级初榨橄榄油
+extruded-cereals|Extrudiertes Getreide|Extruded cereals|Экструдированные злаки|Cereais extrudidos|Geëxtrudeerde granen|Céréales extrudées|Cereali estrusi|Cereales extrusionados|Zboża ekstrudowane|Екструдовані злаки|膨化谷物
+extruded-crispbreads|Knäckebrot (extrudiert)|Extruded crispbreads|Экструдированные хлебцы|Pães estaladiços extrudidos|Geëxtrudeerde knäckebröd|Pains croustillants extrudés|Gallette estruse|Panes crujientes extrusionados|Chrupki ekstrudowane|Екструдовані хлібці|膨化脆面包
+extruded-flakes|Extrudierte Flocken|Extruded flakes|Экструдированные хлопья|Flocos extrudidos|Geëxtrudeerde vlokken|Flocons extrudés|Fiocchi estrusi|Copos extrusionados|Płatki ekstrudowane|Екструдовані пластівці|膨化片
+falafels|Falafel|Falafel|Фалафель|Falafel|Falafel|Falafels|Falafel|Falafel|Falafel|Фалафель|炸豆丸子
+farmed-caviars|Zuchtkaviar|Farmed caviar|Икра от выращенных рыб|Caviar de aquacultura|Kweekkaviaar|Caviar d'élevage|Caviale d'allevamento|Caviar de acuicultura|Kawior z hodowli|Ікра від вирощених риб|养殖鱼子酱
+farming-products|Landwirtschaftliche Produkte|Farming products|Сельскохозяйственные продукты|Produtos agrícolas|Landbouwproducten|Produits d'élevage et d'agriculture|Prodotti agricoli|Productos agrícolas|Produkty rolne|Сільськогосподарські продукти|农产品
+fatty-fishes|Fettfische|Fatty fish|Жирная рыба|Peixes gordos|Vette vis|Poissons gras|Pesce grasso|Pescados grasos|Ryby tłuste|Жирна риба|多脂鱼
+fennel-bulbs|Fenchelknollen|Fennel bulbs|Луковицы фенхеля|Bolbos de funcho|Venkelknollen|Bulbes de fenouil|Finocchi|Bulbos de hinojo|Bulwy kopru włoskiego|Цибулини фенхелю|茴香球茎
+fenugreek-leaves|Bockshornkleeblätter|Fenugreek leaves|Листья пажитника|Folhas de feno-grego|Fenegriekbladeren|Feuilles de fenugrec|Foglie di fieno greco|Hojas de fenogreco|Liście kozieradki|Листя пажитника|葫芦巴叶
+fenugreek-products|Bockshornkleeprodukte|Fenugreek products|Продукты из пажитника|Produtos de feno-grego|Fenegriekproducten|Produits au fenugrec|Prodotti al fieno greco|Productos de fenogreco|Produkty z kozieradki|Продукти з пажитника|葫芦巴产品
+fenugreek-seeds|Bockshornkleesamen|Fenugreek seeds|Семена пажитника|Sementes de feno-grego|Fenegriekzaad|Graines de fenugrec|Semi di fieno greco|Semillas de fenogreco|Nasiona kozieradki|Насіння пажитника|葫芦巴籽
+fermented-creams|Saure Sahne|Fermented creams|Ферментированные сливки|Natas fermentadas|Gefermenteerde room|Crèmes fermentées|Panne fermentate|Natas fermentadas|Śmietany fermentowane|Ферментовані вершки|发酵奶油
+fermented-dairy-desserts|Fermentierte Milchdesserts|Fermented dairy desserts|Ферментированные молочные десерты|Sobremesas lácteas fermentadas|Gefermenteerde zuiveldesserts|Desserts lactés fermentés|Dessert lattiero-caseari fermentati|Postres lácteos fermentados|Fermentowane desery mleczne|Ферментовані молочні десерти|发酵乳制甜点
+fermented-drinks|Fermentierte Getränke|Fermented drinks|Ферментированные напитки|Bebidas fermentadas|Gefermenteerde dranken|Boissons fermentées|Bevande fermentate|Bebidas fermentadas|Napoje fermentowane|Ферментовані напої|发酵饮料
+fermented-foods|Fermentierte Lebensmittel|Fermented foods|Ферментированные продукты|Alimentos fermentados|Gefermenteerde voeding|Aliments fermentés|Alimenti fermentati|Alimentos fermentados|Produkty fermentowane|Ферментовані продукти|发酵食品
+fermented-milk-drinks|Fermentierte Milchgetränke|Fermented milk drinks|Кисломолочные напитки|Bebidas de leite fermentado|Gefermenteerde melkdranken|Boissons lactées fermentées|Bevande a base di latte fermentato|Bebidas de leche fermentada|Napoje mleczne fermentowane|Кисломолочні напої|发酵乳饮品
+fermented-milk-products|Sauermilchprodukte|Fermented milk products|Кисломолочные продукты|Produtos de leite fermentado|Gefermenteerde zuivelproducten|Produits laitiers fermentés|Latticini fermentati|Productos lácteos fermentados|Fermentowane produkty mleczne|Кисломолочні продукти|发酵乳制品
+fermented-vegetables|Fermentiertes Gemüse|Fermented vegetables|Ферментированные овощи|Legumes fermentados|Gefermenteerde groenten|Légumes fermentés|Verdure fermentate|Verduras fermentadas|Warzywa fermentowane|Ферментовані овочі|发酵蔬菜
+festive-foods|Festtagsessen|Festive foods|Праздничные блюда|Comida festiva|Feestelijke gerechten|Aliments de fête|Cibi festivi|Comidas festivas|Potrawy świąteczne|Святкові страви|节日食品
+filled-biscuits|Gefüllte Kekse|Filled biscuits|Печенье с начинкой|Bolachas recheadas|Gevulde koekjes|Biscuits fourrés|Biscotti ripieni|Galletas rellenas|Ciastka nadziewane|Печиво з начинкою|夹心饼干
+filled-cereals|Gefüllte Cerealien|Filled cereals|Злаки с начинкой|Cereais recheados|Gevulde granen|Céréales fourrées|Cereali ripieni|Cereales rellenos|Płatki nadziewane|Злаки з начинкою|夹心谷物
+filled-chocolates|Gefüllte Schokolade|Filled chocolates|Шоколад с начинкой|Chocolates recheados|Gevulde chocolade|Chocolats fourrés|Cioccolatini ripieni|Chocolates rellenos|Czekolada nadziewana|Шоколад з начинкою|夹心巧克力
+filled-crepes|Gefüllte Crêpes|Filled crêpes|Блинчики с начинкой|Crepes recheados|Gevulde crêpes|Crêpes fourrées|Crêpes ripiene|Crepes rellenos|Naleśniki nadziewane|Млинці з начинкою|馅饼可丽饼
+filled-croissants|Gefüllte Croissants|Filled croissants|Круассаны с начинкой|Croissants recheados|Gevulde croissants|Croissants fourrés|Cornetti ripieni|Cruasanes rellenos|Croissanty nadziewane|Круасани з начинкою|夹心羊角面包
+filled-milk-chocolates|Gefüllte Milchschokolade|Filled milk chocolates|Молочный шоколад с начинкой|Chocolates de leite recheados|Gevulde melkchocolade|Chocolats au lait fourrés|Cioccolatini al latte ripieni|Chocolates con leche rellenos|Czekolada mleczna nadziewana|Молочний шоколад з начинкою|夹心牛奶巧克力
+fine-grained-salts|Feines Salz|Fine salt|Мелкая соль|Sal fino|Fijn zout|Sel fin|Sale fino|Sal fina|Sól drobnoziarnista|Дрібна сіль|细盐
+fish-and-meat-and-eggs|Fisch, Fleisch & Eier|Fish, meat & eggs|Рыба, мясо и яйца|Peixe, carne e ovos|Vis, vlees en eieren|Poissons, viandes et œufs|Pesce, carne e uova|Pescado, carne y huevos|Ryby, mięso i jaja|Риба, м'ясо та яйця|鱼肉蛋类
+fish-eggs|Fischrogen|Fish roe|Рыбья икра|Ovas de peixe|Viseieren|Œufs de poisson|Uova di pesce|Huevas de pescado|Ikra rybia|Рибна ікра|鱼卵
+fish-fillets|Fischfilets|Fish fillets|Рыбное филе|Filetes de peixe|Visfilets|Filets de poisson|Filetti di pesce|Filetes de pescado|Filety rybne|Рибне філе|鱼片
+fish-oils|Fischöle|Fish oils|Рыбий жир|Óleos de peixe|Visoliën|Huiles de poisson|Oli di pesce|Aceites de pescado|Oleje rybne|Риб'ячий жир|鱼油
+fish-preparations|Fischzubereitungen|Fish preparations|Рыбные полуфабрикаты|Preparados de peixe|Visbereidingen|Préparations de poisson|Preparazioni di pesce|Preparados de pescado|Przetwory rybne|Рибні напівфабрикати|鱼制品
+fish-quenelles|Fischklößchen|Fish quenelles|Рыбные кнели|Quenelles de peixe|Viskwenelles|Quenelles de poisson|Quenelle di pesce|Quenelles de pescado|Pulpeciki rybne|Рибні кнелі|鱼丸
+fish-rillettes|Fisch-Rillettes|Fish rillettes|Рыбные рийеты|Rillettes de peixe|Visrillettes|Rillettes de poisson|Rillettes di pesce|Rillettes de pescado|Rillettes rybne|Рибні рієти|鱼肉酱
+fish-sandwiches|Fischsandwiches|Fish sandwiches|Сэндвичи с рыбой|Sanduíches de peixe|Vissandwiches|Sandwichs au poisson|Panini al pesce|Sándwiches de pescado|Kanapki z rybą|Сендвічі з рибою|鱼肉三明治
+fish-soups|Fischsuppen|Fish soups|Рыбные супы|Sopas de peixe|Vissoepen|Soupes de poisson|Zuppe di pesce|Sopas de pescado|Zupy rybne|Рибні супи|鱼汤
+fish-terrines|Fischterrinen|Fish terrines|Рыбные террины|Terrinas de peixe|Visterrines|Terrines de poisson|Terrine di pesce|Terrinas de pescado|Terriny rybne|Рибні терини|鱼肉冻派
+flake-salts|Salzflocken|Flake salt|Хлопьевидная соль|Flocos de sal|Zoutvlokken|Flocons de sel|Sale in fiocchi|Escamas de sal|Płatki soli|Пластівці солі|片状盐
+flake-sea-salts|Meersalzflocken|Flaky sea salt|Хлопьевидная морская соль|Flocos de sal marinho|Zeezoutvlokken|Flocons de sel de mer|Sale marino in fiocchi|Escamas de sal marina|Płatki soli morskiej|Пластівці морської солі|海盐片
+flakes|Getreideflocken|Flakes|Хлопья|Flocos|Vlokken|Flocons|Fiocchi|Copos|Płatki|Пластівці|麦片
+flaky-biscuits|Blätterteiggebäck|Flaky biscuits|Слоёное печенье|Bolachas folhadas|Bladerdeegkoekjes|Biscuits feuilletés|Biscotti sfogliati|Galletas hojaldradas|Ciastka francuskie|Листкове печиво|酥皮饼干
+flammekueche|Flammkuchen|Flammkuchen|Фламмкухен|Flammkuchen|Flammkuchen|Tarte flambée|Flammkuchen|Flammkuchen|Flammkuchen|Фламмкухен|火焰薄饼
+flans|Flans|Flans|Флан|Flans|Flans|Flans|Flan|Flanes|Flany|Флан|布丁派
+flavors|Aromen|Flavours|Ароматизаторы|Aromas|Smaakstoffen|Arômes|Aromi|Aromas|Aromaty|Ароматизатори|香料
+flavour-enhancers|Geschmacksverstärker|Flavour enhancers|Усилители вкуса|Intensificadores de sabor|Smaakversterkers|Exhausteurs de goût|Esaltatori di sapidità|Potenciadores del sabor|Wzmacniacze smaku|Підсилювачі смаку|增味剂
+fleur-de-sel-chocolates|Schokolade mit Fleur de Sel|Fleur de sel chocolates|Шоколад с флёр де сель|Chocolates com flor de sal|Chocolade met fleur de sel|Chocolats à la fleur de sel|Cioccolatini al fior di sale|Chocolates con flor de sal|Czekolady z fleur de sel|Шоколад із флер де сель|海盐之花巧克力
+flower-honeys|Blütenhonig|Flower honey|Цветочный мёд|Mel de flores|Bloemenhoning|Miels de fleurs|Miele millefiori|Mieles de flores|Miody kwiatowe|Квітковий мед|花蜜
+flower-preserves|Blütenkonfitüre|Flower preserves|Цветочные консервы|Conservas de flores|Bloemenconserven|Conserves de fleurs|Conserve di fiori|Conservas de flores|Przetwory z kwiatów|Квіткові консерви|花卉蜜饯
+foies-gras|Foie gras|Foie gras|Фуа-гра|Foie gras|Foie gras|Foies gras|Foie gras|Foie gras|Foie gras|Фуа-гра|鹅肝
+food-additives|Lebensmittelzusatzstoffe|Food additives|Пищевые добавки|Aditivos alimentares|Voedingsadditieven|Additifs alimentaires|Additivi alimentari|Aditivos alimentarios|Dodatki do żywności|Харчові добавки|食品添加剂
+food-decorations|Speisedekoration|Food decorations|Пищевые украшения|Decorações alimentares|Voedseldecoraties|Décorations alimentaires|Decorazioni alimentari|Decoraciones alimentarias|Dekoracje do żywności|Харчові прикраси|食品装饰
+freeze-dried-foods|Gefriergetrocknete Lebensmittel|Freeze-dried foods|Сублимированные продукты|Alimentos liofilizados|Gevriesdroogde voeding|Aliments lyophilisés|Alimenti liofilizzati|Alimentos liofilizados|Żywność liofilizowana|Сублімовані продукти|冻干食品
+freeze-dried-plant-based-foods|Gefriergetrocknete pflanzliche Lebensmittel|Freeze-dried plant-based foods|Сублимированные растительные продукты|Alimentos vegetais liofilizados|Gevriesdroogde plantaardige voeding|Aliments végétaux lyophilisés|Alimenti vegetali liofilizzati|Alimentos vegetales liofilizados|Liofilizowane produkty roślinne|Сублімовані рослинні продукти|冻干植物性食品
+fresh-apples|Frische Äpfel|Fresh apples|Свежие яблоки|Maçãs frescas|Verse appels|Pommes fraîches|Mele fresche|Manzanas frescas|Świeże jabłka|Свіжі яблука|新鲜苹果
+fresh-aromatic-plants|Frische Kräuter|Fresh aromatic plants|Свежие ароматические растения|Plantas aromáticas frescas|Verse kruiden|Plantes aromatiques fraîches|Piante aromatiche fresche|Plantas aromáticas frescas|Świeże rośliny aromatyczne|Свіжі ароматичні рослини|新鲜香草
+fresh-bananas|Frische Bananen|Fresh bananas|Свежие бананы|Bananas frescas|Verse bananen|Bananes fraîches|Banane fresche|Plátanos frescos|Świeże banany|Свіжі банани|新鲜香蕉
+fresh-chervil|Frischer Kerbel|Fresh chervil|Свежий кервель|Cerefólio fresco|Verse kervel|Cerfeuil frais|Cerfoglio fresco|Perifollo fresco|Świeży trybula|Свіжий кервель|新鲜细叶香芹
+fresh-egg-pasta|Frische Eiernudeln|Fresh egg pasta|Свежая яичная паста|Massa fresca de ovos|Verse eierpasta|Pâtes fraîches aux œufs|Pasta fresca all'uovo|Pasta fresca al huevo|Świeży makaron jajeczny|Свіжа яєчна паста|新鲜蛋面
+fresh-foods|Frische Lebensmittel|Fresh foods|Свежие продукты|Alimentos frescos|Verse voeding|Aliments frais|Alimenti freschi|Alimentos frescos|Świeża żywność|Свіжі продукти|新鲜食品
+fresh-fruits|Frisches Obst|Fresh fruits|Свежие фрукты|Fruta fresca|Vers fruit|Fruits frais|Frutta fresca|Fruta fresca|Świeże owoce|Свіжі фрукти|新鲜水果
+fresh-grapes|Frische Trauben|Fresh grapes|Свежий виноград|Uvas frescas|Verse druiven|Raisins frais|Uva fresca|Uvas frescas|Świeże winogrona|Свіжий виноград|新鲜葡萄
+fresh-green-beans|Frische grüne Bohnen|Fresh green beans|Свежая стручковая фасоль|Feijão-verde fresco|Verse sperziebonen|Haricots verts frais|Fagiolini freschi|Judías verdes frescas|Świeża fasolka szparagowa|Свіжа стручкова квасоля|新鲜四季豆
+fresh-green-grapes|Frische grüne Trauben|Fresh green grapes|Свежий зелёный виноград|Uvas verdes frescas|Verse groene druiven|Raisins verts frais|Uva verde fresca|Uvas verdes frescas|Świeże zielone winogrona|Свіжий зелений виноград|新鲜青葡萄
+fresh-ground-meat-preparations|Frisches Hackfleisch|Fresh minced meat|Свежий мясной фарш|Carne picada fresca|Vers gehakt|Viande hachée fraîche|Carne macinata fresca|Carne picada fresca|Świeże mięso mielone|Свіжий м'ясний фарш|新鲜肉馅
+fresh-ground-steaks|Frische Hacksteaks|Fresh ground steaks|Свежие рубленые стейки|Hambúrgueres frescos|Verse hamburgers|Steaks hachés frais|Hamburger freschi|Hamburguesas frescas|Świeże mielone steki|Свіжі рублені стейки|新鲜肉饼
+fresh-kiwifruits|Frische Kiwis|Fresh kiwis|Свежие киви|Quivis frescos|Verse kiwi's|Kiwis frais|Kiwi freschi|Kiwis frescos|Świeże kiwi|Свіжі ківі|新鲜猕猴桃
+fresh-legume-sprouts|Frische Hülsenfruchtsprossen|Fresh legume sprouts|Свежие ростки бобовых|Rebentos frescos de leguminosas|Verse peulvruchtkiemen|Germes de légumineuses frais|Germogli freschi di legumi|Brotes frescos de legumbres|Świeże kiełki roślin strączkowych|Свіжі паростки бобових|新鲜豆芽
+fresh-legumes|Frische Hülsenfrüchte|Fresh legumes|Свежие бобовые|Leguminosas frescas|Verse peulvruchten|Légumineuses fraîches|Legumi freschi|Legumbres frescas|Świeże rośliny strączkowe|Свіжі бобові|新鲜豆类
+fresh-lemons|Frische Zitronen|Fresh lemons|Свежие лимоны|Limões frescos|Verse citroenen|Citrons frais|Limoni freschi|Limones frescos|Świeże cytryny|Свіжі лимони|新鲜柠檬
+fresh-meals|Frische Gerichte|Fresh meals|Свежие готовые блюда|Refeições frescas|Verse maaltijden|Plats frais|Piatti freschi|Platos frescos|Świeże dania|Свіжі готові страви|新鲜餐食
+fresh-meat-preparations|Frische Fleischzubereitungen|Fresh meat preparations|Свежие мясные полуфабрикаты|Preparados frescos de carne|Verse vleesbereidingen|Préparations de viande fraîches|Preparazioni di carne fresche|Preparados de carne frescos|Świeże przetwory mięsne|Свіжі м'ясні напівфабрикати|新鲜肉制品
+fresh-meats|Frischfleisch|Fresh meat|Свежее мясо|Carnes frescas|Vers vlees|Viandes fraîches|Carni fresche|Carnes frescas|Świeże mięso|Свіже м'ясо|鲜肉
+fresh-mixed-vegetables|Frische Gemüsemischung|Fresh mixed vegetables|Свежая овощная смесь|Legumes frescos variados|Verse groentemix|Légumes frais mélangés|Verdure fresche miste|Verduras frescas variadas|Świeża mieszanka warzyw|Свіжа овочева суміш|新鲜混合蔬菜
+fresh-onions|Frische Zwiebeln|Fresh onions|Свежий лук|Cebolas frescas|Verse uien|Oignons frais|Cipolle fresche|Cebollas frescas|Świeża cebula|Свіжа цибуля|新鲜洋葱
+fresh-pasta|Frische Nudeln|Fresh pasta|Свежая паста|Massa fresca|Verse pasta|Pâtes fraîches|Pasta fresca|Pasta fresca|Świeży makaron|Свіжа паста|新鲜面食
+fresh-pears|Frische Birnen|Fresh pears|Свежие груши|Peras frescas|Verse peren|Poires fraîches|Pere fresche|Peras frescas|Świeże gruszki|Свіжі груші|新鲜梨
+fresh-peppercorns|Frische Pfefferkörner|Fresh peppercorns|Свежие зёрна перца|Pimenta fresca em grão|Verse peperkorrels|Grains de poivre frais|Pepe in grani fresco|Granos de pimienta frescos|Świeży pieprz ziarnisty|Свіжі зерна перцю|新鲜胡椒粒
+fresh-plant-based-foods|Frische pflanzliche Lebensmittel|Fresh plant-based foods|Свежие растительные продукты|Alimentos vegetais frescos|Verse plantaardige voeding|Aliments végétaux frais|Alimenti vegetali freschi|Alimentos vegetales frescos|Świeże produkty roślinne|Свіжі рослинні продукти|新鲜植物性食品
+fresh-red-grapes|Frische rote Trauben|Fresh red grapes|Свежий красный виноград|Uvas vermelhas frescas|Verse rode druiven|Raisins rouges frais|Uva rossa fresca|Uvas rojas frescas|Świeże czerwone winogrona|Свіжий червоний виноград|新鲜红葡萄
+fresh-red-seedless-grapes|Frische rote kernlose Trauben|Fresh red seedless grapes|Свежий красный виноград без косточек|Uvas vermelhas frescas sem grainha|Verse rode pitloze druiven|Raisins rouges frais sans pépins|Uva rossa fresca senza semi|Uvas rojas frescas sin pepitas|Świeże czerwone winogrona bezpestkowe|Свіжий червоний виноград без кісточок|新鲜无籽红葡萄
+fresh-seedless-green-grapes|Frische grüne kernlose Trauben|Fresh seedless green grapes|Свежий зелёный виноград без косточек|Uvas verdes frescas sem grainha|Verse groene pitloze druiven|Raisins verts frais sans pépins|Uva verde fresca senza semi|Uvas verdes frescas sin pepitas|Świeże zielone winogrona bezpestkowe|Свіжий зелений виноград без кісточок|新鲜无籽青葡萄
+fresh-spinachs|Frischer Spinat|Fresh spinach|Свежий шпинат|Espinafres frescos|Verse spinazie|Épinards frais|Spinaci freschi|Espinacas frescas|Świeży szpinak|Свіжий шпинат|新鲜菠菜
+fresh-sprouts|Frische Sprossen|Fresh sprouts|Свежие ростки|Rebentos frescos|Verse kiemen|Pousses fraîches|Germogli freschi|Brotes frescos|Świeże kiełki|Свіжі паростки|新鲜芽菜
+fresh-tomatoes|Frische Tomaten|Fresh tomatoes|Свежие помидоры|Tomates frescos|Verse tomaten|Tomates fraîches|Pomodori freschi|Tomates frescos|Świeże pomidory|Свіжі помідори|新鲜番茄
+fresh-vegetables|Frisches Gemüse|Fresh vegetables|Свежие овощи|Legumes frescos|Verse groenten|Légumes frais|Verdure fresche|Verduras frescas|Świeże warzywa|Свіжі овочі|新鲜蔬菜
+fresh-vegetables-sprouts|Frische Gemüsesprossen|Fresh vegetable sprouts|Свежие овощные ростки|Rebentos frescos de legumes|Verse groentekiemen|Pousses de légumes fraîches|Germogli freschi di verdure|Brotes frescos de verduras|Świeże kiełki warzyw|Свіжі овочеві паростки|新鲜蔬菜芽
+fried-foods|Frittierte Lebensmittel|Fried foods|Жареная еда|Alimentos fritos|Gefrituurde voeding|Aliments frits|Alimenti fritti|Alimentos fritos|Żywność smażona|Смажена їжа|油炸食品
+frog-legs|Froschschenkel|Frog legs|Лягушачьи лапки|Pernas de rã|Kikkerbilletjes|Cuisses de grenouille|Cosce di rana|Ancas de rana|Żabie udka|Жаб'ячі лапки|蛙腿
+frogs|Frösche|Frogs|Лягушки|Rãs|Kikkers|Grenouilles|Rane|Ranas|Żaby|Жаби|青蛙
+frozen-aromatic-plants|Tiefkühlkräuter|Frozen aromatic plants|Замороженные ароматические растения|Plantas aromáticas congeladas|Diepgevroren kruiden|Plantes aromatiques surgelées|Piante aromatiche surgelate|Plantas aromáticas congeladas|Mrożone rośliny aromatyczne|Заморожені ароматичні рослини|冷冻香草
+frozen-artichokes|Tiefkühl-Artischocken|Frozen artichokes|Замороженные артишоки|Alcachofras congeladas|Diepgevroren artisjokken|Artichauts surgelés|Carciofi surgelati|Alcachofas congeladas|Mrożone karczochy|Заморожені артишоки|冷冻洋蓟
+frozen-asparagus|Tiefkühl-Spargel|Frozen asparagus|Замороженная спаржа|Espargos congelados|Diepgevroren asperges|Asperges surgelées|Asparagi surgelati|Espárragos congelados|Mrożone szparagi|Заморожена спаржа|冷冻芦笋
+frozen-avocados|Tiefkühl-Avocados|Frozen avocados|Замороженные авокадо|Abacates congelados|Diepgevroren avocado's|Avocats surgelés|Avocado surgelati|Aguacates congelados|Mrożone awokado|Заморожені авокадо|冷冻牛油果
+frozen-cardoons|Tiefkühl-Kardonen|Frozen cardoons|Замороженный кардон|Cardos congelados|Diepgevroren kardoen|Cardons surgelés|Cardi surgelati|Cardos congelados|Mrożone karczochy hiszpańskie|Заморожений кардон|冷冻刺菜蓟
+frozen-cauliflower-florets|Tiefkühl-Blumenkohl|Frozen cauliflower florets|Замороженные соцветия цветной капусты|Florzinhas de couve-flor congeladas|Diepgevroren bloemkoolroosjes|Fleurettes de chou-fleur surgelées|Cimette di cavolfiore surgelate|Floretes de coliflor congelados|Mrożone różyczki kalafiora|Заморожені суцвіття цвітної капусти|冷冻花椰菜
+frozen-cereals|Tiefkühl-Getreide|Frozen cereals|Замороженные злаки|Cereais congelados|Diepgevroren granen|Céréales surgelées|Cereali surgelati|Cereales congelados|Mrożone zboża|Заморожені злаки|冷冻谷物
+frozen-champignon-mushrooms|Tiefkühl-Champignons|Frozen mushrooms|Замороженные шампиньоны|Cogumelos congelados|Diepgevroren champignons|Champignons surgelés|Champignon surgelati|Champiñones congelados|Mrożone pieczarki|Заморожені печериці|冷冻蘑菇
+frozen-chards|Tiefkühl-Mangold|Frozen chard|Замороженный мангольд|Acelgas congeladas|Diepgevroren snijbiet|Blettes surgelées|Bietole surgelate|Acelgas congeladas|Mrożony boćwina|Заморожений мангольд|冷冻甜菜叶
+frozen-chopped-onions|Tiefkühl-Zwiebelwürfel|Frozen chopped onions|Замороженный нарезанный лук|Cebola picada congelada|Diepgevroren gesneden uien|Oignons émincés surgelés|Cipolle tritate surgelate|Cebolla picada congelada|Mrożona posiekana cebula|Заморожена нарізана цибуля|冷冻洋葱丁
+frozen-corn|Tiefkühl-Mais|Frozen sweetcorn|Замороженная кукуруза|Milho congelado|Diepgevroren maïs|Maïs surgelé|Mais surgelato|Maíz congelado|Mrożona kukurydza|Заморожена кукурудза|冷冻玉米
+frozen-fishes|Tiefkühlfisch|Frozen fish|Замороженная рыба|Peixe congelado|Diepgevroren vis|Poissons surgelés|Pesce surgelato|Pescado congelado|Mrożone ryby|Заморожена риба|冷冻鱼
+frozen-fried-potatoes|Tiefkühl-Pommes|Frozen fries|Замороженный картофель фри|Batatas fritas congeladas|Diepgevroren frieten|Frites surgelées|Patatine fritte surgelate|Patatas fritas congeladas|Mrożone frytki|Заморожена картопля фрі|冷冻薯条
+frozen-green-asparagus|Tiefkühl-Grünspargel|Frozen green asparagus|Замороженная зелёная спаржа|Espargos verdes congelados|Diepgevroren groene asperges|Asperges vertes surgelées|Asparagi verdi surgelati|Espárragos verdes congelados|Mrożone zielone szparagi|Заморожена зелена спаржа|冷冻绿芦笋
+frozen-green-peas|Tiefkühl-Erbsen|Frozen green peas|Замороженный зелёный горошек|Ervilhas congeladas|Diepgevroren erwten|Petits pois surgelés|Piselli surgelati|Guisantes congelados|Mrożony zielony groszek|Заморожений зелений горошок|冷冻青豆
+frozen-ground-meat-preparations|Tiefkühl-Hackfleisch|Frozen minced meat|Замороженный фарш|Carne picada congelada|Diepgevroren gehakt|Viande hachée surgelée|Carne macinata surgelata|Carne picada congelada|Mrożone mięso mielone|Заморожений фарш|冷冻肉馅
+frozen-ground-steaks|Tiefkühl-Hacksteaks|Frozen ground steaks|Замороженные рубленые стейки|Hambúrgueres congelados|Diepgevroren hamburgers|Steaks hachés surgelés|Hamburger surgelati|Hamburguesas congeladas|Mrożone mielone steki|Заморожені рублені стейки|冷冻肉饼
+frozen-legumes|Tiefkühl-Hülsenfrüchte|Frozen legumes|Замороженные бобовые|Leguminosas congeladas|Diepgevroren peulvruchten|Légumineuses surgelées|Legumi surgelati|Legumbres congeladas|Mrożone rośliny strączkowe|Заморожені бобові|冷冻豆类
+frozen-meat-preparations|Tiefkühl-Fleischzubereitungen|Frozen meat preparations|Замороженные мясные полуфабрикаты|Preparados de carne congelados|Diepgevroren vleesbereidingen|Préparations de viande surgelées|Preparazioni di carne surgelate|Preparados de carne congelados|Mrożone przetwory mięsne|Заморожені м'ясні напівфабрикати|冷冻肉制品
+frozen-meats|Tiefkühl-Fleisch|Frozen meat|Замороженное мясо|Carnes congeladas|Diepgevroren vlees|Viandes surgelées|Carni surgelate|Carnes congeladas|Mrożone mięso|Заморожене м'ясо|冷冻肉
+frozen-mint|Tiefkühl-Minze|Frozen mint|Замороженная мята|Hortelã congelada|Diepgevroren munt|Menthe surgelée|Menta surgelata|Menta congelada|Mrożona mięta|Заморожена м'ята|冷冻薄荷
+frozen-mixed-fruits|Tiefkühl-Obstmischung|Frozen mixed fruits|Замороженная фруктовая смесь|Fruta mista congelada|Diepgevroren fruitmix|Fruits mélangés surgelés|Frutta mista surgelata|Fruta mixta congelada|Mrożona mieszanka owoców|Заморожена фруктова суміш|冷冻混合水果
+frozen-mushrooms|Tiefkühl-Pilze|Frozen mushrooms|Замороженные грибы|Cogumelos congelados|Diepgevroren paddenstoelen|Champignons surgelés|Funghi surgelati|Setas congeladas|Mrożone grzyby|Заморожені гриби|冷冻蘑菇
+frozen-nuts|Tiefkühl-Nüsse|Frozen nuts|Замороженные орехи|Frutos secos congelados|Diepgevroren noten|Noix surgelées|Frutta secca surgelata|Frutos secos congelados|Mrożone orzechy|Заморожені горіхи|冷冻坚果
+frozen-pies|Tiefkühlkuchen|Frozen pies|Замороженные пироги|Tartes congeladas|Diepgevroren taarten|Tartes surgelées|Torte surgelate|Tartas congeladas|Mrożone ciasta|Заморожені пироги|冷冻派
+frozen-pizzas-and-pies|Tiefkühl-Pizzen & Quiches|Frozen pizzas and pies|Замороженные пиццы и пироги|Pizzas e tartes congeladas|Diepgevroren pizza's en taarten|Pizzas et tartes surgelées|Pizze e torte surgelate|Pizzas y tartas congeladas|Mrożone pizze i quiche|Заморожені піци та пироги|冷冻披萨和派
+frozen-plant-based-foods|Tiefkühl-Pflanzenkost|Frozen plant-based foods|Замороженные растительные продукты|Alimentos vegetais congelados|Diepgevroren plantaardige voeding|Aliments végétaux surgelés|Alimenti vegetali surgelati|Alimentos vegetales congelados|Mrożone produkty roślinne|Заморожені рослинні продукти|冷冻植物性食品
+frozen-plant-based-foods-mixes|Tiefkühl-Pflanzenmischungen|Frozen plant-based foods mixes|Замороженные растительные смеси|Misturas vegetais congeladas|Diepgevroren plantaardige mixen|Mélanges végétaux surgelés|Misti vegetali surgelati|Mezclas vegetales congeladas|Mrożone mieszanki roślinne|Заморожені рослинні суміші|冷冻植物性混合食品
+frozen-porcini-mushrooms|Tiefkühl-Steinpilze|Frozen porcini|Замороженные белые грибы|Boletos congelados|Diepgevroren eekhoorntjesbrood|Cèpes surgelés|Porcini surgelati|Boletus congelados|Mrożone borowiki|Заморожені білі гриби|冷冻牛肝菌
+frozen-potato-fries|Tiefkühl-Pommes|Frozen potato fries|Замороженный картофель фри|Batatas fritas congeladas|Diepgevroren aardappelfrieten|Frites de pommes de terre surgelées|Patatine fritte surgelate|Patatas fritas congeladas|Mrożone frytki ziemniaczane|Заморожена картопля фрі|冷冻薯条
+frozen-potatoes|Tiefkühl-Kartoffeln|Frozen potatoes|Замороженный картофель|Batatas congeladas|Diepgevroren aardappelen|Pommes de terre surgelées|Patate surgelate|Patatas congeladas|Mrożone ziemniaki|Заморожена картопля|冷冻土豆
+frozen-sandwiches|Tiefkühl-Sandwiches|Frozen sandwiches|Замороженные сэндвичи|Sanduíches congeladas|Diepgevroren sandwiches|Sandwichs surgelés|Panini surgelati|Sándwiches congelados|Mrożone kanapki|Заморожені сендвічі|冷冻三明治
+frozen-seafood|Tiefkühl-Meeresfrüchte|Frozen seafood|Замороженные морепродукты|Marisco congelado|Diepgevroren zeevruchten|Fruits de mer surgelés|Frutti di mare surgelati|Marisco congelado|Mrożone owoce morza|Заморожені морепродукти|冷冻海鲜
+frozen-soups|Tiefkühlsuppen|Frozen soups|Замороженные супы|Sopas congeladas|Diepgevroren soepen|Soupes surgelées|Zuppe surgelate|Sopas congeladas|Mrożone zupy|Заморожені супи|冷冻汤
+frozen-steaks|Tiefkühl-Steaks|Frozen steaks|Замороженные стейки|Bifes congelados|Diepgevroren steaks|Steaks surgelés|Bistecche surgelate|Filetes congelados|Mrożone steki|Заморожені стейки|冷冻牛排
+frozen-tropical-fruits|Tiefkühl-Tropenfrüchte|Frozen tropical fruits|Замороженные тропические фрукты|Frutas tropicais congeladas|Diepgevroren tropisch fruit|Fruits tropicaux surgelés|Frutti tropicali surgelati|Frutas tropicales congeladas|Mrożone owoce tropikalne|Заморожені тропічні фрукти|冷冻热带水果
+frozen-zucchini|Tiefkühl-Zucchini|Frozen courgettes|Замороженные кабачки|Curgetes congeladas|Diepgevroren courgettes|Courgettes surgelées|Zucchine surgelate|Calabacines congelados|Mrożona cukinia|Заморожені кабачки|冷冻西葫芦
+fruit-and-fruit-seed-oils|Frucht- & Fruchtkernöle|Fruit and fruit seed oils|Масла из фруктов и косточек|Óleos de fruta e sementes de fruta|Fruit- en vruchtzaadoliën|Huiles de fruits et de graines de fruits|Oli di frutta e di semi di frutta|Aceites de frutas y semillas de frutas|Oleje z owoców i pestek|Олії з фруктів і кісточок|水果及果籽油
+fruit-and-vegetable-juices|Obst- & Gemüsesäfte|Fruit and vegetable juices|Фруктовые и овощные соки|Sumos de fruta e legumes|Fruit- en groentesappen|Jus de fruits et légumes|Succhi di frutta e verdura|Zumos de frutas y verduras|Soki owocowe i warzywne|Фруктові та овочеві соки|果蔬汁
+fruit-and-vegetable-preserves|Konfitüren & Eingemachtes|Fruit and vegetable preserves|Фруктовые и овощные консервы|Conservas de fruta e legumes|Fruit- en groenteconserven|Conserves de fruits et légumes|Conserve di frutta e verdura|Conservas de frutas y verduras|Przetwory owocowo-warzywne|Фруктові та овочеві консерви|果蔬罐头
+fruit-based-beverages|Fruchtgetränke|Fruit-based beverages|Фруктовые напитки|Bebidas à base de fruta|Dranken op fruitbasis|Boissons à base de fruits|Bevande a base di frutta|Bebidas a base de fruta|Napoje owocowe|Фруктові напої|水果基饮料
+fruit-based-foods|Obstprodukte|Fruit-based foods|Фруктовые продукты|Alimentos à base de fruta|Voeding op fruitbasis|Aliments à base de fruits|Alimenti a base di frutta|Alimentos a base de fruta|Produkty owocowe|Фруктові продукти|水果基食品
+fruit-based-foods-and-beverages|Obstprodukte & Fruchtgetränke|Fruit-based foods and beverages|Фруктовые продукты и напитки|Alimentos e bebidas à base de fruta|Voeding en dranken op fruitbasis|Aliments et boissons à base de fruits|Alimenti e bevande a base di frutta|Alimentos y bebidas a base de fruta|Produkty i napoje owocowe|Фруктові продукти та напої|水果基食品和饮料
+fruit-biscuits|Fruchtkekse|Fruit biscuits|Фруктовое печенье|Bolachas de fruta|Fruitkoekjes|Biscuits aux fruits|Biscotti alla frutta|Galletas de frutas|Ciastka owocowe|Фруктове печиво|水果饼干
+fruit-chutneys|Frucht-Chutneys|Fruit chutneys|Фруктовые чатни|Chutneys de fruta|Fruitchutneys|Chutneys de fruits|Chutney di frutta|Chutneys de frutas|Chutneye owocowe|Фруктові чатні|水果酸辣酱
+fruit-muffins|Fruchtmuffins|Fruit muffins|Фруктовые маффины|Queques de fruta|Fruitmuffins|Muffins aux fruits|Muffin alla frutta|Magdalenas de frutas|Muffinki owocowe|Фруктові мафіни|水果玛芬
+fruit-pastes|Fruchtpaste|Fruit pastes|Фруктовые пасты|Pastas de fruta|Fruitpasta's|Pâtes de fruits|Paste di frutta|Pastas de frutas|Pasty owocowe|Фруктові пасти|水果酱糕
+fruit-preserves|Fruchtkonserven|Fruit preserves|Фруктовые консервы|Conservas de fruta|Fruitconserven|Conserves de fruits|Conserve di frutta|Conservas de frutas|Przetwory owocowe|Фруктові консерви|水果罐头
+fruit-salads|Obstsalate|Fruit salads|Фруктовые салаты|Saladas de fruta|Fruitsalades|Salades de fruits|Macedonie|Ensaladas de frutas|Sałatki owocowe|Фруктові салати|水果沙拉
+fruit-sodas|Fruchtlimonaden|Fruit sodas|Фруктовые газировки|Refrigerantes de fruta|Fruitfrisdranken|Sodas aux fruits|Bibite gassate alla frutta|Refrescos de frutas|Napoje owocowe gazowane|Фруктові газовані напої|水果汽水
+fruit-soy-yogurts|Frucht-Soja-Joghurts|Fruit soy yoghurts|Соевые йогурты с фруктами|Iogurtes de soja com fruta|Fruitsojayoghurts|Yaourts au soja aux fruits|Yogurt di soia alla frutta|Yogures de soja con frutas|Jogurty sojowe z owocami|Соєві йогурти з фруктами|水果豆奶酸奶
+fruit-tartlets|Obsttörtchen|Fruit tartlets|Фруктовые тарталетки|Tartes de fruta|Fruittaartjes|Tartelettes aux fruits|Tartellette alla frutta|Tartaletas de frutas|Tartaletki owocowe|Фруктові тарталетки|水果小挞
+fruits-and-vegetables-based-foods|Obst- & Gemüseprodukte|Fruits and vegetables based foods|Продукты из фруктов и овощей|Alimentos à base de frutas e legumes|Voeding op basis van groente en fruit|Aliments à base de fruits et légumes|Alimenti a base di frutta e verdura|Alimentos a base de frutas y verduras|Produkty z owoców i warzyw|Продукти з фруктів і овочів|果蔬基食品
+fruits-cereal-bars|Müsliriegel mit Früchten|Fruit cereal bars|Злаковые батончики с фруктами|Barras de cereais com fruta|Mueslirepen met fruit|Barres de céréales aux fruits|Barrette di cereali alla frutta|Barritas de cereales con frutas|Batony zbożowe z owocami|Злакові батончики з фруктами|水果谷物棒
+fruits-coulis|Fruchtcoulis|Fruit coulis|Фруктовые кули|Coulis de fruta|Fruitcoulis|Coulis de fruits|Coulis di frutta|Coulis de frutas|Kulisy owocowe|Фруктові кулі|水果酱汁
+garlic-breads|Knoblauchbrote|Garlic breads|Чесночный хлеб|Pães de alho|Knoflookbroden|Pains à l'ail|Pani all'aglio|Panes de ajo|Pieczywo czosnkowe|Часникові хліби|蒜香面包
+garlic-sausage|Knoblauchwurst|Garlic sausage|Чесночная колбаса|Salsicha de alho|Knoflookworst|Saucisson à l'ail|Salsiccia all'aglio|Salchicha de ajo|Kiełbasa czosnkowa|Часникова ковбаса|蒜味香肠
+geese|Gänse|Geese|Гуси|Gansos|Ganzen|Oies|Oche|Gansos|Gęsi|Гуси|鹅
+gluten-free-breads|Glutenfreies Brot|Gluten-free breads|Безглютеновый хлеб|Pães sem glúten|Glutenvrije broden|Pains sans gluten|Pani senza glutine|Panes sin gluten|Chleby bezglutenowe|Безглютенові хліби|无麸质面包
+gluten-free-pasta|Glutenfreie Nudeln|Gluten-free pasta|Безглютеновые макароны|Massa sem glúten|Glutenvrije pasta|Pâtes sans gluten|Pasta senza glutine|Pasta sin gluten|Makaron bezglutenowy|Безглютенові макарони|无麸质面食
+gnocchi-of-durum-wheat-semolina|Grießgnocchi|Durum wheat semolina gnocchi|Ньокки из манки твёрдой пшеницы|Nhoque de sêmola de trigo duro|Gnocchi van durumtarwegries|Gnocchis de semoule de blé dur|Gnocchi di semola di grano duro|Ñoquis de sémola de trigo duro|Gnocchi z kaszy manny durum|Ньоккі з манної крупи твердої пшениці|硬粒小麦粗粉意式团子
+goat-cheeses|Ziegenkäse|Goat cheese|Козий сыр|Queijos de cabra|Geitenkaas|Fromages de chèvre|Formaggi di capra|Quesos de cabra|Sery kozie|Козячі сири|山羊奶酪
+goat-milk-yogurts|Ziegenmilchjoghurt|Goat milk yoghurt|Йогурты из козьего молока|Iogurtes de leite de cabra|Geitenmelkyoghurt|Yaourts au lait de chèvre|Yogurt di latte di capra|Yogures de leche de cabra|Jogurty z mleka koziego|Йогурти з козячого молока|山羊奶酸奶
+goat-milks|Ziegenmilch|Goat milk|Козье молоко|Leite de cabra|Geitenmelk|Lait de chèvre|Latte di capra|Leche de cabra|Mleko kozie|Козяче молоко|山羊奶
+gold-flax-seeds|Goldleinsamen|Golden flaxseeds|Золотистые семена льна|Sementes de linhaça douradas|Gouden lijnzaad|Graines de lin dorées|Semi di lino dorati|Semillas de lino doradas|Złote siemię lniane|Золоте насіння льону|金亚麻籽
+grain-spirits|Getreidebrände|Grain spirits|Зерновые спиртные напитки|Destilados de cereais|Graanbranders|Eaux-de-vie de grain|Distillati di cereali|Destilados de cereales|Alkohole zbożowe|Зернові міцні напої|谷物烈酒
+grapefruit-juices|Grapefruitsaft|Grapefruit juice|Грейпфрутовый сок|Sumo de toranja|Grapefruitsap|Jus de pamplemousse|Succo di pompelmo|Zumo de pomelo|Sok grejpfrutowy|Грейпфрутовий сік|西柚汁
+gratins|Gratins|Gratins|Гратен|Gratinados|Gratins|Gratins|Gratin|Gratinados|Zapiekanki|Гратен|焗菜
+green-cracked-olives|Gebrochene grüne Oliven|Green cracked olives|Зелёные колотые оливки|Azeitonas verdes partidas|Gebroken groene olijven|Olives vertes cassées|Olive verdi schiacciate|Aceitunas verdes partidas|Zielone oliwki łamane|Зелені колоті оливки|绿裂口橄榄
+green-garlics|Frühlingsknoblauch|Green garlic|Молодой чеснок|Alho verde|Jonge knoflook|Ail vert|Aglio fresco|Ajo tierno|Młody czosnek|Молодий часник|青蒜
+green-grapes|Grüne Trauben|Green grapes|Зелёный виноград|Uvas verdes|Groene druiven|Raisins verts|Uva verde|Uvas verdes|Zielone winogrona|Зелений виноград|青葡萄
+green-peppercorns|Grüne Pfefferkörner|Green peppercorns|Зелёный перец горошком|Pimenta verde em grão|Groene peperkorrels|Poivre vert en grains|Pepe verde in grani|Granos de pimienta verde|Zielony pieprz ziarnisty|Зелений перець горошком|绿胡椒粒
+green-peppers|Grüne Paprika|Green peppers|Зелёный перец|Pimentos verdes|Groene paprika's|Poivrons verts|Peperoni verdi|Pimientos verdes|Zielona papryka|Зелений перець|青椒
+green-pitted-olives|Grüne entkernte Oliven|Green pitted olives|Зелёные оливки без косточки|Azeitonas verdes sem caroço|Groene ontpitte olijven|Olives vertes dénoyautées|Olive verdi denocciolate|Aceitunas verdes sin hueso|Zielone oliwki bez pestek|Зелені оливки без кісточок|去核绿橄榄
+green-seedless-grapes|Grüne kernlose Trauben|Green seedless grapes|Зелёный виноград без косточек|Uvas verdes sem grainha|Groene pitloze druiven|Raisins verts sans pépins|Uva verde senza semi|Uvas verdes sin pepitas|Zielone winogrona bezpestkowe|Зелений виноград без кісточок|无籽青葡萄
+green-stuffed-olives|Gefüllte grüne Oliven|Green stuffed olives|Фаршированные зелёные оливки|Azeitonas verdes recheadas|Gevulde groene olijven|Olives vertes farcies|Olive verdi ripiene|Aceitunas verdes rellenas|Zielone oliwki nadziewane|Фаршировані зелені оливки|酿馅绿橄榄
+grilling-cheeses|Grillkäse|Grilling cheese|Сыр для гриля|Queijos para grelhar|Grillkaas|Fromages à griller|Formaggi da grigliare|Quesos para freír|Sery do grillowania|Сири для гриля|烤奶酪
+ground-beef-preparations|Rinderhackfleisch|Ground beef preparations|Говяжий фарш|Preparados de carne de vaca picada|Rundergehakt|Préparations de bœuf haché|Preparazioni di manzo macinato|Preparados de carne picada de ternera|Mielona wołowina|Яловичий фарш|牛肉馅
+ground-beef-steaks|Rinder-Hacksteaks|Ground beef steaks|Рубленые говяжьи стейки|Hambúrgueres de vaca|Rundshamburgers|Steaks hachés de bœuf|Hamburger di manzo|Hamburguesas de ternera|Mielone steki wołowe|Рублені яловичі стейки|牛肉饼
+ground-black-peppers|Schwarzer Pfeffer (gemahlen)|Ground black pepper|Молотый чёрный перец|Pimenta preta moída|Gemalen zwarte peper|Poivre noir moulu|Pepe nero macinato|Pimienta negra molida|Pieprz czarny mielony|Мелений чорний перець|黑胡椒粉
+ground-caraway-seeds|Kümmel (gemahlen)|Ground caraway|Молотый тмин|Cominho-dos-prados moído|Gemalen karwijzaad|Carvi moulu|Cumino dei prati macinato|Alcaravea molida|Kminek mielony|Мелений кмин|葛缕子粉
+ground-cumin-seeds|Kreuzkümmel (gemahlen)|Ground cumin|Молотый зира|Cominho moído|Gemalen komijn|Cumin moulu|Cumino macinato|Comino molido|Kmin rzymski mielony|Мелена зіра|孜然粉
+ground-dried-aromatic-plants|Getrocknete gemahlene Kräuter|Ground dried herbs|Молотые сушёные травы|Ervas aromáticas secas moídas|Gemalen gedroogde kruiden|Plantes aromatiques séchées moulues|Erbe aromatiche essiccate macinate|Hierbas aromáticas secas molidas|Mielone suszone zioła|Мелені сушені трави|干香草粉
+ground-dried-mint|Gemahlene getrocknete Minze|Ground dried mint|Молотая сушёная мята|Hortelã seca moída|Gemalen gedroogde munt|Menthe séchée moulue|Menta essiccata macinata|Menta seca molida|Mielona suszona mięta|Мелена сушена м'ята|薄荷粉
+ground-dried-seaweeds|Gemahlene getrocknete Algen|Ground dried seaweed|Молотые сушёные водоросли|Algas secas moídas|Gemalen gedroogd zeewier|Algues séchées moulues|Alghe essiccate macinate|Algas secas molidas|Mielone suszone algi|Мелені сушені водорості|海藻粉
+ground-dried-vegetables|Gemahlenes Trockengemüse|Ground dried vegetables|Молотые сушёные овощи|Legumes secos moídos|Gemalen gedroogde groenten|Légumes séchés moulus|Verdure essiccate macinate|Verduras secas molidas|Mielone suszone warzywa|Мелені сушені овочі|蔬菜粉
+ground-flax-seeds|Geschrotete Leinsamen|Ground flaxseed|Молотые семена льна|Linhaça moída|Gemalen lijnzaad|Graines de lin moulues|Semi di lino macinati|Semillas de lino molidas|Mielone siemię lniane|Мелене насіння льону|亚麻籽粉
+ground-meat-preparations|Hackfleisch|Ground meat preparations|Мясной фарш|Preparados de carne picada|Gehakt|Préparations de viande hachée|Preparazioni di carne macinata|Preparados de carne picada|Mięso mielone|М'ясний фарш|肉馅
+ground-peppers|Paprikapulver|Ground peppers|Молотый перец|Pimentos moídos|Gemalen paprika|Piments moulus|Peperoni macinati|Pimientos molidos|Papryka mielona|Мелений перець|辣椒粉
+ground-steaks|Hacksteaks|Ground steaks|Рубленые стейки|Hambúrgueres|Hamburgers|Steaks hachés|Hamburger|Hamburguesas|Mielone steki|Рублені стейки|肉饼
+guerande-salts|Guérande-Salz|Guérande salt|Соль из Геранды|Sal de Guérande|Guérande-zout|Sel de Guérande|Sale di Guérande|Sal de Guérande|Sól z Guérande|Сіль із Геранда|给宏德盐
+gummi-candies|Gummibonbons|Gummy candies|Жевательный мармелад|Gomas|Gummysnoep|Bonbons gélifiés|Caramelle gommose|Gominolas|Żelki|Жувальний мармелад|软糖
+half-cooked-pressed-cheeses|Halbfeste Schnittkäse (gepresst)|Semi-cooked pressed cheeses|Прессованные сыры полутвёрдые|Queijos prensados de pasta semicozida|Halfgekookte geperste kazen|Fromages à pâte pressée mi-cuite|Formaggi a pasta pressata semicotta|Quesos de pasta prensada semicocida|Sery prasowane półtwarde|Напівтверді пресовані сири|半熟压制奶酪
+half-salted-butter|Leicht gesalzene Butter|Lightly salted butter|Слабосолёное масло|Manteiga meio-sal|Halfgezouten boter|Beurre demi-sel|Burro leggermente salato|Mantequilla semisalada|Masło lekko solone|Слабосолоне масло|微盐黄油
+halva|Halva|Halva|Халва|Halvah|Halva|Halva|Halva|Halva|Chałwa|Халва|哈尔瓦
+ham-and-butter-sandwiches|Schinken-Butter-Sandwiches|Ham and butter sandwiches|Сэндвичи с ветчиной и маслом|Sanduíches de fiambre e manteiga|Ham-botersandwiches|Sandwichs jambon-beurre|Panini prosciutto e burro|Sándwiches de jamón y mantequilla|Kanapki z szynką i masłem|Сендвічі з шинкою та маслом|火腿黄油三明治
+ham-and-cheese-sandwiches|Schinken-Käse-Sandwiches|Ham and cheese sandwiches|Сэндвичи с ветчиной и сыром|Sanduíches de fiambre e queijo|Ham-kaassandwiches|Sandwichs jambon-fromage|Panini prosciutto e formaggio|Sándwiches de jamón y queso|Kanapki z szynką i serem|Сендвічі з шинкою та сиром|火腿奶酪三明治
+ham-pizzas|Schinkenpizza|Ham pizzas|Пиццы с ветчиной|Pizzas de fiambre|Hampizza's|Pizzas au jambon|Pizze al prosciutto|Pizzas de jamón|Pizze z szynką|Піци з шинкою|火腿披萨
+ham-sandwiches|Schinkensandwiches|Ham sandwiches|Сэндвичи с ветчиной|Sanduíches de fiambre|Hamsandwiches|Sandwichs au jambon|Panini al prosciutto|Sándwiches de jamón|Kanapki z szynką|Сендвічі з шинкою|火腿三明治
+ham-wraps|Schinken-Wraps|Ham wraps|Врапы с ветчиной|Wraps de fiambre|Hamwraps|Wraps au jambon|Wrap al prosciutto|Wraps de jamón|Wrapy z szynką|Врапи з шинкою|火腿卷饼
+hard-cheeses|Hartkäse|Hard cheeses|Твёрдые сыры|Queijos duros|Harde kazen|Fromages à pâte dure|Formaggi a pasta dura|Quesos duros|Sery twarde|Тверді сири|硬质奶酪
+hass-avocados|Hass-Avocados|Hass avocados|Авокадо хасс|Abacates Hass|Hass-avocado's|Avocats Hass|Avocado Hass|Aguacates Hass|Awokado Hass|Авокадо хасс|哈斯牛油果
+hazelnut-spreads|Haselnusscremes|Hazelnut spreads|Ореховые пасты с фундуком|Cremes de avelã|Hazelnootpasta's|Pâtes à tartiner aux noisettes|Creme spalmabili alle nocciole|Cremas de avellana|Kremy orzechowe|Горіхові пасти з фундуком|榛子酱
+heather-honeys|Heidehonig|Heather honey|Вересковый мёд|Mel de urze|Heidehoning|Miel de bruyère|Miele di erica|Miel de brezo|Miód wrzosowy|Вересковий мед|石楠蜜
+herbal-distillates|Kräuterdestillate|Herbal distillates|Травяные дистилляты|Destilados de ervas|Kruidendistillaten|Distillats de plantes|Distillati di erbe|Destilados de hierbas|Destylaty ziołowe|Трав'яні дистиляти|草本蒸馏酒
+herbal-liqueur|Kräuterlikör|Herbal liqueur|Травяной ликёр|Licor de ervas|Kruidenlikeur|Liqueur d'herbes|Liquore alle erbe|Licor de hierbas|Likier ziołowy|Трав'яний лікер|草本利口酒
+herbal-tea-beverages|Kräutertee-Getränke|Herbal tea beverages|Травяные чайные напитки|Bebidas de chá de ervas|Kruidenthee-dranken|Boissons aux tisanes|Bevande a base di tisane|Bebidas de infusiones|Napoje z herbaty ziołowej|Трав'яні чайні напої|草本茶饮料
+herbal-tea-blends|Kräuterteemischungen|Herbal tea blends|Травяные чайные сборы|Misturas de chá de ervas|Kruidenthee-mengsels|Mélanges de tisanes|Miscele di tisane|Mezclas de infusiones|Mieszanki herbat ziołowych|Трав'яні чайні збори|草本茶混合
+herring-fillets|Heringsfilets|Herring fillets|Филе сельди|Filetes de arenque|Haringfilets|Filets de hareng|Filetti di aringa|Filetes de arenque|Filety śledziowe|Філе оселедця|鲱鱼片
+hibiscus|Hibiskus|Hibiscus|Гибискус|Hibisco|Hibiscus|Hibiscus|Ibisco|Hibisco|Hibiskus|Гібіскус|木槿花
+hijiki-seaweeds|Hijiki-Algen|Hijiki seaweed|Водоросли хидзики|Algas hijiki|Hijiki-zeewier|Algues hijiki|Alghe hijiki|Algas hijiki|Algi hijiki|Водорості хідзікі|羊栖菜
+himalaya-salts|Himalaya-Salz|Himalayan salt|Гималайская соль|Sal dos Himalaias|Himalayazout|Sel de l'Himalaya|Sale dell'Himalaya|Sal del Himalaya|Sól himalajska|Гімалайська сіль|喜马拉雅盐
+homogenized-milks|Homogenisierte Milch|Homogenised milk|Гомогенизированное молоко|Leite homogeneizado|Gehomogeniseerde melk|Laits homogénéisés|Latte omogeneizzato|Leche homogeneizada|Mleko homogenizowane|Гомогенізоване молоко|均质牛奶
+honey-based-preparations|Honigzubereitungen|Honey-based preparations|Продукты на основе мёда|Preparados à base de mel|Preparaten op basis van honing|Préparations à base de miel|Preparazioni a base di miele|Preparados a base de miel|Przetwory na bazie miodu|Продукти на основі меду|蜂蜜制品
+horchatas-de-chufa|Horchata de Chufa|Horchata de chufa|Орчата из чуфы|Horchata de chufa|Horchata de chufa|Horchata de chufa|Orzata di chufa|Horchata de chufa|Horchata de chufa|Орчата з чуфи|油莎豆奶
+horse-fresh-meat|Frisches Pferdefleisch|Fresh horse meat|Свежая конина|Carne de cavalo fresca|Vers paardenvlees|Viande de cheval fraîche|Carne di cavallo fresca|Carne de caballo fresca|Świeża koniną|Свіжа конина|新鲜马肉
+ice-cream-bars|Eis am Stiel|Ice cream bars|Эскимо|Gelados de pau|IJs aan een stokje|Bâtonnets de glace|Gelati su stecco|Helados de palo|Lody na patyku|Ескімо|冰淇淋棒
+ice-cream-tubs|Eisbecher|Ice cream tubs|Мороженое в стаканчиках|Gelados em copo|IJsbekers|Pots de glace|Vaschette di gelato|Tarrinas de helado|Lody w kubkach|Морозиво в стаканчиках|杯装冰淇淋
+ice-creams-and-sorbets|Eiscreme & Sorbets|Ice creams and sorbets|Мороженое и щербеты|Gelados e sorvetes|IJs en sorbets|Glaces et sorbets|Gelati e sorbetti|Helados y sorbetes|Lody i sorbety|Морозиво та щербети|冰淇淋和冰沙
+incorrect-product-type|Falscher Produkttyp|Incorrect product type|Неверный тип продукта|Tipo de produto incorreto|Onjuist producttype|Type de produit incorrect|Tipo di prodotto errato|Tipo de producto incorrecto|Nieprawidłowy typ produktu|Невірний тип продукту|产品类型错误
+indica-rices|Indica-Reis|Indica rice|Рис индика|Arroz índica|Indica-rijst|Riz indica|Riso indica|Arroz índica|Ryż indica|Рис індика|籼米
+industrial-knacks|Industrielle Knackwürste|Industrial knacks|Промышленные кнаки|Salsichas industriais|Industriële knakworsten|Knacks industriels|Wurstel industriali|Salchichas industriales|Parówki przemysłowe|Промислові кнаки|工业香肠
+insects|Insekten|Insects|Насекомые|Insetos|Insecten|Insectes|Insetti|Insectos|Owady|Комахи|昆虫
+instant-beverages|Instantgetränke|Instant beverages|Растворимые напитки|Bebidas instantâneas|Instantdranken|Boissons instantanées|Bevande istantanee|Bebidas instantáneas|Napoje instant|Розчинні напої|速溶饮料
+instant-chicory|Instant-Zichorie|Instant chicory|Растворимый цикорий|Chicória instantânea|Oploscichorei|Chicorée instantanée|Cicoria solubile|Achicoria soluble|Cykoria rozpuszczalna|Розчинний цикорій|速溶菊苣
+instant-pasta|Instantnudeln|Instant pasta|Макароны быстрого приготовления|Massa instantânea|Instantpasta|Pâtes instantanées|Pasta istantanea|Pasta instantánea|Makaron instant|Макарони швидкого приготування|速食面
+iridescent-shark-fillets|Pangasiusfilets|Pangasius fillets|Филе пангасиуса|Filetes de pangasius|Pangasiusfilets|Filets de pangasius|Filetti di pangasio|Filetes de pangasius|Filety z pangasiusa|Філе пангасіуса|巴沙鱼片
+japonica-rices|Japonica-Reis|Japonica rice|Рис японика|Arroz japónica|Japonica-rijst|Riz japonica|Riso japonica|Arroz japónica|Ryż japonica|Рис японіка|粳米
+jenever|Genever|Jenever|Женевер|Genebra|Jenever|Genièvre|Jenever|Ginebra holandesa|Jenever|Женевер|杜松子酒
+jonagold-apples|Jonagold-Äpfel|Jonagold apples|Яблоки джонаголд|Maçãs Jonagold|Jonagold-appels|Pommes Jonagold|Mele Jonagold|Manzanas Jonagold|Jabłka Jonagold|Яблука джонаголд|乔纳金苹果
+juniper-berries|Wacholderbeeren|Juniper berries|Ягоды можжевельника|Bagas de zimbro|Jeneverbessen|Baies de genévrier|Bacche di ginepro|Bayas de enebro|Jagody jałowca|Ягоди ялівцю|杜松子
+kefir|Kefir|Kefir|Кефир|Quefir|Kefir|Kéfir|Kefir|Kéfir|Kefir|Кефір|开菲尔
+kefir-yogurts|Kefir-Joghurt|Kefir yoghurts|Кефирные йогурты|Iogurtes de quefir|Kefiryoghurt|Yaourts au kéfir|Yogurt al kefir|Yogures de kéfir|Jogurty kefirowe|Кефірні йогурти|开菲尔酸奶
+khorasan-wheat-flours|Khorasan-Weizenmehl|Khorasan wheat flour|Мука из пшеницы хорасан|Farinha de trigo Khorasan|Khorasan-tarwemeel|Farine de blé khorasan|Farina di grano khorasan|Harina de trigo khorasan|Mąka z pszenicy khorasan|Борошно з пшениці хорасан|呼罗珊小麦粉
+kombu-seaweeds|Kombu-Algen|Kombu seaweed|Водоросли комбу|Algas kombu|Kombu-zeewier|Algues kombu|Alghe kombu|Algas kombu|Algi kombu|Водорості комбу|昆布
+kulen|Kulen|Kulen|Кулен|Kulen|Kulen|Kulen|Kulen|Kulen|Kulen|Кулен|库伦香肠
+kumquats|Kumquats|Kumquats|Кумкват|Quincãs|Kumquats|Kumquats|Kumquat|Kumquats|Kumkwaty|Кумкват|金桔
+lardons|Speckwürfel|Lardons|Лардоны|Lardons|Spekblokjes|Lardons|Pancetta a cubetti|Taquitos de bacón|Kostka boczku|Лардони|培根丁
+lavender-honeys|Lavendelhonig|Lavender honey|Лавандовый мёд|Mel de lavanda|Lavendelhoning|Miel de lavande|Miele di lavanda|Miel de lavanda|Miód lawendowy|Лавандовий мед|薰衣草蜜
+legume-based-drinks|Hülsenfruchtdrinks|Legume-based drinks|Напитки из бобовых|Bebidas de leguminosas|Peulvruchtendranken|Boissons à base de légumineuses|Bevande a base di legumi|Bebidas de legumbres|Napoje z roślin strączkowych|Напої з бобових|豆类饮品
+legume-butters|Hülsenfruchtbutter|Legume butters|Пасты из бобовых|Cremes de leguminosas|Peulvruchtenboter|Beurres de légumineuses|Burri di legumi|Mantequillas de legumbres|Masła z roślin strączkowych|Пасти з бобових|豆类酱
+legume-flakes|Hülsenfruchtflocken|Legume flakes|Хлопья из бобовых|Flocos de leguminosas|Peulvruchtvlokken|Flocons de légumineuses|Fiocchi di legumi|Copos de legumbres|Płatki z roślin strączkowych|Пластівці з бобових|豆类片
+legume-flours|Hülsenfruchtmehl|Legume flours|Мука из бобовых|Farinhas de leguminosas|Peulvruchtenmeel|Farines de légumineuses|Farine di legumi|Harinas de legumbres|Mąki z roślin strączkowych|Борошно з бобових|豆粉
+legume-oils|Hülsenfrucht-Öle|Legume oils|Масла из бобовых|Óleos de leguminosas|Peulvruchtenoliën|Huiles de légumineuses|Oli di legumi|Aceites de legumbres|Oleje z roślin strączkowych|Олії з бобових|豆油
+legume-pickles|Eingelegte Hülsenfrüchte|Pickled legumes|Маринованные бобовые|Leguminosas em conserva|Ingelegde peulvruchten|Légumineuses au vinaigre|Legumi sott'aceto|Legumbres en vinagre|Marynowane rośliny strączkowe|Мариновані бобові|腌豆类
+lemon-tarts|Zitronentorten|Lemon tarts|Лимонные тарты|Tartes de limão|Citroentaarten|Tartes au citron|Crostate al limone|Tartas de limón|Tarty cytrynowe|Лимонні тарти|柠檬挞
+lemon-teas|Zitronentee|Lemon teas|Лимонные чаи|Chás de limão|Citroenthee|Thés au citron|Tè al limone|Tés de limón|Herbaty cytrynowe|Лимонні чаї|柠檬茶
+lemon-verbena|Zitronenverbene|Lemon verbena|Вербена лимонная|Lúcia-lima|Citroenverbena|Verveine citronnée|Cedrina|Cedrón|Werbena cytrynowa|Вербена лимонна|柠檬马鞭草
+lentil-dishes|Linsengerichte|Lentil dishes|Блюда из чечевицы|Pratos de lentilhas|Linzengerechten|Plats de lentilles|Piatti di lenticchie|Platos de lentejas|Dania z soczewicy|Страви з сочевиці|扁豆菜肴
+lentil-pasta|Linsennudeln|Lentil pasta|Макароны из чечевицы|Massa de lentilhas|Linzenpasta|Pâtes de lentilles|Pasta di lenticchie|Pasta de lentejas|Makaron z soczewicy|Макарони з сочевиці|扁豆面
+lentil-sprouts|Linsensprossen|Lentil sprouts|Ростки чечевицы|Rebentos de lentilhas|Linzenkiemen|Pousses de lentilles|Germogli di lenticchie|Brotes de lentejas|Kiełki soczewicy|Паростки сочевиці|扁豆芽
+light-fruit-sodas|Kalorienarme Fruchtlimonaden|Light fruit sodas|Лёгкие фруктовые газировки|Refrigerantes de fruta light|Light fruitfrisdranken|Sodas aux fruits light|Bibite alla frutta light|Refrescos de frutas light|Napoje owocowe light|Легкі фруктові газовані напої|低热量水果汽水
+light-margarines|Halbfettmargarine|Light margarines|Лёгкие маргарины|Margarinas light|Lichte margarines|Margarines allégées|Margarine light|Margarinas light|Margaryny light|Легкі маргарини|低脂人造黄油
+lima-beans|Limabohnen|Lima beans|Лимская фасоль|Feijão-de-lima|Limabonen|Haricots de Lima|Fagioli di Lima|Alubias de Lima|Fasola limeńska|Лімська квасоля|利马豆
+limeflower-tea|Lindenblütentee|Linden flower tea|Липовый чай|Chá de tília|Lindebloesemthee|Infusion de tilleul|Tè al tiglio|Infusión de tilo|Herbata z kwiatu lipy|Липовий чай|椴花茶
+lingonberries|Preiselbeeren|Lingonberries|Брусника|Arandos vermelhos|Vossenbessen|Airelles|Mirtilli rossi|Arándanos rojos|Borówki brusznice|Брусниця|越橘
+liqueurs|Liköre|Liqueurs|Ликёры|Licores|Likeuren|Liqueurs|Liquori|Licores|Likiery|Лікери|利口酒
+liquid-broths|Flüssige Brühen|Liquid broths|Жидкие бульоны|Caldos líquidos|Vloeibare bouillons|Bouillons liquides|Brodi liquidi|Caldos líquidos|Buliony w płynie|Рідкі бульйони|液体高汤
+liver-terrines|Leberterrinen|Liver terrines|Печёночные террины|Terrinas de fígado|Leverterrines|Terrines de foie|Terrine di fegato|Terrinas de hígado|Terriny wątrobiane|Печінкові терини|肝肉冻派
+lobsters|Hummer|Lobsters|Омары|Lavagantes|Kreeften|Homards|Aragoste|Bogavantes|Homary|Омари|龙虾
+lorraine-quiche|Quiche Lorraine|Quiche Lorraine|Киш лорен|Quiche Lorraine|Quiche Lorraine|Quiche lorraine|Quiche lorraine|Quiche lorena|Quiche lorraine|Кіш лорен|洛林乳蛋饼
+low-fat-yogurts|Fettarmer Joghurt|Low-fat yoghurts|Йогурты с низким содержанием жира|Iogurtes magros|Magere yoghurt|Yaourts allégés|Yogurt magri|Yogures bajos en grasa|Jogurty o niskiej zawartości tłuszczu|Йогурти з низьким вмістом жиру|低脂酸奶
+lyophilized-aromatic-plants|Gefriergetrocknete Kräuter|Freeze-dried herbs|Сублимированные ароматические растения|Plantas aromáticas liofilizadas|Gevriesdroogde kruiden|Plantes aromatiques lyophilisées|Piante aromatiche liofilizzate|Plantas aromáticas liofilizadas|Liofilizowane rośliny aromatyczne|Сублімовані ароматичні рослини|冻干香草
+macarons|Macarons|Macarons|Макаронс|Macarons|Macarons|Macarons|Macaron|Macarons|Makaroniki|Макаронс|马卡龙
+mackerel-fillets|Makrelenfilets|Mackerel fillets|Филе скумбрии|Filetes de cavala|Makreelfilets|Filets de maquereau|Filetti di sgombro|Filetes de caballa|Filety z makreli|Філе скумбрії|鲭鱼片
+makis|Maki-Sushi|Maki sushi|Макидзуси|Maki|Maki-sushi|Makis|Maki sushi|Makis|Maki sushi|Макі-суші|卷寿司
+malt-flours|Malzmehl|Malt flour|Солодовая мука|Farinha de malte|Moutmeel|Farine de malt|Farina di malto|Harina de malta|Mąka słodowa|Солодове борошно|麦芽粉
+mantecados-and-polvorones|Mantecados & Polvorones|Mantecados and polvorones|Мантекадос и польворонес|Mantecados e polvorones|Mantecados en polvorones|Mantecados et polvorones|Mantecados e polvorones|Mantecados y polvorones|Mantecados i polvorones|Мантекадос і польворонес|西班牙酥饼
+marinated-anchovy-fillets|Marinierte Sardellenfilets|Marinated anchovy fillets|Маринованное филе анчоусов|Filetes de anchova marinados|Gemarineerde ansjovisfilets|Filets d'anchois marinés|Filetti di acciughe marinati|Filetes de boquerón marinados|Marynowane filety z anchois|Мариноване філе анчоусів|腌凤尾鱼片
+marinated-olives|Marinierte Oliven|Marinated olives|Маринованные оливки|Azeitonas marinadas|Gemarineerde olijven|Olives marinées|Olive marinate|Aceitunas aliñadas|Marynowane oliwki|Мариновані оливки|腌橄榄
+masala-pastes|Masala-Pasten|Masala pastes|Пасты масала|Pastas de masala|Masalapasta's|Pâtes masala|Paste masala|Pastas de masala|Pasty masala|Пасти масала|马萨拉酱
+masalas|Masala|Masalas|Масала|Masalas|Masala's|Masalas|Masala|Masalas|Masala|Масала|马萨拉
+mashed-broccoli|Brokkolipüree|Mashed broccoli|Пюре из брокколи|Puré de brócolos|Broccolipuree|Purée de brocoli|Purè di broccoli|Puré de brócoli|Puree z brokułów|Пюре з броколі|西兰花泥
+mashed-cauliflower|Blumenkohlpüree|Mashed cauliflower|Пюре из цветной капусты|Puré de couve-flor|Bloemkoolpuree|Purée de chou-fleur|Purè di cavolfiore|Puré de coliflor|Puree z kalafiora|Пюре з цвітної капусти|花椰菜泥
+mashed-potatoes|Kartoffelpüree|Mashed potatoes|Картофельное пюре|Puré de batata|Aardappelpuree|Purée de pommes de terre|Purè di patate|Puré de patatas|Puree ziemniaczane|Картопляне пюре|土豆泥
+mashed-vegetables|Gemüsepüree|Mashed vegetables|Овощное пюре|Puré de legumes|Groentepuree|Purées de légumes|Purè di verdure|Puré de verduras|Puree warzywne|Овочеве пюре|蔬菜泥
+meal-kits|Kochboxen|Meal kits|Наборы для приготовления блюд|Kits de refeição|Maaltijdboxen|Kits repas|Kit pasto|Kits de comida|Zestawy obiadowe|Набори для приготування страв|餐食套装
+meal-replacements|Ersatzmahlzeiten|Meal replacements|Заменители питания|Substitutos de refeição|Maaltijdvervangers|Substituts de repas|Sostituti del pasto|Sustitutos de comida|Zamienniki posiłków|Замінники їжі|代餐
+meat-alternatives|Fleischalternativen|Meat alternatives|Заменители мяса|Alternativas à carne|Vleesvervangers|Alternatives à la viande|Alternative alla carne|Alternativas a la carne|Alternatywy dla mięsa|Замінники м'яса|肉类替代品
+meat-based-pasta-sauces|Nudelsaucen mit Fleisch|Meat-based pasta sauces|Мясные соусы для пасты|Molhos de massa com carne|Pastasauzen met vlees|Sauces pour pâtes à la viande|Sughi di carne per pasta|Salsas de pasta con carne|Sosy do makaronu mięsne|М'ясні соуси для пасти|肉酱意面酱
+meat-based-sauces|Fleischsoßen|Meat-based sauces|Мясные соусы|Molhos de carne|Vleessauzen|Sauces à base de viande|Salse di carne|Salsas de carne|Sosy mięsne|М'ясні соуси|肉酱
+meat-ravioli|Fleischravioli|Meat ravioli|Равиоли с мясом|Ravioli de carne|Ravioli met vlees|Raviolis à la viande|Ravioli di carne|Ravioli de carne|Ravioli z mięsem|Равіолі з м'ясом|肉馅意式饺子
+meat-skewers|Fleischspieße|Meat skewers|Мясные шашлычки|Espetadas de carne|Vleesspiesjes|Brochettes de viande|Spiedini di carne|Brochetas de carne|Szaszłyki mięsne|М'ясні шашлики|肉串
+meat-tortellinis|Fleisch-Tortellini|Meat tortellini|Тортеллини с мясом|Tortellini de carne|Tortellini met vlees|Tortellinis à la viande|Tortellini di carne|Tortellini de carne|Tortellini z mięsem|Тортеллині з м'ясом|肉馅意式饺
+medium-grain-rices|Mittelkornreis|Medium-grain rice|Среднезерный рис|Arroz de grão médio|Middellangekorrelrijst|Riz à grains moyens|Riso a grana media|Arroz de grano medio|Ryż średnioziarnisty|Середньозернистий рис|中粒米
+melon-jams|Melonenmarmelade|Melon jam|Дынный джем|Doce de melão|Meloenjam|Confiture de melon|Marmellata di melone|Mermelada de melón|Dżem melonowy|Динний джем|甜瓜果酱
+melon-sorbets|Melonensorbet|Melon sorbets|Дынные щербеты|Sorvetes de melão|Meloensorbets|Sorbets au melon|Sorbetti al melone|Sorbetes de melón|Sorbety melonowe|Динні щербети|甜瓜冰沙
+microwave-meals|Mikrowellengerichte|Microwave meals|Блюда для микроволновки|Refeições para micro-ondas|Magnetronmaaltijden|Plats pour micro-ondes|Piatti per microonde|Platos para microondas|Dania do mikrofalówki|Страви для мікрохвильовки|微波餐
+microwave-potato-fries|Mikrowellen-Pommes|Microwave fries|Картофель фри для микроволновки|Batatas fritas para micro-ondas|Magnetronfrieten|Frites pour micro-ondes|Patatine per microonde|Patatas fritas para microondas|Frytki do mikrofalówki|Картопля фрі для мікрохвильовки|微波薯条
+milk-bread-rolls|Milchbrötchen|Milk bread rolls|Молочные булочки|Pãezinhos de leite|Melkbroodjes|Petits pains au lait|Panini al latte|Panecillos de leche|Bułki mleczne|Молочні булочки|牛奶面包卷
+milk-chocolate-biscuits|Kekse mit Milchschokolade|Milk chocolate biscuits|Печенье с молочным шоколадом|Bolachas de chocolate de leite|Koekjes met melkchocolade|Biscuits au chocolat au lait|Biscotti al cioccolato al latte|Galletas de chocolate con leche|Ciastka z czekoladą mleczną|Печиво з молочним шоколадом|牛奶巧克力饼干
+milk-substitutes|Milchersatz|Milk substitutes|Заменители молока|Substitutos de leite|Melkvervangers|Substituts de lait|Sostituti del latte|Sustitutos de la leche|Zamienniki mleka|Замінники молока|牛奶替代品
+milkfat|Milchfett|Milkfat|Молочный жир|Gordura do leite|Melkvet|Matière grasse du lait|Grasso del latte|Grasa de la leche|Tłuszcz mleczny|Молочний жир|乳脂肪
+milks-liquid-and-powder|Milch (flüssig & Pulver)|Milk (liquid and powder)|Молоко (жидкое и сухое)|Leite (líquido e em pó)|Melk (vloeibaar en poeder)|Laits (liquides et en poudre)|Latte (liquido e in polvere)|Leches (líquidas y en polvo)|Mleko (płynne i w proszku)|Молоко (рідке та сухе)|牛奶(液体和奶粉)
+milkshakes|Milchshakes|Milkshakes|Молочные коктейли|Batidos de leite|Milkshakes|Milk-shakes|Frullati di latte|Batidos|Koktajle mleczne|Молочні коктейлі|奶昔
+mimolette-cheese|Mimolette|Mimolette|Мимолет|Mimolette|Mimolette|Mimolette|Mimolette|Mimolette|Mimolette|Мімолет|米莫莱特奶酪
+mint|Minze|Mint|Мята|Hortelã|Munt|Menthe|Menta|Menta|Mięta|М'ята|薄荷
+mint-teas|Minztee|Mint teas|Мятные чаи|Chás de hortelã|Muntthee|Thés à la menthe|Tè alla menta|Tés de menta|Herbaty miętowe|М'ятні чаї|薄荷茶
+mirin|Mirin|Mirin|Мирин|Mirin|Mirin|Mirin|Mirin|Mirin|Mirin|Мірін|味醂
+mixed-bell-peppers|Paprikamix|Mixed bell peppers|Смесь болгарских перцев|Pimentos variados|Paprikamix|Poivrons mélangés|Peperoni misti|Pimientos variados|Mieszanka papryk|Суміш болгарських перців|混合甜椒
+mixed-berry-jams|Gemischte Beerenmarmelade|Mixed berry jams|Джемы из ягодной смеси|Doces de frutos vermelhos variados|Gemengde bessenjam|Confitures de fruits rouges mélangés|Confetture di frutti di bosco misti|Mermeladas de frutos rojos variados|Dżemy z owoców jagodowych|Джеми з ягідної суміші|混合浆果果酱
+mixed-fruit-jams|Multifrucht-Konfitüre|Mixed fruit jams|Джемы из смеси фруктов|Doces de fruta variada|Gemengde fruitjam|Confitures multifruits|Confetture di frutta mista|Mermeladas multifruta|Dżemy wieloowocowe|Джеми зі суміші фруктів|混合水果果酱
+mixed-fruit-soy-yogurts|Soja-Joghurt Multifrucht|Mixed fruit soy yoghurts|Соевые йогурты с фруктовой смесью|Iogurtes de soja multifruta|Sojayoghurt multifruit|Yaourts au soja multifruits|Yogurt di soia multifrutta|Yogures de soja multifruta|Jogurty sojowe wieloowocowe|Соєві йогурти з фруктовою сумішшю|混合水果豆奶酸奶
+mixed-herbs|Kräutermischung|Mixed herbs|Смесь трав|Ervas variadas|Kruidenmix|Herbes mélangées|Erbe miste|Hierbas variadas|Mieszanka ziół|Суміш трав|混合香草
+mixed-seaweeds|Algenmischung|Mixed seaweed|Смесь водорослей|Algas variadas|Zeewiermix|Algues mélangées|Alghe miste|Algas variadas|Mieszanka alg|Суміш водоростей|混合海藻
+mixed-vegetable-oils|Pflanzenölmischung|Mixed vegetable oils|Смесь растительных масел|Óleos vegetais misturados|Gemengde plantaardige oliën|Huiles végétales mélangées|Oli vegetali misti|Aceites vegetales mezclados|Mieszanka olejów roślinnych|Суміш рослинних олій|混合植物油
+mixed-vegetable-pickles|Gemischtes eingelegtes Gemüse|Mixed vegetable pickles|Маринованное овощное ассорти|Legumes variados em conserva|Gemengde ingelegde groenten|Légumes mélangés au vinaigre|Verdure miste sott'aceto|Verduras variadas en vinagre|Marynowane warzywa mieszane|Мариноване овочеве асорті|混合腌菜
+mixed-vegetables|Gemüsemischung|Mixed vegetables|Овощная смесь|Legumes variados|Gemengde groenten|Légumes mélangés|Verdure miste|Verduras variadas|Mieszanka warzyw|Овочева суміш|混合蔬菜
+mixtures-of-herbs-and-spices|Kräuter- & Gewürzmischungen|Mixtures of herbs and spices|Смеси трав и специй|Misturas de ervas e especiarias|Kruiden- en specerijenmengsels|Mélanges d'herbes et d'épices|Miscele di erbe e spezie|Mezclas de hierbas y especias|Mieszanki ziół i przypraw|Суміші трав і спецій|香草香料混合物
+mollusc|Weichtiere|Molluscs|Моллюски|Moluscos|Weekdieren|Mollusques|Molluschi|Moluscos|Mięczaki|Молюски|软体动物
+morteau-sausages|Morteau-Wurst|Morteau sausages|Колбасы Мортó|Salsichas de Morteau|Morteau-worsten|Saucisses de Morteau|Salsicce di Morteau|Salchichas de Morteau|Kiełbasy Morteau|Ковбаси Мортó|莫尔托香肠
+mountain-products|Bergprodukte|Mountain products|Горные продукты|Produtos de montanha|Bergproducten|Produits de montagne|Prodotti di montagna|Productos de montaña|Produkty górskie|Гірські продукти|山区产品
+mozzarella-sandwiches|Mozzarella-Sandwiches|Mozzarella sandwiches|Сэндвичи с моцареллой|Sanduíches de mozarela|Mozzarellasandwiches|Sandwichs à la mozzarella|Panini alla mozzarella|Sándwiches de mozzarella|Kanapki z mozzarellą|Сендвічі з моцарелою|马苏里拉三明治
+multifruit-juices|Multifruchtsaft|Multifruit juices|Мультифруктовые соки|Sumos multifruta|Multivruchtensappen|Jus multifruits|Succhi multifrutta|Zumos multifruta|Soki wieloowocowe|Мультифруктові соки|混合果汁
+multifruit-sorbets|Multifrucht-Sorbet|Multifruit sorbets|Мультифруктовые щербеты|Sorvetes multifruta|Multivruchtensorbets|Sorbets multifruits|Sorbetti multifrutta|Sorbetes multifruta|Sorbety wieloowocowe|Мультифруктові щербети|混合水果冰沙
+multifruit-yoghurts|Multifrucht-Joghurt|Multifruit yoghurts|Мультифруктовые йогурты|Iogurtes multifruta|Multivruchtenyoghurt|Yaourts multifruits|Yogurt multifrutta|Yogures multifruta|Jogurty wieloowocowe|Мультифруктові йогурти|混合水果酸奶
+munster|Münsterkäse|Munster|Мюнстер|Munster|Munster|Munster|Munster|Munster|Munster|Мюнстер|蒙斯特奶酪
+mushroom-ravioli|Pilzravioli|Mushroom ravioli|Равиоли с грибами|Ravioli de cogumelos|Ravioli met paddenstoelen|Raviolis aux champignons|Ravioli ai funghi|Ravioli de setas|Ravioli z grzybami|Равіолі з грибами|蘑菇意式饺子
+mushroom-risottos|Pilzrisotto|Mushroom risottos|Ризотто с грибами|Risotos de cogumelos|Paddenstoelenrisotto|Risottos aux champignons|Risotti ai funghi|Risottos de setas|Risotto z grzybami|Різотто з грибами|蘑菇烩饭
+muskmelons|Zuckermelonen|Muskmelons|Дыни мускусные|Melões|Suikermeloenen|Melons|Meloni|Melones|Melony|Дині мускусні|香瓜
+naans|Naan|Naans|Наан|Naans|Naan|Naans|Naan|Naans|Naan|Наан|馕
+natural-mineral-waters|Natürliches Mineralwasser|Natural mineral waters|Природная минеральная вода|Águas minerais naturais|Natuurlijke mineraalwaters|Eaux minérales naturelles|Acque minerali naturali|Aguas minerales naturales|Naturalne wody mineralne|Природна мінеральна вода|天然矿泉水
+natural-sugar-substitutes|Natürliche Süßungsmittel|Natural sweeteners|Натуральные заменители сахара|Adoçantes naturais|Natuurlijke zoetstoffen|Édulcorants naturels|Dolcificanti naturali|Edulcorantes naturales|Naturalne słodziki|Натуральні замінники цукру|天然甜味剂
+nems|Nems|Nems|Немы|Nems|Nems|Nems|Nem|Nems|Nems|Немі|越南春卷
+non-dairy-desserts|Milchfreie Desserts|Non-dairy desserts|Десерты без молока|Sobremesas sem lacticínios|Zuivelvrije desserts|Desserts sans produits laitiers|Dessert senza latticini|Postres sin lácteos|Desery bez nabiału|Десерти без молока|无乳甜点
+non-dairy-fermented-foods|Fermentierte Lebensmittel ohne Milch|Non-dairy fermented foods|Ферментированные продукты без молока|Alimentos fermentados sem lacticínios|Zuivelvrije gefermenteerde voeding|Aliments fermentés sans produits laitiers|Alimenti fermentati senza latticini|Alimentos fermentados sin lácteos|Fermentowana żywność bez nabiału|Ферментовані продукти без молока|无乳发酵食品
+non-dairy-yogurts|Pflanzliche Joghurts|Non-dairy yoghurts|Йогурты без молока|Iogurtes sem lacticínios|Zuivelvrije yoghurts|Yaourts sans produits laitiers|Yogurt senza latticini|Yogures sin lácteos|Jogurty bez nabiału|Йогурти без молока|无乳酸奶
+non-food-products|Non-Food-Produkte|Non-food products|Непищевые товары|Produtos não alimentares|Non-foodproducten|Produits non alimentaires|Prodotti non alimentari|Productos no alimentarios|Produkty nieżywnościowe|Непродовольчі товари|非食品
+non-homogenized-milks|Nicht homogenisierte Milch|Non-homogenised milk|Негомогенизированное молоко|Leite não homogeneizado|Niet-gehomogeniseerde melk|Laits non homogénéisés|Latte non omogeneizzato|Leche no homogeneizada|Mleko niehomogenizowane|Негомогенізоване молоко|非均质牛奶
+nori-seaweeds|Nori-Algen|Nori seaweed|Водоросли нори|Algas nori|Nori-zeewier|Algues nori|Alghe nori|Algas nori|Algi nori|Водорості норі|紫菜
+nougats|Nougat|Nougats|Нуга|Nougats|Nougats|Nougats|Torroni|Turrones|Nugaty|Нуга|牛轧糖
+nut-bars|Nussriegel|Nut bars|Ореховые батончики|Barras de frutos secos|Notenrepen|Barres aux noix|Barrette alle noci|Barritas de frutos secos|Batony orzechowe|Горіхові батончики|坚果棒
+nut-butters|Nussmus|Nut butters|Ореховые пасты|Manteigas de frutos secos|Notenboter|Beurres de noix|Burri di frutta secca|Mantequillas de frutos secos|Masła orzechowe|Горіхові пасти|坚果酱
+nut-confectioneries|Nusskonfekt|Nut confectioneries|Ореховые кондитерские изделия|Confeitaria de frutos secos|Notenzoetwaren|Confiseries aux noix|Dolciumi alle noci|Confitería de frutos secos|Wyroby cukiernicze z orzechami|Горіхові кондитерські вироби|坚果糖果
+nut-flours|Nussmehle|Nut flours|Ореховая мука|Farinhas de frutos secos|Notenmeel|Farines de noix|Farine di frutta secca|Harinas de frutos secos|Mąki orzechowe|Горіхове борошно|坚果粉
+nut-oils|Nussöle|Nut oils|Ореховые масла|Óleos de frutos secos|Notenoliën|Huiles de noix|Oli di frutta secca|Aceites de frutos secos|Oleje orzechowe|Горіхові олії|坚果油
+nutmeg-tree-products|Muskatprodukte|Nutmeg tree products|Продукты мускатного дерева|Produtos de noz-moscada|Nootmuskaatproducten|Produits du muscadier|Prodotti della noce moscata|Productos de nuez moscada|Produkty z muszkatołowca|Продукти мускатного дерева|肉豆蔻产品
+oatmeal-biscuits|Haferkekse|Oatmeal biscuits|Овсяное печенье|Bolachas de aveia|Havermoutkoekjes|Biscuits à l'avoine|Biscotti all'avena|Galletas de avena|Ciastka owsiane|Вівсяне печиво|燕麦饼干
+offals|Innereien|Offal|Субпродукты|Miudezas|Orgaanvlees|Abats|Frattaglie|Menudencias|Podroby|Субпродукти|内脏
+oilseed-purees|Ölsaatenmus|Oilseed purees|Пюре из масличных семян|Pastas de sementes oleaginosas|Oliezaadpuree|Purées d'oléagineux|Purè di semi oleosi|Purés de semillas oleaginosas|Przeciery z nasion oleistych|Пюре з олійних насінин|油籽泥
+olive-tree-products|Olivenbaumprodukte|Olive tree products|Продукты оливкового дерева|Produtos da oliveira|Olijfboomproducten|Produits de l'olivier|Prodotti dell'ulivo|Productos del olivo|Produkty z drzewa oliwnego|Продукти оливкового дерева|橄榄树产品
+olives|Oliven|Olives|Оливки|Azeitonas|Olijven|Olives|Olive|Aceitunas|Oliwki|Оливки|橄榄
+ostrich|Strauß|Ostrich|Страус|Avestruz|Struisvogel|Autruche|Struzzo|Avestruz|Struś|Страус|鸵鸟肉
+oysters|Austern|Oysters|Устрицы|Ostras|Oesters|Huîtres|Ostriche|Ostras|Ostrygi|Устриці|牡蛎
+palinka|Pálinka|Pálinka|Палинка|Pálinka|Pálinka|Pálinka|Pálinka|Pálinka|Pálinka|Палинка|帕林卡
+palm-oils|Palmöle|Palm oils|Пальмовые масла|Óleos de palma|Palmoliën|Huiles de palme|Oli di palma|Aceites de palma|Oleje palmowe|Пальмові олії|棕榈油
+pan-fried-dishes|Pfannengerichte|Pan-fried dishes|Блюда, жаренные на сковороде|Pratos salteados|Gebakken gerechten|Plats poêlés|Piatti in padella|Platos a la sartén|Dania z patelni|Страви, смажені на сковороді|煎炒菜肴
+pancetta|Pancetta|Pancetta|Панчетта|Pancetta|Pancetta|Pancetta|Pancetta|Panceta|Pancetta|Панчетта|意式培根
+panettone|Panettone|Panettone|Панеттоне|Panettone|Panettone|Panettone|Panettone|Panettone|Panettone|Панеттоне|潘妮托尼
+paninis|Panini|Paninis|Панини|Paninis|Panini's|Paninis|Panini|Paninis|Panini|Паніні|帕尼尼
+panna-cottas|Panna Cotta|Panna cottas|Панна-котта|Panna cottas|Panna cotta|Panna cottas|Panna cotta|Panna cottas|Panna cotta|Панна-котта|奶冻
+passion-fruit-nectars|Maracujanektar|Passion fruit nectars|Нектары маракуйи|Néctares de maracujá|Passievruchtnectars|Nectars de fruit de la passion|Nettari di frutto della passione|Néctares de maracuyá|Nektary z marakui|Нектари маракуї|百香果果汁饮料
+pasta-dishes|Nudelgerichte|Pasta dishes|Блюда из пасты|Pratos de massa|Pastagerechten|Plats de pâtes|Piatti di pasta|Platos de pasta|Dania z makaronu|Страви з пасти|面食菜肴
+pasta-salads|Nudelsalate|Pasta salads|Салаты с пастой|Saladas de massa|Pastasalades|Salades de pâtes|Insalate di pasta|Ensaladas de pasta|Sałatki makaronowe|Салати з пастою|意面沙拉
+pasteurised-milks|Pasteurisierte Milch|Pasteurised milks|Пастеризованное молоко|Leites pasteurizados|Gepasteuriseerde melk|Laits pasteurisés|Latte pastorizzato|Leches pasteurizadas|Mleko pasteryzowane|Пастеризоване молоко|巴氏杀菌奶
+pasteurised-products|Pasteurisierte Produkte|Pasteurised products|Пастеризованные продукты|Produtos pasteurizados|Gepasteuriseerde producten|Produits pasteurisés|Prodotti pastorizzati|Productos pasteurizados|Produkty pasteryzowane|Пастеризовані продукти|巴氏杀菌产品
+pasteurized-cheeses|Pasteurisierter Käse|Pasteurised cheeses|Пастеризованные сыры|Queijos pasteurizados|Gepasteuriseerde kazen|Fromages pasteurisés|Formaggi pastorizzati|Quesos pasteurizados|Sery pasteryzowane|Пастеризовані сири|巴氏杀菌奶酪
+pate|Pasteten|Pâté|Паштет|Patê|Paté|Pâté|Paté|Paté|Pasztet|Паштет|肉酱
+peach-juices|Pfirsichsaft|Peach juices|Персиковые соки|Sumos de pêssego|Perziksappen|Jus de pêche|Succhi di pesca|Zumos de melocotón|Soki brzoskwiniowe|Персикові соки|桃汁
+peanut-turron|Erdnuss-Turrón|Peanut turrón|Туррон арахисовый|Torrão de amendoim|Pinda-turrón|Touron aux cacahuètes|Torrone alle arachidi|Turrón de cacahuete|Turrón orzechowy|Туррон арахісовий|花生牛轧糖
+pear-juices|Birnensaft|Pear juices|Грушевые соки|Sumos de pera|Perensappen|Jus de poire|Succhi di pera|Zumos de pera|Soki gruszkowe|Грушеві соки|梨汁
+pear-pies|Birnenkuchen|Pear pies|Грушевые пироги|Tartes de pera|Perentaarten|Tartes aux poires|Torte di pere|Tartas de pera|Ciasta gruszkowe|Грушеві пироги|梨派
+pecorino|Pecorino|Pecorino|Пекорино|Pecorino|Pecorino|Pecorino|Pecorino|Pecorino|Pecorino|Пекоріно|佩科里诺奶酪
+pepper-sauces|Pfeffersaucen|Pepper sauces|Перечные соусы|Molhos de pimenta|Pepersauzen|Sauces au poivre|Salse al pepe|Salsas de pimienta|Sosy pieprzowe|Перцеві соуси|胡椒酱
+peppercorns|Pfefferkörner|Peppercorns|Перец горошком|Pimenta em grão|Peperkorrels|Grains de poivre|Pepe in grani|Granos de pimienta|Ziarna pieprzu|Перець горошком|胡椒粒
+petits-suisses|Petits Suisses|Petits suisses|Пти-сюисс|Petits suisses|Petits suisses|Petits-suisses|Petit suisse|Petits suisses|Petits suisses|Пті-сюісс|小瑞士奶酪
+pickled-beetroots|Eingelegte Rote Bete|Pickled beetroot|Маринованная свёкла|Beterraba em conserva|Ingelegde rode bieten|Betteraves au vinaigre|Barbabietole sott'aceto|Remolacha encurtida|Marynowane buraki|Мариноване буряк|腌甜菜根
+pickled-cucumbers|Eingelegte Gurken|Pickled cucumbers|Маринованные огурцы|Pepinos em conserva|Ingelegde komkommers|Concombres au vinaigre|Cetrioli sott'aceto|Pepinillos en vinagre|Ogórki kiszone|Мариновані огірки|腌黄瓜
+pickled-herring|Bismarckhering|Pickled herring|Маринованная сельдь|Arenque em conserva|Ingelegde haring|Hareng mariné|Aringa marinata|Arenque en escabeche|Śledź marynowany|Маринований оселедець|腌鲱鱼
+pies|Pasteten & Kuchen|Pies|Пироги|Tartes|Taarten|Tourtes|Torte salate|Pasteles|Pierogi pieczone|Пироги|派
+pigeon|Taube|Pigeon|Голубь|Pombo|Duif|Pigeon|Piccione|Pichón|Gołąb|Голуб|鸽肉
+pink-peppercorns|Rosa Pfefferkörner|Pink peppercorns|Розовый перец горошком|Pimenta rosa em grão|Roze peperkorrels|Baies roses|Pepe rosa in grani|Granos de pimienta rosa|Różowy pieprz ziarnisty|Рожевий перець горошком|粉红胡椒粒
+pistachio-kernels|Pistazienkerne|Pistachio kernels|Ядра фисташек|Miolo de pistácio|Pistachekernen|Pistaches décortiquées|Pistacchi sgusciati|Pistachos pelados|Pistacje łuskane|Ядра фісташок|开心果仁
+pitas|Pita|Pitas|Пита|Pitas|Pita's|Pitas|Pita|Pitas|Pita|Піта|皮塔饼
+pitted-olives|Entkernte Oliven|Pitted olives|Оливки без косточки|Azeitonas sem caroço|Ontpitte olijven|Olives dénoyautées|Olive denocciolate|Aceitunas sin hueso|Oliwki bez pestek|Оливки без кісточок|去核橄榄
+pizza-sauces|Pizzasoßen|Pizza sauces|Соусы для пиццы|Molhos para pizza|Pizzasauzen|Sauces pour pizza|Salse per pizza|Salsas para pizza|Sosy do pizzy|Соуси для піци|披萨酱
+pizzas|Pizzen|Pizzas|Пиццы|Pizzas|Pizza's|Pizzas|Pizze|Pizzas|Pizze|Піци|披萨
+pizzas-pies-and-quiches|Pizzen, Kuchen & Quiches|Pizzas, pies and quiches|Пиццы, пироги и киши|Pizzas, tartes e quiches|Pizza's, taarten en quiches|Pizzas, tartes et quiches|Pizze, torte salate e quiche|Pizzas, tartas y quiches|Pizze, ciasta i quiche|Піци, пироги та кіші|披萨、派和乳蛋饼
+plain-oat-based-drinks|Hafermilch (ungesüßt)|Plain oat drinks|Овсяные напитки без добавок|Bebidas de aveia naturais|Gewone haverdranken|Boissons à l'avoine nature|Bevande d'avena naturali|Bebidas de avena naturales|Napoje owsiane naturalne|Вівсяні напої без добавок|原味燕麦饮品
+plain-sweet-crepes|Süße Crêpes (natur)|Plain sweet crêpes|Сладкие блинчики без начинки|Crepes doces simples|Gewone zoete crêpes|Crêpes sucrées natures|Crêpes dolci semplici|Crepes dulces sencillos|Naleśniki słodkie bez nadzienia|Солодкі млинці без начинки|原味甜可丽饼
+plant-based-creams|Pflanzliche Sahne|Plant-based creams|Растительные сливки|Natas vegetais|Plantaardige room|Crèmes végétales|Panne vegetali|Natas vegetales|Śmietanki roślinne|Рослинні вершки|植物奶油
+plant-based-foods-and-beverages|Pflanzliche Lebensmittel & Getränke|Plant-based foods and beverages|Растительные продукты и напитки|Alimentos e bebidas vegetais|Plantaardige voeding en dranken|Aliments et boissons d'origine végétale|Alimenti e bevande di origine vegetale|Alimentos y bebidas de origen vegetal|Żywność i napoje roślinne|Рослинні продукти та напої|植物性食品和饮料
+plant-based-ice-cream-bars|Pflanzliches Eis am Stiel|Plant-based ice cream bars|Растительное эскимо|Gelados de pau vegetais|Plantaardige ijs aan een stokje|Bâtonnets de glace végétaux|Gelati vegetali su stecco|Helados de palo vegetales|Roślinne lody na patyku|Рослинне ескімо|植物冰淇淋棒
+plant-based-ice-creams|Pflanzliches Eis|Plant-based ice creams|Растительное мороженое|Gelados vegetais|Plantaardig ijs|Glaces végétales|Gelati vegetali|Helados vegetales|Roślinne lody|Рослинне морозиво|植物冰淇淋
+plant-based-mayonnaises|Pflanzliche Mayonnaise|Plant-based mayonnaises|Растительные майонезы|Maioneses vegetais|Plantaardige mayonaises|Mayonnaises végétales|Maionesi vegetali|Mayonesas vegetales|Majonezy roślinne|Рослинні майонези|植物蛋黄酱
+plant-based-meals|Pflanzliche Gerichte|Plant-based meals|Растительные блюда|Refeições vegetais|Plantaardige maaltijden|Plats végétaux|Piatti vegetali|Platos vegetales|Dania roślinne|Рослинні страви|植物性餐食
+plant-based-milk-alternatives|Pflanzenmilch|Plant-based milk alternatives|Растительное молоко|Alternativas vegetais ao leite|Plantaardige melkalternatieven|Alternatives végétales au lait|Alternative vegetali al latte|Alternativas vegetales a la leche|Roślinne zamienniki mleka|Рослинне молоко|植物奶
+plant-based-mixed-pickles|Pflanzliche Mixed Pickles|Plant-based mixed pickles|Растительное маринованное ассорти|Pickles mistos vegetais|Plantaardige mixed pickles|Pickles mélangés végétaux|Sottaceti misti vegetali|Encurtidos variados vegetales|Roślinne marynaty mieszane|Рослинне мариноване асорті|植物性混合腌菜
+plant-based-pickles|Eingelegtes Gemüse|Plant-based pickles|Маринады из растений|Conservas vegetais em vinagre|Plantaardige pickles|Conserves végétales au vinaigre|Sottaceti vegetali|Encurtidos vegetales|Marynaty roślinne|Маринади з рослин|植物性腌菜
+plant-based-spreads|Pflanzliche Brotaufstriche|Plant-based spreads|Растительные намазки|Pastas de barrar vegetais|Plantaardige smeersels|Pâtes à tartiner végétales|Creme spalmabili vegetali|Cremas para untar vegetales|Roślinne pasty do smarowania|Рослинні намазки|植物性抹酱
+plantain-bananas|Kochbananen|Plantain bananas|Кулинарные бананы|Bananas-pão|Bakbananen|Bananes plantain|Platani|Plátanos macho|Banany do smażenia|Кулінарні банани|大蕉
+plum-jams|Pflaumenmarmelade|Plum jams|Сливовые джемы|Doces de ameixa|Pruimenjam|Confitures de prunes|Confetture di prugne|Mermeladas de ciruela|Dżemy śliwkowe|Сливові джеми|李子果酱
+pollens|Pollen|Pollen|Пыльца|Pólen|Stuifmeel|Pollen|Polline|Polen|Pyłek|Пилок|花粉
+pomegranate-juices|Granatapfelsaft|Pomegranate juices|Гранатовые соки|Sumos de romã|Granaatappelsappen|Jus de grenade|Succhi di melograno|Zumos de granada|Soki z granatu|Гранатові соки|石榴汁
+pork-and-its-products|Schweinefleischprodukte|Pork products|Свинина и продукты из неё|Carne de porco e derivados|Varkensvlees en producten|Porc et produits dérivés|Maiale e derivati|Cerdo y derivados|Wieprzowina i produkty|Свинина та продукти з неї|猪肉及其制品
+pork-belly|Schweinebauch|Pork belly|Свиная грудинка|Barriga de porco|Varkensbuik|Poitrine de porc|Pancetta di maiale|Panceta de cerdo|Boczek wieprzowy|Свиняча грудинка|五花肉
+pork-liver-pates|Schweineleberpastete|Pork liver pâtés|Паштеты из свиной печени|Patês de fígado de porco|Varkenslever-paté|Pâtés de foie de porc|Paté di fegato di maiale|Patés de hígado de cerdo|Pasztety z wątroby wieprzowej|Паштети зі свинячої печінки|猪肝酱
+pork-liver-sausages|Schweineleberwurst|Pork liver sausages|Колбасы из свиной печени|Salsichas de fígado de porco|Varkensleverworsten|Saucisses de foie de porc|Salsicce di fegato di maiale|Salchichas de hígado de cerdo|Kiełbasy z wątroby wieprzowej|Ковбаси зі свинячої печінки|猪肝香肠
+pork-pates|Schweinepasteten|Pork pâtés|Свиные паштеты|Patês de porco|Varkenspaté's|Pâtés de porc|Paté di maiale|Patés de cerdo|Pasztety wieprzowe|Свинячі паштети|猪肉酱
+pork-ribs|Schweinerippchen|Pork ribs|Свиные рёбрышки|Costelas de porco|Varkensribbetjes|Travers de porc|Costine di maiale|Costillas de cerdo|Żeberka wieprzowe|Свинячі реберця|猪肋排
+pork-rillettes|Schweine-Rillettes|Pork rillettes|Свиные рийеты|Rillettes de porco|Varkensrillettes|Rillettes de porc|Rillettes di maiale|Rillettes de cerdo|Rillettes wieprzowe|Свинячі рієти|猪肉酱
+pork-salami|Schweinesalami|Pork salami|Свиная салями|Salame de porco|Varkenssalami|Salami de porc|Salame di maiale|Salami de cerdo|Salami wieprzowe|Свиняча салямі|猪肉萨拉米
+pork-sausages|Schweinswürste|Pork sausages|Свиные колбаски|Salsichas de porco|Varkensworsten|Saucisses de porc|Salsicce di maiale|Salchichas de cerdo|Kiełbasy wieprzowe|Свинячі ковбаски|猪肉香肠
+potato-dishes|Kartoffelgerichte|Potato dishes|Блюда из картофеля|Pratos de batata|Aardappelgerechten|Plats de pommes de terre|Piatti di patate|Platos de patata|Dania ziemniaczane|Страви з картоплі|土豆菜肴
+potato-gnocchi|Kartoffelgnocchi|Potato gnocchi|Картофельные ньокки|Nhoque de batata|Aardappelgnocchi|Gnocchis de pommes de terre|Gnocchi di patate|Ñoquis de patata|Gnocchi ziemniaczane|Картопляні ньоккі|土豆意式团子
+potato-gratin|Kartoffelgratin|Potato gratin|Картофельный гратен|Gratinado de batata|Aardappelgratin|Gratin de pommes de terre|Gratin di patate|Gratinado de patata|Zapiekanka ziemniaczana|Картопляний гратен|焗土豆
+potato-preparations|Kartoffelzubereitungen|Potato preparations|Картофельные полуфабрикаты|Preparados de batata|Aardappelbereidingen|Préparations de pommes de terre|Preparazioni di patate|Preparados de patata|Przetwory ziemniaczane|Картопляні напівфабрикати|土豆制品
+potted-aromatic-plants|Kräuter im Topf|Potted herbs|Ароматические растения в горшках|Plantas aromáticas em vaso|Kruiden in pot|Plantes aromatiques en pot|Piante aromatiche in vaso|Plantas aromáticas en maceta|Zioła w doniczce|Ароматичні рослини в горщиках|盆栽香草
+potted-meats|Fleischaufstriche|Potted meats|Мясные паштеты в баночках|Carnes em pasta|Vleessmeersels|Viandes en pot|Carni in vasetto|Carnes en tarro|Pasty mięsne|М'ясні паштети в баночках|罐装肉酱
+potted-mint|Minze im Topf|Potted mint|Мята в горшке|Hortelã em vaso|Munt in pot|Menthe en pot|Menta in vaso|Menta en maceta|Mięta w doniczce|М'ята в горщику|盆栽薄荷
+potted-plants|Pflanzen im Topf|Potted plants|Растения в горшках|Plantas em vaso|Planten in pot|Plantes en pot|Piante in vaso|Plantas en maceta|Rośliny w doniczkach|Рослини в горщиках|盆栽植物
+poultry-broth|Geflügelbrühe|Poultry broth|Бульон из птицы|Caldo de aves|Gevogeltebouillon|Bouillon de volaille|Brodo di pollame|Caldo de ave|Bulion drobiowy|Бульйон із птиці|禽肉高汤
+poultry-hams|Geflügelschinken|Poultry hams|Ветчина из птицы|Fiambres de aves|Gevogelteham|Jambons de volaille|Prosciutti di pollame|Jamones de ave|Szynki drobiowe|Шинка з птиці|禽肉火腿
+poultry-nuggets|Geflügelnuggets|Poultry nuggets|Наггетсы из птицы|Nuggets de aves|Gevogeltenuggets|Nuggets de volaille|Nuggets di pollame|Nuggets de ave|Nuggetsy drobiowe|Нагетси з птиці|禽肉块
+poultry-sandwiches|Geflügelsandwiches|Poultry sandwiches|Сэндвичи с птицей|Sanduíches de aves|Gevogeltesandwiches|Sandwichs à la volaille|Panini al pollame|Sándwiches de ave|Kanapki z drobiem|Сендвічі з птицею|禽肉三明治
+poultry-sausages|Geflügelwürste|Poultry sausages|Колбаски из птицы|Salsichas de aves|Gevogelteworsten|Saucisses de volaille|Salsicce di pollame|Salchichas de ave|Kiełbasy drobiowe|Ковбаски з птиці|禽肉香肠
+poultry-skewers|Geflügelspieße|Poultry skewers|Шашлычки из птицы|Espetadas de aves|Gevogeltespiesjes|Brochettes de volaille|Spiedini di pollame|Brochetas de ave|Szaszłyki drobiowe|Шашлики з птиці|禽肉串
+poultry-terrines|Geflügelterrinen|Poultry terrines|Террины из птицы|Terrinas de aves|Gevogelteterrines|Terrines de volaille|Terrine di pollame|Terrinas de ave|Terriny drobiowe|Терини з птиці|禽肉冻派
+powdered-cereal-milks|Getreidemilchpulver|Powdered cereal milks|Сухие злаковые напитки|Bebidas de cereais em pó|Graanmelkpoeder|Laits de céréales en poudre|Latti di cereali in polvere|Bebidas de cereales en polvo|Napoje zbożowe w proszku|Сухі злакові напої|谷物奶粉
+powdered-legume-milks|Hülsenfruchtmilchpulver|Powdered legume milks|Сухие напитки из бобовых|Bebidas de leguminosas em pó|Peulvruchtenmelkpoeder|Laits de légumineuses en poudre|Latti di legumi in polvere|Bebidas de legumbres en polvo|Napoje z roślin strączkowych w proszku|Сухі напої з бобових|豆奶粉
+powdered-nut-milks|Nussmilchpulver|Powdered nut milks|Сухие ореховые напитки|Bebidas de frutos secos em pó|Notenmelkpoeder|Laits de noix en poudre|Latti di frutta secca in polvere|Bebidas de frutos secos en polvo|Napoje orzechowe w proszku|Сухі горіхові напої|坚果奶粉
+powdered-plant-milks|Pflanzenmilchpulver|Powdered plant milks|Сухое растительное молоко|Bebidas vegetais em pó|Plantaardig melkpoeder|Laits végétaux en poudre|Latti vegetali in polvere|Bebidas vegetales en polvo|Mleka roślinne w proszku|Суха рослинне молоко|植物奶粉
+powdered-wheat-milks|Weizenmilchpulver|Powdered wheat milks|Сухие напитки из пшеницы|Bebidas de trigo em pó|Tarwemelkpoeder|Laits de blé en poudre|Latti di grano in polvere|Bebidas de trigo en polvo|Napoje pszenne w proszku|Сухі напої з пшениці|小麦奶粉
+pre-baked-breads|Aufbackbrote|Pre-baked breads|Полуфабрикаты хлеба для допекания|Pães pré-cozidos|Voorgebakken broden|Pains précuits|Pani precotti|Panes precocidos|Chleby podpiekane|Напівспечені хліби|预烤面包
+precooked-rices|Vorgegarter Reis|Precooked rice|Предварительно приготовленный рис|Arroz pré-cozinhado|Voorgekookte rijst|Riz précuit|Riso precotto|Arroz precocinado|Ryż ugotowany wstępnie|Попередньо приготований рис|预煮米饭
+premixed-alcoholic-beverages|Mixgetränke mit Alkohol|Premixed alcoholic beverages|Готовые алкогольные коктейли|Bebidas alcoólicas pré-misturadas|Voorgemengde alcoholische dranken|Boissons alcoolisées prémélangées|Bevande alcoliche premiscelate|Bebidas alcohólicas premezcladas|Gotowe napoje alkoholowe|Готові алкогольні коктейлі|预调酒
+prepared-couscous|Zubereiteter Couscous|Prepared couscous|Готовый кускус|Cuscuz preparado|Bereide couscous|Couscous préparé|Couscous pronto|Cuscús preparado|Gotowy kuskus|Готовий кускус|即食库斯库斯
+prepared-meats|Zubereitetes Fleisch|Prepared meats|Готовые мясные изделия|Carnes preparadas|Bereid vlees|Viandes préparées|Carni preparate|Carnes preparadas|Przetworzone mięso|Готові м'ясні вироби|预制肉类
+prepared-salads|Fertigsalate|Prepared salads|Готовые салаты|Saladas preparadas|Kant-en-klare salades|Salades préparées|Insalate pronte|Ensaladas preparadas|Gotowe sałatki|Готові салати|预制沙拉
+prepared-vegetables|Vorbereitetes Gemüse|Prepared vegetables|Подготовленные овощи|Legumes preparados|Bereide groenten|Légumes préparés|Verdure preparate|Verduras preparadas|Przygotowane warzywa|Підготовлені овочі|预制蔬菜
+provolone|Provolone|Provolone|Проволоне|Provolone|Provolone|Provolone|Provolone|Provolone|Provolone|Провалоне|普罗沃洛尼奶酪
+prune-juices|Pflaumensaft|Prune juices|Сливовые соки|Sumos de ameixa seca|Pruimensappen|Jus de pruneau|Succhi di prugna|Zumos de ciruela pasa|Soki ze śliwek|Сливові соки|西梅汁
+pryaniki|Prjaniki|Pryaniki|Пряники|Pryaniki|Pryaniki|Pryaniki|Pryaniki|Pryaniki|Pryaniki|Пряники|俄式姜饼
+puff-pastry-king-cakes|Dreikönigskuchen|Puff pastry king cakes|Королевские пироги из слоёного теста|Bolos-rei de massa folhada|Driekoningentaarten van bladerdeeg|Galettes des rois feuilletées|Torte dei re in pasta sfoglia|Roscones de hojaldre|Ciasta trzech króli z ciasta francuskiego|Королівські пироги зі слоєного тіста|酥皮国王饼
+puff-pastry-meals|Blätterteiggerichte|Puff pastry meals|Блюда из слоёного теста|Pratos de massa folhada|Bladerdeeggerechten|Plats en pâte feuilletée|Piatti di pasta sfoglia|Platos de hojaldre|Dania z ciasta francuskiego|Страви зі слоєного тіста|酥皮菜肴
+puff-pastry-sheets|Blätterteig|Puff pastry sheets|Листы слоёного теста|Folhas de massa folhada|Bladerdeegplakken|Pâtes feuilletées|Fogli di pasta sfoglia|Láminas de hojaldre|Płaty ciasta francuskiego|Листи слоєного тіста|酥皮
+puffed-cereal-cakes|Gepuffte Getreidewaffeln|Puffed cereal cakes|Воздушные злаковые хлебцы|Bolachas de cereais expandidos|Gepofte graanwafels|Galettes de céréales soufflées|Gallette di cereali soffiati|Tortitas de cereales hinchados|Wafle zbożowe ekspandowane|Повітряні злакові хлібці|膨化谷物饼
+puffed-cereals|Gepuffte Cerealien|Puffed cereals|Воздушные злаки|Cereais expandidos|Gepofte granen|Céréales soufflées|Cereali soffiati|Cereales hinchados|Zboża ekspandowane|Повітряні злаки|膨化谷物
+puffed-grains|Puffgetreide|Puffed grains|Воздушные зерна|Grãos expandidos|Gepofte granen|Grains soufflés|Cereali soffiati|Granos hinchados|Ziarna ekspandowane|Повітряні зерна|膨化谷粒
+puffed-legumes|Gepuffte Hülsenfrüchte|Puffed legumes|Воздушные бобовые|Leguminosas expandidas|Gepofte peulvruchten|Légumineuses soufflées|Legumi soffiati|Legumbres hinchadas|Ekspandowane rośliny strączkowe|Повітряні бобові|膨化豆类
+puffed-pulse-cakes|Hülsenfruchtwaffeln|Puffed pulse cakes|Воздушные хлебцы из бобовых|Bolachas de leguminosas expandidas|Gepofte peulvruchtenwafels|Galettes de légumineuses soufflées|Gallette di legumi soffiati|Tortitas de legumbres hinchadas|Wafle z roślin strączkowych|Повітряні хлібці з бобових|膨化豆饼
+puffed-rice|Puffreis|Puffed rice|Воздушный рис|Arroz expandido|Gepofte rijst|Riz soufflé|Riso soffiato|Arroz hinchado|Ryż preparowany|Повітряний рис|爆米
+puffed-spelt|Puffdinkel|Puffed spelt|Воздушная спельта|Espelta expandida|Gepofte spelt|Épeautre soufflé|Farro soffiato|Espelta hinchada|Orkisz preparowany|Повітряна спельта|膨化斯佩尔特小麦
+puffed-wheat|Puffweizen|Puffed wheat|Воздушная пшеница|Trigo expandido|Gepofte tarwe|Blé soufflé|Grano soffiato|Trigo hinchado|Pszenica preparowana|Повітряна пшениця|膨化小麦
+puffed-wheat-cakes|Gepuffte Weizenwaffeln|Puffed wheat cakes|Воздушные пшеничные хлебцы|Bolachas de trigo expandido|Gepofte tarwewafels|Galettes de blé soufflé|Gallette di grano soffiato|Tortitas de trigo hinchado|Wafle pszenne ekspandowane|Повітряні пшеничні хлібці|膨化小麦饼
+pulses|Hülsenfrüchte|Pulses|Бобовые|Leguminosas secas|Peulvruchten|Légumineuses sèches|Legumi secchi|Legumbres secas|Nasiona roślin strączkowych|Бобові|干豆类
+pumpkin-and-squash-plant-products|Kürbisprodukte|Pumpkin and squash products|Продукты из тыквы|Produtos de abóbora|Pompoenproducten|Produits de courge|Prodotti di zucca|Productos de calabaza|Produkty z dyni|Продукти з гарбуза|南瓜产品
+pumpkin-soups|Kürbissuppen|Pumpkin soups|Тыквенные супы|Sopas de abóbora|Pompoensoepen|Soupes de potiron|Zuppe di zucca|Sopas de calabaza|Zupy dyniowe|Гарбузові супи|南瓜汤
+pure-peanut-butters|Erdnussbutter (pur)|Pure peanut butter|Арахисовая паста без добавок|Manteiga de amendoim pura|Pure pindakaas|Beurre de cacahuète pur|Burro di arachidi puro|Mantequilla de cacahuete pura|Czyste masło orzechowe|Арахісова паста без добавок|纯花生酱
+pure-tomato-juices|Reiner Tomatensaft|Pure tomato juices|Чистые томатные соки|Sumos de tomate puros|Pure tomatensappen|Jus de tomate pur|Succhi di pomodoro puri|Zumos de tomate puros|Czyste soki pomidorowe|Чисті томатні соки|纯番茄汁
+purees|Pürees|Purées|Пюре|Purés|Purees|Purées|Purè|Purés|Przeciery|Пюре|泥
+quiches|Quiches|Quiches|Киши|Quiches|Quiches|Quiches|Quiche|Quiches|Quiche|Кіші|乳蛋饼
+quinces|Quitten|Quinces|Айва|Marmelos|Kweeperen|Coings|Mele cotogne|Membrillos|Pigwy|Айва|榅桲
+rabbit-meat|Kaninchenfleisch|Rabbit meat|Мясо кролика|Carne de coelho|Konijnenvlees|Viande de lapin|Carne di coniglio|Carne de conejo|Mięso królika|М'ясо кролика|兔肉
+raclette|Raclettekäse|Raclette|Раклет|Raclette|Raclette|Raclette|Raclette|Raclette|Raclette|Раклет|拉可雷特奶酪
+rakia|Rakija|Rakia|Ракия|Rakia|Rakia|Rakia|Rakia|Rakia|Rakija|Ракія|拉基亚酒
+raspberry-honeys|Himbeerhonig|Raspberry honey|Малиновый мёд|Mel de framboesa|Frambozenhoning|Miel de framboisier|Miele di lampone|Miel de frambuesa|Miód malinowy|Малиновий мед|覆盆子蜜
+raw-beetroot|Rohe Rote Bete|Raw beetroot|Сырая свёкла|Beterraba crua|Rauwe rode bieten|Betterave crue|Barbabietola cruda|Remolacha cruda|Surowe buraki|Сирий буряк|生甜菜根
+red-bananas|Rote Bananen|Red bananas|Красные бананы|Bananas vermelhas|Rode bananen|Bananes rouges|Banane rosse|Plátanos rojos|Czerwone banany|Червоні банани|红香蕉
+red-beans|Rote Bohnen|Red beans|Красная фасоль|Feijão vermelho|Rode bonen|Haricots rouges|Fagioli rossi|Alubias rojas|Czerwona fasola|Червона квасоля|红豆
+red-ports|Roter Portwein|Red ports|Красные портвейны|Portos tintos|Rode portwijnen|Portos rouges|Porto rossi|Oportos tintos|Czerwone porto|Червоні портвейни|红波特酒
+red-radishes|Radieschen|Red radishes|Красная редиска|Rabanetes|Radijsjes|Radis rouges|Ravanelli|Rábanos rojos|Rzodkiewki|Червона редиска|红萝卜
+refined-sunflower-oils|Raffiniertes Sonnenblumenöl|Refined sunflower oils|Рафинированные подсолнечные масла|Óleos de girassol refinados|Geraffineerde zonnebloemoliën|Huiles de tournesol raffinées|Oli di girasole raffinati|Aceites de girasol refinados|Rafinowane oleje słonecznikowe|Рафіновані соняшникові олії|精炼葵花籽油
+refrigerated-creamy-puddings|Gekühlte Dessertcremes|Refrigerated creamy puddings|Охлаждённые кремовые пудинги|Pudins cremosos refrigerados|Gekoelde roompuddingen|Crèmes desserts réfrigérées|Budini cremosi refrigerati|Natillas refrigeradas|Chłodzone kremowe budynie|Охолоджені кремові пудинги|冷藏奶油布丁
+refrigerated-foods|Gekühlte Lebensmittel|Refrigerated foods|Охлаждённые продукты|Alimentos refrigerados|Gekoelde voeding|Aliments réfrigérés|Alimenti refrigerati|Alimentos refrigerados|Żywność chłodzona|Охолоджені продукти|冷藏食品
+refrigerated-meals|Gekühlte Gerichte|Refrigerated meals|Охлаждённые готовые блюда|Refeições refrigeradas|Gekoelde maaltijden|Plats réfrigérés|Piatti refrigerati|Platos refrigerados|Dania chłodzone|Охолоджені готові страви|冷藏餐食
+refrigerated-soups|Gekühlte Suppen|Refrigerated soups|Охлаждённые супы|Sopas refrigeradas|Gekoelde soepen|Soupes réfrigérées|Zuppe refrigerate|Sopas refrigeradas|Zupy chłodzone|Охолоджені супи|冷藏汤
+refrigerated-squeezed-juices|Gekühlte Direktsäfte|Refrigerated squeezed juices|Охлаждённые соки прямого отжима|Sumos espremidos refrigerados|Gekoelde geperste sappen|Jus pressés réfrigérés|Spremute refrigerate|Zumos exprimidos refrigerados|Chłodzone soki wyciskane|Охолоджені соки прямого віджиму|冷藏鲜榨果汁
+refrigerated-vegetable-soups|Gekühlte Gemüsesuppen|Refrigerated vegetable soups|Охлаждённые овощные супы|Sopas de legumes refrigeradas|Gekoelde groentesoepen|Soupes de légumes réfrigérées|Zuppe di verdure refrigerate|Sopas de verduras refrigeradas|Chłodzone zupy warzywne|Охолоджені овочеві супи|冷藏蔬菜汤
+reheatable-soups|Aufwärmbare Suppen|Reheatable soups|Супы для разогрева|Sopas para aquecer|Op te warmen soepen|Soupes à réchauffer|Zuppe da riscaldare|Sopas para calentar|Zupy do podgrzania|Супи для розігріву|可加热汤
+rhubarb|Rhabarber|Rhubarb|Ревень|Ruibarbo|Rabarber|Rhubarbe|Rabarbaro|Ruibarbo|Rabarbar|Ревінь|大黄
+ricciarelli|Ricciarelli|Ricciarelli|Рикьярелли|Ricciarelli|Ricciarelli|Ricciarelli|Ricciarelli|Ricciarelli|Ricciarelli|Річьярелі|锡耶纳杏仁饼
+rice-desserts|Reisdesserts|Rice desserts|Рисовые десерты|Sobremesas de arroz|Rijstdesserts|Desserts au riz|Dessert al riso|Postres de arroz|Desery ryżowe|Рисові десерти|米制甜点
+rice-dishes|Reisgerichte|Rice dishes|Блюда из риса|Pratos de arroz|Rijstgerechten|Plats de riz|Piatti di riso|Platos de arroz|Dania z ryżu|Страви з рису|米饭菜肴
+risottos|Risotto|Risottos|Ризотто|Risotos|Risotto's|Risottos|Risotti|Risottos|Risotta|Різотто|烩饭
+roasted-almonds|Geröstete Mandeln|Roasted almonds|Жареный миндаль|Amêndoas torradas|Geroosterde amandelen|Amandes grillées|Mandorle tostate|Almendras tostadas|Prażone migdały|Смажений мигдаль|烤杏仁
+roasted-hazelnuts|Geröstete Haselnüsse|Roasted hazelnuts|Жареный фундук|Avelãs torradas|Geroosterde hazelnoten|Noisettes grillées|Nocciole tostate|Avellanas tostadas|Prażone orzechy laskowe|Смажений фундук|烤榛子
+roasted-nuts|Geröstete Nüsse|Roasted nuts|Жареные орехи|Frutos secos torrados|Geroosterde noten|Noix grillées|Frutta secca tostata|Frutos secos tostados|Prażone orzechy|Смажені горіхи|烤坚果
+roasted-pistachios|Geröstete Pistazien|Roasted pistachios|Жареные фисташки|Pistácios torrados|Geroosterde pistachenoten|Pistaches grillées|Pistacchi tostati|Pistachos tostados|Prażone pistacje|Смажені фісташки|烤开心果
+roasted-pumpkin-seeds|Geröstete Kürbiskerne|Roasted pumpkin seeds|Жареные тыквенные семечки|Sementes de abóbora torradas|Geroosterde pompoenpitten|Graines de courge grillées|Semi di zucca tostati|Pepitas de calabaza tostadas|Prażone pestki dyni|Смажене гарбузове насіння|烤南瓜籽
+roasted-sunflower-seeds|Geröstete Sonnenblumenkerne|Roasted sunflower seeds|Жареные семечки подсолнечника|Sementes de girassol torradas|Geroosterde zonnebloempitten|Graines de tournesol grillées|Semi di girasole tostati|Pipas de girasol tostadas|Prażone pestki słonecznika|Смажене насіння соняшнику|烤葵花籽
+robiola|Robiola|Robiola|Робиола|Robiola|Robiola|Robiola|Robiola|Robiola|Robiola|Робіола|罗比奥拉奶酪
+robusta-coffees|Robusta-Kaffee|Robusta coffee|Кофе робуста|Café robusta|Robustakoffie|Café robusta|Caffè robusta|Café robusta|Kawa robusta|Кава робуста|罗布斯塔咖啡
+rolled-flakes|Gewalzte Flocken|Rolled flakes|Плющёные хлопья|Flocos laminados|Gewalste vlokken|Flocons laminés|Fiocchi laminati|Copos laminados|Płatki walcowane|Плющені пластівці|压片
+rollmops|Rollmops|Rollmops|Роллмопс|Rollmops|Rolmops|Rollmops|Rollmops|Rollmops|Rollmops|Роллмопс|鲱鱼卷
+rooibos|Rooibos|Rooibos|Ройбуш|Rooibos|Rooibos|Rooibos|Rooibos|Rooibos|Rooibos|Ройбуш|博士茶
+russet-apples|Boskoop-Äpfel|Russet apples|Яблоки ренет|Maçãs reineta|Goudreinetten|Pommes reinettes|Mele renette|Manzanas reineta|Jabłka renety|Яблука ренет|锈苹果
+rye-and-wheat-breads|Roggen-Weizen-Brot|Rye and wheat breads|Ржано-пшеничный хлеб|Pães de centeio e trigo|Rogge-tarwebroden|Pains de seigle et de blé|Pani di segale e frumento|Panes de centeno y trigo|Chleby żytnio-pszenne|Житньо-пшеничний хліб|黑麦小麦面包
+saffron|Safran|Saffron|Шафран|Açafrão|Saffraan|Safran|Zafferano|Azafrán|Szafran|Шафран|藏红花
+salmon-lasagne|Lachslasagne|Salmon lasagne|Лазанья с лососем|Lasanha de salmão|Zalmlasagne|Lasagne au saumon|Lasagne al salmone|Lasaña de salmón|Lasagne z łososiem|Лазанья з лососем|三文鱼千层面
+salmon-rillettes|Lachs-Rillettes|Salmon rillettes|Рийеты из лосося|Rillettes de salmão|Zalmrillettes|Rillettes de saumon|Rillettes di salmone|Rillettes de salmón|Rillettes z łososia|Рієти з лосося|三文鱼酱
+salmon-sandwiches|Lachssandwiches|Salmon sandwiches|Сэндвичи с лососем|Sanduíches de salmão|Zalmsandwiches|Sandwichs au saumon|Panini al salmone|Sándwiches de salmón|Kanapki z łososiem|Сендвічі з лососем|三文鱼三明治
+salt-and-vinegar-crisps|Chips Salz & Essig|Salt and vinegar crisps|Чипсы соль и уксус|Batatas fritas de sal e vinagre|Chips zout en azijn|Chips sel et vinaigre|Patatine sale e aceto|Patatas fritas de sal y vinagre|Chipsy sól i ocet|Чипси сіль і оцет|盐醋薯片
+salted-almonds|Gesalzene Mandeln|Salted almonds|Солёный миндаль|Amêndoas salgadas|Gezouten amandelen|Amandes salées|Mandorle salate|Almendras saladas|Solone migdały|Солоний мигдаль|咸杏仁
+salted-chocolates|Salzschokolade|Salted chocolates|Солёный шоколад|Chocolates salgados|Gezouten chocolade|Chocolats salés|Cioccolatini salati|Chocolates salados|Solona czekolada|Солоний шоколад|咸巧克力
+salted-dark-chocolates|Gesalzene Zartbitterschokolade|Salted dark chocolates|Солёный тёмный шоколад|Chocolates negros salgados|Gezouten pure chocolade|Chocolats noirs salés|Cioccolato fondente salato|Chocolates negros salados|Solona gorzka czekolada|Солоний чорний шоколад|咸黑巧克力
+salted-margarines|Gesalzene Margarine|Salted margarines|Солёные маргарины|Margarinas salgadas|Gezouten margarines|Margarines salées|Margarine salate|Margarinas saladas|Solone margaryny|Солоні маргарини|加盐人造黄油
+salted-milk-chocolates|Gesalzene Milchschokolade|Salted milk chocolates|Солёный молочный шоколад|Chocolates de leite salgados|Gezouten melkchocolade|Chocolats au lait salés|Cioccolato al latte salato|Chocolates con leche salados|Solona czekolada mleczna|Солоний молочний шоколад|咸牛奶巧克力
+salted-nuts|Gesalzene Nüsse|Salted nuts|Солёные орехи|Frutos secos salgados|Gezouten noten|Noix salées|Frutta secca salata|Frutos secos salados|Solone orzechy|Солоні горіхи|咸坚果
+salted-pies|Herzhafte Kuchen|Savoury pies|Солёные пироги|Tartes salgadas|Hartige taarten|Tartes salées|Torte salate|Tartas saladas|Wytrawne ciasta|Солоні пироги|咸派
+salted-spreads|Gesalzene Aufstriche|Salted spreads|Солёные намазки|Cremes de barrar salgados|Gezouten smeersels|Pâtes à tartiner salées|Creme spalmabili salate|Cremas para untar saladas|Solone pasty do smarowania|Солоні намазки|咸味抹酱
+salty-fritters|Herzhafte Krapfen|Savoury fritters|Солёные оладьи|Frituras salgadas|Hartige beignets|Beignets salés|Frittelle salate|Buñuelos salados|Wytrawne racuchy|Солоні оладки|咸味油炸饼
+samosas|Samosas|Samosas|Самоса|Samosas|Samosa's|Samossas|Samosa|Samosas|Samosy|Самоси|咖喱角
+sardine-fillets|Sardinenfilets|Sardine fillets|Филе сардин|Filetes de sardinha|Sardinefilets|Filets de sardines|Filetti di sardine|Filetes de sardina|Filety sardynek|Філе сардин|沙丁鱼片
+savory-mousses|Herzhafte Mousses|Savoury mousses|Закусочные муссы|Mousses salgadas|Hartige mousses|Mousses salées|Mousse salate|Mousses saladas|Musy wytrawne|Закусочні муси|咸味慕斯
+savory-semolina-dishes|Couscous-Gerichte|Savoury semolina dishes|Блюда из манной крупы|Pratos de sêmola|Hartige griesgerechten|Plats de semoule|Piatti di semola|Platos de sémola|Dania z kaszy manny|Страви з манної крупи|咸味粗粉菜肴
+scallop|Jakobsmuscheln|Scallops|Гребешки|Vieiras|Sint-jakobsschelpen|Coquilles Saint-Jacques|Capesante|Vieiras|Przegrzebki|Гребінці|扇贝
+scamorza|Scamorza|Scamorza|Скаморца|Scamorza|Scamorza|Scamorza|Scamorza|Scamorza|Scamorza|Скаморца|斯卡莫扎奶酪
+scarlet-runner-beans|Feuerbohnen|Scarlet runner beans|Фасоль огненно-красная|Feijão-de-trepar|Pronkbonen|Haricots d'Espagne|Fagioli di Spagna|Alubias de España|Fasola wielokwiatowa|Квасоля багатоквіткова|红花菜豆
+schnapps|Schnaps|Schnapps|Шнапс|Aguardente|Jenever|Schnaps|Grappa|Aguardiente|Sznaps|Шнапс|烈酒
+sea-lettuce-seaweeds|Meersalat|Sea lettuce|Морской салат|Alface-do-mar|Zeesla|Laitue de mer|Lattuga di mare|Lechuga de mar|Sałata morska|Морський салат|海莴苣
+sea-spaghetti-seaweeds|Meeresspaghetti|Sea spaghetti|Морские спагетти|Esparguete-do-mar|Zeespaghetti|Spaghetti de mer|Spaghetti di mare|Espagueti de mar|Spaghetti morskie|Морські спагеті|海藻意面
+seafood-salads|Meeresfrüchtesalate|Seafood salads|Салаты из морепродуктов|Saladas de marisco|Zeevruchtensalades|Salades de fruits de mer|Insalate di mare|Ensaladas de marisco|Sałatki z owocami morza|Салати з морепродуктів|海鲜沙拉
+seaweed-products|Algenprodukte|Seaweed products|Продукты из водорослей|Produtos de algas|Zeewierproducten|Produits à base d'algues|Prodotti a base di alghe|Productos de algas|Produkty z alg|Продукти з водоростей|海藻产品
+secale|Secale (Roggen)|Secale|Секале (рожь)|Secale|Secale|Seigle (Secale)|Secale|Secale|Secale (żyto)|Секале (жито)|黑麦属
+seedless-grapes|Kernlose Trauben|Seedless grapes|Виноград без косточек|Uvas sem grainha|Pitloze druiven|Raisins sans pépins|Uva senza semi|Uvas sin pepitas|Winogrona bezpestkowe|Виноград без кісточок|无籽葡萄
+semi-preserved-foods|Halbkonserven|Semi-preserved foods|Полуконсервы|Semiconservas|Halfconserven|Semi-conserves|Semiconserve|Semiconservas|Półkonserwy|Напівконсерви|半保鲜食品
+semi-ripe-olives|Halbreife Oliven|Semi-ripe olives|Полузрелые оливки|Azeitonas semimaduras|Halfrijpe olijven|Olives mi-mûres|Olive semimature|Aceitunas semimaduras|Oliwki półdojrzałe|Напівстиглі оливки|半熟橄榄
+semi-whole-durum-wheat-pasta|Halbvollkorn-Hartweizennudeln|Semi-wholegrain durum pasta|Макароны из твёрдой пшеницы полуцельнозерновые|Massa de trigo duro semi-integral|Halfvolkoren durumpasta|Pâtes de blé dur semi-complètes|Pasta di grano duro semintegrale|Pasta de trigo duro semiintegral|Makaron durum półpełnoziarnisty|Макарони з твердої пшениці напівцільнозернові|半全麦硬粒小麦面
+sencha-teas|Sencha-Tee|Sencha teas|Чаи сенча|Chás sencha|Sencha-thee|Thés sencha|Tè sencha|Tés sencha|Herbaty sencha|Чаї сенча|煎茶
+serrano-ham|Serrano-Schinken|Serrano ham|Серрано|Presunto serrano|Serranoham|Jambon serrano|Prosciutto serrano|Jamón serrano|Szynka serrano|Серрано|塞拉诺火腿
+shandy|Radler|Shandy|Шенди|Shandy|Shandy|Panaché|Shandy|Clara|Shandy|Шенді|啤酒混合饮料
+sheep-milk-yogurts|Schafmilchjoghurt|Sheep milk yoghurts|Йогурты из овечьего молока|Iogurtes de leite de ovelha|Schapenmelkyoghurt|Yaourts au lait de brebis|Yogurt di latte di pecora|Yogures de leche de oveja|Jogurty z mleka owczego|Йогурти з овечого молока|绵羊奶酸奶
+sheep-milks|Schafmilch|Sheep milk|Овечье молоко|Leite de ovelha|Schapenmelk|Lait de brebis|Latte di pecora|Leche de oveja|Mleko owcze|Овече молоко|绵羊奶
+shelled-almonds|Mandeln (geschält)|Shelled almonds|Очищенный миндаль|Amêndoas sem casca|Gepelde amandelen|Amandes décortiquées|Mandorle sgusciate|Almendras peladas|Migdały łuskane|Очищений мигдаль|去壳杏仁
+shelled-hazelnuts|Geschälte Haselnüsse|Shelled hazelnuts|Очищенный фундук|Avelãs sem casca|Gepelde hazelnoten|Noisettes décortiquées|Nocciole sgusciate|Avellanas peladas|Orzechy laskowe łuskane|Очищений фундук|去壳榛子
+shelled-nuts|Nusskerne|Shelled nuts|Очищенные орехи|Frutos secos sem casca|Gepelde noten|Noix décortiquées|Frutta secca sgusciata|Frutos secos pelados|Orzechy łuskane|Очищені горіхи|去壳坚果
+shelled-pumpkin-seeds|Geschälte Kürbiskerne|Shelled pumpkin seeds|Очищенные тыквенные семечки|Sementes de abóbora sem casca|Gepelde pompoenpitten|Graines de courge décortiquées|Semi di zucca decorticati|Pepitas de calabaza peladas|Pestki dyni łuskane|Очищене гарбузове насіння|去壳南瓜籽
+shelled-sunflower-seeds|Geschälte Sonnenblumenkerne|Shelled sunflower seeds|Очищенные семечки подсолнечника|Sementes de girassol sem casca|Gepelde zonnebloempitten|Graines de tournesol décortiquées|Semi di girasole decorticati|Pipas de girasol peladas|Pestki słonecznika łuskane|Очищене насіння соняшнику|去壳葵花籽
+short-grain-rices|Rundkornreis|Short-grain rice|Короткозерный рис|Arroz de grão curto|Korrelrijst|Riz à grains ronds|Riso a grana corta|Arroz de grano corto|Ryż krótkoziarnisty|Круглозернистий рис|短粒米
+shortbread-cookies|Mürbeteigkekse|Shortbread cookies|Песочное печенье|Bolachas de massa areada|Zandkoekjes|Sablés|Frollini|Galletas de mantequilla|Ciastka kruche|Пісочне печиво|酥饼
+simple-syrups|Zuckersirup|Simple syrups|Сахарные сиропы|Xaropes simples|Eenvoudige siropen|Sirops simples|Sciroppi semplici|Siropes simples|Syropy cukrowe|Цукрові сиропи|简易糖浆
+skewers|Spieße|Skewers|Шашлычки|Espetadas|Spiesjes|Brochettes|Spiedini|Brochetas|Szaszłyki|Шашлики|烤串
+skimmed-milks|Entrahmte Milch|Skimmed milk|Обезжиренное молоко|Leite magro|Magere melk|Lait écrémé|Latte scremato|Leche desnatada|Mleko odtłuszczone|Знежирене молоко|脱脂牛奶
+sliced-breads|Geschnittenes Brot|Sliced bread|Нарезанный хлеб|Pão de forma|Gesneden brood|Pain en tranches|Pane a fette|Pan de molde|Chleb krojony|Нарізаний хліб|切片面包
+sliced-cheese-substitutes|Veganer Käseersatz (Scheiben)|Sliced cheese substitutes|Нарезанные заменители сыра|Substitutos de queijo em fatias|Kaasvervangers in plakjes|Substituts de fromage en tranches|Sostituti del formaggio a fette|Sustitutos de queso en lonchas|Zamienniki sera w plasterkach|Нарізані замінники сиру|奶酪替代片
+smoked-bacon|Geräucherter Speck|Smoked bacon|Копчёный бекон|Bacon fumado|Gerookt spek|Lard fumé|Pancetta affumicata|Bacon ahumado|Boczek wędzony|Копчений бекон|烟熏培根
+smoked-fishes|Räucherfisch|Smoked fish|Копчёная рыба|Peixes fumados|Gerookte vis|Poissons fumés|Pesce affumicato|Pescados ahumados|Ryby wędzone|Копчена риба|烟熏鱼
+smoked-herrings|Räucherhering|Smoked herrings|Копчёная сельдь|Arenques fumados|Gerookte haring|Harengs fumés|Aringhe affumicate|Arenques ahumados|Śledzie wędzone|Копчений оселедець|烟熏鲱鱼
+snails|Schnecken|Snails|Улитки|Caracóis|Slakken|Escargots|Lumache|Caracoles|Ślimaki|Равлики|蜗牛
+snails-preparations|Schneckenzubereitungen|Snail preparations|Блюда из улиток|Preparados de caracóis|Slakkenbereidingen|Préparations d'escargots|Preparazioni di lumache|Preparados de caracoles|Przetwory ze ślimaków|Страви з равликів|蜗牛制品
+soft-cheeses|Weichkäse|Soft cheeses|Мягкие сыры|Queijos moles|Zachte kazen|Fromages à pâte molle|Formaggi molli|Quesos blandos|Sery miękkie|М'які сири|软质奶酪
+soft-drinks|Erfrischungsgetränke|Soft drinks|Безалкогольные напитки|Refrigerantes|Frisdranken|Boissons rafraîchissantes|Bibite analcoliche|Refrescos|Napoje bezalkoholowe|Безалкогольні напої|软饮料
+sorbets|Sorbets|Sorbets|Щербеты|Sorvetes de fruta|Sorbets|Sorbets|Sorbetti|Sorbetes|Sorbety|Щербети|冰沙
+sour-creams|Sauerrahm|Sour cream|Сметана|Natas azedas|Zure room|Crèmes aigres|Panna acida|Nata agria|Śmietana kwaśna|Сметана|酸奶油
+soy-desserts|Soja-Desserts|Soy desserts|Соевые десерты|Sobremesas de soja|Sojadesserts|Desserts au soja|Dessert di soia|Postres de soja|Desery sojowe|Соєві десерти|豆制甜点
+soy-milk-yogurts|Sojajoghurt|Soy yoghurts|Соевые йогурты|Iogurtes de soja|Sojayoghurt|Yaourts au soja|Yogurt di soia|Yogures de soja|Jogurty sojowe|Соєві йогурти|豆奶酸奶
+soy-vermicelli|Soja-Vermicelli|Soy vermicelli|Соевая вермишель|Aletria de soja|Soja-vermicelli|Vermicelles de soja|Vermicelli di soia|Fideos de soja|Makaron sojowy|Соєва вермішель|豆丝
+spaghetti-squashes|Spaghettikürbis|Spaghetti squash|Спагетти-тыква|Abóboras-esparguete|Spaghettipompoenen|Courges spaghetti|Zucche spaghetti|Calabazas espagueti|Dynie spaghetti|Гарбуз спагеті|意面南瓜
+sparkling-apple-nectars|Sprudelnder Apfelnektar|Sparkling apple nectars|Газированные яблочные нектары|Néctares de maçã gaseificados|Bruisende appelnectars|Nectars de pomme pétillants|Nettari di mela frizzanti|Néctares de manzana con gas|Gazowane nektary jabłkowe|Газовані яблучні нектари|气泡苹果果汁饮料
+spearmint|Grüne Minze|Spearmint|Мята колосистая|Hortelã-verde|Groene munt|Menthe verte|Menta verde|Hierbabuena|Mięta zielona|М'ята колосиста|留兰香
+special-breads|Spezialbrote|Special breads|Специальные хлеба|Pães especiais|Speciale broden|Pains spéciaux|Pani speciali|Panes especiales|Chleby specjalne|Спеціальні хліби|特色面包
+specific-products|Spezielle Produkte|Specific products|Специальные продукты|Produtos específicos|Specifieke producten|Produits spécifiques|Prodotti specifici|Productos específicos|Produkty specjalne|Спеціальні продукти|特定产品
+spreadable-fats|Streichfette|Spreadable fats|Спреды|Gorduras para barrar|Smeervetten|Matières grasses tartinables|Grassi spalmabili|Grasas para untar|Tłuszcze do smarowania|Спреди|可涂抹油脂
+spring-waters|Quellwasser|Spring waters|Родниковая вода|Águas de nascente|Bronwaters|Eaux de source|Acque di sorgente|Aguas de manantial|Wody źródlane|Джерельна вода|泉水
+sprits-biscuits|Spritzgebäck|Spritz biscuits|Печенье шприцевое|Bolachas spritz|Spritskoekjes|Biscuits spritz|Biscotti spritz|Galletas spritz|Ciastka szprycowane|Печиво шприцеве|挤花饼干
+sprouted-mung-beans|Mungbohnensprossen|Sprouted mung beans|Ростки маша|Rebentos de feijão-mungo|Mungbonenkiemen|Germes de soja mungo|Germogli di fagioli mung|Brotes de judía mungo|Kiełki fasoli mung|Паростки маша|绿豆芽
+squirty-creams|Sprühsahne|Squirty creams|Сливки в аэрозольной упаковке|Natas em spray|Spuitroom|Crèmes en bombe|Panna spray|Natas en spray|Śmietana w sprayu|Вершки в аерозольній упаковці|喷射奶油
+steaks|Steaks|Steaks|Стейки|Bifes|Steaks|Steaks|Bistecche|Filetes|Steki|Стейки|牛排
+stevia-leaves|Steviablätter|Stevia leaves|Листья стевии|Folhas de estévia|Steviabladeren|Feuilles de stévia|Foglie di stevia|Hojas de estevia|Liście stewii|Листя стевії|甜菊叶
+still-soft-drinks|Stille Erfrischungsgetränke|Still soft drinks|Негазированные напитки|Refrigerantes sem gás|Niet-bruisende frisdranken|Boissons rafraîchissantes plates|Bevande analcoliche non gassate|Refrescos sin gas|Napoje niegazowane|Негазовані напої|无气软饮料
+stirred-yogurts|Cremiger Joghurt|Stirred yoghurts|Йогурты перемешанные|Iogurtes batidos|Roeryoghurt|Yaourts brassés|Yogurt cremosi|Yogures cremosos|Jogurty kremowe|Йогурти перемішані|搅拌酸奶
+strasbourg-sausages|Straßburger Würstchen|Strasbourg sausages|Страсбургские колбаски|Salsichas de Estrasburgo|Straatsburgse worstjes|Saucisses de Strasbourg|Salsicce di Strasburgo|Salchichas de Estrasburgo|Kiełbaski strasburskie|Страсбурзькі ковбаски|斯特拉斯堡香肠
+strawberry-biscuits|Erdbeerkekse|Strawberry biscuits|Клубничное печенье|Bolachas de morango|Aardbeienkoekjes|Biscuits à la fraise|Biscotti alla fragola|Galletas de fresa|Ciastka truskawkowe|Полуничне печиво|草莓饼干
+strawberry-compotes|Erdbeerkompott|Strawberry compotes|Клубничные компоты|Compotas de morango|Aardbeiencompotes|Compotes de fraises|Composte di fragole|Compotas de fresa|Kompoty truskawkowe|Полуничні компоти|草莓蜜饯
+stretched-curd-cheeses|Brühkäse (Pasta filata)|Stretched-curd cheeses|Сыры с вытянутой сырной массой|Queijos de massa filada|Pasta-filatakazen|Fromages à pâte filée|Formaggi a pasta filata|Quesos de pasta hilada|Sery parzone|Сири з витягнутою сирною масою|拉丝奶酪
+stuffed-pastas|Gefüllte Nudeln|Stuffed pastas|Фаршированная паста|Massas recheadas|Gevulde pasta|Pâtes farcies|Pasta ripiena|Pastas rellenas|Makarony nadziewane|Фарширована паста|馅料意面
+stuffed-vine-leaves|Gefüllte Weinblätter|Stuffed vine leaves|Долма|Folhas de videira recheadas|Gevulde wijnbladeren|Feuilles de vigne farcies|Foglie di vite ripiene|Hojas de parra rellenas|Faszerowane liście winorośli|Долма|酿葡萄叶
+stuffed-wafers|Gefüllte Waffeln (knusprig)|Stuffed wafers|Вафли с начинкой|Wafers recheados|Gevulde wafels|Gaufrettes fourrées|Wafer ripieni|Barquillos rellenos|Wafle nadziewane|Вафлі з начинкою|夹心威化
+stuffed-waffles|Gefüllte Waffeln|Stuffed waffles|Вафли с начинкой (мягкие)|Waffles recheadas|Gevulde wafels (zacht)|Gaufres fourrées|Waffle ripieni|Gofres rellenos|Gofry nadziewane|Вафлі з начинкою (м'які)|夹心华夫饼
+stuffing|Füllung|Stuffing|Начинка|Recheio|Vulling|Farce|Ripieno|Relleno|Farsz|Начинка|馅料
+sugar-substitutes|Zuckerersatzstoffe|Sugar substitutes|Заменители сахара|Substitutos do açúcar|Suikervervangers|Substituts du sucre|Sostituti dello zucchero|Sustitutos del azúcar|Zamienniki cukru|Замінники цукру|糖替代品
+surimi|Surimi|Surimi|Сурими|Surimi|Surimi|Surimi|Surimi|Surimi|Surimi|Сурімі|蟹肉棒
+sushi-and-maki|Sushi & Maki|Sushi and maki|Суши и маки|Sushi e maki|Sushi en maki|Sushis et makis|Sushi e maki|Sushi y makis|Sushi i maki|Суші та макі|寿司和卷
+sushis|Sushi|Sushi|Суши|Sushis|Sushi|Sushis|Sushi|Sushis|Sushi|Суші|寿司
+sweet-apples|Süße Äpfel|Sweet apples|Сладкие яблоки|Maçãs doces|Zoete appels|Pommes douces|Mele dolci|Manzanas dulces|Słodkie jabłka|Солодкі яблука|甜苹果
+sweet-mousses|Süße Mousses|Sweet mousses|Сладкие муссы|Mousses doces|Zoete mousses|Mousses sucrées|Mousse dolci|Mousses dulces|Musy słodkie|Солодкі муси|甜味慕斯
+sweet-peppers|Paprika|Sweet peppers|Сладкий перец|Pimentos doces|Zoete paprika's|Poivrons doux|Peperoni dolci|Pimientos dulces|Papryka słodka|Солодкий перець|甜椒
+sweet-pies|Süße Kuchen|Sweet pies|Сладкие пироги|Tartes doces|Zoete taarten|Tartes sucrées|Torte dolci|Tartas dulces|Ciasta słodkie|Солодкі пироги|甜派
+sweetened-yogurts|Gesüßter Joghurt|Sweetened yoghurts|Подслащённые йогурты|Iogurtes adoçados|Gezoete yoghurt|Yaourts sucrés|Yogurt zuccherati|Yogures azucarados|Jogurty słodzone|Підсолоджені йогурти|加糖酸奶
+tabbouleh|Taboulé|Tabbouleh|Табуле|Tabule|Tabouleh|Taboulé|Tabulè|Tabulé|Tabbouleh|Табуле|塔布勒沙拉
+tangerine-juices|Mandarinensaft|Tangerine juices|Мандариновые соки|Sumos de tangerina|Mandarijnsappen|Jus de mandarine|Succhi di mandarino|Zumos de mandarina|Soki mandarynkowe|Мандаринові соки|橘子汁
+tapenades|Tapenaden|Tapenades|Тапенады|Tapenades|Tapenades|Tapenades|Tapenade|Tapenades|Tapenady|Тапенади|橄榄酱
+tartlets|Törtchen|Tartlets|Тарталетки|Tartes pequenas|Taartjes|Tartelettes|Tartellette|Tartaletas|Tartaletki|Тарталетки|小挞
+tartufo|Tartufo|Tartufo|Тартуфо|Tartufo|Tartufo|Tartufo|Tartufo|Tartufo|Tartufo|Тартуфо|松露冰淇淋
+tea-based-beverages|Teegetränke|Tea-based beverages|Напитки на основе чая|Bebidas à base de chá|Dranken op theebasis|Boissons à base de thé|Bevande a base di tè|Bebidas a base de té|Napoje na bazie herbaty|Напої на основі чаю|茶饮料
+tea-leaves|Teeblätter|Tea leaves|Чайные листья|Folhas de chá|Theebladeren|Feuilles de thé|Foglie di tè|Hojas de té|Liście herbaty|Чайне листя|茶叶
+tequilas|Tequila|Tequilas|Текила|Tequilas|Tequila's|Tequilas|Tequila|Tequilas|Tequila|Текіла|龙舌兰酒
+terrines|Terrinen|Terrines|Террины|Terrinas|Terrines|Terrines|Terrine|Terrinas|Terriny|Терини|肉冻派
+textured-vegetable-protein|Strukturiertes Pflanzenprotein|Textured vegetable protein|Текстурированный растительный белок|Proteína vegetal texturizada|Getextureerd plantaardig eiwit|Protéines végétales texturées|Proteine vegetali strutturate|Proteína vegetal texturizada|Teksturowane białko roślinne|Текстурований рослинний білок|组织植物蛋白
+thermised-milk-cheeses|Käse aus thermisierter Milch|Thermised milk cheeses|Сыры из термизованного молока|Queijos de leite termizado|Kazen van gethermiseerde melk|Fromages au lait thermisé|Formaggi di latte termizzato|Quesos de leche termizada|Sery z mleka termizowanego|Сири з термізованого молока|热处理奶奶酪
+thick-syrups|Dicksäfte|Thick syrups|Густые сиропы|Xaropes espessos|Stroperige siropen|Sirops épais|Sciroppi densi|Siropes espesos|Gęste syropy|Густі сиропи|浓糖浆
+tigernut-based-drinks|Erdmandelmilch|Tigernut-based drinks|Напитки из чуфы|Bebidas de chufa|Aardamandeldranken|Boissons au souchet|Bevande a base di cipolino|Bebidas de chufa|Napoje z ciborka|Напої з чуфи|油莎豆饮品
+tiramisu|Tiramisu|Tiramisu|Тирамису|Tiramisu|Tiramisu|Tiramisu|Tiramisù|Tiramisú|Tiramisu|Тірамісу|提拉米苏
+tomato-purees|Tomatenpüree|Tomato purées|Томатное пюре|Purés de tomate|Tomatenpuree|Purées de tomates|Passate di pomodoro|Purés de tomate|Przeciery pomidorowe|Томатне пюре|番茄泥
+toulouse-sausages|Toulouser Würstchen|Toulouse sausages|Тулузские колбаски|Salsichas de Toulouse|Toulouse-worstjes|Saucisses de Toulouse|Salsicce di Tolosa|Salchichas de Toulouse|Kiełbaski tuluzańskie|Тулузькі ковбаски|图卢兹香肠
+traditional-balsamic-vinegars|Traditioneller Balsamico|Traditional balsamic vinegars|Традиционные бальзамические уксусы|Vinagres balsâmicos tradicionais|Traditionele balsamicoazijn|Vinaigres balsamiques traditionnels|Aceti balsamici tradizionali|Vinagres balsámicos tradicionales|Tradycyjne octy balsamiczne|Традиційні бальзамічні оцти|传统香醋
+tripe|Kutteln|Tripe|Рубец|Tripas|Pens|Tripes|Trippa|Callos|Flaki|Рубець|牛肚
+tripe-dishes|Kuttelgerichte|Tripe dishes|Блюда из рубца|Pratos de tripas|Penzengerechten|Plats de tripes|Piatti di trippa|Platos de callos|Dania z flaków|Страви з рубця|牛肚菜肴
+tropical-fruit-jams|Exotische Fruchtmarmelade|Tropical fruit jams|Джемы из тропических фруктов|Doces de frutas tropicais|Tropische fruitjam|Confitures de fruits tropicaux|Confetture di frutti tropicali|Mermeladas de frutas tropicales|Dżemy z owoców tropikalnych|Джеми з тропічних фруктів|热带水果果酱
+tropical-tunas|Tropischer Thunfisch|Tropical tunas|Тропические тунцы|Atuns tropicais|Tropische tonijnen|Thons tropicaux|Tonni tropicali|Atunes tropicales|Tuńczyki tropikalne|Тропічні тунці|热带金枪鱼
+truffles|Trüffel|Truffles|Трюфели|Trufas|Truffels|Truffes|Tartufi|Trufas|Trufle|Трюфелі|松露
+tuna-fillets|Thunfischfilets|Tuna fillets|Филе тунца|Filetes de atum|Tonijnfilets|Filets de thon|Filetti di tonno|Filetes de atún|Filety z tuńczyka|Філе тунця|金枪鱼片
+tuna-salads|Thunfischsalat|Tuna salads|Салаты с тунцом|Saladas de atum|Tonijnsalades|Salades de thon|Insalate di tonno|Ensaladas de atún|Sałatki z tuńczykiem|Салати з тунцем|金枪鱼沙拉
+tuna-sandwiches|Thunfisch-Sandwiches|Tuna sandwiches|Сэндвичи с тунцом|Sanduíches de atum|Tonijnsandwiches|Sandwichs au thon|Panini al tonno|Sándwiches de atún|Kanapki z tuńczykiem|Сендвічі з тунцем|金枪鱼三明治
+tunisian-eaux-de-vie|Tunesischer Branntwein|Tunisian eaux-de-vie|Тунисские эо-де-ви|Aguardentes tunisinas|Tunesische eaux-de-vie|Eaux-de-vie tunisiennes|Acquaviti tunisine|Aguardientes tunecinos|Tunezyjskie eaux-de-vie|Туніські о-де-ві|突尼斯白兰地
+turkey-and-its-products|Putenprodukte|Turkey products|Индейка и продукты из неё|Peru e derivados|Kalkoen en producten|Dinde et produits dérivés|Tacchino e derivati|Pavo y derivados|Indyk i produkty|Індичка та продукти з неї|火鸡及其制品
+turkey-fillets|Putenfilet|Turkey fillets|Филе индейки|Filetes de peru|Kalkoenfilets|Filets de dinde|Filetti di tacchino|Filetes de pavo|Filety z indyka|Філе індички|火鸡片
+turkey-preparations|Putenzubereitungen|Turkey preparations|Полуфабрикаты из индейки|Preparados de peru|Kalkoenbereidingen|Préparations de dinde|Preparazioni di tacchino|Preparados de pavo|Przetwory z indyka|Напівфабрикати з індички|火鸡制品
+turkey-sandwiches|Puten-Sandwiches|Turkey sandwiches|Сэндвичи с индейкой|Sanduíches de peru|Kalkoensandwiches|Sandwichs à la dinde|Panini al tacchino|Sándwiches de pavo|Kanapki z indykiem|Сендвічі з індичкою|火鸡三明治
+turkeys|Putenfleisch|Turkeys|Индейка|Perus|Kalkoenen|Dindes|Tacchini|Pavos|Indyki|Індичка|火鸡
+turnip|Rübe|Turnip|Репа|Nabo|Raap|Navet|Rapa|Nabo|Rzepa|Ріпа|芜菁
+turron|Turrón|Turrón|Туррон|Torrão|Turrón|Touron|Torrone|Turrón|Turrón|Туррон|牛轧糖
+uht-creams|H-Sahne|UHT cream|Сливки УВТ|Natas UHT|UHT-room|Crèmes UHT|Panna UHT|Natas UHT|Śmietanki UHT|Вершки УВТ|超高温杀菌奶油
+ulva-lactuca-seaweeds|Meersalat (Ulva)|Ulva lactuca seaweed|Водоросли улва|Algas Ulva lactuca|Ulva lactuca-zeewier|Algues Ulva lactuca|Alghe Ulva lactuca|Algas Ulva lactuca|Algi Ulva lactuca|Водорості ульва|石莼
+uncooked-pressed-cheeses|Ungekochter Schnittkäse|Uncooked pressed cheeses|Прессованные сыры без термообработки|Queijos prensados de pasta crua|Ongekookte geperste kazen|Fromages à pâte pressée non cuite|Formaggi a pasta pressata cruda|Quesos de pasta prensada cruda|Sery prasowane niegotowane|Пресовані сири без термообробки|未煮压制奶酪
+unleavened-breads|Ungesäuertes Brot|Unleavened breads|Бездрожжевой хлеб|Pães ázimos|Ongezuurde broden|Pains sans levain|Pani azzimi|Panes ázimos|Chleby przaśne|Прісний хліб|无酵面包
+unpasteurised-cheeses|Rohmilchkäse|Unpasteurised cheeses|Сыры из непастеризованного молока|Queijos não pasteurizados|Ongepasteuriseerde kazen|Fromages au lait cru|Formaggi a latte crudo|Quesos de leche cruda|Sery niepasteryzowane|Сири з непастеризованого молока|未巴氏杀菌奶酪
+unpasteurised-products|Nicht pasteurisierte Produkte|Unpasteurised products|Непастеризованные продукты|Produtos não pasteurizados|Ongepasteuriseerde producten|Produits non pasteurisés|Prodotti non pastorizzati|Productos no pasteurizados|Produkty niepasteryzowane|Непастеризовані продукти|未巴氏杀菌产品
+unrefined-salts|Unraffiniertes Salz|Unrefined salts|Нерафинированная соль|Sais não refinados|Ongeraffineerd zout|Sels non raffinés|Sali non raffinati|Sales sin refinar|Sól nierafinowana|Нерафінована сіль|未精制盐
+unsalted-butters|Ungesalzene Butter|Unsalted butter|Несолёное масло|Manteigas sem sal|Ongezouten boter|Beurres doux|Burri non salati|Mantequillas sin sal|Masło niesolone|Несолоне масло|无盐黄油
+unsalted-cashews|Ungesalzene Cashewnüsse|Unsalted cashews|Несолёный кешью|Caju sem sal|Ongezouten cashewnoten|Noix de cajou non salées|Anacardi non salati|Anacardos sin sal|Orzechy nerkowca niesolone|Несолоні горіхи кешью|无盐腰果
+unsalted-margarines|Ungesalzene Margarine|Unsalted margarines|Несолёные маргарины|Margarinas sem sal|Ongezouten margarines|Margarines doux|Margarine non salate|Margarinas sin sal|Margaryny niesolone|Несолоні маргарини|无盐人造黄油
+unsalted-nuts|Ungesalzene Nüsse|Unsalted nuts|Несолёные орехи|Frutos secos sem sal|Ongezouten noten|Noix non salées|Frutta secca non salata|Frutos secos sin sal|Orzechy niesolone|Несолоні горіхи|无盐坚果
+unshelled-pumpkin-seeds|Ungeschälte Kürbiskerne|Unshelled pumpkin seeds|Тыквенные семечки в скорлупе|Sementes de abóbora com casca|Ongepelde pompoenpitten|Graines de courge non décortiquées|Semi di zucca con guscio|Pepitas de calabaza con cáscara|Pestki dyni w łupinach|Гарбузове насіння в лушпинні|带壳南瓜籽
+unshelled-sunflower-seeds|Ungeschälte Sonnenblumenkerne|Unshelled sunflower seeds|Семечки подсолнечника в скорлупе|Sementes de girassol com casca|Ongepelde zonnebloempitten|Graines de tournesol non décortiquées|Semi di girasole con guscio|Pipas de girasol con cáscara|Pestki słonecznika w łupinach|Насіння соняшнику в лушпинні|带壳葵花籽
+unsweetened-beverages|Ungezuckerte Getränke|Unsweetened beverages|Напитки без сахара|Bebidas sem açúcar|Ongezoete dranken|Boissons non sucrées|Bevande non zuccherate|Bebidas sin azúcar|Napoje niesłodzone|Напої без цукру|无糖饮料
+vanilla-creamy-puddings|Vanillepudding|Vanilla creamy puddings|Ванильные кремовые пудинги|Pudins cremosos de baunilha|Vanille-roompuddingen|Crèmes desserts à la vanille|Budini cremosi alla vaniglia|Natillas de vainilla|Kremowe budynie waniliowe|Ванільні кремові пудинги|香草布丁
+vanilla-yogurt|Vanillejoghurt|Vanilla yoghurt|Ванильный йогурт|Iogurte de baunilha|Vanilleyoghurt|Yaourt à la vanille|Yogurt alla vaniglia|Yogur de vainilla|Jogurt waniliowy|Ванільний йогурт|香草酸奶
+variety-packs|Probierpackungen|Variety packs|Ассорти|Embalagens sortidas|Assortimentspakketten|Assortiments|Confezioni assortite|Surtidos|Zestawy asortymentowe|Асорті|什锦装
+vegan-nuggets|Vegane Nuggets|Vegan nuggets|Веганские наггетсы|Nuggets veganos|Vegan nuggets|Nuggets végétaliens|Nuggets vegani|Nuggets veganos|Nuggetsy wegańskie|Веганські нагетси|纯素块
+vegan-products|Vegane Produkte|Vegan products|Веганские продукты|Produtos vegan|Veganistische producten|Produits vegans|Prodotti vegani|Productos veganos|Produkty wegańskie|Веганські продукти|纯素产品
+vegetable-based-beverages|Gemüsegetränke|Vegetable-based beverages|Напитки на основе овощей|Bebidas à base de legumes|Dranken op groentebasis|Boissons à base de légumes|Bevande a base di verdure|Bebidas a base de verduras|Napoje warzywne|Напої на основі овочів|蔬菜基饮料
+vegetable-based-foods-and-beverages|Gemüseprodukte & Gemüsegetränke|Vegetable-based foods and beverages|Продукты и напитки на основе овощей|Alimentos e bebidas à base de legumes|Voeding en dranken op groentebasis|Aliments et boissons à base de légumes|Alimenti e bevande a base di verdure|Alimentos y bebidas a base de verduras|Produkty i napoje warzywne|Продукти та напої на основі овочів|蔬菜基食品和饮料
+vegetable-gratins|Gemüseaufläufe|Vegetable gratins|Овощные гратены|Gratinados de legumes|Groentegratins|Gratins de légumes|Gratin di verdure|Gratinados de verduras|Zapiekanki warzywne|Овочеві гратени|焗蔬菜
+vegetable-lasagnas|Gemüselasagne|Vegetable lasagnas|Овощная лазанья|Lasanhas de legumes|Groentelasagnes|Lasagnes aux légumes|Lasagne di verdure|Lasañas de verduras|Lasagne warzywne|Овочева лазанья|蔬菜千层面
+vegetable-patties|Gemüsebratlinge|Vegetable patties|Овощные котлеты|Hambúrgueres de legumes|Groenteburgers|Galettes de légumes|Burger di verdure|Hamburguesas de verduras|Kotlety warzywne|Овочеві котлети|蔬菜饼
+vegetable-risottos|Gemüserisotto|Vegetable risottos|Ризотто с овощами|Risotos de legumes|Groenterisotto's|Risottos aux légumes|Risotti alle verdure|Risottos de verduras|Risotto warzywne|Різотто з овочами|蔬菜烩饭
+vegetable-rods|Stangengemüse|Vegetable rods|Стеблевые овощи|Hastes de legumes|Stengelgroenten|Légumes en tiges|Verdure a stelo|Hortalizas de tallo|Warzywa łodygowe|Стеблові овочі|茎类蔬菜
+vegetable-sauces|Gemüsesaucen|Vegetable sauces|Овощные соусы|Molhos de legumes|Groentesauzen|Sauces aux légumes|Salse di verdure|Salsas de verduras|Sosy warzywne|Овочеві соуси|蔬菜酱
+vegetables-based-foods|Gemüseprodukte|Vegetable-based foods|Продукты на основе овощей|Alimentos à base de legumes|Voeding op groentebasis|Aliments à base de légumes|Alimenti a base di verdure|Alimentos a base de verduras|Produkty warzywne|Продукти на основі овочів|蔬菜基食品
+vegetarian-balls|Vegetarische Bällchen|Vegetarian balls|Вегетарианские шарики|Bolinhas vegetarianas|Vegetarische balletjes|Boulettes végétariennes|Polpette vegetariane|Albóndigas vegetarianas|Wegetariańskie kulki|Вегетаріанські кульки|素丸子
+vegetarian-cannelloni|Vegetarische Cannelloni|Vegetarian cannelloni|Вегетарианские каннеллони|Canelones vegetarianos|Vegetarische cannelloni|Cannellonis végétariens|Cannelloni vegetariani|Canelones vegetarianos|Wegetariańskie cannelloni|Вегетаріанські канелоні|素意式卷
+vegetarian-frankfurter-sausages|Vegetarische Frankfurter|Vegetarian frankfurters|Вегетарианские франкфуртерские сосиски|Salsichas Frankfurt vegetarianas|Vegetarische frankfurters|Saucisses de Francfort végétariennes|Würstel vegetariani|Salchichas Frankfurt vegetarianas|Wegetariańskie parówki frankfurterki|Вегетаріанські франкфуртські сосиски|素法兰克福香肠
+vegetarian-grounds|Vegetarisches Hack|Vegetarian mince|Вегетарианский фарш|Carne picada vegetariana|Vegetarisch gehakt|Haché végétarien|Macinato vegetariano|Carne picada vegetariana|Wegetariańskie mięso mielone|Вегетаріанський фарш|素肉馅
+vegetarian-hot-dog-sausages|Vegetarische Hot-Dog-Würstchen|Vegetarian hot dog sausages|Вегетарианские сосиски для хот-догов|Salsichas vegetarianas para cachorros-quentes|Vegetarische hotdogworstjes|Saucisses de hot-dog végétariennes|Wurstel vegetariani per hot dog|Salchichas vegetarianas para perritos|Wegetariańskie parówki do hot dogów|Вегетаріанські сосиски для хот-догів|素热狗肠
+vegetarian-nuggets|Vegetarische Nuggets|Vegetarian nuggets|Вегетарианские наггетсы|Nuggets vegetarianos|Vegetarische nuggets|Nuggets végétariens|Nuggets vegetariani|Nuggets vegetarianos|Wegetariańskie nuggetsy|Вегетаріанські нагетси|素食块
+vegetarian-patties|Vegetarische Bratlinge|Vegetarian patties|Вегетарианские котлеты|Hambúrgueres vegetarianos|Vegetarische burgers|Galettes végétariennes|Burger vegetariani|Hamburguesas vegetarianas|Wegetariańskie kotlety|Вегетаріанські котлети|素食饼
+verbena-family|Eisenkrautgewächse|Verbena family|Семейство вербеновых|Família das verbenas|Verbenafamilie|Verbénacées|Verbenacee|Verbenáceas|Rodzina werbenowatych|Родина вербенових|马鞭草科
+vermouth|Wermut|Vermouth|Вермут|Vermute|Vermout|Vermouth|Vermouth|Vermut|Wermut|Вермут|味美思
+vervains|Eisenkraut|Vervains|Вербена|Verbenas|IJzerhard|Verveines|Verbene|Verbenas|Werbeny|Вербена|马鞭草
+viennoiseries|Feingebäck|Viennoiseries|Выпечка (венуазри)|Viennoiseries|Viennoiserie|Viennoiseries|Viennoiserie|Bollería|Wypieki francuskie|Випічка (в'єнуазрі)|法式甜酥点
+virgin-olive-oils|Natives Olivenöl|Virgin olive oils|Оливковое масло virgin|Azeites virgens|Virgin olijfolie|Huiles d'olive vierges|Oli d'oliva vergini|Aceites de oliva vírgenes|Oliwy z oliwek virgin|Оливкові олії virgin|初榨橄榄油
+wakame-seaweeds|Wakame-Algen|Wakame seaweed|Водоросли вакамэ|Algas wakame|Wakame-zeewier|Algues wakame|Alghe wakame|Algas wakame|Algi wakame|Водорості вакаме|裙带菜
+watercress|Brunnenkresse|Watercress|Кресс водяной|Agrião|Waterkers|Cresson|Crescione|Berro|Rzeżucha wodna|Крес водяний|豆瓣菜
+weight-loss-tea-blends|Abnehm-Tee|Weight-loss tea blends|Чаи для похудения|Chás para emagrecer|Afslankthee|Tisanes minceur|Tisane dimagranti|Infusiones adelgazantes|Herbaty odchudzające|Чаї для схуднення|减肥茶
+wheat-based-drinks|Weizendrinks|Wheat-based drinks|Напитки из пшеницы|Bebidas de trigo|Tarwedranken|Boissons au blé|Bevande al grano|Bebidas de trigo|Napoje pszenne|Напої з пшениці|小麦饮品
+wheat-breads|Weizenbrote|Wheat breads|Пшеничные хлеба|Pães de trigo|Tarwebroden|Pains de blé|Pani di frumento|Panes de trigo|Chleby pszenne|Пшеничні хліби|小麦面包
+wheat-groats|Weizengraupen|Wheat groats|Пшеничная крупа|Grão de trigo partido|Tarwegrutten|Gruaux de blé|Grano decorticato|Sémola de trigo gruesa|Kasza pszenna|Пшеничні крупи|小麦碎粒
+wheat-syrups|Weizensirup|Wheat syrups|Пшеничные сиропы|Xaropes de trigo|Tarwesiropen|Sirops de blé|Sciroppi di grano|Siropes de trigo|Syropy pszenne|Пшеничні сиропи|小麦糖浆
+white-chocolate-biscuits|Kekse mit weißer Schokolade|White chocolate biscuits|Печенье с белым шоколадом|Bolachas de chocolate branco|Koekjes met witte chocolade|Biscuits au chocolat blanc|Biscotti al cioccolato bianco|Galletas de chocolate blanco|Ciastka z białą czekoladą|Печиво з білим шоколадом|白巧克力饼干
+white-hams|Kochschinken|White hams|Варёная ветчина|Fiambres cozidos|Gekookte hammen|Jambons blancs|Prosciutti cotti|Jamones cocidos|Szynki gotowane|Варені шинки|熟火腿
+white-kidney-beans|Weiße Kidneybohnen|White kidney beans|Белая фасоль|Feijão-branco|Witte kidneybonen|Haricots blancs|Fagioli cannellini|Alubias blancas|Biała fasola|Біла квасоля|白芸豆
+white-meat-rillettes|Rillettes aus hellem Fleisch|White meat rillettes|Рийеты из белого мяса|Rillettes de carne branca|Rillettes van wit vlees|Rillettes de viande blanche|Rillettes di carne bianca|Rillettes de carne blanca|Rillettes z białego mięsa|Рієти з білого м'яса|白肉酱
+white-onions|Weiße Zwiebeln|White onions|Белый лук|Cebolas brancas|Witte uien|Oignons blancs|Cipolle bianche|Cebollas blancas|Białe cebule|Біла цибуля|白洋葱
+white-rices|Weißer Reis|White rice|Белый рис|Arroz branco|Witte rijst|Riz blanc|Riso bianco|Arroz blanco|Ryż biały|Білий рис|白米
+white-teas|Weißer Tee|White teas|Белые чаи|Chás brancos|Witte thee|Thés blancs|Tè bianco|Tés blancos|Herbaty białe|Білі чаї|白茶
+whole-almonds|Ganze Mandeln|Whole almonds|Цельный миндаль|Amêndoas inteiras|Hele amandelen|Amandes entières|Mandorle intere|Almendras enteras|Całe migdały|Цілий мигдаль|整颗杏仁
+whole-durum-wheat-pasta|Vollkorn-Hartweizennudeln|Wholegrain durum pasta|Цельнозерновые макароны из твёрдой пшеницы|Massa de trigo duro integral|Volkoren durumpasta|Pâtes de blé dur complètes|Pasta integrale di grano duro|Pasta integral de trigo duro|Makaron durum pełnoziarnisty|Цільнозернові макарони з твердої пшениці|全麦硬粒小麦面
+whole-foies-gras|Ganze Stopfleber|Whole foies gras|Фуа-гра цельная|Foies gras inteiros|Hele foies gras|Foies gras entiers|Foie gras interi|Foies gras enteros|Całe foie gras|Фуа-гра ціла|整块鹅肝
+whole-green-olives|Ganze grüne Oliven|Whole green olives|Зелёные оливки с косточкой|Azeitonas verdes inteiras|Hele groene olijven|Olives vertes entières|Olive verdi intere|Aceitunas verdes enteras|Całe zielone oliwki|Зелені оливки з кісточкою|整颗绿橄榄
+whole-olives|Ganze Oliven|Whole olives|Цельные оливки|Azeitonas inteiras|Hele olijven|Olives entières|Olive intere|Aceitunas enteras|Całe oliwki|Цілі оливки|整颗橄榄
+whole-tunas|Ganzer Thunfisch|Whole tunas|Тунцы целиком|Atuns inteiros|Hele tonijnen|Thons entiers|Tonni interi|Atunes enteros|Całe tuńczyki|Тунці цілком|整条金枪鱼
+whole-wheat-flours|Vollkornweizenmehl|Whole wheat flours|Цельнозерновая пшеничная мука|Farinhas de trigo integrais|Volkorentarwemeel|Farines de blé complètes|Farine di grano integrali|Harinas de trigo integrales|Mąki pszenne pełnoziarniste|Цільнозернове пшеничне борошно|全麦粉
+wild-caviars|Wildkaviar|Wild caviars|Икра диких рыб|Caviares selvagens|Wildkaviaar|Caviars sauvages|Caviali selvatici|Caviares salvajes|Dziki kawior|Ікра диких риб|野生鱼子酱
+wild-garlic|Bärlauch|Wild garlic|Черемша|Alho-bravo|Daslook|Ail des ours|Aglio orsino|Ajo de oso|Czosnek niedźwiedzi|Черемша|熊葱
+wild-salmons|Wildlachs|Wild salmons|Дикий лосось|Salmões selvagens|Wilde zalmen|Saumons sauvages|Salmoni selvatici|Salmones salvajes|Dzikie łososie|Дикий лосось|野生三文鱼
+yellow-kiwifruits|Gelbe Kiwis|Yellow kiwifruits|Жёлтые киви|Quivis amarelos|Gele kiwi's|Kiwis jaunes|Kiwi gialli|Kiwis amarillos|Żółte kiwi|Жовті ківі|黄心猕猴桃
+yellow-onions|Gelbe Zwiebeln|Yellow onions|Жёлтый лук|Cebolas amarelas|Gele uien|Oignons jaunes|Cipolle gialle|Cebollas amarillas|Żółte cebule|Жовта цибуля|黄洋葱
+yellowfin-tunas|Gelbflossen-Thunfisch|Yellowfin tunas|Желтоперый тунец|Atuns-de-barbatana-amarela|Geelvintonijn|Thons albacore|Tonni pinna gialla|Atunes de aleta amarilla|Tuńczyki żółtopłetwe|Жовтоперий тунець|黄鳍金枪鱼
+yogurt-sauces|Joghurtsaucen|Yoghurt sauces|Йогуртовые соусы|Molhos de iogurte|Yoghurtsauzen|Sauces au yaourt|Salse allo yogurt|Salsas de yogur|Sosy jogurtowe|Йогуртові соуси|酸奶酱
+young-goudas|Junger Gouda|Young Goudas|Молодой гауда|Goudas jovens|Jonge goudakazen|Goudas jeunes|Gouda giovani|Goudas jóvenes|Młode goudy|Молода гауда|嫩高达奶酪
+yule-log|Weihnachtsbaumstamm (Eisdessert)|Yule log|Рождественское полено|Tronco de Natal|Kerststronk|Bûche de Noël|Tronchetto di Natale|Tronco de Navidad|Rolada bożonarodzeniowa|Різдвяне поліно|圣诞树桩蛋糕
