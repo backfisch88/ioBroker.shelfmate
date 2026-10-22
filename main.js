@@ -13,6 +13,7 @@ const { texts } = require('./lib/i18n');
 const { NOTIFY_ADAPTERS, TEXT: NOTIFY_TEXT, lowText, expiryText, msUntil, deliver } = require('./lib/notify');
 const { ShelfMateServer } = require('./lib/server');
 const { ScanEngine } = require('./lib/scanner');
+const { lookupBarcode } = require('./lib/offLookup');
 const { InputReader, listDevices } = require('./lib/inputDevice');
 
 const DATA_FILE = 'shelfmate.json';
@@ -603,8 +604,43 @@ class Shelfmate extends utils.Adapter {
             return;
         }
         this.scanEngine.inv = this.inv;
-        await this.publishScan(this.scanEngine.handle(text));
+        // a barcode nobody knows yet is created first (Open Food Facts), then booked like any other
+        const made = this.scanEngine.isNewBarcode(text) ? await this.createScannedProduct(text) : null;
+        const r = this.scanEngine.handle(text);
+        if (made) {
+            r.text = this.scanEngine.say(made.incomplete ? 'createdIncomplete' : 'created', made.name) + r.text;
+        }
+        await this.publishScan(r);
         this.armScanTimer();
+    }
+
+    /**
+     * New product from a scanned barcode: data from Open Food Facts, otherwise an incomplete placeholder
+     * that shows up as a hint in the app.
+     *
+     * @param {string} ean barcode
+     * @returns {Promise<{name: string, incomplete: boolean} | null>} the new product, null when it could not be saved
+     */
+    async createScannedProduct(ean) {
+        let found = null;
+        try {
+            found = await lookupBarcode(ean, { lang: this.lang });
+        } catch (e) {
+            this.log.debug(`Open Food Facts lookup failed: ${e.message}`);
+        }
+        if (this.closing) {
+            return null;
+        }
+        const product = found
+            ? { ...found, ean, source: 'off', incomplete: false }
+            : { name: `${this.lang === 'de' ? 'Neues Produkt' : 'New product'} ${ean}`, ean, incomplete: true };
+        try {
+            this.scanBook({ action: 'saveProduct', product });
+            return { name: product.name, incomplete: product.incomplete };
+        } catch (e) {
+            this.log.warn(`Could not create product for ${ean}: ${e.message}`);
+            return null;
+        }
     }
 
     /**
@@ -634,7 +670,10 @@ class Shelfmate extends utils.Adapter {
             log: this.log,
             onScan: text => {
                 if (!this.closing) {
-                    this.handleScan(text).catch(e => this.log.warn(`Scan failed: ${e.message}`));
+                    // one scan after the other, a lookup of a new barcode must not overtake the next scan
+                    this.scanChain = (this.scanChain || Promise.resolve())
+                        .then(() => this.handleScan(text))
+                        .catch(e => this.log.warn(`Scan failed: ${e.message}`));
                 }
             },
         });
