@@ -959,7 +959,7 @@ function askConfirm(msg){return new Promise(res=>{
   addEventListener('pointerup',end);addEventListener('pointercancel',()=>{if(drag){drag=null;bub.classList.remove('lift');nav.classList.remove('held');place(false)}});
   function setMini(v){if(v===mini)return;mini=v;nav.classList.toggle('mini',v);document.body.classList.toggle('miniNav',v);if(v){bub.style.opacity='0'}else{setTimeout(()=>{place(false);bub.style.opacity=''},900)}}
   nav.addEventListener('click',e=>{if(mini){e.stopPropagation();e.preventDefault();setMini(false)}},true);
-  let ly=scrollY,armed=false;addEventListener('scroll',()=>{const y=scrollY;if(!fxOn()){if(mini)setMini(false);ly=y;return}const d=y-ly;if(d>28){armed=true;setMini(true);ly=y}else if(d<-14){if(armed&&y<60){setMini(false);armed=false}ly=y}},{passive:true});
+  let ly=scrollY,armed=false;addEventListener('scroll',()=>{const y=scrollY;if(!fxOn()){if(mini)setMini(false);ly=y;return}const d=y-ly;if(d>28){if(y>=140){armed=true;setMini(true)}ly=y}else if(d<-14){if(armed&&y<120){setMini(false);armed=false}ly=y}},{passive:true});
   const app0=document.getElementById('app');if(app0)new MutationObserver(r=>{if(r.some(m=>m.target.tagName==='SECTION')){armed=false;ly=scrollY}}).observe(app0,{attributes:true,attributeFilter:['class'],subtree:true});
   new MutationObserver(()=>place(true)).observe(nav,{attributes:true,subtree:true,attributeFilter:['class']});
   addEventListener('resize',()=>place(false));
