@@ -72,9 +72,10 @@ for line in open(src, encoding='utf8'):
         out.append([t, cat, tr[i][1:], tagindex(tid, tr[i])])
     else:
         out.append([t, cat, tr[i][1:]])
+TOP = {'en:plant-based-foods', 'en:plant-based-foods-and-beverages', 'en:condiments', 'en:beverages', 'en:beverages-and-beverages-preparations', 'en:fresh-foods', 'en:frozen-foods', 'en:canned-foods', 'en:foods', 'en:food', 'en:groceries'}
 for tid, plist in parents.items():
     if tid in tagidx:
-        tags[tagidx[tid]][2] = [tagindex(x) for x in plist]
+        tags[tagidx[tid]][2] = [tagindex(x) for x in plist if x not in TOP]
 extra = {}
 xf = os.path.join(os.path.dirname(os.path.abspath(src)), 'tagLabels', 'extraTags.txt')
 if os.path.exists(xf):
