@@ -797,9 +797,9 @@ function listSwap(box,html){
   function run(){raf=0;const on=fxOn()&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches),h=innerHeight;
     for(const id of lists){const box=$(id);if(!box||box.offsetParent===null)continue;const items=[...box.children];
       const rs=on?items.map(e=>e.getBoundingClientRect()):null;
-      items.forEach((e,i)=>{let p=0;if(on){const r=rs[i],c=r.top+r.height/2;p=Math.min(1,Math.max(0,(c-h*.62)/(h*.38)))}
+      items.forEach((e,i)=>{let p=0;if(on){const r=rs[i],c=r.top+r.height/2;p=Math.min(1,Math.max(0,(c-(h-140))/140))}
         p=Math.round(p*50)/50;if(e._w===p)return;e._w=p;
-        if(p<=0){e.style.opacity='';e.style.scale=''}else{e.style.opacity=String(1-.5*p);e.style.scale=String(1-.09*p)}})}}
+        if(p<=0){e.style.opacity='';e.style.scale=''}else{e.style.opacity=String(1-.35*p);e.style.scale=String(1-.04*p)}})}}
   const kick=()=>{if(!raf)raf=requestAnimationFrame(run)};
   addEventListener('scroll',kick,{passive:true});addEventListener('resize',kick);
   lists.forEach(id=>{const el=$(id);if(el)new MutationObserver(kick).observe(el,{childList:true})});
