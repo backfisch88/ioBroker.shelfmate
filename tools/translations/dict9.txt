@@ -7,4 +7,5 @@ Einlesen läuft, du kannst weiterarbeiten|Reading in progress, you can keep work
 Alle|All|Все|Todos|Alle|Tous|Tutti|Todos|Wszystkie|Усі|全部
 Weniger|Less|Меньше|Menos|Minder|Moins|Meno|Menos|Mniej|Менше|收起
 Bedienung|Controls|Управление|Utilização|Bediening|Utilisation|Uso|Manejo|Obsługa|Керування|操作
-Animationen, Wischgeste und kompakte Startseite|Animations, swipe gesture and compact home page|Анимации, жест смахивания и компактная главная|Animações, gesto de deslizar e página inicial compacta|Animaties, veeggebaar en compacte startpagina|Animations, geste de balayage et accueil compact|Animazioni, gesto di scorrimento e home compatta|Animaciones, gesto de deslizar e inicio compacto|Animacje, gest przesunięcia i kompaktowa strona główna|Анімації, жест змахування та компактна головна|动画、滑动手势和紧凑首页
+Animationen|Animations|Анимации|Animações|Animaties|Animations|Animazioni|Animaciones|Animacje|Анімації|动画
+Wischgesten|Swipe gestures|Жесты смахивания|Gestos de deslizar|Veeggebaren|Gestes de balayage|Gesti di scorrimento|Gestos de deslizar|Gesty przesunięcia|Жести змахування|滑动手势
