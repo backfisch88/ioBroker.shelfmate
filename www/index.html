@@ -100,7 +100,7 @@ body.d .tabBubble,.dark .tabBubble{background:linear-gradient(180deg,rgba(255,25
 #tabs.pill-nav button::before{display:none}
 #tabs.pill-nav button .ic{width:25px;height:25px;margin:0 0 1px;vertical-align:0;fill:currentColor;stroke:none}
 #tabs.pill-nav button.active,.dark #tabs.pill-nav button.active{color:var(--accent);letter-spacing:-.1px}
-:root{--mt:1.3s;--me:cubic-bezier(.32,.72,0,1)}@supports(transition-timing-function:linear(0,1)){:root{--me:linear(0.0,0.0298,0.1034,0.2017,0.3109,0.421,0.5257,0.621,0.7048,0.7763,0.8358,0.8841,0.9223,0.9518,0.9738,0.9898,1.0009,1.0081,1.0124,1.0146,1.0152,1.0147,1.0136,1.0121,1)}}
+:root{--mt:.9s;--me:cubic-bezier(.32,.72,0,1)}@supports(transition-timing-function:linear(0,1)){:root{--me:linear(0.0,0.0455,0.1501,0.2789,0.4104,0.5326,0.6394,0.7288,0.8011,0.8579,0.9013,0.9336,0.9572,0.9738,0.9853,0.9929,0.9977,1.0006,1.0021,1.0028,1)}}
 #tabs.pill-nav{transition:scale .38s cubic-bezier(.34,1.5,.64,1)}
 #tabs.pill-nav.held{scale:1.025}
 #tabs .tabBubble{top:4px;height:54px;border-radius:27px;background:rgba(112,112,128,.14);border:1px solid rgba(255,255,255,.45);box-shadow:inset 0 1px 1px rgba(255,255,255,.55),inset 0 -1px 2px rgba(0,0,0,.05);transition:scale .38s cubic-bezier(.34,1.5,.64,1),background .25s,box-shadow .25s,border-color .25s}
@@ -953,7 +953,7 @@ function askConfirm(msg){return new Promise(res=>{
     const el=document.elementFromPoint(e.clientX,e.clientY),b=el&&el.closest&&el.closest('#tabs button');
     if(b&&!b.classList.contains('active'))b.click();else place(true)};
   addEventListener('pointerup',end);addEventListener('pointercancel',()=>{if(drag){drag=null;bub.classList.remove('lift');nav.classList.remove('held');place(false)}});
-  function setMini(v){if(v===mini)return;mini=v;nav.classList.toggle('mini',v);document.body.classList.toggle('miniNav',v);if(v){bub.style.opacity='0'}else{setTimeout(()=>{place(false);bub.style.opacity=''},1300)}}
+  function setMini(v){if(v===mini)return;mini=v;nav.classList.toggle('mini',v);document.body.classList.toggle('miniNav',v);if(v){bub.style.opacity='0'}else{setTimeout(()=>{place(false);bub.style.opacity=''},900)}}
   nav.addEventListener('click',e=>{if(mini){e.stopPropagation();e.preventDefault();setMini(false)}},true);
   let ly=scrollY;addEventListener('scroll',()=>{const y=scrollY;if(!fxOn()){if(mini)setMini(false);ly=y;return}const d=y-ly;if(y<40){setMini(false);ly=y}else if(d>28){setMini(true);ly=y}else if(d<-14){setMini(false);ly=y}},{passive:true});
   new MutationObserver(()=>place(true)).observe(nav,{attributes:true,subtree:true,attributeFilter:['class']});
