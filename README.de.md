@@ -21,7 +21,7 @@ Die Bedienung erfolgt über eine Web-App, die du auf dem Smartphone öffnen und 
 
 ### Produkte und Lagerorte
 
-- Produkte per Barcode oder manuell hinzufügen
+- Produkte per Barcode oder manuell hinzufügen, beim manuellen Anlegen mit Namensvorschlägen und passender Kategorie
 - Produktdaten automatisch über Open Food Facts laden (Name, Marke, Packungsgröße, Nutri-Score und Kategorien)
 - Produktdaten jederzeit bearbeiten und aktualisieren
 - Eigene EAN-13-Barcodes für Produkte ohne Barcode erstellen

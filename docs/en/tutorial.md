@@ -70,7 +70,7 @@ Below that, the actions are always in the same order:
 1. Stock in / take out
 2. Move / open / undo open, if available
 3. To shopping list – with a check mark if the product is already on it
-4. Print labels – depending on the adapter settings
+4. Print labels – which buttons appear is set in the instance settings in the ioBroker admin under "Labels"
 5. Edit / delete
 
 ---
@@ -78,6 +78,8 @@ Below that, the actions are always in the same order:
 ## Editing products
 
 Tap Edit to open the product settings.
+
+When you create a product by hand, ShelfMate suggests matching products from a ready-made list while you type the name. If you enter `Sch`, for example, chocolate (Schokolade) appears among others. Tapping a suggestion takes over the name and sets the category if you have not chosen one yet. There are no suggestions for products from Open Food Facts, because the name comes from there.
 
 The form is split into five sections that you can unfold. Closed sections show a short summary, for example `Packung · 400g · min 1`.
 
@@ -243,7 +245,7 @@ You set the label size once, for example 50 × 30 mm.
 
 For large shelf labels, box labels and full-page codes, your own formats such as A6, A5 or A4 are possible too.
 
-Which label buttons are shown in the app, you decide in the adapter settings.
+Which label buttons are shown in the app, you choose in the instance settings in the ioBroker admin under "Label buttons in the app". You set the label size directly in the app settings.
 
 After creating it, you can save the label as an image or print it directly.
 
@@ -387,7 +389,15 @@ No products are passed to a shopping list automatically.
 
 ShelfMate writes the item name with `ack=false` into a data point of your choice.
 
-Optionally you can also name a data point with the current shopping list. A JSON array of objects is expected, each with a `name`.
+Optionally you can also name a data point with the current shopping list. A JSON array of objects is expected, each with a `name`. The content has to look like this:
+
+```json
+[
+  { "name": "Mehl" },
+  { "name": "Milch" },
+  { "name": "Feta" }
+]
+```
 
 With it, ShelfMate recognises products that are already there and avoids duplicate entries.
 
@@ -924,7 +934,7 @@ Supported are, among others:
 - "Opened on" labels
 - Freezer labels
 
-Which label types are available, you decide in the adapter settings.
+Which label types are available, you choose in the instance settings in the ioBroker admin under "Label buttons in the app".
 
 ### Example: Niimbot B1
 

@@ -70,7 +70,7 @@ Darunter stehen die verfügbaren Aktionen in fester Reihenfolge:
 1. Einlagern / Entnehmen
 2. Verschieben / Öffnen / Öffnen rückgängig, sofern verfügbar
 3. Zur Einkaufsliste – bei bereits eingetragenen Produkten mit Haken
-4. Etiketten drucken – abhängig von den Adapter-Einstellungen
+4. Etiketten drucken – welche Knöpfe erscheinen, stellst du in den Instanz-Einstellungen im ioBroker-Admin unter „Etiketten“ ein
 5. Bearbeiten / Löschen
 
 ---
@@ -78,6 +78,8 @@ Darunter stehen die verfügbaren Aktionen in fester Reihenfolge:
 ## Produkte bearbeiten
 
 Über Bearbeiten öffnest du die Produkteinstellungen.
+
+Wenn du ein Produkt von Hand anlegst, schlägt ShelfMate beim Tippen des Namens passende Produkte aus einer fertigen Liste vor. Wenn du zum Beispiel `Sch` eingibst, erscheint unter anderem Schokolade. Ein Tipp auf den Vorschlag übernimmt den Namen und setzt die Kategorie, falls du noch keine gewählt hast. Bei Produkten aus Open Food Facts gibt es keine Vorschläge, dort kommt der Name von dort.
 
 Das Formular ist in fünf aufklappbare Bereiche unterteilt. Geschlossene Bereiche zeigen eine kurze Zusammenfassung, beispielsweise `Packung · 400g · min 1`.
 
@@ -243,7 +245,7 @@ Die Größe der Etiketten legst du einmalig fest, beispielsweise auf 50 × 30 mm
 
 Für große Regal-Etiketten, Boxen-Etiketten und vollflächige Codes sind auch eigene Formate wie A6, A5 oder A4 möglich.
 
-Welche Etiketten-Knöpfe in der App angezeigt werden, bestimmst du in den Adapter-Einstellungen.
+Welche Etiketten-Knöpfe in der App angezeigt werden, wählst du in den Instanz-Einstellungen im ioBroker-Admin unter „Etiketten-Knöpfe in der App“. Die Etikettengröße stellst du direkt in den App-Einstellungen ein.
 
 Nach dem Erstellen kannst du das Etikett als Bild speichern oder direkt drucken.
 
@@ -387,7 +389,15 @@ Es werden keine Produkte automatisch an eine Einkaufsliste übertragen.
 
 ShelfMate schreibt den Artikelnamen mit `ack=false` in einen frei wählbaren Datenpunkt.
 
-Optional kannst du zusätzlich einen Datenpunkt mit der aktuellen Einkaufsliste angeben. Erwartet wird ein JSON-Array mit Objekten, die jeweils einen name enthalten.
+Optional kannst du zusätzlich einen Datenpunkt mit der aktuellen Einkaufsliste angeben. Erwartet wird ein JSON-Array mit Objekten, die jeweils einen `name` enthalten. So muss der Inhalt aussehen:
+
+```json
+[
+  { "name": "Mehl" },
+  { "name": "Milch" },
+  { "name": "Feta" }
+]
+```
 
 Damit erkennt ShelfMate bereits vorhandene Produkte und vermeidet doppelte Einträge.
 
@@ -924,7 +934,7 @@ Unterstützt werden unter anderem:
 - „Geöffnet am“-Etiketten
 - Gefrierfach-Etiketten
 
-Welche Etikettentypen verfügbar sind, bestimmst du in den Adapter-Einstellungen.
+Welche Etikettentypen verfügbar sind, wählst du in den Instanz-Einstellungen im ioBroker-Admin unter „Etiketten-Knöpfe in der App“.
 
 ### Beispiel: Niimbot B1
 

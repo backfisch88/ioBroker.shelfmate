@@ -24,7 +24,7 @@ You use it through a web app that you open on your phone and add to the home scr
 
 ### Products and storage locations
 
-- Add products by barcode or by hand
+- Add products by barcode or by hand, with name suggestions and a matching category when creating by hand
 - Load product data from Open Food Facts automatically (name, brand, package size, Nutri-Score and categories)
 - Edit and refresh product data at any time
 - Create your own EAN-13 barcodes for products without a barcode
@@ -270,6 +270,7 @@ Ideas, wishes or bugs are welcome as a [GitHub issue](https://github.com/backfis
 
 ## Changelog
 ### **WORK IN PROGRESS**
+- New: when creating a product by hand, the name field suggests products from a ready-made list (about 1,200) and sets the category
 - Changed: documentation split into a short README and a guide (English and German); the Bring! special examples now show how quantities and variants merge on one entry
 - New: product editor in collapsible sections (basics, stock, group and tags, shelf life, more) with a short summary on every closed section, Nutri-Score as a coloured row of buttons, package size next to the unit
 - New: product page with a tidier button layout (stock in / take out, move / open, shopping list, edit / delete)
