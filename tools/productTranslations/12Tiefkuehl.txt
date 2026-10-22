@@ -1,0 +1,56 @@
+Eiswürfel|Ice cubes|Кубики льда|Cubos de gelo|IJsblokjes|Glaçons|Cubetti di ghiaccio|Cubitos de hielo|Kostki lodu|Кубики льоду|冰块
+Erdbeereis|Strawberry ice cream|Клубничное мороженое|Gelado de morango|Aardbeienijs|Glace à la fraise|Gelato alla fragola|Helado de fresa|Lody truskawkowe|Полуничне морозиво|草莓冰淇淋
+Fruchteis|Fruit ice cream|Фруктовое мороженое|Gelado de fruta|Vruchtenijs|Glace aux fruits|Gelato alla frutta|Helado de frutas|Lody owocowe|Фруктове морозиво|水果冰淇淋
+Schokoladeneis|Chocolate ice cream|Шоколадное мороженое|Gelado de chocolate|Chocolade-ijs|Glace au chocolat|Gelato al cioccolato|Helado de chocolate|Lody czekoladowe|Шоколадне морозиво|巧克力冰淇淋
+Stracciatellaeis|Stracciatella ice cream|Мороженое страчателла|Gelado de stracciatella|Stracciatella-ijs|Glace stracciatella|Gelato alla stracciatella|Helado de stracciatella|Lody stracciatella|Морозиво страчателла|巧克力碎冰淇淋
+TK-Baguette|Frozen baguette|Замороженный багет|Baguete congelada|Diepvries stokbrood|Baguette surgelée|Baguette surgelata|Baguette congelada|Mrożona bagietka|Заморожений багет|冷冻法棍
+TK-Beeren|Frozen berries|Замороженные ягоды|Frutos vermelhos congelados|Diepvriesbessen|Baies surgelées|Frutti di bosco surgelati|Frutos rojos congelados|Mrożone owoce jagodowe|Заморожені ягоди|冷冻浆果
+TK-Blattspinat|Frozen leaf spinach|Замороженный листовой шпинат|Espinafres em folha congelados|Diepvries bladspinazie|Épinards en branches surgelés|Spinaci in foglia surgelati|Espinacas en hoja congeladas|Mrożony szpinak liściasty|Заморожений листовий шпинат|冷冻叶菠菜
+TK-Blumenkohl|Frozen cauliflower|Замороженная цветная капуста|Couve-flor congelada|Diepvriesbloemkool|Chou-fleur surgelé|Cavolfiore surgelato|Coliflor congelada|Mrożony kalafior|Заморожена цвітна капуста|冷冻花椰菜
+TK-Bohnen|Frozen beans|Замороженная фасоль|Feijão verde congelado|Diepvriesbonen|Haricots surgelés|Fagiolini surgelati|Judías verdes congeladas|Mrożona fasolka|Заморожена квасоля|冷冻豆角
+TK-Brokkoli|Frozen broccoli|Замороженная брокколи|Brócolos congelados|Diepvriesbroccoli|Brocoli surgelé|Broccoli surgelati|Brócoli congelado|Mrożone brokuły|Заморожена броколі|冷冻西兰花
+TK-Brot|Frozen bread|Замороженный хлеб|Pão congelado|Diepvriesbrood|Pain surgelé|Pane surgelato|Pan congelado|Mrożony chleb|Заморожений хліб|冷冻面包
+TK-Brötchen|Frozen bread rolls|Замороженные булочки|Pãezinhos congelados|Diepvriesbroodjes|Petits pains surgelés|Panini surgelati|Panecillos congelados|Mrożone bułki|Заморожені булочки|冷冻小面包
+TK-Burger|Frozen burgers|Замороженные бургеры|Hambúrgueres congelados|Diepvriesburgers|Burgers surgelés|Hamburger surgelati|Hamburguesas congeladas|Mrożone burgery|Заморожені бургери|冷冻汉堡
+TK-Croissants|Frozen croissants|Замороженные круассаны|Croissants congelados|Diepvriescroissants|Croissants surgelés|Croissant surgelati|Cruasanes congelados|Mrożone croissanty|Заморожені круасани|冷冻羊角面包
+TK-Dill|Frozen dill|Замороженный укроп|Aneto congelado|Diepvriesdille|Aneth surgelé|Aneto surgelato|Eneldo congelado|Mrożony koperek|Заморожений кріп|冷冻莳萝
+TK-Dumplings|Frozen dumplings|Замороженные пельмени|Dumplings congelados|Diepvriesdumplings|Raviolis asiatiques surgelés|Ravioli al vapore surgelati|Dumplings congelados|Mrożone pierogi|Заморожені пельмені|冷冻饺子
+TK-Erbsen|Frozen peas|Замороженный горошек|Ervilhas congeladas|Diepvrieserwten|Petits pois surgelés|Piselli surgelati|Guisantes congelados|Mrożony groszek|Заморожений горошок|冷冻豌豆
+TK-Erdbeeren|Frozen strawberries|Замороженная клубника|Morangos congelados|Diepvriesaardbeien|Fraises surgelées|Fragole surgelate|Fresas congeladas|Mrożone truskawki|Заморожена полуниця|冷冻草莓
+TK-Fischstäbchen|Frozen fish fingers|Замороженные рыбные палочки|Douradinhos congelados|Diepvriesvissticks|Bâtonnets de poisson surgelés|Bastoncini di pesce surgelati|Palitos de pescado congelados|Mrożone paluszki rybne|Заморожені рибні палички|冷冻鱼条
+TK-Flammkuchen|Frozen tarte flambée|Замороженный фламмкухен|Tarte flambée congelada|Diepvries flammkuchen|Tarte flambée surgelée|Flammkuchen surgelata|Tarta flambée congelada|Mrożony flammkuchen|Заморожений фламкухен|冷冻火焰薄饼
+TK-Frühlingsrollen|Frozen spring rolls|Замороженные спринг-роллы|Rolinhos primavera congelados|Diepvrieslenterolletjes|Nems surgelés|Involtini primavera surgelati|Rollitos de primavera congelados|Mrożone sajgonki|Заморожені спрінг-роли|冷冻春卷
+TK-Garnelen|Frozen prawns|Замороженные креветки|Camarões congelados|Diepvriesgarnalen|Crevettes surgelées|Gamberi surgelati|Gambas congeladas|Mrożone krewetki|Заморожені креветки|冷冻大虾
+TK-Gemüsemischung|Frozen mixed vegetables|Замороженная овощная смесь|Mistura de legumes congelada|Diepvriesgroentemix|Mélange de légumes surgelé|Misto di verdure surgelato|Mezcla de verduras congelada|Mrożona mieszanka warzyw|Заморожена овочева суміш|冷冻什锦蔬菜
+TK-Gemüsepfanne|Frozen stir-fry vegetables|Замороженные овощи для сковороды|Legumes salteados congelados|Diepvriespangroente|Poêlée de légumes surgelée|Padellata di verdure surgelata|Salteado de verduras congelado|Mrożona patelnia warzywna|Заморожена овочева сковорідка|冷冻炒菜蔬菜
+TK-Gnocchi|Frozen gnocchi|Замороженные ньокки|Nhoque congelado|Diepvriesgnocchi|Gnocchis surgelés|Gnocchi surgelati|Ñoquis congelados|Mrożone kopytka|Заморожені ньоккі|冷冻意式团子
+TK-Heidelbeeren|Frozen blueberries|Замороженная черника|Mirtilos congelados|Diepvriesblauwe bessen|Myrtilles surgelées|Mirtilli surgelati|Arándanos congelados|Mrożone jagody|Заморожена лохина|冷冻蓝莓
+TK-Himbeeren|Frozen raspberries|Замороженная малина|Framboesas congeladas|Diepvriesframbozen|Framboises surgelées|Lamponi surgelati|Frambuesas congeladas|Mrożone maliny|Заморожена малина|冷冻覆盆子
+TK-Hähnchen|Frozen chicken|Замороженная курица|Frango congelado|Diepvieskip|Poulet surgelé|Pollo surgelato|Pollo congelado|Mrożony kurczak|Заморожена курка|冷冻鸡肉
+TK-Kartoffelspalten|Frozen potato wedges|Замороженные картофельные дольки|Gomos de batata congelados|Diepvries aardappelpartjes|Quartiers de pommes de terre surgelés|Spicchi di patate surgelati|Gajos de patata congelados|Mrożone ćwiartki ziemniaczane|Заморожені картопляні часточки|冷冻土豆角
+TK-Kroketten|Frozen croquettes|Замороженные крокеты|Croquetes congelados|Diepvieskroketten|Croquettes surgelées|Crocchette surgelate|Croquetas congeladas|Mrożone krokiety ziemniaczane|Заморожені крокети|冷冻炸土豆丸
+TK-Kräuter|Frozen herbs|Замороженная зелень|Ervas aromáticas congeladas|Diepvieskruiden|Herbes surgelées|Erbe aromatiche surgelate|Hierbas congeladas|Mrożone zioła|Заморожена зелень|冷冻香草
+TK-Lachs|Frozen salmon|Замороженный лосось|Salmão congelado|Diepvieszalm|Saumon surgelé|Salmone surgelato|Salmón congelado|Mrożony łosoś|Заморожений лосось|冷冻三文鱼
+TK-Lasagne|Frozen lasagne|Замороженная лазанья|Lasanha congelada|Diepvrieslasagne|Lasagnes surgelées|Lasagne surgelate|Lasaña congelada|Mrożona lasagne|Заморожена лазанья|冷冻千层面
+TK-Mais|Frozen sweetcorn|Замороженная кукуруза|Milho congelado|Diepvriesmaïs|Maïs surgelé|Mais surgelato|Maíz congelado|Mrożona kukurydza|Заморожена кукурудза|冷冻玉米
+TK-Mango|Frozen mango|Замороженное манго|Manga congelada|Diepvriesmango|Mangue surgelée|Mango surgelato|Mango congelado|Mrożone mango|Заморожене манго|冷冻芒果
+TK-Möhren|Frozen carrots|Замороженная морковь|Cenouras congeladas|Diepvrieswortelen|Carottes surgelées|Carote surgelate|Zanahorias congeladas|Mrożona marchewka|Заморожена морква|冷冻胡萝卜
+TK-Nuggets|Frozen nuggets|Замороженные наггетсы|Nuggets congelados|Diepvriesnuggets|Nuggets surgelés|Nuggets surgelati|Nuggets congelados|Mrożone nuggetsy|Заморожені нагетси|冷冻鸡块
+TK-Obstmischung|Frozen fruit mix|Замороженная фруктовая смесь|Mistura de fruta congelada|Diepvriesfruitmix|Mélange de fruits surgelé|Misto di frutta surgelato|Mezcla de frutas congelada|Mrożona mieszanka owoców|Заморожена фруктова суміш|冷冻什锦水果
+TK-Paprika|Frozen peppers|Замороженный перец|Pimentos congelados|Diepvriespaprika|Poivrons surgelés|Peperoni surgelati|Pimientos congelados|Mrożona papryka|Заморожений перець|冷冻甜椒
+TK-Petersilie|Frozen parsley|Замороженная петрушка|Salsa congelada|Diepvriespeterselie|Persil surgelé|Prezzemolo surgelato|Perejil congelado|Mrożona pietruszka|Заморожена петрушка|冷冻欧芹
+TK-Pfannkuchen|Frozen pancakes|Замороженные блины|Panquecas congeladas|Diepvriespannenkoeken|Crêpes surgelées|Crêpes surgelate|Tortitas congeladas|Mrożone naleśniki|Заморожені млинці|冷冻煎饼
+TK-Pizza|Frozen pizza|Замороженная пицца|Pizza congelada|Diepvriespizza|Pizza surgelée|Pizza surgelata|Pizza congelada|Mrożona pizza|Заморожена піца|冷冻披萨
+TK-Pommes|Frozen chips|Замороженный картофель фри|Batatas fritas congeladas|Diepvriesfrites|Frites surgelées|Patatine fritte surgelate|Patatas fritas congeladas|Mrożone frytki|Заморожена картопля фрі|冷冻薯条
+TK-Rahmspinat|Frozen creamed spinach|Замороженный сливочный шпинат|Espinafres cremosos congelados|Diepvries spinazie met room|Épinards à la crème surgelés|Spinaci alla panna surgelati|Espinacas a la crema congeladas|Mrożony szpinak w śmietanie|Заморожений вершковий шпинат|冷冻奶油菠菜
+TK-Reispfanne|Frozen rice pan|Замороженный рис со сковороды|Arroz salteado congelado|Diepvries rijstpan|Poêlée de riz surgelée|Padellata di riso surgelata|Salteado de arroz congelado|Mrożona patelnia z ryżem|Заморожений рис зі сковорідки|冷冻炒饭
+TK-Rosenkohl|Frozen Brussels sprouts|Замороженная брюссельская капуста|Couves-de-bruxelas congeladas|Diepvriesspruitjes|Choux de Bruxelles surgelés|Cavoletti di Bruxelles surgelati|Coles de Bruselas congeladas|Mrożona brukselka|Заморожена брюссельська капуста|冷冻抱子甘蓝
+TK-Rösti|Frozen rösti|Замороженные рёшти|Rösti congelado|Diepvries rösti|Rösti surgelés|Rösti surgelati|Rösti congelado|Mrożone placki ziemniaczane|Заморожені рьощті|冷冻瑞士薯饼
+TK-Schnitzel|Frozen schnitzel|Замороженный шницель|Escalope congelado|Diepvriesschnitzel|Escalope surgelée|Cotoletta surgelata|Escalope congelado|Mrożony sznycel|Заморожений шніцель|冷冻炸肉排
+TK-Spinat|Frozen spinach|Замороженный шпинат|Espinafres congelados|Diepvriesspinazie|Épinards surgelés|Spinaci surgelati|Espinacas congeladas|Mrożony szpinak|Заморожений шпинат|冷冻菠菜
+TK-Suppengemüse|Frozen soup vegetables|Замороженные овощи для супа|Legumes para sopa congelados|Diepvriessoepgroente|Légumes à soupe surgelés|Verdure per minestra surgelate|Verduras para sopa congeladas|Mrożona włoszczyzna|Заморожені овочі для супу|冷冻汤料蔬菜
+TK-Tortellini|Frozen tortellini|Замороженные тортеллини|Tortellini congelados|Diepvriestortellini|Tortellini surgelés|Tortellini surgelati|Tortellini congelados|Mrożone tortellini|Заморожені тортелліні|冷冻意式饺
+TK-Waffeln|Frozen waffles|Замороженные вафли|Waffles congeladas|Diepvrieswafels|Gaufres surgelées|Waffle surgelati|Gofres congelados|Mrożone gofry|Заморожені вафлі|冷冻华夫饼
+TK-Wokgemüse|Frozen wok vegetables|Замороженные овощи для вока|Legumes para wok congelados|Diepvrieswokgroente|Légumes pour wok surgelés|Verdure per wok surgelate|Verduras para wok congeladas|Mrożone warzywa na patelnię wok|Заморожені овочі для воку|冷冻炒锅蔬菜
+Vanilleeis|Vanilla ice cream|Ванильное мороженое|Gelado de baunilha|Vanille-ijs|Glace à la vanille|Gelato alla vaniglia|Helado de vainilla|Lody waniliowe|Ванільне морозиво|香草冰淇淋
+Wassereis|Ice lollies|Фруктовый лёд|Gelados de água|Waterijs|Glaces à l'eau|Ghiaccioli|Polos de hielo|Lody wodne|Фруктовий лід|冰棒

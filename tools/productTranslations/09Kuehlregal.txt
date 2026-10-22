@@ -1,0 +1,80 @@
+Bacon|Bacon|Бекон|Bacon|Spek|Bacon|Pancetta affumicata|Beicon|Bekon|Бекон|培根
+Bergkäse|Mountain cheese|Горный сыр|Queijo de montanha|Bergkaas|Fromage de montagne|Formaggio di montagna|Queso de montaña|Ser górski|Гірський сир|山地奶酪
+Bierschinken|Beer ham|Пивная ветчина|Fiambre de cerveja|Bierham|Jambon à la bière|Prosciutto alla birra|Jamón de cerveza|Szynka piwna|Пивна шинка|啤酒火腿
+Bio-Eier|Organic eggs|Органические яйца|Ovos biológicos|Biologische eieren|Œufs bio|Uova biologiche|Huevos ecológicos|Jajka ekologiczne|Органічні яйця|有机鸡蛋
+Blauschimmelkäse|Blue cheese|Сыр с голубой плесенью|Queijo azul|Blauwe kaas|Fromage bleu|Formaggio erborinato|Queso azul|Ser pleśniowy niebieski|Сир із блакитною пліснявою|蓝纹奶酪
+Blätterteig gekühlt|Puff pastry (chilled)|Слоёное тесто (охлаждённое)|Massa folhada (refrigerada)|Bladerdeeg (gekoeld)|Pâte feuilletée (fraîche)|Pasta sfoglia (fresca)|Hojaldre (refrigerado)|Ciasto francuskie (chłodzone)|Листкове тісто (охолоджене)|冷藏酥皮
+Bratwurst|Bratwurst|Братвурст|Salsicha bratwurst|Bratwurst|Bratwurst|Bratwurst|Bratwurst|Kiełbasa bratwurst|Братвурст|煎香肠
+Brie|Brie|Бри|Brie|Brie|Brie|Brie|Brie|Brie|Брі|布里奶酪
+Butter|Butter|Сливочное масло|Manteiga|Boter|Beurre|Burro|Mantequilla|Masło|Вершкове масло|黄油
+Butterkäse|Butter cheese|Масляный сыр|Queijo amanteigado|Boterkaas|Fromage au beurre|Formaggio al burro|Queso de mantequilla|Ser maślany|Масляний сир|黄油奶酪
+Büffelmozzarella|Buffalo mozzarella|Моцарелла из молока буйволицы|Mozzarela de búfala|Buffelmozzarella|Mozzarella de bufflonne|Mozzarella di bufala|Mozzarella de búfala|Mozzarella z mleka bawolego|Моцарела з буйволиного молока|水牛马苏里拉
+Camembert|Camembert|Камамбер|Camembert|Camembert|Camembert|Camembert|Camembert|Camembert|Камамбер|卡门培尔奶酪
+Cheddar|Cheddar|Чеддер|Cheddar|Cheddar|Cheddar|Cheddar|Cheddar|Cheddar|Чеддер|切达奶酪
+Crème fraîche|Crème fraîche|Крем-фреш|Crème fraîche|Crème fraîche|Crème fraîche|Crème fraîche|Crème fraîche|Crème fraîche|Крем-фреш|法式酸奶油
+Edamer|Edam|Эдам|Edam|Edammer|Édam|Edamer|Edam|Ser edamski|Едам|埃丹奶酪
+Eier|Eggs|Яйца|Ovos|Eieren|Œufs|Uova|Huevos|Jajka|Яйця|鸡蛋
+Eiersalat|Egg salad|Яичный салат|Salada de ovo|Eiersalade|Salade d'œufs|Insalata di uova|Ensalada de huevo|Sałatka jajeczna|Яєчний салат|鸡蛋沙拉
+Emmentaler|Emmental|Эмменталь|Emmental|Emmentaler|Emmental|Emmental|Emmental|Ser Emmentaler|Емменталь|埃门塔尔奶酪
+Feta|Feta|Фета|Feta|Feta|Feta|Feta|Feta|Feta|Фета|菲达奶酪
+Fleischsalat|Meat salad|Мясной салат|Salada de carne|Vleessalade|Salade de viande|Insalata di carne|Ensalada de carne|Sałatka mięsna|М'ясний салат|肉类沙拉
+Fleischwurst|Fleischwurst|Мясная колбаса|Fleischwurst|Fleischwurst|Fleischwurst|Fleischwurst|Fleischwurst|Kiełbasa mięsna|М'ясна ковбаса|肉肠
+Frischkäse|Cream cheese|Сливочный сыр|Queijo fresco|Roomkaas|Fromage frais|Formaggio fresco spalmabile|Queso crema|Serek śmietankowy|Вершковий сир|奶油奶酪
+Frischmilch|Fresh milk|Свежее молоко|Leite fresco|Verse melk|Lait frais|Latte fresco|Leche fresca|Mleko świeże|Свіже молоко|鲜牛奶
+Fruchtjoghurt|Fruit yoghurt|Фруктовый йогурт|Iogurte de frutas|Vruchtenyoghurt|Yaourt aux fruits|Yogurt alla frutta|Yogur de frutas|Jogurt owocowy|Фруктовий йогурт|水果酸奶
+Gnocchi frisch|Fresh gnocchi|Свежие ньокки|Nhoque fresco|Verse gnocchi|Gnocchi frais|Gnocchi freschi|Ñoquis frescos|Świeże gnocchi|Свіжі ньокі|新鲜意式团子
+Gouda|Gouda|Гауда|Gouda|Gouda|Gouda|Gouda|Gouda|Gouda|Гауда|高达奶酪
+Grana Padano|Grana Padano|Грана падано|Grana Padano|Grana Padano|Grana Padano|Grana Padano|Grana Padano|Grana Padano|Грана Падано|帕达诺奶酪
+Griechischer Joghurt|Greek yoghurt|Греческий йогурт|Iogurte grego|Griekse yoghurt|Yaourt grec|Yogurt greco|Yogur griego|Jogurt grecki|Грецький йогурт|希腊酸奶
+Halloumi|Halloumi|Халуми|Halloumi|Halloumi|Halloumi|Halloumi|Halloumi|Halloumi|Халумі|哈罗米奶酪
+Heringssalat|Herring salad|Салат из сельди|Salada de arenque|Haringsalade|Salade de hareng|Insalata di aringhe|Ensalada de arenque|Sałatka śledziowa|Салат із оселедця|鲱鱼沙拉
+Hirtenkäse|Shepherd's cheese|Пастушеский сыр|Queijo de pastor|Herderskaas|Fromage de berger|Formaggio del pastore|Queso de pastor|Ser pasterski|Пастуший сир|牧羊人奶酪
+Hähnchenbrust-Aufschnitt|Chicken breast slices|Нарезка куриной грудки|Fiambre de peito de frango|Kipfilet beleg|Blanc de poulet en tranches|Fesa di pollo affettata|Pechuga de pollo en lonchas|Wędlina z piersi kurczaka|Нарізка курячої грудки|鸡胸肉片
+Hüttenkäse|Cottage cheese|Творожный сыр|Queijo cottage|Cottage cheese|Fromage cottage|Fiocchi di latte|Requesón|Serek wiejski|Зерняста сир|茅屋奶酪
+Joghurt|Yoghurt|Йогурт|Iogurte|Yoghurt|Yaourt|Yogurt|Yogur|Jogurt|Йогурт|酸奶
+Kartoffelsalat|Potato salad|Картофельный салат|Salada de batata|Aardappelsalade|Salade de pommes de terre|Insalata di patate|Ensalada de patata|Sałatka ziemniaczana|Картопляний салат|土豆沙拉
+Kasseler|Smoked pork loin|Копчёная свиная корейка|Lombo de porco fumado|Gerookte varkenskarbonade|Échine de porc fumée|Lonza di maiale affumicata|Lomo de cerdo ahumado|Schab wędzony|Копчена свиняча корейка|烟熏猪里脊
+Kochsahne|Cooking cream|Сливки для готовки|Natas para cozinhar|Kookroom|Crème de cuisine|Panna da cucina|Nata para cocinar|Śmietanka do gotowania|Вершки для приготування|烹饪奶油
+Krautsalat|Coleslaw|Салат из капусты|Salada de repolho|Koolsalade|Salade de chou|Insalata di cavolo|Ensalada de col|Surówka z kapusty|Салат із капусти|卷心菜沙拉
+Kräuterbutter|Herb butter|Травяное масло|Manteiga de ervas|Kruidenboter|Beurre aux herbes|Burro alle erbe|Mantequilla de hierbas|Masło ziołowe|Трав'яне масло|香草黄油
+Käsewürfel|Cheese cubes|Кубики сыра|Cubos de queijo|Kaasblokjes|Dés de fromage|Cubetti di formaggio|Cubos de queso|Kostki sera|Кубики сиру|奶酪块
+Körniger Frischkäse|Grainy cream cheese|Зернистый творожный сыр|Queijo fresco granulado|Korrelige roomkaas|Fromage frais granuleux|Formaggio fresco granuloso|Queso fresco granulado|Serek ziarnisty|Зернистий кисломолочний сир|颗粒奶油奶酪
+Leberwurst|Liver sausage|Печёночная колбаса|Salsicha de fígado|Leverworst|Saucisson au foie|Salsiccia di fegato|Salchicha de hígado|Pasztetowa|Печінкова ковбаса|肝肠
+Lyoner|Lyoner sausage|Колбаса лионер|Lyoner|Lyoner|Lyoner|Lyoner|Lyoner|Kiełbasa lyoner|Ковбаса ліонер|里昂肠
+Magerquark|Low-fat quark|Обезжиренный творог|Quark magro|Magere kwark|Fromage blanc maigre|Quark magro|Quark desnatado|Twaróg chudy|Нежирний сир кисломолочний|低脂夸克
+Margarine|Margarine|Маргарин|Margarina|Margarine|Margarine|Margarina|Margarina|Margaryna|Маргарин|人造黄油
+Mascarpone|Mascarpone|Маскарпоне|Mascarpone|Mascarpone|Mascarpone|Mascarpone|Mascarpone|Mascarpone|Маскарпоне|马斯卡彭奶酪
+Matjes|Matjes herring|Матьес|Arenque matjes|Maatjes|Hareng matjes|Aringa matjes|Arenque matjes|Śledź matjas|Матьєс|腌鲱鱼
+Mortadella|Mortadella|Мортаделла|Mortadela|Mortadella|Mortadelle|Mortadella|Mortadela|Mortadela|Мортаделла|摩泰台拉香肠
+Mozzarella|Mozzarella|Моцарелла|Mozzarela|Mozzarella|Mozzarella|Mozzarella|Mozzarella|Mozzarella|Моцарела|马苏里拉奶酪
+Naturjoghurt|Plain yoghurt|Натуральный йогурт|Iogurte natural|Naturel yoghurt|Yaourt nature|Yogurt naturale|Yogur natural|Jogurt naturalny|Натуральний йогурт|原味酸奶
+Parmesan|Parmesan|Пармезан|Parmesão|Parmezaan|Parmesan|Parmigiano|Parmesano|Parmezan|Пармезан|帕玛森奶酪
+Pizzateig gekühlt|Pizza dough (chilled)|Тесто для пиццы (охлаждённое)|Massa de pizza (refrigerada)|Pizzadeeg (gekoeld)|Pâte à pizza (fraîche)|Impasto per pizza (fresco)|Masa de pizza (refrigerada)|Ciasto na pizzę (chłodzone)|Тісто для піци (охолоджене)|冷藏披萨面团
+Putenbrust-Aufschnitt|Turkey breast slices|Нарезка индейки|Fiambre de peito de peru|Kalkoenfilet beleg|Blanc de dinde en tranches|Fesa di tacchino affettata|Pechuga de pavo en lonchas|Wędlina z piersi indyka|Нарізка грудки індички|火鸡胸肉片
+Quark|Quark|Творог|Quark|Kwark|Fromage blanc|Quark|Quark|Twaróg|Кисломолочний сир|夸克奶酪
+Ravioli frisch|Fresh ravioli|Свежие равиоли|Ravioli fresco|Verse ravioli|Raviolis frais|Ravioli freschi|Raviolis frescos|Świeże pierogi ravioli|Свіжі равіолі|新鲜意式馄饨
+Reibekäse|Grated cheese|Тёртый сыр|Queijo ralado|Geraspte kaas|Fromage râpé|Formaggio grattugiato|Queso rallado|Ser tarty|Тертий сир|奶酪丝
+Ricotta|Ricotta|Рикотта|Ricotta|Ricotta|Ricotta|Ricotta|Ricotta|Ricotta|Рікотта|里科塔奶酪
+Rohschinken|Cured ham|Сыровяленая ветчина|Presunto cru|Rauwe ham|Jambon cru|Prosciutto crudo|Jamón curado|Szynka surowa|Сиров'ялена шинка|生火腿
+Räucherlachs|Smoked salmon|Копчёный лосось|Salmão fumado|Gerookte zalm|Saumon fumé|Salmone affumicato|Salmón ahumado|Łosoś wędzony|Копчений лосось|烟熏三文鱼
+Räuchertofu|Smoked tofu|Копчёный тофу|Tofu fumado|Gerookte tofu|Tofu fumé|Tofu affumicato|Tofu ahumado|Tofu wędzone|Копчений тофу|烟熏豆腐
+Sahne|Cream|Сливки|Natas|Room|Crème|Panna|Nata|Śmietana|Вершки|奶油
+Salami|Salami|Салями|Salame|Salami|Salami|Salame|Salchichón|Salami|Салямі|萨拉米
+Saure Sahne|Sour cream|Сметана|Natas azedas|Zure room|Crème aigre|Panna acida|Nata agria|Śmietana kwaśna|Сметана|酸奶油
+Scheibenkäse|Sliced cheese|Нарезанный сыр|Queijo fatiado|Plakjeskaas|Fromage en tranches|Formaggio a fette|Queso en lonchas|Ser w plasterkach|Нарізаний сир|奶酪片
+Schinken gekocht|Cooked ham|Варёная ветчина|Fiambre cozido|Gekookte ham|Jambon cuit|Prosciutto cotto|Jamón cocido|Szynka gotowana|Варена шинка|熟火腿
+Schlagsahne|Whipping cream|Сливки для взбивания|Natas para bater|Slagroom|Crème fouettée|Panna da montare|Nata para montar|Śmietana kremówka|Вершки для збивання|搅打奶油
+Schmand|Schmand|Шманд|Schmand|Zure room (Schmand)|Crème épaisse (Schmand)|Panna acida (Schmand)|Nata agria (Schmand)|Śmietana (Schmand)|Шманд|德式酸奶油
+Schmelzkäse|Processed cheese|Плавленый сыр|Queijo fundido|Smeltkaas|Fromage fondu|Formaggio fuso|Queso fundido|Ser topiony|Плавлений сир|加工奶酪
+Seidentofu|Silken tofu|Шёлковый тофу|Tofu sedoso|Zachte tofu|Tofu soyeux|Tofu setoso|Tofu sedoso|Tofu jedwabne|Шовковий тофу|嫩豆腐
+Skyr|Skyr|Скир|Skyr|Skyr|Skyr|Skyr|Skyr|Skyr|Скір|冰岛酸奶
+Speck|Bacon (cured)|Шпик|Toucinho|Spek|Lard|Speck|Panceta|Boczek|Сало|烟熏咸肉
+Speisequark|Quark|Творог|Quark|Kwark|Fromage blanc|Quark|Quark|Twaróg|Кисломолочний сир|食用夸克
+Teewurst|Teewurst|Тэвурст|Teewurst|Teewurst|Teewurst|Teewurst|Teewurst|Teewurst|Теєвурст|茶肠
+Tempeh|Tempeh|Темпе|Tempeh|Tempeh|Tempeh|Tempeh|Tempeh|Tempeh|Темпе|丹贝
+Tilsiter|Tilsit cheese|Тильзитер|Queijo Tilsit|Tilsiter|Tilsit|Tilsiter|Tilsit|Ser tylżycki|Тильзитер|蒂尔西特奶酪
+Tofu|Tofu|Тофу|Tofu|Tofu|Tofu|Tofu|Tofu|Tofu|Тофу|豆腐
+Tortellini frisch|Fresh tortellini|Свежие тортеллини|Tortellini fresco|Verse tortellini|Tortellinis frais|Tortellini freschi|Tortellini frescos|Świeże tortellini|Свіжі тортелліні|新鲜意式饺子
+Trinkjoghurt|Drinking yoghurt|Питьевой йогурт|Iogurte líquido|Drinkyoghurt|Yaourt à boire|Yogurt da bere|Yogur líquido|Jogurt do picia|Питний йогурт|饮用酸奶
+Wachteleier|Quail eggs|Перепелиные яйца|Ovos de codorniz|Kwarteleitjes|Œufs de caille|Uova di quaglia|Huevos de codorniz|Jajka przepiórcze|Перепелині яйця|鹌鹑蛋
+Wiener Würstchen|Frankfurters|Венские сосиски|Salsichas de Viena|Wienerworstjes|Saucisses de Vienne|Würstel|Salchichas de Viena|Parówki wiedeńskie|Віденські сосиски|维也纳香肠

@@ -1,0 +1,88 @@
+Ananassaft|Pineapple juice|Ананасовый сок|Sumo de ananás|Ananassap|Jus d'ananas|Succo d'ananas|Zumo de piña|Sok ananasowy|Ананасовий сік|菠萝汁
+Apfelsaft|Apple juice|Яблочный сок|Sumo de maçã|Appelsap|Jus de pomme|Succo di mela|Zumo de manzana|Sok jabłkowy|Яблучний сік|苹果汁
+Apfelschorle|Apple spritzer|Яблочный сок с газировкой|Sumo de maçã com água com gás|Appelsap met bruiswater|Jus de pomme pétillant|Succo di mela e acqua frizzante|Zumo de manzana con gas|Napój jabłkowy gazowany|Яблучний сік з газованою водою|苹果气泡水
+Barista Haferdrink|Barista oat drink|Овсяный напиток для бариста|Bebida de aveia barista|Barista haverdrink|Boisson d'avoine barista|Bevanda d'avena barista|Bebida de avena barista|Napój owsiany barista|Вівсяний напій для бариста|咖啡师燕麦饮
+Barista Sojadrink|Barista soy drink|Соевый напиток для бариста|Bebida de soja barista|Barista sojadrink|Boisson au soja barista|Bevanda di soia barista|Bebida de soja barista|Napój sojowy barista|Соєвий напій для бариста|咖啡师豆奶
+Bitter Lemon|Bitter lemon|Биттер лемон|Bitter lemon|Bitter lemon|Bitter lemon|Bitter lemon|Bitter lemon|Bitter lemon|Бітер лемон|苦柠檬汽水
+Cappuccinopulver|Cappuccino powder|Капучино в порошке|Cappuccino em pó|Cappuccinopoeder|Cappuccino en poudre|Cappuccino in polvere|Capuchino en polvo|Cappuccino w proszku|Капучино в порошку|卡布奇诺粉
+Cashewdrink|Cashew drink|Напиток из кешью|Bebida de caju|Cashewdrink|Boisson aux noix de cajou|Bevanda di anacardi|Bebida de anacardo|Napój z orzechów nerkowca|Напій із кеш'ю|腰果饮
+Chai-Tee|Chai tea|Чай масала|Chá chai|Chaithee|Thé chai|Tè chai|Té chai|Herbata chai|Чай масала|印度茶
+Cola|Cola|Кола|Cola|Cola|Cola|Cola|Cola|Cola|Кола|可乐
+Cola Zero|Cola Zero|Кола Зеро|Cola Zero|Cola Zero|Cola Zero|Cola Zero|Cola Zero|Cola Zero|Кола Зеро|零度可乐
+Direktsaft|Not-from-concentrate juice|Сок прямого отжима|Sumo directo|Directsap|Jus pur jus|Succo non da concentrato|Zumo exprimido|Sok tłoczony|Сік прямого віджиму|鲜榨果汁
+Eistee|Iced tea|Холодный чай|Chá gelado|Ijsthee|Thé glacé|Tè freddo|Té helado|Mrożona herbata|Холодний чай|冰茶
+Eistee Pfirsich|Peach iced tea|Холодный чай персик|Chá gelado de pêssego|Ijsthee perzik|Thé glacé pêche|Tè freddo alla pesca|Té helado de melocotón|Mrożona herbata brzoskwiniowa|Холодний чай персик|桃子冰茶
+Eistee Zitrone|Lemon iced tea|Холодный чай лимон|Chá gelado de limão|Ijsthee citroen|Thé glacé citron|Tè freddo al limone|Té helado de limón|Mrożona herbata cytrynowa|Холодний чай лимон|柠檬冰茶
+Energy Drink|Energy drink|Энергетический напиток|Bebida energética|Energydrank|Boisson énergisante|Bevanda energetica|Bebida energética|Napój energetyczny|Енергетичний напій|能量饮料
+Erbsendrink|Pea drink|Гороховый напиток|Bebida de ervilha|Erwtendrank|Boisson aux pois|Bevanda ai piselli|Bebida de guisante|Napój grochowy|Гороховий напій|豌豆饮
+Espresso|Espresso|Эспрессо|Espresso|Espresso|Espresso|Espresso|Espresso|Espresso|Еспресо|浓缩咖啡
+Espressobohnen|Espresso beans|Зёрна для эспрессо|Grãos de espresso|Espressobonen|Grains d'espresso|Chicchi per espresso|Granos de espresso|Ziarna espresso|Зерна для еспресо|浓缩咖啡豆
+Fencheltee|Fennel tea|Фенхелевый чай|Chá de funcho|Venkelthee|Tisane de fenouil|Tisana al finocchio|Té de hinojo|Herbata z kopru włoskiego|Фенхелевий чай|茴香茶
+Fettarme Milch|Semi-skimmed milk|Молоко низкой жирности|Leite meio-gordo|Halfvolle melk|Lait demi-écrémé|Latte parzialmente scremato|Leche semidesnatada|Mleko o obniżonej zawartości tłuszczu|Молоко низької жирності|低脂牛奶
+Fruchtnektar|Fruit nectar|Фруктовый нектар|Néctar de fruta|Vruchtennectar|Nectar de fruits|Nettare di frutta|Néctar de frutas|Nektar owocowy|Фруктовий нектар|果蜜饮料
+Fruchtsaft|Fruit juice|Фруктовый сок|Sumo de fruta|Vruchtensap|Jus de fruits|Succo di frutta|Zumo de frutas|Sok owocowy|Фруктовий сік|果汁
+Früchtetee|Fruit tea|Фруктовый чай|Chá de frutas|Vruchtenthee|Thé aux fruits|Tè alla frutta|Té de frutas|Herbata owocowa|Фруктовий чай|水果茶
+Gemahlener Kaffee|Ground coffee|Молотый кофе|Café moído|Gemalen koffie|Café moulu|Caffè macinato|Café molido|Kawa mielona|Мелена кава|咖啡粉
+Gemüsesaft|Vegetable juice|Овощной сок|Sumo de legumes|Groentesap|Jus de légumes|Succo di verdure|Zumo de verduras|Sok warzywny|Овочевий сік|蔬菜汁
+Getränkesirup|Drink syrup|Сироп для напитков|Xarope para bebidas|Limonadesiroop|Sirop pour boissons|Sciroppo per bevande|Sirope para bebidas|Syrop do napojów|Сироп для напоїв|饮料糖浆
+Ginger Ale|Ginger ale|Имбирный эль|Ginger ale|Gingerale|Ginger ale|Ginger ale|Ginger ale|Ginger ale|Імбирний ель|姜汁汽水
+Ginger Beer|Ginger beer|Имбирное пиво|Ginger beer|Ginger beer|Ginger beer|Ginger beer|Ginger beer|Ginger beer|Імбирне пиво|姜汁啤酒
+Grenadine|Grenadine|Гренадин|Grenadine|Grenadine|Grenadine|Granatina|Granadina|Grenadyna|Гренадин|石榴糖浆
+Grüntee|Green tea|Зелёный чай|Chá verde|Groene thee|Thé vert|Tè verde|Té verde|Zielona herbata|Зелений чай|绿茶
+H-Milch|UHT milk|Молоко УВТ|Leite UHT|Houdbare melk|Lait UHT|Latte UHT|Leche UHT|Mleko UHT|Молоко УВТ|常温牛奶
+Haferdrink|Oat drink|Овсяный напиток|Bebida de aveia|Haverdrink|Boisson à l'avoine|Bevanda d'avena|Bebida de avena|Napój owsiany|Вівсяний напій|燕麦饮
+Hafermilch|Oat milk|Овсяное молоко|Leite de aveia|Havermelk|Lait d'avoine|Latte d'avena|Leche de avena|Mleko owsiane|Вівсяне молоко|燕麦奶
+Himbeersirup|Raspberry syrup|Малиновый сироп|Xarope de framboesa|Frambozensiroop|Sirop de framboise|Sciroppo di lampone|Sirope de frambuesa|Syrop malinowy|Малиновий сироп|覆盆子糖浆
+Holundersirup|Elderflower syrup|Сироп из бузины|Xarope de sabugueiro|Vlierbloesemsiroop|Sirop de sureau|Sciroppo di sambuco|Sirope de saúco|Syrop z kwiatu bzu|Сироп із бузини|接骨木花糖浆
+Ingwertee|Ginger tea|Имбирный чай|Chá de gengibre|Gemberthee|Thé au gingembre|Tè allo zenzero|Té de jengibre|Herbata imbirowa|Імбирний чай|姜茶
+Instantkaffee|Instant coffee|Растворимый кофе|Café instantâneo|Oploskoffie|Café instantané|Caffè istantaneo|Café instantáneo|Kawa rozpuszczalna|Розчинна кава|速溶咖啡
+Instanttee|Instant tea|Растворимый чай|Chá instantâneo|Instantthee|Thé instantané|Tè istantaneo|Té instantáneo|Herbata rozpuszczalna|Розчинний чай|速溶茶
+Isotonisches Getränk|Isotonic drink|Изотонический напиток|Bebida isotónica|Isotone drank|Boisson isotonique|Bevanda isotonica|Bebida isotónica|Napój izotoniczny|Ізотонічний напій|等渗饮料
+Kaffee|Coffee|Кофе|Café|Koffie|Café|Caffè|Café|Kawa|Кава|咖啡
+Kaffeebohnen|Coffee beans|Кофейные зёрна|Grãos de café|Koffiebonen|Grains de café|Chicchi di caffè|Granos de café|Ziarna kawy|Кавові зерна|咖啡豆
+Kaffeekapseln|Coffee capsules|Кофейные капсулы|Cápsulas de café|Koffiecapsules|Capsules de café|Capsule di caffè|Cápsulas de café|Kapsułki do kawy|Кавові капсули|咖啡胶囊
+Kaffeepads|Coffee pods|Кофейные чалды|Carga de café|Koffiepads|Dosettes de café|Cialde di caffè|Monodosis de café|Saszetki z kawą|Кавові чалди|咖啡包
+Kaffeeweißer|Coffee whitener|Сухие сливки для кофе|Branqueador de café|Koffiemelkpoeder|Blanchisseur de café|Lattiera in polvere|Blanqueador de café|Wybielacz do kawy|Сухі вершки для кави|咖啡伴侣
+Kakao|Cocoa|Какао|Cacau|Cacao|Cacao|Cacao|Cacao|Kakao|Какао|可可
+Kakaogetränk|Cocoa drink|Какао-напиток|Bebida de cacau|Cacaodrank|Boisson cacaotée|Bevanda al cacao|Bebida de cacao|Napój kakaowy|Какао-напій|可可饮料
+Kamillentee|Chamomile tea|Ромашковый чай|Chá de camomila|Kamillethee|Tisane de camomille|Tè alla camomilla|Té de manzanilla|Herbata rumiankowa|Ромашковий чай|洋甘菊茶
+Kirschsaft|Cherry juice|Вишнёвый сок|Sumo de cereja|Kersensap|Jus de cerise|Succo di ciliegia|Zumo de cereza|Sok wiśniowy|Вишневий сік|樱桃汁
+Kokosdrink|Coconut drink|Кокосовый напиток|Bebida de coco|Kokosdrank|Boisson à la noix de coco|Bevanda al cocco|Bebida de coco|Napój kokosowy|Кокосовий напій|椰子饮
+Kokoswasser|Coconut water|Кокосовая вода|Água de coco|Kokoswater|Eau de coco|Acqua di cocco|Agua de coco|Woda kokosowa|Кокосова вода|椰子水
+Kräutertee|Herbal tea|Травяной чай|Chá de ervas|Kruidenthee|Tisane aux herbes|Tisana alle erbe|Infusión de hierbas|Herbata ziołowa|Трав'яний чай|草本茶
+Laktosefreie Milch|Lactose-free milk|Безлактозное молоко|Leite sem lactose|Lactosevrije melk|Lait sans lactose|Latte senza lattosio|Leche sin lactosa|Mleko bez laktozy|Безлактозне молоко|无乳糖牛奶
+Limonade|Lemonade|Лимонад|Limonada|Limonade|Limonade|Limonata|Limonada|Lemoniada|Лимонад|柠檬水
+Löslicher Kaffee|Soluble coffee|Растворимый кофе|Café solúvel|Oploskoffie|Café soluble|Caffè solubile|Café soluble|Kawa rozpuszczalna|Розчинна кава|可溶咖啡
+Mandeldrink|Almond drink|Миндальный напиток|Bebida de amêndoa|Amandeldrink|Boisson aux amandes|Bevanda alle mandorle|Bebida de almendra|Napój migdałowy|Мигдальний напій|杏仁饮
+Mandelmilch|Almond milk|Миндальное молоко|Leite de amêndoa|Amandelmelk|Lait d'amande|Latte di mandorla|Leche de almendra|Mleko migdałowe|Мигдальне молоко|杏仁奶
+Mangosaft|Mango juice|Манговый сок|Sumo de manga|Mangosap|Jus de mangue|Succo di mango|Zumo de mango|Sok mango|Манговий сік|芒果汁
+Maracujasaft|Passion fruit juice|Сок маракуйи|Sumo de maracujá|Passievruchtensap|Jus de fruit de la passion|Succo di frutto della passione|Zumo de maracuyá|Sok z marakui|Сік маракуї|百香果汁
+Matcha|Matcha|Матча|Matcha|Matcha|Matcha|Matcha|Matcha|Matcha|Матча|抹茶
+Medium Wasser|Medium sparkling water|Слабогазированная вода|Água com gás suave|Licht bruisend water|Eau légèrement gazeuse|Acqua leggermente frizzante|Agua con poco gas|Woda lekko gazowana|Слабогазована вода|微气泡水
+Milchpulver|Milk powder|Сухое молоко|Leite em pó|Melkpoeder|Lait en poudre|Latte in polvere|Leche en polvo|Mleko w proszku|Сухе молоко|奶粉
+Mineralwasser|Mineral water|Минеральная вода|Água mineral|Mineraalwater|Eau minérale|Acqua minerale|Agua mineral|Woda mineralna|Мінеральна вода|矿泉水
+Multivitaminsaft|Multivitamin juice|Мультивитаминный сок|Sumo multivitamínico|Multivitaminesap|Jus multivitaminé|Succo multivitaminico|Zumo multivitamínico|Sok multiwitaminowy|Мультивітамінний сік|复合维生素果汁
+Orangenlimonade|Orange soda|Апельсиновый лимонад|Limonada de laranja|Sinaasappellimonade|Limonade à l'orange|Aranciata|Naranjada|Oranżada|Апельсиновий лимонад|橙味汽水
+Orangensaft|Orange juice|Апельсиновый сок|Sumo de laranja|Sinaasappelsap|Jus d'orange|Succo d'arancia|Zumo de naranja|Sok pomarańczowy|Апельсиновий сік|橙汁
+Pfefferminztee|Peppermint tea|Мятный чай|Chá de hortelã-pimenta|Pepermuntthee|Thé à la menthe poivrée|Tè alla menta piperita|Té de menta|Herbata miętowa|М'ятний чай|薄荷茶
+Reisdrink|Rice drink|Рисовый напиток|Bebida de arroz|Rijstdrank|Boisson au riz|Bevanda di riso|Bebida de arroz|Napój ryżowy|Рисовий напій|大米饮
+Rooibostee|Rooibos tea|Чай ройбуш|Chá rooibos|Rooibosthee|Thé rooibos|Tè rooibos|Té rooibos|Herbata rooibos|Чай ройбуш|路易波士茶
+Saftschorle|Juice spritzer|Сок с газировкой|Sumo com água com gás|Sap met bruiswater|Jus pétillant|Succo con acqua frizzante|Zumo con gas|Napój sokowo-gazowany|Сік з газованою водою|果汁气泡水
+Schwarztee|Black tea|Чёрный чай|Chá preto|Zwarte thee|Thé noir|Tè nero|Té negro|Czarna herbata|Чорний чай|红茶
+Sirup|Syrup|Сироп|Xarope|Siroop|Sirop|Sciroppo|Sirope|Syrop|Сироп|糖浆
+Smoothie|Smoothie|Смузи|Batido|Smoothie|Smoothie|Frullato|Batido|Smoothie|Смузі|冰沙
+Sojadrink|Soy drink|Соевый напиток|Bebida de soja|Sojadrink|Boisson au soja|Bevanda di soia|Bebida de soja|Napój sojowy|Соєвий напій|豆奶饮料
+Sojamilch|Soy milk|Соевое молоко|Leite de soja|Sojamelk|Lait de soja|Latte di soia|Leche de soja|Mleko sojowe|Соєве молоко|豆浆
+Sportgetränk|Sports drink|Спортивный напиток|Bebida desportiva|Sportdrank|Boisson pour sportifs|Bevanda sportiva|Bebida deportiva|Napój sportowy|Спортивний напій|运动饮料
+Sprudelwasser|Sparkling water|Газированная вода|Água com gás|Bruiswater|Eau gazeuse|Acqua frizzante|Agua con gas|Woda gazowana|Газована вода|气泡水
+Stilles Wasser|Still water|Негазированная вода|Água sem gás|Plat water|Eau plate|Acqua naturale|Agua sin gas|Woda niegazowana|Негазована вода|无气泡水
+Tafelwasser|Table water|Столовая вода|Água de mesa|Tafelwater|Eau de table|Acqua da tavola|Agua de mesa|Woda stołowa|Столова вода|饮用水
+Tee|Tea|Чай|Chá|Thee|Thé|Tè|Té|Herbata|Чай|茶
+Tomatensaft|Tomato juice|Томатный сок|Sumo de tomate|Tomatensap|Jus de tomate|Succo di pomodoro|Zumo de tomate|Sok pomidorowy|Томатний сік|番茄汁
+Tonic Water|Tonic water|Тоник|Água tónica|Tonic|Tonic|Acqua tonica|Agua tónica|Tonik|Тонік|汤力水
+Traubensaft|Grape juice|Виноградный сок|Sumo de uva|Druivensap|Jus de raisin|Succo d'uva|Zumo de uva|Sok winogronowy|Виноградний сік|葡萄汁
+Traubenschorle|Grape spritzer|Виноградный сок с газировкой|Sumo de uva com água com gás|Druivensap met bruiswater|Jus de raisin pétillant|Succo d'uva e acqua frizzante|Zumo de uva con gas|Napój winogronowy gazowany|Виноградний сік з газованою водою|葡萄气泡水
+Trinkkakao|Drinking cocoa|Какао для питья|Cacau para beber|Chocolademelk|Cacao à boire|Cacao solubile|Cacao soluble|Kakao do picia|Какао для пиття|饮用可可
+Trinkschokolade|Drinking chocolate|Горячий шоколад|Chocolate para beber|Drinkchocolade|Chocolat chaud|Cioccolata calda|Chocolate a la taza|Czekolada do picia|Гарячий шоколад|热巧克力
+Vollmilch|Whole milk|Цельное молоко|Leite gordo|Volle melk|Lait entier|Latte intero|Leche entera|Mleko pełnotłuste|Незбиране молоко|全脂牛奶
+Zitronenlimonade|Lemon soda|Лимонный лимонад|Limonada de limão|Citroenlimonade|Limonade au citron|Limonata al limone|Limonada de limón|Lemoniada cytrynowa|Лимонний лимонад|柠檬汽水

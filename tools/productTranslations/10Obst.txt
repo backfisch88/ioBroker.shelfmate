@@ -1,0 +1,124 @@
+Ananas|Pineapple|Ананас|Ananás|Ananas|Ananas|Ananas|Piña|Ananas|Ананас|菠萝
+Apfel|Apple|Яблоко|Maçã|Appel|Pomme|Mela|Manzana|Jabłko|Яблуко|苹果
+Aprikose|Apricot|Абрикос|Alperce|Abrikoos|Abricot|Albicocca|Albaricoque|Morela|Абрикос|杏
+Aubergine|Aubergine|Баклажан|Beringela|Aubergine|Aubergine|Melanzana|Berenjena|Bakłażan|Баклажан|茄子
+Austernpilze|Oyster mushrooms|Вёшенки|Cogumelos ostra|Oesterzwammen|Pleurotes|Funghi orecchioni|Setas de ostra|Boczniaki|Глива звичайна|平菇
+Avocado|Avocado|Авокадо|Abacate|Avocado|Avocat|Avocado|Aguacate|Awokado|Авокадо|牛油果
+Babyspinat|Baby spinach|Молодой шпинат|Espinafres baby|Babyspinazie|Jeunes pousses d'épinards|Spinacino|Espinacas baby|Szpinak baby|Молодий шпинат|嫩菠菜
+Banane|Banana|Банан|Banana|Banaan|Banane|Banana|Plátano|Banan|Банан|香蕉
+Basilikum frisch|Fresh basil|Свежий базилик|Manjericão fresco|Verse basilicum|Basilic frais|Basilico fresco|Albahaca fresca|Świeża bazylia|Свіжий базилік|新鲜罗勒
+Birne|Pear|Груша|Pera|Peer|Poire|Pera|Pera|Gruszka|Груша|梨
+Blumenkohl|Cauliflower|Цветная капуста|Couve-flor|Bloemkool|Chou-fleur|Cavolfiore|Coliflor|Kalafior|Цвітна капуста|花椰菜
+Braune Champignons|Chestnut mushrooms|Коричневые шампиньоны|Cogumelos castanhos|Kastanjechampignons|Champignons bruns|Champignon marroni|Champiñones marrones|Brązowe pieczarki|Коричневі печериці|棕色蘑菇
+Brokkoli|Broccoli|Брокколи|Brócolos|Broccoli|Brocoli|Broccoli|Brócoli|Brokuły|Броколі|西兰花
+Brombeeren|Blackberries|Ежевика|Amoras|Bramen|Mûres|More|Moras|Jeżyny|Ожина|黑莓
+Butternutkürbis|Butternut squash|Тыква баттернат|Abóbora butternut|Butternutpompoen|Courge butternut|Zucca butternut|Calabaza butternut|Dynia piżmowa|Гарбуз баттернат|黄油南瓜
+Champignons|Mushrooms|Шампиньоны|Cogumelos|Champignons|Champignons|Champignon|Champiñones|Pieczarki|Печериці|蘑菇
+Cherrytomaten|Cherry tomatoes|Помидоры черри|Tomate-cereja|Cherrytomaten|Tomates cerises|Pomodorini ciliegino|Tomates cherry|Pomidorki koktajlowe|Помідори черрі|樱桃番茄
+Chili|Chilli|Чили|Piripiri|Chilipeper|Piment|Peperoncino|Chile|Papryczka chili|Чилі|辣椒
+Chinakohl|Chinese cabbage|Пекинская капуста|Couve-chinesa|Chinese kool|Chou chinois|Cavolo cinese|Col china|Kapusta pekińska|Пекінська капуста|大白菜
+Clementine|Clementine|Клементин|Clementina|Clementine|Clémentine|Clementina|Clementina|Klementynka|Клементин|克莱门汀橘
+Cocktailtomaten|Cocktail tomatoes|Коктейльные помидоры|Tomate cocktail|Cocktailtomaten|Tomates cocktail|Pomodorini da cocktail|Tomates cóctel|Pomidory koktajlowe|Коктейльні помідори|小番茄
+Dattel|Date|Финик|Tâmara|Dadel|Datte|Dattero|Dátil|Daktyl|Фінік|椰枣
+Dicke Bohnen|Broad beans|Конские бобы|Favas|Tuinbonen|Fèves|Fave|Habas|Bób|Кормові боби|蚕豆
+Dill frisch|Fresh dill|Свежий укроп|Aneto fresco|Verse dille|Aneth frais|Aneto fresco|Eneldo fresco|Świeży koperek|Свіжий кріп|新鲜莳萝
+Eisbergsalat|Iceberg lettuce|Салат айсберг|Alface-iceberg|IJsbergsla|Salade iceberg|Lattuga iceberg|Lechuga iceberg|Sałata lodowa|Салат айсберг|冰山生菜
+Endivie|Endive|Эндивий|Endívia|Andijvie|Endive|Indivia|Endibia|Endywia|Ендивій|菊苣
+Erdbeeren|Strawberries|Клубника|Morangos|Aardbeien|Fraises|Fragole|Fresas|Truskawki|Полуниця|草莓
+Feige|Fig|Инжир|Figo|Vijg|Figue|Fico|Higo|Figa|Інжир|无花果
+Feldsalat|Lamb's lettuce|Валерьянница|Alface-de-cordeiro|Veldsla|Mâche|Valerianella|Canónigos|Roszponka|Валеріанниця|羊莴苣
+Fenchel|Fennel|Фенхель|Funcho|Venkel|Fenouil|Finocchio|Hinojo|Koper włoski|Фенхель|茴香
+Fleischtomaten|Beef tomatoes|Мясистые помидоры|Tomate coração-de-boi|Vleestomaten|Tomates côtelées|Pomodori cuore di bue|Tomates de carne|Pomidory mięsiste|М'ясисті помідори|牛心番茄
+Frische Erbsen|Fresh peas|Свежий горошек|Ervilhas frescas|Verse erwten|Petits pois frais|Piselli freschi|Guisantes frescos|Świeży groszek|Свіжий горошок|新鲜豌豆
+Frühlingszwiebel|Spring onion|Зелёный лук|Cebolinho|Lente-ui|Oignon nouveau|Cipollotto|Cebolleta|Dymka|Зелена цибуля|青葱
+Granatapfel|Pomegranate|Гранат|Romã|Granaatappel|Grenade|Melograno|Granada|Granat|Гранат|石榴
+Grapefruit|Grapefruit|Грейпфрут|Toranja|Grapefruit|Pamplemousse|Pompelmo|Pomelo|Grejpfrut|Грейпфрут|葡萄柚
+Grünkohl|Kale|Кудрявая капуста|Couve galega|Boerenkool|Chou frisé|Cavolo riccio|Col rizada|Jarmuż|Кале|羽衣甘蓝
+Heidelbeeren|Blueberries|Черника|Mirtilos|Blauwe bessen|Myrtilles|Mirtilli|Arándanos|Jagody|Лохина|蓝莓
+Himbeeren|Raspberries|Малина|Framboesas|Frambozen|Framboises|Lamponi|Frambuesas|Maliny|Малина|覆盆子
+Hokkaidokürbis|Hokkaido pumpkin|Тыква хоккайдо|Abóbora Hokkaido|Hokkaido-pompoen|Potimarron|Zucca Hokkaido|Calabaza Hokkaido|Dynia Hokkaido|Гарбуз хоккайдо|北海道南瓜
+Honigmelone|Honeydew melon|Медовая дыня|Melão|Honingmeloen|Melon miel|Melone|Melón|Melon miodowy|Медова диня|蜜瓜
+Ingwer|Ginger|Имбирь|Gengibre|Gember|Gingembre|Zenzero|Jengibre|Imbir|Імбир|生姜
+Johannisbeeren|Redcurrants|Смородина|Groselhas|Aalbessen|Groseilles|Ribes|Grosellas|Porzeczki|Смородина|红醋栗
+Kaki|Persimmon|Хурма|Dióspiro|Kaki|Kaki|Cachi|Caqui|Persymona|Хурма|柿子
+Karotte|Carrot|Морковь|Cenoura|Wortel|Carotte|Carota|Zanahoria|Marchewka|Морква|胡萝卜
+Kartoffel|Potato|Картофель|Batata|Aardappel|Pomme de terre|Patata|Patata|Ziemniak|Картопля|土豆
+Kirschen|Cherries|Черешня|Cerejas|Kersen|Cerises|Ciliegie|Cerezas|Czereśnie|Черешня|樱桃
+Kiwi|Kiwi|Киви|Kiwi|Kiwi|Kiwi|Kiwi|Kiwi|Kiwi|Ківі|猕猴桃
+Knoblauch|Garlic|Чеснок|Alho|Knoflook|Ail|Aglio|Ajo|Czosnek|Часник|大蒜
+Knollensellerie|Celeriac|Корневой сельдерей|Aipo-rábano|Knolselderij|Céleri-rave|Sedano rapa|Apio nabo|Seler korzeniowy|Корневий селера|根芹
+Kohlrabi|Kohlrabi|Кольраби|Couve-rábano|Koolrabi|Chou-rave|Cavolo rapa|Colinabo|Kalarepa|Кольрабі|苤蓝
+Kokosnuss|Coconut|Кокос|Coco|Kokosnoot|Noix de coco|Noce di cocco|Coco|Kokos|Кокос|椰子
+Kopfsalat|Lettuce|Кочанный салат|Alface|Kropsla|Laitue|Lattuga|Lechuga|Sałata masłowa|Кочанний салат|生菜
+Koriander frisch|Fresh coriander|Свежая кинза|Coentros frescos|Verse koriander|Coriandre fraîche|Coriandolo fresco|Cilantro fresco|Świeża kolendra|Свіжа кінза|新鲜香菜
+Kresse|Cress|Кресс-салат|Agrião|Tuinkers|Cresson|Crescione|Berro|Rzeżucha|Крес-салат|水芹
+Lauch|Leek|Лук-порей|Alho-francês|Prei|Poireau|Porro|Puerro|Por|Цибуля-порей|韭葱
+Limette|Lime|Лайм|Lima|Limoen|Citron vert|Lime|Lima|Limonka|Лайм|青柠
+Litschi|Lychee|Личи|Lichia|Lychee|Litchi|Litchi|Lichi|Liczi|Лічі|荔枝
+Maiskolben|Corn on the cob|Кукуруза в початках|Maçaroca de milho|Maiskolf|Épi de maïs|Pannocchia di mais|Mazorca de maíz|Kolba kukurydzy|Качани кукурудзи|玉米棒
+Mandarine|Mandarin|Мандарин|Tangerina|Mandarijn|Mandarine|Mandarino|Mandarina|Mandarynka|Мандарин|橘子
+Mango|Mango|Манго|Manga|Mango|Mangue|Mango|Mango|Mango|Манго|芒果
+Mangold|Chard|Мангольд|Acelga|Snijbiet|Blette|Bietola|Acelga|Boćwina|Мангольд|甜菜叶
+Maracuja|Passion fruit|Маракуйя|Maracujá|Passievrucht|Fruit de la passion|Frutto della passione|Maracuyá|Marakuja|Маракуя|百香果
+Melone|Melon|Дыня|Melão|Meloen|Melon|Melone|Melón|Melon|Диня|甜瓜
+Minze frisch|Fresh mint|Свежая мята|Hortelã fresca|Verse munt|Menthe fraîche|Menta fresca|Menta fresca|Świeża mięta|Свіжа м'ята|新鲜薄荷
+Möhre|Carrot|Морковь|Cenoura|Peen|Carotte|Carota|Zanahoria|Marchewka|Морква|胡萝卜
+Nektarine|Nectarine|Нектарин|Nectarina|Nectarine|Nectarine|Nettarina|Nectarina|Nektarynka|Нектарин|油桃
+Orange|Orange|Апельсин|Laranja|Sinaasappel|Orange|Arancia|Naranja|Pomarańcza|Апельсин|橙子
+Oregano frisch|Fresh oregano|Свежий орегано|Orégãos frescos|Verse oregano|Origan frais|Origano fresco|Orégano fresco|Świeże oregano|Свіже орегано|新鲜牛至
+Pak Choi|Pak choi|Пак-чой|Pak choi|Paksoi|Pak choï|Pak choi|Pak choi|Pak choi|Пак-чой|小白菜
+Papaya|Papaya|Папайя|Papaia|Papaja|Papaye|Papaya|Papaya|Papaja|Папайя|木瓜
+Paprika gelb|Yellow pepper|Жёлтый перец|Pimento amarelo|Gele paprika|Poivron jaune|Peperone giallo|Pimiento amarillo|Papryka żółta|Жовтий перець|黄甜椒
+Paprika grün|Green pepper|Зелёный перец|Pimento verde|Groene paprika|Poivron vert|Peperone verde|Pimiento verde|Papryka zielona|Зелений перець|青椒
+Paprika rot|Red pepper|Красный перец|Pimento vermelho|Rode paprika|Poivron rouge|Peperone rosso|Pimiento rojo|Papryka czerwona|Червоний перець|红甜椒
+Passionsfrucht|Passion fruit|Маракуйя|Maracujá|Passievrucht|Fruit de la passion|Frutto della passione|Fruta de la pasión|Marakuja|Маракуя|西番莲
+Pastinake|Parsnip|Пастернак|Pastinaga|Pastinaak|Panais|Pastinaca|Chirivía|Pasternak|Пастернак|防风草
+Peperoni|Chilli peppers|Острый перец|Piripiri|Peperoni|Piments|Peperoncini|Guindillas|Papryczki|Гострий перець|辣椒仔
+Petersilie frisch|Fresh parsley|Свежая петрушка|Salsa fresca|Verse peterselie|Persil frais|Prezzemolo fresco|Perejil fresco|Świeża pietruszka|Свіжа петрушка|新鲜欧芹
+Petersilienwurzel|Parsley root|Корень петрушки|Raiz de salsa|Peterseliewortel|Racine de persil|Radice di prezzemolo|Raíz de perejil|Korzeń pietruszki|Корінь петрушки|欧芹根
+Pfifferlinge|Chanterelles|Лисички|Cantarelos|Cantharellen|Girolles|Finferli|Rebozuelos|Kurki|Лисички|鸡油菌
+Pfirsich|Peach|Персик|Pêssego|Perzik|Pêche|Pesca|Melocotón|Brzoskwinia|Персик|桃子
+Pflaume|Plum|Слива|Ameixa|Pruim|Prune|Prugna|Ciruela|Śliwka|Слива|李子
+Pomelo|Pomelo|Помело|Pomelo|Pomelo|Pomelo|Pomelo|Pomelo|Pomelo|Помело|柚子
+Porree|Leek|Лук-порей|Alho-francês|Prei|Poireau|Porro|Puerro|Por|Цибуля-порей|大葱
+Radicchio|Radicchio|Радичио|Radicchio|Radicchio|Radicchio|Radicchio|Radicchio|Radicchio|Радичіо|红菊苣
+Radieschen|Radishes|Редис|Rabanetes|Radijsjes|Radis|Ravanelli|Rábanos|Rzodkiewki|Редиска|小萝卜
+Rettich|Radish|Редька|Rabanete-branco|Rammenas|Radis noir|Ravanello bianco|Rábano|Rzodkiew|Редька|白萝卜
+Romanesco|Romanesco|Романеско|Romanesco|Romanesco|Romanesco|Cavolo romanesco|Romanesco|Romanesco|Романеско|罗马花椰菜
+Rosenkohl|Brussels sprouts|Брюссельская капуста|Couves-de-bruxelas|Spruitjes|Choux de Bruxelles|Cavoletti di Bruxelles|Coles de Bruselas|Brukselka|Брюссельська капуста|抱子甘蓝
+Rosmarin frisch|Fresh rosemary|Свежий розмарин|Alecrim fresco|Verse rozemarijn|Romarin frais|Rosmarino fresco|Romero fresco|Świeży rozmaryn|Свіжий розмарин|新鲜迷迭香
+Rote Bete|Beetroot|Свёкла|Beterraba|Rode biet|Betterave rouge|Barbabietola|Remolacha|Burak|Буряк|甜菜根
+Rote Zwiebel|Red onion|Красный лук|Cebola roxa|Rode ui|Oignon rouge|Cipolla rossa|Cebolla roja|Czerwona cebula|Червона цибуля|红洋葱
+Rotkohl|Red cabbage|Краснокочанная капуста|Repolho roxo|Rodekool|Chou rouge|Cavolo rosso|Lombarda|Czerwona kapusta|Червонокачанна капуста|紫甘蓝
+Rucola|Rocket|Руккола|Rúcula|Rucola|Roquette|Rucola|Rúcula|Rukola|Рукола|芝麻菜
+Römersalat|Romaine lettuce|Салат ромэн|Alface romana|Romeinse sla|Laitue romaine|Lattuga romana|Lechuga romana|Sałata rzymska|Салат ромен|罗马生菜
+Salatgurke|Cucumber|Огурец|Pepino|Komkommer|Concombre|Cetriolo|Pepino|Ogórek|Огірок|黄瓜
+Salbei frisch|Fresh sage|Свежий шалфей|Salva fresca|Verse salie|Sauge fraîche|Salvia fresca|Salvia fresca|Świeża szałwia|Свіжа шавлія|新鲜鼠尾草
+Schalotte|Shallot|Лук-шалот|Chalota|Sjalot|Échalote|Scalogno|Chalota|Szalotka|Цибуля-шалот|红葱头
+Schnittlauch frisch|Fresh chives|Свежий зелёный лук|Cebolinho fresco|Verse bieslook|Ciboulette fraîche|Erba cipollina fresca|Cebollino fresco|Świeży szczypiorek|Свіжий зелений лук|新鲜香葱
+Sellerie|Celery|Сельдерей|Aipo|Selderij|Céleri|Sedano|Apio|Seler|Селера|芹菜
+Shiitake|Shiitake|Шиитаке|Shiitake|Shiitake|Shiitaké|Shiitake|Shiitake|Shiitake|Шиїтаке|香菇
+Snackgurke|Snack cucumber|Мини-огурец|Pepino snack|Snackkomkommer|Mini-concombre|Cetriolo snack|Pepino snack|Mini ogórek|Міні-огірок|迷你黄瓜
+Spargel grün|Green asparagus|Зелёная спаржа|Espargos verdes|Groene asperges|Asperges vertes|Asparagi verdi|Espárragos verdes|Szparagi zielone|Зелена спаржа|绿芦笋
+Spargel weiß|White asparagus|Белая спаржа|Espargos brancos|Witte asperges|Asperges blanches|Asparagi bianchi|Espárragos blancos|Szparagi białe|Біла спаржа|白芦笋
+Speisekürbis|Pumpkin|Тыква|Abóbora|Pompoen|Courge|Zucca|Calabaza|Dynia|Гарбуз|南瓜
+Spinat|Spinach|Шпинат|Espinafres|Spinazie|Épinards|Spinaci|Espinacas|Szpinak|Шпинат|菠菜
+Spitzkohl|Pointed cabbage|Остроконечная капуста|Repolho pontiagudo|Spitskool|Chou pointu|Cavolo cappuccio a punta|Col puntiaguda|Kapusta szpiczasta|Загострена капуста|尖头卷心菜
+Spitzpaprika|Pointed pepper|Остроконечный перец|Pimento pontiagudo|Puntpaprika|Poivron pointu|Peperone a punta|Pimiento puntiagudo|Papryka szpiczasta|Загострений перець|尖椒
+Stachelbeeren|Gooseberries|Крыжовник|Groselhas-espinhosas|Kruisbessen|Groseilles à maquereau|Uva spina|Grosellas espinosas|Agrest|Аґрус|醋栗
+Stangensellerie|Celery sticks|Стеблевой сельдерей|Aipo em talos|Bleekselderij|Céleri en branche|Sedano a costa|Apio en rama|Seler naciowy|Стеблова селера|芹菜茎
+Steinpilze|Porcini|Белые грибы|Boletos|Eekhoorntjesbrood|Cèpes|Porcini|Boletus|Borowiki|Білі гриби|牛肝菌
+Süßkartoffel|Sweet potato|Батат|Batata-doce|Zoete aardappel|Patate douce|Patata dolce|Boniato|Batat|Батат|红薯
+Thymian frisch|Fresh thyme|Свежий тимьян|Tomilho fresco|Verse tijm|Thym frais|Timo fresco|Tomillo fresco|Świeży tymianek|Свіжий чебрець|新鲜百里香
+Tomate|Tomato|Помидор|Tomate|Tomaat|Tomate|Pomodoro|Tomate|Pomidor|Помідор|番茄
+Trauben|Grapes|Виноград|Uvas|Druiven|Raisins|Uva|Uvas|Winogrona|Виноград|葡萄
+Wassermelone|Watermelon|Арбуз|Melancia|Watermeloen|Pastèque|Anguria|Sandía|Arbuz|Кавун|西瓜
+Weißkohl|White cabbage|Белокочанная капуста|Repolho branco|Witte kool|Chou blanc|Cavolo bianco|Col blanca|Kapusta biała|Білокочанна капуста|白菜
+Wirsing|Savoy cabbage|Савойская капуста|Couve-lombarda|Savooiekool|Chou de Milan|Verza|Col de Saboya|Kapusta włoska|Савойська капуста|皱叶甘蓝
+Zitrone|Lemon|Лимон|Limão|Citroen|Citron|Limone|Limón|Cytryna|Лимон|柠檬
+Zitronenmelisse|Lemon balm|Мелисса|Erva-cidreira|Citroenmelisse|Mélisse|Melissa|Melisa|Melisa|Меліса|香蜂草
+Zucchini|Courgette|Цуккини|Curgete|Courgette|Courgette|Zucchina|Calabacín|Cukinia|Цукіні|西葫芦
+Zuckerschoten|Sugar snap peas|Сахарный горошек|Ervilhas-torta|Suikererwten|Pois gourmands|Taccole|Guisantes dulces|Groszek cukrowy|Цукровий горошок|荷兰豆
+Zwetschge|Damson plum|Слива венгерка|Ameixa-damasco|Pruim|Prune quetsche|Prugna|Ciruela damascena|Śliwka węgierka|Угорка|欧洲李
+Zwiebel|Onion|Лук|Cebola|Ui|Oignon|Cipolla|Cebolla|Cebula|Цибуля|洋葱
+Äpfel|Apples|Яблоки|Maçãs|Appels|Pommes|Mele|Manzanas|Jabłka|Яблука|苹果

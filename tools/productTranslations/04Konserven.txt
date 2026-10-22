@@ -1,0 +1,86 @@
+Ajvar|Ajvar|Айвар|Ajvar|Ajvar|Ajvar|Ajvar|Ajvar|Ajvar|Айвар|红椒茄子酱
+Ananas Dose|Pineapple (tin)|Ананас (консервы)|Ananás (lata)|Ananas (blik)|Ananas (boîte)|Ananas (scatola)|Piña (lata)|Ananas (puszka)|Ананас (консерви)|菠萝罐头
+Antipasti|Antipasti|Антипасти|Antipasti|Antipasti|Antipasti|Antipasti|Antipasti|Antipasti|Антипасті|意式开胃菜
+Apfelmark|Apple purée|Яблочное пюре|Puré de maçã|Appelmoes (fijn)|Purée de pommes|Purea di mele|Puré de manzana|Mus jabłkowy|Яблучне пюре|苹果泥
+Apfelmus|Apple sauce|Яблочный мусс|Compota de maçã|Appelmoes|Compote de pommes|Composta di mele|Compota de manzana|Mus jabłkowy|Яблучний мус|苹果酱
+Aprikosen Dose|Apricots (tin)|Абрикосы (консервы)|Alperces (lata)|Abrikozen (blik)|Abricots (boîte)|Albicocche (scatola)|Albaricoques (lata)|Morele (puszka)|Абрикоси (консерви)|杏罐头
+Artischockenherzen|Artichoke hearts|Сердцевины артишока|Corações de alcachofra|Artisjokharten|Cœurs d'artichaut|Cuori di carciofo|Corazones de alcachofa|Serca karczochów|Серця артишоків|朝鲜蓟心
+Auberginen gegrillt|Grilled aubergines|Баклажаны гриль|Beringelas grelhadas|Gegrilde aubergines|Aubergines grillées|Melanzane grigliate|Berenjenas a la parrilla|Grillowane bakłażany|Баклажани гриль|烤茄子
+Bambussprossen|Bamboo shoots|Побеги бамбука|Rebentos de bambu|Bamboescheuten|Pousses de bambou|Germogli di bambù|Brotes de bambú|Pędy bambusa|Паростки бамбука|竹笋
+Birnen Dose|Pears (tin)|Груши (консервы)|Pêras (lata)|Peren (blik)|Poires (boîte)|Pere (scatola)|Peras (lata)|Gruszki (puszka)|Груші (консерви)|梨罐头
+Birnenmus|Pear purée|Грушевое пюре|Puré de pera|Perenmoes|Purée de poires|Purea di pere|Puré de pera|Mus gruszkowy|Грушеве пюре|梨泥
+Bohnensuppe Dose|Bean soup (tin)|Фасолевый суп (консервы)|Sopa de feijão (lata)|Bonensoep (blik)|Soupe aux haricots (boîte)|Zuppa di fagioli (scatola)|Sopa de alubias (lata)|Zupa fasolowa (puszka)|Квасолевий суп (консерви)|豆汤罐头
+Bratwurst Dose|Bratwurst (tin)|Братвурст (консервы)|Salsicha bratwurst (lata)|Bratwurst (blik)|Bratwurst (boîte)|Bratwurst (scatola)|Bratwurst (lata)|Kiełbasa bratwurst (puszka)|Братвурст (консерви)|香肠罐头
+Brechbohnen|Cut green beans|Резаная стручковая фасоль|Feijão-verde cortado|Gesneden snijbonen|Haricots verts coupés|Fagiolini tagliati|Judías verdes cortadas|Fasolka szparagowa cięta|Нарізана стручкова квасоля|切段四季豆
+Champignons Dose|Mushrooms (tin)|Шампиньоны (консервы)|Cogumelos (lata)|Champignons (blik)|Champignons (boîte)|Champignon (scatola)|Champiñones (lata)|Pieczarki (puszka)|Печериці (консерви)|蘑菇罐头
+Champignons Glas|Mushrooms (jar)|Шампиньоны (банка)|Cogumelos (frasco)|Champignons (pot)|Champignons (bocal)|Champignon (vasetto)|Champiñones (tarro)|Pieczarki (słoik)|Печериці (банка)|蘑菇瓶装
+Chili con Carne Dose|Chilli con carne (tin)|Чили кон карне (консервы)|Chili com carne (lata)|Chili con carne (blik)|Chili con carne (boîte)|Chili con carne (scatola)|Chili con carne (lata)|Chili con carne (puszka)|Чилі кон карне (консерви)|辣椒肉酱罐头
+Corned Beef|Corned beef|Солонина|Corned beef|Corned beef|Corned-beef|Corned beef|Carne en conserva|Corned beef|Солонина|腌牛肉罐头
+Cornichons|Cornichons|Корнишоны|Cornichons|Cornichons|Cornichons|Cetriolini|Pepinillos|Korniszony|Корнішони|酸黄瓜
+Dosenmilch|Evaporated milk|Сгущённое молоко без сахара|Leite evaporado|Koffiemelk|Lait concentré non sucré|Latte evaporato|Leche evaporada|Mleko skondensowane niesłodzone|Молоко згущене без цукру|淡奶
+Dosentomaten|Tinned tomatoes|Консервированные томаты|Tomate em lata|Tomaten uit blik|Tomates en boîte|Pomodori in scatola|Tomates en lata|Pomidory z puszki|Консервовані томати|罐装番茄
+Eintopf Dose|Stew (tin)|Рагу (консервы)|Guisado (lata)|Stoofpot (blik)|Ragoût (boîte)|Stufato (scatola)|Estofado (lata)|Gulasz (puszka)|Рагу (консерви)|炖菜罐头
+Erbsen|Peas|Горошек|Ervilhas|Erwten|Petits pois|Piselli|Guisantes|Groszek|Горошок|豌豆
+Erbsen und Möhren|Peas and carrots|Горошек с морковью|Ervilhas com cenoura|Erwten en wortelen|Petits pois et carottes|Piselli e carote|Guisantes con zanahorias|Groszek z marchewką|Горошок із морквою|豌豆胡萝卜
+Erbsensuppe Dose|Pea soup (tin)|Гороховый суп (консервы)|Sopa de ervilhas (lata)|Erwtensoep (blik)|Soupe de pois (boîte)|Zuppa di piselli (scatola)|Sopa de guisantes (lata)|Zupa grochowa (puszka)|Гороховий суп (консерви)|豌豆汤罐头
+Essiggurken|Pickled gherkins|Маринованные огурцы|Pepinos em conserva|Augurken|Cornichons au vinaigre|Cetriolini sott'aceto|Pepinillos en vinagre|Ogórki konserwowe|Мариновані огірки|腌黄瓜
+Fertiggericht Dose|Ready meal (tin)|Готовое блюдо (консервы)|Refeição pronta (lata)|Kant-en-klaarmaaltijd (blik)|Plat cuisiné (boîte)|Piatto pronto (scatola)|Plato preparado (lata)|Danie gotowe (puszka)|Готова страва (консерви)|罐装即食餐
+Fruchtcocktail|Fruit cocktail|Фруктовый коктейль|Salada de frutas|Vruchtencocktail|Cocktail de fruits|Macedonia|Macedonia de frutas|Koktajl owocowy|Фруктовий коктейль|什锦水果罐头
+Gehackte Tomaten|Chopped tomatoes|Рубленые томаты|Tomate picado|Gehakte tomaten|Tomates concassées|Pomodori a pezzetti|Tomate troceado|Pomidory krojone|Подрібнені томати|切碎番茄
+Geschälte Tomaten|Peeled tomatoes|Очищенные томаты|Tomate pelado|Gepelde tomaten|Tomates pelées|Pomodori pelati|Tomates pelados|Pomidory pelati|Очищені томати|去皮番茄
+Getrocknete Tomaten|Sun-dried tomatoes|Вяленые томаты|Tomate seco|Zongedroogde tomaten|Tomates séchées|Pomodori secchi|Tomates secos|Suszone pomidory|В'ялені томати|干番茄
+Getrocknete Tomaten in Öl|Sun-dried tomatoes in oil|Вяленые томаты в масле|Tomate seco em óleo|Zongedroogde tomaten in olie|Tomates séchées à l'huile|Pomodori secchi sott'olio|Tomates secos en aceite|Suszone pomidory w oleju|В'ялені томати в олії|油浸干番茄
+Gewürzgurken|Pickled cucumbers|Маринованные огурцы со специями|Pepinos aromatizados|Kruidenaugurken|Cornichons aux épices|Cetrioli sott'aceto speziati|Pepinillos especiados|Ogórki kiszone korzenne|Мариновані огірки зі спеціями|香料腌黄瓜
+Gezuckerte Kondensmilch|Sweetened condensed milk|Сгущённое молоко с сахаром|Leite condensado|Gezoete gecondenseerde melk|Lait concentré sucré|Latte condensato zuccherato|Leche condensada azucarada|Mleko skondensowane słodzone|Згущене молоко з цукром|甜炼乳
+Grüne Bohnen|Green beans|Зелёная фасоль|Feijão-verde|Sperziebonen|Haricots verts|Fagiolini|Judías verdes|Fasolka szparagowa|Зелена квасоля|四季豆
+Gulaschsuppe Dose|Goulash soup (tin)|Суп-гуляш (консервы)|Sopa de goulash (lata)|Goulashsoep (blik)|Soupe goulash (boîte)|Zuppa di gulasch (scatola)|Sopa de goulash (lata)|Zupa gulaszowa (puszka)|Суп-гуляш (консерви)|古拉希汤罐头
+Hering Dose|Herring (tin)|Сельдь (консервы)|Arenque (lata)|Haring (blik)|Hareng (boîte)|Aringa (scatola)|Arenque (lata)|Śledź (puszka)|Оселедець (консерви)|鲱鱼罐头
+Hühnersuppe Dose|Chicken soup (tin)|Куриный суп (консервы)|Sopa de galinha (lata)|Kippensoep (blik)|Soupe de poulet (boîte)|Zuppa di pollo (scatola)|Sopa de pollo (lata)|Zupa drobiowa (puszka)|Курячий суп (консерви)|鸡汤罐头
+Jalapeños im Glas|Jalapeños (jar)|Халапеньо (банка)|Jalapeños (frasco)|Jalapeños (pot)|Jalapeños (bocal)|Jalapeños (vasetto)|Jalapeños (tarro)|Jalapeño (słoik)|Халапеньо (банка)|墨西哥辣椒瓶装
+Kapern|Capers|Каперсы|Alcaparras|Kappertjes|Câpres|Capperi|Alcaparras|Kapary|Каперси|刺山柑
+Karotten im Glas|Carrots (jar)|Морковь (банка)|Cenouras (frasco)|Wortelen (pot)|Carottes (bocal)|Carote (vasetto)|Zanahorias (tarro)|Marchewka (słoik)|Морква (банка)|胡萝卜瓶装
+Kichererbsen Dose|Chickpeas (tin)|Нут (консервы)|Grão-de-bico (lata)|Kikkererwten (blik)|Pois chiches (boîte)|Ceci (scatola)|Garbanzos (lata)|Ciecierzyca (puszka)|Нут (консерви)|鹰嘴豆罐头
+Kidneybohnen Dose|Kidney beans (tin)|Красная фасоль (консервы)|Feijão vermelho (lata)|Kidneybonen (blik)|Haricots rouges (boîte)|Fagioli rossi (scatola)|Alubias rojas (lata)|Czerwona fasola (puszka)|Червона квасоля (консерви)|芸豆罐头
+Kirschen Glas|Cherries (jar)|Вишня (банка)|Cerejas (frasco)|Kersen (pot)|Cerises (bocal)|Ciliegie (vasetto)|Cerezas (tarro)|Wiśnie (słoik)|Вишня (банка)|樱桃瓶装
+Kokoscreme|Coconut cream|Кокосовые сливки|Creme de coco|Kokoscrème|Crème de coco|Crema di cocco|Crema de coco|Krem kokosowy|Кокосові вершки|椰浆
+Kokosmilch|Coconut milk|Кокосовое молоко|Leite de coco|Kokosmelk|Lait de coco|Latte di cocco|Leche de coco|Mleczko kokosowe|Кокосове молоко|椰奶
+Kondensmilch|Condensed milk|Сгущённое молоко|Leite condensado|Gecondenseerde melk|Lait concentré|Latte condensato|Leche condensada|Mleko skondensowane|Згущене молоко|炼乳
+Lachs Dose|Salmon (tin)|Лосось (консервы)|Salmão (lata)|Zalm (blik)|Saumon (boîte)|Salmone (scatola)|Salmón (lata)|Łosoś (puszka)|Лосось (консерви)|三文鱼罐头
+Linsen Dose|Lentils (tin)|Чечевица (консервы)|Lentilhas (lata)|Linzen (blik)|Lentilles (boîte)|Lenticchie (scatola)|Lentejas (lata)|Soczewica (puszka)|Сочевиця (консерви)|扁豆罐头
+Linsensuppe Dose|Lentil soup (tin)|Чечевичный суп (консервы)|Sopa de lentilhas (lata)|Linzensoep (blik)|Soupe de lentilles (boîte)|Zuppa di lenticchie (scatola)|Sopa de lentejas (lata)|Zupa soczewicowa (puszka)|Сочевичний суп (консерви)|扁豆汤罐头
+Mais|Sweetcorn|Кукуруза|Milho|Mais|Maïs|Mais|Maíz|Kukurydza|Кукурудза|玉米粒
+Makrelen Dose|Mackerel (tin)|Скумбрия (консервы)|Cavala (lata)|Makreel (blik)|Maquereau (boîte)|Sgombro (scatola)|Caballa (lata)|Makrela (puszka)|Скумбрія (консерви)|鲭鱼罐头
+Mandarinen Dose|Mandarins (tin)|Мандарины (консервы)|Tangerinas (lata)|Mandarijnen (blik)|Mandarines (boîte)|Mandarini (scatola)|Mandarinas (lata)|Mandarynki (puszka)|Мандарини (консерви)|橘子罐头
+Mixed Pickles|Mixed pickles|Ассорти маринованных овощей|Pickles variados|Mixed pickles|Pickles mélangés|Sottaceti misti|Encurtidos variados|Mieszane warzywa kiszone|Асорті мариновані овочі|混合腌菜
+Oliven gefüllt|Stuffed olives|Фаршированные оливки|Azeitonas recheadas|Gevulde olijven|Olives farcies|Olive ripiene|Aceitunas rellenas|Oliwki nadziewane|Фаршировані оливки|酿橄榄
+Oliven grün|Green olives|Зелёные оливки|Azeitonas verdes|Groene olijven|Olives vertes|Olive verdi|Aceitunas verdes|Zielone oliwki|Зелені оливки|绿橄榄
+Oliven schwarz|Black olives|Чёрные оливки|Azeitonas pretas|Zwarte olijven|Olives noires|Olive nere|Aceitunas negras|Czarne oliwki|Чорні оливки|黑橄榄
+Palmherzen|Hearts of palm|Сердцевина пальмы|Palmito|Palmharten|Cœurs de palmier|Cuori di palma|Palmitos|Palmowe serca|Серцевина пальми|棕榈芯
+Paprika gegrillt|Grilled peppers|Перец гриль|Pimentos grelhados|Gegrilde paprika|Poivrons grillés|Peperoni grigliati|Pimientos asados|Grillowana papryka|Перець гриль|烤甜椒
+Passierte Tomaten|Passata|Пассата|Passata de tomate|Gezeefde tomaten|Coulis de tomates|Passata di pomodoro|Tomate triturado|Passata pomidorowa|Пасата|番茄糊
+Peperoni im Glas|Pickled peppers (jar)|Острый перец (банка)|Pimentos em conserva (frasco)|Peperoni (pot)|Piments (bocal)|Peperoncini (vasetto)|Pimientos en vinagre (tarro)|Papryczki (słoik)|Гострий перець (банка)|腌辣椒瓶装
+Pfifferlinge Glas|Chanterelles (jar)|Лисички (банка)|Cantarelos (frasco)|Cantharellen (pot)|Chanterelles (bocal)|Finferli (vasetto)|Rebozuelos (tarro)|Kurki (słoik)|Лисички (банка)|鸡油菌瓶装
+Pfirsiche Dose|Peaches (tin)|Персики (консервы)|Pêssegos (lata)|Perziken (blik)|Pêches (boîte)|Pesche (scatola)|Melocotones (lata)|Brzoskwinie (puszka)|Персики (консерви)|桃罐头
+Pizzatomaten|Pizza tomatoes|Томаты для пиццы|Tomate para pizza|Pizzatomaten|Tomates pour pizza|Pomodori per pizza|Tomates para pizza|Pomidory do pizzy|Томати для піци|披萨番茄
+Preiselbeeren Glas|Cranberry sauce (jar)|Брусника (банка)|Arando vermelho (frasco)|Cranberry's (pot)|Airelles (bocal)|Mirtilli rossi (vasetto)|Arándanos rojos (tarro)|Borówki brusznice (słoik)|Брусниця (банка)|越橘酱瓶装
+Prinzessbohnen|Princess beans|Тонкая стручковая фасоль|Feijão-verde fino|Prinsessenbonen|Haricots princesses|Fagiolini fini|Judías verdes finas|Fasolka szparagowa cienka|Тонка стручкова квасоля|细四季豆
+Ravioli Dose|Ravioli (tin)|Равиоли (консервы)|Ravioli (lata)|Ravioli (blik)|Raviolis (boîte)|Ravioli (scatola)|Raviolis (lata)|Ravioli (puszka)|Равіолі (консерви)|意式馄饨罐头
+Rote Bete Glas|Beetroot (jar)|Свёкла (банка)|Beterraba (frasco)|Rode biet (pot)|Betteraves rouges (bocal)|Barbabietole (vasetto)|Remolacha (tarro)|Buraki (słoik)|Буряк (банка)|甜菜瓶装
+Rotkohl Glas|Red cabbage (jar)|Красная капуста (банка)|Repolho roxo (frasco)|Rodekool (pot)|Chou rouge (bocal)|Cavolo rosso (vasetto)|Lombarda (tarro)|Czerwona kapusta (słoik)|Червона капуста (банка)|紫甘蓝瓶装
+Sardinen Dose|Sardines (tin)|Сардины (консервы)|Sardinhas (lata)|Sardines (blik)|Sardines (boîte)|Sardine (scatola)|Sardinas (lata)|Sardynki (puszka)|Сардини (консерви)|沙丁鱼罐头
+Sauerkraut|Sauerkraut|Квашеная капуста|Chucrute|Zuurkool|Choucroute|Crauti|Chucrut|Kapusta kiszona|Квашена капуста|酸菜
+Schattenmorellen|Sour cherries|Вишня морель|Ginjas|Morellen|Griottes|Amarene|Guindas|Wiśnie|Вишня морель|酸樱桃
+Schwarze Bohnen Dose|Black beans (tin)|Чёрная фасоль (консервы)|Feijão-preto (lata)|Zwarte bonen (blik)|Haricots noirs (boîte)|Fagioli neri (scatola)|Frijoles negros (lata)|Czarna fasola (puszka)|Чорна квасоля (консерви)|黑豆罐头
+Senfgurken|Mustard pickles|Огурцы в горчичном соусе|Pepinos com mostarda|Mosterdkomkommers|Concombres à la moutarde|Cetrioli alla senape|Pepinillos con mostaza|Ogórki w musztardzie|Огірки в гірчичному соусі|芥末腌黄瓜
+Silberzwiebeln|Pickled silverskin onions|Маринованный жемчужный лук|Cebolinhas em conserva|Zilveruitjes|Oignons grelots|Cipolline|Cebollitas en vinagre|Cebulki perłowe|Мариновані цибулини|腌珍珠洋葱
+Sojasprossen Glas|Soybean sprouts (jar)|Ростки сои (банка)|Rebentos de soja (frasco)|Sojascheuten (pot)|Pousses de soja (bocal)|Germogli di soia (vasetto)|Brotes de soja (tarro)|Kiełki soi (słoik)|Паростки сої (банка)|黄豆芽瓶装
+Stückige Tomaten|Chunky tomatoes|Томаты кусочками|Tomate em pedaços|Stukjes tomaat|Tomates en morceaux|Pomodori a pezzi|Tomate en trozos|Pomidory w kawałkach|Томати шматочками|块状番茄
+Thunfisch Dose|Tuna (tin)|Тунец (консервы)|Atum (lata)|Tonijn (blik)|Thon (boîte)|Tonno (scatola)|Atún (lata)|Tuńczyk (puszka)|Тунець (консерви)|金枪鱼罐头
+Tomatenmark|Tomato purée|Томатная паста|Concentrado de tomate|Tomatenpuree|Concentré de tomates|Concentrato di pomodoro|Concentrado de tomate|Koncentrat pomidorowy|Томатна паста|番茄酱
+Tomatenpassata|Tomato passata|Томатная пассата|Passata de tomate|Tomatenpassata|Passata de tomates|Passata di pomodoro|Pasata de tomate|Passata pomidorowa|Томатна пасата|番茄过滤酱
+Tomatenpolpa|Tomato pulp|Томатная мякоть|Polpa de tomate|Tomatenpulp|Pulpe de tomates|Polpa di pomodoro|Pulpa de tomate|Miąższ pomidorowy|Томатна м'якоть|番茄果肉
+Tomatensuppe Dose|Tomato soup (tin)|Томатный суп (консервы)|Sopa de tomate (lata)|Tomatensoep (blik)|Soupe de tomates (boîte)|Zuppa di pomodoro (scatola)|Sopa de tomate (lata)|Zupa pomidorowa (puszka)|Томатний суп (консерви)|番茄汤罐头
+Wasserkastanien|Water chestnuts|Водяные каштаны|Castanhas-d'água|Waterkastanjes|Châtaignes d'eau|Castagne d'acqua|Castañas de agua|Kasztany wodne|Водяні каштани|荸荠
+Weiße Bohnen Dose|White beans (tin)|Белая фасоль (консервы)|Feijão-branco (lata)|Witte bonen (blik)|Haricots blancs (boîte)|Fagioli bianchi (scatola)|Alubias blancas (lata)|Biała fasola (puszka)|Біла квасоля (консерви)|白豆罐头
+Wiener Würstchen Glas|Frankfurters (jar)|Венские сосиски (банка)|Salsichas de Viena (frasco)|Wienerworstjes (pot)|Saucisses de Vienne (bocal)|Würstel (vasetto)|Salchichas de Viena (tarro)|Parówki wiedeńskie (słoik)|Віденські сосиски (банка)|维也纳香肠瓶装
+Zuckermais|Sweetcorn|Сахарная кукуруза|Milho doce|Suikermais|Maïs doux|Mais dolce|Maíz dulce|Kukurydza cukrowa|Цукрова кукурудза|甜玉米

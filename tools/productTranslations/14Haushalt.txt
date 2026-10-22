@@ -1,0 +1,86 @@
+Allzweckreiniger|All-purpose cleaner|Универсальное чистящее средство|Limpa-tudo|Allesreiniger|Nettoyant multi-usage|Detergente multiuso|Limpiador multiusos|Uniwersalny środek czyszczący|Універсальний засіб для чищення|多用途清洁剂
+Alufolie|Aluminium foil|Алюминиевая фольга|Papel de alumínio|Aluminiumfolie|Papier aluminium|Carta stagnola|Papel de aluminio|Folia aluminiowa|Алюмінієва фольга|铝箔
+Backpapier|Baking paper|Пергамент для выпечки|Papel vegetal|Bakpapier|Papier cuisson|Carta forno|Papel de horno|Papier do pieczenia|Пергамент для випічки|烘焙纸
+Badreiniger|Bathroom cleaner|Средство для ванной|Limpa casas de banho|Badkamerreiniger|Nettoyant salle de bain|Detergente per il bagno|Limpiador de baños|Środek do czyszczenia łazienki|Засіб для ванної|浴室清洁剂
+Batterien AA|AA batteries|Батарейки AA|Pilhas AA|AA-batterijen|Piles AA|Batterie AA|Pilas AA|Baterie AA|Батарейки AA|AA电池
+Batterien AAA|AAA batteries|Батарейки AAA|Pilhas AAA|AAA-batterijen|Piles AAA|Batterie AAA|Pilas AAA|Baterie AAA|Батарейки AAA|AAA电池
+Butterbrotpapier|Greaseproof paper|Бумага для бутербродов|Papel vegetal para sanduíches|Boterhampapier|Papier sulfurisé|Carta oleata|Papel de bocadillos|Papier śniadaniowy|Папір для бутербродів|三明治纸
+Colorwaschmittel|Colour detergent|Стиральный порошок для цветного|Detergente para roupa de cor|Kleurwasmiddel|Lessive couleur|Detersivo per colorati|Detergente para ropa de color|Proszek do prania kolorów|Пральний порошок для кольорового|彩色衣物洗衣液
+Conditioner|Conditioner|Кондиционер для волос|Condicionador|Conditioner|Après-shampooing|Balsamo|Acondicionador|Odżywka do włosów|Кондиціонер для волосся|护发素
+Damenbinden|Sanitary pads|Женские прокладки|Pensos higiénicos|Maandverband|Serviettes hygiéniques|Assorbenti|Compresas|Podpaski|Жіночі прокладки|卫生巾
+Deo|Deodorant|Дезодорант|Desodorizante|Deodorant|Déodorant|Deodorante|Desodorante|Dezodorant|Дезодорант|除臭剂
+Deodorant|Deodorant|Дезодорант|Desodorizante|Deodorant|Déodorant|Deodorante|Desodorante|Dezodorant|Дезодорант|止汗露
+Desinfektionsmittel|Disinfectant|Дезинфицирующее средство|Desinfetante|Ontsmettingsmiddel|Désinfectant|Disinfettante|Desinfectante|Środek dezynfekujący|Дезінфікуючий засіб|消毒剂
+Druckerpapier|Printer paper|Бумага для принтера|Papel de impressora|Printpapier|Papier d'imprimante|Carta per stampante|Papel de impresora|Papier do drukarki|Папір для принтера|打印纸
+Duschgel|Shower gel|Гель для душа|Gel de banho|Douchegel|Gel douche|Bagnoschiuma|Gel de ducha|Żel pod prysznic|Гель для душу|沐浴露
+Entkalker|Descaler|Средство от накипи|Descalcificador|Ontkalker|Détartrant|Anticalcare|Descalcificador|Odkamieniacz|Засіб від накипу|除垢剂
+Essigreiniger|Vinegar cleaner|Уксусное чистящее средство|Limpa-tudo de vinagre|Azijnreiniger|Nettoyant au vinaigre|Detergente all'aceto|Limpiador de vinagre|Środek czyszczący z octem|Оцтовий засіб для чищення|醋清洁剂
+Feinwaschmittel|Delicates detergent|Средство для деликатной стирки|Detergente para roupa delicada|Fijnwasmiddel|Lessive linge délicat|Detersivo per delicati|Detergente para ropa delicada|Płyn do prania delikatnego|Засіб для делікатного прання|精细衣物洗涤剂
+Feuerzeug|Lighter|Зажигалка|Isqueiro|Aansteker|Briquet|Accendino|Mechero|Zapalniczka|Запальничка|打火机
+Fleckentferner|Stain remover|Пятновыводитель|Tira-nódoas|Vlekkenverwijderaar|Détachant|Smacchiatore|Quitamanchas|Odplamiacz|Плямовивідник|去污剂
+Flüssigseife|Liquid soap|Жидкое мыло|Sabonete líquido|Vloeibare zeep|Savon liquide|Sapone liquido|Jabón líquido|Mydło w płynie|Рідке мило|洗手液
+Frischhaltefolie|Cling film|Пищевая плёнка|Película aderente|Vershoudfolie|Film alimentaire|Pellicola trasparente|Film transparente|Folia spożywcza|Харчова плівка|保鲜膜
+Gefrierbeutel|Freezer bags|Пакеты для заморозки|Sacos de congelação|Vriezakken|Sacs de congélation|Sacchetti per il congelatore|Bolsas de congelación|Woreczki do mrożenia|Пакети для заморожування|冷冻袋
+Geschirrtuch|Tea towel|Кухонное полотенце|Pano de cozinha|Theedoek|Torchon|Strofinaccio|Paño de cocina|Ścierka kuchenna|Кухонний рушник|擦碗布
+Glasreiniger|Glass cleaner|Средство для стёкол|Limpa-vidros|Glasreiniger|Nettoyant vitres|Detergente per vetri|Limpiacristales|Płyn do szyb|Засіб для скла|玻璃清洁剂
+Glühbirne|Light bulb|Лампочка|Lâmpada|Gloeilamp|Ampoule|Lampadina|Bombilla|Żarówka|Лампочка|灯泡
+Haarspülung|Hair conditioner|Бальзам для волос|Amaciador de cabelo|Haarspoeling|Après-shampooing|Balsamo per capelli|Suavizante para el pelo|Odżywka do włosów|Бальзам для волосся|护发素
+Handcreme|Hand cream|Крем для рук|Creme para as mãos|Handcrème|Crème pour les mains|Crema mani|Crema de manos|Krem do rąk|Крем для рук|护手霜
+Handseife|Hand soap|Мыло для рук|Sabonete para as mãos|Handzeep|Savon pour les mains|Sapone per le mani|Jabón de manos|Mydło do rąk|Мило для рук|洗手皂
+Hundefutter|Dog food|Корм для собак|Comida para cães|Hondenvoer|Nourriture pour chiens|Cibo per cani|Comida para perros|Karma dla psów|Корм для собак|狗粮
+Hundeleckerlis|Dog treats|Лакомства для собак|Guloseimas para cães|Hondensnacks|Friandises pour chiens|Snack per cani|Golosinas para perros|Smakołyki dla psów|Ласощі для собак|狗零食
+Hygienereiniger|Hygiene cleaner|Гигиеническое чистящее средство|Limpador higiénico|Hygiënereiniger|Nettoyant hygiénique|Detergente igienizzante|Limpiador higiénico|Środek higieniczny do czyszczenia|Гігієнічний засіб для чищення|卫生清洁剂
+Kaffeefilter|Coffee filters|Фильтры для кофе|Filtros de café|Koffiefilters|Filtres à café|Filtri per caffè|Filtros de café|Filtry do kawy|Фільтри для кави|咖啡滤纸
+Katzenfutter|Cat food|Корм для кошек|Comida para gatos|Kattenvoer|Nourriture pour chats|Cibo per gatti|Comida para gatos|Karma dla kotów|Корм для котів|猫粮
+Katzenstreu|Cat litter|Наполнитель для кошачьего туалета|Areia para gatos|Kattenbakvulling|Litière pour chat|Lettiera per gatti|Arena para gatos|Żwirek dla kota|Наповнювач для котячого туалету|猫砂
+Kerzen|Candles|Свечи|Velas|Kaarsen|Bougies|Candele|Velas|Świece|Свічки|蜡烛
+Klarspüler|Rinse aid|Ополаскиватель|Abrilhantador|Glansspoelmiddel|Liquide de rinçage|Brillantante|Abrillantador|Płyn nabłyszczający|Ополіскувач|漂洗剂
+Klebeband|Adhesive tape|Скотч|Fita-cola|Plakband|Ruban adhésif|Nastro adesivo|Cinta adhesiva|Taśma klejąca|Скотч|胶带
+Klebestift|Glue stick|Клей-карандаш|Cola em bastão|Lijmstift|Bâton de colle|Colla stick|Pegamento en barra|Klej w sztyfcie|Клей-олівець|胶棒
+Knopfzellen|Button cell batteries|Батарейки-таблетки|Pilhas de botão|Knoopcellen|Piles boutons|Batterie a bottone|Pilas de botón|Baterie guzikowe|Батарейки-таблетки|纽扣电池
+Kosmetiktücher|Facial tissues|Косметические салфетки|Lenços faciais|Gezichtstissues|Mouchoirs cosmétiques|Fazzoletti cosmetici|Pañuelos faciales|Chusteczki kosmetyczne|Косметичні серветки|面巾纸
+Körperlotion|Body lotion|Лосьон для тела|Loção corporal|Bodylotion|Lait corporel|Lozione per il corpo|Loción corporal|Balsam do ciała|Лосьйон для тіла|身体乳
+Küchenreiniger|Kitchen cleaner|Средство для кухни|Limpa cozinhas|Keukenreiniger|Nettoyant cuisine|Detergente per la cucina|Limpiador de cocina|Środek do czyszczenia kuchni|Засіб для кухні|厨房清洁剂
+Küchenrolle|Kitchen roll|Бумажные полотенца|Rolo de cozinha|Keukenrol|Essuie-tout|Rotolo di carta da cucina|Papel de cocina|Ręcznik papierowy|Паперові рушники|厨房纸巾
+Leuchtmittel|Light bulbs|Лампы|Lâmpadas|Lichtbronnen|Ampoules|Lampadine|Bombillas|Źródła światła|Лампи|灯具光源
+Lippenpflege|Lip balm|Бальзам для губ|Bálsamo labial|Lippenbalsem|Baume à lèvres|Balsamo per le labbra|Bálsamo labial|Pomadka ochronna|Бальзам для губ|润唇膏
+Mikrofasertuch|Microfibre cloth|Салфетка из микрофибры|Pano de microfibras|Microvezeldoek|Chiffon microfibre|Panno in microfibra|Paño de microfibra|Ściereczka z mikrofibry|Серветка з мікрофібри|超细纤维布
+Mundspülung|Mouthwash|Ополаскиватель для рта|Elixir bucal|Mondwater|Bain de bouche|Collutorio|Enjuague bucal|Płyn do płukania ust|Ополіскувач для рота|漱口水
+Müllbeutel|Bin bags|Мусорные пакеты|Sacos do lixo|Vuilniszakken|Sacs poubelle|Sacchetti per la spazzatura|Bolsas de basura|Worki na śmieci|Сміттєві пакети|垃圾袋
+Müllsäcke|Refuse sacks|Мусорные мешки|Sacos de lixo grandes|Afvalzakken|Gros sacs poubelle|Sacchi della spazzatura|Sacos de basura grandes|Duże worki na śmieci|Сміттєві мішки|大号垃圾袋
+Pflaster|Plasters|Пластыри|Pensos rápidos|Pleisters|Pansements|Cerotti|Tiritas|Plastry|Пластирі|创可贴
+Rasiergel|Shaving gel|Гель для бритья|Gel de barbear|Scheergel|Gel à raser|Gel da barba|Gel de afeitar|Żel do golenia|Гель для гоління|剃须啫喱
+Rasierklingen|Razor blades|Лезвия для бритвы|Lâminas de barbear|Scheermesjes|Lames de rasoir|Lamette da barba|Cuchillas de afeitar|Żyletki|Леза для бритви|剃须刀片
+Rasierschaum|Shaving foam|Пена для бритья|Espuma de barbear|Scheerschuim|Mousse à raser|Schiuma da barba|Espuma de afeitar|Pianka do golenia|Піна для гоління|剃须泡沫
+Rohrreiniger|Drain cleaner|Средство для прочистки труб|Desentupidor|Ontstopper|Déboucheur|Sturalavandini|Desatascador|Środek do udrażniania rur|Засіб для прочищення труб|管道疏通剂
+Scheuermilch|Scouring cream|Чистящее молочко|Creme abrasivo|Schuurmelk|Crème à récurer|Crema abrasiva|Crema limpiadora|Mleczko do szorowania|Чистильне молочко|去污乳
+Schwamm|Sponge|Губка|Esponja|Spons|Éponge|Spugna|Esponja|Gąbka|Губка|海绵
+Servietten|Napkins|Салфетки|Guardanapos|Servetten|Serviettes|Tovaglioli|Servilletas|Serwetki|Серветки|餐巾纸
+Shampoo|Shampoo|Шампунь|Champô|Shampoo|Shampooing|Shampoo|Champú|Szampon|Шампунь|洗发水
+Slipeinlagen|Panty liners|Ежедневные прокладки|Protetores diários|Inlegkruisjes|Protège-slips|Proteggislip|Protectores diarios|Wkładki higieniczne|Щоденні прокладки|护垫
+Sonnencreme|Sunscreen|Солнцезащитный крем|Protetor solar|Zonnebrandcrème|Crème solaire|Crema solare|Crema solar|Krem z filtrem|Сонцезахисний крем|防晒霜
+Spülbürste|Dish brush|Щётка для посуды|Escova de loiça|Afwasborstel|Brosse à vaisselle|Spazzola per piatti|Cepillo para fregar|Szczotka do naczyń|Щітка для посуду|洗碗刷
+Spülmaschinenpulver|Dishwasher powder|Порошок для посудомоечной машины|Detergente em pó para máquina de loiça|Vaatwaspoeder|Poudre pour lave-vaisselle|Detersivo in polvere per lavastoviglie|Detergente en polvo para lavavajillas|Proszek do zmywarki|Порошок для посудомийної машини|洗碗机粉
+Spülmaschinensalz|Dishwasher salt|Соль для посудомоечной машины|Sal para máquina de loiça|Vaatwaszout|Sel pour lave-vaisselle|Sale per lavastoviglie|Sal para lavavajillas|Sól do zmywarki|Сіль для посудомийної машини|洗碗机盐
+Spülmaschinentabs|Dishwasher tablets|Таблетки для посудомоечной машины|Pastilhas para máquina de loiça|Vaatwastabletten|Tablettes pour lave-vaisselle|Pastiglie per lavastoviglie|Pastillas para lavavajillas|Tabletki do zmywarki|Таблетки для посудомийної машини|洗碗机洗涤块
+Spülmittel|Washing-up liquid|Средство для мытья посуды|Detergente da loiça|Afwasmiddel|Liquide vaisselle|Detersivo per piatti|Lavavajillas líquido|Płyn do mycia naczyń|Засіб для миття посуду|洗洁精
+Spülschwamm|Washing-up sponge|Губка для посуды|Esponja da loiça|Afwasspons|Éponge à vaisselle|Spugna per piatti|Estropajo|Gąbka do naczyń|Губка для посуду|洗碗海绵
+Staubsaugerbeutel|Vacuum cleaner bags|Мешки для пылесоса|Sacos de aspirador|Stofzuigerzakken|Sacs d'aspirateur|Sacchetti per aspirapolvere|Bolsas de aspiradora|Worki do odkurzacza|Мішки для пилососа|吸尘器袋
+Streichhölzer|Matches|Спички|Fósforos|Lucifers|Allumettes|Fiammiferi|Cerillas|Zapałki|Сірники|火柴
+Tampons|Tampons|Тампоны|Tampões|Tampons|Tampons|Assorbenti interni|Tampones|Tampony|Тампони|卫生棉条
+Taschentücher|Tissues|Бумажные платки|Lenços de papel|Zakdoeken|Mouchoirs|Fazzoletti|Pañuelos de papel|Chusteczki higieniczne|Паперові хустинки|纸巾
+Teelichter|Tea lights|Чайные свечи|Velas de chá|Theelichtjes|Bougies chauffe-plat|Lumini|Velas de té|Podgrzewacze|Чайні свічки|茶蜡
+Toilettenpapier|Toilet paper|Туалетная бумага|Papel higiénico|Toiletpapier|Papier toilette|Carta igienica|Papel higiénico|Papier toaletowy|Туалетний папір|卫生纸
+Topfschwamm|Scouring sponge|Губка для кастрюль|Esfregão para panelas|Schuurspons|Éponge à récurer|Spugna abrasiva|Estropajo para ollas|Zmywak do garnków|Губка для каструль|锅用海绵
+Vollwaschmittel|Heavy-duty detergent|Универсальный стиральный порошок|Detergente universal|Universeel wasmiddel|Lessive universelle|Detersivo universale|Detergente universal|Proszek uniwersalny do prania|Універсальний пральний порошок|通用洗衣液
+WC-Reiniger|Toilet cleaner|Средство для унитаза|Limpa sanitas|WC-reiniger|Nettoyant WC|Detergente per WC|Limpiador de WC|Środek do czyszczenia WC|Засіб для унітаза|马桶清洁剂
+Waschmaschinenreiniger|Washing machine cleaner|Средство для чистки стиральной машины|Limpa máquinas de lavar roupa|Wasmachinereiniger|Nettoyant pour lave-linge|Detergente per lavatrice|Limpiador de lavadoras|Środek do czyszczenia pralki|Засіб для чищення пральної машини|洗衣机清洁剂
+Waschmittel|Washing powder|Стиральный порошок|Detergente da roupa|Wasmiddel|Lessive|Detersivo per bucato|Detergente para la ropa|Proszek do prania|Пральний порошок|洗衣液
+Wattepads|Cotton pads|Ватные диски|Discos de algodão|Wattenschijfjes|Disques de coton|Dischetti di cotone|Discos de algodón|Płatki kosmetyczne|Ватні диски|化妆棉
+Wattestäbchen|Cotton buds|Ватные палочки|Cotonetes|Wattenstaafjes|Cotons-tiges|Cotton fioc|Bastoncillos de algodón|Patyczki higieniczne|Ватні палички|棉签
+Weichspüler|Fabric softener|Кондиционер для белья|Amaciador de roupa|Wasverzachter|Adoucissant|Ammorbidente|Suavizante|Płyn do płukania|Кондиціонер для білизни|衣物柔顺剂
+Wollwaschmittel|Wool detergent|Средство для стирки шерсти|Detergente para lã|Wolwasmiddel|Lessive pour laine|Detersivo per lana|Detergente para lana|Płyn do prania wełny|Засіб для прання вовни|羊毛洗涤剂
+Zahnbürste|Toothbrush|Зубная щётка|Escova de dentes|Tandenborstel|Brosse à dents|Spazzolino da denti|Cepillo de dientes|Szczoteczka do zębów|Зубна щітка|牙刷
+Zahnpasta|Toothpaste|Зубная паста|Pasta de dentes|Tandpasta|Dentifrice|Dentifricio|Pasta de dientes|Pasta do zębów|Зубна паста|牙膏
+Zahnseide|Dental floss|Зубная нить|Fio dentário|Flosdraad|Fil dentaire|Filo interdentale|Hilo dental|Nić dentystyczna|Зубна нитка|牙线
+Zip-Beutel|Zip bags|Пакеты с застёжкой|Sacos com fecho|Zipzakjes|Sacs zippés|Sacchetti con zip|Bolsas con cierre|Woreczki strunowe|Пакети із застібкою|密封袋

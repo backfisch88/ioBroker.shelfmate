@@ -1,0 +1,50 @@
+Bratwürstchen|Bratwurst|Жареные колбаски|Salsichas para grelhar|Braadworstjes|Saucisses à griller|Salsicce da grigliare|Salchichas para asar|Kiełbaski do smażenia|Ковбаски для смаження|煎香肠
+Burger-Patties|Burger patties|Котлеты для бургеров|Hambúrgueres|Burgerpatties|Steaks hachés pour burger|Hamburger di carne|Hamburguesas de carne|Kotlety do burgerów|Котлети для бургерів|汉堡肉饼
+Calamari|Calamari|Кальмары|Lulas|Calamares|Calamars|Calamari|Calamares|Kalmary|Кальмари|鱿鱼
+Dorade|Sea bream|Дорада|Dourada|Zeebrasem|Daurade|Orata|Dorada|Dorada|Дорада|鲷鱼
+Ente|Duck|Утка|Pato|Eend|Canard|Anatra|Pato|Kaczka|Качка|鸭肉
+Entenbrust|Duck breast|Утиная грудка|Peito de pato|Eendenborst|Magret de canard|Petto d'anatra|Pechuga de pato|Pierś z kaczki|Качина грудка|鸭胸
+Fischfrikadellen|Fish cakes|Рыбные котлеты|Croquetes de peixe|Visfrikadellen|Boulettes de poisson|Polpette di pesce|Albóndigas de pescado|Kotlety rybne|Рибні котлети|鱼饼
+Fischstäbchen|Fish fingers|Рыбные палочки|Douradinhos|Visstick|Bâtonnets de poisson|Bastoncini di pesce|Palitos de pescado|Paluszki rybne|Рибні палички|鱼条
+Fleischbällchen|Meatballs|Фрикадельки|Almôndegas|Gehaktballetjes|Boulettes de viande|Polpette|Albóndigas|Klopsiki|Фрикадельки|肉丸
+Forelle|Trout|Форель|Truta|Forel|Truite|Trota|Trucha|Pstrąg|Форель|鳟鱼
+Ganzes Hähnchen|Whole chicken|Целая курица|Frango inteiro|Hele kip|Poulet entier|Pollo intero|Pollo entero|Cały kurczak|Ціла курка|整鸡
+Garnelen|Prawns|Креветки|Camarões|Garnalen|Crevettes|Gamberi|Gambas|Krewetki|Креветки|大虾
+Geflügelhackfleisch|Minced poultry|Фарш из птицы|Carne picada de aves|Gehakt van gevogelte|Hachis de volaille|Macinato di pollame|Carne picada de ave|Mięso mielone z drobiu|Фарш із птиці|禽肉馅
+Gemischtes Hackfleisch|Mixed mince|Смешанный фарш|Carne picada mista|Half-om-half gehakt|Viande hachée mixte|Macinato misto|Carne picada mixta|Mięso mielone mieszane|Змішаний фарш|混合肉馅
+Hähnchenbrust|Chicken breast|Куриная грудка|Peito de frango|Kipfilet|Blanc de poulet|Petto di pollo|Pechuga de pollo|Pierś z kurczaka|Куряча грудка|鸡胸肉
+Hähnchenflügel|Chicken wings|Куриные крылья|Asas de frango|Kippenvleugels|Ailes de poulet|Ali di pollo|Alitas de pollo|Skrzydełka z kurczaka|Курячі крильця|鸡翅
+Hähnchenschenkel|Chicken thighs|Куриные бёдра|Coxas de frango|Kippendijen|Cuisses de poulet|Cosce di pollo|Muslos de pollo|Udka z kurczaka|Курячі стегна|鸡腿
+Jackfruit|Jackfruit|Джекфрут|Jaca|Jackfruit|Jacquier|Jackfruit|Yaca|Jackfruit|Джекфрут|菠萝蜜
+Kabeljau|Cod|Треска|Bacalhau|Kabeljauw|Cabillaud|Merluzzo|Bacalao|Dorsz|Тріска|鳕鱼
+Kalbfleisch|Veal|Телятина|Vitela|Kalfsvlees|Veau|Vitello|Ternera|Cielęcina|Телятина|小牛肉
+Lachsfilet|Salmon fillet|Филе лосося|Filete de salmão|Zalmfilet|Filet de saumon|Filetto di salmone|Filete de salmón|Filet z łososia|Філе лосося|三文鱼片
+Lammfleisch|Lamb|Баранина|Borrego|Lamsvlees|Agneau|Agnello|Cordero|Jagnięcina|Баранина|羊肉
+Lammkotelett|Lamb chop|Бараньи рёбрышки|Costeleta de borrego|Lamskotelet|Côtelette d'agneau|Costoletta d'agnello|Chuleta de cordero|Kotlet jagnięcy|Баранячі котлети|羊排
+Muscheln|Mussels|Мидии|Mexilhões|Mosselen|Moules|Cozze|Mejillones|Małże|Мідії|贻贝
+Nackensteak|Pork neck steak|Стейк из свиной шеи|Bife de pescoço de porco|Nekkarbonade|Steak de échine de porc|Bistecca di collo di maiale|Filete de cuello de cerdo|Karkówka|Стейк зі свинячої шиї|猪颈肉排
+Putenbrust|Turkey breast|Грудка индейки|Peito de peru|Kalkoenfilet|Blanc de dinde|Petto di tacchino|Pechuga de pavo|Pierś z indyka|Грудка індички|火鸡胸肉
+Putenschnitzel|Turkey escalope|Шницель из индейки|Escalope de peru|Kalkoenschnitzel|Escalope de dinde|Scaloppina di tacchino|Escalope de pavo|Sznycel z indyka|Шніцель з індички|火鸡排
+Rinderbraten|Roast beef|Говяжье жаркое|Assado de vaca|Rundvleesstuk voor de oven|Rôti de bœuf|Arrosto di manzo|Asado de ternera|Pieczeń wołowa|Яловичина для запікання|烤牛肉
+Rinderfilet|Beef fillet|Говяжья вырезка|Filete de vaca|Rundertournedos|Filet de bœuf|Filetto di manzo|Solomillo de ternera|Polędwica wołowa|Яловича вирізка|牛里脊
+Rindergulasch|Beef goulash|Говяжий гуляш|Goulash de vaca|Rundergoulash|Goulasch de bœuf|Spezzatino di manzo|Gulash de ternera|Gulasz wołowy|Яловичий гуляш|牛肉块
+Rinderhackfleisch|Minced beef|Говяжий фарш|Carne de vaca picada|Rundergehakt|Bœuf haché|Macinato di manzo|Carne picada de ternera|Mielone wołowe|Яловичий фарш|牛肉馅
+Rindersteak|Beef steak|Говяжий стейк|Bife de vaca|Runderbiefstuk|Steak de bœuf|Bistecca di manzo|Filete de ternera|Stek wołowy|Яловичий стейк|牛排
+Rotbarsch|Redfish|Морской окунь|Cherne|Roodbaars|Sébaste|Scorfano|Gallineta nórdica|Karmazyn|Морський окунь|红鱼
+Rouladen|Beef rolls|Говяжьи рулеты|Rolinhos de carne|Rundvleesrolletjes|Paupiettes de bœuf|Involtini di manzo|Rollitos de ternera|Zrazy wołowe|Яловичі рулети|牛肉卷
+Schweinebraten|Roast pork|Свиное жаркое|Assado de porco|Varkensgebraad|Rôti de porc|Arrosto di maiale|Asado de cerdo|Pieczeń wieprzowa|Свинина для запікання|烤猪肉
+Schweinefilet|Pork fillet|Свиная вырезка|Filete de porco|Varkenshaas|Filet de porc|Filetto di maiale|Solomillo de cerdo|Polędwiczka wieprzowa|Свиняча вирізка|猪里脊
+Schweinegulasch|Pork goulash|Свиной гуляш|Goulash de porco|Varkensgoulash|Goulasch de porc|Spezzatino di maiale|Gulash de cerdo|Gulasz wieprzowy|Свинячий гуляш|猪肉块
+Schweinehackfleisch|Minced pork|Свиной фарш|Carne de porco picada|Varkensgehakt|Hachis de porc|Macinato di maiale|Carne picada de cerdo|Mielone wieprzowe|Свинячий фарш|猪肉馅
+Schweinekotelett|Pork chop|Свиная отбивная|Costeleta de porco|Varkenskotelet|Côte de porc|Braciola di maiale|Chuleta de cerdo|Kotlet schabowy|Свиняча відбивна|猪排
+Schweineschnitzel|Pork schnitzel|Свиной шницель|Escalope de porco|Varkensschnitzel|Escalope de porc|Scaloppina di maiale|Escalope de cerdo|Sznycel wieprzowy|Свинячий шніцель|猪肉排
+Seelachs|Pollock|Сайда|Escamudo|Koolvis|Colin|Merluzzo carbonaro|Carbonero|Czarniak|Сайда|青鳕
+Seitan|Seitan|Сейтан|Seitan|Seitan|Seitan|Seitan|Seitán|Seitan|Сейтан|面筋
+Shrimps|Shrimp|Креветки|Camarões|Garnalen|Crevettes|Gamberetti|Camarones|Krewetki|Креветки|小虾
+Sojagranulat|Soy granules|Соевый гранулят|Granulado de soja|Sojagranulaat|Granulés de soja|Granulato di soia|Granulado de soja|Granulat sojowy|Соєвий гранулят|大豆颗粒
+Sojaschnetzel|Soy chunks|Соевое мясо|Pedaços de soja|Sojasnippers|Morceaux de soja|Straccetti di soia|Tiras de soja|Kawałki sojowe|Соєве м'ясо|大豆块
+Suppenfleisch|Soup meat|Мясо для супа|Carne para sopa|Soepvlees|Viande à pot-au-feu|Carne per brodo|Carne para caldo|Mięso na rosół|М'ясо для супу|汤用肉
+Thunfischsteak|Tuna steak|Стейк из тунца|Bife de atum|Tonijnsteak|Steak de thon|Trancio di tonno|Filete de atún|Stek z tuńczyka|Стейк з тунця|金枪鱼排
+Veggie-Burger|Veggie burger|Вегетарианский бургер|Hambúrguer vegetariano|Veggieburger|Burger végétarien|Burger vegetariano|Hamburguesa vegetal|Burger wegetariański|Вегетаріанський бургер|素汉堡
+Veggie-Schnitzel|Veggie schnitzel|Вегетарианский шницель|Escalope vegetariano|Veggieschnitzel|Escalope végétarien|Cotoletta vegetariana|Escalope vegetal|Sznycel wegetariański|Вегетаріанський шніцель|素排
+Veggie-Würstchen|Veggie sausages|Вегетарианские сосиски|Salsichas vegetarianas|Vegetarische worstjes|Saucisses végétariennes|Salsicce vegetariane|Salchichas vegetales|Wegetariańskie kiełbaski|Вегетаріанські сосиски|素香肠

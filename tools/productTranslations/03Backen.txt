@@ -1,0 +1,116 @@
+Agar-Agar|Agar-agar|Агар-агар|Ágar-ágar|Agar-agar|Agar-agar|Agar-agar|Agar-agar|Agar-agar|Агар-агар|琼脂
+Backaroma|Baking flavouring|Ароматизатор для выпечки|Aroma para bolos|Bakaroma|Arôme pour pâtisserie|Aroma per dolci|Aroma para repostería|Aromat do ciast|Ароматизатор для випічки|烘焙香精
+Backkakao|Baking cocoa|Какао для выпечки|Cacau para bolos|Bakcacao|Cacao pour pâtisserie|Cacao per dolci|Cacao para repostería|Kakao do wypieków|Какао для випічки|烘焙可可粉
+Backmischung|Baking mix|Смесь для выпечки|Mistura para bolos|Bakmix|Préparation pour gâteau|Mix per dolci|Mezcla para repostería|Mieszanka do wypieków|Суміш для випічки|烘焙预拌粉
+Backpulver|Baking powder|Разрыхлитель|Fermento em pó|Bakpoeder|Levure chimique|Lievito in polvere|Levadura en polvo|Proszek do pieczenia|Розпушувач|泡打粉
+Biskuitboden|Sponge cake base|Бисквитная основа|Base de pão de ló|Biscuitbodem|Fond de biscuit|Base di pan di Spagna|Base de bizcocho|Spód biszkoptowy|Бісквітна основа|海绵蛋糕底
+Bittermandelaroma|Bitter almond flavouring|Ароматизатор горький миндаль|Aroma de amêndoa amarga|Bittere-amandelaroma|Arôme d'amande amère|Aroma di mandorla amara|Aroma de almendra amarga|Aromat gorzkich migdałów|Ароматизатор гіркий мигдаль|苦杏仁香精
+Blätterteig|Puff pastry|Слоёное тесто|Massa folhada|Bladerdeeg|Pâte feuilletée|Pasta sfoglia|Hojaldre|Ciasto francuskie|Листкове тісто|千层酥皮
+Bourbonvanille|Bourbon vanilla|Ваниль бурбон|Baunilha Bourbon|Bourbonvanille|Vanille Bourbon|Vaniglia Bourbon|Vainilla Bourbon|Wanilia bourbon|Ваніль бурбон|波旁香草
+Brauner Zucker|Brown sugar|Коричневый сахар|Açúcar mascavado|Bruine suiker|Sucre brun|Zucchero di canna|Azúcar moreno|Cukier brązowy|Коричневий цукор|红糖
+Brotbackmischung|Bread baking mix|Смесь для выпечки хлеба|Mistura para pão|Broodmix|Préparation pour pain|Mix per pane|Mezcla para pan|Mieszanka do chleba|Суміш для випічки хліба|面包预拌粉
+Bunte Streusel|Sprinkles|Разноцветная посыпка|Granulado colorido|Hagelslag kleurig|Vermicelles colorés|Codette colorate|Fideos de colores|Kolorowa posypka|Кольорова посипка|彩色糖粒
+Chiasamen|Chia seeds|Семена чиа|Sementes de chia|Chiazaad|Graines de chia|Semi di chia|Semillas de chía|Nasiona chia|Насіння чіа|奇亚籽
+Crepes-Mischung|Crepe mix|Смесь для блинов|Mistura para crepes|Pannenkoekenmix|Préparation pour crêpes|Mix per crêpe|Mezcla para crepes|Mieszanka na naleśniki|Суміш для млинців|可丽饼预拌粉
+Dinkelmehl|Spelt flour|Спельтовая мука|Farinha de espelta|Speltmeel|Farine d'épeautre|Farina di farro|Harina de espelta|Mąka orkiszowa|Спельтове борошно|斯佩尔特面粉
+Dinkelmehl Type 630|Spelt flour type 630|Спельтовая мука тип 630|Farinha de espelta tipo 630|Speltmeel type 630|Farine d'épeautre type 630|Farina di farro tipo 630|Harina de espelta tipo 630|Mąka orkiszowa typ 630|Спельтове борошно тип 630|630型斯佩尔特面粉
+Dinkelvollkornmehl|Wholegrain spelt flour|Цельнозерновая спельтовая мука|Farinha de espelta integral|Volkorenspeltmeel|Farine d'épeautre complète|Farina di farro integrale|Harina de espelta integral|Mąka orkiszowa pełnoziarnista|Цільнозернове спельтове борошно|全麦斯佩尔特面粉
+Feiner Zucker|Caster sugar|Мелкий сахар|Açúcar fino|Fijne suiker|Sucre fin|Zucchero fine|Azúcar fino|Cukier drobny|Дрібний цукор|细砂糖
+Filoteig|Filo pastry|Тесто фило|Massa filo|Filodeeg|Pâte filo|Pasta fillo|Pasta filo|Ciasto filo|Тісто філо|菲罗酥皮
+Fondant|Fondant|Фондан|Fondant|Fondant|Fondant|Fondant|Fondant|Lukier plastyczny|Фондан|翻糖
+Frischhefe|Fresh yeast|Свежие дрожжи|Fermento fresco|Verse gist|Levure fraîche|Lievito fresco|Levadura fresca|Drożdże świeże|Свіжі дріжджі|鲜酵母
+Gehackte Haselnüsse|Chopped hazelnuts|Рубленый фундук|Avelãs picadas|Gehakte hazelnoten|Noisettes hachées|Nocciole tritate|Avellanas picadas|Siekane orzechy laskowe|Подрібнений фундук|榛子碎
+Gehackte Mandeln|Chopped almonds|Рубленый миндаль|Amêndoas picadas|Gehakte amandelen|Amandes hachées|Mandorle tritate|Almendras picadas|Siekane migdały|Подрібнений мигдаль|杏仁碎
+Gelatine|Gelatine|Желатин|Gelatina|Gelatine|Gélatine|Gelatina|Gelatina|Żelatyna|Желатин|明胶
+Gelierzucker|Jam sugar|Сахар для варенья|Açúcar para compotas|Gelsuiker|Sucre gélifiant|Zucchero per marmellate|Azúcar gelificante|Cukier żelujący|Цукор для варення|果酱糖
+Grießbrei-Mischung|Semolina pudding mix|Смесь для манной каши|Mistura para papas de sêmola|Griesmeelpuddingmix|Préparation pour bouillie de semoule|Mix per budino di semolino|Mezcla para papilla de sémola|Mieszanka na kaszę mannę|Суміш для манної каші|粗粒粥预拌粉
+Götterspeise|Jelly dessert|Желейный десерт|Gelatina de sobremesa|Gelatinepudding|Gelée dessert|Gelatina dolce|Gelatina de postre|Galaretka|Желейний десерт|果冻甜点
+Hagelzucker|Pearl sugar|Жемчужный сахар|Açúcar granulado grosso|Hagelsuiker|Sucre perlé|Zucchero in granella|Azúcar perlado|Cukier perłowy|Перлинний цукор|珍珠糖
+Haselnüsse gemahlen|Ground hazelnuts|Молотый фундук|Avelãs moídas|Gemalen hazelnoten|Noisettes moulues|Nocciole macinate|Avellanas molidas|Mielone orzechy laskowe|Мелений фундук|榛子粉
+Hefeteig|Yeast dough|Дрожжевое тесто|Massa de fermento|Gistdeeg|Pâte levée|Pasta lievitata|Masa de levadura|Ciasto drożdżowe|Дріжджове тісто|发酵面团
+Kakaopulver|Cocoa powder|Какао-порошок|Cacau em pó|Cacaopoeder|Poudre de cacao|Cacao in polvere|Cacao en polvo|Kakao w proszku|Какао-порошок|可可粉
+Kandierte Früchte|Candied fruit|Цукаты|Fruta cristalizada|Gekonfijte vruchten|Fruits confits|Frutta candita|Fruta confitada|Owoce kandyzowane|Цукати|蜜饯
+Kandiszucker|Rock sugar|Леденцовый сахар|Açúcar cande|Kandijsuiker|Sucre candi|Zucchero candito|Azúcar cande|Cukier kandyzowany|Кандиз|冰糖
+Kartoffelmehl|Potato flour|Картофельная мука|Farinha de batata|Aardappelmeel|Farine de pomme de terre|Farina di patate|Harina de patata|Mąka ziemniaczana|Картопляне борошно|土豆粉
+Kartoffelstärke|Potato starch|Картофельный крахмал|Fécula de batata|Aardappelzetmeel|Fécule de pomme de terre|Fecola di patate|Fécula de patata|Skrobia ziemniaczana|Картопляний крохмаль|土豆淀粉
+Kichererbsenmehl|Chickpea flour|Нутовая мука|Farinha de grão-de-bico|Kikkererwtenmeel|Farine de pois chiches|Farina di ceci|Harina de garbanzo|Mąka z ciecierzycy|Нутове борошно|鹰嘴豆粉
+Kokosblütenzucker|Coconut blossom sugar|Сахар из цветков кокоса|Açúcar de flor de coco|Kokosbloesemsuiker|Sucre de fleur de coco|Zucchero di fiori di cocco|Azúcar de flor de coco|Cukier kokosowy|Цукор із квітів кокоса|椰花糖
+Kokosflocken|Coconut flakes|Кокосовые хлопья|Flocos de coco|Kokosvlokken|Flocons de coco|Scaglie di cocco|Copos de coco|Płatki kokosowe|Кокосові пластівці|椰子片
+Kokosmehl|Coconut flour|Кокосовая мука|Farinha de coco|Kokosmeel|Farine de coco|Farina di cocco|Harina de coco|Mąka kokosowa|Кокосове борошно|椰子粉
+Kokosraspeln|Desiccated coconut|Кокосовая стружка|Coco ralado|Kokosrasp|Noix de coco râpée|Cocco rapé|Coco rallado|Wiórki kokosowe|Кокосова стружка|椰蓉
+Korinthen|Currants|Коринка|Passas de corinto|Krenten|Raisins de Corinthe|Uva passa di Corinto|Pasas de Corinto|Rodzynki korynckie|Коринка|无核小葡萄干
+Kuchenbackmischung|Cake mix|Смесь для кекса|Mistura para bolo|Cakemix|Préparation pour gâteau|Mix per torta|Mezcla para tarta|Mieszanka do ciasta|Суміш для кексу|蛋糕预拌粉
+Kuchenglasur|Cake glaze|Глазурь для торта|Cobertura para bolos|Cakeglazuur|Glaçage pour gâteau|Glassa per torte|Glaseado para tartas|Lukier do ciast|Глазур для торта|蛋糕糖衣
+Kuvertüre|Couverture chocolate|Кувертюр|Chocolate de cobertura|Couverture|Chocolat de couverture|Copertura al cioccolato|Cobertura de chocolate|Czekolada do polewania|Кувертюр|巧克力涂层
+Kürbiskerne|Pumpkin seeds|Тыквенные семечки|Sementes de abóbora|Pompoenpitten|Graines de courge|Semi di zucca|Pepitas de calabaza|Pestki dyni|Гарбузове насіння|南瓜籽
+Lebensmittelfarbe|Food colouring|Пищевой краситель|Corante alimentar|Voedingskleurstof|Colorant alimentaire|Colorante alimentare|Colorante alimentario|Barwnik spożywczy|Харчовий барвник|食用色素
+Leinsamen|Flaxseed|Семена льна|Linhaça|Lijnzaad|Graines de lin|Semi di lino|Semillas de lino|Siemię lniane|Насіння льону|亚麻籽
+Maismehl|Corn flour|Кукурузная мука|Farinha de milho|Maismeel|Farine de maïs|Farina di mais|Harina de maíz|Mąka kukurydziana|Кукурудзяне борошно|玉米粉
+Maisstärke|Cornstarch|Кукурузный крахмал|Amido de milho|Maizena|Fécule de maïs|Amido di mais|Maicena|Skrobia kukurydziana|Кукурудзяний крохмаль|玉米淀粉
+Mandelblättchen|Flaked almonds|Миндальные лепестки|Amêndoas laminadas|Amandelschaafsel|Amandes effilées|Mandorle a lamelle|Almendras laminadas|Płatki migdałowe|Мигдальні пелюстки|杏仁片
+Mandelmehl|Almond flour|Миндальная мука|Farinha de amêndoa|Amandelmeel|Farine d'amande|Farina di mandorle|Harina de almendra|Mąka migdałowa|Мигдальне борошно|杏仁粉
+Mandeln gemahlen|Ground almonds|Молотый миндаль|Amêndoas moídas|Gemalen amandelen|Amandes moulues|Mandorle macinate|Almendras molidas|Mielone migdały|Мелений мигдаль|杏仁粉末
+Marzipan|Marzipan|Марципан|Maçapão|Marsepein|Pâte d'amande|Marzapane|Mazapán|Marcepan|Марципан|杏仁糖膏
+Marzipanrohmasse|Raw marzipan paste|Сырая марципановая масса|Massa crua de maçapão|Rauwe marsepeinmassa|Pâte d'amande brute|Pasta di marzapane cruda|Pasta de mazapán cruda|Masa marcepanowa surowa|Сира марципанова маса|生杏仁糖膏
+Milchreis-Mischung|Rice pudding mix|Смесь для рисовой молочной каши|Mistura para arroz-doce|Rijstpuddingmix|Préparation pour riz au lait|Mix per budino di riso|Mezcla para arroz con leche|Mieszanka na ryż na mleku|Суміш для рисової каші на молоці|奶香米布丁预拌粉
+Mohn|Poppy seeds|Мак|Sementes de papoila|Maanzaad|Graines de pavot|Semi di papavero|Semillas de amapola|Mak|Мак|罂粟籽
+Mürbeteig|Shortcrust pastry|Песочное тесто|Massa quebrada|Zandtaartdeeg|Pâte brisée|Pasta frolla|Masa quebrada|Ciasto kruche|Пісочне тісто|酥皮面团
+Natron|Baking soda|Пищевая сода|Bicarbonato de sódio|Zuiveringszout|Bicarbonate de soude|Bicarbonato di sodio|Bicarbonato de sodio|Soda oczyszczona|Харчова сода|小苏打
+Orangeat|Candied orange peel|Цукаты из апельсиновой корки|Casca de laranja cristalizada|Sinaasappelsukade|Écorces d'orange confites|Scorze d'arancia candite|Cáscara de naranja confitada|Kandyzowana skórka pomarańczowa|Цукати з апельсинової шкірки|橙皮蜜饯
+Paniermehl|Breadcrumbs|Панировочные сухари|Pão ralado|Paneermeel|Chapelure|Pangrattato|Pan rallado|Bułka tarta|Панірувальні сухарі|面包屑
+Panko|Panko|Панко|Panko|Panko|Panko|Panko|Panko|Panko|Панко|日式面包糠
+Pektin|Pectin|Пектин|Pectina|Pectine|Pectine|Pectina|Pectina|Pektyna|Пектин|果胶
+Pfannkuchenmischung|Pancake mix|Смесь для блинов|Mistura para panquecas|Pannenkoekenmix|Préparation pour pancakes|Mix per pancake|Mezcla para tortitas|Mieszanka na pankejki|Суміш для млинців|煎饼预拌粉
+Pinienkerne|Pine nuts|Кедровые орехи|Pinhões|Pijnboompitten|Pignons de pin|Pinoli|Piñones|Orzeszki piniowe|Кедрові горішки|松子
+Pizzateig|Pizza dough|Тесто для пиццы|Massa de pizza|Pizzadeeg|Pâte à pizza|Impasto per pizza|Masa de pizza|Ciasto na pizzę|Тісто для піци|披萨面团
+Pizzateig-Mischung|Pizza dough mix|Смесь для теста для пиццы|Mistura para massa de pizza|Pizzadeegmix|Préparation pour pâte à pizza|Mix per impasto pizza|Mezcla para masa de pizza|Mieszanka na ciasto do pizzy|Суміш для тіста для піци|披萨面团预拌粉
+Puddingpulver|Pudding powder|Пудинг в порошке|Pó para pudim|Puddingpoeder|Poudre à flan|Preparato per budino|Preparado para flan|Budyń w proszku|Пудинг у порошку|布丁粉
+Puderzucker|Icing sugar|Сахарная пудра|Açúcar em pó|Poedersuiker|Sucre glace|Zucchero a velo|Azúcar glas|Cukier puder|Цукрова пудра|糖粉
+Reismehl|Rice flour|Рисовая мука|Farinha de arroz|Rijstmeel|Farine de riz|Farina di riso|Harina de arroz|Mąka ryżowa|Рисове борошно|米粉面
+Roggenmehl|Rye flour|Ржаная мука|Farinha de centeio|Roggemeel|Farine de seigle|Farina di segale|Harina de centeno|Mąka żytnia|Житнє борошно|黑麦粉
+Roggenmehl Type 1150|Rye flour type 1150|Ржаная мука тип 1150|Farinha de centeio tipo 1150|Roggemeel type 1150|Farine de seigle type 1150|Farina di segale tipo 1150|Harina de centeno tipo 1150|Mąka żytnia typ 1150|Житнє борошно тип 1150|1150型黑麦粉
+Roggenvollkornmehl|Wholegrain rye flour|Цельнозерновая ржаная мука|Farinha de centeio integral|Volkorenroggemeel|Farine de seigle complète|Farina di segale integrale|Harina de centeno integral|Mąka żytnia pełnoziarnista|Цільнозернове житнє борошно|全麦黑麦粉
+Rohrzucker|Cane sugar|Тростниковый сахар|Açúcar de cana|Rietsuiker|Sucre de canne|Zucchero di canna|Azúcar de caña|Cukier trzcinowy|Тростинний цукор|蔗糖
+Rosinen|Raisins|Изюм|Passas|Rozijnen|Raisins secs|Uvetta|Pasas|Rodzynki|Родзинки|葡萄干
+Rumaroma|Rum flavouring|Ромовый ароматизатор|Aroma de rum|Rumaroma|Arôme de rhum|Aroma di rum|Aroma de ron|Aromat rumowy|Ромовий ароматизатор|朗姆香精
+Sahnesteif|Cream stabiliser|Загуститель для сливок|Fixador de natas|Slagroomversteviger|Raffermisseur de crème|Rinforzante per panna|Estabilizante de nata|Utwardzacz do śmietany|Загуститель для вершків|奶油稳定剂
+Sauerteig|Sourdough|Закваска|Massa-mãe|Zuurdesem|Levain|Lievito madre|Masa madre|Zakwas|Закваска|酸面团
+Sauerteigpulver|Sourdough powder|Сухая закваска|Fermento natural em pó|Zuurdesempoeder|Levain en poudre|Lievito madre in polvere|Masa madre en polvo|Zakwas w proszku|Суха закваска|酸面团粉
+Schokopuddingpulver|Chocolate pudding powder|Шоколадный пудинг в порошке|Pó para pudim de chocolate|Chocoladepuddingpoeder|Poudre pour flan au chocolat|Preparato per budino al cioccolato|Preparado para flan de chocolate|Budyń czekoladowy w proszku|Шоколадний пудинг у порошку|巧克力布丁粉
+Schokostreusel|Chocolate sprinkles|Шоколадная посыпка|Granulado de chocolate|Chocoladehagelslag|Vermicelles en chocolat|Codette al cioccolato|Fideos de chocolate|Posypka czekoladowa|Шоколадна посипка|巧克力糖粒
+Schokotropfen|Chocolate chips|Шоколадные капли|Pepitas de chocolate|Chocoladedruppels|Pépites de chocolat|Gocce di cioccolato|Pepitas de chocolate|Kropelki czekoladowe|Шоколадні краплі|巧克力豆
+Semmelbrösel|Breadcrumbs|Панировочные сухари|Pão ralado|Broodkruimels|Chapelure|Pangrattato|Pan rallado|Bułka tarta|Панірувальні сухарі|面包糠
+Sesam|Sesame seeds|Кунжут|Sésamo|Sesamzaad|Graines de sésame|Semi di sesamo|Semillas de sésamo|Sezam|Кунжут|芝麻
+Sonnenblumenkerne|Sunflower seeds|Семечки подсолнуха|Sementes de girassol|Zonnebloempitten|Graines de tournesol|Semi di girasole|Pipas de girasol|Pestki słonecznika|Насіння соняшнику|葵花籽
+Speisestärke|Cornflour|Крахмал|Amido|Maizena|Fécule alimentaire|Amido alimentare|Almidón alimentario|Skrobia spożywcza|Харчовий крохмаль|食用淀粉
+Strudelteig|Strudel dough|Тесто для штруделя|Massa de strudel|Strudeldeeg|Pâte à strudel|Pasta per strudel|Masa de strudel|Ciasto na strudel|Тісто для штруделя|果馅卷面团
+Sultaninen|Sultanas|Султана|Passas sultanas|Sultanarozijnen|Raisins sultanines|Uvetta sultanina|Pasas sultanas|Rodzynki sułtańskie|Султани|无籽葡萄干
+Tapiokastärke|Tapioca starch|Тапиоковый крахмал|Fécula de mandioca|Tapiocazetmeel|Fécule de tapioca|Fecola di tapioca|Almidón de tapioca|Skrobia tapiokowa|Тапіоковий крохмаль|木薯淀粉
+Tonkabohne|Tonka bean|Бобы тонка|Fava-tonka|Tonkaboon|Fève tonka|Fava tonka|Haba tonka|Fasola tonka|Боби тонка|零陵香豆
+Tortenboden|Cake base|Основа для торта|Base de bolo|Taartbodem|Fond de tarte|Base per torta|Base de tarta|Spód do tortu|Основа для торта|蛋糕底
+Tortenguss|Cake glaze gel|Желе для торта|Gelatina para tortas|Taartgelei|Nappage pour tarte|Gelatina per torte|Gelatina para tartas|Galaretka do ciast|Желе для торта|蛋糕果冻粉
+Traubenzucker|Dextrose|Декстроза|Dextrose|Druivensuiker|Dextrose|Destrosio|Dextrosa|Glukoza|Декстроза|葡萄糖
+Trockenhefe|Dry yeast|Сухие дрожжи|Fermento seco|Droge gist|Levure sèche|Lievito secco|Levadura seca|Drożdże suche|Сухі дріжджі|干酵母
+Vanilleextrakt|Vanilla extract|Ванильный экстракт|Extrato de baunilha|Vanille-extract|Extrait de vanille|Estratto di vaniglia|Extracto de vainilla|Ekstrakt waniliowy|Ванільний екстракт|香草精
+Vanillepaste|Vanilla paste|Ванильная паста|Pasta de baunilha|Vanillepasta|Pâte de vanille|Pasta di vaniglia|Pasta de vainilla|Pasta waniliowa|Ванільна паста|香草酱
+Vanillepuddingpulver|Vanilla pudding powder|Ванильный пудинг в порошке|Pó para pudim de baunilha|Vanillepuddingpoeder|Poudre pour flan à la vanille|Preparato per budino alla vaniglia|Preparado para flan de vainilla|Budyń waniliowy w proszku|Ванільний пудинг у порошку|香草布丁粉
+Vanilleschote|Vanilla pod|Стручок ванили|Fava de baunilha|Vanillestokje|Gousse de vanille|Baccello di vaniglia|Vaina de vainilla|Laska wanilii|Стручок ванілі|香草荚
+Vanillezucker|Vanilla sugar|Ванильный сахар|Açúcar de baunilha|Vanillesuiker|Sucre vanillé|Zucchero vanigliato|Azúcar avainillado|Cukier waniliowy|Ванільний цукор|香草糖
+Vanillinzucker|Vanillin sugar|Ванилин-сахар|Açúcar de vanilina|Vanillinesuiker|Sucre vanilliné|Zucchero vanillinato|Azúcar avainillado con vainillina|Cukier wanilinowy|Ванільний цукор із ваніліном|香草精糖
+Vollkornmehl|Wholemeal flour|Цельнозерновая мука|Farinha integral|Volkorenmeel|Farine complète|Farina integrale|Harina integral|Mąka pełnoziarnista|Цільнозернове борошно|全麦面粉
+Vollmilchkuvertüre|Milk couverture chocolate|Молочный кувертюр|Chocolate de cobertura de leite|Melkchocolade couverture|Chocolat de couverture au lait|Copertura al latte|Cobertura de chocolate con leche|Czekolada mleczna do polewania|Молочний кувертюр|牛奶巧克力涂层
+Waffelteig|Waffle batter|Тесто для вафель|Massa de waffles|Wafelbeslag|Pâte à gaufres|Pastella per waffle|Masa de gofres|Ciasto na gofry|Тісто для вафель|华夫饼面糊
+Weizenmehl|Wheat flour|Пшеничная мука|Farinha de trigo|Tarwemeel|Farine de blé|Farina di frumento|Harina de trigo|Mąka pszenna|Пшеничне борошно|小麦粉
+Weizenmehl Type 1050|Wheat flour type 1050|Пшеничная мука тип 1050|Farinha de trigo tipo 1050|Tarwemeel type 1050|Farine de blé type 1050|Farina di frumento tipo 1050|Harina de trigo tipo 1050|Mąka pszenna typ 1050|Пшеничне борошно тип 1050|1050型小麦粉
+Weizenmehl Type 405|Wheat flour type 405|Пшеничная мука тип 405|Farinha de trigo tipo 405|Tarwemeel type 405|Farine de blé type 405|Farina di frumento tipo 405|Harina de trigo tipo 405|Mąka pszenna typ 405|Пшеничне борошно тип 405|405型小麦粉
+Weizenmehl Type 550|Wheat flour type 550|Пшеничная мука тип 550|Farinha de trigo tipo 550|Tarwemeel type 550|Farine de blé type 550|Farina di frumento tipo 550|Harina de trigo tipo 550|Mąka pszenna typ 550|Пшеничне борошно тип 550|550型小麦粉
+Weizenvollkornmehl|Wholegrain wheat flour|Цельнозерновая пшеничная мука|Farinha de trigo integral|Volkorentarwemeel|Farine de blé complète|Farina di frumento integrale|Harina de trigo integral|Mąka pszenna pełnoziarnista|Цільнозернове пшеничне борошно|全麦小麦粉
+Weiße Kuvertüre|White couverture chocolate|Белый кувертюр|Chocolate de cobertura branco|Witte couverture|Chocolat de couverture blanc|Copertura bianca|Cobertura de chocolate blanco|Biała czekolada do polewania|Білий кувертюр|白巧克力涂层
+Zartbitterkuvertüre|Dark couverture chocolate|Тёмный кувертюр|Chocolate de cobertura negro|Pure couverture|Chocolat de couverture noir|Copertura fondente|Cobertura de chocolate negro|Gorzka czekolada do polewania|Темний кувертюр|黑巧克力涂层
+Zitronat|Candied lemon peel|Цукаты из лимонной корки|Casca de limão cristalizada|Citroensukade|Écorces de citron confites|Scorze di limone candite|Cáscara de limón confitada|Kandyzowana skórka cytrynowa|Цукати з лимонної шкірки|柠檬皮蜜饯
+Zitronensäure|Citric acid|Лимонная кислота|Ácido cítrico|Citroenzuur|Acide citrique|Acido citrico|Ácido cítrico|Kwasek cytrynowy|Лимонна кислота|柠檬酸
+Zucker|Sugar|Сахар|Açúcar|Suiker|Sucre|Zucchero|Azúcar|Cukier|Цукор|糖
+Zuckerguss|Icing|Сахарная глазурь|Cobertura de açúcar|Suikerglazuur|Glaçage au sucre|Glassa di zucchero|Glaseado de azúcar|Lukier|Цукрова глазур|糖霜
+Zuckerperlen|Sugar pearls|Сахарные шарики|Pérolas de açúcar|Suikerparels|Perles en sucre|Perle di zucchero|Perlas de azúcar|Perełki cukrowe|Цукрові кульки|糖珠
+Zuckerschrift|Sugar writing icing|Сахарная глазурь для надписей|Glacê para escrever|Schrijfglazuur|Glaçage à écrire|Glassa per scrivere|Glaseado para escribir|Lukier do pisania|Цукрова глазур для написів|写字糖霜
+Zuckerstreusel|Sugar sprinkles|Сахарная посыпка|Granulado de açúcar|Suikerstrooisel|Vermicelles en sucre|Codette di zucchero|Fideos de azúcar|Posypka cukrowa|Цукрова посипка|糖粒

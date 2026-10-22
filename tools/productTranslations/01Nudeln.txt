@@ -1,0 +1,71 @@
+Bandnudeln|Ribbon pasta|Лапша-ленты|Massa em fitas|Lintpasta|Pâtes en ruban|Pasta a nastro|Pasta en cintas|Makaron wstążki|Макарони-стрічки|宽带面
+Bucatini|Bucatini|Букатини|Bucatini|Bucatini|Bucatini|Bucatini|Bucatini|Bucatini|Букатіні|布卡提尼面
+Buchstabennudeln|Alphabet pasta|Макароны-буквы|Massa de letras|Letterpasta|Pâtes alphabet|Pasta alfabeto|Pasta de letras|Makaron literki|Макарони-літери|字母面
+Cannelloni|Cannelloni|Каннеллони|Canelone|Cannelloni|Cannelloni|Cannelloni|Canelones|Cannelloni|Каннелоні|卡内罗尼
+Capellini|Capellini|Капеллини|Capellini|Capellini|Cheveux d'ange|Capellini|Capellini|Capellini|Капелліні|天使发丝面
+Casarecce|Casarecce|Казареччи|Casarecce|Casarecce|Casarecce|Casarecce|Casarecce|Casarecce|Казарече|卡萨雷奇面
+Cellentani|Cellentani|Челлентани|Cellentani|Cellentani|Cellentani|Cellentani|Cellentani|Cellentani|Челентані|螺旋空心面
+Conchiglie|Conchiglie|Конкилье|Conchiglie|Conchiglie|Conchiglie|Conchiglie|Conchiglie|Conchiglie|Конкілье|贝壳面
+Dinkelnudeln|Spelt pasta|Макароны из спельты|Massa de espelta|Speltpasta|Pâtes d'épeautre|Pasta di farro|Pasta de espelta|Makaron orkiszowy|Макарони зі спельти|斯佩尔特小麦面条
+Ditali|Ditali|Дитали|Ditali|Ditali|Ditali|Ditali|Ditali|Ditali|Діталі|顶针面
+Ditalini|Ditalini|Дителини|Ditalini|Ditalini|Ditalini|Ditalini|Ditalini|Ditalini|Дителіні|小顶针面
+Eiernudeln|Egg noodles|Яичная лапша|Massa ao ovo|Eiernoedels|Nouilles aux œufs|Tagliolini all'uovo|Fideos de huevo|Makaron jajeczny|Яєчна локшина|鸡蛋面
+Fadennudeln|Vermicelli noodles|Тонкая лапша|Aletria|Vermicelli|Vermicelles|Capelli d'angelo|Fideos finos|Makaron nitki|Тонка локшина|细面丝
+Farfalle|Farfalle|Фарфалле|Farfalle|Farfalle|Farfalle|Farfalle|Farfalle|Farfalle|Фарфалле|蝴蝶面
+Farfalline|Farfalline|Фарфаллине|Farfalline|Farfalline|Farfalline|Farfalline|Farfalline|Farfalline|Фарфаліне|小蝴蝶面
+Fettuccine|Fettuccine|Феттучини|Fettuccine|Fettuccine|Fettuccine|Fettuccine|Fettuccine|Fettuccine|Фетучіні|宽扁面
+Fregola|Fregola|Фрегола|Fregola|Fregola|Fregola|Fregola|Fregola|Fregola|Фреґола|撒丁岛小麦粒面
+Fusilli|Fusilli|Фузилли|Fusilli|Fusilli|Fusilli|Fusilli|Fusilli|Fusilli|Фузіллі|螺旋面
+Gemelli|Gemelli|Джемелли|Gemelli|Gemelli|Gemelli|Gemelli|Gemelli|Gemelli|Джемеллі|双股面
+Glasnudeln|Glass noodles|Фунчоза|Aletria de feijão|Glasnoedels|Vermicelles de soja|Spaghetti di soia|Fideos de cristal|Makaron sojowy|Фунчоза|粉丝
+Gnocchetti Sardi|Gnocchetti sardi|Ньокетти сарди|Gnocchetti sardi|Gnocchetti sardi|Gnocchetti sardi|Gnocchetti sardi|Gnocchetti sardi|Gnocchetti sardi|Ньокетті сарді|撒丁小面疙瘩
+Gnocchi|Gnocchi|Ньокки|Nhoque|Gnocchi|Gnocchi|Gnocchi|Ñoquis|Gnocchi|Ньокі|意式土豆团子
+Hörnchennudeln|Elbow macaroni|Рожки|Massa cotovelos|Hoornpasta|Coquillettes|Pasta a gomito|Macarrones de codo|Makaron kolanka|Макарони-ріжки|弯管面
+Instantnudeln|Instant noodles|Лапша быстрого приготовления|Noodles instantâneos|Instantnoedels|Nouilles instantanées|Noodles istantanei|Fideos instantáneos|Zupka chińska|Локшина швидкого приготування|方便面
+Konjaknudeln|Konjac noodles|Лапша конняку|Massa de konjac|Konjacnoedels|Nouilles konjac|Noodles di konjac|Fideos de konjac|Makaron konjac|Локшина конняку|魔芋面
+Kritharaki|Kritharaki|Критараки|Kritharaki|Kritharaki|Kritharaki|Kritharaki|Kritharaki|Kritharaki|Крітараки|希腊米形面
+Lasagne|Lasagne|Лазанья|Lasanha|Lasagne|Lasagne|Lasagne|Lasaña|Lasagne|Лазанья|千层面
+Lasagneplatten|Lasagne sheets|Листы для лазаньи|Folhas de lasanha|Lasagnebladen|Feuilles de lasagne|Sfoglie di lasagne|Láminas de lasaña|Płaty lasagne|Листи для лазаньї|千层面皮
+Linguine|Linguine|Лингвини|Linguine|Linguine|Linguine|Linguine|Linguine|Linguine|Лінгвіні|扁细面
+Maccheroni|Maccheroni|Маккерони|Macarrão|Maccheroni|Maccheroni|Maccheroni|Macarrones|Maccheroni|Макерони|通心粉
+Mafaldine|Mafaldine|Мафальдине|Mafaldine|Mafaldine|Mafaldine|Mafaldine|Mafaldine|Mafaldine|Мафальдіне|波浪宽面
+Makkaroni|Macaroni|Макароны|Macarrão|Macaroni|Macaronis|Maccheroni|Macarrones|Makaron rurki|Макарони|通心面
+Mezze Maniche|Mezze maniche|Меццо манике|Mezze maniche|Mezze maniche|Mezze maniche|Mezze maniche|Mezze maniche|Mezze maniche|Мецце маніке|半袖管面
+Mezze Penne|Mezze penne|Меццо пенне|Mezze penne|Mezze penne|Mezze penne|Mezze penne|Mezze penne|Mezze penne|Мецце пенне|小笔管面
+Mie-Nudeln|Mie noodles|Лапша ми|Noodles mie|Mie-noedels|Nouilles mie|Noodles mie|Fideos mie|Makaron mie|Локшина мі|米面
+Muschelnudeln|Shell pasta|Макароны-ракушки|Massa conchas|Schelpenpasta|Pâtes coquillages|Pasta a conchiglia|Pasta de conchas|Makaron muszelki|Макарони-мушлі|贝壳形意面
+Nudeln|Pasta|Макароны|Massa|Pasta|Pâtes|Pasta|Pasta|Makaron|Макарони|面条
+Orecchiette|Orecchiette|Орекьетте|Orecchiette|Orecchiette|Orecchiette|Orecchiette|Orecchiette|Orecchiette|Орекк'єте|猫耳朵面
+Orzo|Orzo|Орцо|Orzo|Orzo|Orzo|Orzo|Orzo|Orzo|Орцо|米粒面
+Paccheri|Paccheri|Пакери|Paccheri|Paccheri|Paccheri|Paccheri|Paccheri|Paccheri|Пакері|大管面
+Pappardelle|Pappardelle|Паппарделле|Pappardelle|Pappardelle|Pappardelle|Pappardelle|Pappardelle|Pappardelle|Паппарделле|宽带面条
+Pasta|Pasta|Паста|Massa|Pasta|Pâtes|Pasta|Pasta|Makaron|Паста|意大利面
+Penne|Penne|Пенне|Penne|Penne|Penne|Penne|Penne|Penne|Пенне|笔管面
+Penne Rigate|Penne rigate|Пенне ригате|Penne rigate|Penne rigate|Penne rigate|Penne rigate|Penne rigate|Penne rigate|Пенне рігате|条纹笔管面
+Pipe Rigate|Pipe rigate|Пипе ригате|Pipe rigate|Pipe rigate|Pipe rigate|Pipe rigate|Pipe rigate|Pipe rigate|Піпе рігате|条纹弯管面
+Radiatori|Radiatori|Радиаторе|Radiatori|Radiatori|Radiatori|Radiatori|Radiatori|Radiatori|Радіаторі|散热器面
+Ramen-Nudeln|Ramen noodles|Лапша рамен|Noodles ramen|Ramennoedels|Nouilles ramen|Noodles ramen|Fideos ramen|Makaron ramen|Локшина рамен|拉面
+Ravioli|Ravioli|Равиоли|Ravioli|Ravioli|Raviolis|Ravioli|Raviolis|Pierożki ravioli|Равіолі|意式馄饨
+Reisnudeln|Rice noodles|Рисовая лапша|Massa de arroz|Rijstnoedels|Nouilles de riz|Noodles di riso|Fideos de arroz|Makaron ryżowy|Рисова локшина|米粉
+Rigatoni|Rigatoni|Ригатони|Rigatoni|Rigatoni|Rigatoni|Rigatoni|Rigatoni|Rigatoni|Ріґатоні|粗通心粉
+Risoni|Risoni|Ризони|Risoni|Risoni|Risoni|Risoni|Risoni|Risoni|Різоні|米形意面
+Rotelle|Rotelle|Ротелле|Rotelle|Rotelle|Rotelle|Rotelle|Rotelle|Rotelle|Ротелле|车轮面
+Schupfnudeln|Potato noodles|Картофельные клёцки|Massa de batata|Aardappelnoedels|Nouilles de pomme de terre|Gnocchi di patate a bastoncino|Fideos de patata|Kopytka wałkowane|Картопляні ньокі-палички|土豆条面
+Sedanini|Sedanini|Седанини|Sedanini|Sedanini|Sedanini|Sedanini|Sedanini|Sedanini|Седаніні|小芹菜管面
+Soba-Nudeln|Soba noodles|Лапша соба|Noodles soba|Sobanoedels|Nouilles soba|Noodles soba|Fideos soba|Makaron soba|Локшина соба|荞麦面
+Spaghetti|Spaghetti|Спагетти|Esparguete|Spaghetti|Spaghettis|Spaghetti|Espaguetis|Spaghetti|Спагеті|意大利细面条
+Spaghettini|Spaghettini|Спагеттини|Spaghettini|Spaghettini|Spaghettini|Spaghettini|Spaghettini|Spaghettini|Спагеттіні|细意面
+Spirelli|Spirelli|Спиреллы|Spirelli|Spirelli|Spirelli|Spirelli|Spirelli|Spirelli|Спіреллі|螺旋形面
+Spätzle|Spaetzle|Шпецле|Spätzle|Spätzle|Spätzle|Spätzle|Spätzle|Spätzle|Шпецле|德式面疙瘩
+Stelline|Stelline|Стеллине|Stelline|Stelline|Stelline|Stelline|Stelline|Stelline|Стеллін|小星星面
+Suppennudeln|Soup noodles|Лапша для супа|Massa para sopa|Soepvermicelli|Pâtes à potage|Pastina per brodo|Fideos para sopa|Makaron do zupy|Локшина для супу|汤面
+Süßkartoffelnudeln|Sweet potato noodles|Лапша из батата|Noodles de batata-doce|Zoete-aardappelnoedels|Nouilles de patate douce|Noodles di patata dolce|Fideos de boniato|Makaron ze słodkich ziemniaków|Локшина з батату|红薯粉丝
+Tagliatelle|Tagliatelle|Тальятелле|Tagliatelle|Tagliatelle|Tagliatelles|Tagliatelle|Tagliatelle|Tagliatelle|Тальятелле|宽面条
+Tortellini|Tortellini|Тортеллини|Tortellini|Tortellini|Tortellinis|Tortellini|Tortellini|Tortellini|Тортелліні|意式饺子
+Tortiglioni|Tortiglioni|Тортильони|Tortiglioni|Tortiglioni|Tortiglioni|Tortiglioni|Tortiglioni|Tortiglioni|Тортільйоні|螺纹通心粉
+Trofie|Trofie|Трофье|Trofie|Trofie|Trofie|Trofie|Trofie|Trofie|Трофіє|螺旋小卷面
+Udon-Nudeln|Udon noodles|Лапша удон|Noodles udon|Udonnoedels|Nouilles udon|Noodles udon|Fideos udon|Makaron udon|Локшина удон|乌冬面
+Vermicelli|Vermicelli|Вермишель|Aletria|Vermicelli|Vermicelles|Vermicelli|Fideos finos|Vermicelli|Вермішель|细面
+Vermicelli Reisnudeln|Rice vermicelli|Рисовая вермишель|Aletria de arroz|Rijstvermicelli|Vermicelles de riz|Vermicelli di riso|Vermicelli de arroz|Makaron ryżowy nitki|Рисова вермішель|细米粉
+Vollkornnudeln|Wholewheat pasta|Цельнозерновые макароны|Massa integral|Volkorenpasta|Pâtes complètes|Pasta integrale|Pasta integral|Makaron pełnoziarnisty|Цільнозернові макарони|全麦面
+Woknudeln|Wok noodles|Лапша для вока|Noodles para wok|Woknoedels|Nouilles sautées|Noodles per wok|Fideos para wok|Makaron do woka|Локшина для воку|炒面

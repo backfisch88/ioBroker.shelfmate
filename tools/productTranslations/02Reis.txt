@@ -1,0 +1,70 @@
+Adzukibohnen|Adzuki beans|Фасоль адзуки|Feijão azuki|Adukiboontjes|Haricots azuki|Fagioli azuki|Alubias azuki|Fasola adzuki|Квасоля адзукі|红豆
+Amaranth|Amaranth|Амарант|Amaranto|Amarant|Amarante|Amaranto|Amaranto|Amarantus|Амарант|苋米
+Arborioreis|Arborio rice|Рис арборио|Arroz arbóreo|Arboriorijst|Riz arborio|Riso Arborio|Arroz arborio|Ryż arborio|Рис арборіо|阿伯里奥米
+Basmatireis|Basmati rice|Рис басмати|Arroz basmati|Basmatirijst|Riz basmati|Riso basmati|Arroz basmati|Ryż basmati|Рис басматі|印度香米
+Belugalinsen|Beluga lentils|Чечевица белуга|Lentilhas beluga|Belugalinzen|Lentilles beluga|Lenticchie beluga|Lentejas beluga|Soczewica beluga|Сочевиця белуга|黑扁豆
+Berglinsen|Mountain lentils|Горная чечевица|Lentilhas de montanha|Berglinzen|Lentilles de montagne|Lenticchie di montagna|Lentejas de montaña|Soczewica górska|Гірська сочевиця|山地扁豆
+Braune Linsen|Brown lentils|Коричневая чечевица|Lentilhas castanhas|Bruine linzen|Lentilles brunes|Lenticchie marroni|Lentejas pardinas|Brązowa soczewica|Коричнева сочевиця|棕扁豆
+Bruchreis|Broken rice|Дроблёный рис|Arroz quebrado|Gebroken rijst|Riz brisé|Riso spezzato|Arroz partido|Ryż łamany|Дроблений рис|碎米
+Buchweizen|Buckwheat|Гречка|Trigo-sarraceno|Boekweit|Sarrasin|Grano saraceno|Trigo sarraceno|Kasza gryczana|Гречка|荞麦
+Bulgur|Bulgur|Булгур|Bulgur|Bulgur|Boulgour|Bulgur|Bulgur|Bulgur|Булгур|碾碎小麦
+Carnarolireis|Carnaroli rice|Рис карнароли|Arroz carnaroli|Carnarolirijst|Riz carnaroli|Riso Carnaroli|Arroz carnaroli|Ryż carnaroli|Рис карнароли|卡纳罗利米
+Couscous|Couscous|Кускус|Cuscuz|Couscous|Couscous|Cous cous|Cuscús|Kuskus|Кус-кус|库斯库斯
+Dinkelflocken|Spelt flakes|Хлопья из спельты|Flocos de espelta|Speltvlokken|Flocons d'épeautre|Fiocchi di farro|Copos de espelta|Płatki orkiszowe|Пластівці зі спельти|斯佩尔特麦片
+Dinkelkörner|Spelt grains|Зёрна спельты|Grãos de espelta|Speltkorrels|Grains d'épeautre|Chicchi di farro|Granos de espelta|Ziarna orkiszu|Зерна спельти|斯佩尔特麦粒
+Ebly|Ebly wheat|Пшеница Эбли|Trigo Ebly|Ebly-tarwe|Blé Ebly|Grano Ebly|Trigo Ebly|Pszenica Ebly|Пшениця Ебли|艾布利小麦
+Falafelmischung|Falafel mix|Смесь для фалафеля|Mistura para falafel|Falafelmix|Préparation pour falafels|Mix per falafel|Mezcla para falafel|Mieszanka na falafel|Суміш для фалафеля|沙拉三明治粉
+Gelbe Linsen|Yellow lentils|Жёлтая чечевица|Lentilhas amarelas|Gele linzen|Lentilles jaunes|Lenticchie gialle|Lentejas amarillas|Żółta soczewica|Жовта сочевиця|黄扁豆
+Gerstengraupen|Pearl barley|Перловая крупа|Cevada perolada|Gerstegort|Orge perlé|Orzo perlato|Cebada perlada|Kasza jęczmienna|Перлова крупа|大麦米
+Getrocknete Bohnen|Dried beans|Сушёная фасоль|Feijão seco|Gedroogde bonen|Haricots secs|Fagioli secchi|Alubias secas|Suszona fasola|Суха квасоля|干豆
+Getrocknete Erbsen|Dried peas|Сушёный горох|Ervilhas secas|Gedroogde erwten|Pois secs|Piselli secchi|Guisantes secos|Suszony groch|Сухий горох|干豌豆
+Graupen|Barley groats|Ячневая крупа|Cevada|Gort|Orge mondé|Orzo|Cebada|Kasza jęczmienna|Ячмінна крупа|大麦粒
+Grieß|Semolina|Манная крупа|Sêmola|Griesmeel|Semoule|Semolino|Sémola|Kasza manna|Манна крупа|粗粒小麦粉
+Grüne Linsen|Green lentils|Зелёная чечевица|Lentilhas verdes|Groene linzen|Lentilles vertes|Lenticchie verdi|Lentejas verdes|Zielona soczewica|Зелена сочевиця|绿扁豆
+Haferflocken|Rolled oats|Овсяные хлопья|Flocos de aveia|Havervlokken|Flocons d'avoine|Fiocchi d'avena|Copos de avena|Płatki owsiane|Вівсяні пластівці|燕麦片
+Haferkleie|Oat bran|Овсяные отруби|Farelo de aveia|Haverzemelen|Son d'avoine|Crusca d'avena|Salvado de avena|Otręby owsiane|Вівсяні висівки|燕麦麸
+Haferkörner|Oat groats|Овсяная крупа|Grãos de aveia|Haverkorrels|Grains d'avoine|Chicchi d'avena|Granos de avena|Ziarna owsa|Вівсяна крупа|燕麦粒
+Hartweizengrieß|Durum semolina|Манка из твёрдой пшеницы|Sêmola de trigo duro|Harde-tarwegriesmeel|Semoule de blé dur|Semola di grano duro|Sémola de trigo duro|Semolina z pszenicy durum|Манка з твердої пшениці|硬粒小麦粗粉
+Hirse|Millet|Пшено|Milho-miúdo|Gierst|Millet|Miglio|Mijo|Proso|Пшоно|小米
+Jasminreis|Jasmine rice|Жасминовый рис|Arroz de jasmim|Jasmijnrijst|Riz jasmin|Riso jasmine|Arroz jazmín|Ryż jaśminowy|Жасминовий рис|茉莉香米
+Kernige Haferflocken|Hearty rolled oats|Крупные овсяные хлопья|Flocos de aveia grossos|Grove havervlokken|Gros flocons d'avoine|Fiocchi d'avena grossi|Copos de avena gruesos|Płatki owsiane górskie|Великі вівсяні пластівці|粗燕麦片
+Kichererbsen|Chickpeas|Нут|Grão-de-bico|Kikkererwten|Pois chiches|Ceci|Garbanzos|Ciecierzyca|Нут|鹰嘴豆
+Kidneybohnen|Kidney beans|Красная фасоль|Feijão vermelho|Kidneybonen|Haricots rouges|Fagioli rossi|Alubias rojas|Czerwona fasola|Червона квасоля|芸豆
+Klebreis|Sticky rice|Клейкий рис|Arroz glutinoso|Kleefrijst|Riz gluant|Riso glutinoso|Arroz glutinoso|Ryż kleisty|Клейкий рис|糯米
+Langkornreis|Long-grain rice|Длиннозёрный рис|Arroz de grão longo|Langkorrelrijst|Riz long grain|Riso a chicco lungo|Arroz de grano largo|Ryż długoziarnisty|Довгозерний рис|长粒米
+Linsen|Lentils|Чечевица|Lentilhas|Linzen|Lentilles|Lenticchie|Lentejas|Soczewica|Сочевиця|扁豆
+Lupinen|Lupins|Люпин|Tremoços|Lupine|Lupins|Lupini|Altramuces|Łubin|Люпин|羽扇豆
+Maisgrieß|Cornmeal|Кукурузная крупа|Sêmola de milho|Maisgries|Semoule de maïs|Semola di mais|Sémola de maíz|Kasza kukurydziana|Кукурудзяна крупа|玉米粗粉
+Milchreis|Pudding rice|Рис для молочной каши|Arroz-doce|Pudding-rijst|Riz au lait|Riso per budino|Arroz con leche|Ryż na mleczną zupę|Рис для молочної каші|奶米
+Mungbohnen|Mung beans|Маш|Feijão-mungo|Mungbonen|Haricots mungo|Fagioli mung|Frijoles mungo|Fasola mung|Маш|绿豆
+Naturreis|Brown rice|Бурый рис|Arroz integral|Zilvervliesrijst|Riz complet|Riso integrale|Arroz integral|Ryż brązowy|Бурий рис|糙米
+Parboiled-Reis|Parboiled rice|Пропаренный рис|Arroz parboilizado|Parboiled rijst|Riz étuvé|Riso parboiled|Arroz vaporizado|Ryż parboiled|Пропарений рис|蒸谷米
+Perlgraupen|Pearl barley|Перловая крупа|Cevada perolada|Parelgort|Orge perlé|Orzo perlato|Cebada perlada|Kasza perłowa|Перлова крупа|珍珠大麦
+Pintobohnen|Pinto beans|Фасоль пинто|Feijão-pinto|Pintobonen|Haricots pinto|Fagioli pinto|Frijoles pintos|Fasola pinto|Квасоля пінто|斑豆
+Polenta|Polenta|Полента|Polenta|Polenta|Polenta|Polenta|Polenta|Polenta|Полента|玉米糊
+Porridge|Porridge|Овсянка|Papas de aveia|Havermout|Porridge|Porridge|Gachas de avena|Owsianka|Вівсяна каша|燕麦粥
+Puy-Linsen|Puy lentils|Чечевица пюи|Lentilhas de Puy|Puy-linzen|Lentilles du Puy|Lenticchie di Puy|Lentejas de Puy|Soczewica puy|Сочевиця пюї|普伊扁豆
+Quinoa|Quinoa|Киноа|Quinoa|Quinoa|Quinoa|Quinoa|Quinoa|Komosa ryżowa|Кіноа|藜麦
+Reis|Rice|Рис|Arroz|Rijst|Riz|Riso|Arroz|Ryż|Рис|大米
+Reisflocken|Rice flakes|Рисовые хлопья|Flocos de arroz|Rijstvlokken|Flocons de riz|Fiocchi di riso|Copos de arroz|Płatki ryżowe|Рисові пластівці|米片
+Risottoreis|Risotto rice|Рис для ризотто|Arroz para risoto|Risottorijst|Riz à risotto|Riso per risotto|Arroz para risotto|Ryż do risotto|Рис для різото|烩饭米
+Roggenkörner|Rye grains|Зёрна ржи|Grãos de centeio|Roggekorrels|Grains de seigle|Chicchi di segale|Granos de centeno|Ziarna żyta|Зерна жита|黑麦粒
+Rote Linsen|Red lentils|Красная чечевица|Lentilhas vermelhas|Rode linzen|Lentilles corail|Lenticchie rosse|Lentejas rojas|Czerwona soczewica|Червона сочевиця|红扁豆
+Rote Quinoa|Red quinoa|Красная киноа|Quinoa vermelha|Rode quinoa|Quinoa rouge|Quinoa rossa|Quinoa roja|Czerwona komosa ryżowa|Червона кіноа|红藜麦
+Roter Reis|Red rice|Красный рис|Arroz vermelho|Rode rijst|Riz rouge|Riso rosso|Arroz rojo|Czerwony ryż|Червоний рис|红米
+Rundkornreis|Round-grain rice|Круглозёрный рис|Arroz de grão redondo|Rondkorrelrijst|Riz rond|Riso a chicco tondo|Arroz de grano redondo|Ryż okrągłoziarnisty|Круглозерний рис|圆粒米
+Schwarze Bohnen|Black beans|Чёрная фасоль|Feijão-preto|Zwarte bonen|Haricots noirs|Fagioli neri|Frijoles negros|Czarna fasola|Чорна квасоля|黑豆
+Schwarzer Reis|Black rice|Чёрный рис|Arroz preto|Zwarte rijst|Riz noir|Riso nero|Arroz negro|Czarny ryż|Чорний рис|黑米
+Schälerbsen|Split peas|Колотый горох|Ervilhas partidas|Spliterwten|Pois cassés|Piselli spezzati|Guisantes partidos|Groch łuskany|Лущений горох|去皮豌豆
+Sojabohnen|Soybeans|Соевые бобы|Soja em grão|Sojabonen|Fèves de soja|Fagioli di soia|Soja en grano|Ziarna soi|Соєві боби|黄豆
+Sushi-Reis|Sushi rice|Рис для суши|Arroz para sushi|Sushirijst|Riz à sushi|Riso per sushi|Arroz para sushi|Ryż do sushi|Рис для суші|寿司米
+Tellerlinsen|Brown lentils|Тарелочная чечевица|Lentilhas grandes|Bordlinzen|Grosses lentilles brunes|Lenticchie grandi|Lentejas grandes|Duża soczewica|Велика сочевиця|大扁豆
+Vollkorncouscous|Wholewheat couscous|Цельнозерновой кускус|Cuscuz integral|Volkorencouscous|Couscous complet|Cous cous integrale|Cuscús integral|Kuskus pełnoziarnisty|Цільнозерновий кус-кус|全麦库斯库斯
+Vollkornreis|Wholegrain rice|Цельнозерновой рис|Arroz integral|Volkorenrijst|Riz complet|Riso integrale|Arroz integral|Ryż pełnoziarnisty|Цільнозерновий рис|全谷米
+Weichweizengrieß|Soft wheat semolina|Манка из мягкой пшеницы|Sêmola de trigo mole|Zachte-tarwegriesmeel|Semoule de blé tendre|Semolino di grano tenero|Sémola de trigo blando|Kasza manna z pszenicy miękkiej|Манка з м'якої пшениці|软质小麦粗粉
+Weizenkleie|Wheat bran|Пшеничные отруби|Farelo de trigo|Tarwezemelen|Son de blé|Crusca di frumento|Salvado de trigo|Otręby pszenne|Пшеничні висівки|小麦麸
+Weizenkörner|Wheat grains|Зёрна пшеницы|Grãos de trigo|Tarwekorrels|Grains de blé|Chicchi di frumento|Granos de trigo|Ziarna pszenicy|Зерна пшениці|小麦粒
+Weiße Bohnen|White beans|Белая фасоль|Feijão-branco|Witte bonen|Haricots blancs|Fagioli bianchi|Alubias blancas|Biała fasola|Біла квасоля|白豆
+Wildreis|Wild rice|Дикий рис|Arroz selvagem|Wilde rijst|Riz sauvage|Riso selvatico|Arroz salvaje|Dziki ryż|Дикий рис|野米
+Zarte Haferflocken|Fine rolled oats|Мелкие овсяные хлопья|Flocos de aveia finos|Fijne havervlokken|Flocons d'avoine fins|Fiocchi d'avena fini|Copos de avena finos|Płatki owsiane błyskawiczne|Дрібні вівсяні пластівці|细燕麦片
+Zartweizen|Tender wheat|Пшеница быстрого приготовления|Trigo tenro|Tarwekorrels|Blé tendre|Grano tenero|Trigo tierno|Pszenica ekspresowa|Пшениця швидкого приготування|嫩小麦

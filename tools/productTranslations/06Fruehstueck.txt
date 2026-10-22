@@ -1,0 +1,69 @@
+Agavendicksaft|Agave syrup|Сироп агавы|Xarope de agave|Agavesiroop|Sirop d'agave|Sciroppo d'agave|Sirope de agave|Syrop z agawy|Сироп агави|龙舌兰糖浆
+Ahornsirup|Maple syrup|Кленовый сироп|Xarope de ácer|Ahornsiroop|Sirop d'érable|Sciroppo d'acero|Sirope de arce|Syrop klonowy|Кленовий сироп|枫糖浆
+Aprikosenmarmelade|Apricot jam|Абрикосовый джем|Doce de alperce|Abrikozenjam|Confiture d'abricots|Marmellata di albicocche|Mermelada de albaricoque|Dżem morelowy|Абрикосовий джем|杏子酱
+Aufbackbrötchen|Bake-off rolls|Булочки для допекания|Pãezinhos para cozer|Afbakbroodjes|Petits pains à cuire|Panini da cuocere|Panecillos para hornear|Bułki do dopieczenia|Булочки для допікання|待烤小面包
+Bagel|Bagel|Бейгл|Bagel|Bagel|Bagel|Bagel|Bagel|Bajgiel|Беґель|贝果
+Baguette|Baguette|Багет|Baguete|Stokbrood|Baguette|Baguette|Baguette|Bagietka|Багет|法棍面包
+Basismüsli|Basic muesli|Базовое мюсли|Muesli base|Basismuesli|Muesli nature|Muesli base|Muesli básico|Musli podstawowe|Базове мюслі|基础穆斯里
+Bauernbrot|Farmhouse bread|Деревенский хлеб|Pão rústico|Boerenbrood|Pain de campagne|Pane rustico|Pan de campo|Chleb wiejski|Селянський хліб|农家面包
+Brötchen|Bread rolls|Булочки|Pãezinhos|Broodjes|Petits pains|Panini|Panecillos|Bułki|Булочки|小面包
+Burgerbrötchen|Burger buns|Булочки для бургеров|Pães de hambúrguer|Hamburgerbroodjes|Pains à burger|Panini per hamburger|Panes de hamburguesa|Bułki do burgerów|Булочки для бургерів|汉堡面包
+Cashewmus|Cashew butter|Паста из кешью|Pasta de caju|Cashewpasta|Purée de noix de cajou|Crema di anacardi|Crema de anacardos|Pasta z orzechów nerkowca|Паста з кеш'ю|腰果酱
+Ciabatta|Ciabatta|Чиабатта|Ciabatta|Ciabatta|Ciabatta|Ciabatta|Chapata|Ciabatta|Чіабатта|恰巴塔面包
+Cornflakes|Cornflakes|Кукурузные хлопья|Cornflakes|Cornflakes|Corn flakes|Corn flakes|Copos de maíz|Płatki kukurydziane|Кукурудзяні пластівці|玉米片
+Croissant|Croissant|Круассан|Croissant|Croissant|Croissant|Cornetto|Cruasán|Rogalik|Круасан|羊角面包
+Dinkelbrot|Spelt bread|Спельтовый хлеб|Pão de espelta|Speltbrood|Pain d'épeautre|Pane di farro|Pan de espelta|Chleb orkiszowy|Спельтовий хліб|斯佩尔特面包
+English Muffins|English muffins|Английские маффины|Muffins ingleses|Engelse muffins|Muffins anglais|Muffin inglesi|Muffins ingleses|Muffinki angielskie|Англійські маффіни|英式松饼
+Erdbeermarmelade|Strawberry jam|Клубничный джем|Doce de morango|Aardbeienjam|Confiture de fraises|Marmellata di fragole|Mermelada de fresa|Dżem truskawkowy|Полуничний джем|草莓酱
+Erdnussbutter|Peanut butter|Арахисовая паста|Manteiga de amendoim|Pindakaas|Beurre de cacahuète|Burro di arachidi|Mantequilla de cacahuete|Masło orzechowe|Арахісове масло|花生酱
+Erdnusscreme|Peanut cream|Арахисовый крем|Creme de amendoim|Pindacrème|Crème de cacahuète|Crema di arachidi|Crema de cacahuete|Krem orzechowy|Арахісовий крем|花生奶油酱
+Fladenbrot|Flatbread|Лепёшка|Pão sírio|Platbrood|Pain plat|Pane piatto|Pan plano|Chleb płaski|Лепешка|扁面包
+Fruchtaufstrich|Fruit spread|Фруктовый джем|Doce de fruta|Fruitspread|Pâte à tartiner aux fruits|Confettura di frutta|Mermelada de fruta|Przecier owocowy|Фруктовий джем|水果酱
+Fruchtriegel|Fruit bar|Фруктовый батончик|Barra de fruta|Fruitreep|Barre de fruits|Barretta alla frutta|Barrita de fruta|Baton owocowy|Фруктовий батончик|水果棒
+Früchtemüsli|Fruit muesli|Фруктовое мюсли|Muesli de frutas|Fruitmuesli|Muesli aux fruits|Muesli alla frutta|Muesli de frutas|Musli owocowe|Фруктове мюслі|水果穆斯里
+Frühstückscerealien|Breakfast cereals|Сухие завтраки|Cereais de pequeno-almoço|Ontbijtgranen|Céréales du petit-déjeuner|Cereali per la colazione|Cereales de desayuno|Płatki śniadaniowe|Сухі сніданки|早餐麦片
+Gelee|Jelly|Желе|Geleia|Gelei|Gelée|Gelatina|Jalea|Galaretka|Желе|果冻
+Granola|Granola|Гранола|Granola|Granola|Granola|Granola|Granola|Granola|Гранола|格兰诺拉麦片
+Haferbrei|Oatmeal porridge|Овсяная каша|Papas de aveia|Havermoutpap|Bouillie d'avoine|Porridge d'avena|Gachas de avena|Owsianka|Вівсяна каша|燕麦粥糊
+Haselnussmus|Hazelnut butter|Паста из фундука|Pasta de avelã|Hazelnootpasta|Purée de noisettes|Crema di nocciole|Crema de avellanas|Pasta z orzechów laskowych|Паста з фундука|榛子酱
+Himbeermarmelade|Raspberry jam|Малиновый джем|Doce de framboesa|Frambozenjam|Confiture de framboises|Marmellata di lamponi|Mermelada de frambuesa|Dżem malinowy|Малиновий джем|覆盆子酱
+Honig|Honey|Мёд|Mel|Honing|Miel|Miele|Miel|Miód|Мед|蜂蜜
+Honigpops|Honey pops|Медовые шарики|Bolinhas de mel|Honingballetjes|Boules au miel|Palline al miele|Bolitas de miel|Miodowe kulki|Медові кульки|蜂蜜脆球
+Hotdogbrötchen|Hot dog buns|Булочки для хот-догов|Pães de cachorro-quente|Hotdogbroodjes|Pains à hot-dog|Panini per hot dog|Panes de perrito caliente|Bułki do hot dogów|Булочки для хот-догів|热狗面包
+Kirschmarmelade|Cherry jam|Вишнёвый джем|Doce de cereja|Kersenjam|Confiture de cerises|Marmellata di ciliegie|Mermelada de cereza|Dżem wiśniowy|Вишневий джем|樱桃酱
+Knuspermüsli|Crunchy muesli|Хрустящее мюсли|Muesli crocante|Knapperig muesli|Muesli croustillant|Muesli croccante|Muesli crujiente|Musli chrupiące|Хрумке мюслі|脆麦片
+Knäckebrot|Crispbread|Хлебцы|Pão estaladiço|Knäckebröd|Pain croustillant|Pane croccante|Pan crujiente|Pieczywo chrupkie|Хлібці|脆面包片
+Konfitüre|Jam|Конфитюр|Compota|Jam|Confiture|Confettura|Mermelada|Konfitura|Конфітюр|果酱
+Laugenbrezel|Pretzel|Крендель|Pretzel|Pretzel|Bretzel|Brezel|Pretzel|Precel|Крендель|碱水结
+Laugenstange|Lye roll|Булочка с щёлочью|Pão de soda|Zoutstengel|Bâtonnet de bretzel|Bastoncino di pasta lievitata|Palito de pretzel|Paluszek pretzlowy|Паличка з лугом|碱水条
+Maistortillas|Corn tortillas|Кукурузные тортильи|Tortilhas de milho|Maistortilla's|Tortillas de maïs|Tortillas di mais|Tortillas de maíz|Tortille kukurydziane|Кукурудзяні тортільї|玉米薄饼
+Maiswaffeln|Corn cakes|Кукурузные хлебцы|Bolachas de milho|Maiswafels|Galettes de maïs|Gallette di mais|Tortitas de maíz|Wafle kukurydziane|Кукурудзяні хлібці|玉米饼
+Mandelmus|Almond butter|Миндальная паста|Pasta de amêndoa|Amandelpasta|Purée d'amandes|Crema di mandorle|Crema de almendras|Pasta migdałowa|Мигдальна паста|杏仁酱
+Marmelade|Marmalade|Мармелад|Marmelada|Marmelade|Marmelade|Marmellata|Mermelada|Marmolada|Мармелад|果酱
+Mischbrot|Mixed grain bread|Смешанный хлеб|Pão misto|Gemengd brood|Pain mixte|Pane misto|Pan mixto|Chleb mieszany|Змішаний хліб|混合面包
+Müsliriegel|Muesli bar|Мюсли-батончик|Barra de muesli|Mueslireep|Barre de céréales|Barretta ai cereali|Barrita de muesli|Baton musli|Мюслі-батончик|穆斯里棒
+Nuss-Nougat-Creme|Hazelnut chocolate spread|Ореховая шоколадная паста|Creme de avelã e chocolate|Hazelnootchocoladepasta|Pâte à tartiner chocolat-noisette|Crema di nocciole e cioccolato|Crema de avellanas y cacao|Krem orzechowo-czekoladowy|Горіхово-шоколадна паста|榛子巧克力酱
+Nussmüsli|Nut muesli|Ореховое мюсли|Muesli de frutos secos|Notenmuesli|Muesli aux noix|Muesli alle noci|Muesli de frutos secos|Musli orzechowe|Горіхове мюслі|坚果穆斯里
+Pflaumenmus|Plum butter|Сливовое повидло|Doce de ameixa|Pruimenmoes|Compote de prunes|Composta di prugne|Compota de ciruela|Powidła śliwkowe|Сливове повидло|李子酱
+Pita|Pitta bread|Пита|Pão pita|Pitabrood|Pain pita|Pane pita|Pan de pita|Pita|Піта|皮塔饼
+Proteinriegel|Protein bar|Протеиновый батончик|Barra de proteína|Proteïnereep|Barre protéinée|Barretta proteica|Barrita de proteínas|Baton proteinowy|Протеїновий батончик|蛋白棒
+Pumpernickel|Pumpernickel|Пумперникель|Pumpernickel|Pompernikkel|Pumpernickel|Pumpernickel|Pumpernickel|Pumpernikiel|Пумперніккель|黑麦黑面包
+Reissirup|Rice syrup|Рисовый сироп|Xarope de arroz|Rijstsiroop|Sirop de riz|Sciroppo di riso|Sirope de arroz|Syrop ryżowy|Рисовий сироп|米糖浆
+Reiswaffeln|Rice cakes|Рисовые хлебцы|Bolachas de arroz|Rijstwafels|Galettes de riz|Gallette di riso|Tortitas de arroz|Wafle ryżowe|Рисові хлібці|米饼
+Roggenbrot|Rye bread|Ржаной хлеб|Pão de centeio|Roggebrood|Pain de seigle|Pane di segale|Pan de centeno|Chleb żytni|Житній хліб|黑麦面包
+Sandwichtoast|Sandwich bread|Тостовый хлеб|Pão de forma|Sandwichbrood|Pain de mie|Pane in cassetta|Pan de molde|Chleb tostowy|Тостовий хліб|三明治吐司
+Sauerteigbrot|Sourdough bread|Хлеб на закваске|Pão de massa-mãe|Zuurdesembrood|Pain au levain|Pane a lievitazione naturale|Pan de masa madre|Chleb na zakwasie|Хліб на заквасці|酸面包
+Schokocreme|Chocolate spread|Шоколадная паста|Creme de chocolate|Chocoladepasta|Pâte à tartiner au chocolat|Crema al cioccolato|Crema de chocolate|Krem czekoladowy|Шоколадна паста|巧克力酱
+Schokoflakes|Chocolate flakes|Шоколадные хлопья|Flocos de chocolate|Chocoladevlokken|Flocons de chocolat|Fiocchi di cioccolato|Copos de chocolate|Płatki czekoladowe|Шоколадні пластівці|巧克力片
+Schokomüsli|Chocolate muesli|Шоколадное мюсли|Muesli de chocolate|Chocolademuesli|Muesli au chocolat|Muesli al cioccolato|Muesli de chocolate|Musli czekoladowe|Шоколадне мюслі|巧克力穆斯里
+Schokopops|Chocolate pops|Шоколадные шарики|Bolinhas de chocolate|Chocoladeballetjes|Boules au chocolat|Palline al cioccolato|Bolitas de chocolate|Czekoladowe kulki|Шоколадні кульки|巧克力脆球
+Toastbrot|Toast bread|Хлеб для тостов|Pão de forma|Toastbrood|Pain de mie|Pane per toast|Pan de molde|Chleb tostowy|Хліб для тостів|吐司面包
+Toasties|Toast slices|Тосты|Torradas|Toast|Pain grillé|Fette biscottate|Tostadas|Tosty|Тости|烤面包片
+Tortilla Wraps|Tortilla wraps|Тортилья для роллов|Wraps de tortilha|Tortillawraps|Wraps de tortilla|Wrap di tortilla|Wraps de tortilla|Wrapy tortilla|Тортілья для ролів|玉米卷饼皮
+Vollkornbrot|Wholemeal bread|Цельнозерновой хлеб|Pão integral|Volkorenbrood|Pain complet|Pane integrale|Pan integral|Chleb razowy|Цільнозерновий хліб|全麦面包
+Vollkorntoast|Wholemeal toast|Цельнозерновой тостовый хлеб|Pão de forma integral|Volkorentoast|Pain de mie complet|Pane in cassetta integrale|Pan de molde integral|Chleb tostowy razowy|Цільнозерновий тостовий хліб|全麦吐司
+Weizenpops|Wheat pops|Пшеничные шарики|Bolinhas de trigo|Tarweballetjes|Boules de blé soufflé|Palline di grano soffiato|Bolitas de trigo inflado|Dmuchana pszenica|Пшеничні кульки|小麦脆球
+Weizentortillas|Wheat tortillas|Пшеничные тортильи|Tortilhas de trigo|Tarwetortilla's|Tortillas de blé|Tortillas di grano|Tortillas de trigo|Tortille pszenne|Пшеничні тортільї|小麦薄饼
+Weißbrot|White bread|Белый хлеб|Pão branco|Wit brood|Pain blanc|Pane bianco|Pan blanco|Chleb pszenny|Білий хліб|白面包
+Zuckerrübensirup|Sugar beet syrup|Свекольный сироп|Xarope de beterraba|Suikerbietensiroop|Sirop de betterave|Sciroppo di barbabietola|Sirope de remolacha|Syrop z buraków cukrowych|Буряковий сироп|甜菜糖浆
+Zwieback|Rusk|Сухари|Tostas|Beschuit|Biscotte|Fette biscottate|Biscote|Sucharek|Сухарі|脆饼干

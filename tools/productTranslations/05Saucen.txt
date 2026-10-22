@@ -1,0 +1,162 @@
+Aioli|Aioli|Айоли|Aioli|Aioli|Aïoli|Aioli|Alioli|Aioli|Айолі|蒜泥蛋黄酱
+Anis|Aniseed|Анис|Anis|Anijs|Anis|Anice|Anís|Anyż|Аніс|茴芹
+Apfelessig|Apple cider vinegar|Яблочный уксус|Vinagre de maçã|Appelazijn|Vinaigre de cidre|Aceto di mele|Vinagre de manzana|Ocet jabłkowy|Яблучний оцет|苹果醋
+Austernsauce|Oyster sauce|Устричный соус|Molho de ostras|Oestersaus|Sauce aux huîtres|Salsa di ostriche|Salsa de ostras|Sos ostrygowy|Устричний соус|蚝油
+Avocadoöl|Avocado oil|Масло авокадо|Óleo de abacate|Avocado-olie|Huile d'avocat|Olio di avocado|Aceite de aguacate|Olej awokado|Олія авокадо|牛油果油
+BBQ-Sauce|BBQ sauce|Соус барбекю|Molho barbecue|Barbecuesaus|Sauce barbecue|Salsa barbecue|Salsa barbacoa|Sos BBQ|Соус барбекю|烧烤酱
+Balsamico|Balsamic vinegar|Бальзамический уксус|Vinagre balsâmico|Balsamicoazijn|Vinaigre balsamique|Aceto balsamico|Vinagre balsámico|Ocet balsamiczny|Бальзамічний оцет|意大利黑醋
+Balsamico Bianco|White balsamic vinegar|Белый бальзамический уксус|Vinagre balsâmico branco|Witte balsamicoazijn|Vinaigre balsamique blanc|Aceto balsamico bianco|Vinagre balsámico blanco|Biały ocet balsamiczny|Білий бальзамічний оцет|白香醋
+Balsamico-Dressing|Balsamic dressing|Бальзамическая заправка|Molho de balsâmico|Balsamicodressing|Vinaigrette balsamique|Condimento balsamico|Aliño balsámico|Dressing balsamiczny|Бальзамічна заправка|香醋沙拉酱
+Barbecuesauce|Barbecue sauce|Соус барбекю|Molho barbecue|Barbecuesaus|Sauce barbecue|Salsa barbecue|Salsa barbacoa|Sos barbecue|Соус барбекю|烧烤酱汁
+Basilikum getrocknet|Dried basil|Сушёный базилик|Manjericão seco|Gedroogde basilicum|Basilic séché|Basilico secco|Albahaca seca|Suszona bazylia|Сушений базилік|干罗勒
+Bohnenkraut|Savory|Чабер|Segurelha|Bonenkruid|Sarriette|Santoreggia|Ajedrea|Cząber|Чебрець садовий|风轮菜
+Bolognesesauce|Bolognese sauce|Соус болоньезе|Molho à bolonhesa|Bolognesesaus|Sauce bolognaise|Ragù alla bolognese|Salsa boloñesa|Sos boloński|Соус болоньєзе|肉酱意面酱
+Bouillon|Bouillon|Бульон|Caldo|Bouillon|Bouillon|Brodo|Caldo|Bulion|Бульйон|高汤
+Bratensauce|Gravy|Соус к жаркому|Molho de assado|Jus|Sauce pour rôti|Salsa per arrosto|Salsa para asados|Sos do pieczeni|Соус до печені|烤肉酱汁
+Brathähnchengewürz|Roast chicken seasoning|Приправа для жареной курицы|Tempero para frango assado|Kruiden voor gebraden kip|Épices pour poulet rôti|Spezie per pollo arrosto|Especias para pollo asado|Przyprawa do kurczaka|Приправа для смаженої курки|烤鸡调料
+Cayennepfeffer|Cayenne pepper|Кайенский перец|Pimenta-de-caiena|Cayennepeper|Piment de Cayenne|Pepe di Cayenna|Pimienta de cayena|Pieprz cayenne|Кайенський перець|卡宴辣椒粉
+Chili-con-Carne-Gewürz|Chilli con carne seasoning|Приправа для чили кон карне|Tempero para chili com carne|Kruiden voor chili con carne|Épices pour chili con carne|Spezie per chili con carne|Especias para chili con carne|Przyprawa do chili con carne|Приправа для чилі кон карне|辣椒肉酱调料
+Chiliflocken|Chilli flakes|Хлопья чили|Flocos de piripiri|Chilivlokken|Flocons de piment|Peperoncino in scaglie|Copos de chile|Płatki chili|Пластівці чилі|辣椒片
+Chilipulver|Chilli powder|Молотый перец чили|Piripiri em pó|Chilipoeder|Piment en poudre|Peperoncino in polvere|Chile en polvo|Chili w proszku|Мелений перець чилі|辣椒粉
+Chilisauce|Chilli sauce|Соус чили|Molho de piripiri|Chilisaus|Sauce pimentée|Salsa piccante|Salsa de chile|Sos chili|Соус чилі|辣椒酱
+Curry|Curry|Карри|Caril|Kerrie|Curry|Curry|Curri|Curry|Каррі|咖喱
+Curryketchup|Curry ketchup|Кетчуп карри|Ketchup de caril|Currysaus|Ketchup au curry|Ketchup al curry|Kétchup al curri|Ketchup curry|Кетчуп каррі|咖喱番茄酱
+Currypaste|Curry paste|Паста карри|Pasta de caril|Currypasta|Pâte de curry|Pasta di curry|Pasta de curri|Pasta curry|Паста каррі|咖喱酱
+Currypulver|Curry powder|Порошок карри|Caril em pó|Currypoeder|Poudre de curry|Curry in polvere|Curri en polvo|Curry w proszku|Порошок каррі|咖喱粉
+Currysauce|Curry sauce|Соус карри|Molho de caril|Currysaus|Sauce au curry|Salsa al curry|Salsa de curri|Sos curry|Соус каррі|咖喱酱汁
+Dijon-Senf|Dijon mustard|Дижонская горчица|Mostarda de Dijon|Dijonmosterd|Moutarde de Dijon|Senape di Digione|Mostaza de Dijon|Musztarda dijon|Діжонська гірчиця|第戎芥末
+Dill|Dill|Укроп|Aneto|Dille|Aneth|Aneto|Eneldo|Koperek|Кріп|莳萝
+Distelöl|Safflower oil|Сафлоровое масло|Óleo de cártamo|Saffloerolie|Huile de carthame|Olio di cartamo|Aceite de cártamo|Olej szafranowy|Сафлорова олія|红花籽油
+Dunkle Sojasauce|Dark soy sauce|Тёмный соевый соус|Molho de soja escuro|Donkere sojasaus|Sauce soja foncée|Salsa di soia scura|Salsa de soja oscura|Ciemny sos sojowy|Темний соєвий соус|老抽
+Erdnusssauce|Peanut sauce|Арахисовый соус|Molho de amendoim|Pindasaus|Sauce cacahuète|Salsa di arachidi|Salsa de cacahuete|Sos orzechowy|Арахісовий соус|花生酱汁
+Erdnussöl|Peanut oil|Арахисовое масло|Óleo de amendoim|Pindaolie|Huile d'arachide|Olio di arachidi|Aceite de cacahuete|Olej arachidowy|Арахісова олія|花生油
+Essig|Vinegar|Уксус|Vinagre|Azijn|Vinaigre|Aceto|Vinagre|Ocet|Оцет|醋
+Essig-Öl-Dressing|Vinaigrette|Заправка уксус-масло|Vinagrete|Vinaigrette|Vinaigrette|Vinaigrette|Vinagreta|Winegret|Заправка оцет-олія|油醋汁
+Essigessenz|Vinegar essence|Уксусная эссенция|Essência de vinagre|Azijnessence|Essence de vinaigre|Essenza di aceto|Esencia de vinagre|Esencja octowa|Оцтова есенція|醋精
+Estragon|Tarragon|Эстрагон|Estragão|Dragon|Estragon|Dragoncello|Estragón|Estragon|Естрагон|龙蒿
+Fenchelsamen|Fennel seeds|Семена фенхеля|Sementes de funcho|Venkelzaad|Graines de fenouil|Semi di finocchio|Semillas de hinojo|Nasiona kopru włoskiego|Насіння фенхелю|茴香籽
+Fischsauce|Fish sauce|Рыбный соус|Molho de peixe|Visssaus|Sauce de poisson|Salsa di pesce|Salsa de pescado|Sos rybny|Рибний соус|鱼露
+Fleischbrühe|Beef stock|Мясной бульон|Caldo de carne|Vleesbouillon|Bouillon de viande|Brodo di carne|Caldo de carne|Bulion mięsny|М'ясний бульйон|肉汤
+Fleur de Sel|Fleur de sel|Флёр де сель|Flor de sal|Fleur de sel|Fleur de sel|Fior di sale|Flor de sal|Fleur de sel|Флер де сель|盐之花
+Fond|Stock|Фон|Fundo|Fond|Fond|Fondo|Fondo|Fond|Фон|高汤底
+French-Dressing|French dressing|Французская заправка|Molho francês|Franse dressing|Vinaigrette à la française|Salsa francese|Aliño francés|Dressing francuski|Французька заправка|法式沙拉酱
+Frittieröl|Frying oil|Масло для фритюра|Óleo de fritura|Frituurolie|Huile de friture|Olio per friggere|Aceite para freír|Olej do smażenia|Олія для фритюру|煎炸油
+Garam Masala|Garam masala|Гарам масала|Garam masala|Garam masala|Garam masala|Garam masala|Garam masala|Garam masala|Гарам масала|葛拉姆马萨拉
+Gelbe Currypaste|Yellow curry paste|Жёлтая паста карри|Pasta de caril amarela|Gele currypasta|Pâte de curry jaune|Pasta di curry giallo|Pasta de curri amarillo|Żółta pasta curry|Жовта паста каррі|黄咖喱酱
+Gemüsebrühe|Vegetable stock|Овощной бульон|Caldo de legumes|Groentebouillon|Bouillon de légumes|Brodo vegetale|Caldo de verduras|Bulion warzywny|Овочевий бульйон|蔬菜汤
+Gemüsebrühe Pulver|Vegetable stock powder|Овощной бульон (порошок)|Caldo de legumes em pó|Groentebouillonpoeder|Bouillon de légumes en poudre|Brodo vegetale in polvere|Caldo de verduras en polvo|Bulion warzywny w proszku|Овочевий бульйон (порошок)|蔬菜汤粉
+Gemüsebrühwürfel|Vegetable stock cubes|Овощные бульонные кубики|Cubos de caldo de legumes|Groentebouillonblokjes|Cubes de bouillon de légumes|Dadi vegetali|Cubitos de caldo de verduras|Kostki bulionowe warzywne|Овочеві бульйонні кубики|蔬菜汤块
+Gemüsefond|Vegetable stock base|Овощной фон|Fundo de legumes|Groentefond|Fond de légumes|Fondo vegetale|Fondo de verduras|Fond warzywny|Овочевий фон|蔬菜高汤底
+Grillsauce|Grill sauce|Соус для гриля|Molho para grelhados|Grillsaus|Sauce pour grillades|Salsa per grigliate|Salsa para parrilla|Sos grillowy|Соус для гриля|烧烤用酱
+Grüne Currypaste|Green curry paste|Зелёная паста карри|Pasta de caril verde|Groene currypasta|Pâte de curry vert|Pasta di curry verde|Pasta de curri verde|Zielona pasta curry|Зелена паста каррі|绿咖喱酱
+Guacamole|Guacamole|Гуакамоле|Guacamole|Guacamole|Guacamole|Guacamole|Guacamole|Guacamole|Гуакамоле|鳄梨酱
+Gyrosgewürz|Gyros seasoning|Приправа для гирос|Tempero para gyros|Gyroskruiden|Épices pour gyros|Spezie per gyros|Especias para gyros|Przyprawa do gyrosa|Приправа для гіроса|希腊烤肉调料
+Harissa|Harissa|Харисса|Harissa|Harissa|Harissa|Harissa|Harissa|Harissa|Харіса|哈里萨辣酱
+Hefeflocken|Nutritional yeast flakes|Хлопья пищевых дрожжей|Flocos de levedura nutricional|Gistvlokken|Flocons de levure maltée|Fiocchi di lievito alimentare|Copos de levadura nutricional|Płatki drożdżowe|Пластівці харчових дріжджів|营养酵母片
+Helle Sojasauce|Light soy sauce|Светлый соевый соус|Molho de soja claro|Lichte sojasaus|Sauce soja claire|Salsa di soia chiara|Salsa de soja clara|Jasny sos sojowy|Світлий соєвий соус|生抽
+Hoisinsauce|Hoisin sauce|Соус хойсин|Molho hoisin|Hoisinsaus|Sauce hoisin|Salsa hoisin|Salsa hoisin|Sos hoisin|Соус хойсін|海鲜酱
+Hummus|Hummus|Хумус|Hummus|Hummus|Houmous|Hummus|Hummus|Hummus|Хумус|鹰嘴豆泥
+Hühnerbrühe|Chicken stock|Куриный бульон|Caldo de galinha|Kippenbouillon|Bouillon de poulet|Brodo di pollo|Caldo de pollo|Bulion drobiowy|Курячий бульйон|鸡汤
+Hühnerfond|Chicken stock base|Куриный фон|Fundo de galinha|Kippenfond|Fond de volaille|Fondo di pollo|Fondo de pollo|Fond drobiowy|Курячий фон|鸡高汤底
+Ingwerpulver|Ground ginger|Молотый имбирь|Gengibre em pó|Gemberpoeder|Gingembre en poudre|Zenzero in polvere|Jengibre en polvo|Imbir mielony|Мелений імбир|姜粉
+Italienische Kräuter|Italian herbs|Итальянские травы|Ervas italianas|Italiaanse kruiden|Herbes italiennes|Erbe italiane|Hierbas italianas|Zioła włoskie|Італійські трави|意大利香草
+Jodsalz|Iodised salt|Йодированная соль|Sal iodado|Jodiumzout|Sel iodé|Sale iodato|Sal yodada|Sól jodowana|Йодована сіль|加碘盐
+Joghurt-Dressing|Yoghurt dressing|Йогуртовая заправка|Molho de iogurte|Yoghurtdressing|Sauce au yaourt|Salsa allo yogurt|Aliño de yogur|Dressing jogurtowy|Йогуртова заправка|酸奶沙拉酱
+Jägersauce|Hunter sauce|Соус охотничий|Molho caçador|Jagersaus|Sauce chasseur|Salsa cacciatora|Salsa cazador|Sos myśliwski|Мисливський соус|猎人酱
+Kardamom|Cardamom|Кардамон|Cardamomo|Kardemom|Cardamome|Cardamomo|Cardamomo|Kardamon|Кардамон|小豆蔻
+Ketchup|Ketchup|Кетчуп|Ketchup|Ketchup|Ketchup|Ketchup|Kétchup|Ketchup|Кетчуп|番茄酱
+Knoblauchgranulat|Garlic granules|Гранулированный чеснок|Alho granulado|Knoflookgranulaat|Ail en granulés|Aglio granulare|Ajo granulado|Granulowany czosnek|Гранульований часник|蒜粒
+Knoblauchpulver|Garlic powder|Чесночный порошок|Alho em pó|Knoflookpoeder|Ail en poudre|Aglio in polvere|Ajo en polvo|Czosnek w proszku|Чесночний порошок|蒜粉
+Kokosöl|Coconut oil|Кокосовое масло|Óleo de coco|Kokosolie|Huile de coco|Olio di cocco|Aceite de coco|Olej kokosowy|Кокосова олія|椰子油
+Koriander|Coriander|Кориандр|Coentros|Koriander|Coriandre|Coriandolo|Cilantro|Kolendra|Коріандр|香菜
+Koriander gemahlen|Ground coriander|Молотый кориандр|Coentro em pó|Gemalen koriander|Coriandre moulue|Coriandolo macinato|Cilantro molido|Kolendra mielona|Мелений коріандр|香菜粉
+Kreuzkümmel|Cumin|Зира|Cominhos|Komijn|Cumin|Cumino|Comino|Kmin rzymski|Зіра|孜然
+Kräuter der Provence|Herbes de Provence|Прованские травы|Ervas de Provença|Provençaalse kruiden|Herbes de Provence|Erbe di Provenza|Hierbas provenzales|Zioła prowansalskie|Прованські трави|普罗旺斯香草
+Kurkuma|Turmeric|Куркума|Açafrão-da-índia|Kurkuma|Curcuma|Curcuma|Cúrcuma|Kurkuma|Куркума|姜黄
+Käsesauce|Cheese sauce|Сырный соус|Molho de queijo|Kaassaus|Sauce au fromage|Salsa al formaggio|Salsa de queso|Sos serowy|Сирний соус|芝士酱
+Kümmel|Caraway|Тмин|Cominho-dos-prados|Karwij|Carvi|Cumino dei prati|Alcaravea|Kminek|Кмин|葛缕子
+Kürbiskernöl|Pumpkin seed oil|Масло тыквенных семечек|Óleo de sementes de abóbora|Pompoenpitolie|Huile de pépins de courge|Olio di semi di zucca|Aceite de pepitas de calabaza|Olej z pestek dyni|Олія гарбузового насіння|南瓜籽油
+Lebkuchengewürz|Gingerbread spice|Пряности для пряников|Especiarias de pão de gengibre|Peperkoekkruiden|Épices pour pain d'épices|Spezie per panpepato|Especias para pan de jengibre|Przyprawa do piernika|Прянощі для пряників|姜饼香料
+Leinöl|Linseed oil|Льняное масло|Óleo de linhaça|Lijnzaadolie|Huile de lin|Olio di lino|Aceite de lino|Olej lniany|Лляна олія|亚麻籽油
+Liebstöckel|Lovage|Любисток|Levístico|Lavas|Livèche|Levistico|Apio de monte|Lubczyk|Любисток|圆叶当归
+Limettensaft|Lime juice|Сок лайма|Sumo de lima|Limoensap|Jus de citron vert|Succo di lime|Zumo de lima|Sok z limonki|Сік лайма|青柠汁
+Lorbeerblätter|Bay leaves|Лавровые листья|Folhas de louro|Laurierbladeren|Feuilles de laurier|Foglie di alloro|Hojas de laurel|Liście laurowe|Лаврове листя|月桂叶
+Majoran|Marjoram|Майоран|Manjerona|Marjolein|Marjolaine|Maggiorana|Mejorana|Majeranek|Майоран|马郁兰
+Mayonnaise|Mayonnaise|Майонез|Maionese|Mayonaise|Mayonnaise|Maionese|Mayonesa|Majonez|Майонез|蛋黄酱
+Meerrettich|Horseradish|Хрен|Raiz-forte|Mierikswortel|Raifort|Rafano|Rábano picante|Chrzan|Хрін|辣根
+Meerrettichcreme|Creamed horseradish|Хрен со сливками|Creme de raiz-forte|Mierikswortelcrème|Crème de raifort|Crema di rafano|Crema de rábano picante|Krem chrzanowy|Хрін зі сметаною|奶油辣根
+Meersalz|Sea salt|Морская соль|Sal marinho|Zeezout|Sel de mer|Sale marino|Sal marina|Sól morska|Морська сіль|海盐
+Mittelscharfer Senf|Medium mustard|Умеренно острая горчица|Mostarda média|Middelscherpe mosterd|Moutarde mi-forte|Senape media|Mostaza media|Musztarda średnio ostra|Помірно гостра гірчиця|中辣芥末
+Muskat gemahlen|Ground nutmeg|Молотый мускатный орех|Noz-moscada moída|Gemalen nootmuskaat|Muscade moulue|Noce moscata macinata|Nuez moscada molida|Gałka muszkatołowa mielona|Мелений мускатний горіх|肉豆蔻粉
+Muskatnuss|Nutmeg|Мускатный орех|Noz-moscada|Nootmuskaat|Noix de muscade|Noce moscata|Nuez moscada|Gałka muszkatołowa|Мускатний горіх|肉豆蔻
+Nelken|Cloves|Гвоздика|Cravinho|Kruidnagel|Clous de girofle|Chiodi di garofano|Clavo|Goździki|Гвоздика|丁香
+Nudelsauce|Pasta sauce|Соус для пасты|Molho para massa|Pastasaus|Sauce pour pâtes|Sugo per pasta|Salsa para pasta|Sos do makaronu|Соус для пасти|意面酱
+Olivenöl|Olive oil|Оливковое масло|Azeite|Olijfolie|Huile d'olive|Olio d'oliva|Aceite de oliva|Oliwa z oliwek|Оливкова олія|橄榄油
+Oregano|Oregano|Орегано|Orégãos|Oregano|Origan|Origano|Orégano|Oregano|Орегано|牛至
+Paprika edelsüß|Sweet paprika|Сладкая паприка|Paprica doce|Paprikapoeder zoet|Paprika doux|Paprika dolce|Pimentón dulce|Papryka słodka|Солодка паприка|甜辣椒粉
+Paprika rosenscharf|Hot paprika|Острая паприка|Paprica picante|Paprikapoeder pittig|Paprika fort|Paprika piccante|Pimentón picante|Papryka ostra|Гостра паприка|辣椒粉辛辣
+Paprikapulver|Paprika powder|Молотая паприка|Paprica em pó|Paprikapoeder|Paprika en poudre|Paprika in polvere|Pimentón|Papryka mielona|Мелена паприка|红椒粉
+Pesto Basilikum|Basil pesto|Песто с базиликом|Pesto de manjericão|Basilicumpesto|Pesto au basilic|Pesto al basilico|Pesto de albahaca|Pesto bazyliowe|Песто з базиліком|罗勒青酱
+Pesto Genovese|Pesto alla genovese|Песто дженовезе|Pesto genovês|Pesto genovese|Pesto génois|Pesto alla genovese|Pesto genovés|Pesto genovese|Песто дженовезе|热那亚青酱
+Pesto Rosso|Red pesto|Красное песто|Pesto vermelho|Rode pesto|Pesto rouge|Pesto rosso|Pesto rojo|Czerwone pesto|Червоне песто|红酱
+Pesto Tomate|Tomato pesto|Песто с томатами|Pesto de tomate|Tomatenpesto|Pesto à la tomate|Pesto di pomodoro|Pesto de tomate|Pesto pomidorowe|Песто з томатами|番茄青酱
+Pestosauce|Pesto sauce|Соус песто|Molho pesto|Pestosaus|Sauce pesto|Salsa pesto|Salsa pesto|Sos pesto|Соус песто|青酱汁
+Petersilie getrocknet|Dried parsley|Сушёная петрушка|Salsa seca|Gedroogde peterselie|Persil séché|Prezzemolo secco|Perejil seco|Suszona pietruszka|Сушена петрушка|干欧芹
+Pfeffer|Pepper|Перец|Pimenta|Peper|Poivre|Pepe|Pimienta|Pieprz|Перець|胡椒
+Pflanzenöl|Vegetable oil|Растительное масло|Óleo vegetal|Plantaardige olie|Huile végétale|Olio vegetale|Aceite vegetal|Olej roślinny|Рослинна олія|植物油
+Piment|Allspice|Душистый перец|Pimenta-da-jamaica|Piment|Piment de la Jamaïque|Pimento|Pimienta de Jamaica|Ziele angielskie|Духмяний перець|多香果
+Pizzagewürz|Pizza seasoning|Приправа для пиццы|Tempero para pizza|Pizzakruiden|Épices pour pizza|Spezie per pizza|Especias para pizza|Przyprawa do pizzy|Приправа для піци|披萨调料
+Pommesgewürz|Chip seasoning|Приправа для картофеля фри|Tempero para batatas fritas|Frietkruiden|Épices pour frites|Spezie per patatine|Especias para patatas fritas|Przyprawa do frytek|Приправа для картоплі фрі|薯条调料
+Rahmsauce|Cream sauce|Сливочный соус|Molho de natas|Roomsaus|Sauce à la crème|Salsa alla panna|Salsa de nata|Sos śmietanowy|Вершковий соус|奶油酱汁
+Rapsöl|Rapeseed oil|Рапсовое масло|Óleo de colza|Koolzaadolie|Huile de colza|Olio di colza|Aceite de colza|Olej rzepakowy|Ріпакова олія|菜籽油
+Rauchpaprika|Smoked paprika|Копчёная паприка|Paprica fumada|Gerookt paprikapoeder|Paprika fumé|Paprika affumicata|Pimentón ahumado|Papryka wędzona|Копчена паприка|烟熏红椒粉
+Reisessig|Rice vinegar|Рисовый уксус|Vinagre de arroz|Rijstazijn|Vinaigre de riz|Aceto di riso|Vinagre de arroz|Ocet ryżowy|Рисовий оцет|米醋
+Remoulade|Remoulade|Ремулад|Remoulade|Remoulade|Rémoulade|Remoulade|Remolada|Remulada|Ремулад|雷莫拉酱
+Rinderbrühe|Beef broth|Говяжий бульон|Caldo de vaca|Rundbouillon|Bouillon de bœuf|Brodo di manzo|Caldo de ternera|Bulion wołowy|Яловичий бульйон|牛肉汤
+Rinderfond|Beef stock base|Говяжий фон|Fundo de vaca|Rundfond|Fond de bœuf|Fondo di manzo|Fondo de ternera|Fond wołowy|Яловичий фон|牛高汤底
+Rosa Pfeffer|Pink peppercorns|Розовый перец|Pimenta-rosa|Roze peper|Baies roses|Pepe rosa|Pimienta rosa|Pieprz różowy|Рожевий перець|粉红胡椒
+Rosmarin|Rosemary|Розмарин|Alecrim|Rozemarijn|Romarin|Rosmarino|Romero|Rozmaryn|Розмарин|迷迭香
+Rote Currypaste|Red curry paste|Красная паста карри|Pasta de caril vermelha|Rode currypasta|Pâte de curry rouge|Pasta di curry rosso|Pasta de curri rojo|Czerwona pasta curry|Червона паста каррі|红咖喱酱
+Rotweinessig|Red wine vinegar|Красный винный уксус|Vinagre de vinho tinto|Rodewijnazijn|Vinaigre de vin rouge|Aceto di vino rosso|Vinagre de vino tinto|Ocet z czerwonego wina|Червоний винний оцет|红酒醋
+Röstzwiebeln|Fried onions|Жареный лук|Cebola frita|Gebakken uitjes|Oignons frits|Cipolle fritte|Cebolla frita|Smażona cebulka|Смажена цибуля|炸洋葱
+Sahnesauce|Cream sauce|Сливочный соус|Molho cremoso|Roomsaus|Sauce crémeuse|Salsa alla panna|Salsa cremosa|Sos śmietankowy|Вершковий соус|奶油汁
+Salatdressing|Salad dressing|Заправка для салата|Molho para salada|Slasaus|Sauce pour salade|Condimento per insalata|Aliño para ensalada|Dressing do sałatek|Заправка для салату|沙拉酱
+Salatmayonnaise|Salad mayonnaise|Салатный майонез|Maionese para salada|Slamayonaise|Mayonnaise pour salade|Maionese per insalata|Mayonesa para ensaladas|Majonez sałatkowy|Салатний майонез|沙拉蛋黄酱
+Salbei|Sage|Шалфей|Salva|Salie|Sauge|Salvia|Salvia|Szałwia|Шавлія|鼠尾草
+Salsa|Salsa|Сальса|Salsa|Salsa|Salsa|Salsa|Salsa|Salsa|Сальса|萨尔萨酱
+Salsa Dip|Salsa dip|Дип сальса|Dip de salsa|Salsadip|Dip salsa|Salsa dip|Dip de salsa|Dip salsa|Діп сальса|萨尔萨蘸酱
+Salz|Salt|Соль|Sal|Zout|Sel|Sale|Sal|Sól|Сіль|盐
+Sambal Oelek|Sambal oelek|Самбал олек|Sambal oelek|Sambal oelek|Sambal oelek|Sambal oelek|Sambal oelek|Sambal oelek|Самбал олек|参巴辣椒酱
+Sataysauce|Satay sauce|Соус сатай|Molho satay|Satésaus|Sauce satay|Salsa satay|Salsa satay|Sos satay|Соус сатай|沙爹酱
+Saucenbinder|Sauce thickener|Загуститель для соусов|Espessante para molhos|Saus binder|Épaississant pour sauces|Addensante per salse|Espesante para salsas|Zagęstnik do sosów|Загуститель для соусів|酱汁增稠剂
+Schnittlauch getrocknet|Dried chives|Сушёный зелёный лук|Cebolinho seco|Gedroogde bieslook|Ciboulette séchée|Erba cipollina secca|Cebollino seco|Suszony szczypiorek|Сушений зелений лук|干香葱
+Schwarzer Pfeffer|Black pepper|Чёрный перец|Pimenta-preta|Zwarte peper|Poivre noir|Pepe nero|Pimienta negra|Czarny pieprz|Чорний перець|黑胡椒
+Senf|Mustard|Горчица|Mostarda|Mosterd|Moutarde|Senape|Mostaza|Musztarda|Гірчиця|芥末
+Sesampaste|Sesame paste|Кунжутная паста|Pasta de sésamo|Sesampasta|Pâte de sésame|Pasta di sesamo|Pasta de sésamo|Pasta sezamowa|Кунжутна паста|芝麻酱
+Sesamöl|Sesame oil|Кунжутное масло|Óleo de sésamo|Sesamolie|Huile de sésame|Olio di sesamo|Aceite de sésamo|Olej sezamowy|Кунжутна олія|芝麻油
+Sojasauce|Soy sauce|Соевый соус|Molho de soja|Sojasaus|Sauce soja|Salsa di soia|Salsa de soja|Sos sojowy|Соєвий соус|酱油
+Sonnenblumenöl|Sunflower oil|Подсолнечное масло|Óleo de girassol|Zonnebloemolie|Huile de tournesol|Olio di girasole|Aceite de girasol|Olej słonecznikowy|Соняшникова олія|葵花籽油
+Soßenbinder|Gravy thickener|Загуститель для соусов|Espessante para molhos|Sausbinder|Épaississant pour sauces|Addensante per salse|Espesante para salsas|Zagęstnik do sosów|Загуститель для соусів|酱汁稠化剂
+Speiseöl|Cooking oil|Пищевое масло|Óleo alimentar|Slaolie|Huile alimentaire|Olio alimentare|Aceite comestible|Olej spożywczy|Харчова олія|食用油
+Sriracha|Sriracha|Шрирача|Sriracha|Sriracha|Sriracha|Sriracha|Sriracha|Sriracha|Шрирача|是拉差辣酱
+Steinsalz|Rock salt|Каменная соль|Sal-gema|Steenzout|Sel gemme|Sale grosso|Sal gema|Sól kamienna|Кам'яна сіль|岩盐
+Sternanis|Star anise|Бадьян|Anis-estrelado|Steranijs|Anis étoilé|Anice stellato|Anís estrellado|Anyż gwiazdkowaty|Бадьян|八角
+Sweet-Chili-Sauce|Sweet chilli sauce|Сладкий соус чили|Molho agridoce de piripiri|Zoete chilisaus|Sauce chili douce|Salsa dolce al peperoncino|Salsa chile dulce|Słodki sos chili|Солодкий соус чилі|甜辣酱
+Süßer Senf|Sweet mustard|Сладкая горчица|Mostarda doce|Zoete mosterd|Moutarde douce|Senape dolce|Mostaza dulce|Musztarda słodka|Солодка гірчиця|甜芥末
+Süßsaure Sauce|Sweet and sour sauce|Кисло-сладкий соус|Molho agridoce|Zoetzure saus|Sauce aigre-douce|Salsa agrodolce|Salsa agridulce|Sos słodko-kwaśny|Кисло-солодкий соус|糖醋酱
+Tabasco|Tabasco|Табаско|Tabasco|Tabasco|Tabasco|Tabasco|Tabasco|Tabasco|Табаско|塔巴斯科辣酱
+Taco-Gewürz|Taco seasoning|Приправа для тако|Tempero para tacos|Tacokruiden|Épices pour tacos|Spezie per tacos|Especias para tacos|Przyprawa do tacos|Приправа для тако|塔可调料
+Tahin|Tahini|Тахини|Tahini|Tahin|Tahini|Tahina|Tahini|Tahini|Тахіні|芝麻酱
+Teriyakisauce|Teriyaki sauce|Соус терияки|Molho teriyaki|Teriyakisaus|Sauce teriyaki|Salsa teriyaki|Salsa teriyaki|Sos teriyaki|Соус теріякі|照烧酱
+Thymian|Thyme|Тимьян|Tomilho|Tijm|Thym|Timo|Tomillo|Tymianek|Чебрець|百里香
+Tomatenketchup|Tomato ketchup|Томатный кетчуп|Ketchup de tomate|Tomatenketchup|Ketchup tomate|Ketchup al pomodoro|Kétchup de tomate|Ketchup pomidorowy|Томатний кетчуп|番茄酱汁
+Tomatensauce|Tomato sauce|Томатный соус|Molho de tomate|Tomatensaus|Sauce tomate|Salsa di pomodoro|Salsa de tomate|Sos pomidorowy|Томатний соус|番茄酱料
+Tzatziki|Tzatziki|Дзадзики|Tzatziki|Tzatziki|Tzatziki|Tzatziki|Tzatziki|Tzatziki|Дзадзікі|希腊黄瓜酸奶酱
+Walnussöl|Walnut oil|Ореховое масло|Óleo de noz|Walnootolie|Huile de noix|Olio di noci|Aceite de nuez|Olej z orzechów włoskich|Олія волоського горіха|核桃油
+Weißer Pfeffer|White pepper|Белый перец|Pimenta-branca|Witte peper|Poivre blanc|Pepe bianco|Pimienta blanca|Biały pieprz|Білий перець|白胡椒
+Weißweinessig|White wine vinegar|Белый винный уксус|Vinagre de vinho branco|Witte-wijnazijn|Vinaigre de vin blanc|Aceto di vino bianco|Vinagre de vino blanco|Ocet z białego wina|Білий винний оцет|白葡萄酒醋
+Worcestersauce|Worcestershire sauce|Вустерширский соус|Molho inglês|Worcestersaus|Sauce Worcestershire|Salsa Worcestershire|Salsa Worcestershire|Sos Worcestershire|Вустерський соус|伍斯特酱
+Zimt|Cinnamon|Корица|Canela|Kaneel|Cannelle|Cannella|Canela|Cynamon|Кориця|肉桂
+Zimt-Zucker|Cinnamon sugar|Сахар с корицей|Açúcar com canela|Kaneelsuiker|Sucre à la cannelle|Zucchero e cannella|Azúcar con canela|Cukier z cynamonem|Цукор з корицею|肉桂糖
+Zitronensaft|Lemon juice|Лимонный сок|Sumo de limão|Citroensap|Jus de citron|Succo di limone|Zumo de limón|Sok z cytryny|Лимонний сік|柠檬汁
+Zwiebelpulver|Onion powder|Луковый порошок|Cebola em pó|Uienpoeder|Oignon en poudre|Cipolla in polvere|Cebolla en polvo|Cebula w proszku|Цибулевий порошок|洋葱粉

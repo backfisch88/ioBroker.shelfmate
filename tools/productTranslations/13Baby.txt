@@ -1,0 +1,28 @@
+Anfangsmilch|Infant formula|Начальное молочное питание|Leite para lactentes|Beginmelk|Lait 1er âge|Latte per lattanti|Leche de inicio|Mleko początkowe|Початкове молочне харчування|婴儿配方奶粉
+Baby-Porridge|Baby porridge|Детская каша|Papa para bebé|Babypap|Porridge bébé|Porridge per bambini|Gachas para bebé|Kaszka dla niemowląt|Дитяча каша|婴儿粥
+Babygläschen|Baby food jars|Детское питание в баночках|Boiões para bebé|Babyvoeding in potjes|Petits pots pour bébé|Omogeneizzati|Tarritos para bebé|Słoiczki dla niemowląt|Дитяче харчування в баночках|婴儿辅食罐
+Babykekse|Baby biscuits|Детское печенье|Bolachas para bebé|Babykoekjes|Biscuits pour bébé|Biscotti per bambini|Galletas para bebé|Ciasteczka dla niemowląt|Дитяче печиво|婴儿饼干
+Babynahrung Pulver|Baby food powder|Детская смесь порошок|Alimentação infantil em pó|Babyvoeding poeder|Aliment bébé en poudre|Alimento in polvere per neonati|Alimento infantil en polvo|Odżywka dla niemowląt w proszku|Дитяче харчування порошок|婴儿辅食粉
+Babyreiswaffeln|Baby rice cakes|Детские рисовые вафли|Bolachas de arroz para bebé|Babyrijstwafels|Galettes de riz pour bébé|Gallette di riso per bambini|Tortitas de arroz para bebé|Wafle ryżowe dla niemowląt|Дитячі рисові вафлі|婴儿米饼
+Babyshampoo|Baby shampoo|Детский шампунь|Champô para bebé|Babyshampoo|Shampooing bébé|Shampoo per bambini|Champú para bebé|Szampon dla niemowląt|Дитячий шампунь|婴儿洗发水
+Babywaschlotion|Baby wash lotion|Детский гель для купания|Loção de banho para bebé|Baby wasgel|Lait de toilette bébé|Detergente delicato per neonati|Loción de baño para bebé|Emulsja do mycia dla niemowląt|Дитячий гель для купання|婴儿沐浴乳
+Babywasser|Baby water|Детская вода|Água para bebé|Babywater|Eau pour bébé|Acqua per neonati|Agua para bebé|Woda dla niemowląt|Дитяча вода|婴儿水
+Babyzwieback|Baby rusks|Детские сухарики|Tostas para bebé|Babybeschuit|Biscottes pour bébé|Fette biscottate per bambini|Galletas tostadas para bebé|Sucharki dla niemowląt|Дитячі сухарики|婴儿脆饼
+Feuchttücher|Wet wipes|Влажные салфетки|Toalhetes húmidos|Vochtige doekjes|Lingettes humides|Salviette umidificate|Toallitas húmedas|Chusteczki nawilżane|Вологі серветки|湿巾
+Folgemilch|Follow-on milk|Последующее молочное питание|Leite de transição|Opvolgmelk|Lait 2e âge|Latte di proseguimento|Leche de continuación|Mleko następne|Подальше молочне харчування|较大婴儿配方奶粉
+Gemüsebrei|Vegetable puree|Овощное пюре|Puré de legumes|Groentepuree|Purée de légumes|Purea di verdure|Puré de verduras|Przecier warzywny|Овочеве пюре|蔬菜泥
+Getreidebrei|Cereal porridge|Злаковая каша|Papa de cereais|Graanpap|Bouillie de céréales|Pappa di cereali|Papilla de cereales|Kaszka zbożowa|Злакова каша|谷物糊
+Grießbrei|Semolina porridge|Манная каша|Papa de sêmola|Griesmeelpap|Bouillie de semoule|Semolino|Papilla de sémola|Kasza manna na mleku|Манна каша|粗粒小麦粥
+Kindermilch|Growing-up milk|Детское молоко|Leite de crescimento|Peutermelk|Lait de croissance|Latte di crescita|Leche de crecimiento|Mleko dla dzieci|Дитяче молоко|幼儿奶粉
+Kindermüsli|Children's muesli|Детские мюсли|Muesli infantil|Kindermuesli|Muesli pour enfants|Muesli per bambini|Muesli infantil|Musli dla dzieci|Дитячі мюслі|儿童麦片
+Kindertee|Children's tea|Детский чай|Chá para crianças|Kinderthee|Tisane pour enfants|Tisana per bambini|Té para niños|Herbatka dla dzieci|Дитячий чай|儿童茶
+Lätzchen|Bibs|Нагрудники|Babetes|Slabbetjes|Bavoirs|Bavaglini|Baberos|Śliniaki|Слинявчики|围兜
+Milchbrei|Milk porridge|Молочная каша|Papa de leite|Melkpap|Bouillie au lait|Pappa al latte|Papilla de leche|Kaszka mleczna|Молочна каша|牛奶糊
+Obstbrei|Fruit puree|Фруктовое пюре|Puré de fruta|Fruitpuree|Purée de fruits|Purea di frutta|Puré de frutas|Przecier owocowy|Фруктове пюре|水果泥
+Obstmus Quetschbeutel|Fruit puree pouches|Фруктовое пюре в пакетиках|Saquetas de puré de fruta|Fruitmoes knijpzakjes|Gourdes de compote|Pouch di purea di frutta|Bolsitas de puré de frutas|Mus owocowy w tubce|Фруктове пюре в пакетиках|水果泥挤压袋
+Pre-Milch|Pre-milk formula|Молочная смесь Pre|Leite Pré|Pre-melk|Lait Pré|Latte Pre|Leche Pre|Mleko Pre|Молочна суміш Pre|Pre奶粉
+Quetschbeutel|Squeeze pouches|Пакетики-пюре|Saquetas de espremer|Knijpzakjes|Gourdes|Pouch da spremere|Bolsitas de puré|Tubki z musem|Пакетики-пюре|挤压袋
+Quetschie|Squeezie|Пюре-пауч|Quetschie|Knijpfruit|Gourde|Pouch|Bolsita de puré|Mus w tubce|Пюре-пауч|果泥袋
+Schnuller|Dummy|Пустышка|Chupeta|Fopspeen|Tétine|Ciuccio|Chupete|Smoczek|Пустушка|安抚奶嘴
+Windeln|Nappies|Подгузники|Fraldas|Luiers|Couches|Pannolini|Pañales|Pieluszki|Підгузки|尿布
+Wundschutzcreme|Nappy rash cream|Крем от опрелостей|Creme para assaduras|Luierzalf|Crème pour le change|Crema protettiva|Crema para la dermatitis del pañal|Krem na odparzenia|Крем від попрілості|护臀膏
