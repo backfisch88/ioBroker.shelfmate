@@ -1,0 +1,1179 @@
+# German product name|Open Food Facts category id (empty = no food category)
+Bandnudeln|en:pastas
+Bucatini|en:bucatini
+Buchstabennudeln|en:alphabet-pasta
+Cannelloni|en:cannelloni
+Capellini|en:capellini
+Casarecce|en:pastas
+Cellentani|en:pastas
+Conchiglie|en:conchiglie
+Dinkelnudeln|en:spelt-pastas
+Ditali|en:pastas
+Ditalini|en:pastas
+Eiernudeln|en:egg-noodles
+Fadennudeln|en:noodles
+Farfalle|en:pastas
+Farfalline|en:pastas
+Fettuccine|en:pastas
+Fregola|en:pastas
+Fusilli|en:fusilli
+Gemelli|en:pastas
+Glasnudeln|en:noodles
+Gnocchetti Sardi|en:pastas
+Gnocchi|en:gnocchi
+Hörnchennudeln|en:pastas
+Instantnudeln|en:instant-noodles
+Konjaknudeln|en:noodles
+Kritharaki|en:pastas
+Lasagne|en:prepared-lasagne
+Lasagneplatten|en:lasagna-sheets
+Linguine|en:linguine
+Maccheroni|en:pastas
+Mafaldine|en:pastas
+Makkaroni|en:pastas
+Mezze Maniche|en:pastas
+Mezze Penne|
+Mie-Nudeln|en:noodles
+Muschelnudeln|en:pastas
+Nudeln|en:noodles
+Orecchiette|en:orecchiette
+Orzo|en:pastas
+Paccheri|en:pastas
+Pappardelle|en:pastas
+Pasta|en:pastas
+Penne|en:penne
+Penne Rigate|en:penne-rigate
+Pipe Rigate|
+Radiatori|en:pastas
+Ramen-Nudeln|en:ramen-soup
+Ravioli|en:raviolis
+Reisnudeln|en:rice-vermicelli
+Rigatoni|en:rigatoni
+Risoni|en:pastas
+Rotelle|en:pastas
+Schupfnudeln|en:schupfnudeln
+Sedanini|en:pastas
+Soba-Nudeln|en:soba
+Spaghetti|en:spaghetti
+Spaghettini|en:pastas
+Spirelli|en:pastas
+Spätzle|en:spatzle
+Stelline|en:pastas
+Suppennudeln|en:instant-noodle-soups
+Süßkartoffelnudeln|en:noodles
+Tagliatelle|en:tagliatelle
+Tortellini|en:tortellini
+Tortiglioni|en:tortiglioni
+Trofie|en:pastas
+Udon-Nudeln|en:udon
+Vermicelli|en:rice-vermicelli
+Vermicelli Reisnudeln|en:rice-vermicelli
+Vollkornnudeln|en:whole-wheat-noodles
+Woknudeln|en:noodles
+Adzukibohnen|en:azuki-beans
+Amaranth|en:amaranth
+Arborioreis|en:arborio-rices
+Basmatireis|en:basmati-rices
+Belugalinsen|en:lentils
+Berglinsen|en:lentils
+Braune Linsen|en:brown-lentils
+Bruchreis|en:rices
+Buchweizen|en:buckwheat
+Bulgur|en:bulgur
+Carnarolireis|en:carnaroli-rices
+Couscous|en:durum-wheat-semolinas-for-couscous
+Dinkelflocken|en:rolled-spelt-flakes
+Dinkelkörner|en:spelts
+Ebly|en:wheats
+Falafelmischung|en:falafel-mixes
+Gelbe Linsen|en:blonde-lentils
+Gerstengraupen|en:barley
+Getrocknete Bohnen|en:legume-seeds
+Getrocknete Erbsen|en:dried-peas
+Graupen|en:groats
+Grieß|en:wheat-semolinas
+Grüne Linsen|en:green-lentils
+Haferflocken|en:rolled-oats
+Haferkleie|en:oat-brans
+Haferkörner|en:oat-groats
+Hartweizengrieß|en:durum-wheat-semolinas
+Hirse|en:millet
+Jasminreis|en:jasmine-rice
+Kernige Haferflocken|en:rolled-oats
+Kichererbsen|en:chickpeas
+Kidneybohnen|en:dried-red-kidney-beans
+Klebreis|en:glutinous-rices
+Langkornreis|en:long-grain-rices
+Linsen|en:lentils
+Lupinen|en:lupin-grains
+Maisgrieß|en:cornmeal
+Milchreis|en:rice-puddings
+Mungbohnen|en:mung-beans
+Naturreis|en:brown-rices
+Parboiled-Reis|en:parboiled-rices
+Perlgraupen|en:barley
+Pintobohnen|en:pinto-beans
+Polenta|en:unsalted-polenta
+Porridge|en:porridge
+Puy-Linsen|en:lentils
+Quinoa|en:quinoa
+Reis|en:rices
+Reisflocken|en:rice-flakes
+Risottoreis|en:rices-for-risotto
+Roggenkörner|en:rye
+Rote Linsen|en:red-lentils
+Rote Quinoa|en:red-quinoa
+Roter Reis|en:red-rices
+Rundkornreis|en:rices
+Schwarze Bohnen|en:black-beans
+Schwarzer Reis|en:black-rices
+Schälerbsen|en:dried-split-peas
+Sojabohnen|en:soy-beans
+Sushi-Reis|en:sushi-rice
+Tellerlinsen|en:brown-lentils
+Vollkorncouscous|en:durum-wheat-semolinas-for-couscous
+Vollkornreis|en:brown-rices
+Weichweizengrieß|en:soft-wheat-semolinas
+Weizenkleie|en:wheat-brans
+Weizenkörner|en:wheats
+Weiße Bohnen|en:white-beans
+Wildreis|en:wild-rice
+Zarte Haferflocken|en:rolled-oats
+Zartweizen|en:wheats
+Agar-Agar|en:agar-agar
+Backaroma|en:baking-mixes
+Backkakao|en:cocoa-powders
+Backmischung|en:baking-mixes
+Backpulver|en:baking-powders
+Biskuitboden|en:sponge-cakes
+Bittermandelaroma|en:almonds
+Blätterteig|en:pie-dough
+Bourbonvanille|en:vanilla
+Brauner Zucker|en:brown-sugars
+Brotbackmischung|en:baking-mixes
+Bunte Streusel|en:sprinkles
+Chiasamen|en:chia
+Crepes-Mischung|en:baking-mixes
+Dinkelmehl|en:spelt-flours
+Dinkelmehl Type 630|en:spelt-flours-type-630
+Dinkelvollkornmehl|en:spelt-flours
+Feiner Zucker|en:caster-sugars
+Filoteig|en:phyllo-dough
+Fondant|en:fondants
+Frischhefe|en:yeast
+Gehackte Haselnüsse|en:hazelnuts
+Gehackte Mandeln|en:almonds
+Gelatine|en:gelatin
+Gelierzucker|fr:sucres-gelifiant
+Grießbrei-Mischung|en:semolina-puddings
+Götterspeise|en:jelly-desserts
+Hagelzucker|en:sugars
+Haselnüsse gemahlen|en:hazelnuts
+Hefeteig|en:pizza-dough
+Kakaopulver|en:cocoa-powders
+Kandierte Früchte|en:candied-fruits
+Kandiszucker|en:sugars
+Kartoffelmehl|en:potato-flours
+Kartoffelstärke|en:potato-starches
+Kichererbsenmehl|en:chickpea-flours
+Kokosblütenzucker|en:coconut-sugar
+Kokosflocken|en:coconuts
+Kokosmehl|en:dried-coconut-flours
+Kokosraspeln|en:coconuts
+Korinthen|en:zante-currants
+Kuchenbackmischung|en:cake-mixes
+Kuchenglasur|en:pastry-helpers
+Kuvertüre|en:chocolates
+Kürbiskerne|en:pumpkin-seeds
+Lebensmittelfarbe|en:food-colorings
+Leinsamen|en:flax-seeds
+Maismehl|en:cornmeal
+Maisstärke|en:corn-starch
+Mandelblättchen|en:almonds
+Mandelmehl|en:flours
+Mandeln gemahlen|en:ground-almonds
+Marzipan|en:marzipan
+Marzipanrohmasse|en:marzipan
+Milchreis-Mischung|en:rice-puddings
+Mohn|en:seeds
+Mürbeteig|en:shortcrust-pastry
+Natron|en:bicarbonates-of-soda
+Orangeat|en:candied-orange-zest
+Paniermehl|en:bread-crumbs
+Panko|en:panko
+Pektin|en:pastry-helpers
+Pfannkuchenmischung|de:pfannkuchenmischung
+Pinienkerne|en:pine-nuts
+Pizzateig|en:pizza-dough
+Pizzateig-Mischung|en:baking-mixes
+Puddingpulver|en:puddings
+Puderzucker|en:powdered-sugars
+Reismehl|en:rice-flours
+Roggenmehl|en:rye-flours
+Roggenmehl Type 1150|en:rye-flours-type-1150
+Roggenvollkornmehl|en:rye-flours
+Rohrzucker|en:cane-sugars
+Rosinen|en:raisins
+Rumaroma|en:rums
+Sahnesteif|en:creams
+Sauerteig|en:sourdough-breads
+Sauerteigpulver|en:sourdough-breads
+Schokopuddingpulver|en:puddings
+Schokostreusel|en:chocolate-sprinkles
+Schokotropfen|en:chocolates
+Semmelbrösel|en:pastry-helpers
+Sesam|en:sesame
+Sonnenblumenkerne|en:sunflower-seeds
+Speisestärke|en:corn-starch
+Strudelteig|en:phyllo-dough
+Sultaninen|en:sultana-raisins
+Tapiokastärke|en:tapioca
+Tonkabohne|en:tonka-beans
+Tortenboden|en:sponge-cakes
+Tortenguss|en:pastry-helpers
+Traubenzucker|en:dextrose
+Trockenhefe|en:yeast
+Vanilleextrakt|en:vanilla-extract
+Vanillepaste|en:vanilla
+Vanillepuddingpulver|en:puddings
+Vanilleschote|en:vanilla
+Vanillezucker|en:vanilla-sugars
+Vanillinzucker|en:vanillin-sugars
+Vollkornmehl|en:flours
+Vollmilchkuvertüre|en:milk-chocolates
+Waffelteig|en:baking-mixes
+Weizenmehl|en:wheat-flours
+Weizenmehl Type 1050|en:wheat-flour-t110
+Weizenmehl Type 405|en:wheat-flour-t405
+Weizenmehl Type 550|en:wheat-flour-type-55-for-bread
+Weizenvollkornmehl|en:wheat-flours
+Weiße Kuvertüre|en:white-chocolates
+Zartbitterkuvertüre|en:dark-chocolates
+Zitronat|en:candied-lemon-zest
+Zitronensäure|en:citric-acids
+Zucker|en:sugars
+Zuckerguss|en:pastry-helpers
+Zuckerperlen|en:sugars
+Zuckerschrift|en:sugars
+Zuckerstreusel|en:sugar-sprinkles
+Ajvar|en:ajvar
+Ananas Dose|en:canned-fruits
+Antipasti|en:appetizers
+Apfelmark|en:compotes
+Apfelmus|en:applesauces
+Aprikosen Dose|en:canned-fruits
+Artischockenherzen|en:artichoke-hearts
+Auberginen gegrillt|en:vegetables
+Bambussprossen|en:bamboo-shoots
+Birnen Dose|en:canned-fruits
+Birnenmus|en:compotes
+Bohnensuppe Dose|en:bean-soups
+Bratwurst Dose|en:bratwursts
+Brechbohnen|en:green-beans
+Champignons Dose|en:mushrooms
+Champignons Glas|en:mushrooms
+Chili con Carne Dose|en:chili-con-carne
+Corned Beef|en:corned-beef
+Cornichons|en:pickles
+Dosenmilch|en:evaporated-milks
+Dosentomaten|en:canned-tomatoes
+Eintopf Dose|en:stews
+Erbsen|en:peas
+Erbsen und Möhren|en:canned-peas-and-carrots
+Erbsensuppe Dose|en:pea-soups
+Essiggurken|en:pickled-gherkins
+Fertiggericht Dose|en:canned-meals
+Fruchtcocktail|en:canned-fruits
+Gehackte Tomaten|en:canned-tomatoes
+Geschälte Tomaten|en:peeled-tomatoes
+Getrocknete Tomaten|en:dried-tomatoes
+Getrocknete Tomaten in Öl|en:dried-tomatoes-in-oil
+Gewürzgurken|en:gherkins-pickled-in-vinegar
+Gezuckerte Kondensmilch|de:gezuckerte-kondensmilch
+Grüne Bohnen|en:green-beans
+Gulaschsuppe Dose|en:stews
+Hering Dose|en:herring
+Hühnersuppe Dose|en:chicken-soups
+Jalapeños im Glas|en:jalapenos
+Kapern|en:pickled-capers
+Karotten im Glas|en:carrots
+Kichererbsen Dose|en:chickpeas
+Kidneybohnen Dose|en:canned-red-kidney-beans
+Kirschen Glas|en:canned-fruits
+Kokoscreme|en:coconut-creams
+Kokosmilch|en:coconut-milks
+Kondensmilch|en:condensed-milks
+Lachs Dose|en:salmons
+Linsen Dose|en:lentils
+Linsensuppe Dose|en:lentil-soups
+Mais|en:corn
+Makrelen Dose|en:mackerel
+Mandarinen Dose|en:canned-fruits
+Mixed Pickles|en:pickles
+Oliven gefüllt|en:stuffed-olives
+Oliven grün|en:green-olives
+Oliven schwarz|en:black-olives
+Palmherzen|en:hearts-of-palm
+Paprika gegrillt|en:grilled-peppers
+Passierte Tomaten|en:strained-tomatoes
+Peperoni im Glas|en:pickled-peppers
+Pfifferlinge Glas|en:mushrooms
+Pfirsiche Dose|en:canned-fruits
+Pizzatomaten|en:canned-tomatoes
+Preiselbeeren Glas|en:cranberry-sauces
+Prinzessbohnen|en:green-beans
+Ravioli Dose|en:raviolis
+Rote Bete Glas|en:beetroot
+Rotkohl Glas|en:red-cabbage
+Sardinen Dose|en:sardines
+Sauerkraut|en:sauerkrauts
+Schattenmorellen|en:morello-cherries
+Schwarze Bohnen Dose|en:black-beans
+Senfgurken|en:pickles
+Silberzwiebeln|en:pickled-onions
+Sojasprossen Glas|en:sprouts
+Stückige Tomaten|en:canned-tomatoes
+Thunfisch Dose|en:tunas
+Tomatenmark|en:tomato-pastes
+Tomatenpassata|en:canned-tomatoes
+Tomatenpolpa|en:tomato-pulps
+Tomatensuppe Dose|en:tomato-soups
+Wasserkastanien|en:vegetables
+Weiße Bohnen Dose|en:white-beans
+Wiener Würstchen Glas|en:frankfurter-sausages
+Zuckermais|en:sweet-corn
+Aioli|en:aiolis
+Anis|en:anise
+Apfelessig|en:cider-vinegars
+Austernsauce|en:oyster-sauces
+Avocadoöl|en:avocado-oils
+BBQ-Sauce|en:barbecue-sauces
+Balsamico|en:balsamic-vinegars
+Balsamico Bianco|en:balsamic-vinegars
+Balsamico-Dressing|en:salad-dressings
+Barbecuesauce|en:barbecue-sauces
+Basilikum getrocknet|en:dried-basils
+Bohnenkraut|en:savory
+Bolognesesauce|en:bolognese-sauces
+Bouillon|en:bouillon-cubes
+Bratensauce|en:gravy
+Brathähnchengewürz|en:spice-blends
+Cayennepfeffer|en:cayenne-peppers
+Chili-con-Carne-Gewürz|en:spice-blends
+Chiliflocken|en:chili-flakes
+Chilipulver|en:chili-powders
+Chilisauce|en:hot-sauces
+Curry|en:curry-powders
+Curryketchup|en:curry-ketchups
+Currypaste|en:curry-pastes
+Currypulver|en:curry-powders
+Currysauce|en:curry-sauces
+Dijon-Senf|en:dijon-mustards
+Dill|en:dill
+Distelöl|en:safflower-oils
+Dunkle Sojasauce|en:soy-sauces
+Erdnusssauce|en:peanut-sauces
+Erdnussöl|en:peanut-oils
+Essig|en:vinegars
+Essig-Öl-Dressing|en:vinaigrettes
+Essigessenz|en:vinegars
+Estragon|en:tarragon
+Fenchelsamen|en:fennel-seeds
+Fischsauce|en:nuoc-mam-sauce
+Fleischbrühe|en:broth-stock
+Fleur de Sel|en:fleurs-de-sel
+Fond|en:broth-stock
+French-Dressing|en:salad-dressings
+Frittieröl|en:frying-oil
+Garam Masala|en:garam-masalas
+Gelbe Currypaste|en:yellow-curry-pastes
+Gemüsebrühe|en:vegetable-broths
+Gemüsebrühe Pulver|en:bouillon-powders
+Gemüsebrühwürfel|en:bouillon-cubes
+Gemüsefond|en:broth-stock
+Grillsauce|en:barbecue-sauces
+Grüne Currypaste|en:green-curry-pastes
+Guacamole|en:guacamoles
+Gyrosgewürz|en:spice-blends
+Harissa|en:harissa-sauces
+Hefeflocken|en:nutritional-yeast
+Helle Sojasauce|en:soy-sauces
+Hoisinsauce|en:hoisin-sauces
+Hummus|en:hummus
+Hühnerbrühe|en:broth-stock
+Hühnerfond|en:broth-stock
+Ingwerpulver|en:ginger-powder
+Italienische Kräuter|en:spice-blends
+Jodsalz|en:iodised-salts
+Joghurt-Dressing|en:salad-dressings
+Jägersauce|en:hunter-style-sauces
+Kardamom|en:cardamom
+Ketchup|en:ketchup
+Knoblauchgranulat|en:garlics
+Knoblauchpulver|en:garlic-powders
+Kokosöl|en:coconut-oils
+Koriander|en:coriander-products
+Koriander gemahlen|en:coriander-seeds
+Kreuzkümmel|en:cumin
+Kräuter der Provence|en:herbes-de-provence
+Kurkuma|en:turmeric
+Käsesauce|en:cheese-sauces
+Kümmel|en:caraway-seeds
+Kürbiskernöl|en:pumpkin-seed-oils
+Lebkuchengewürz|en:spice-blends
+Leinöl|en:linseed-oils
+Liebstöckel|en:herbs
+Limettensaft|en:lime-juices
+Lorbeerblätter|en:bay-laurel
+Majoran|en:marjoram
+Mayonnaise|en:mayonnaises
+Meerrettich|en:fresh-horseradish
+Meerrettichcreme|en:fresh-horseradish
+Meersalz|en:sea-salts
+Mittelscharfer Senf|en:mustards
+Muskat gemahlen|en:ground-nutmeg
+Muskatnuss|en:nutmeg
+Nelken|en:cloves
+Nudelsauce|en:pasta-sauces
+Olivenöl|en:olive-oils
+Oregano|en:oregano
+Paprika edelsüß|en:paprika
+Paprika rosenscharf|en:paprika
+Paprikapulver|en:paprika
+Pesto Basilikum|en:pestos
+Pesto Genovese|en:pestos
+Pesto Rosso|en:red-pestos
+Pesto Tomate|en:pestos
+Pestosauce|en:pestos
+Petersilie getrocknet|en:dried-parsley
+Pfeffer|en:peppers
+Pflanzenöl|en:vegetable-oils
+Piment|en:allspices
+Pizzagewürz|en:spice-blends
+Pommesgewürz|en:spice-blends
+Rahmsauce|en:cream-sauces
+Rapsöl|en:rapeseed-oils
+Rauchpaprika|en:paprika
+Reisessig|en:rice-vinegars
+Remoulade|en:remoulade-sauces
+Rinderbrühe|en:beef-broth
+Rinderfond|en:broth-stock
+Rosa Pfeffer|en:pink-peppers
+Rosmarin|en:rosemary
+Rote Currypaste|en:red-curry-pastes
+Rotweinessig|en:red-wine-vinegars
+Röstzwiebeln|en:fried-onions
+Sahnesauce|en:cream-sauces
+Salatdressing|en:salad-dressings
+Salatmayonnaise|en:mayonnaises
+Salbei|en:sage
+Salsa|en:sauces
+Salsa Dip|en:dips
+Salz|en:salts
+Sambal Oelek|en:sambal-oelek
+Sataysauce|en:satay-sauces
+Saucenbinder|en:thickeners
+Schnittlauch getrocknet|en:dried-chives
+Schwarzer Pfeffer|en:black-peppers
+Senf|en:mustards
+Sesampaste|en:sesame
+Sesamöl|en:sesame-oils
+Sojasauce|en:soy-sauces
+Sonnenblumenöl|en:sunflower-oils
+Soßenbinder|en:thickeners
+Speiseöl|en:vegetable-oils
+Sriracha|en:hot-sauces
+Steinsalz|en:rock-salts
+Sternanis|en:star-anise
+Sweet-Chili-Sauce|en:sweet-chili-sauces
+Süßer Senf|en:sweet-mustards
+Süßsaure Sauce|en:sweet-and-sour-sauces
+Tabasco|en:hot-sauces
+Taco-Gewürz|en:spice-blends
+Tahin|en:tahini
+Teriyakisauce|en:teriyaki-sauces
+Thymian|en:thyme
+Tomatenketchup|en:tomato-ketchup
+Tomatensauce|en:tomato-sauces
+Tzatziki|en:tzatzikis
+Walnussöl|en:walnut-oils
+Weißer Pfeffer|en:white-peppers
+Weißweinessig|en:white-wine-vinegars
+Worcestersauce|en:worcestershire-sauces
+Zimt|en:cinnamon
+Zimt-Zucker|en:sugars
+Zitronensaft|en:lemon-juice
+Zwiebelpulver|en:onion-powders
+Agavendicksaft|en:agave-syrups
+Ahornsirup|en:maple-syrups
+Aprikosenmarmelade|en:jams
+Aufbackbrötchen|en:bread-rolls
+Bagel|en:bagel-breads
+Baguette|en:baguettes
+Basismüsli|en:mueslis
+Bauernbrot|en:breads
+Brötchen|en:bread-rolls
+Burgerbrötchen|en:hamburger-buns
+Cashewmus|en:cashew-butters
+Ciabatta|en:ciabattas
+Cornflakes|en:corn-flakes
+Croissant|en:croissants
+Dinkelbrot|en:breads
+English Muffins|en:english-muffins
+Erdbeermarmelade|en:jams
+Erdnussbutter|en:peanut-butters
+Erdnusscreme|en:peanut-butters
+Fladenbrot|en:flatbreads
+Fruchtaufstrich|en:jams
+Fruchtriegel|en:cereal-bars
+Früchtemüsli|en:mueslis-with-fruits
+Frühstückscerealien|en:breakfast-cereals
+Gelee|en:jams
+Granola|en:mueslis
+Haferbrei|en:porridge
+Haselnussmus|en:hazelnut-butters
+Himbeermarmelade|en:jams
+Honig|en:honeys
+Honigpops|en:breakfast-cereals
+Hotdogbrötchen|en:hot-dog-buns
+Kirschmarmelade|en:jams
+Knuspermüsli|en:crunchy-mueslis
+Knäckebrot|en:crispbreads
+Konfitüre|en:jams
+Laugenbrezel|en:pretzel
+Laugenstange|en:bread-rolls
+Maistortillas|en:wraps
+Maiswaffeln|en:puffed-corn-cakes
+Mandelmus|en:almond-butters
+Marmelade|en:marmalades
+Mischbrot|en:breads
+Müsliriegel|en:cereal-bars
+Nuss-Nougat-Creme|en:chocolate-spreads
+Nussmüsli|en:mueslis-with-nuts
+Pflaumenmus|en:jams
+Pita|en:breads
+Proteinriegel|en:protein-bars
+Pumpernickel|en:pumpernickel
+Reissirup|en:rice-syrups
+Reiswaffeln|en:puffed-rice-cakes
+Roggenbrot|en:rye-breads
+Sandwichtoast|en:breads
+Sauerteigbrot|en:sourdough-breads
+Schokocreme|en:chocolate-spreads
+Schokoflakes|en:breakfast-cereals
+Schokomüsli|en:mueslis-with-chocolate
+Schokopops|en:breakfast-cereals
+Toastbrot|en:toasts
+Toasties|en:breads
+Tortilla Wraps|en:wraps
+Vollkornbrot|en:wholemeal-breads
+Vollkorntoast|en:wholemeal-sliced-breads
+Weizenpops|en:breakfast-cereals
+Weizentortillas|en:wraps
+Weißbrot|en:white-breads
+Zuckerrübensirup|en:syrups
+Zwieback|en:rusks
+Amarettini|en:amaretti
+American Cookies|en:drop-cookies
+Amerikaner|en:cakes
+Apfelchips|en:dried-fruits
+Bananenchips|en:banana-crisps
+Baumkuchen|en:baumkuchen
+Berliner|en:doughnuts
+Bonbons|en:candies
+Brausepulver|en:beverages
+Brezelsticks|en:pretzel
+Brownies|en:brownies
+Butterkekse|en:petit-beurre
+Cantuccini|en:biscuits
+Cashewkerne|en:cashew-nuts
+Chips|en:crisps
+Cookies|en:drop-cookies
+Cracker|en:crackers-appetizers
+Cranberries|en:cranberries
+Datteln|en:dates
+Donuts|en:doughnuts
+Doppelkekse|en:sandwich-biscuits
+Eiswaffeln|en:ice-cream-cones
+Erdnussflips|en:salty-snacks
+Erdnüsse|en:peanuts
+Fruchtgummi|en:fruit-jellies
+Fruchtschnitten|en:cereal-bars
+Geleefrüchte|en:fruit-jellies
+Getrocknete Aprikosen|en:dried-apricots
+Getrocknete Feigen|en:dried-figs
+Getrocknete Pflaumen|en:dried-prunes
+Gummibärchen|en:gummy-bears
+Haferkekse|en:drop-cookies
+Haselnüsse|en:hazelnuts
+Hustenbonbons|en:candies
+Karamellbonbons|en:candies
+Kartoffelchips|en:potato-crisps
+Kaubonbons|en:fruit-jellies
+Kaugummi|en:chewing-gums
+Kekse|en:biscuits
+Kesselchips|en:crisps
+Kokoschips|en:dried-fruits
+Kuchen|en:cakes
+Lakritz|en:liquorice-candies
+Lebkuchen|en:gingerbreads
+Lutscher|en:lollipops
+Löffelbiskuits|en:biscuits
+Macadamianüsse|en:macadamia-nuts
+Maischips|en:corn-chips
+Mandeln|en:almonds
+Marmorkuchen|en:marble-cakes
+Marshmallows|en:marshmallows
+Mikrowellenpopcorn|en:popcorn
+Milchschokolade|en:milk-chocolates
+Mini-Amerikaner|en:cakes
+Muffins|en:muffins
+Nachos|en:salty-snacks
+Neapolitaner|en:wafers
+Nussmix|en:mixed-nuts
+Nussschokolade|en:chocolate-covered-nuts
+Obstriegel|en:cereal-bars
+Paprikachips|en:paprika-crisps
+Paranüsse|en:brazil-nuts
+Pekannüsse|en:pecan-nuts
+Pistazien|en:pistachios
+Popcorn|en:popcorn
+Popcornmais|en:popcorn
+Pralinen|en:bonbons
+Reiscracker|en:rice-crackers
+Reisgebäck|en:rice-crackers
+Rührkuchen|en:pound-cake
+Salzbrezeln|en:pretzel
+Salzcracker|en:crackers-appetizers
+Salzstangen|en:pretzel
+Sandkuchen|en:cakes
+Schokobons|en:candies
+Schokokekse|en:chocolate-biscuits
+Schokolade|en:chocolates
+Schokolade mit Keks|en:drop-cookies
+Schokoriegel|en:candy-chocolate-bars
+Spekulatius|en:speculaas
+Stollen|en:stollen
+Studentenfutter|en:mixed-nuts-and-dried-fruits
+Tortillachips|en:salty-snacks
+Trockenfrüchte|en:dried-fruits
+Vanillekipferl|en:biscuits
+Vollmilchschokolade|en:milk-chocolates
+Waffeln|en:waffles
+Walnüsse|en:walnuts
+Weingummi|en:fruit-jellies
+Weiße Schokolade|en:white-chocolates
+Zartbitterschokolade|en:dark-chocolates
+Zimtsterne|en:biscuits
+Ananassaft|en:pineapple-juices
+Apfelsaft|en:apple-juices
+Apfelschorle|en:apple-schorle
+Barista Haferdrink|en:oat-based-drinks
+Barista Sojadrink|en:soy-based-drinks
+Bitter Lemon|en:lemonades
+Cappuccinopulver|en:powdered-cappucino
+Cashewdrink|en:nut-based-drinks
+Chai-Tee|en:teas
+Cola|en:colas
+Cola Zero|en:colas
+Direktsaft|en:squeezed-fruit-juices
+Eistee|en:iced-teas
+Eistee Pfirsich|en:peach-flavored-iced-teas
+Eistee Zitrone|en:lemon-flavored-iced-teas
+Energy Drink|en:energy-drinks
+Erbsendrink|en:plant-based-beverages
+Espresso|en:espresso-coffee-without-sugar
+Espressobohnen|en:coffee-beans
+Fencheltee|en:teas
+Fettarme Milch|en:semi-skimmed-milks
+Fruchtnektar|en:fruit-nectars
+Fruchtsaft|en:fruit-juices
+Früchtetee|en:fruit-teas
+Gemahlener Kaffee|en:ground-coffees
+Gemüsesaft|en:vegetable-juices
+Getränkesirup|en:syrups
+Ginger Ale|en:sodas
+Ginger Beer|en:ginger-beer
+Grenadine|en:grenadine
+Grüntee|en:green-teas
+H-Milch|en:uht-milks
+Haferdrink|en:oat-based-drinks
+Hafermilch|en:oat-based-drinks
+Himbeersirup|en:raspberry-syrups
+Holundersirup|en:syrups
+Ingwertee|en:teas
+Instantkaffee|en:instant-coffees
+Instanttee|en:teas
+Isotonisches Getränk|en:energy-drinks
+Kaffee|en:coffees
+Kaffeebohnen|en:coffee-beans
+Kaffeekapseln|en:coffee-capsules
+Kaffeepads|en:coffee-capsules
+Kaffeeweißer|en:creamer
+Kakao|en:cocoa-powders
+Kakaogetränk|en:cocoa-and-its-products
+Kamillentee|en:teas
+Kirschsaft|en:fruit-juices
+Kokosdrink|en:coconut-based-drinks
+Kokoswasser|en:coconut-waters
+Kräutertee|en:herbal-teas
+Laktosefreie Milch|en:lactose-free-milk
+Limonade|en:lemonades
+Löslicher Kaffee|en:instant-coffees
+Mandeldrink|en:almond-based-drinks
+Mandelmilch|en:almond-based-drinks
+Mangosaft|en:fruit-juices
+Maracujasaft|en:fruit-juices
+Matcha|en:matcha-powders
+Medium Wasser|en:waters
+Milchpulver|en:milk-powders
+Mineralwasser|en:mineral-waters
+Multivitaminsaft|en:fruit-juices
+Orangenlimonade|en:orange-soft-drinks
+Orangensaft|en:orange-juices
+Pfefferminztee|en:teas
+Reisdrink|en:rice-based-drinks
+Rooibostee|en:teas
+Saftschorle|en:apple-schorle
+Schwarztee|en:black-teas
+Sirup|en:syrups
+Smoothie|en:smoothies
+Sojadrink|en:soy-based-drinks
+Sojamilch|en:soy-based-drinks
+Sportgetränk|en:energy-drinks
+Sprudelwasser|en:waters
+Stilles Wasser|en:waters
+Tafelwasser|en:table-waters
+Tee|en:teas
+Tomatensaft|en:tomato-juices
+Tonic Water|en:tonic-water
+Traubensaft|en:grape-juices
+Traubenschorle|en:apple-schorle
+Trinkkakao|en:cocoa-and-its-products
+Trinkschokolade|en:cocoa-and-its-products
+Vollmilch|en:whole-milks
+Zitronenlimonade|en:lemon-soft-drinks
+Bacon|en:bacon
+Bergkäse|en:mountain-cheeses
+Bierschinken|de:bierschinken
+Bio-Eier|en:eggs
+Blauschimmelkäse|en:blue-veined-cheeses
+Blätterteig gekühlt|en:pie-dough
+Bratwurst|en:bratwursts
+Brie|en:bries
+Butter|en:butters
+Butterkäse|en:cheeses
+Büffelmozzarella|en:buffalo-mozzarella
+Camembert|en:camemberts
+Cheddar|en:cheddar-cheese
+Crème fraîche|en:cremes-fraiches
+Edamer|en:edam
+Eier|en:eggs
+Eiersalat|en:egg-salads
+Emmentaler|en:emmentaler
+Feta|en:feta
+Fleischsalat|de:fleischsalat
+Fleischwurst|de:fleischwurst
+Frischkäse|en:fresh-cheeses
+Frischmilch|en:fresh-milks
+Fruchtjoghurt|en:fruit-yogurts
+Gnocchi frisch|en:gnocchi
+Gouda|en:gouda
+Grana Padano|en:grana-padano
+Griechischer Joghurt|en:greek-style-yogurts
+Halloumi|en:halloumi
+Heringssalat|en:herring
+Hirtenkäse|en:sheep-s-milk-cheeses
+Hähnchenbrust-Aufschnitt|en:cooked-chicken-breast-slices
+Hüttenkäse|en:cottage-cheeses
+Joghurt|en:yogurts
+Kartoffelsalat|en:potato-salads
+Kasseler|en:kasseler
+Kochsahne|en:creams
+Krautsalat|en:coleslaw
+Kräuterbutter|en:herb-butters
+Käsewürfel|en:cheeses
+Körniger Frischkäse|en:cottage-cheeses
+Leberwurst|en:liverwurst-sausages
+Lyoner|en:lyoner
+Magerquark|en:lean-quark
+Margarine|en:margarines
+Mascarpone|en:mascarpone
+Matjes|en:herring
+Mortadella|en:mortadella
+Mozzarella|en:mozzarella
+Naturjoghurt|en:plain-yogurts
+Parmesan|en:parmigiano-reggiano
+Pizzateig gekühlt|en:pizza-dough
+Putenbrust-Aufschnitt|en:cooked-turkey-breast-slices
+Quark|en:quarks
+Ravioli frisch|en:fresh-ravioli
+Reibekäse|en:grated-cheese
+Ricotta|en:ricotta
+Rohschinken|en:cured-hams
+Räucherlachs|en:smoked-salmons
+Räuchertofu|en:smoked-tofu
+Sahne|en:creams
+Salami|en:salami
+Saure Sahne|de:saure-sahne
+Scheibenkäse|en:sliced-cheeses
+Schinken gekocht|en:cooked-ham-choice
+Schlagsahne|en:whipped-creams
+Schmand|en:smetana
+Schmelzkäse|en:processed-cheeses
+Seidentofu|en:silken-tofu
+Skyr|en:skyrs
+Speck|en:bacon
+Speisequark|en:quarks
+Teewurst|en:teewurst
+Tempeh|en:tempeh
+Tilsiter|en:tilsit
+Tofu|xx:tofu
+Tortellini frisch|en:tortellini
+Trinkjoghurt|en:yogurt-drinks
+Wachteleier|en:quail-eggs
+Wiener Würstchen|en:frankfurter-sausages
+Ananas|en:pineapples
+Apfel|en:apples
+Aprikose|en:apricots
+Aubergine|en:aubergines
+Austernpilze|en:oyster-mushrooms
+Avocado|en:avocados
+Babyspinat|en:spinachs
+Banane|en:bananas
+Basilikum frisch|en:fresh-basils
+Birne|en:pears
+Blumenkohl|en:cauliflowers
+Braune Champignons|en:chestnut-mushrooms
+Brokkoli|en:broccoli
+Brombeeren|en:blackberries
+Butternutkürbis|en:butternut-squashes
+Champignons|en:champignon-mushrooms
+Cherrytomaten|en:cherry-tomatoes
+Chili|en:chili-peppers
+Chinakohl|en:chinese-cabbage
+Clementine|en:clementines
+Cocktailtomaten|en:tomatoes
+Dattel|en:dates
+Dicke Bohnen|en:broad-beans
+Dill frisch|en:fresh-dill
+Eisbergsalat|en:iceberg-lettuce
+Endivie|en:endives
+Erdbeeren|en:strawberries
+Feige|en:figs
+Feldsalat|en:corn-salad
+Fenchel|en:fennel
+Fleischtomaten|en:tomatoes
+Frische Erbsen|en:green-peas
+Frühlingszwiebel|en:scallions
+Granatapfel|en:pomegranates
+Grapefruit|en:grapefruits
+Grünkohl|en:curly-kale
+Heidelbeeren|en:blueberries
+Himbeeren|en:raspberries
+Hokkaidokürbis|en:pumpkins
+Honigmelone|en:honeydew-melons
+Ingwer|en:ginger
+Johannisbeeren|en:redcurrants
+Kaki|en:kakis
+Karotte|en:carrots
+Kartoffel|en:potatoes
+Kirschen|en:cherries
+Kiwi|en:kiwifruits
+Knoblauch|en:garlics
+Knollensellerie|en:celeriac
+Kohlrabi|en:kohlrabi
+Kokosnuss|en:coconuts
+Kopfsalat|en:lettuces
+Koriander frisch|en:fresh-coriander-leaves
+Kresse|en:garden-cress
+Lauch|en:leeks
+Limette|en:limes
+Litschi|en:lychees
+Maiskolben|en:corn-on-the-cob
+Mandarine|en:mandarins
+Mango|en:mangoes
+Mangold|en:chards
+Maracuja|en:passion-fruits
+Melone|en:melons
+Minze frisch|en:fresh-mint
+Möhre|en:carrots
+Nektarine|en:nectarines
+Orange|en:oranges
+Oregano frisch|en:fresh-oregano
+Pak Choi|en:bok-choy
+Papaya|en:papayas
+Paprika gelb|en:yellow-sweet-peppers
+Paprika grün|en:green-sweet-peppers
+Paprika rot|en:red-bell-peppers
+Passionsfrucht|en:passion-fruits
+Pastinake|en:parsnip
+Peperoni|en:chili-peppers
+Petersilie frisch|en:fresh-parsley
+Petersilienwurzel|en:parsley
+Pfifferlinge|en:chanterelles
+Pfirsich|en:peaches
+Pflaume|en:plums
+Pomelo|en:pomelos
+Porree|en:leeks
+Radicchio|en:radicchio
+Radieschen|en:radishes
+Rettich|en:radishes
+Romanesco|en:romanesco
+Rosenkohl|en:brussels-sprouts
+Rosmarin frisch|en:fresh-rosemary
+Rote Bete|en:beetroot
+Rote Zwiebel|en:red-onions
+Rotkohl|en:red-cabbage
+Rucola|en:rocket
+Römersalat|en:romaine-lettuce
+Salatgurke|en:cucumbers
+Salbei frisch|en:fresh-sage
+Schalotte|en:shallots
+Schnittlauch frisch|en:fresh-chives
+Sellerie|en:celery
+Shiitake|en:shiitake-mushrooms
+Snackgurke|en:cucumbers
+Spargel grün|en:green-asparagus
+Spargel weiß|en:white-asparagus
+Speisekürbis|en:pumpkins
+Spinat|en:spinachs
+Spitzkohl|en:pointed-cabbages
+Spitzpaprika|en:red-bell-peppers
+Stachelbeeren|en:gooseberries
+Stangensellerie|en:celery
+Steinpilze|en:porcini-mushrooms
+Süßkartoffel|en:sweet-potatoes
+Thymian frisch|en:fresh-thyme
+Tomate|en:tomatoes
+Trauben|en:grapes
+Wassermelone|en:watermelons
+Weißkohl|en:white-cabbage
+Wirsing|en:cabbages
+Zitrone|en:lemons
+Zitronenmelisse|en:lemon-balm
+Zucchini|en:zucchini
+Zuckerschoten|en:snow-peas
+Zwetschge|en:plums
+Zwiebel|en:onions
+Äpfel|en:apples
+Bratwürstchen|en:bratwursts
+Burger-Patties|en:meat-patties
+Calamari|en:calamari
+Dorade|en:breams
+Ente|en:ducks
+Entenbrust|en:duck-breasts
+Fischfrikadellen|en:fish-cakes
+Fischstäbchen|en:fish-fingers
+Fleischbällchen|en:meat-balls
+Forelle|en:trouts
+Ganzes Hähnchen|en:whole-chickens
+Garnelen|en:prawns
+Geflügelhackfleisch|en:poultry-minced-preparations
+Gemischtes Hackfleisch|en:ground-meats
+Hähnchenbrust|en:chicken-breasts
+Hähnchenflügel|en:chicken-wings
+Hähnchenschenkel|en:chicken-thighs
+Jackfruit|en:jackfruit
+Kabeljau|en:cods
+Kalbfleisch|en:veal-meat
+Lachsfilet|en:salmon-fillets
+Lammfleisch|en:lamb-meat
+Lammkotelett|en:lamb-chop
+Muscheln|en:mussels
+Nackensteak|en:pork
+Putenbrust|en:turkey-breasts
+Putenschnitzel|en:turkey-cutlets
+Rinderbraten|en:roast-beef
+Rinderfilet|en:beef
+Rindergulasch|en:beef
+Rinderhackfleisch|en:ground-beef-meats
+Rindersteak|en:beef-steaks
+Rotbarsch|en:golden-redfish
+Rouladen|en:beef
+Schweinebraten|en:pork-roasts
+Schweinefilet|en:pork-tenderloin
+Schweinegulasch|en:pork
+Schweinehackfleisch|en:pork
+Schweinekotelett|en:pork
+Schweineschnitzel|en:breaded-pork-cutlets
+Seelachs|en:pollocks
+Seitan|en:seitan
+Shrimps|en:shrimps
+Sojagranulat|en:soy-steak
+Sojaschnetzel|en:soy-steak
+Suppenfleisch|en:beef
+Thunfischsteak|en:tunas
+Veggie-Burger|en:meat-analogues
+Veggie-Schnitzel|en:meat-analogues
+Veggie-Würstchen|en:vegetarian-sausages
+Eiswürfel|en:ice-cubes
+Erdbeereis|en:ice-creams
+Fruchteis|en:ice-creams
+Schokoladeneis|en:chocolate-eggs
+Stracciatellaeis|en:ice-creams
+TK-Baguette|en:frozen-baguettes
+TK-Beeren|en:frozen-berries
+TK-Blattspinat|en:frozen-spinachs
+TK-Blumenkohl|en:frozen-cauliflowers
+TK-Bohnen|en:frozen-green-beans
+TK-Brokkoli|en:frozen-broccolis
+TK-Brot|en:frozen-breads
+TK-Brötchen|en:bread-rolls
+TK-Burger|en:hamburgers
+TK-Croissants|en:croissants
+TK-Dill|en:frozen-dill
+TK-Dumplings|en:frozen-dumplings
+TK-Erbsen|en:green-peas
+TK-Erdbeeren|en:frozen-strawberries
+TK-Fischstäbchen|en:frozen-fish-fingers
+TK-Flammkuchen|en:frozen-pizzas
+TK-Frühlingsrollen|en:spring-rolls
+TK-Garnelen|en:prawns
+TK-Gemüsemischung|en:frozen-mixed-vegetables
+TK-Gemüsepfanne|en:frozen-vegetables
+TK-Gnocchi|en:gnocchi
+TK-Heidelbeeren|en:frozen-blueberries
+TK-Himbeeren|en:frozen-raspberries
+TK-Hähnchen|en:frozen-chickens
+TK-Kartoffelspalten|en:frozen-potato-wedges
+TK-Kroketten|en:frozen-potato-croquettes
+TK-Kräuter|en:frozen-herbs-and-spices
+TK-Lachs|en:salmons
+TK-Lasagne|en:frozen-lasagne
+TK-Mais|en:sweet-corn
+TK-Mango|en:frozen-mangos
+TK-Möhren|en:frozen-carrots
+TK-Nuggets|en:frozen-chicken-nuggets
+TK-Obstmischung|en:frozen-fruits
+TK-Paprika|en:frozen-peppers
+TK-Petersilie|en:frozen-parsley
+TK-Pfannkuchen|en:pancakes
+TK-Pizza|en:frozen-pizzas
+TK-Pommes|en:potato-fries
+TK-Rahmspinat|en:frozen-spinachs
+TK-Reispfanne|en:frozen-rice-with-vegetables
+TK-Rosenkohl|en:frozen-brussels-sprouts
+TK-Rösti|en:rostis
+TK-Schnitzel|en:meat-analogues
+TK-Spinat|en:frozen-spinachs
+TK-Suppengemüse|en:frozen-vegetables
+TK-Tortellini|en:tortellini
+TK-Waffeln|en:waffles
+TK-Wokgemüse|en:frozen-vegetables
+Vanilleeis|en:ice-creams
+Wassereis|en:ice-pops
+Anfangsmilch|en:infant-formulas
+Baby-Porridge|en:porridge
+Babygläschen|en:baby-foods
+Babykekse|en:biscuits-for-babies
+Babynahrung Pulver|en:baby-milks-in-powder
+Babyreiswaffeln|en:puffed-rice-cakes
+Babyshampoo|
+Babywaschlotion|
+Babywasser|en:waters
+Babyzwieback|en:rusks
+Feuchttücher|
+Folgemilch|en:baby-milks
+Gemüsebrei|en:baby-foods
+Getreidebrei|en:porridge
+Grießbrei|en:porridge
+Kindermilch|en:growth-milks
+Kindermüsli|en:mueslis
+Kindertee|en:teas
+Lätzchen|
+Milchbrei|en:porridge
+Obstbrei|en:compotes
+Obstmus Quetschbeutel|en:compotes
+Pre-Milch|en:baby-milks
+Quetschbeutel|en:baby-foods
+Quetschie|en:baby-foods
+Schnuller|
+Windeln|
+Wundschutzcreme|
+Allzweckreiniger|
+Alufolie|
+Backpapier|
+Badreiniger|
+Batterien AA|
+Batterien AAA|
+Butterbrotpapier|
+Colorwaschmittel|
+Conditioner|
+Damenbinden|
+Deo|
+Deodorant|
+Desinfektionsmittel|
+Druckerpapier|
+Duschgel|
+Entkalker|
+Essigreiniger|
+Feinwaschmittel|
+Feuerzeug|
+Fleckentferner|
+Flüssigseife|
+Frischhaltefolie|
+Gefrierbeutel|
+Geschirrtuch|
+Glasreiniger|
+Glühbirne|
+Haarspülung|
+Handcreme|
+Handseife|
+Hundefutter|
+Hundeleckerlis|
+Hygienereiniger|
+Kaffeefilter|
+Katzenfutter|
+Katzenstreu|
+Kerzen|
+Klarspüler|
+Klebeband|
+Klebestift|
+Knopfzellen|
+Kosmetiktücher|
+Körperlotion|
+Küchenreiniger|
+Küchenrolle|
+Leuchtmittel|
+Lippenpflege|
+Mikrofasertuch|
+Mundspülung|
+Müllbeutel|
+Müllsäcke|
+Pflaster|
+Rasiergel|
+Rasierklingen|
+Rasierschaum|
+Rohrreiniger|
+Scheuermilch|
+Schwamm|
+Servietten|
+Shampoo|
+Slipeinlagen|
+Sonnencreme|
+Spülbürste|
+Spülmaschinenpulver|
+Spülmaschinensalz|
+Spülmaschinentabs|
+Spülmittel|
+Spülschwamm|
+Staubsaugerbeutel|
+Streichhölzer|
+Tampons|
+Taschentücher|
+Teelichter|
+Toilettenpapier|
+Topfschwamm|
+Vollwaschmittel|
+WC-Reiniger|
+Waschmaschinenreiniger|
+Waschmittel|
+Wattepads|
+Wattestäbchen|
+Weichspüler|
+Wollwaschmittel|
+Zahnbürste|
+Zahnpasta|
+Zahnseide|
+Zip-Beutel|
