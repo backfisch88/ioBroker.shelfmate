@@ -103,6 +103,8 @@ Sobald das Zertifikat vertraut ist, startet die App auch ohne Verbindung. Buchun
 
 ### Zutaten-Prüfung
 
+Hat ein Produkt einen Mindestbestand, rechne ich ihn mit ein: Einzukaufen ist die benötigte Menge minus Vorrat plus Mindestbestand. Bei 2 kg Zucker im Vorrat, 1 kg Mindestbestand und `Zucker, 3000 g` landet `Zucker, 2000g` auf der Liste. `check.request` wird nach jedem Lauf geleert.
+
 Damit vergleiche ich die Zutaten meiner geplanten Rezepte mit dem, was ich zu Hause habe. ShelfMate kennt keine Rezepte, es bekommt nur eine Zutatenliste und sagt, was da ist.
 
 1. Die Zutaten in `check.request` schreiben, eine pro Zeile (oder durch Semikolon getrennt) oder als JSON-Liste mit Texten oder `{"name","amount","unit"}`. In einer Zeile trennen Kommas Name, Zusatz und Menge, so wie meine Rezept-App sie liefert: `Zwiebeln, rot, 1`, `Cherrytomaten, bunt, 500g`, `Salz, 0.5 tl`, `Basilikum`. Eine Menge vor dem Namen (`380g Linguine`, `2EL Olivenöl`) oder dahinter (`Mehl 200g`) geht auch. `kg`, `g`, `l`, `ml`, `cl` und Stück werden verstanden, `EL`, `TL` und Ähnliches zählen nur als „vorhanden“. Gleiche Zutaten werden addiert.

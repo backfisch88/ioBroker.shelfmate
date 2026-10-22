@@ -140,6 +140,8 @@ With Bring, Bring special or Script (with a remove state) there are two independ
 
 ### Ingredient check
 
+When a product has a minimum stock, I reserve it: what I need to buy is the wanted amount minus what I have plus the minimum stock. With 2 kg sugar in stock, a minimum of 1 kg and `Zucker, 3000 g` requested, `Zucker, 2000g` goes to the list. `check.request` is emptied after each run.
+
 I use this to compare the ingredients of my planned recipes with what I have at home. ShelfMate does not know any recipes, it only gets a list of ingredients and says what is there.
 
 1. Write the ingredients to `check.request`, one per line (or separated by semicolons), or as a JSON array of texts or `{"name","amount","unit"}`. Within a line commas separate name, qualifier and amount, in the form my recipe app delivers them: `Zwiebeln, rot, 1`, `Cherrytomaten, bunt, 500g`, `Salz, 0.5 tl`, `Basilikum`. An amount in front of the name (`380g Linguine`, `2EL Olivenöl`) or behind it (`Mehl 200g`) works too. `kg`, `g`, `l`, `ml`, `cl` and pieces are understood, `EL`, `TL` and the like only count as "present". The same ingredient twice is added up.
