@@ -1,124 +1,276 @@
-<p align="center"><img src="admin/shelfmate.png" alt="ShelfMate" width="160"></p>
+<p align="center">
+  <img src="admin/shelfmate.png" alt="ShelfMate" width="160">
+</p>
 
 [![NPM version](https://img.shields.io/npm/v/iobroker.shelfmate.svg)](https://www.npmjs.com/package/iobroker.shelfmate)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 # ioBroker.shelfmate
 
-Household inventory for ioBroker, served as an installable web app (iPhone home screen / Android) directly by the adapter.
-Know what is where, get warned at minimum stock and put missing items on your shopping list automatically.
+**ShelfMate – your pantry at a glance.**
 
-Deutsche Fassung: [README.de.md](README.de.md)
+ShelfMate is a pantry manager for ioBroker. It tells you at any time which food you have at home, where it is stored and what needs to be bought again.
 
-Step-by-step guides: [Tutorial](docs/en/tutorial.md) (English), [Anleitung](docs/de/tutorial.md) (Deutsch)
+Scan products by barcode, manage them on shelves and in cupboards, and put them on your shopping list automatically when needed. Minimum stock, best-before dates and consumption are taken into account as well.
+
+You use it through a web app that you open on your phone and add to the home screen. A separate app is not needed.
+
+**Deutsch:** [README.de.md](README.de.md)  
+**Guides:** [English](docs/en/tutorial.md) · [Deutsch](docs/de/tutorial.md)
 
 ---
 
 ## Features
 
-- Scan product barcodes and storage location QR codes with the phone camera
-- Products without a barcode: create your own EAN-13 code and print the label; upload your own product image (compressed automatically)
-- Printable EAN and QR labels in your own label size (Settings, e.g. 50 × 30 mm)
-- Product master data from Open Food Facts (name, brand, package size, Nutri-Score, categories), editable
-- Storage areas and locations with printable QR codes
-- Stock per location, history of all bookings, offline queue in the app
-- Search with suggestions while typing ("Nut" suggests "Nutella")
-- Product groups: "Flour" from several brands counts as one item
-- Optional best-before date (MHD) per product or per stocking, with warning before expiry
-- Optional standard shelf life and shelf life after opening, filled in automatically when you want it (a small sparkle symbol shows which values were not typed by hand), opened and spoiled marking, undo of the last booking
-- Ingredient check: compares a list of ingredients (for example from a recipe app) with the stock and puts only what is missing on the shopping list
-- Minimum stock per product or group with automatic shopping-list entry
-- Shopping list modes: **off**, **script** (via data points), **Bring!** or **Bring! special** (counts quantities up instead of skipping duplicates)
-- Optional removal from the shopping list when the stock is refilled and/or when the check mark is removed in the app
-- Overview of everything in stock as data points (JSON and HTML table for VIS)
-- Notifications through Telegram, telegrammenu2, Pushover, Signal, WhatsApp, Matrix or e-mail: minimum stock reached, daily message about expired and expiring products
-- Consumption of the last 30 days per product with a suggestion for the minimum stock that you can apply or dismiss with one tap
-- A bulb icon in the header collects all suggestions (group suggestions, minimum stock) in one place
-- Device name per phone, shown in the history for every booking
-- Stocktaking per storage location: as a list (expected quantity; type the counted quantity or tap ✓) or by scanning (scan the location QR, then every item, then the same QR again to finish; works with the camera or a keyboard-style scanner). Product images are shown, a summary confirms each finished location, and corrections appear in the history as "Stocktaking"
-- Group suggestions: products with similar names ("Flour", "Flour (Type 405)") can be combined into one group; single products can be removed from a suggestion
-- Label templates: "opened on", freezer label, large shelf label, box label with contents list, QR-only label. The adapter settings let you choose which label buttons the app shows
-- JSON backup: download and import in the app
-- Built-in HTTPS web server that uses the certificates of your ioBroker installation (self-signed, own or Let's Encrypt collections)
+### Products and storage locations
+
+- Add products by barcode or by hand
+- Load product data from Open Food Facts automatically (name, brand, package size, Nutri-Score and categories)
+- Edit and refresh product data at any time
+- Create your own EAN-13 barcodes for products without a barcode
+- Upload your own product images (scaled down automatically)
+- Create storage areas and locations, for example kitchen, pantry or cellar
+- Select storage locations with QR codes
+- Stock in, take out and move stock between locations
+- Follow every booking in a history
+- Find products quickly with the search, including suggestions while you type
+- Combine products of different brands into groups, for example flour or sugar
+
+### Minimum stock and shopping list
+
+- Set a minimum stock for single products or whole product groups
+- Put products on the shopping list automatically when the minimum stock is reached
+- Manage the shopping list through data points, Bring! or Bring! special
+- With Bring! special, quantities and variants are merged on the same entry instead of creating duplicates
+- Remove products from the shopping list automatically when the stock is refilled
+- Evaluate the consumption of the last 30 days
+- Suggest a fitting minimum stock based on past consumption
+
+### Shelf life and best-before date
+
+- Store the best-before date (MHD) optionally per product or per stocking
+- Warn about products that expire soon or have expired
+- Suggest a standard shelf life for many foods automatically
+- Take the shelf life after opening into account
+- Mark products as opened or spoiled
+- Recognise automatically filled-in values by the sparkle symbol
+- Set your own shelf life values for products and groups
+
+### Check ingredients
+
+Want to cook something and know whether all ingredients are at home?
+ShelfMate can compare a list of ingredients, for example from a recipe app, with your stock.
+Missing ingredients can be put on the shopping list directly. What is already in stock is not added again.
+
+### Scanning and labels
+
+- Capture barcodes with the phone camera or a scanner
+- Create and print QR codes for storage locations
+- Print EAN and QR labels in your own sizes, for example 50 × 30 mm
+- Labels for shelves, boxes, the freezer and opened products
+- Choose which labels the app offers
+- Scanner mode for stocking in and out without the web app open
+- Do a stocktaking by product list or by scanner
+
+### Overview and notifications
+
+- Show the whole stock by storage location
+- Warnings for minimum stock and expiring products
+- Notifications through Telegram, telegrammenu2, Pushover, Signal, WhatsApp, Matrix or e-mail
+- Daily summary of products that expire soon or have expired
+- Stocktaking reminders
+- Suggestions for product groups and minimum stock
+- Data points for VIS or your own scripts
+- JSON backups and export as CSV or PDF
+
+### Web app
+
+- Runs directly in the browser on phone, tablet and PC
+- Can be added to the iPhone or Android home screen
+- Offline queue for bookings when the connection is lost
+- Give each device a name so bookings can be told apart in the history
+- Undo the last booking
+- HTTPS with your own or automatically created certificates
 - Optional access key for the API
-- The app and the HTML data points use the ioBroker system language (de, en, ru, pt, nl, fr, it, es, pl, uk, zh-cn)
+- Multilingual: German, English, Russian, Portuguese, Dutch, French, Italian, Spanish, Polish, Ukrainian and Chinese
+
+---
 
 ## Requirements
 
-- js-controller >= 6.0.11, admin >= 7.6.20, Node.js >= 22.12
-- HTTPS with a certificate the phone trusts (needed for the camera scanner and the offline mode)
+- ioBroker js-controller >= 6.0.11
+- Admin >= 7.6.20
+- Node.js >= 22.12
+- HTTPS with a certificate your phone trusts (for the camera and the offline functions)
 
 ## Installation
 
-Install via the ioBroker Admin UI (Adapters). Then add an instance and open `https://<host>:8120/`.
+ShelfMate is installed like any other ioBroker adapter.
 
-## Usage
+1. Install the adapter **shelfmate** in the ioBroker admin.
+2. Create an instance.
+3. Open the web app at `https://<host>:8120/`.
+4. Optionally add the page to the home screen.
 
-1. Open `https://<host>:8120/` on your phone and add the page to the home screen.
-2. Create storage areas and locations (Settings / Locations). Print the QR code of a location and attach it to the shelf.
-3. Add products: scan the barcode (name, brand, size and Nutri-Score come from Open Food Facts) or enter them by hand. Optionally set a product group, a minimum stock and a best-before date.
-4. Book stock in and out per location, or move it between locations. Scan the location QR code to select the location.
-5. When the stock falls to the minimum, the product is put on the shopping list. In the overview the check mark shows which products are on the list; tapping it removes the product again (see the [tutorial](docs/en/tutorial.md)).
+The default port is `8120` and can be changed in the settings.
 
-## Configuration
+## Getting started
+
+1. **Create storage locations:** Create your storage areas and locations, for example Kitchen → Pantry → Shelf 1.
+2. **Print QR codes:** Attach the matching QR codes to your storage locations.
+3. **Add products:** Scan a barcode or create a product by hand. Much of the product data is loaded from Open Food Facts automatically.
+4. **Stock in:** Select the location by QR code and book in the amount.
+5. **Set a minimum stock:** ShelfMate can put products on your shopping list automatically when the stock gets low.
+
+A detailed description is in the [guide](docs/en/tutorial.md).
+
+---
+
+## Settings
+
+The most important functions can be adjusted directly in the adapter configuration.
 
 | Setting | Description |
 | --- | --- |
-| Port / bind address | Where the web server listens (default `8120`, all interfaces) |
-| Use HTTPS | Uses the certificate selected below. The default is the self-signed ioBroker certificate |
-| Create self-signed certificate | Button: creates a certificate for this server (host name and IP addresses, valid 825 days), stores it in the ioBroker certificates and selects it. Restart the instance afterwards |
-| Certificates | Choose public / private / chained certificate of the ioBroker certificate store, or a certificate collection (for example from the `acme` adapter) |
-| Access key | Optional. If set, the app asks for the key once per device |
-| Shopping list mode | Off, script, Bring or Bring special, see the [tutorial](docs/en/tutorial.md) |
-| Best-before date | **Off**, **per product** (one date on each product) or **per stocking** (a date for every booking of stock; removing uses the oldest date first) |
-| Date format | How all dates in the web app are shown: `31.10.2026`, `31/10/2026` or `2026-10-31` |
-| Notification adapter | Installed instance for messages (telegram, telegrammenu2, pushover, signal, whatsapp, matrix, email). Optional recipient (chat ID or e-mail address), the area for telegrammenu2, a test button, and the options "minimum stock reached" and "daily message about expired products" with its time |
-| Fill in shelf life automatically | When the standard shelf life is entered as best-before date: **always**, **only without the app** (scanner mode and data points, where nobody can type a date) or **never** (no suggestions either) |
-| What is filled in automatically | **Everything with a standard shelf life**, or **only dry goods from the built-in list** (own and group values are then never entered automatically) |
-| Put missing ingredients on the shopping list | After every ingredient check the missing lines go to the shopping list |
-| Scanner mode | Time between the two codes, the scanner device on the host, prefix and suffix, code type on location labels. Details in the [tutorial](docs/en/tutorial.md) |
-| Label buttons | Which label buttons the app shows (EAN, QR, QR only, large shelf label, box label, "opened on", freezer label) |
-| Stocktaking reminder | Optional message every N days when no stocktaking was done in that time (0 = off), sent at the time of the daily message |
-| Warn before expiry | Days before the date from which products are marked and listed in the data points |
+| Port / bind address | Port and network interface of the web server (default: 8120) |
+| HTTPS | Turn on HTTPS and choose the certificates |
+| Create certificate | Creates a self-signed certificate for the host name and IP addresses, valid for 825 days. Restart the instance afterwards |
+| Certificates | Use certificates from ioBroker or, for example, from the acme adapter |
+| Access key | Optional protection for API access, entered once per device |
+| Shopping list | Off, script, Bring! or Bring! special |
+| Best-before management | Off, per product or per stocking |
+| Date format | DD.MM.YYYY, DD/MM/YYYY or YYYY-MM-DD |
+| Notifications | Choose the adapter, the recipient and the messages you want |
+| Fill in shelf life automatically | Enter standard values always, only in scanner mode or never |
+| Which standard values | All stored shelf lives or only the built-in dry goods list |
+| Expiry warning | How many days before expiry to warn |
+| Ingredient check | Put missing ingredients on the shopping list automatically |
+| Scanner mode | Set the scanner device, time gaps, prefix, suffix and the QR code type |
+| Labels | Choose the available label types and print options |
+| Stocktaking reminder | Reminder after a set number of days without a stocktaking |
+
+### Best-before date
+
+There are three modes for the best-before management:
+
+- **Off:** No best-before management.
+- **Per product:** One shared best-before date for the product.
+- **Per stocking:** Every stocking can have its own best-before date. When taking out, the oldest stock is used first.
+
+ShelfMate can also fill in standard shelf lives automatically. Values you enter yourself always win.
+
+### Shopping list
+
+ShelfMate supports four modes:
+
+- **Off:** No automatic shopping list.
+- **Script:** Handed over through ioBroker data points.
+- **Bring!:** Products are added to the Bring! shopping list.
+- **Bring! special:** Existing entries are not skipped. Quantities are counted up and variants are added (for example `Feta, Kräuter, 200g`).
+
+Optionally, products are removed from the list again when the stock is refilled.
+
+More details are in the [guide to the shopping list](docs/en/tutorial.md#shopping-list-modes).
+
+### Notifications
+
+Messages can be sent through these adapters:
+
+- Telegram and telegrammenu2
+- Pushover
+- Signal
+- WhatsApp
+- Matrix
+- E-mail
+
+You choose whether ShelfMate notifies you about low stock, expiring products or a stocktaking that is due.
+For the daily expiry message you can set a fixed time.
+
+---
+
+## Data points
+
+ShelfMate provides important information and functions as ioBroker data points.
+
+### Stock and statistics
+
+| Data point | Description |
+| --- | --- |
+| `info.connection` | Web server is running |
+| `stats.products` | Number of products |
+| `stats.locations` | Number of storage locations |
+| `stats.inventory` | Whole stock as JSON |
+| `stats.inventoryHtml` | Stock as an HTML table for VIS |
+| `stats.lowStockCount` | Number of products with low stock |
+| `stats.lowStockList` | List of products with low stock |
+| `stats.consumption` | Consumption of the last 30 days |
+| `stats.expiringCount` | Number of products that expire soon or have expired |
+| `stats.expiring` | Expiring products as JSON |
+| `stats.expiringHtml` | Expiring products as an HTML table |
+
+### Shopping list and ingredients
+
+| Data point | Description |
+| --- | --- |
+| `shopping.addItem` | Add a product to the shopping list (`ack=false`) |
+| `check.request` | Hand over a list of ingredients to check (`ack=false`) |
+| `check.result` | Result of the last ingredient check as JSON |
+| `check.available` | Ingredients in stock |
+| `check.missing` | Missing ingredients |
+| `check.allAvailable` | `true` if all ingredients are in stock |
+| `check.addMissing` | Put the missing ingredients on the shopping list |
+
+### Scanner mode
+
+| Data point | Description |
+| --- | --- |
+| `scanner.active` | Turn scanner mode on or off |
+| `scanner.input` | Hand over a barcode or QR code (`ack=false`) |
+| `scanner.lastCode` | Last scanned code |
+| `scanner.result` | Result of the last scan |
+
+Example for `scanner.result`:
+
+`Fusilli ×1 stocked in at Shelf 1`
+
+More information: [Scanner mode without the app](docs/en/tutorial.md#scanner-mode-without-the-app)
+
+---
+
+## Backup
+
+All stock data is stored in the file `shelfmate.json` in the adapter's data directory.
+In the web app you can:
+
+- Download a JSON backup
+- Restore an existing backup
+- Export the stock as CSV or PDF
+- Delete all data
+
+When you import a backup or delete the data, the previous state is saved as `shelfmate.json.bak`.
+
+---
 
 ## Documentation
 
-- [Tutorial (English)](docs/en/tutorial.md): the app at a glance, editing products, automatic values, best-before date, shopping list, ingredient check, scanner mode, stocktaking, labels, certificate and the settings in detail
-- [Anleitung (Deutsch)](docs/de/tutorial.md): dasselbe auf Deutsch
+A detailed guide with examples and explanations:
 
-## Datapoints
+- [Guide in English](docs/en/tutorial.md)
+- [Anleitung auf Deutsch](docs/de/tutorial.md)
 
-| State | Description |
-| --- | --- |
-| `info.connection` | `true` while the web server is running |
-| `stats.products`, `stats.locations` | Counts |
-| `stats.lowStockCount`, `stats.lowStockList` | Items at or below the minimum stock |
-| `stats.inventory` | Everything in stock as JSON (name, amount, unit, minimum, low flag, locations) |
-| `stats.inventoryHtml` | Same as a simple HTML table, e.g. for a VIS html widget |
-| `stats.consumption` | Consumption of the last 30 days per product (JSON, moves between locations do not count) |
-| `stats.expiringCount`, `stats.expiring`, `stats.expiringHtml` | Products that are expired or expire within the warning period (count, JSON, HTML table) |
-| `shopping.addItem` | Write an item name (`ack=false`) to put it on the shopping list |
-| `check.request` | Write ingredients here (`ack=false`) to compare them with the stock, see the [tutorial](docs/en/tutorial.md) |
-| `check.result`, `check.available`, `check.missing`, `check.allAvailable` | Result of the last check (JSON per ingredient, lists with one line per ingredient, true if everything is in stock) |
-| `check.addMissing` | Button: put the missing ingredients of the last check on the shopping list |
-| `scanner.active` | Switch for the scanner mode (see the [tutorial](docs/en/tutorial.md)) |
-| `scanner.input` | Write a scanned code here (`ack=false`); a scanner connected to the host will do this later |
-| `scanner.lastCode`, `scanner.result` | Last code and the result of the last scan in scanner mode (for example "Fusilli ×1 stocked in at Shelf 1") |
+It explains the web app, storage locations, product groups, minimum stock, best-before date, scanner mode, labels, shopping list and stocktaking, among other things.
 
-Inventory data is stored in the adapter data directory (`shelfmate.json`), not in the object database.
-A JSON backup can be downloaded and imported in the app (Settings). An import or "Delete all data" replaces all data; the previous state is kept as `shelfmate.json.bak`.
+---
 
-## Work in progress and roadmap
+## Planned
 
-ShelfMate is under active development. Planned features (no promises, no order):
-
-- **Scanner connection**: a serial (USB cable) scanner and Bluetooth scanners directly on the host
-
-Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisch88/ioBroker.shelfmate/issues).
+ShelfMate is developed continuously.
+Next up is the direct connection of serial (USB) and Bluetooth scanners on the ioBroker host.
+Ideas, wishes or bugs are welcome as a [GitHub issue](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
 ## Changelog
 ### **WORK IN PROGRESS**
-- Changed: documentation split into a short README and a tutorial (English and German)
+- Changed: documentation split into a short README and a guide (English and German); the Bring! special examples now show how quantities and variants merge on one entry
 - New: product editor in collapsible sections (basics, stock, group and tags, shelf life, more) with a short summary on every closed section, Nutri-Score as a coloured row of buttons, package size next to the unit
 - New: product page with a tidier button layout (stock in / take out, move / open, shopping list, edit / delete)
 - New: a small sparkle symbol on the product page shows that the standard shelf life, the shelf life after opening or a best-before date was filled in automatically; earlier automatic dates are recognised when "Fill in shelf life automatically" runs again

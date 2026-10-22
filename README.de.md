@@ -1,123 +1,283 @@
-<p align="center"><img src="admin/shelfmate.png" alt="ShelfMate" width="160"></p>
+<p align="center">
+  <img src="admin/shelfmate.png" alt="ShelfMate" width="160">
+</p>
 
 # ioBroker.shelfmate
 
-Vorratsverwaltung für zu Hause in ioBroker. Der Adapter liefert sie als Web-App aus, die man aufs Handy legen kann (iPhone-Homescreen / Android).
-Ich sehe, was wo liegt, werde bei Mindestbestand gewarnt, und was fehlt, kommt automatisch auf die Einkaufsliste.
+**ShelfMate – deine Vorräte im Blick.**
 
-English version: [README.md](README.md)
+ShelfMate ist ein Vorratsmanager für ioBroker. Damit weißt du jederzeit, welche Lebensmittel du zu Hause hast, wo sie liegen und was nachgekauft werden muss.
 
-Anleitungen: [Anleitung](docs/de/tutorial.md) (Deutsch), [Tutorial](docs/en/tutorial.md) (English)
+Produkte lassen sich per Barcode scannen, in Regalen oder Schränken verwalten und bei Bedarf automatisch auf die Einkaufsliste setzen. Auch Mindestbestände, Haltbarkeitsdaten und der Verbrauch werden berücksichtigt.
+
+Die Bedienung erfolgt über eine Web-App, die du auf dem Smartphone öffnen und zum Homescreen hinzufügen kannst. Eine separate App ist nicht nötig.
+
+**English:** [README.md](README.md)  
+**Anleitungen:** [Deutsch](docs/de/tutorial.md) · [English](docs/en/tutorial.md)
 
 ---
 
 ## Funktionen
 
-- Barcodes und QR-Codes der Lagerorte per Handykamera scannen
-- Produkte ohne Barcode: eigenen EAN-13-Code erzeugen und das Etikett drucken, eigenes Produktbild hochladen (wird automatisch verkleinert)
-- Druckbare EAN- und QR-Etiketten in der eigenen Etikettengröße (Einstellungen, zum Beispiel 50 × 30 mm)
-- Produktdaten von Open Food Facts (Name, Marke, Packungsgröße, Nutri-Score, Kategorien), änderbar und jederzeit neu ladbar
-- Lagerbereiche und Lagerorte mit druckbaren QR-Codes
-- Bestand pro Lagerort, Historie aller Buchungen, Offline-Warteschlange in der App
-- Suche mit Vorschlägen beim Tippen („Nut“ schlägt „Nutella“ vor)
-- Produktgruppen: „Mehl“ mehrerer Marken zählt als ein Artikel
-- Optionales Mindesthaltbarkeitsdatum (MHD) pro Produkt oder pro Einlagerung, mit Warnung vor Ablauf
-- Optional: Standard-Haltbarkeit und Haltbarkeit nach dem Öffnen, auf Wunsch automatisch eingetragen (ein kleines Funken-Symbol zeigt, was ich nicht selbst getippt habe), Geöffnet und Verdorben markieren, letzte Buchung rückgängig
-- Zutaten-Prüfung: vergleicht eine Zutatenliste (zum Beispiel aus einer Rezept-App) mit dem Bestand und setzt nur das Fehlende auf die Einkaufsliste
-- Mindestbestand pro Produkt oder Gruppe mit automatischem Eintrag auf die Einkaufsliste
-- Einkaufsliste: **Aus**, **Script** (Datenpunkte), **Bring!** oder **Bring! Spezial** (zählt Mengen hoch statt Duplikate zu überspringen)
-- Optional: Artikel von der Liste nehmen, wenn wieder aufgefüllt, und/oder wenn der Haken in der App entfernt wird
-- Der ganze Bestand als Datenpunkte (JSON und HTML-Tabelle für VIS)
-- Benachrichtigungen über Telegram, telegrammenu2, Pushover, Signal, WhatsApp, Matrix oder E-Mail: Mindestbestand erreicht, tägliche Meldung zu abgelaufenen und bald ablaufenden Produkten
-- Verbrauch der letzten 30 Tage pro Produkt mit Vorschlag für den Mindestbestand, den ich mit einem Tipp übernehme oder ablehne
-- Eine Glühbirne in der Kopfzeile sammelt alle Vorschläge (Gruppen, Mindestbestand, fällige Inventur)
-- Gerätename pro Handy, in der Historie bei jeder Buchung zu sehen
-- Inventur pro Lagerort als Liste oder per Scan (Lagerort-QR, dann die Produkte, dann nochmal denselben QR), mit Kamera oder Tastatur-Scanner
-- Gruppen-Vorschläge für ähnlich benannte Produkte
-- Etiketten: „Geöffnet am“, Gefrierfach, großes Regal-Etikett, Boxen-Etikett mit Inhalt, nur QR. Welche Knöpfe die App zeigt, stelle ich im Adapter ein
-- Scanner-Modus ohne App: Ein- und Auslagern mit gescannten Codes über Datenpunkte
-- JSON-Backup, Export als CSV oder PDF
-- Eigener HTTPS-Server mit den Zertifikaten der ioBroker-Installation (selbstsigniert, eigene oder Let's Encrypt)
+### Produkte und Lagerorte
+
+- Produkte per Barcode oder manuell hinzufügen
+- Produktdaten automatisch über Open Food Facts laden (Name, Marke, Packungsgröße, Nutri-Score und Kategorien)
+- Produktdaten jederzeit bearbeiten und aktualisieren
+- Eigene EAN-13-Barcodes für Produkte ohne Barcode erstellen
+- Eigene Produktbilder hochladen (werden automatisch verkleinert)
+- Lagerbereiche und Lagerorte anlegen, zum Beispiel Küche, Vorratsschrank oder Keller
+- Lagerorte über QR-Codes auswählen
+- Bestände einlagern, entnehmen und zwischen Lagerorten verschieben
+- Alle Buchungen in einer Historie nachvollziehen
+- Produkte schnell über die Suche finden, inklusive Vorschlägen während der Eingabe
+- Produkte verschiedener Marken zu Gruppen zusammenfassen, zum Beispiel Mehl oder Zucker
+
+### Mindestbestand und Einkaufsliste
+
+- Mindestbestand für einzelne Produkte oder ganze Produktgruppen festlegen
+- Produkte automatisch auf die Einkaufsliste setzen, sobald der Mindestbestand erreicht ist
+- Einkaufslisten über Datenpunkte, Bring! oder Bring! Spezial verwalten
+- Bei Bring! Spezial werden Mengen und Zusätze auf demselben Eintrag zusammengeführt, statt doppelte Einträge anzulegen
+- Produkte beim Auffüllen automatisch von der Einkaufsliste entfernen
+- Verbrauch der letzten 30 Tage auswerten
+- Passenden Mindestbestand anhand des bisherigen Verbrauchs vorschlagen
+
+### Haltbarkeit und MHD
+
+- Mindesthaltbarkeitsdatum optional pro Produkt oder pro Einlagerung speichern
+- Vor bald ablaufenden und abgelaufenen Produkten warnen
+- Standard-Haltbarkeit für viele Lebensmittel automatisch vorschlagen
+- Haltbarkeit nach dem Öffnen berücksichtigen
+- Produkte als geöffnet oder verdorben markieren
+- Automatisch eingetragene Werte am Funken-Symbol erkennen
+- Eigene Haltbarkeitswerte für Produkte und Gruppen festlegen
+
+### Zutaten prüfen
+
+Du möchtest etwas kochen und wissen, ob alle Zutaten vorhanden sind?
+
+ShelfMate kann eine Zutatenliste, zum Beispiel aus einer Rezept-App, mit deinem Vorrat vergleichen.
+
+Fehlende Zutaten lassen sich direkt auf die Einkaufsliste setzen. Was bereits vorhanden ist, wird nicht erneut hinzugefügt.
+
+### Scannen und Etiketten
+
+- Barcodes mit der Smartphone-Kamera oder einem Scanner erfassen
+- QR-Codes für Lagerorte erstellen und drucken
+- EAN- und QR-Etiketten in eigenen Größen drucken, zum Beispiel 50 × 30 mm
+- Etiketten für Regale, Boxen, Gefrierfach und geöffnete Produkte
+- Einstellen, welche Etiketten in der App angeboten werden
+- Scanner-Modus für das Ein- und Auslagern ohne geöffnete Web-App
+- Inventur per Produktliste oder Scanner durchführen
+
+### Übersicht und Benachrichtigungen
+
+- Gesamten Bestand nach Lagerort anzeigen
+- Warnungen bei Mindestbestand und ablaufenden Produkten
+- Benachrichtigungen über Telegram, telegrammenu2, Pushover, Signal, WhatsApp, Matrix oder E-Mail
+- Tägliche Übersicht über bald ablaufende und abgelaufene Produkte
+- Inventur-Erinnerungen
+- Vorschläge für Produktgruppen und Mindestbestände
+- Datenpunkte für die Einbindung in VIS oder eigene Skripte
+- JSON-Backups sowie Export als CSV oder PDF
+
+### Web-App
+
+- Läuft direkt im Browser auf Smartphone, Tablet und PC
+- Kann auf dem iPhone- oder Android-Homescreen abgelegt werden
+- Offline-Warteschlange für Buchungen bei Verbindungsproblemen
+- Gerätenamen vergeben, damit Buchungen in der Historie zugeordnet werden können
+- Letzte Buchung rückgängig machen
+- HTTPS-Unterstützung mit eigenen oder automatisch erstellten Zertifikaten
 - Optionaler Zugriffsschlüssel für die API
-- App und HTML-Datenpunkte nutzen die ioBroker-Systemsprache (de, en, ru, pt, nl, fr, it, es, pl, uk, zh-cn)
+- Mehrsprachig: Deutsch, Englisch, Russisch, Portugiesisch, Niederländisch, Französisch, Italienisch, Spanisch, Polnisch, Ukrainisch und Chinesisch
+
+---
 
 ## Voraussetzungen
 
-- js-controller >= 6.0.11, admin >= 7.6.20, Node.js >= 22.12
-- HTTPS mit einem Zertifikat, dem das Handy vertraut (wird für die Kamera und den Offline-Modus gebraucht)
+- ioBroker js-controller >= 6.0.11
+- Admin >= 7.6.20
+- Node.js >= 22.12
+- HTTPS mit einem Zertifikat, dem das Smartphone vertraut (für Kamera und Offline-Funktionen)
 
 ## Installation
 
-Ganz normal über den Adapter-Reiter im ioBroker-Admin installieren. Danach eine Instanz anlegen und `https://<Host>:8120/` öffnen.
+ShelfMate wird wie jeder andere ioBroker-Adapter installiert.
 
-## Schnellstart
+1. Im ioBroker-Admin den Adapter **shelfmate** installieren.
+2. Eine Instanz anlegen.
+3. Die Web-App über `https://<Host>:8120/` öffnen.
+4. Optional die Seite zum Homescreen hinzufügen.
 
-1. `https://<Host>:8120/` am Handy öffnen und die Seite zum Homescreen hinzufügen.
-2. Lagerbereiche und Lagerorte anlegen (Einstellungen / Lagerorte). Den QR-Code eines Lagerorts drucken und ins Regal kleben.
-3. Produkte anlegen: Barcode scannen (Name, Marke, Größe und Nutri-Score kommen von Open Food Facts) oder von Hand eingeben. Optional Produktgruppe, Mindestbestand und MHD setzen.
-4. Bestand pro Lagerort ein- und auslagern oder verschieben. Den QR-Code des Lagerorts scannen, um ihn auszuwählen.
-5. Fällt der Bestand auf den Mindestbestand, kommt das Produkt auf die Einkaufsliste. In der Übersicht zeigt der Haken, was auf der Liste steht; ein Tipp darauf nimmt es wieder herunter (siehe [Anleitung](docs/de/tutorial.md)).
+Der Standardport ist `8120` und kann in den Einstellungen geändert werden.
+
+## Erste Schritte
+
+1. **Lagerorte anlegen:** Erstelle deine Lagerbereiche und Lagerorte, zum Beispiel Küche → Vorratsschrank → Fach 1.
+2. **QR-Codes drucken:** Bringe die passenden QR-Codes an deinen Lagerorten an.
+3. **Produkte hinzufügen:** Scanne einen Barcode oder lege ein Produkt manuell an. Viele Produktdaten werden automatisch von Open Food Facts geladen.
+4. **Vorräte einlagern:** Wähle den Lagerort per QR-Code aus und buche die gewünschte Menge ein.
+5. **Mindestbestand festlegen:** ShelfMate kann Produkte automatisch auf deine Einkaufsliste setzen, sobald der Vorrat knapp wird.
+
+Eine ausführliche Beschreibung findest du in der [Anleitung](docs/de/tutorial.md).
+
+---
 
 ## Einstellungen
 
+Die wichtigsten Funktionen lassen sich direkt in der Adapterkonfiguration anpassen.
+
 | Einstellung | Beschreibung |
 | --- | --- |
-| Port / Bind-Adresse | Auf welchem Port und welcher Adresse der Webserver läuft (Standard `8120`, alle Schnittstellen) |
-| HTTPS verwenden | Nutzt das unten gewählte Zertifikat. Standard ist das selbstsignierte ioBroker-Zertifikat |
-| Selbstsigniertes Zertifikat erzeugen | Knopf: erzeugt ein Zertifikat für diesen Server (Hostname und IP-Adressen, 825 Tage gültig), legt es in den ioBroker-Zertifikaten ab und wählt es aus. Danach die Instanz neu starten |
-| Zertifikate | Öffentliches / privates / Chain-Zertifikat aus dem ioBroker-Zertifikatsspeicher oder eine Zertifikatssammlung (zum Beispiel vom `acme`-Adapter) |
-| Zugriffsschlüssel | Optional. Ist einer gesetzt, fragt die App einmal pro Gerät danach |
-| Einkaufslisten-Modus | Aus, Script, Bring oder Bring Spezial, siehe [Anleitung](docs/de/tutorial.md#einkaufslisten-modi) |
-| Mindesthaltbarkeit | **Aus**, **pro Produkt** (ein Datum am Produkt) oder **pro Einlagerung** (ein Datum bei jeder Einlagerung; beim Entnehmen zuerst das älteste) |
-| Datumsformat | Wie Daten in der App angezeigt werden: `31.10.2026`, `31/10/2026` oder `2026-10-31` |
-| Benachrichtigungs-Adapter | Installierte Instanz für Nachrichten (telegram, telegrammenu2, pushover, signal, whatsapp, matrix, email). Optional Empfänger (Chat-ID oder E-Mail-Adresse), der Bereich für telegrammenu2, ein Test-Knopf und die Optionen „Mindestbestand erreicht“ und „tägliche Meldung zu abgelaufenen Produkten“ mit Uhrzeit |
-| Haltbarkeit automatisch eintragen | Wann die Standard-Haltbarkeit als MHD eingetragen wird: **immer**, **nur ohne App** (Scanner-Modus und Datenpunkte, wo niemand ein Datum tippen kann) oder **nie** (dann auch keine Vorschläge) |
-| Was automatisch eingetragen wird | **Alles mit Standard-Haltbarkeit** oder **nur Trockenware aus der eingebauten Liste** (eigene und Gruppenwerte werden dann nie automatisch eingetragen) |
-| Fehlende Zutaten auf die Einkaufsliste | Nach jeder Zutaten-Prüfung kommen die fehlenden Zeilen auf die Einkaufsliste |
-| Scanner-Modus | Zeit zwischen zwei Codes, das Scanner-Gerät am Host, Präfix und Suffix, Codeart auf den Lagerort-Etiketten. Details in der [Anleitung](docs/de/tutorial.md#scanner-modus-ohne-app) |
-| Etiketten-Knöpfe | Welche Etiketten-Knöpfe die App zeigt (EAN, QR, Nur-QR, großes Regal-Etikett, Boxen-Etikett, „Geöffnet am“, Gefrierfach) |
-| Inventur-Erinnerung | Optional eine Nachricht alle N Tage, wenn in dieser Zeit keine Inventur gemacht wurde (0 = aus), gesendet zur Zeit der täglichen Meldung |
-| Vor Ablauf warnen | Tage vor dem Datum, ab denen Produkte markiert und in den Datenpunkten aufgeführt werden |
+| Port / Bind-Adresse | Port und Netzwerkschnittstelle des Webservers (Standard: 8120) |
+| HTTPS | HTTPS aktivieren und Zertifikate auswählen |
+| Zertifikat erstellen | Erstellt ein selbstsigniertes Zertifikat für Hostname und IP-Adressen, gültig für 825 Tage. Danach die Instanz neu starten |
+| Zertifikate | Zertifikate aus ioBroker oder zum Beispiel vom acme-Adapter verwenden |
+| Zugriffsschlüssel | Optionaler Schutz für den API-Zugriff, einmalige Eingabe pro Gerät |
+| Einkaufsliste | Aus, Script, Bring! oder Bring! Spezial |
+| MHD-Verwaltung | Aus, pro Produkt oder pro Einlagerung |
+| Datumsformat | TT.MM.JJJJ, TT/MM/JJJJ oder JJJJ-MM-TT |
+| Benachrichtigungen | Adapter, Empfänger und gewünschte Meldungen auswählen |
+| Automatische Haltbarkeit | Standardwerte immer, nur im Scanner-Modus oder nie eintragen |
+| Standardwerte verwenden | Alle hinterlegten Haltbarkeiten oder nur die eingebaute Trockenwarenliste |
+| Ablaufwarnung | Festlegen, wie viele Tage vor Ablauf gewarnt wird |
+| Zutaten-Prüfung | Fehlende Zutaten automatisch auf die Einkaufsliste setzen |
+| Scanner-Modus | Scanner-Gerät, Zeitabstände, Präfix, Suffix und QR-Code-Art einstellen |
+| Etiketten | Verfügbare Etikettentypen und Druckoptionen auswählen |
+| Inventur-Erinnerung | Erinnerung nach einer festgelegten Anzahl von Tagen ohne Inventur |
 
-## Dokumentation
+### Mindesthaltbarkeit
 
-- [Anleitung (Deutsch)](docs/de/tutorial.md): die App im Überblick, Produkte bearbeiten, automatische Werte und das Funken-Symbol, Mindesthaltbarkeit, Einkaufsliste, Zutaten-Prüfung, Scanner-Modus, Inventur, Etiketten und Zertifikat
-- [Tutorial (English)](docs/en/tutorial.md): dasselbe auf Englisch
+Für die MHD-Verwaltung gibt es drei Möglichkeiten:
+
+- **Aus:** Keine MHD-Verwaltung.
+- **Pro Produkt:** Ein gemeinsames MHD für das Produkt.
+- **Pro Einlagerung:** Jede Einlagerung kann ein eigenes MHD haben. Bei der Entnahme wird zuerst der älteste Bestand berücksichtigt.
+
+ShelfMate kann außerdem Standard-Haltbarkeiten automatisch eintragen. Selbst eingetragene Werte haben Vorrang.
+
+### Einkaufsliste
+
+ShelfMate unterstützt vier Modi:
+
+- **Aus:** Keine automatische Einkaufsliste.
+- **Script:** Übergabe über ioBroker-Datenpunkte.
+- **Bring!:** Produkte werden zur Bring!-Einkaufsliste hinzugefügt.
+- **Bring! Spezial:** Vorhandene Einträge werden nicht übersprungen. Mengen werden hochgezählt, Zusätze ergänzt (zum Beispiel `Feta, Kräuter, 200g`).
+
+Optional können Produkte beim Auffüllen wieder von der Liste entfernt werden.
+
+Weitere Informationen findest du in der [Anleitung zu den Einkaufslisten](docs/de/tutorial.md#einkaufslisten-modi).
+
+### Benachrichtigungen
+
+Meldungen können über folgende Adapter gesendet werden:
+
+- Telegram und telegrammenu2
+- Pushover
+- Signal
+- WhatsApp
+- Matrix
+- E-Mail
+
+Du kannst auswählen, ob ShelfMate bei niedrigem Bestand, bei ablaufenden Produkten oder bei einer fälligen Inventur benachrichtigen soll.
+
+Für die tägliche Ablaufmeldung lässt sich eine feste Uhrzeit einstellen.
+
+---
 
 ## Datenpunkte
 
+ShelfMate stellt wichtige Informationen und Funktionen als ioBroker-Datenpunkte bereit.
+
+### Bestand und Statistiken
+
 | Datenpunkt | Beschreibung |
 | --- | --- |
-| `info.connection` | `true`, solange der Webserver läuft |
-| `stats.products`, `stats.locations` | Anzahlen |
-| `stats.lowStockCount`, `stats.lowStockList` | Artikel am oder unter dem Mindestbestand |
-| `stats.inventory` | Alles im Bestand als JSON (Name, Menge, Einheit, Minimum, Niedrig-Flag, Lagerorte) |
-| `stats.inventoryHtml` | Dasselbe als einfache HTML-Tabelle, zum Beispiel für ein VIS-HTML-Widget |
-| `stats.consumption` | Verbrauch der letzten 30 Tage pro Produkt (JSON, Verschieben zählt nicht) |
-| `stats.expiringCount`, `stats.expiring`, `stats.expiringHtml` | Abgelaufene und bald ablaufende Produkte (Anzahl, JSON, HTML-Tabelle) |
-| `shopping.addItem` | Einen Artikelnamen schreiben (`ack=false`), um ihn auf die Einkaufsliste zu setzen |
-| `check.request` | Zutaten hierher schreiben (`ack=false`), um sie mit dem Bestand zu vergleichen, siehe [Anleitung](docs/de/tutorial.md#zutaten-prüfung) |
-| `check.result`, `check.available`, `check.missing`, `check.allAvailable` | Ergebnis der letzten Prüfung (JSON je Zutat, Listen mit einer Zeile je Zutat, true wenn alles da ist) |
-| `check.addMissing` | Knopf: die fehlenden Zutaten der letzten Prüfung auf die Einkaufsliste setzen |
-| `scanner.active` | Schalter für den Scanner-Modus (siehe [Anleitung](docs/de/tutorial.md#scanner-modus-ohne-app)) |
-| `scanner.input` | Hier einen gescannten Code hineinschreiben (`ack=false`); ein am Host angeschlossener Scanner macht das später selbst |
-| `scanner.lastCode`, `scanner.result` | Letzter Code und Ergebnis des letzten Scans im Scanner-Modus (zum Beispiel „Fusilli ×1 eingelagert in Regal 1“) |
+| `info.connection` | Webserver läuft |
+| `stats.products` | Anzahl der Produkte |
+| `stats.locations` | Anzahl der Lagerorte |
+| `stats.inventory` | Gesamter Bestand als JSON |
+| `stats.inventoryHtml` | Bestand als HTML-Tabelle für VIS |
+| `stats.lowStockCount` | Anzahl der Produkte mit niedrigem Bestand |
+| `stats.lowStockList` | Liste der Produkte mit niedrigem Bestand |
+| `stats.consumption` | Verbrauch der letzten 30 Tage |
+| `stats.expiringCount` | Anzahl bald ablaufender und abgelaufener Produkte |
+| `stats.expiring` | Ablaufende Produkte als JSON |
+| `stats.expiringHtml` | Ablaufende Produkte als HTML-Tabelle |
 
-Die Bestandsdaten liegen im Datenverzeichnis des Adapters (`shelfmate.json`), nicht in der Objektdatenbank.
-Ein JSON-Backup kann ich in der App herunterladen und wieder einspielen (Einstellungen). Ein Import oder „Alle Daten löschen“ ersetzt alle Daten. Der alte Stand bleibt als `shelfmate.json.bak` erhalten.
+### Einkaufsliste und Zutaten
 
-## In Arbeit und Ausblick
+| Datenpunkt | Beschreibung |
+| --- | --- |
+| `shopping.addItem` | Produkt zur Einkaufsliste hinzufügen (`ack=false`) |
+| `check.request` | Zutatenliste zur Prüfung übergeben (`ack=false`) |
+| `check.result` | Ergebnis der letzten Zutaten-Prüfung als JSON |
+| `check.available` | Vorhandene Zutaten |
+| `check.missing` | Fehlende Zutaten |
+| `check.allAvailable` | `true`, wenn alle Zutaten vorhanden sind |
+| `check.addMissing` | Fehlende Zutaten auf die Einkaufsliste setzen |
 
-ShelfMate entwickle ich weiter. Geplant ist (ohne Gewähr und ohne feste Reihenfolge):
+### Scanner-Modus
 
-- **Scanner-Anbindung**: serielle (USB-Kabel) und Bluetooth-Scanner direkt am Host
+| Datenpunkt | Beschreibung |
+| --- | --- |
+| `scanner.active` | Scanner-Modus ein- oder ausschalten |
+| `scanner.input` | Barcode oder QR-Code übergeben (`ack=false`) |
+| `scanner.lastCode` | Zuletzt gescannter Code |
+| `scanner.result` | Ergebnis des letzten Scans |
 
-Ideen und Fehler gern als [GitHub-Issues](https://github.com/backfisch88/ioBroker.shelfmate/issues).
+Beispiel für `scanner.result`:
+
+`Fusilli ×1 eingelagert in Regal 1`
+
+Weitere Informationen: [Scanner-Modus ohne App](docs/de/tutorial.md#scanner-modus-ohne-app)
+
+---
+
+## Datensicherung
+
+Alle Bestandsdaten werden in der Datei `shelfmate.json` im Datenverzeichnis des Adapters gespeichert.
+
+Über die Web-App kannst du:
+
+- Ein JSON-Backup herunterladen
+- Ein vorhandenes Backup wiederherstellen
+- Bestände als CSV oder PDF exportieren
+- Alle Daten löschen
+
+Beim Import eines Backups oder beim Löschen der Daten wird der vorherige Stand als `shelfmate.json.bak` gesichert.
+
+---
+
+## Dokumentation
+
+Eine ausführliche Anleitung mit Beispielen und Erklärungen gibt es hier:
+
+- [Anleitung auf Deutsch](docs/de/tutorial.md)
+- [Tutorial in English](docs/en/tutorial.md)
+
+Darin werden unter anderem die Bedienung der Web-App, Lagerorte, Produktgruppen, Mindestbestand, MHD, Scanner-Modus, Etiketten, Einkaufsliste und Inventur erklärt.
+
+---
+
+## Geplant
+
+ShelfMate wird laufend weiterentwickelt.
+
+Als Nächstes ist die direkte Anbindung serieller Scanner (USB) und Bluetooth-Scanner am ioBroker-Host geplant.
+
+Ideen, Wünsche oder Fehler können gerne als [GitHub-Issue](https://github.com/backfisch88/ioBroker.shelfmate/issues) gemeldet werden.
 
 ## Änderungsverlauf
 
-Der Änderungsverlauf steht in der englischen [README.md](README.md#changelog).
+Den vollständigen Änderungsverlauf findest du in der [englischen README](README.md#changelog).
 
 ## Lizenz
 
-MIT-Lizenz, Copyright (c) 2026 Henrik Schoenhofen <henrik.schoenhofen@icloud.com>. Der volle Text steht in [LICENSE](LICENSE).
+MIT-Lizenz
+
+Copyright (c) 2026 Henrik Schoenhofen  
+[LICENSE](LICENSE)

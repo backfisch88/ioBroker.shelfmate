@@ -1,221 +1,945 @@
-# ShelfMate tutorial
+# ShelfMate – Guide
 
-Step-by-step guides for everything I do with ShelfMate. The short description, the settings and the datapoints are in the [README](../../README.md). A German version of this tutorial is in [docs/de/tutorial.md](../de/tutorial.md).
+With ShelfMate you manage your pantry directly in ioBroker. This guide shows you how to create products, manage stock, scan barcodes and use the different functions.
+
+You find all settings, requirements and data points in the [README](../../README.md).
+
+Deutsche Version: [Anleitung](../de/tutorial.md)
+
+---
 
 ## Contents
 
 1. [The app at a glance](#the-app-at-a-glance)
-2. [Editing a product](#editing-a-product)
-3. [Automatic values and the sparkle symbol](#automatic-values-and-the-sparkle-symbol)
-4. [Reloading a product from Open Food Facts](#reloading-a-product-from-open-food-facts)
-5. [Book stock in and out](#book-stock-in-and-out)
-6. [Storage locations and labels](#storage-locations-and-labels)
+2. [Editing products](#editing-products)
+3. [Automatic shelf life and the sparkle symbol](#automatic-shelf-life-and-the-sparkle-symbol)
+4. [Refreshing product data](#refreshing-product-data)
+5. [Stock in, take out and move](#stock-in-take-out-and-move)
+6. [Creating storage locations](#creating-storage-locations)
 7. [Products without a barcode](#products-without-a-barcode)
 8. [Minimum stock and shopping list](#minimum-stock-and-shopping-list)
 9. [Best-before date](#best-before-date)
 10. [Shopping list modes](#shopping-list-modes)
-11. [Ingredient check](#ingredient-check)
-12. [Stocking a whole shelf by scanning](#stocking-a-whole-shelf-by-scanning)
-13. [Stocktaking by scanning](#stocktaking-by-scanning)
-14. [Scanner mode (without the app)](#scanner-mode-without-the-app)
-15. [Suggestions (bulb icon)](#suggestions-bulb-icon)
+11. [Checking ingredients](#checking-ingredients)
+12. [Stocking a whole shelf](#stocking-a-whole-shelf)
+13. [Doing a stocktaking](#doing-a-stocktaking)
+14. [Scanner mode without the app](#scanner-mode-without-the-app)
+15. [Suggestions](#suggestions)
 16. [Notifications](#notifications)
 17. [Export and backup](#export-and-backup)
-18. [Offline use](#offline-use)
-19. [Certificate and installing it on the phone](#certificate-and-installing-it-on-the-phone)
+18. [Offline mode](#offline-mode)
+19. [HTTPS and certificates](#https-and-certificates)
 20. [Printing labels](#printing-labels)
+
+---
 
 ## The app at a glance
 
-**Overview.** At the top is the search field. While I type, suggestions (product names, brands, tags) appear right under it; I tap one to take it over. The **×** on the right clears the field. Below the search I find three dropdowns (area, location, category), the status chips and the tags:
+### Overview
 
-- The status chips are **Opened**, **Best before soon**, **Expired**, **reorder** and **Empty**. The two best-before chips only exist when the best-before date is switched on. A tap on a chip filters the list, a second tap switches it off again.
-- The tags are the most used search words. A tap searches for it and highlights it, a second tap clears the search.
-- Products of one group appear as one line with a small triangle; a tap unfolds the group. A tap on a product opens its page, and **Back** returns to exactly the place in the list where I was.
+On the start page you see your products and their stock.
 
-**Product page.** The card at the top shows the total stock. With the best-before date on it also shows every best-before date, expired and soon-expiring ones in colour, and, if there is a standard shelf life, one line "Standard shelf life 365 days · after opening 90 days". The buttons below are always in the same order:
+With the search you find products by name, brand or tag. Matching suggestions appear while you type. Tap × to reset the search.
 
-1. **Stock in** and **Take out**
-2. **Move** and **Open** (or **Undo opening**), only when they make sense for this product
-3. **To shopping list**: puts the product on the list; if it is listed already, the same button shows a check mark and a tap takes it off again
-4. The label buttons (only those I switched on in the adapter settings)
-5. **Edit** and **Delete**, always in the last row
+There are also several filters:
 
-## Editing a product
+- Area: shows only products from one storage area.
+- Location: filters by a single shelf, cupboard or compartment.
+- Category: shows products of one category.
+- Status: filters by opened, expiring soon, expired, to-buy or empty products.
+- Tags: frequently used search terms can be picked directly.
 
-**Edit** opens the form. It has five sections that fold open and shut. A closed section shows a short summary on the right, for example `Pack · 400g · min 1`, so I see the content without opening it. I open only what I want to change:
+Tapping an active status or tag again removes that filter.
 
-| Section | What is in it |
+Product groups are shown together. Tap the small triangle to unfold the products inside.
+
+When you come back from a product page, you land at your previous position in the overview.
+
+### Product page
+
+On the product page you find the total stock, the storage locations and, if turned on, the shelf life data.
+
+Expired and soon-to-expire products are highlighted in colour.
+
+If standard values exist, ShelfMate shows for example:
+
+`Standard shelf life 365 days · after opening 90 days`
+
+Below that, the actions are always in the same order:
+
+1. Stock in / take out
+2. Move / open / undo open, if available
+3. To shopping list – with a check mark if the product is already on it
+4. Print labels – depending on the adapter settings
+5. Edit / delete
+
+---
+
+## Editing products
+
+Tap Edit to open the product settings.
+
+The form is split into five sections that you can unfold. Closed sections show a short summary, for example `Packung · 400g · min 1`.
+
+| Section | Settings |
 | --- | --- |
-| **Basics** (open) | Name, brand, picture (upload or remove, a preview is shown), category |
-| **Stock** (open for a new product) | Stock type (pieces, weight, volume), the unit for pieces next to the package size, minimum stock |
-| **Group and tags** | Product type or group (several brands counted together, for example "Flour"), tags (search words, separated by commas) |
-| **Shelf life** | Only visible when the best-before date is on. Best-before date (per product mode), standard shelf life in days and shelf life after opening in days |
-| **More** | Barcode with "Generate EAN" and the label, Nutri-Score as a row of coloured buttons (A to E, tap again to choose another), picture link, and for products from Open Food Facts the reload button |
+| Basics | Product name, brand, image and category |
+| Stock | Piece, weight or volume, unit, package size and minimum stock |
+| Group & tags | Product group and extra search terms |
+| Shelf life | Best-before date, standard shelf life and shelf life after opening |
+| More | Barcode, own EAN, Nutri-Score, image link and Open Food Facts |
 
-The unit field only appears for products counted in pieces. Products with a group count together for the minimum stock and take over the standard shelf life of the group when they have none of their own.
+Basics is open by default, and for new products the Stock section as well.
 
-## Automatic values and the sparkle symbol
+### Product groups
 
-ShelfMate can fill in dates that I would otherwise have to type: the best-before date when stocking in, the standard shelf life and the shelf life after opening. To keep this honest, the product page shows a small **sparkle symbol** at the end of the line "Standard shelf life … · after opening …" as soon as something on that product was **not typed by me**. That means:
+Several products can be combined into one group.
 
-- the standard shelf life or the shelf life after opening comes from the built-in list (dry goods such as pasta, rice, flour, tins, sweets) or from the product group instead of from the product itself,
-- a best-before date was set automatically when stocking in (standard shelf life added to the day of stocking), or by "Fill in shelf life automatically" in the app settings.
+Example: wheat flour from REWE, Edeka and Kaufland belongs to the shared group Flour.
 
-The symbol is only on the product page, not in the overview. A value I enter myself always wins: as soon as I type or change a date, that date no longer counts as automatic and the symbol disappears once nothing automatic is left. Dates that were filled in earlier are recognised again when I run "Fill in shelf life automatically" once more (a date that is exactly the stocking day plus the shelf life counts as automatic).
+ShelfMate adds up the stock of these products and takes it into account for the minimum stock.
 
-**When is something filled in?** The adapter settings decide, under "Fill in shelf life automatically":
+If a product has no standard shelf life of its own, the value of its group can be used.
 
-| Setting | Meaning |
+### Nutri-Score
+
+You choose the Nutri-Score under More with the coloured buttons A to E.
+
+Tapping the selected value again removes it.
+
+---
+
+## Automatic shelf life and the sparkle symbol
+
+ShelfMate can suggest or fill in shelf life values automatically.
+
+This includes:
+
+- The standard shelf life of a product
+- The shelf life after opening
+- Best-before dates calculated automatically when stocking in
+
+### What does the sparkle symbol mean?
+
+The small ✨ sparkle symbol on the product page marks values that were taken over automatically.
+
+It appears, for example, when the shelf life comes from the built-in food list or from a product group, or when a best-before date was calculated automatically.
+
+Values you enter yourself always win.
+
+If you change a date that was suggested automatically, it counts as a manual value from then on. The symbol disappears as soon as no automatic values are left.
+
+The symbol is shown only on the product page, not in the overview.
+
+ShelfMate can recognise older automatically calculated dates when you run "Fill in shelf life automatically" again, if they are exactly the stocking date plus the standard shelf life.
+
+### When is the shelf life filled in?
+
+You set this in the adapter settings.
+
+| Setting | Behaviour |
 | --- | --- |
-| Always (default) | The app pre-fills the date when stocking in; scanner mode and data points enter it themselves |
-| Only without the app | Only scanner mode and data points enter it, because nobody can type a date there. The app leaves the field empty |
-| Never | Nothing automatic, no suggestions from the list either. The button "Fill in shelf life automatically" in the app still works when I press it |
+| Always | The app suggests a date when stocking in. Scanner mode and data points fill it in automatically |
+| Only without the app | Filled in automatically only through scanner mode and data points |
+| Never | No automatic filling in and no automatic suggestions |
 
-**What is filled in?** The second setting "What is filled in automatically" limits it: either **everything with a standard shelf life** (own values, group values and the list) or **only dry goods from the built-in list**. With the second choice a loaf of bread with a standard shelf life of 5 days that I typed myself is not dated automatically, pasta is.
+With Never, the function "Fill in shelf life automatically" can still be used by hand.
 
-Fresh and chilled goods (milk, yoghurt, cheese, sausage, meat, eggs, salad and similar) are never in the built-in list and get no automatic date. The values are suggestions for checking, not the printed date of the manufacturer. A date that is printed on the pack, or that I enter, always replaces the automatic one, and opening a pack never makes the date later than the printed one.
+### Which values are used?
 
-**Managing the values.** Under **Settings / Shelf life** (only visible when the best-before date is on) the button **Manage shelf lives** lists every product with its own value. I can change a value there, remove it with the ✕, or remove all own values with **Remove all own values** at the top. The list updates immediately.
+There are two choices:
 
-## Reloading a product from Open Food Facts
+**All with a standard shelf life**
 
-For a product that came from Open Food Facts the editor shows the barcode as locked. Under **More** the button **Reload from Open Food Facts** fetches name, brand, package size, picture, category and Nutri-Score again, and adds new tags to mine (my own tags stay). Nothing is saved until I tap **Save product**, so I can look at the result first or simply leave the form.
+Takes into account your own values on the product, the values of the product group and the built-in list.
 
-## Book stock in and out
-1. Tap **Scan** and hold the barcode in front of the camera (or type it in).
-2. A known product opens directly; an unknown one is looked up on Open Food Facts and pre-filled. Check it and save.
-3. Choose **Stock in**, **Take out** or **Move**, set the quantity and the storage location, and save.
-4. Tip: scan the QR code of the shelf instead of choosing the location from the list.
+**Only dry goods from the built-in list**
 
-## Storage locations and labels
-1. Open **Locations**, create an area (for example "Pantry") and a location ("Shelf 1").
-2. Open the location. Its QR code is shown there; the label buttons create the label as an image (QR only, large shelf label, box label with contents).
-3. Set your label size under **Settings / Labels** once (for example 50 × 30 mm). For the shelf label, the box label and the full-page code I can choose a separate size there (A6, A5 or A4). I also choose there whether location labels carry a QR code or a Code 128 barcode (name on top, only the barcode below; the location has to be saved first). In the adapter settings you choose which label buttons the app shows.
-4. Print the image (see "Printing labels") and attach it to the shelf or box.
+Uses only the stored standard values for typical pantry products. Your own product and group values are then not filled in automatically.
+
+The built-in list contains, for example, pasta, rice, flour, tins and sweets.
+
+Fresh and chilled products such as milk, meat, sausage, cheese, eggs or yoghurt deliberately get no automatically calculated standard value.
+
+Important: automatic shelf lives are guide values, not an actual manufacturer's best-before date. A printed or manually entered date wins. Opening a package also never extends an earlier date.
+
+### Managing shelf life values
+
+Under Settings → Shelf life → Manage shelf lives you find all products with their own shelf life values.
+
+There you can edit values, remove them one by one with × or delete them all at once with Remove all own values.
+
+Changes apply immediately.
+
+---
+
+## Refreshing product data
+
+Products with a known barcode can get their information from Open Food Facts.
+
+In the product editor you find "Reload from Open Food Facts" under More.
+
+These details are refreshed:
+
+- Name and brand
+- Package size
+- Product image
+- Category
+- Nutri-Score
+- Additional tags
+
+Tags you created yourself are kept.
+
+Changes only apply once you tap Save product. So you can check the result first and close the form without saving if you like.
+
+For products from Open Food Facts the barcode is locked in the editor.
+
+---
+
+## Stock in, take out and move
+
+This is how a normal booking works:
+
+1. Choose Scan and capture the barcode with the camera or type it in.
+2. For known products the product page opens.
+3. Unknown barcodes are looked up on Open Food Facts. You can check and save what was found.
+4. Choose Stock in, Take out or Move.
+5. Set the amount and the storage location and save the booking.
+
+You can pick the storage location from the list or scan its QR code directly.
+
+All bookings are saved in the history.
+
+---
+
+## Creating storage locations
+
+ShelfMate distinguishes between storage areas and storage locations.
+
+Example:
+
+- Area: Pantry
+- Location: Shelf 1
+
+Under Locations you can create and edit both.
+
+### QR codes for storage locations
+
+Every storage location gets its own code.
+
+Open the location and choose the label you want:
+
+- QR code only
+- Large shelf label
+- Box label with contents
+
+Alternatively you can create location labels with a Code 128 barcode. This is especially handy for scanners without QR code support.
+
+You choose the code type under Settings → Labels.
+
+### Label size
+
+You set the label size once, for example 50 × 30 mm.
+
+For large shelf labels, box labels and full-page codes, your own formats such as A6, A5 or A4 are possible too.
+
+Which label buttons are shown in the app, you decide in the adapter settings.
+
+After creating it, you can save the label as an image or print it directly.
+
+---
 
 ## Products without a barcode
-Create the product by hand and let the app generate its own EAN-13 code. Print that code as a label and stick it on the item. Upload your own product image if you like; it is compressed automatically.
+
+Products without a manufacturer barcode can be managed as well.
+
+1. Create the product by hand.
+2. In the editor, choose Generate EAN.
+3. Print the own EAN-13 code as a label.
+4. Stick the label on the product or the container.
+
+After that, the product can be scanned like any other.
+
+You can also upload your own product image. ShelfMate scales it down automatically.
+
+---
 
 ## Minimum stock and shopping list
-1. Open a product and set a **minimum stock**. For products from one group (for example all kinds of flour) set it on the group; the stock counts together.
-2. Choose the shopping-list mode in the adapter settings (see "Shopping list").
-3. When the stock falls to the minimum, the product is put on the list. The check mark in the overview shows what is on the list; tap it to take the product off again.
+
+You can set a minimum stock for every product.
+
+Example: you always want at least two packs of pasta in stock.
+
+As soon as the stock falls to two packs or less, ShelfMate can put the pasta on your shopping list automatically.
+
+For product groups, the stock of the products in the group is counted together.
+
+In the overview, a check mark shows which products are already on the shopping list. Tapping it removes the entry again, if the matching settings are active.
+
+The connection to the shopping list is set up in the adapter settings.
+
+---
 
 ## Best-before date
 
-Choose the mode in the settings:
+ShelfMate supports three modes.
 
-- **Off**: no best-before handling.
-- **Per product**: each product has one optional date (product form). Products at or after the date are marked in the overview and detail view.
-- **Standard shelf life** (optional, per product; group products take over the value of their group): pre-fills the best-before date when I stock in (pasta, for example, a year ahead). In per-stocking mode, stock without a date also gets one: the day it was stocked in (from the history) plus the shelf life. When and what is filled in automatically, and what the sparkle symbol means, is explained in [Automatic values and the sparkle symbol](#automatic-values-and-the-sparkle-symbol).
-- **Opened** (optional, per product): "Open" on the product page splits one package off. If you entered a shelf life after opening, it gets that date (or the earlier best-before date). Opened packages are listed separately and used first.
-- "Undo opening" on the product page turns one opened package back into a normal one.
-- **Spoiled**: when taking out, choose "Spoiled" instead of "Used". It leaves the consumption statistics and is summed up in the history for 30 days.
-- **Undo**: the history has a button that reverts the last booking, and the scanner has the code `SM:UNDO`.
-- **Adding or changing a date later** (per stocking): on the product page "Edit best-before dates" unfolds every package, opened ones too, on its own line with a date field (quick input as below) and the buttons +1, +3, +5, +10 days. Save applies all lines at once, shows up in the history and can be undone. Opened packages get their own line labelled "Opened". Headless, scan `SM:DATE:<days>` and then the product to date all unopened stock at once.
-- **Quick date input**: the best-before field is a text field. `+3d` is in 3 days, `+2w` in 2 weeks, `+1m` in a month, `+1y` in a year, `12/26` is the end of December 2026 (as printed on many packs), `2412` or `24.12.` is the next 24 December, `24.12.26` a full date, `x` means no date. A preview below the field shows what was understood. Buttons for +1 to +14 days, +3w, +1m, +3m, +6m and +1y fill it with one tap.
-- **Per stocking**: when you book stock in you can enter a date. Several dates per product and location are kept; booking out and moving always use the oldest date first.
+| Mode | Description |
+| --- | --- |
+| Off | No best-before management |
+| Per product | One shared best-before date for the product |
+| Per stocking | Every stocking can have its own best-before date |
 
-Products that are expired or expire within the configured warning period get a badge ("expires in 3 days" / "expired") and are listed in the data points `stats.expiring*`.
+### Best-before date per stocking
+
+When stocking in, every package can get its own date.
+
+Several best-before dates are stored separately per product and location.
+
+When taking out or moving, the stock with the oldest best-before date is used first.
+
+If a date is missing, ShelfMate can calculate one from the standard shelf life. For this, the stocking date from the history is used.
+
+### Opening a package
+
+With Open you can mark a single package as opened.
+
+ShelfMate then keeps this package separately and uses it first when taking out.
+
+If a shelf life after opening is stored, a new date is calculated from it. An earlier existing best-before date stays.
+
+With Undo open you can reset it.
+
+### Spoiled products
+
+When taking out, you can distinguish between Used and Spoiled.
+
+Spoiled products do not count towards normal consumption. In the history they are summarised for 30 days.
+
+### Undoing bookings
+
+In the history you can undo the last booking.
+
+In scanner mode the control code `SM:UNDO` is available for this.
+
+It does not work there for moves and stocktakings.
+
+### Changing a best-before date later
+
+In the mode Per stocking, "Edit best-before date" shows all packages one by one – opened ones too.
+
+You can enter a date by hand or use the quick buttons:
+
+- +1 day
+- +3 days
+- +5 days
+- +10 days
+- No date
+
+Save applies all changes. The changes appear in the history and can be undone.
+
+In scanner mode you can set a new best-before date for all unopened stock with `SM:DATE:<days>` followed by scanning the product.
+
+`SM:DATE:0` removes the date.
+
+### Entering a date quickly
+
+Besides normal dates, ShelfMate understands short forms.
+
+| Input | Meaning |
+| --- | --- |
+| +3d | In 3 days |
+| +2w | In 2 weeks |
+| +1m | In one month |
+| +1y | In one year |
+| 12/26 | End of December 2026 |
+| 2412 | Next 24 December |
+| 24.12. | Next 24 December |
+| 24.12.26 | 24 December 2026 |
+| x | No date |
+
+Below the input field a preview of the recognised date appears.
+
+There are also quick buttons for +1 to +14 days, +3 weeks, +1 month, +3 months, +6 months and +1 year.
+
+### Expiry warnings
+
+Products that expire soon or have expired are marked in the app, for example with:
+
+- "Expires in 3 days"
+- "Expired"
+
+The information is also available in the data points `stats.expiring*`.
+
+Under Date format you can choose between 31.10.2026, 31/10/2026 and 2026-10-31.
+
+---
 
 ## Shopping list modes
 
-- **Off**: nothing is sent.
-- **Script**: the item name is written (`ack=false`) to the state you select. Optionally select a state that holds the
-  current list (JSON array of objects with a `name`) so ShelfMate does not add duplicates and can show which items are already on the list.
-  Optionally select a state that receives the name of items to remove (`ack=false`). Then tapping the tick in the app and the option "Remove from the list when the stock is refilled" work in this mode too.
-- **Bring special**: like Bring, but an item that is already on the list is not skipped. Its quantity is counted up or merged into the specification (`Flour` → `Flour, 2` → `Flour, 3`; `Feta, 200g` and `Feta, herbs` become separate variants). Items are written one after another, and the next one waits until the Bring! adapter has reloaded the list.
-- **Directly via Bring!**: choose the list in the settings (the lists of the Bring! adapter are found automatically, or type the channel such as `bring.0.<list-id>`). ShelfMate reads
-  `<list>.content` and writes new items to `<list>.saveItem`, but only if the item is not already on the list.
+ShelfMate supports four ways to put products on a shopping list.
 
-With Bring, Bring special or Script (with a remove state) there are two independent options. Items are only removed if they are on the list, and are written to `<list>.removeItem`:
+### Off
 
-- **Remove from the list when the stock is refilled**: when the stock rises above the minimum again, the item is taken off the list (default: off).
-- **Remove from the list when I untick the check mark in the app**: tapping the check mark of a listed item in the app also removes it from the list (default: on). If disabled, only the mark in the app is cleared.
+No products are passed to a shopping list automatically.
 
-## Ingredient check
+### Script
 
-When a product has a minimum stock, I reserve it: what I need to buy is the wanted amount minus what I have plus the minimum stock. With 2 kg sugar in stock, a minimum of 1 kg and `Zucker, 3000 g` requested, `Zucker, 2000g` goes to the list. `check.request` is emptied after each run.
+ShelfMate writes the item name with `ack=false` into a data point of your choice.
 
-I use this to compare the ingredients of my planned recipes with what I have at home. ShelfMate does not know any recipes, it only gets a list of ingredients and says what is there.
+Optionally you can also name a data point with the current shopping list. A JSON array of objects is expected, each with a `name`.
 
-1. Write the ingredients to `check.request`, one per line (or separated by semicolons), or as a JSON array of texts or `{"name","amount","unit"}`. Within a line commas separate name, qualifier and amount, in the form my recipe app delivers them: `Zwiebeln, rot, 1`, `Cherrytomaten, bunt, 500g`, `Salz, 0.5 tl`, `Basilikum`. An amount in front of the name (`380g Linguine`, `2EL Olivenöl`) or behind it (`Mehl 200g`) works too. `kg`, `g`, `l`, `ml`, `cl` and pieces are understood, `EL`, `TL` and the like only count as "present". The same ingredient twice is added up.
-2. An ingredient is found by product name, product group or tag (whole words, no compound parts: `Cherrytomaten` is not found by `Tomaten`, add the tag `Cherrytomaten` to a product to make it count), so `Mehl` adds up all products of the group Mehl. With an amount in g or ml the stock is compared (500 g in stock, 200 g needed: fine); a counted product with a package size like `1 kg` is converted. Without an amount, stock above zero is enough. Unknown ingredients count as missing, so things that are not food still end up on the list.
-3. `check.result` holds the result per ingredient (wanted, have, ok, missing amount), `check.available` and `check.missing` hold the lines as they came, one per line, so `check.missing` can go to the shopping list as it is, `check.allAvailable` is `true` if nothing is missing.
-4. With "Put missing ingredients on the shopping list" in the adapter settings the missing ones go to the shopping list after every check, each line as it came. In the Bring special mode the merging of the specification does the rest (`Cherrytomaten, bunt, 500g` twice becomes `bunt 500g + 500g`), in the other modes only the name is written. Otherwise write `true` to `check.addMissing` when I want them on the list.
+With it, ShelfMate recognises products that are already there and avoids duplicate entries.
 
-## Stocking a whole shelf by scanning
-1. Open **Locations / Stocking**.
-2. Scan the QR code of the location (or choose it in the list), then scan the products one after another with the camera, a scanner or by typing the EAN. Every scan counts 1, the list shows the quantities and I can correct them.
-3. Scan the same location code again (or tap **Stock in**). Everything is booked in at once. Products by weight or volume count as whole packages and need the package size in g or ml.
-4. A barcode that is not in the list yet is looked up in Open Food Facts and the product is created and counted right away. If the databases do not know it either, I get a product called "Unknown product <barcode>" that counts too, and it shows up as a suggestion (light bulb, "Edit new products") until I have edited and saved it.
+For removing items you can set one more data point. The item name is written there with `ack=false` as well.
 
-## Stocktaking by scanning
-1. Open **Locations / Stocktaking** and choose the variant **Scan** (settings or on the page).
-2. Scan the QR code of the location. "Stocktaking started" confirms it.
-3. Scan every item of that location; each scan counts +1 (the same item twice means two).
-4. Scan the **same** location QR code again. The stocktaking of that location is finished: the stock is corrected, the location is marked as done, and a summary shows what was counted (with the expected quantity where it differs).
-5. Scan the QR code of the next location to continue. Another location is only accepted after the current one is finished.
+Only with this data point do removing via the check mark in the app and automatic removal after refilling work.
 
-The page also shows which locations of the area are done and which are still open. Items you did not scan count as 0. Prefer to check by hand? Use the variant **List**: type the counted quantity or tap ✓ for "correct". Corrections appear in the history as "Stocktaking". A reminder interval can be set in the notification settings.
+### Bring!
 
-## Scanner mode (without the app)
+ShelfMate can work directly with the Bring! adapter.
 
-Books stock in and out with scanned codes, without opening the app. It is switched on with the data point `scanner.active`. Codes arrive in `scanner.input`, or directly from a scanner that is plugged into the ioBroker host and shows up there as a keyboard (see below).
+The available lists are detected automatically. Alternatively you can enter the channel by hand, for example:
 
-| Setting | Description |
+```
+bring.0.<list-id>
+```
+
+ShelfMate reads the list content through `<Liste>.content` and adds new products through `<Liste>.saveItem`.
+
+Products that are already on the list are not entered again.
+
+For an entry with a comma, only the item name before the first comma is used.
+
+### Bring! special
+
+This mode also takes quantities and variants into account.
+
+Examples:
+
+- `Mehl` → `Mehl, 2` → `Mehl, 3`
+- `Feta, 200g` and then `Feta, Kräuter` give **one** entry: `Feta, Kräuter, 200g`. So you can see: one feta with 200 g and one feta as the herb variant
+- If another `Feta, Kräuter` is added, the entry reads `Feta, Kräuter 2, 200g`
+
+So existing items are not simply skipped. Instead, ShelfMate raises the quantity or adds the variant.
+
+The entries are processed one after the other. The next item is only passed on once the Bring! adapter has updated its list.
+
+This is especially helpful for the ingredient check.
+
+### Data point shopping.addItem
+
+With `shopping.addItem` you can put products on the shopping list independently of the app.
+
+The currently selected shopping list mode is always used.
+
+### Removing products automatically
+
+With Bring!, Bring! special and script with a remove data point set up, there are two independent options:
+
+**Take off the list when refilled**
+
+As soon as the stock rises above the minimum stock again, the product is removed from the shopping list.
+
+Off by default.
+
+**Take off the list when the check mark is removed**
+
+A tap on the check mark in the app also removes the product from the connected shopping list.
+
+If the function is turned off, only the mark in ShelfMate disappears.
+
+On by default.
+
+Only items that are really on the list are removed. With Bring! the removal goes through `<Liste>.removeItem`.
+
+---
+
+## Checking ingredients
+
+ShelfMate can compare a list of ingredients with your current stock.
+
+The recipes themselves are not stored in ShelfMate. Instead you hand over a list of ingredients, for example from a recipe app.
+
+### Handing over ingredients
+
+Write the ingredients into the data point `check.request` with `ack=false`.
+
+Possible formats:
+
+- One ingredient per line
+- Ingredients separated by semicolons
+- A JSON array of texts
+- A JSON array of objects with `name`, `amount` and `unit`
+
+Examples:
+
+```
+Zwiebeln, rot, 1
+Cherrytomaten, bunt, 500g
+Salz, 0.5 tl
+Basilikum
+```
+
+These spellings are recognised too:
+
+```
+380g Linguine
+2EL Olivenöl
+Mehl 200g
+```
+
+Supported units are kg, g, l, ml, cl and pieces.
+
+Specifications such as EL or TL (tablespoon, teaspoon) are only checked for presence.
+
+Identical ingredients are added up.
+
+### How the comparison works
+
+ShelfMate searches through product names, groups and tags.
+
+Whole words are compared.
+
+Example: Cherrytomaten is not recognised as Tomaten automatically. A matching tag on the product is enough, though.
+
+For products by weight or volume, the actual stock is used.
+
+Example: 500 g flour in stock, 200 g needed – the ingredient is available.
+
+Package sizes such as 1 kg are converted accordingly.
+
+For ingredients without an amount, positive stock is enough.
+
+Unknown ingredients count as missing. This way, other shopping items can be taken over too.
+
+### Result
+
+After every check, these data points are available:
+
+| Data point | Content |
 | --- | --- |
-| Time between product and location | Seconds (3 to 120, default 10) in which the second code has to follow the first |
-| Scanner (keyboard device on the server) | The device of the scanner's USB dongle, chosen from a list |
-| Prefix / suffix of the scanner | Text that the scanner puts before or after every code and that I remove again (optional) |
+| `check.result` | Result for every single ingredient as JSON |
+| `check.available` | Ingredients in stock |
+| `check.missing` | Missing ingredients |
+| `check.allAvailable` | true if everything is in stock |
 
-| Scan | Result |
+The lists contain the original ingredient lines, one per line.
+
+With `check.addMissing` you can put the missing ingredients on the shopping list.
+
+Alternatively, turn on "Put missing ingredients on the shopping list" in the adapter settings. Then they are passed on automatically after every check.
+
+Bring! special also takes quantities and variants into account, while the other modes pass on only the item name.
+
+### Taking the minimum stock into account
+
+When comparing ingredients, ShelfMate can also include the minimum stock you want.
+
+Example:
+
+- Stock: 2 kg sugar
+- Minimum stock: 1 kg
+- Needed: 3 kg sugar
+
+2 kg sugar end up on the shopping list, so that the minimum stock is kept after cooking.
+
+After every check, `check.request` is emptied automatically.
+
+---
+
+## Stocking a whole shelf
+
+With Locations → Stock in you can capture several products one after the other and book them in together.
+
+1. Scan the QR code of the location or pick it from the list.
+2. Scan the products one after the other – with the camera, an external scanner or by typing the EAN.
+3. Every scan raises the amount by 1.
+4. Correct amounts in the list if needed.
+5. To finish, scan the same location code again or choose Stock in.
+
+All captured products are booked in together.
+
+For products by weight or volume, every scan counts as one whole package. The package size in g or ml must be stored for this.
+
+### Unknown products
+
+If a barcode is not known yet, ShelfMate asks Open Food Facts for the product data and creates the product.
+
+If nothing is found there, ShelfMate temporarily creates an entry like:
+
+```
+Unbekanntes Produkt 1234567890123
+```
+
+The product is counted anyway.
+
+Via the light bulb, the hint "Edit new products" then appears until the entry has been completed and saved.
+
+---
+
+## Doing a stocktaking
+
+With a stocktaking you check whether the stored stock matches what you really have.
+
+There are two variants: Scan and List.
+
+### Stocktaking by scan
+
+1. Under Locations → Stocktaking choose the variant Scan.
+2. Scan the QR code of the location.
+3. Scan all products there one after the other.
+4. Every scan counts one piece. The same barcode can be scanned several times.
+5. To finish, scan the same location QR again.
+
+ShelfMate compares the counted amounts with the stored stock and shows a summary.
+
+Differences are shown with expected and counted amounts.
+
+Products that were not scanned are counted as 0.
+
+After that, you can continue with the next location. A new location is only accepted once the previous one is finished.
+
+In the overview you see which locations have been checked and which are still open.
+
+### Stocktaking by list
+
+Alternatively, you can check the existing products directly in a list.
+
+- Enter the actual amount
+- Confirm with ✓ if the stock is right
+
+Stock corrections are saved in the history as Stocktaking.
+
+A regular stocktaking reminder can be turned on in the adapter settings.
+
+---
+
+## Scanner mode without the app
+
+ShelfMate supports stocking in and out with an external barcode scanner, without the web app having to be open.
+
+Scanner mode is turned on with `scanner.active`.
+
+Scans can be handed over through `scanner.input` with `ack=false` or received from a scanner connected directly to the ioBroker host.
+
+### Scan sequences
+
+| Scan sequence | Action |
 | --- | --- |
-| product, then location code | stocks in 1 at that location |
-| product twice | takes out 1, from the location with the nearest best-before date (without dates: the biggest stock) when no location follows in time |
-| product twice, then location code | takes out 1 from exactly that location |
-| location code alone | starts stocking mode: every product scanned afterwards is stocked in at that location (1 each, booked right away); the same location code again finishes it, another location code switches to that location, and after 5 minutes without a scan it ends by itself |
-| `SM:QTY:5`, then the above | the next booking counts 5 instead of 1 |
-| `SM:CANCEL` | forgets the waiting scan |
-| `SM:UNDO` | undoes the last booking (not moves and stocktakes) |
-| `SM:SPOIL`, then the product | takes out 1 as spoiled instead of used |
-| `SM:OPEN`, then the product | marks 1 unit as opened |
-| `SM:DATE:<days>`, then the product | sets the best-before date of all unopened stock to today plus the days (`SM:DATE:0` removes it) |
+| Product → location | Stock in 1 piece |
+| Product → product | Take out 1 piece |
+| Product → product → location | Take out 1 piece from a specific location |
+| Location | Start stocking mode |
+| Location again | End stocking mode |
+| Another location | Switch location in stocking mode |
 
-Products by weight or volume are booked in whole packages (the package size has to be given in g, kg, ml or l). The stocktaking stays in the app, it needs the display.
+If no location is given when taking out, ShelfMate uses the stock with the shortest best-before date.
 
-**Connecting a wireless scanner (intended: Tera HW0009 with its 2.4G dongle).** I plug the dongle into the ioBroker host. The host sees it as a keyboard, so no driver is needed. On the scanner I select the 2.4G mode and pair it with the dongle using the barcodes from its manual, and I leave the keyboard layout on US and the end of the code on Enter. In the adapter settings I choose the device in "Scanner", and I switch the mode on with `scanner.active`. The ioBroker user needs access to the device: `sudo adduser iobroker input` and a restart of the instance. The adapter reads the device itself, a scanner that was set to prefix or suffix only needs the same text in the two settings. Every code is also written to `scanner.lastCode`.
+If there is no best-before date, the location with the largest amount is used.
 
-Because the scanner types with a US keyboard layout, umlauts and some special characters can get lost. For locations I therefore use the short scanner code: in the location editor I tap "Use the short scanner code", save, and print the label again (old labels keep working). In the settings the button "Control codes as PDF" prints the quantity codes and the cancel code. The scanner has no display, the result of every scan is in `scanner.result`.
+### Stocking mode
 
-**Scanner without 2D (barcode only).** For a scanner that reads 1D codes only, I switch the setting "Code on location labels" to "Barcode". All location labels (also the box and shelf labels) then show the name on top and only a Code 128 barcode below, and the control codes sheet is printed as barcodes too. The location has to be saved first, because the code contains its short id (`SM:L:<8 characters>`). It fits a 50 × 30 mm label.
+First scan the location code.
 
-## Suggestions (bulb icon)
-The bulb in the header collects three kinds of hints: group suggestions (similar products that could count together; you can drop single products from a suggestion or have it ignored), minimum stock suggestions (only for products you use regularly; ✓ applies, ✕ dismisses) and a due stocking. Nothing is changed without a tap.
+After that you can scan as many products as you like. Every product scan books one piece into the selected location right away.
+
+To end it, scan the same location code again.
+
+Another location code switches the location directly.
+
+After five minutes without a scan, the mode ends automatically.
+
+### Control codes
+
+There are special codes for further actions:
+
+| Code | Function |
+| --- | --- |
+| `SM:UNDO` | Undo the last supported booking |
+| `SM:SPOIL` | Take out the next product as spoiled |
+| `SM:OPEN` | Mark the next product as opened |
+| `SM:DATE:<days>` | Set the best-before date for the unopened stock |
+| `SM:DATE:0` | Remove the best-before date |
+| `SM:QTY:5` | Make the next booking with amount 5 |
+| `SM:CANCEL` | Cancel a waiting scan |
+
+The control codes can be printed as a PDF from the settings.
+
+### Time between two scans
+
+In the adapter settings you can set how long ShelfMate waits for the next code.
+
+Possible are 3 to 120 seconds.
+
+Default: 10 seconds.
+
+### Connecting an external wireless scanner
+
+Intended, for example, is the Tera HW0009 with a 2.4 GHz dongle.
+
+1. Plug the USB dongle into the ioBroker computer.
+2. Set the scanner to 2.4 GHz mode.
+3. Pair the scanner with the dongle following the manufacturer's manual.
+4. Set the keyboard layout to US and the end of the code to Enter.
+5. In the ShelfMate adapter settings, choose the scanner device.
+6. Turn on scanner mode through `scanner.active`.
+
+The scanner is recognised as a USB keyboard. An extra driver is normally not needed.
+
+For ioBroker to access the input device, the user needs the right permissions:
+
+```
+sudo adduser iobroker input
+```
+
+Then restart the instance.
+
+If the scanner uses a prefix or suffix, the matching settings in ShelfMate must be the same.
+
+Every recognised code is stored in `scanner.lastCode`. The result is in `scanner.result`.
+
+### Short location codes
+
+Because some scanners work with a US keyboard layout, special characters or umlauts can cause problems.
+
+For this, ShelfMate offers short location codes.
+
+In the location editor choose "Use short scanner code", save and print the label again.
+
+Existing labels stay valid.
+
+The short code has the format:
+
+```
+SM:L:<8 characters>
+```
+
+### Scanners without QR code support
+
+Simple scanners that read only barcodes can be used too.
+
+For this, choose the option Barcode under Settings → Labels.
+
+ShelfMate then creates Code 128 barcodes instead of QR codes for locations and control codes.
+
+This also applies to box and shelf labels.
+
+The location must be saved first so that its short ID can be used.
+
+The codes fit, for example, on labels of 50 × 30 mm.
+
+Note: the scanner itself needs no display. The result of every scan is output in `scanner.result`.
+
+A stocktaking still takes place in the web app, because it needs a display.
+
+---
+
+## Suggestions
+
+Via the light bulb in the header you find different hints from ShelfMate.
+
+They include:
+
+### Product groups
+
+ShelfMate recognises similarly named products and suggests combining them into a group.
+
+Single products can be removed from a suggestion. Whole suggestions can also be ignored.
+
+### Minimum stock
+
+Based on the consumption of the last 30 days, ShelfMate can suggest a fitting minimum stock.
+
+This considers regularly used products.
+
+With ✓ you accept the suggestion, with × you reject it.
+
+### Stocktaking
+
+If a stocktaking is due, a hint appears as well.
+
+Important: ShelfMate never applies suggestions by itself. Changes are only made after you confirm.
+
+---
 
 ## Notifications
-Select a notification adapter in the adapter settings, enter the target (for example a chat ID) and use the test button. You can be told when the minimum stock is reached, get a daily message about expired and expiring products at a time of your choice, and be reminded of a stocktaking every N days.
+
+ShelfMate can send messages automatically for important events.
+
+In the adapter settings you choose a supported notification adapter and the recipient you want.
+
+Supported are:
+
+- Telegram
+- telegrammenu2
+- Pushover
+- Signal
+- WhatsApp
+- Matrix
+- E-mail
+
+With Test you can check whether the connection works.
+
+These notifications are possible:
+
+### Minimum stock reached
+
+A message as soon as a product reaches or falls below its minimum stock.
+
+### Best-before warning
+
+A daily summary of products that expire soon and have already expired.
+
+The time can be set.
+
+### Stocktaking reminder
+
+A reminder after a set number of days without a stocktaking.
+
+With the value 0 the reminder is off.
+
+---
 
 ## Export and backup
-Under **Settings / Data**: **JSON backup** (download and import again), **Stock as CSV** (for Excel and similar) and **Stock as PDF** (a printable list grouped by location; it opens the share sheet so you can save or print it).
 
-## Offline use
-After the certificate is trusted (see below), the app also starts without a connection. Bookings and shopping-list entries made offline are queued and sent automatically when the connection is back.
+Under Settings → Data there are several options.
 
-## Certificate and installing it on the phone
+### JSON backup
 
-Camera access and the offline mode need HTTPS with a certificate the phone trusts.
+Creates a complete backup of your ShelfMate data.
 
-1. In the adapter settings switch on **Use HTTPS** and choose a certificate. The easiest way is the button **Create self-signed certificate**: it creates a certificate for the host name and the IP addresses of the ioBroker host, stores it in the ioBroker certificates and selects it. Save the settings; the instance restarts. Alternatively select your own certificate or a certificate collection (for example Let's Encrypt).
-2. A certificate from a public CA (for example Let's Encrypt via the `acme` adapter) needs no installation on the phone. Skip the next steps.
-3. With a self-signed certificate on **iPhone** (tested):
-   1. Open `https://<host>:8120/` in Safari and go to **Settings / Offline mode** in the app. Tap **Load ioBroker certificate** (the file is also available directly at `https://<host>:8120/iobrokerZertifikat.cer`) and choose "Allow".
-   2. iPhone **Settings / General / VPN & Device Management**: tap the downloaded profile and **Install**.
-   3. iPhone **Settings / General / About / Certificate Trust Settings**: switch the certificate on.
-   4. Close the app and open it again. Under **Offline mode** tap **Check again**.
-4. **Android and other systems** are not tested. The certificate can be downloaded the same way (`https://<host>:8120/iobrokerZertifikat.cer`) and is normally installed as a CA certificate in the system settings (security / credentials). The menu names differ between devices and versions.
+A previously saved backup can be imported again later.
+
+### CSV export
+
+Exports the stock as a CSV file, for example for use in Excel.
+
+### PDF export
+
+Creates a printable stock list, sorted by storage location.
+
+The PDF can be saved or printed through the share menu.
+
+### Data storage
+
+ShelfMate stores the stock data in the file:
+
+```
+shelfmate.json
+```
+
+It is in the adapter's data directory and not in the ioBroker object database.
+
+When you import a backup or delete all data, the previous state is saved as `shelfmate.json.bak`.
+
+---
+
+## Offline mode
+
+ShelfMate can also be used when the connection is briefly interrupted, as long as the web app was set up before and a trusted HTTPS certificate exists.
+
+Stock-ins, take-outs and shopping list entries are kept in a queue while offline.
+
+As soon as the connection is back, ShelfMate sends the waiting actions automatically.
+
+This way, bookings are not lost when the connection drops for a short time.
+
+---
+
+## HTTPS and certificates
+
+For the camera and offline mode, ShelfMate needs HTTPS with a certificate that the device you use trusts.
+
+### Setting up HTTPS
+
+1. In the adapter settings, turn on Use HTTPS.
+2. Choose an existing certificate or create a new one.
+3. Save the settings and restart the instance.
+
+With Create self-signed certificate, ShelfMate creates a certificate for the host name and the IP addresses of the ioBroker computer.
+
+The certificate is stored in the ioBroker certificate store, selected automatically and valid for 825 days.
+
+Alternatively you can use your own certificates or a certificate collection, for example through the ioBroker adapter acme.
+
+A publicly trusted certificate, for example from Let's Encrypt, normally does not have to be installed on the phone additionally, as long as the host name you open matches it.
+
+### Installing a self-signed certificate on the iPhone
+
+These steps were tested on the iPhone:
+
+1. Open ShelfMate in Safari: `https://<Host>:8120/`
+2. In the app open Settings → Offline mode.
+3. Choose "Load ioBroker certificate" and allow the download.
+
+Alternatively the certificate file is available at this address:
+
+`https://<Host>:8120/iobrokerZertifikat.cer`
+
+Then on the iPhone:
+
+1. Open Settings → General → VPN & Device Management.
+2. Select the downloaded profile and install it.
+3. Open Settings → General → About → Certificate Trust Settings.
+4. Turn on trust for the installed certificate.
+5. Open ShelfMate again.
+6. Check the connection under Offline mode → Check again.
+
+Only install and trust certificates whose origin you know.
+
+### Android
+
+Setup on Android has not been tested so far.
+
+The certificate file can also be downloaded at `https://<Host>:8120/iobrokerZertifikat.cer`.
+
+Depending on the Android version, a CA certificate is installed through the security or credentials settings.
+
+Menu names and behaviour can differ by manufacturer and version.
+
+### Adding to the home screen
+
+iPhone: open ShelfMate in Safari, choose the share menu and tap Add to Home Screen.
+
+Android: open ShelfMate in the browser and choose Add to Home screen or Install app from the browser menu.
+
+After that, ShelfMate starts like a normal app.
+
+---
 
 ## Printing labels
 
-The labels are created as PNG images in the label size you set in the app, and are shared or saved from the phone. I print them on a Niimbot B1 label printer that I set up as an AirPrint printer through CUPS on a Linux machine, so the phone can print straight to it. Setting up a printer is not part of this adapter; search for "Niimbot CUPS AirPrint" if you want to do the same.
+ShelfMate creates labels as PNG images in the set size.
+
+You can save them on your phone, share them or print them directly.
+
+Supported are, among others:
+
+- EAN labels
+- QR labels
+- QR-only labels
+- Large shelf labels
+- Box labels with contents
+- "Opened on" labels
+- Freezer labels
+
+Which label types are available, you decide in the adapter settings.
+
+### Example: Niimbot B1
+
+The labels can be printed, for example, with a Niimbot B1.
+
+For this, the printer can be set up through CUPS on a Linux computer as an AirPrint printer. Then you can print directly from the iPhone.
+
+Setting up the printer is not part of ShelfMate.
+
+For more information, search for "Niimbot CUPS AirPrint".
+
+---
+
+## Questions, ideas or bugs?
+
+If something does not work or you have an idea for ShelfMate, feel free to open an issue on GitHub:
+
+[GitHub – ShelfMate Issues](https://github.com/backfisch88/ioBroker.shelfmate/issues)

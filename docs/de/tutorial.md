@@ -1,218 +1,945 @@
-# ShelfMate Anleitung
+# ShelfMate – Anleitung
 
-So benutze ich ShelfMate, Schritt für Schritt. Die Kurzbeschreibung, die Einstellungen und die Datenpunkte stehen in der [README](../../README.de.md). Die englische Fassung ist [docs/en/tutorial.md](../en/tutorial.md).
+Mit ShelfMate verwaltest du deine Vorräte direkt in ioBroker. Diese Anleitung zeigt dir, wie du Produkte anlegst, Bestände verwaltest, Barcodes scannst und die verschiedenen Funktionen nutzt.
+
+Alle Einstellungen, Voraussetzungen und Datenpunkte findest du in der [README](../../README.de.md).
+
+English version: [Tutorial](../en/tutorial.md)
+
+---
 
 ## Inhalt
 
 1. [Die App im Überblick](#die-app-im-überblick)
-2. [Ein Produkt bearbeiten](#ein-produkt-bearbeiten)
-3. [Automatische Werte und das Funken-Symbol](#automatische-werte-und-das-funken-symbol)
-4. [Ein Produkt neu von Open Food Facts laden](#ein-produkt-neu-von-open-food-facts-laden)
-5. [Ein- und Auslagern](#ein--und-auslagern)
-6. [Lagerorte und Etiketten](#lagerorte-und-etiketten)
+2. [Produkte bearbeiten](#produkte-bearbeiten)
+3. [Automatische Haltbarkeit und Funken-Symbol](#automatische-haltbarkeit-und-funken-symbol)
+4. [Produktdaten aktualisieren](#produktdaten-aktualisieren)
+5. [Einlagern, entnehmen und verschieben](#einlagern-entnehmen-und-verschieben)
+6. [Lagerorte anlegen](#lagerorte-anlegen)
 7. [Produkte ohne Barcode](#produkte-ohne-barcode)
 8. [Mindestbestand und Einkaufsliste](#mindestbestand-und-einkaufsliste)
 9. [Mindesthaltbarkeit](#mindesthaltbarkeit)
 10. [Einkaufslisten-Modi](#einkaufslisten-modi)
-11. [Zutaten-Prüfung](#zutaten-prüfung)
+11. [Zutaten prüfen](#zutaten-prüfen)
 12. [Ein ganzes Regal einräumen](#ein-ganzes-regal-einräumen)
-13. [Inventur per Scan](#inventur-per-scan)
-14. [Scanner-Modus (ohne App)](#scanner-modus-ohne-app)
-15. [Vorschläge (Glühbirne)](#vorschläge-glühbirne)
+13. [Inventur durchführen](#inventur-durchführen)
+14. [Scanner-Modus ohne App](#scanner-modus-ohne-app)
+15. [Vorschläge](#vorschläge)
 16. [Benachrichtigungen](#benachrichtigungen)
 17. [Export und Backup](#export-und-backup)
-18. [Offline nutzen](#offline-nutzen)
-19. [Zertifikat und Installation auf dem Handy](#zertifikat-und-installation-auf-dem-handy)
+18. [Offline-Modus](#offline-modus)
+19. [HTTPS und Zertifikate](#https-und-zertifikate)
 20. [Etiketten drucken](#etiketten-drucken)
+
+---
 
 ## Die App im Überblick
 
-**Übersicht.** Oben ist die Suche. Beim Tippen kommen Vorschläge (Produkte, Marken, Tags). Ich tippe einen an, und er wird übernommen. Mit dem **×** leere ich das Feld. Darunter sind drei Auswahlfelder (Bereich, Lagerort, Kategorie), die Status-Chips und die Tags:
+### Übersicht
 
-- Status-Chips: **Geöffnet**, **MHD bald**, **Abgelaufen**, **nachkaufen** und **Leer**. Die beiden MHD-Chips gibt es nur, wenn das MHD eingeschaltet ist. Ein Tipp filtert die Liste, ein zweiter schaltet den Filter wieder aus.
-- Tags: die am häufigsten benutzten Suchbegriffe. Ein Tipp sucht danach, ein zweiter löscht die Suche.
-- Produkte einer Gruppe stehen in einer Zeile mit einem kleinen Dreieck. Ein Tipp klappt die Gruppe auf. Ein Tipp auf ein Produkt öffnet seine Seite, und mit **Zurück** lande ich wieder genau dort in der Liste, wo ich war.
+Auf der Startseite siehst du deine Produkte und deren Bestand.
 
-**Produktseite.** Oben steht der Gesamtbestand. Ist das MHD an, stehen dort auch die Haltbarkeitsdaten (abgelaufene und bald ablaufende farbig). Gibt es eine Standard-Haltbarkeit, steht eine Zeile wie „Standard-Haltbarkeit 365 Tage · nach dem Öffnen 90 Tage“ dabei. Die Knöpfe darunter sind immer in dieser Reihenfolge:
+Über die Suche findest du Produkte anhand von Namen, Marken oder Tags. Bereits während der Eingabe erscheinen passende Vorschläge. Mit × kannst du die Suche zurücksetzen.
 
-1. **Einlagern** und **Entnehmen**
-2. **Verschieben** und **Öffnen** (oder **Öffnen rückgängig**), wenn es für das Produkt passt
-3. **Zur Einkaufsliste**. Steht das Produkt schon drauf, zeigt der Knopf einen Haken, und ein Tipp nimmt es wieder runter
-4. Die Etiketten-Knöpfe (nur die, die ich in den Adapter-Einstellungen eingeschaltet habe)
-5. **Bearbeiten** und **Löschen**, immer ganz unten
+Zusätzlich stehen verschiedene Filter zur Verfügung:
 
-## Ein Produkt bearbeiten
+- Bereich: Zeigt nur Produkte aus einem bestimmten Lagerbereich.
+- Lagerort: Filtert nach einem einzelnen Regal, Schrank oder Fach.
+- Kategorie: Zeigt Produkte einer bestimmten Kategorie.
+- Status: Filtert nach geöffneten, bald ablaufenden, abgelaufenen, nachzukaufenden oder leeren Produkten.
+- Tags: Häufig verwendete Suchbegriffe lassen sich direkt auswählen.
 
-**Bearbeiten** öffnet das Formular mit fünf Abschnitten, die ich auf- und zuklappen kann. Ist ein Abschnitt zu, zeigt er rechts eine kurze Zusammenfassung, zum Beispiel `Packung · 400g · min 1`. Ich öffne nur, was ich ändern will:
+Ein erneuter Tipp auf einen aktiven Status oder Tag hebt den jeweiligen Filter wieder auf.
 
-| Abschnitt | Inhalt |
+Produktgruppen werden zusammengefasst dargestellt. Über das kleine Dreieck kannst du die enthaltenen Produkte aufklappen.
+
+Beim Zurückkehren von einer Produktseite landest du wieder an deiner vorherigen Position in der Übersicht.
+
+### Produktseite
+
+Auf der Produktseite findest du den Gesamtbestand, die Lagerorte und – sofern aktiviert – die Haltbarkeitsdaten.
+
+Abgelaufene und bald ablaufende Produkte werden farblich hervorgehoben.
+
+Sind Standardwerte vorhanden, zeigt ShelfMate beispielsweise:
+
+Standard-Haltbarkeit 365 Tage · nach dem Öffnen 90 Tage
+
+Darunter stehen die verfügbaren Aktionen in fester Reihenfolge:
+
+1. Einlagern / Entnehmen
+2. Verschieben / Öffnen / Öffnen rückgängig, sofern verfügbar
+3. Zur Einkaufsliste – bei bereits eingetragenen Produkten mit Haken
+4. Etiketten drucken – abhängig von den Adapter-Einstellungen
+5. Bearbeiten / Löschen
+
+---
+
+## Produkte bearbeiten
+
+Über Bearbeiten öffnest du die Produkteinstellungen.
+
+Das Formular ist in fünf aufklappbare Bereiche unterteilt. Geschlossene Bereiche zeigen eine kurze Zusammenfassung, beispielsweise `Packung · 400g · min 1`.
+
+| Bereich | Einstellungen |
 | --- | --- |
-| **Grunddaten** (offen) | Name, Marke, Bild (hochladen oder entfernen), Kategorie |
-| **Bestand** (bei neuen Produkten offen) | Bestandsart (Stück, Gewicht, Volumen), Einheit bei Stückware, Packungsinhalt, Mindestbestand |
-| **Gruppe & Tags** | Gruppe (mehrere Marken zählen zusammen, zum Beispiel „Mehl“) und Tags (Suchbegriffe, mit Komma getrennt) |
-| **Haltbarkeit** | Nur sichtbar, wenn das MHD an ist. MHD (im Modus „pro Produkt“), Standard-Haltbarkeit in Tagen und Haltbarkeit nach dem Öffnen in Tagen |
-| **Mehr** | Barcode (mit „EAN erzeugen“ und Etikett), Nutri-Score als farbige Knöpfe (A bis E, nochmal tippen wählt ihn ab), Bild-Link und bei Produkten von Open Food Facts der Knopf zum Neuladen |
+| Grunddaten | Produktname, Marke, Bild und Kategorie |
+| Bestand | Stück, Gewicht oder Volumen, Einheit, Packungsinhalt und Mindestbestand |
+| Gruppe & Tags | Produktgruppe und zusätzliche Suchbegriffe |
+| Haltbarkeit | MHD, Standard-Haltbarkeit und Haltbarkeit nach dem Öffnen |
+| Mehr | Barcode, eigene EAN, Nutri-Score, Bild-Link und Open Food Facts |
 
-Produkte mit einer Gruppe zählen beim Mindestbestand zusammen. Haben sie keine eigene Standard-Haltbarkeit, nehmen sie die der Gruppe.
+Die Grunddaten sind standardmäßig geöffnet, bei neuen Produkten zusätzlich der Bereich „Bestand“.
 
-## Automatische Werte und das Funken-Symbol
+### Produktgruppen
 
-ShelfMate kann Werte selbst eintragen, die ich sonst tippen müsste: das MHD beim Einlagern, die Standard-Haltbarkeit und die Haltbarkeit nach dem Öffnen. Damit ich weiß, was von mir ist und was nicht, zeigt die Produktseite am Ende der Zeile „Standard-Haltbarkeit … · nach dem Öffnen …“ ein kleines **Funken-Symbol**. Es erscheint, sobald an diesem Produkt etwas **nicht von mir getippt** wurde:
+Mehrere Produkte lassen sich zu einer Gruppe zusammenfassen.
 
-- Die Standard-Haltbarkeit oder die Haltbarkeit nach dem Öffnen kommt aus der eingebauten Liste (Trockenware wie Nudeln, Reis, Mehl, Konserven, Süßes) oder von der Gruppe, nicht vom Produkt selbst.
-- Ein MHD wurde automatisch gesetzt: beim Einlagern (Einlagerungstag plus Standard-Haltbarkeit) oder über „Haltbarkeit automatisch eintragen“.
+Beispiel: Weizenmehl von REWE, Edeka und Kaufland gehört zur gemeinsamen Gruppe Mehl.
 
-Das Symbol gibt es nur auf der Produktseite, nicht in der Übersicht. Was ich selbst eintippe, gewinnt immer. Sobald ich ein Datum ändere, gilt es nicht mehr als automatisch, und das Symbol verschwindet, wenn nichts Automatisches mehr übrig ist. Ältere automatische Daten erkennt ShelfMate wieder, wenn ich „Haltbarkeit automatisch eintragen“ noch einmal ausführe (ein Datum, das genau Einlagerungstag plus Haltbarkeit ist, gilt als automatisch).
+ShelfMate zählt den Bestand dieser Produkte zusammen und berücksichtigt ihn beim Mindestbestand.
 
-**Wann wird etwas eingetragen?** Das stelle ich in den Adapter-Einstellungen bei „Haltbarkeit automatisch eintragen“ ein:
+Hat ein Produkt keine eigene Standard-Haltbarkeit, kann der Wert der Gruppe verwendet werden.
 
-| Einstellung | Bedeutung |
+### Nutri-Score
+
+Der Nutri-Score lässt sich im Bereich Mehr über die farbigen Knöpfe A bis E auswählen.
+
+Ein erneuter Tipp auf den ausgewählten Wert entfernt ihn wieder.
+
+---
+
+## Automatische Haltbarkeit und Funken-Symbol
+
+ShelfMate kann Haltbarkeitswerte automatisch vorschlagen oder eintragen.
+
+Dazu gehören:
+
+- Standard-Haltbarkeit eines Produkts
+- Haltbarkeit nach dem Öffnen
+- Automatisch berechnete Haltbarkeitsdaten beim Einlagern
+
+### Was bedeutet das Funken-Symbol?
+
+Das kleine ✨ Funken-Symbol auf der Produktseite kennzeichnet automatisch übernommene Werte.
+
+Es erscheint beispielsweise, wenn die Haltbarkeit aus der eingebauten Lebensmittelliste oder einer Produktgruppe stammt oder ein MHD automatisch berechnet wurde.
+
+Selbst eingetragene Werte haben immer Vorrang.
+
+Änderst du ein automatisch vorgeschlagenes Datum selbst, gilt es anschließend als manueller Wert. Das Symbol verschwindet, sobald keine automatischen Werte mehr vorhanden sind.
+
+Das Symbol wird nur auf der Produktseite angezeigt, nicht in der Übersicht.
+
+Ältere automatisch berechnete Daten kann ShelfMate beim erneuten Ausführen von Haltbarkeit automatisch eintragen wieder erkennen, wenn sie genau dem Einlagerungsdatum plus Standard-Haltbarkeit entsprechen.
+
+### Wann wird die Haltbarkeit eingetragen?
+
+Das legst du in den Adapter-Einstellungen fest.
+
+| Einstellung | Verhalten |
 | --- | --- |
-| Immer (Standard) | Die App füllt das Datum beim Einlagern schon aus. Scanner-Modus und Datenpunkte tragen es selbst ein |
-| Nur ohne App | Nur Scanner-Modus und Datenpunkte tragen ein, weil dort niemand ein Datum tippen kann. In der App bleibt das Feld leer |
-| Nie | Nichts automatisch, auch keine Vorschläge aus der Liste. Der Knopf „Haltbarkeit automatisch eintragen“ funktioniert trotzdem, wenn ich ihn selbst drücke |
+| Immer | Die App schlägt beim Einlagern ein Datum vor. Scanner-Modus und Datenpunkte tragen es automatisch ein |
+| Nur ohne App | Automatische Eintragung nur über Scanner-Modus und Datenpunkte |
+| Nie | Keine automatische Eintragung und keine automatischen Vorschläge |
 
-**Was wird eingetragen?** Das legt „Was automatisch eingetragen wird“ fest: entweder **alles mit Standard-Haltbarkeit** (eigene Werte, Gruppenwerte und die Liste) oder **nur Trockenware aus der eingebauten Liste**. Bei der zweiten Wahl bekommt ein Brot, dem ich selbst 5 Tage eingetragen habe, kein automatisches Datum, Nudeln schon.
+Bei Nie bleibt die Funktion Haltbarkeit automatisch eintragen weiterhin manuell nutzbar.
 
-Frische und gekühlte Ware (Milch, Joghurt, Käse, Wurst, Fleisch, Eier, Salat und so weiter) steht nicht in der Liste und bekommt nie ein automatisches Datum. Die Werte sind Richtwerte, nicht das Datum vom Hersteller. Ein aufgedrucktes oder von mir eingetragenes Datum ersetzt das automatische immer. Und das Öffnen einer Packung schiebt das Datum nie hinter das aufgedruckte.
+### Welche Werte werden verwendet?
 
-**Werte verwalten.** Unter **Einstellungen / Haltbarkeit** (nur sichtbar, wenn das MHD an ist) zeigt **Haltbarkeiten verwalten** jedes Produkt mit eigenem Wert. Dort kann ich einen Wert ändern, mit dem ✕ entfernen oder oben mit **Alle eigenen Werte entfernen** alle auf einmal löschen. Die Liste ändert sich sofort.
+Zusätzlich gibt es zwei Möglichkeiten:
 
-## Ein Produkt neu von Open Food Facts laden
+**Alles mit Standard-Haltbarkeit**
 
-Bei Produkten von Open Food Facts ist der Barcode im Editor gesperrt. Unter **Mehr** holt **Von Open Food Facts neu laden** Name, Marke, Packungsinhalt, Bild, Kategorie und Nutri-Score noch einmal und fügt neue Tags zu meinen hinzu (meine eigenen bleiben). Gespeichert wird erst mit **Produkt speichern**. Ich kann mir das Ergebnis also ansehen oder das Formular einfach schließen.
+Berücksichtigt eigene Werte am Produkt, Werte der Produktgruppe und die eingebaute Liste.
 
-## Ein- und Auslagern
+**Nur Trockenware aus der eingebauten Liste**
 
-1. **Scannen** antippen und den Barcode vor die Kamera halten (oder eintippen).
-2. Bekannte Produkte öffnen sich sofort, unbekannte werden bei Open Food Facts gesucht und vorausgefüllt. Prüfen und speichern.
-3. **Einlagern**, **Entnehmen** oder **Verschieben** wählen, Menge und Lagerort einstellen, speichern.
-4. Tipp: Statt den Lagerort aus der Liste zu wählen, den QR-Code des Regals scannen.
+Verwendet ausschließlich die hinterlegten Standardwerte für typische Vorratsprodukte. Eigene Produkt- und Gruppenwerte werden dabei nicht automatisch eingetragen.
 
-## Lagerorte und Etiketten
+Die eingebaute Liste enthält beispielsweise Nudeln, Reis, Mehl, Konserven und Süßwaren.
 
-1. Unter **Lagerorte** einen Bereich (z. B. „Speisekammer“) und einen Lagerort („Regal 1“) anlegen.
-2. Den Lagerort öffnen: Dort steht sein QR-Code, die Etiketten-Knöpfe erzeugen das Etikett als Bild (nur QR, großes Regal-Etikett, Boxen-Etikett mit Inhalt).
-3. Die Etikettengröße einmal unter **Einstellungen / Etiketten** eintragen (z. B. 50 × 30 mm). Für das große Regal-Etikett, das Boxen-Etikett und den vollflächigen Code stelle ich dort eine eigene Größe ein (A6, A5 oder A4). Dort wähle ich auch, ob Lagerort-Etiketten einen QR-Code oder einen Code-128-Strichcode tragen (oben der Name, darunter nur der Strichcode; der Lagerort muss vorher gespeichert sein). Welche Knöpfe die App zeigt, stelle ich in den Adapter-Einstellungen ein.
-4. Das Bild drucken (siehe „Etiketten drucken“) und an Regal oder Box kleben.
+Frische und gekühlte Produkte wie Milch, Fleisch, Wurst, Käse, Eier oder Joghurt erhalten bewusst keinen automatisch berechneten Standardwert.
+
+Wichtig: Automatische Haltbarkeiten sind Richtwerte und kein tatsächliches Hersteller-MHD. Ein aufgedrucktes oder manuell eingetragenes Datum hat Vorrang. Auch durch das Öffnen einer Packung wird ein früheres Datum niemals verlängert.
+
+### Haltbarkeitswerte verwalten
+
+Unter Einstellungen → Haltbarkeit → Haltbarkeiten verwalten findest du alle Produkte mit eigenen Haltbarkeitswerten.
+
+Dort kannst du Werte bearbeiten, einzeln über × entfernen oder über Alle eigenen Werte entfernen gesammelt löschen.
+
+Änderungen werden direkt übernommen.
+
+---
+
+## Produktdaten aktualisieren
+
+Produkte mit einem bekannten Barcode können ihre Informationen von Open Food Facts beziehen.
+
+Im Produkteditor findest du unter Mehr die Funktion Von Open Food Facts neu laden.
+
+Dabei werden folgende Angaben aktualisiert:
+
+- Name und Marke
+- Packungsinhalt
+- Produktbild
+- Kategorie
+- Nutri-Score
+- Zusätzliche Tags
+
+Bereits selbst angelegte Tags bleiben erhalten.
+
+Die Änderungen werden erst mit Produkt speichern übernommen. Du kannst das Ergebnis also vorher prüfen und das Formular bei Bedarf ohne Speichern schließen.
+
+Bei Produkten aus Open Food Facts ist der Barcode im Editor gesperrt.
+
+---
+
+## Einlagern, entnehmen und verschieben
+
+So funktioniert eine normale Buchung:
+
+1. Scannen auswählen und den Barcode mit der Kamera erfassen oder manuell eingeben.
+2. Bei bekannten Produkten öffnet sich die Produktseite.
+3. Unbekannte Barcodes werden über Open Food Facts gesucht. Die gefundenen Angaben können geprüft und gespeichert werden.
+4. Einlagern, Entnehmen oder Verschieben auswählen.
+5. Menge und Lagerort festlegen und die Buchung speichern.
+
+Den Lagerort kannst du entweder aus der Liste auswählen oder direkt über seinen QR-Code scannen.
+
+Alle Buchungen werden in der Historie gespeichert.
+
+---
+
+## Lagerorte anlegen
+
+ShelfMate unterscheidet zwischen Lagerbereichen und Lagerorten.
+
+Beispiel:
+
+- Bereich: Speisekammer
+- Lagerort: Regal 1
+
+Unter Lagerorte kannst du beides anlegen und bearbeiten.
+
+### QR-Codes für Lagerorte
+
+Jeder Lagerort bekommt einen eigenen Code.
+
+Öffne den Lagerort und wähle das gewünschte Etikett:
+
+- Nur QR-Code
+- Großes Regal-Etikett
+- Boxen-Etikett mit Inhalt
+
+Alternativ kannst du Lagerort-Etiketten auch mit einem Code-128-Strichcode erstellen. Das ist besonders praktisch für Scanner ohne QR-Code-Unterstützung.
+
+Die Codeart lässt sich unter Einstellungen → Etiketten auswählen.
+
+### Etikettengröße
+
+Die Größe der Etiketten legst du einmalig fest, beispielsweise auf 50 × 30 mm.
+
+Für große Regal-Etiketten, Boxen-Etiketten und vollflächige Codes sind auch eigene Formate wie A6, A5 oder A4 möglich.
+
+Welche Etiketten-Knöpfe in der App angezeigt werden, bestimmst du in den Adapter-Einstellungen.
+
+Nach dem Erstellen kannst du das Etikett als Bild speichern oder direkt drucken.
+
+---
 
 ## Produkte ohne Barcode
 
-Produkt von Hand anlegen und einen eigenen EAN-13-Code erzeugen lassen. Den Code als Etikett drucken und aufkleben. Ein eigenes Produktbild kann hochgeladen werden, es wird automatisch verkleinert.
+Auch Produkte ohne Herstellerbarcode lassen sich verwalten.
+
+1. Produkt manuell anlegen.
+2. Im Editor EAN erzeugen auswählen.
+3. Den eigenen EAN-13-Code als Etikett drucken.
+4. Etikett auf das Produkt oder den Behälter kleben.
+
+Anschließend lässt sich das Produkt wie jedes andere scannen.
+
+Zusätzlich kannst du ein eigenes Produktbild hochladen. ShelfMate verkleinert es automatisch.
+
+---
 
 ## Mindestbestand und Einkaufsliste
 
-1. Beim Produkt einen **Mindestbestand** eintragen. Bei Produkten einer Gruppe (z. B. alle Mehlsorten) an der Gruppe einstellen, der Bestand zählt gemeinsam.
-2. In den Adapter-Einstellungen den Einkaufslisten-Modus wählen.
-3. Fällt der Bestand auf den Mindestbestand, kommt das Produkt auf die Liste. Der Haken in der Übersicht zeigt, was auf der Liste steht; antippen nimmt es wieder herunter.
+Für jedes Produkt kannst du einen Mindestbestand festlegen.
+
+Beispiel: Du möchtest immer mindestens zwei Packungen Nudeln im Vorrat haben.
+
+Sobald der Bestand auf zwei Packungen oder weniger fällt, kann ShelfMate die Nudeln automatisch auf deine Einkaufsliste setzen.
+
+Bei Produktgruppen werden die Bestände der zugehörigen Produkte gemeinsam berücksichtigt.
+
+In der Übersicht zeigt ein Haken an, welche Produkte bereits auf der Einkaufsliste stehen. Durch Antippen kann der Eintrag wieder entfernt werden, sofern die entsprechenden Einstellungen aktiv sind.
+
+Die Verbindung zur Einkaufsliste wird in den Adapter-Einstellungen eingerichtet.
+
+---
 
 ## Mindesthaltbarkeit
 
-Den Modus wähle ich in den Adapter-Einstellungen:
+ShelfMate unterstützt drei Modi.
 
-- **Aus**: keine Haltbarkeitsfunktionen.
-- **Pro Produkt**: Jedes Produkt hat ein optionales Datum (im Produktformular). Ist es erreicht, wird das Produkt in der Übersicht und auf der Produktseite markiert.
-- **Pro Einlagerung**: Beim Einlagern kann ich ein Datum angeben. Pro Produkt und Lagerort bleiben mehrere Daten erhalten. Entnehmen und Verschieben nehmen immer zuerst das älteste.
-- **Standard-Haltbarkeit** (optional, pro Produkt; bei Gruppenprodukten gilt der Wert der Gruppe): trägt das MHD beim Einlagern vor, bei Nudeln zum Beispiel ein Jahr. Im Modus „pro Einlagerung“ bekommt auch Bestand ohne Datum eins: Einlagerungstag (aus der Historie) plus Haltbarkeit. Wann und was eingetragen wird und was das Funken-Symbol heißt, steht unter [Automatische Werte und das Funken-Symbol](#automatische-werte-und-das-funken-symbol).
-- **Geöffnet** (optional, pro Produkt): **Öffnen** auf der Produktseite trennt eine Packung ab. Habe ich eine Haltbarkeit nach dem Öffnen eingetragen, bekommt sie dieses Datum (oder das frühere MHD, falls das eher abläuft). Geöffnete Packungen stehen extra und werden zuerst verbraucht. **Öffnen rückgängig** macht aus einer geöffneten wieder eine normale.
-- **Verdorben**: Beim Entnehmen wähle ich „Verdorben“ statt „Verbraucht“. Das zählt nicht zum Verbrauch und wird in der Historie 30 Tage lang zusammengefasst.
-- **Rückgängig**: In der Historie macht ein Knopf die letzte Buchung rückgängig. Im Scanner-Modus geht das mit dem Code `SM:UNDO`.
-- **MHD nachtragen oder ändern** (pro Einlagerung): Auf der Produktseite zeigt „MHD bearbeiten“ jede Packung in einer eigenen Zeile, auch geöffnete. Dort gibt es ein Datumsfeld (Kurzeingabe siehe unten) und Knöpfe für +1, +3, +5, +10 Tage und „keins“. Speichern übernimmt alle Zeilen auf einmal, die Änderung steht in der Historie und lässt sich rückgängig machen. Ohne App scanne ich `SM:DATE:<Tage>` und danach das Produkt, dann bekommt der ganze ungeöffnete Bestand dieses Datum.
-- **Kurzeingabe**: Im MHD-Feld geht zum Beispiel `+3d` (in 3 Tagen), `+2w` (in 2 Wochen), `+1m` (in einem Monat), `+1y` (in einem Jahr), `12/26` (Ende Dezember 2026, so steht es oft auf der Packung), `2412` oder `24.12.` (der nächste 24. Dezember), `24.12.26` (volles Datum) und `x` (kein Datum). Eine Vorschau darunter zeigt, was verstanden wurde. Die Knöpfe für +1 bis +14 Tage, +3w, +1m, +3m, +6m und +1y füllen das Feld mit einem Tipp.
+| Modus | Beschreibung |
+| --- | --- |
+| Aus | Keine MHD-Verwaltung |
+| Pro Produkt | Ein gemeinsames MHD für das Produkt |
+| Pro Einlagerung | Jede Einlagerung kann ein eigenes MHD haben |
 
-Produkte, die abgelaufen sind oder bald ablaufen, bekommen ein Abzeichen („läuft in 3 Tagen ab“ oder „abgelaufen“) und stehen in den Datenpunkten `stats.expiring*`. Wie Daten angezeigt werden (`31.10.2026`, `31/10/2026` oder `2026-10-31`), stelle ich unter „Datumsformat“ ein.
+### MHD pro Einlagerung
+
+Beim Einlagern kann jeder Packung ein eigenes Datum zugewiesen werden.
+
+Mehrere Haltbarkeitsdaten werden pro Produkt und Lagerort getrennt gespeichert.
+
+Beim Entnehmen oder Verschieben wird zuerst der Bestand mit dem ältesten MHD berücksichtigt.
+
+Fehlt ein Datum, kann ShelfMate anhand der Standard-Haltbarkeit automatisch eines berechnen. Dafür wird das Einlagerungsdatum aus der Historie verwendet.
+
+### Packung öffnen
+
+Mit Öffnen kannst du eine einzelne Packung als geöffnet markieren.
+
+ShelfMate führt diese Packung anschließend separat und berücksichtigt sie bei der Entnahme zuerst.
+
+Ist eine Haltbarkeit nach dem Öffnen hinterlegt, wird daraus ein neues Datum berechnet. Ein früheres vorhandenes MHD bleibt bestehen.
+
+Mit Öffnen rückgängig kannst du den Vorgang zurücksetzen.
+
+### Verdorbene Produkte
+
+Beim Entnehmen kannst du zwischen Verbraucht und Verdorben unterscheiden.
+
+Verdorbene Produkte zählen nicht zum normalen Verbrauch. In der Historie werden sie für 30 Tage zusammengefasst.
+
+### Buchungen rückgängig machen
+
+Über die Historie kannst du die letzte Buchung rückgängig machen.
+
+Im Scanner-Modus steht dafür der Steuer-Code `SM:UNDO` zur Verfügung.
+
+Dort gilt die Funktion nicht für Verschiebungen und Inventuren.
+
+### MHD nachträglich ändern
+
+Im Modus Pro Einlagerung zeigt MHD bearbeiten alle Packungen einzeln an – auch geöffnete.
+
+Du kannst ein Datum manuell eingeben oder die Schnellwahl verwenden:
+
+- +1 Tag
+- +3 Tage
+- +5 Tage
+- +10 Tage
+- Kein Datum
+
+Mit Speichern werden alle Änderungen übernommen. Die Anpassungen erscheinen in der Historie und lassen sich rückgängig machen.
+
+Im Scanner-Modus kannst du mit `SM:DATE:<Tage>` und anschließendem Produktscan ein neues MHD für den gesamten ungeöffneten Bestand setzen.
+
+`SM:DATE:0` entfernt das Datum.
+
+### Datum schnell eingeben
+
+ShelfMate versteht neben normalen Datumsangaben auch Kurzformen.
+
+| Eingabe | Bedeutung |
+| --- | --- |
+| +3d | In 3 Tagen |
+| +2w | In 2 Wochen |
+| +1m | In einem Monat |
+| +1y | In einem Jahr |
+| 12/26 | Ende Dezember 2026 |
+| 2412 | Nächster 24. Dezember |
+| 24.12. | Nächster 24. Dezember |
+| 24.12.26 | 24. Dezember 2026 |
+| x | Kein Datum |
+
+Unter dem Eingabefeld erscheint eine Vorschau des erkannten Datums.
+
+Zusätzlich gibt es Schnellwahl-Knöpfe für +1 bis +14 Tage, +3 Wochen, +1 Monat, +3 Monate, +6 Monate und +1 Jahr.
+
+### Ablaufwarnungen
+
+Bald ablaufende und abgelaufene Produkte werden in der App gekennzeichnet, beispielsweise mit:
+
+- „Läuft in 3 Tagen ab“
+- „Abgelaufen“
+
+Die Informationen stehen außerdem in den Datenpunkten `stats.expiring*` bereit.
+
+Unter Datumsformat kannst du zwischen 31.10.2026, 31/10/2026 und 2026-10-31 wählen.
+
+---
 
 ## Einkaufslisten-Modi
 
-- **Aus**: Es wird nichts gesendet.
-- **Script**: Der Artikelname wird mit `ack=false` in einen Datenpunkt geschrieben, den ich auswähle. Optional wähle ich einen Datenpunkt mit der aktuellen Liste (JSON-Array aus Objekten mit `name`). Dann trägt ShelfMate keine Duplikate ein und zeigt an, was schon auf der Liste steht. Optional wähle ich auch einen Datenpunkt, in den der Name eines zu entfernenden Artikels geschrieben wird (`ack=false`). Erst dann funktionieren das Abhaken in der App und „Von der Liste nehmen, wenn wieder aufgefüllt“.
-- **Direkt über Bring!**: Ich wähle die Liste in den Einstellungen (die Listen des Bring!-Adapters werden automatisch gefunden, oder ich tippe den Kanal wie `bring.0.<list-id>` ein). ShelfMate liest `<Liste>.content` und schreibt neue Artikel nach `<Liste>.saveItem`, aber nur, wenn sie nicht schon auf der Liste stehen. Übernommen wird nur der Name (alles nach dem ersten Komma fällt weg).
-- **Bring Spezial**: wie Bring, aber ein Artikel, der schon auf der Liste steht, wird nicht übersprungen. Seine Menge wird hochgezählt oder in den Zusatz einsortiert (`Mehl` → `Mehl, 2` → `Mehl, 3`; `Feta, 200g` und `Feta, Kräuter` bleiben getrennte Einträge). Die Artikel werden nacheinander geschrieben, und der nächste wartet, bis der Bring!-Adapter die Liste neu geladen hat. Diesen Modus brauche ich, wenn Mengen und Zusätze auf der Liste landen sollen, zum Beispiel aus der Zutaten-Prüfung.
+ShelfMate unterstützt vier Möglichkeiten, Produkte auf eine Einkaufsliste zu setzen.
 
-`shopping.addItem` nutzt immer den gewählten Modus. Bei „Bring Spezial“ geht alles, was ich dort hineinschreibe, durch die Mengen-Logik, bei „Bring“ wird nur der Name übernommen.
+### Aus
 
-Bei Bring, Bring Spezial und Script (mit Datenpunkt zum Entfernen) gibt es zwei unabhängige Optionen. Entfernt wird nur, was wirklich auf der Liste steht, geschrieben wird nach `<Liste>.removeItem`:
+Es werden keine Produkte automatisch an eine Einkaufsliste übertragen.
 
-- **Von der Liste nehmen, wenn wieder aufgefüllt**: Steigt der Bestand wieder über den Mindestbestand, kommt der Artikel von der Liste (Standard: aus).
-- **Von der Liste nehmen, wenn ich den Haken in der App entferne**: Tippe ich in der App auf den Haken eines Artikels, der auf der Liste steht, wird er auch dort entfernt (Standard: an). Ist die Option aus, verschwindet nur die Markierung in der App.
+### Script
 
-## Zutaten-Prüfung
+ShelfMate schreibt den Artikelnamen mit `ack=false` in einen frei wählbaren Datenpunkt.
 
-Damit vergleiche ich die Zutaten geplanter Rezepte mit dem, was ich zu Hause habe. ShelfMate kennt keine Rezepte. Es bekommt eine Zutatenliste und sagt mir, was da ist und was fehlt.
+Optional kannst du zusätzlich einen Datenpunkt mit der aktuellen Einkaufsliste angeben. Erwartet wird ein JSON-Array mit Objekten, die jeweils einen name enthalten.
 
-1. Ich schreibe die Zutaten in `check.request`, eine pro Zeile (oder mit Semikolon getrennt), oder als JSON-Liste aus Texten oder `{"name","amount","unit"}`. In einer Zeile trennen Kommas Name, Zusatz und Menge, so wie meine Rezept-App es liefert: `Zwiebeln, rot, 1`, `Cherrytomaten, bunt, 500g`, `Salz, 0.5 tl`, `Basilikum`. Die Menge darf auch vor dem Namen stehen (`380g Linguine`, `2EL Olivenöl`) oder dahinter (`Mehl 200g`). Verstanden werden `kg`, `g`, `l`, `ml`, `cl` und Stück. `EL`, `TL` und Ähnliches zählen nur als „vorhanden“. Gleiche Zutaten werden zusammengezählt.
-2. Gefunden wird über Produktname, Gruppe oder Tag, jeweils als ganzes Wort. `Cherrytomaten` wird also nicht über `Tomaten` gefunden, aber ein Tag `Cherrytomaten` am Produkt reicht. `Mehl` zählt alle Produkte der Gruppe Mehl zusammen. Bei Mengen in g oder ml wird der Bestand verglichen (500 g da, 200 g gebraucht: passt). Zählprodukte mit Packungsgröße wie `1 kg` werden umgerechnet. Ohne Menge reicht ein Bestand über null. Unbekannte Zutaten gelten als fehlend, damit auch Nicht-Lebensmittel auf der Liste landen.
-3. `check.result` enthält das Ergebnis je Zutat. `check.available` und `check.missing` enthalten die Zeilen so, wie sie kamen, eine pro Zeile, `check.missing` kann ich also direkt auf die Einkaufsliste übernehmen. `check.allAvailable` ist `true`, wenn nichts fehlt.
-4. Mit „Fehlende Zutaten auf die Einkaufsliste setzen“ in den Adapter-Einstellungen kommen die fehlenden Zeilen nach jeder Prüfung automatisch auf die Liste, jede so, wie sie kam. Bei „Bring Spezial“ fügt ShelfMate die Zusätze selbst zusammen (`Cherrytomaten, bunt, 500g` zweimal wird zu `bunt 500g + 500g`), in den anderen Modi wird nur der Name geschrieben. Ohne die Einstellung schreibe ich `true` in `check.addMissing`, wenn ich sie auf der Liste haben will.
+Damit erkennt ShelfMate bereits vorhandene Produkte und vermeidet doppelte Einträge.
 
-Hat ein Produkt einen Mindestbestand, rechne ich ihn mit: Einzukaufen ist die benötigte Menge minus Vorrat plus Mindestbestand. Bei 2 kg Zucker im Vorrat, 1 kg Mindestbestand und `Zucker, 3000 g` landet `Zucker, 2000g` auf der Liste. `check.request` wird nach jedem Lauf geleert.
+Für das Entfernen von Artikeln lässt sich ein weiterer Datenpunkt festlegen. Auch dort wird der Artikelname mit `ack=false` geschrieben.
+
+Erst mit diesem Datenpunkt funktionieren das Entfernen über den Haken in der App und die automatische Entfernung nach dem Auffüllen.
+
+### Bring!
+
+ShelfMate kann direkt mit dem Bring!-Adapter zusammenarbeiten.
+
+Die verfügbaren Listen werden automatisch erkannt. Alternativ kannst du den Kanal manuell eintragen, beispielsweise:
+
+```
+bring.0.<list-id>
+```
+
+ShelfMate liest den Listeninhalt über `<Liste>.content` und fügt neue Produkte über `<Liste>.saveItem` hinzu.
+
+Produkte, die bereits auf der Liste stehen, werden nicht erneut eingetragen.
+
+Bei einem Eintrag mit Komma wird nur der Artikelname vor dem ersten Komma übernommen.
+
+### Bring! Spezial
+
+Dieser Modus berücksichtigt zusätzlich Mengen und Zusätze.
+
+Beispiele:
+
+- `Mehl` → `Mehl, 2` → `Mehl, 3`
+- `Feta, 200g` und danach `Feta, Kräuter` ergeben **einen** Eintrag: `Feta, Kräuter, 200g`. Du siehst also: ein Feta mit 200 g und ein Feta als Kräutervariante
+- Kommt noch ein `Feta, Kräuter` dazu, steht dort `Feta, Kräuter 2, 200g`
+
+Bereits vorhandene Artikel werden also nicht einfach übersprungen. Stattdessen erhöht ShelfMate die Menge oder ergänzt den Zusatz.
+
+Die Einträge werden nacheinander verarbeitet. Der nächste Artikel wird erst übertragen, wenn der Bring!-Adapter seine Liste aktualisiert hat.
+
+Das ist besonders bei der Zutaten-Prüfung hilfreich.
+
+### Datenpunkt shopping.addItem
+
+Über `shopping.addItem` kannst du unabhängig von der App Produkte auf die Einkaufsliste setzen.
+
+Dabei wird immer der aktuell eingestellte Einkaufslisten-Modus verwendet.
+
+### Produkte automatisch entfernen
+
+Bei Bring!, Bring! Spezial und Script mit eingerichtetem Entfernen-Datenpunkt stehen zwei unabhängige Optionen zur Verfügung:
+
+**Von der Liste nehmen, wenn wieder aufgefüllt**
+
+Sobald der Bestand wieder über den Mindestbestand steigt, wird das Produkt von der Einkaufsliste entfernt.
+
+Standardmäßig ausgeschaltet.
+
+**Von der Liste nehmen, wenn der Haken entfernt wird**
+
+Ein Tipp auf den Haken in der App entfernt das Produkt auch von der verbundenen Einkaufsliste.
+
+Ist die Funktion deaktiviert, verschwindet nur die Markierung in ShelfMate.
+
+Standardmäßig eingeschaltet.
+
+Entfernt werden nur Artikel, die tatsächlich auf der Liste stehen. Bei Bring! erfolgt die Entfernung über `<Liste>.removeItem`.
+
+---
+
+## Zutaten prüfen
+
+ShelfMate kann eine Zutatenliste mit deinem aktuellen Vorrat vergleichen.
+
+Die Rezepte selbst werden nicht in ShelfMate gespeichert. Stattdessen übergibst du eine Zutatenliste, beispielsweise aus einer Rezept-App.
+
+### Zutaten übergeben
+
+Schreibe die Zutaten in den Datenpunkt `check.request` mit `ack=false`.
+
+Möglich sind:
+
+- Eine Zutat pro Zeile
+- Zutaten mit Semikolon getrennt
+- Ein JSON-Array aus Texten
+- Ein JSON-Array aus Objekten mit name, amount und unit
+
+Beispiele:
+
+```
+Zwiebeln, rot, 1
+Cherrytomaten, bunt, 500g
+Salz, 0.5 tl
+Basilikum
+```
+
+Auch diese Schreibweisen werden erkannt:
+
+```
+380g Linguine
+2EL Olivenöl
+Mehl 200g
+```
+
+Unterstützte Mengeneinheiten sind kg, g, l, ml, cl und Stück.
+
+Angaben wie EL oder TL werden nur auf Vorhandensein geprüft.
+
+Gleiche Zutaten werden zusammengerechnet.
+
+### So funktioniert der Abgleich
+
+ShelfMate sucht über Produktnamen, Gruppen und Tags.
+
+Dabei werden ganze Wörter verglichen.
+
+Beispiel: Cherrytomaten wird nicht automatisch als Tomaten erkannt. Ein entsprechender Tag am Produkt reicht jedoch aus.
+
+Bei Produkten mit Gewicht oder Volumen wird der tatsächliche Bestand berücksichtigt.
+
+Beispiel: 500 g Mehl vorhanden, 200 g benötigt – die Zutat ist verfügbar.
+
+Packungsgrößen wie 1 kg werden entsprechend umgerechnet.
+
+Bei Zutaten ohne Mengenangabe reicht ein positiver Bestand.
+
+Unbekannte Zutaten gelten als fehlend. Dadurch können auch andere Einkaufsartikel übernommen werden.
+
+### Ergebnis
+
+Nach jeder Prüfung stehen folgende Datenpunkte bereit:
+
+| Datenpunkt | Inhalt |
+| --- | --- |
+| `check.result` | Ergebnis für jede einzelne Zutat als JSON |
+| `check.available` | Vorhandene Zutaten |
+| `check.missing` | Fehlende Zutaten |
+| `check.allAvailable` | true, wenn alles vorhanden ist |
+
+Die Listen enthalten die ursprünglichen Zutatenzeilen, jeweils eine pro Zeile.
+
+Mit `check.addMissing` kannst du die fehlenden Zutaten auf die Einkaufsliste setzen.
+
+Alternativ aktivierst du in den Adapter-Einstellungen Fehlende Zutaten auf die Einkaufsliste setzen. Dann erfolgt die Übertragung automatisch nach jeder Prüfung.
+
+Bring! Spezial berücksichtigt dabei auch Mengen und Zusätze, während die anderen Modi nur den Artikelnamen übertragen.
+
+### Mindestbestand berücksichtigen
+
+ShelfMate kann beim Zutatenabgleich auch den gewünschten Mindestbestand einrechnen.
+
+Beispiel:
+
+- Vorrat: 2 kg Zucker
+- Mindestbestand: 1 kg
+- Benötigt: 3 kg Zucker
+
+Auf der Einkaufsliste landen 2 kg Zucker, damit nach dem Kochen der Mindestbestand erhalten bleibt.
+
+Nach jeder Prüfung wird `check.request` automatisch geleert.
+
+---
 
 ## Ein ganzes Regal einräumen
 
-1. **Lagerorte / Einräumen** öffnen.
-2. Den QR-Code des Lagerorts scannen (oder in der Liste wählen), dann die Produkte nacheinander mit der Kamera, einem Scanner oder per Eintippen der EAN scannen. Jeder Scan zählt 1, die Liste zeigt die Mengen und ich kann sie korrigieren.
-3. Denselben Lagerort-Code nochmal scannen (oder **Einlagern** tippen). Alles wird auf einmal eingelagert. Produkte nach Gewicht oder Volumen zählen als ganze Packungen und brauchen die Packungsgröße in g oder ml.
-4. Ein Barcode, der noch nicht in der Liste ist, wird bei Open Food Facts gesucht, das Produkt wird angelegt und gleich mitgezählt. Kennen ihn die Datenbanken auch nicht, entsteht ein Produkt „Unbekanntes Produkt <Barcode>“, das ebenfalls zählt und als Vorschlag erscheint (Glühbirne, „Neue Produkte bearbeiten“), bis ich es bearbeitet und gespeichert habe.
+Über Lagerorte → Einräumen kannst du mehrere Produkte nacheinander erfassen und gemeinsam einlagern.
 
-## Inventur per Scan
+1. Lagerort per QR-Code scannen oder aus der Liste auswählen.
+2. Produkte nacheinander scannen, mit Kamera, externem Scanner oder durch Eingabe der EAN.
+3. Jeder Scan erhöht die Menge um 1.
+4. Mengen bei Bedarf in der Liste korrigieren.
+5. Zum Abschließen denselben Lagerort-Code erneut scannen oder Einlagern auswählen.
 
-1. **Lagerorte / Inventur** öffnen und die Variante **Scannen** wählen (Einstellungen oder auf der Seite).
-2. Den QR-Code des Lagerorts scannen. „Inventur gestartet“ bestätigt das.
-3. Alle Artikel dieses Lagerorts scannen; jeder Scan zählt +1 (zweimal derselbe Artikel heißt zwei).
-4. **Denselben** Lagerort-QR nochmal scannen. Damit ist die Inventur des Lagerorts abgeschlossen: Der Bestand wird korrigiert, der Lagerort als erledigt markiert, und eine Zusammenfassung zeigt, was gezählt wurde (mit Sollmenge, wenn sie abweicht).
-5. Zum Weitermachen den QR-Code des nächsten Lagerorts scannen. Ein anderer Lagerort wird erst angenommen, wenn der aktuelle abgeschlossen ist.
+Alle erfassten Produkte werden gemeinsam eingebucht.
 
-Die Seite zeigt auch, welche Lagerorte des Bereichs fertig und welche noch offen sind. Nicht gescannte Artikel zählen als 0. Lieber von Hand prüfen? Variante **Liste**: gezählte Menge eintippen oder ✓ für „stimmt“. Korrekturen stehen im Verlauf als „Inventur“. Eine Erinnerung im festen Abstand stelle ich bei den Benachrichtigungen ein.
+Bei Produkten nach Gewicht oder Volumen zählt jeder Scan als ganze Packung. Dafür muss die Packungsgröße in g oder ml hinterlegt sein.
 
-## Scanner-Modus (ohne App)
+### Unbekannte Produkte
 
-Ein- und Auslagern mit gescannten Codes, ohne die App zu öffnen. Eingeschaltet wird er mit dem Datenpunkt `scanner.active`, die Codes kommen in `scanner.input` an, oder direkt von einem Scanner, der am ioBroker-Rechner steckt und dort als Tastatur erscheint (siehe unten).
+Ist ein Barcode noch nicht bekannt, fragt ShelfMate die Produktdaten bei Open Food Facts ab und legt das Produkt an.
 
-- Produkt, dann Lagerort-Code: lagert 1 an diesem Lagerort ein.
-- Produkt zweimal: entnimmt 1. Kommt kein Lagerort, wird dort entnommen, wo der Artikel das kürzeste MHD hat (ohne MHD: wo am meisten liegt).
-- Produkt zweimal, dann Lagerort-Code: entnimmt 1 genau an diesem Lagerort.
-- Lagerort-Code allein: startet den Einräum-Modus. Jedes danach gescannte Produkt wird an diesem Lagerort eingelagert (je 1, sofort gebucht). Derselbe Lagerort-Code beendet ihn, ein anderer wechselt zu diesem Lagerort, und nach 5 Minuten ohne Scan endet er von selbst. Praktisch für ein ganzes Regal, zum Beispiel mit Babygläschen.
-- `SM:UNDO` macht die letzte Buchung rückgängig (außer Verschieben und Inventur). `SM:SPOIL` und danach das Produkt entnimmt 1 als verdorben, `SM:OPEN` und danach das Produkt markiert 1 Stück als geöffnet. `SM:DATE:<Tage>` und danach das Produkt setzt das MHD des gesamten ungeöffneten Bestands auf heute plus die Tage (`SM:DATE:0` entfernt es). Die Codes stehen auf der zweiten Seite des Steuer-Code-PDFs.
-- `SM:QTY:5` und danach die Buchung: Die nächste Buchung zählt 5 statt 1. `SM:CANCEL` verwirft einen wartenden Scan.
-- Die Zeit zwischen den Codes stelle ich in den Adapter-Einstellungen ein (3 bis 120 Sekunden, Standard 10).
+Wird dort nichts gefunden, erstellt ShelfMate vorläufig einen Eintrag wie:
 
-Die Inventur bleibt in der App, sie braucht das Display.
+```
+Unbekanntes Produkt 1234567890123
+```
 
-**Funk-Scanner anschließen (vorgesehen: Tera HW0009 mit 2.4G-Dongle).** Ich stecke den Dongle in den ioBroker-Rechner, der ihn als Tastatur erkennt, ein Treiber ist nicht nötig. Am Scanner wähle ich den 2.4G-Modus und koppele ihn mit den Barcodes aus der Anleitung mit dem Dongle. Das Tastaturlayout lasse ich auf US und das Ende des Codes auf Enter. In den Adapter-Einstellungen wähle ich bei „Scanner“ das Gerät aus und schalte den Modus über `scanner.active` ein. Der ioBroker-Benutzer braucht Zugriff auf das Gerät: `sudo adduser iobroker input` und die Instanz neu starten. Den Rest übernimmt der Adapter. Hat der Scanner einen Prefix oder Suffix, trage ich denselben Text in den beiden Einstellungen ein. Jeder Code landet auch in `scanner.lastCode`.
+Das Produkt wird trotzdem mitgezählt.
 
-Weil der Scanner mit US-Tastaturlayout tippt, können Umlaute und manche Sonderzeichen verloren gehen. Für Lagerorte nutze ich deshalb den kurzen Scanner-Code: Im Lagerort-Editor tippe ich „Kurzen Scanner-Code verwenden“, speichere und drucke das Etikett neu (alte Etiketten gelten weiter). Unter Einstellungen druckt „Steuer-Codes als PDF“ die Mengen-Codes und den Abbrechen-Code. Der Scanner hat kein Display, das Ergebnis jedes Scans steht in `scanner.result`.
+Über die Glühbirne erscheint anschließend der Hinweis Neue Produkte bearbeiten, bis der Eintrag ergänzt und gespeichert wurde.
 
-**Scanner ohne 2D (nur Strichcode).** Für einen Scanner, der nur 1D-Codes liest, stelle ich „Code auf Lagerort-Etiketten“ auf „Strichcode“. Alle Lagerort-Etiketten (auch Box- und Regal-Etikett) zeigen dann oben den Namen und darunter nur einen Code-128-Strichcode, das Steuer-Code-Blatt wird ebenfalls als Strichcodes gedruckt. Der Lagerort muss vorher gespeichert sein, weil der Code seine kurze ID enthält (`SM:L:<8 Zeichen>`). Das passt auf ein Etikett mit 50 × 30 mm.
+---
 
-## Vorschläge (Glühbirne)
+## Inventur durchführen
 
-Die Glühbirne oben sammelt drei Arten von Hinweisen: Gruppen-Vorschläge (ähnliche Produkte, die gemeinsam zählen könnten; einzelne Produkte lassen sich herausnehmen, ein Vorschlag lässt sich ignorieren), Mindestbestand-Vorschläge (nur für regelmäßig verbrauchte Produkte; ✓ übernimmt, ✕ verwirft) und eine fällige Inventur. Ohne Antippen ändert sich nichts.
+Mit der Inventur kannst du überprüfen, ob der gespeicherte Bestand mit dem tatsächlichen Vorrat übereinstimmt.
+
+Es gibt zwei Varianten: Scannen und Liste.
+
+### Inventur per Scan
+
+1. Unter Lagerorte → Inventur die Variante Scannen auswählen.
+2. QR-Code des Lagerorts scannen.
+3. Alle vorhandenen Produkte nacheinander scannen.
+4. Jeder Scan zählt ein Stück. Derselbe Barcode kann mehrfach gescannt werden.
+5. Zum Abschluss denselben Lagerort-QR erneut scannen.
+
+ShelfMate gleicht die gezählten Mengen mit dem gespeicherten Bestand ab und zeigt eine Zusammenfassung.
+
+Abweichungen werden mit Soll- und Istmenge angezeigt.
+
+Nicht gescannte Produkte werden mit Bestand 0 gezählt.
+
+Anschließend kannst du mit dem nächsten Lagerort weitermachen. Ein neuer Lagerort wird erst angenommen, wenn der vorherige abgeschlossen ist.
+
+In der Übersicht siehst du, welche Lagerorte bereits geprüft wurden und welche noch offen sind.
+
+### Inventur über die Liste
+
+Alternativ kannst du die vorhandenen Produkte direkt in einer Liste prüfen.
+
+- Tatsächliche Menge eingeben
+- Mit ✓ bestätigen, wenn der Bestand stimmt
+
+Bestandskorrekturen werden in der Historie als Inventur gespeichert.
+
+Eine regelmäßige Inventur-Erinnerung lässt sich in den Adapter-Einstellungen aktivieren.
+
+---
+
+## Scanner-Modus ohne App
+
+ShelfMate unterstützt das Ein- und Auslagern über einen externen Barcode-Scanner, ohne dass die Web-App geöffnet sein muss.
+
+Der Scanner-Modus wird über `scanner.active` aktiviert.
+
+Scans können über `scanner.input` mit `ack=false` übergeben oder von einem direkt am ioBroker-Host angeschlossenen Scanner empfangen werden.
+
+### Scanabläufe
+
+| Scanfolge | Aktion |
+| --- | --- |
+| Produkt → Lagerort | 1 Stück einlagern |
+| Produkt → Produkt | 1 Stück entnehmen |
+| Produkt → Produkt → Lagerort | 1 Stück aus einem bestimmten Lagerort entnehmen |
+| Lagerort | Einräum-Modus starten |
+| Lagerort erneut | Einräum-Modus beenden |
+| Anderer Lagerort | Im Einräum-Modus den Lagerort wechseln |
+
+Wird beim Entnehmen kein Lagerort angegeben, wählt ShelfMate den Bestand mit dem kürzesten MHD.
+
+Ist kein MHD vorhanden, wird der Lagerort mit der größten Menge verwendet.
+
+### Einräum-Modus
+
+Scanne zuerst den Lagerort-Code.
+
+Anschließend kannst du beliebig viele Produkte scannen. Jeder Produktscan bucht sofort ein Stück in den ausgewählten Lagerort ein.
+
+Zum Beenden denselben Lagerort-Code erneut scannen.
+
+Ein anderer Lagerort-Code wechselt direkt den Lagerort.
+
+Nach fünf Minuten ohne Scan endet der Modus automatisch.
+
+### Steuer-Codes
+
+Für weitere Aktionen gibt es spezielle Codes:
+
+| Code | Funktion |
+| --- | --- |
+| `SM:UNDO` | Letzte unterstützte Buchung rückgängig machen |
+| `SM:SPOIL` | Nächstes Produkt als verdorben entnehmen |
+| `SM:OPEN` | Nächstes Produkt als geöffnet markieren |
+| `SM:DATE:<Tage>` | MHD für den ungeöffneten Bestand setzen |
+| `SM:DATE:0` | MHD entfernen |
+| `SM:QTY:5` | Nächste Buchung mit Menge 5 durchführen |
+| `SM:CANCEL` | Wartenden Scan abbrechen |
+
+Die Steuer-Codes lassen sich über die Einstellungen als PDF drucken.
+
+### Zeit zwischen zwei Scans
+
+Unter den Adapter-Einstellungen kannst du festlegen, wie lange ShelfMate auf den nächsten Code wartet.
+
+Möglich sind 3 bis 120 Sekunden.
+
+Standard: 10 Sekunden.
+
+### Externen Funk-Scanner anschließen
+
+Vorgesehen ist beispielsweise der Tera HW0009 mit 2,4-GHz-Dongle.
+
+1. Den USB-Dongle am ioBroker-Rechner anschließen.
+2. Den Scanner auf 2,4-GHz-Modus einstellen.
+3. Scanner anhand der Herstelleranleitung mit dem Dongle koppeln.
+4. Tastaturlayout auf US und Code-Ende auf Enter einstellen.
+5. Unter den ShelfMate-Adapter-Einstellungen das Scanner-Gerät auswählen.
+6. Den Scanner-Modus über `scanner.active` aktivieren.
+
+Der Scanner wird als USB-Tastatur erkannt. Ein zusätzlicher Treiber ist normalerweise nicht nötig.
+
+Damit ioBroker auf das Eingabegerät zugreifen kann, muss der Benutzer die passenden Rechte haben:
+
+```
+sudo adduser iobroker input
+```
+
+Anschließend die Instanz neu starten.
+
+Falls der Scanner mit einem Präfix oder Suffix arbeitet, müssen die entsprechenden Einstellungen in ShelfMate übereinstimmen.
+
+Jeder erkannte Code wird in `scanner.lastCode` gespeichert. Das Ergebnis steht in `scanner.result`.
+
+### Kurze Lagerort-Codes
+
+Da einige Scanner mit US-Tastaturlayout arbeiten, können Sonderzeichen oder Umlaute Probleme verursachen.
+
+Dafür bietet ShelfMate kurze Lagerort-Codes an.
+
+Im Lagerort-Editor Kurzen Scanner-Code verwenden auswählen, speichern und das Etikett neu drucken.
+
+Bereits vorhandene Etiketten bleiben gültig.
+
+Der kurze Code hat das Format:
+
+```
+SM:L:<8 Zeichen>
+```
+
+### Scanner ohne QR-Code-Unterstützung
+
+Auch einfache Scanner, die nur Strichcodes lesen, können verwendet werden.
+
+Dazu unter Einstellungen → Etiketten die Option Strichcode auswählen.
+
+ShelfMate erzeugt dann Code-128-Strichcodes statt QR-Codes für Lagerorte und Steuer-Codes.
+
+Das gilt auch für Boxen- und Regal-Etiketten.
+
+Der Lagerort muss vorher gespeichert sein, damit seine kurze ID verwendet werden kann.
+
+Die Codes passen beispielsweise auf Etiketten mit 50 × 30 mm.
+
+Hinweis: Der Scanner selbst benötigt kein Display. Das Ergebnis jedes Scans wird in `scanner.result` ausgegeben.
+
+Eine Inventur findet weiterhin über die Web-App statt, da dafür eine Anzeige benötigt wird.
+
+---
+
+## Vorschläge
+
+Über die Glühbirne in der Kopfzeile findest du verschiedene Hinweise von ShelfMate.
+
+Dazu gehören:
+
+### Produktgruppen
+
+ShelfMate erkennt ähnlich benannte Produkte und schlägt vor, sie zu einer Gruppe zusammenzufassen.
+
+Einzelne Produkte können aus einem Vorschlag entfernt werden. Ganze Vorschläge lassen sich auch ignorieren.
+
+### Mindestbestand
+
+Anhand des Verbrauchs der letzten 30 Tage kann ShelfMate einen passenden Mindestbestand vorschlagen.
+
+Die Funktion berücksichtigt regelmäßig verbrauchte Produkte.
+
+Mit ✓ übernimmst du den Vorschlag, mit × verwirfst du ihn.
+
+### Inventur
+
+Ist eine Inventur fällig, erscheint ebenfalls ein Hinweis.
+
+Wichtig: ShelfMate übernimmt keine Vorschläge automatisch. Erst nach deiner Bestätigung werden Änderungen vorgenommen.
+
+---
 
 ## Benachrichtigungen
 
-In den Adapter-Einstellungen einen Benachrichtigungs-Adapter wählen, das Ziel eintragen (z. B. eine Chat-ID) und den Test-Knopf nutzen. Ich lasse mich melden, wenn der Mindestbestand erreicht ist, täglich zur gewählten Uhrzeit über abgelaufene und ablaufende Produkte, und alle N Tage an eine Inventur erinnern.
+ShelfMate kann bei wichtigen Ereignissen automatisch Nachrichten verschicken.
+
+Unter den Adapter-Einstellungen wählst du einen unterstützten Benachrichtigungs-Adapter und den gewünschten Empfänger aus.
+
+Unterstützt werden:
+
+- Telegram
+- telegrammenu2
+- Pushover
+- Signal
+- WhatsApp
+- Matrix
+- E-Mail
+
+Über Test kannst du prüfen, ob die Verbindung funktioniert.
+
+Folgende Benachrichtigungen sind möglich:
+
+### Mindestbestand erreicht
+
+Meldung, sobald ein Produkt seinen Mindestbestand erreicht oder unterschreitet.
+
+### MHD-Warnung
+
+Tägliche Übersicht über bald ablaufende und bereits abgelaufene Produkte.
+
+Die Uhrzeit lässt sich einstellen.
+
+### Inventur-Erinnerung
+
+Erinnerung nach einer festgelegten Anzahl von Tagen ohne Inventur.
+
+Mit dem Wert 0 ist die Erinnerung ausgeschaltet.
+
+---
 
 ## Export und Backup
 
-Unter **Einstellungen / Daten**: **JSON-Backup** (herunterladen und wieder importieren), **Bestand als CSV** (für Excel o. Ä.) und **Bestand als PDF** (druckbare Liste nach Lagerort; öffnet das Teilen-Menü zum Sichern oder Drucken).
+Unter Einstellungen → Daten stehen mehrere Möglichkeiten zur Verfügung.
 
-## Offline nutzen
+### JSON-Backup
 
-Sobald das Zertifikat vertraut ist, startet die App auch ohne Verbindung. Buchungen und Einkaufslisten-Einträge, die offline entstehen, werden gesammelt und automatisch gesendet, sobald die Verbindung wieder da ist.
+Erstellt eine vollständige Sicherung deiner ShelfMate-Daten.
 
-## Zertifikat und Installation auf dem Handy
+Ein zuvor gespeichertes Backup kann später wieder importiert werden.
 
-Kamera und Offline-Modus brauchen HTTPS mit einem Zertifikat, dem das Handy vertraut.
+### CSV-Export
 
-1. In den Adapter-Einstellungen **HTTPS verwenden** einschalten und ein Zertifikat wählen. Am einfachsten geht das mit dem Knopf **Selbstsigniertes Zertifikat erstellen**: Er erzeugt ein Zertifikat für Hostnamen und IP-Adressen des ioBroker-Rechners, legt es in den ioBroker-Zertifikaten ab und wählt es aus. Einstellungen speichern, die Instanz startet neu. Alternativ ein eigenes Zertifikat oder eine Zertifikatssammlung (z. B. Let's Encrypt) wählen.
-2. Ein Zertifikat einer öffentlichen Stelle (z. B. Let's Encrypt über den Adapter `acme`) muss auf dem Handy nicht installiert werden. Dann die nächsten Schritte überspringen.
-3. Selbstsigniertes Zertifikat auf dem **iPhone** (getestet):
-   1. `https://<Host>:8120/` in Safari öffnen, in der App **Einstellungen / Offline-Modus** aufrufen und **ioBroker-Zertifikat laden** tippen (die Datei gibt es auch direkt unter `https://<Host>:8120/iobrokerZertifikat.cer`), „Zulassen“ wählen.
-   2. iPhone **Einstellungen / Allgemein / VPN & Geräteverwaltung**: das heruntergeladene Profil antippen und **Installieren**.
-   3. iPhone **Einstellungen / Allgemein / Info / Zertifikatsvertrauenseinstellungen**: das Zertifikat einschalten.
-   4. App schließen und neu öffnen. Unter **Offline-Modus** auf **Erneut prüfen** tippen.
-4. **Android und andere Systeme** sind nicht getestet. Das Zertifikat lässt sich genauso laden (`https://<Host>:8120/iobrokerZertifikat.cer`) und wird normalerweise in den Systemeinstellungen (Sicherheit / Anmeldedaten) als CA-Zertifikat installiert. Die Menünamen unterscheiden sich je nach Gerät und Version.
+Exportiert den Bestand als CSV-Datei, beispielsweise zur Verwendung in Excel.
+
+### PDF-Export
+
+Erstellt eine druckbare Bestandsliste, sortiert nach Lagerorten.
+
+Die PDF kann über das Teilen-Menü gespeichert oder gedruckt werden.
+
+### Datenspeicherung
+
+ShelfMate speichert die Bestandsdaten in der Datei:
+
+```
+shelfmate.json
+```
+
+Sie liegt im Datenverzeichnis des Adapters und nicht in der ioBroker-Objektdatenbank.
+
+Beim Import eines Backups oder beim Löschen aller Daten wird der vorherige Stand als `shelfmate.json.bak` gesichert.
+
+---
+
+## Offline-Modus
+
+ShelfMate kann auch bei kurzzeitig unterbrochener Verbindung genutzt werden, sofern die Web-App zuvor eingerichtet wurde und ein vertrauenswürdiges HTTPS-Zertifikat vorhanden ist.
+
+Einlagerungen, Entnahmen und Einkaufslisten-Einträge werden offline zwischengespeichert.
+
+Sobald die Verbindung wieder verfügbar ist, überträgt ShelfMate die wartenden Aktionen automatisch.
+
+So gehen Buchungen bei einem kurzfristigen Verbindungsabbruch nicht verloren.
+
+---
+
+## HTTPS und Zertifikate
+
+Für die Kamera und den Offline-Modus benötigt ShelfMate HTTPS mit einem Zertifikat, dem das verwendete Gerät vertraut.
+
+### HTTPS einrichten
+
+1. In den Adapter-Einstellungen HTTPS verwenden aktivieren.
+2. Ein vorhandenes Zertifikat auswählen oder ein neues erstellen.
+3. Einstellungen speichern und die Instanz neu starten.
+
+Über Selbstsigniertes Zertifikat erstellen erzeugt ShelfMate ein Zertifikat für den Hostnamen und die IP-Adressen des ioBroker-Rechners.
+
+Das Zertifikat wird im ioBroker-Zertifikatsspeicher abgelegt, automatisch ausgewählt und ist 825 Tage gültig.
+
+Alternativ kannst du eigene Zertifikate oder eine Zertifikatssammlung verwenden, beispielsweise über den ioBroker-Adapter acme.
+
+Ein öffentlich vertrauenswürdiges Zertifikat, etwa von Let’s Encrypt, muss normalerweise nicht zusätzlich auf dem Smartphone installiert werden, sofern der aufgerufene Hostname dazu passt.
+
+### Selbstsigniertes Zertifikat auf dem iPhone installieren
+
+Diese Schritte wurden auf dem iPhone getestet:
+
+1. ShelfMate in Safari öffnen: `https://<Host>:8120/`
+2. In der App Einstellungen → Offline-Modus öffnen.
+3. ioBroker-Zertifikat laden auswählen und den Download erlauben.
+
+Alternativ steht die Zertifikatsdatei unter folgender Adresse bereit:
+
+`https://<Host>:8120/iobrokerZertifikat.cer`
+
+Anschließend auf dem iPhone:
+
+1. Einstellungen → Allgemein → VPN & Geräteverwaltung öffnen.
+2. Das heruntergeladene Profil auswählen und installieren.
+3. Einstellungen → Allgemein → Info → Zertifikatsvertrauenseinstellungen öffnen.
+4. Das installierte Zertifikat als vertrauenswürdig aktivieren.
+5. ShelfMate neu öffnen.
+6. Unter Offline-Modus → Erneut prüfen die Verbindung kontrollieren.
+
+Installiere und vertraue nur Zertifikaten, deren Herkunft du kennst.
+
+### Android
+
+Die Einrichtung auf Android wurde bisher nicht getestet.
+
+Die Zertifikatsdatei kann ebenfalls unter `https://<Host>:8120/iobrokerZertifikat.cer` heruntergeladen werden.
+
+Je nach Android-Version wird ein eigenes CA-Zertifikat über die Sicherheits- oder Anmeldedateneinstellungen installiert.
+
+Die Menünamen und das Verhalten können je nach Hersteller und Version abweichen.
+
+### Zum Homescreen hinzufügen
+
+iPhone: ShelfMate in Safari öffnen, das Teilen-Menü auswählen und Zum Home-Bildschirm antippen.
+
+Android: ShelfMate im Browser öffnen und über das Browsermenü Zum Startbildschirm hinzufügen oder App installieren auswählen.
+
+Danach lässt sich ShelfMate wie eine normale App starten.
+
+---
 
 ## Etiketten drucken
 
-Die Etiketten entstehen als PNG-Bilder in der eingestellten Etikettengröße und werden vom Handy geteilt oder gespeichert. Ich drucke sie auf einem Niimbot B1, den ich über CUPS auf einem Linux-Rechner als AirPrint-Drucker eingerichtet habe, sodass das Handy direkt drucken kann. Die Druckereinrichtung gehört nicht zum Adapter; Stichwort zum Suchen: „Niimbot CUPS AirPrint“.
+ShelfMate erstellt Etiketten als PNG-Bilder in der eingestellten Größe.
+
+Diese lassen sich auf dem Smartphone speichern, teilen oder direkt drucken.
+
+Unterstützt werden unter anderem:
+
+- EAN-Etiketten
+- QR-Etiketten
+- Nur-QR-Etiketten
+- Große Regal-Etiketten
+- Boxen-Etiketten mit Inhalt
+- „Geöffnet am“-Etiketten
+- Gefrierfach-Etiketten
+
+Welche Etikettentypen verfügbar sind, bestimmst du in den Adapter-Einstellungen.
+
+### Beispiel: Niimbot B1
+
+Die Etiketten lassen sich beispielsweise mit einem Niimbot B1 drucken.
+
+Dafür kann der Drucker über CUPS auf einem Linux-Rechner als AirPrint-Drucker eingerichtet werden. Anschließend ist der Druck direkt vom iPhone möglich.
+
+Die Einrichtung des Druckers ist kein Bestandteil von ShelfMate.
+
+Weitere Informationen findest du unter dem Suchbegriff Niimbot CUPS AirPrint.
+
+---
+
+## Fragen, Ideen oder Fehler?
+
+Falls etwas nicht funktioniert oder du eine Idee für ShelfMate hast, kannst du gerne ein Issue auf GitHub erstellen:
+
+[GitHub – ShelfMate Issues](https://github.com/backfisch88/ioBroker.shelfmate/issues)
