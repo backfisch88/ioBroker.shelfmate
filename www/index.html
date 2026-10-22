@@ -85,7 +85,6 @@ button:focus-visible,summary:focus-visible,a:focus-visible,input.switch:focus-vi
 @keyframes numIn{from{opacity:.5;filter:blur(2px)}}
 .noFx .enter,.noFx .flash,.noFx .ghost,.noFx .toast:not(.hidden){animation:none}
 .tagMore{cursor:pointer}
-#productList,#historyList{perspective:900px}
 section.peek{display:block!important;position:fixed;z-index:0;pointer-events:none}
 section.swiping{position:relative;z-index:2;background:var(--bg);box-shadow:-10px 0 28px rgba(0,0,0,.14)}
 .enter{animation:itemIn .2s cubic-bezier(.23,1,.32,1)}
@@ -800,7 +799,7 @@ function listSwap(box,html){
       const rs=on?items.map(e=>e.getBoundingClientRect()):null;
       items.forEach((e,i)=>{let p=0;if(on){const r=rs[i],c=r.top+r.height/2;p=Math.min(1,Math.max(0,(c-h*.62)/(h*.38)))}
         p=Math.round(p*50)/50;if(e._w===p)return;e._w=p;
-        if(p<=0){e.style.opacity='';e.style.scale='';e.style.rotate=''}else{e.style.opacity=String(1-.55*p);e.style.scale=String(1-.07*p);e.style.rotate='1 0 0 '+(-32*p)+'deg'}})}}
+        if(p<=0){e.style.opacity='';e.style.scale=''}else{e.style.opacity=String(1-.5*p);e.style.scale=String(1-.09*p)}})}}
   const kick=()=>{if(!raf)raf=requestAnimationFrame(run)};
   addEventListener('scroll',kick,{passive:true});addEventListener('resize',kick);
   lists.forEach(id=>{const el=$(id);if(el)new MutationObserver(kick).observe(el,{childList:true})});
