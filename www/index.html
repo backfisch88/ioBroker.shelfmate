@@ -175,6 +175,7 @@ body:has(#app section.active>.navback:not([hidden])) .head .greet{padding-left:5
 .float{transition:bottom var(--mt) var(--me),width var(--mt) var(--me),height var(--mt) var(--me),right var(--mt) var(--me),padding var(--mt) var(--me)}
 body.miniNav .float{bottom:max(12px,calc(env(safe-area-inset-bottom) - 9px))!important;right:max(25px,calc(50% - 240px))!important;width:62px;height:62px;padding:0!important;font-size:0!important;display:flex;align-items:center;justify-content:center}
 body.miniNav .float .ic{width:26px;height:26px;margin:0}
+#tabs.pill-nav.mini,body.miniNav .float{--mt:1.3s;--me:cubic-bezier(.32,.72,0,1)}@supports(transition-timing-function:linear(0,1)){#tabs.pill-nav.mini,body.miniNav .float{--me:linear(0.0,0.0402,0.1348,0.2546,0.3805,0.5006,0.6085,0.7011,0.778,0.8398,0.8881,0.925,0.9523,0.972,0.9856,0.9948,1.0006,1.004,1.0057,1.0063,1.0061,1.0056,1)}}
 .noFx #tabs.pill-nav,.noFx #tabs.pill-nav button,.noFx .float{transition:none!important}
 #edgeBot{transition:opacity .3s ease}body.miniNav #edgeBot{opacity:0}
 @media(prefers-contrast:more){#tabs.pill-nav,.glassAlert,.navback{border-color:#555}.dark #tabs.pill-nav,.dark .glassAlert,.dark .navback{border-color:#ccc}#tabs.pill-nav button{color:#111}.dark #tabs.pill-nav button{color:#fff}}
