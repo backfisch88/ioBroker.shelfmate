@@ -247,3 +247,4 @@ Bei Open Food Facts nicht gefunden|Not found on Open Food Facts|Не найде�
 Neu geladen – bitte speichern|Reloaded – please save|Загружено заново – сохраните|Recarregado – guarde|Opnieuw geladen – sla op|Rechargé – veuillez enregistrer|Ricaricato – salva|Recargado – guarda|Wczytano ponownie – zapisz|Завантажено знову – збережіть|已重新加载,请保存
 Standard-Haltbarkeit|Default shelf life|Срок хранения по умолчанию|Durabilidade padrão|Standaard houdbaarheid|Durée de conservation par défaut|Durata di conservazione predefinita|Duración predeterminada|Domyślna trwałość|Стандартний термін зберігання|默认保质期
 nach dem Öffnen|after opening|после вскрытия|depois de aberto|na openen|après ouverture|dopo l'apertura|tras abrir|po otwarciu|після відкриття|开封后
+Öffnen|Open|Вскрыть|Abrir|Openen|Ouvrir|Apri|Abrir|Otwórz|Відкрити|开封
