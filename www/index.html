@@ -100,8 +100,10 @@ body.d .tabBubble,.dark .tabBubble{background:linear-gradient(180deg,rgba(255,25
 #tabs.pill-nav button::before{display:none}
 #tabs.pill-nav button .ic{width:22px;height:22px;margin:0 0 1px;vertical-align:0}
 #tabs.pill-nav button.active,.dark #tabs.pill-nav button.active{color:var(--accent);letter-spacing:-.1px}
+#tabs.pill-nav{transition:scale .3s cubic-bezier(.22,1,.36,1)}
+#tabs.pill-nav.held{scale:1.025}
 #tabs .tabBubble{top:4px;height:54px;border-radius:27px;background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(255,255,255,.22));border:1px solid rgba(255,255,255,.85);box-shadow:0 4px 16px rgba(40,30,30,.14),inset 0 2px 2px rgba(255,255,255,.95),inset 0 -2px 5px rgba(255,255,255,.45),inset 0 0 16px rgba(255,255,255,.3);transition:scale .24s cubic-bezier(.23,1,.32,1),box-shadow .24s}
-#tabs .tabBubble.lift{scale:1.14 1.22;box-shadow:0 14px 34px rgba(40,30,30,.22),inset 0 2px 2px rgba(255,255,255,1),inset 0 -2px 6px rgba(255,255,255,.55),inset 0 0 20px rgba(255,255,255,.4)}
+#tabs .tabBubble.lift{scale:1.08 1.16;box-shadow:0 14px 34px rgba(40,30,30,.22),inset 0 2px 2px rgba(255,255,255,1),inset 0 -2px 6px rgba(255,255,255,.55),inset 0 0 20px rgba(255,255,255,.4)}
 .dark #tabs .tabBubble{background:linear-gradient(180deg,rgba(255,255,255,.2),rgba(255,255,255,.07));border-color:rgba(255,255,255,.3);box-shadow:0 8px 26px rgba(0,0,0,.4),inset 0 2px 2px rgba(255,255,255,.35),inset 0 -2px 5px rgba(255,255,255,.1)}
 .noFx #tabs.pill-nav button.active{background:var(--card-strong)}
 .shell{padding-bottom:calc(max(12px,calc(env(safe-area-inset-bottom) - 9px)) + 62px + 34px)!important}
@@ -836,7 +838,7 @@ function listSwap(box,html){
   document.addEventListener('touchend',finish,{passive:true});
   document.addEventListener('touchcancel',finish,{passive:true});
 })();
-/* Glas-Blase im Tab-Menü (wandert und verformt sich) */
+/* Glas-Blase im Tab-Menü */
 (function(){
   const nav=$('tabs');if(!nav)return;document.body.appendChild(nav);
   ICONS.house='<path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>';
@@ -851,17 +853,16 @@ function listSwap(box,html){
   function place(anim){const b=nav.querySelector('button.active');if(!b){bub.style.display='none';return}bub.style.display='';
     const to={l:b.offsetLeft-2,w:b.offsetWidth+4};
     if(cur&&anim&&fxOn()&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)&&(cur.l!==to.l||cur.w!==to.w)){
-      const l1=Math.min(cur.l,to.l),r1=Math.max(cur.l+cur.w,to.l+to.w);
-      bub.animate([{left:cur.l+'px',width:cur.w+'px',transform:'scaleY(1)'},{left:l1+'px',width:(r1-l1)+'px',transform:'scale(1.1,1.2)',offset:.5},{left:to.l+'px',width:to.w+'px',transform:'scaleY(1)'}],{duration:440,easing:'cubic-bezier(.32,.72,0,1)'})}
+      bub.animate([{left:cur.l+'px',width:cur.w+'px'},{left:to.l+'px',width:to.w+'px'}],{duration:450,easing:'cubic-bezier(.22,1,.36,1)'})}
     bub.style.left=to.l+'px';bub.style.width=to.w+'px';cur=to}
   let drag=null;
-  nav.addEventListener('pointerdown',e=>{if(!fxOn()||e.button>0)return;drag={x:e.clientX,moved:false};bub.classList.add('lift')});
-  addEventListener('pointermove',e=>{if(!drag)return;if(!drag.moved&&Math.abs(e.clientX-drag.x)<8)return;drag.moved=true;const r=nav.getBoundingClientRect(),w=cur?cur.w:60;let l=e.clientX-r.left-w/2;l=Math.max(-7,Math.min(r.width-w+7,l));bub.getAnimations().forEach(a=>a.cancel());bub.style.left=l+'px'});
-  const end=e=>{if(!drag)return;const d=drag;drag=null;bub.classList.remove('lift');if(!d.moved)return;
+  nav.addEventListener('pointerdown',e=>{if(!fxOn()||e.button>0)return;drag={x:e.clientX,moved:false};const t=e.target.closest&&e.target.closest('button');if(t&&t.classList.contains('active')){bub.classList.add('lift');nav.classList.add('held')}});
+  addEventListener('pointermove',e=>{if(!drag)return;if(!drag.moved&&Math.abs(e.clientX-drag.x)<8)return;if(!drag.moved){bub.classList.add('lift');nav.classList.add('held')}drag.moved=true;const r=nav.getBoundingClientRect(),w=cur?cur.w:60;let l=e.clientX-r.left-w/2;l=Math.max(-7,Math.min(r.width-w+7,l));bub.getAnimations().forEach(a=>a.cancel());bub.style.left=l+'px'});
+  const end=e=>{if(!drag)return;const d=drag;drag=null;const rel=()=>{bub.classList.remove('lift');nav.classList.remove('held')};if(!d.moved){rel();return}setTimeout(rel,250);
     const sup=ev=>{ev.stopPropagation();ev.preventDefault()};addEventListener('click',sup,{capture:true,once:true});setTimeout(()=>removeEventListener('click',sup,true),50);
     const el=document.elementFromPoint(e.clientX,e.clientY),b=el&&el.closest&&el.closest('#tabs button');
     if(b&&!b.classList.contains('active'))b.click();else place(true)};
-  addEventListener('pointerup',end);addEventListener('pointercancel',()=>{if(drag){drag=null;bub.classList.remove('lift');place(false)}});
+  addEventListener('pointerup',end);addEventListener('pointercancel',()=>{if(drag){drag=null;bub.classList.remove('lift');nav.classList.remove('held');place(false)}});
   new MutationObserver(()=>place(true)).observe(nav,{attributes:true,subtree:true,attributeFilter:['class']});
   addEventListener('resize',()=>place(false));
   if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>place(false));
