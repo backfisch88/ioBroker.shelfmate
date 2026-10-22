@@ -107,7 +107,7 @@ body.d .tabBubble,.dark .tabBubble{background:linear-gradient(180deg,rgba(255,25
 .float{bottom:calc(88px + env(safe-area-inset-bottom))!important}
 .toast{bottom:calc(88px + env(safe-area-inset-bottom))}
 
-section.peek{display:block!important;position:fixed;z-index:0;pointer-events:none}
+section.peek{display:block!important;position:fixed;z-index:-1;pointer-events:none}
 section.swiping{position:relative;z-index:2;background:var(--bg);box-shadow:-10px 0 28px rgba(0,0,0,.14)}
 .enter{animation:itemIn .2s cubic-bezier(.23,1,.32,1)}
 .ghost{position:absolute;pointer-events:none;margin:0!important;animation:itemOut .15s ease-out forwards}
@@ -804,7 +804,7 @@ function listSwap(box,html){
   document.addEventListener('touchstart',e=>{if(!swipeOn()||e.touches.length!==1||!klSub.includes(currentPage)||currentPage==='scanner')return;const t=e.touches[0];if(t.clientX>24||!back())return;sx=t.clientX;sy=t.clientY;t0=Date.now();dx=0;sec=document.querySelector('#app section.active');W=innerWidth;act=true;tgt=null},{passive:true});
   document.addEventListener('touchmove',e=>{if(!act)return;const t=e.touches[0];dx=t.clientX-sx;const dy=t.clientY-sy;if(Math.abs(dy)>Math.abs(dx)&&dx<24){clean();return}
     if(dx<=0)return;
-    if(!tgt){tgt=peekTarget();if(tgt){const r=sec.getBoundingClientRect(),y=window.scrollY||0,top=r.top+y-((klScroll||{})[tgt.id]||0);tgt.classList.add('peek');tgt.style.cssText='left:'+r.left+'px;width:'+r.width+'px;top:'+top+'px';sec.classList.add('swiping');sec.style.minHeight='100vh'}else{sec.style.transition='none'}}
+    if(!tgt){tgt=peekTarget();if(tgt){const r=sec.getBoundingClientRect();tgt.classList.add('peek');tgt.style.cssText='left:'+r.left+'px;width:'+r.width+'px;top:'+Math.max(0,r.top)+'px;height:'+(innerHeight-Math.max(0,r.top))+'px;overflow:hidden;';sec.classList.add('swiping');sec.style.minHeight='100vh'}else{sec.style.transition='none'}}
     sec.style.transition='none';sec.style.transform='translateX('+dx+'px)';
     if(tgt){tgt.style.transform='translateX('+(-(1-Math.min(1,dx/W))*W*.28)+'px)';tgt.style.opacity=String(.6+.4*Math.min(1,dx/W))}},{passive:true});
   document.addEventListener('touchend',()=>{if(!act)return;const v=dx/Math.max(1,Date.now()-t0),go=dx>W*.35||(v>.5&&dx>40),b=back(),el=sec,tg=tgt;
