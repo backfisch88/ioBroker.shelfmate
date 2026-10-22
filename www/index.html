@@ -177,6 +177,8 @@ body:has(#app section.active>.navback:not([hidden])) .head .greet{padding-left:5
 .float .ic{transition:width var(--mt) var(--me),height var(--mt) var(--me),margin var(--mt) var(--me)}
 body.miniNav .float{bottom:max(12px,calc(env(safe-area-inset-bottom) - 9px))!important;right:max(25px,calc(50% - 240px))!important;width:62px;height:62px;padding:0!important;font-size:0!important;display:flex;align-items:center;justify-content:center}
 body.miniNav .float .ic{width:26px;height:26px;margin:0}
+#tabs.pill-nav.mini,body.miniNav .float{--me:cubic-bezier(.7,0,.9,.6)}@supports(transition-timing-function:linear(0,1)){#tabs.pill-nav.mini,body.miniNav .float{--me:linear(0,-0.0028,-0.0021,-0.0006,0.0023,0.0071,0.0147,0.0262,0.0428,0.0664,0.0987,0.1421,0.1989,0.2712,0.3606,0.4674,0.5896,0.7211,0.8499,0.9545,1)}}
+#tabs.pill-nav.mini button{transition:flex-grow var(--mt) var(--me),opacity .5s cubic-bezier(.42,0,1,1) .4s,padding var(--mt) var(--me),font-size var(--mt) var(--me),line-height var(--mt) var(--me),gap var(--mt) var(--me)}
 .noFx #tabs.pill-nav,.noFx #tabs.pill-nav button,.noFx .float{transition:none!important}
 #edgeBot{transition:opacity .3s ease}body.miniNav #edgeBot{opacity:0}
 @media(prefers-contrast:more){#tabs.pill-nav,.glassAlert,.navback{border-color:#555}.dark #tabs.pill-nav,.dark .glassAlert,.dark .navback{border-color:#ccc}#tabs.pill-nav button{color:#111}.dark #tabs.pill-nav button{color:#fff}}
