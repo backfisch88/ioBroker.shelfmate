@@ -103,7 +103,7 @@ body.d .tabBubble,.dark .tabBubble{background:linear-gradient(180deg,rgba(255,25
 :root{--mt:.9s;--me:cubic-bezier(.32,.72,0,1)}@supports(transition-timing-function:linear(0,1)){:root{--me:linear(0.0,0.0455,0.1501,0.2789,0.4104,0.5326,0.6394,0.7288,0.8011,0.8579,0.9013,0.9336,0.9572,0.9738,0.9853,0.9929,0.9977,1.0006,1.0021,1.0028,1)}}
 #tabs.pill-nav{transition:scale .38s cubic-bezier(.34,1.5,.64,1)}
 #tabs.pill-nav.held{scale:1.025}
-#tabs .tabBubble{top:4px;height:54px;border-radius:27px;background:rgba(112,112,128,.14);border:1px solid rgba(255,255,255,.45);box-shadow:inset 0 1px 1px rgba(255,255,255,.55),inset 0 -1px 2px rgba(0,0,0,.05);transition:scale .38s cubic-bezier(.34,1.5,.64,1),background .25s,box-shadow .25s,border-color .25s}
+#tabs .tabBubble{top:4px;height:54px;border-radius:27px;background:rgba(112,112,128,.14);border:1px solid rgba(255,255,255,.45);box-shadow:inset 0 1px 1px rgba(255,255,255,.55),inset 0 -1px 2px rgba(0,0,0,.05);transition:scale .24s cubic-bezier(.34,1.5,.64,1),background .18s,box-shadow .18s,border-color .18s}
 #tabs .tabBubble.lift{scale:1.1 1.2;background:linear-gradient(180deg,rgba(255,255,255,.62),rgba(255,255,255,.26));border-color:rgba(255,255,255,.9);box-shadow:0 12px 30px rgba(40,30,30,.2),inset 0 2px 2px rgba(255,255,255,1),inset 0 -2px 6px rgba(255,255,255,.55),inset 0 0 20px rgba(255,255,255,.4)}
 .dark #tabs .tabBubble{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.18);box-shadow:inset 0 1px 1px rgba(255,255,255,.25)}
 .dark #tabs .tabBubble.lift{background:linear-gradient(180deg,rgba(255,255,255,.3),rgba(255,255,255,.1));border-color:rgba(255,255,255,.4);box-shadow:0 12px 30px rgba(0,0,0,.45),inset 0 2px 2px rgba(255,255,255,.4)}
@@ -166,16 +166,17 @@ body:has(#app section.active>.navback:not([hidden])) .head .greet{padding-left:5
 .dark #tabs .tabBubble{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.2)}
 @media(prefers-reduced-transparency:reduce){.float{background:#fff!important}.dark .float{background:#1c1c1e!important}}
 #tabs.pill-nav{transition:scale .38s cubic-bezier(.34,1.5,.64,1),width var(--mt) var(--me),left var(--mt) var(--me),transform var(--mt) var(--me)}
-#tabs.pill-nav button{transition:flex-grow var(--mt) var(--me),opacity .22s ease,padding var(--mt) var(--me)}
+#tabs.pill-nav button{transition:flex-grow var(--mt) var(--me),opacity .5s ease,padding var(--mt) var(--me),font-size var(--mt) var(--me),line-height var(--mt) var(--me),gap var(--mt) var(--me)}
 #tabs.pill-nav.mini{width:62px!important;left:max(25px,calc(50% - 240px));transform:translateX(0)}
+#tabs.pill-nav.mini{overflow:hidden!important}
 #tabs.pill-nav.mini button{flex:0 0 0!important;padding:0!important;opacity:0;overflow:hidden;pointer-events:none}
 #tabs.pill-nav.mini button.active{flex:1 1 0!important;opacity:1;font-size:0!important;pointer-events:auto}
 #tabs.pill-nav.mini button.active{line-height:0!important;gap:0!important}#tabs.pill-nav.mini button.active .ic{margin:0}
 #tabs.pill-nav.mini .tabBubble{opacity:0!important}
-.float{transition:bottom var(--mt) var(--me),width var(--mt) var(--me),height var(--mt) var(--me),right var(--mt) var(--me),padding var(--mt) var(--me)}
+.float{display:flex;align-items:center;justify-content:center;white-space:nowrap;overflow:hidden;transition:bottom var(--mt) var(--me),width var(--mt) var(--me),height var(--mt) var(--me),right var(--mt) var(--me),padding var(--mt) var(--me),font-size var(--mt) var(--me)}
+.float .ic{transition:width var(--mt) var(--me),height var(--mt) var(--me),margin var(--mt) var(--me)}
 body.miniNav .float{bottom:max(12px,calc(env(safe-area-inset-bottom) - 9px))!important;right:max(25px,calc(50% - 240px))!important;width:62px;height:62px;padding:0!important;font-size:0!important;display:flex;align-items:center;justify-content:center}
 body.miniNav .float .ic{width:26px;height:26px;margin:0}
-#tabs.pill-nav.mini,body.miniNav .float{--mt:1.3s;--me:cubic-bezier(.32,.72,0,1)}@supports(transition-timing-function:linear(0,1)){#tabs.pill-nav.mini,body.miniNav .float{--me:linear(0.0,0.0402,0.1348,0.2546,0.3805,0.5006,0.6085,0.7011,0.778,0.8398,0.8881,0.925,0.9523,0.972,0.9856,0.9948,1.0006,1.004,1.0057,1.0063,1.0061,1.0056,1)}}
 .noFx #tabs.pill-nav,.noFx #tabs.pill-nav button,.noFx .float{transition:none!important}
 #edgeBot{transition:opacity .3s ease}body.miniNav #edgeBot{opacity:0}
 @media(prefers-contrast:more){#tabs.pill-nav,.glassAlert,.navback{border-color:#555}.dark #tabs.pill-nav,.dark .glassAlert,.dark .navback{border-color:#ccc}#tabs.pill-nav button{color:#111}.dark #tabs.pill-nav button{color:#fff}}
@@ -944,8 +945,8 @@ function askConfirm(msg){return new Promise(res=>{
     const to={l:b.offsetLeft-2,w:b.offsetWidth+4};
     if(cur&&anim&&fxOn()&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)&&(cur.l!==to.l||cur.w!==to.w)){
       bub.classList.add('lift');nav.classList.add('held');
-      bub.animate([{left:cur.l+'px',width:cur.w+'px'},{left:to.l+'px',width:to.w+'px'}],{duration:340,delay:70,easing:'cubic-bezier(.22,1,.36,1)',fill:'backwards'});
-      clearTimeout(place.t);place.t=setTimeout(()=>{if(!drag){bub.classList.remove('lift');nav.classList.remove('held')}},420)}
+      bub.animate([{left:cur.l+'px',width:cur.w+'px'},{left:to.l+'px',width:to.w+'px'}],{duration:230,delay:20,easing:'cubic-bezier(.22,1,.36,1)',fill:'backwards'});
+      clearTimeout(place.t);place.t=setTimeout(()=>{if(!drag){bub.classList.remove('lift');nav.classList.remove('held')}},300)}
     bub.style.left=to.l+'px';bub.style.width=to.w+'px';cur=to}
   nav.addEventListener('pointerdown',e=>{if(!fxOn()||e.button>0||mini)return;drag={x:e.clientX,moved:false};const t=e.target.closest&&e.target.closest('button');if(t&&t.classList.contains('active')){bub.classList.add('lift');nav.classList.add('held')}});
   addEventListener('pointermove',e=>{if(!drag)return;if(!drag.moved&&Math.abs(e.clientX-drag.x)<8)return;if(!drag.moved){bub.classList.add('lift');nav.classList.add('held')}drag.moved=true;const r=nav.getBoundingClientRect(),w=cur?cur.w:60;let l=e.clientX-r.left-w/2;l=Math.max(-7,Math.min(r.width-w+7,l));bub.getAnimations().forEach(a=>a.cancel());bub.style.left=l+'px'});
