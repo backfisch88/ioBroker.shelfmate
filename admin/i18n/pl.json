@@ -64,6 +64,8 @@
     "scannerTimeoutHelp": "Po produkcie kod miejsca musi pojawić się w tym czasie. Dwa skany produktu oznaczają pobranie. Tryb włącza się punktem danych scanner.active.",
     "scannerDevice": "Skaner (urządzenie klawiatury na serwerze)",
     "scannerDeviceHelp": "Dongle skanera bezprzewodowego pojawia się tu jako klawiatura. Użytkownik ioBroker potrzebuje grupy \"input\" (adduser iobroker input).",
+    "scannerLayout": "Keyboard layout of the scanner",
+    "scannerLayoutHelp": "Must match the layout set on the scanner. US is the factory setting. With German, umlauts and ß are read as well.",
     "scannerPrefix": "Prefiks skanera (usuń)",
     "scannerSuffix": "Sufiks skanera (usuń)",
     "autoShelfMode": "Wpisuj trwałość automatycznie",

@@ -218,6 +218,7 @@
         "notifyInventoryDays": 0,
         "scannerTimeout": 10,
         "scannerDevice": "",
+        "scannerLayout": "us",
         "scannerPrefix": "",
         "scannerSuffix": ""
     },

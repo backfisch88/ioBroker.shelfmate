@@ -64,6 +64,8 @@
     "scannerTimeoutHelp": "Dopo il prodotto, il codice del luogo deve seguire entro questo tempo. Due scansioni del prodotto significano prelievo. La modalità si attiva con il punto dati scanner.active.",
     "scannerDevice": "Scanner (dispositivo tastiera sul server)",
     "scannerDeviceHelp": "Il dongle dello scanner wireless compare qui come tastiera. L'utente ioBroker ha bisogno del gruppo \"input\" (adduser iobroker input).",
+    "scannerLayout": "Keyboard layout of the scanner",
+    "scannerLayoutHelp": "Must match the layout set on the scanner. US is the factory setting. With German, umlauts and ß are read as well.",
     "scannerPrefix": "Prefisso dello scanner (rimuovere)",
     "scannerSuffix": "Suffisso dello scanner (rimuovere)",
     "autoShelfMode": "Inserire la durata di conservazione automaticamente",

@@ -547,6 +547,21 @@
             "lg": 4,
             "xl": 4
         },
+        "scannerLayout": {
+            "type": "select",
+            "label": "scannerLayout",
+            "help": "scannerLayoutHelp",
+            "options": [
+                { "label": "US", "value": "us" },
+                { "label": "Deutsch", "value": "de" }
+            ],
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
         "scannerPrefix": {
             "type": "text",
             "label": "scannerPrefix",

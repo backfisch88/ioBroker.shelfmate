@@ -64,6 +64,8 @@
     "scannerTimeoutHelp": "Після товару код місця має надійти протягом цього часу. Двічі відсканований товар означає вилучення. Режим вмикається об'єктом scanner.active.",
     "scannerDevice": "Сканер (клавіатурний пристрій на сервері)",
     "scannerDeviceHelp": "Донгл бездротового сканера відображається тут як клавіатура. Користувачу ioBroker потрібна група \"input\" (adduser iobroker input).",
+    "scannerLayout": "Keyboard layout of the scanner",
+    "scannerLayoutHelp": "Must match the layout set on the scanner. US is the factory setting. With German, umlauts and ß are read as well.",
     "scannerPrefix": "Префікс сканера (видалити)",
     "scannerSuffix": "Суфікс сканера (видалити)",
     "autoShelfMode": "Вносити термін зберігання автоматично",

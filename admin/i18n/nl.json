@@ -64,6 +64,8 @@
     "scannerTimeoutHelp": "Na het product moet de locatiecode binnen deze tijd volgen. Het product tweemaal scannen betekent uitnemen. De modus schakel je in met het datapunt scanner.active.",
     "scannerDevice": "Scanner (toetsenbordapparaat op de server)",
     "scannerDeviceHelp": "De dongle van de draadloze scanner verschijnt hier als toetsenbord. De ioBroker-gebruiker heeft de groep \"input\" nodig (adduser iobroker input).",
+    "scannerLayout": "Keyboard layout of the scanner",
+    "scannerLayoutHelp": "Must match the layout set on the scanner. US is the factory setting. With German, umlauts and ß are read as well.",
     "scannerPrefix": "Prefix van de scanner (verwijderen)",
     "scannerSuffix": "Suffix van de scanner (verwijderen)",
     "autoShelfMode": "Houdbaarheid automatisch invullen",

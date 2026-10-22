@@ -64,6 +64,8 @@
     "scannerTimeoutHelp": "После сканирования товара код места должен последовать в течение этого времени. Двойное сканирование товара означает изъятие. Режим включается через объект scanner.active.",
     "scannerDevice": "Сканер (клавиатурное устройство на сервере)",
     "scannerDeviceHelp": "Донгл беспроводного сканера отображается здесь как клавиатура. Пользователю ioBroker нужна группа \"input\" (adduser iobroker input).",
+    "scannerLayout": "Keyboard layout of the scanner",
+    "scannerLayoutHelp": "Must match the layout set on the scanner. US is the factory setting. With German, umlauts and ß are read as well.",
     "scannerPrefix": "Префикс сканера (удалить)",
     "scannerSuffix": "Суффикс сканера (удалить)",
     "autoShelfMode": "Срок хранения вносить автоматически",

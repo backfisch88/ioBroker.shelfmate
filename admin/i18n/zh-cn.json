@@ -64,6 +64,8 @@
     "scannerTimeoutHelp": "扫描商品后，位置码须在此时间内跟上。连续扫描两次商品表示取出。通过数据点 scanner.active 开启该模式。",
     "scannerDevice": "扫描器（服务器上的键盘设备）",
     "scannerDeviceHelp": "无线扫描器的接收器在此显示为键盘。ioBroker 用户需要加入 \"input\" 组（adduser iobroker input）。",
+    "scannerLayout": "Keyboard layout of the scanner",
+    "scannerLayoutHelp": "Must match the layout set on the scanner. US is the factory setting. With German, umlauts and ß are read as well.",
     "scannerPrefix": "扫描器前缀（移除）",
     "scannerSuffix": "扫描器后缀（移除）",
     "autoShelfMode": "自动填写保质期",

@@ -705,6 +705,8 @@ sudo adduser iobroker input
 
 Anschließend die Instanz neu starten.
 
+Soll der Scanner Umlaute und ß lesen (zum Beispiel in Lagerortnamen), stellst du am Scanner das deutsche Tastaturlayout ein (beim Tera HW0009 der Code „Deutschland") und in den ShelfMate-Einstellungen „Tastaturlayout des Scanners" auf Deutsch. Beides muss übereinstimmen.
+
 Falls der Scanner mit einem Präfix oder Suffix arbeitet, müssen die entsprechenden Einstellungen in ShelfMate übereinstimmen.
 
 Jeder erkannte Code wird in `scanner.lastCode` gespeichert. Das Ergebnis steht in `scanner.result`.

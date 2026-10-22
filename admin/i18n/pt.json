@@ -64,6 +64,8 @@
     "scannerTimeoutHelp": "Após ler o produto, o código do local tem de seguir neste tempo. Ler o produto duas vezes significa retirar. O modo liga-se pelo ponto de dados scanner.active.",
     "scannerDevice": "Leitor (dispositivo de teclado no servidor)",
     "scannerDeviceHelp": "O dongle do leitor sem fios aparece aqui como teclado. O utilizador do ioBroker precisa do grupo \"input\" (adduser iobroker input).",
+    "scannerLayout": "Keyboard layout of the scanner",
+    "scannerLayoutHelp": "Must match the layout set on the scanner. US is the factory setting. With German, umlauts and ß are read as well.",
     "scannerPrefix": "Prefixo do leitor (remover)",
     "scannerSuffix": "Sufixo do leitor (remover)",
     "autoShelfMode": "Preencher a durabilidade automaticamente",

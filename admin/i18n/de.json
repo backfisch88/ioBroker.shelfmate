@@ -64,6 +64,8 @@
     "scannerTimeoutHelp": "Nach dem Produkt muss der Lagerort-Code innerhalb dieser Zeit folgen. Zweimal das Produkt scannen heißt entnehmen. Der Modus wird über den Datenpunkt scanner.active eingeschaltet.",
     "scannerDevice": "Scanner (Tastatur-Gerät am Server)",
     "scannerDeviceHelp": "Der Dongle des Funk-Scanners erscheint hier als Tastatur. Der ioBroker-Benutzer braucht die Gruppe \"input\" (adduser iobroker input).",
+    "scannerLayout": "Tastaturlayout des Scanners",
+    "scannerLayoutHelp": "Muss mit dem am Scanner eingestellten Layout übereinstimmen. US ist die Werkseinstellung. Mit Deutsch werden auch Umlaute und ß gelesen.",
     "scannerPrefix": "Prefix des Scanners (entfernen)",
     "scannerSuffix": "Suffix des Scanners (entfernen)",
     "autoShelfMode": "Haltbarkeit automatisch eintragen",

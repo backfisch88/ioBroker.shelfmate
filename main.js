@@ -628,6 +628,7 @@ class Shelfmate extends utils.Adapter {
             path,
             prefix: String(this.config.scannerPrefix || ''),
             suffix: String(this.config.scannerSuffix || ''),
+            layout: this.config.scannerLayout === 'de' ? 'de' : 'us',
             setTimeout: (fn, ms) => this.setTimeout(fn, ms),
             clearTimeout: h => h && this.clearTimeout(h),
             log: this.log,

@@ -64,6 +64,8 @@
     "scannerTimeoutHelp": "After a product scan the location code has to follow within this time. Two scans of the product mean take out. Switch the mode on with the data point scanner.active.",
     "scannerDevice": "Scanner (keyboard device on the server)",
     "scannerDeviceHelp": "The dongle of the wireless scanner appears here as a keyboard. The ioBroker user needs the group \"input\" (adduser iobroker input).",
+    "scannerLayout": "Keyboard layout of the scanner",
+    "scannerLayoutHelp": "Must match the layout set on the scanner. US is the factory setting. With German, umlauts and ß are read as well.",
     "scannerPrefix": "Prefix of the scanner (remove)",
     "scannerSuffix": "Suffix of the scanner (remove)",
     "autoShelfMode": "Fill in shelf life automatically",
