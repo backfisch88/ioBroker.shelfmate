@@ -1,0 +1,66 @@
+bakery-products|Backwaren|Bakery products|Хлебобулочные изделия|Produtos de padaria|Bakkerijproducten|Produits de boulangerie|Prodotti da forno|Productos de panadería|Wyroby piekarnicze|Хлібобулочні вироби|烘焙食品
+berries|Beeren|Berries|Ягоды|Bagas|Bessen|Baies|Bacche|Bayas|Jagody|Ягоди|浆果
+biscuits-and-cakes|Kekse & Kuchen|Biscuits & cakes|Печенье и пирожные|Bolachas e bolos|Koekjes en cake|Biscuits et gâteaux|Biscotti e dolci|Galletas y pasteles|Ciastka i ciasta|Печиво і тістечка|饼干和蛋糕
+breaded-products|Panierte Produkte|Breaded products|Продукты в панировке|Produtos panados|Gepaneerde producten|Produits panés|Prodotti impanati|Productos empanados|Produkty panierowane|Продукти в паніровці|裹面包屑食品
+broths|Brühen|Broths|Бульоны|Caldos|Bouillons|Bouillons|Brodi|Caldos|Buliony|Бульйони|高汤
+canned-foods|Konserven|Canned food|Консервы|Conservas|Conserven|Conserves|Conserve|Conservas|Konserwy|Консерви|罐头食品
+canned-legumes|Hülsenfrüchte-Konserven|Canned legumes|Консервированные бобовые|Leguminosas em conserva|Peulvruchten in blik|Légumineuses en conserve|Legumi in scatola|Legumbres en conserva|Strączki w puszce|Консервовані бобові|罐装豆类
+canned-vegetables|Gemüsekonserven|Canned vegetables|Консервированные овощи|Legumes em conserva|Groenten in blik|Légumes en conserve|Verdure in scatola|Verduras en conserva|Warzywa w puszce|Консервовані овочі|罐装蔬菜
+carbonated-drinks|Kohlensäurehaltige Getränke|Fizzy drinks|Газированные напитки|Bebidas gaseificadas|Koolzuurhoudende dranken|Boissons gazeuses|Bevande gassate|Bebidas gaseosas|Napoje gazowane|Газовані напої|碳酸饮料
+cereal-flakes|Flocken|Cereal flakes|Хлопья|Flocos de cereais|Granenvlokken|Flocons de céréales|Fiocchi di cereali|Copos de cereales|Płatki zbożowe|Пластівці|谷物片
+cereal-flours|Getreidemehl|Cereal flours|Зерновая мука|Farinhas de cereais|Graanmeel|Farines de céréales|Farine di cereali|Harinas de cereales|Mąki zbożowe|Зернове борошно|谷物粉
+cereal-grains|Getreidekörner|Cereal grains|Зерно|Grãos de cereais|Graankorrels|Grains de céréales|Chicchi di cereali|Granos de cereales|Ziarna zbóż|Зерно|谷物
+cereals-and-their-products|Getreide & Getreideprodukte|Cereals & cereal products|Зерновые и продукты из них|Cereais e derivados|Granen en graanproducten|Céréales et dérivés|Cereali e derivati|Cereales y derivados|Zboża i produkty zbożowe|Зернові та продукти з них|谷物及其制品
+chips-and-fries|Chips & Pommes|Crisps & chips|Чипсы и картофель фри|Batatas fritas|Chips en friet|Chips et frites|Patatine|Patatas fritas|Chipsy i frytki|Чипси та картопля фрі|薯片和薯条
+citrus|Zitrusfrüchte|Citrus fruits|Цитрусовые|Citrinos|Citrusvruchten|Agrumes|Agrumi|Cítricos|Cytrusy|Цитрусові|柑橘类水果
+confectioneries|Süßwaren|Confectionery|Кондитерские изделия|Confeitaria|Zoetwaren|Confiseries|Dolciumi|Confitería|Słodycze|Кондитерські вироби|糖果糕点
+dairies|Milchprodukte|Dairy products|Молочные продукты|Lacticínios|Zuivel|Produits laitiers|Latticini|Lácteos|Nabiał|Молочні продукти|乳制品
+dairy-drinks|Milchgetränke|Dairy drinks|Молочные напитки|Bebidas lácteas|Zuiveldranken|Boissons lactées|Bevande a base di latte|Bebidas lácteas|Napoje mleczne|Молочні напої|乳饮料
+desserts|Desserts|Desserts|Десерты|Sobremesas|Desserts|Desserts|Dessert|Postres|Desery|Десерти|甜点
+fats|Fette|Fats|Жиры|Gorduras|Vetten|Matières grasses|Grassi|Grasas|Tłuszcze|Жири|油脂
+fishes|Fisch|Fish|Рыба|Peixe|Vis|Poisson|Pesce|Pescado|Ryby|Риба|鱼
+frozen-desserts|Tiefkühl-Desserts|Frozen desserts|Замороженные десерты|Sobremesas congeladas|Diepvriesdesserts|Desserts surgelés|Dessert surgelati|Postres congelados|Mrożone desery|Заморожені десерти|冷冻甜点
+frozen-foods|Tiefkühlprodukte|Frozen food|Замороженные продукты|Congelados|Diepvriesproducten|Produits surgelés|Surgelati|Congelados|Mrożonki|Заморожені продукти|冷冻食品
+fruits|Obst|Fruit|Фрукты|Fruta|Fruit|Fruits|Frutta|Fruta|Owoce|Фрукти|水果
+hams|Schinken|Ham|Ветчина|Fiambre e presunto|Ham|Jambon|Prosciutto|Jamón|Szynka|Шинка|火腿
+herbs-and-spices|Kräuter & Gewürze|Herbs & spices|Травы и специи|Ervas e especiarias|Kruiden en specerijen|Herbes et épices|Erbe e spezie|Hierbas y especias|Zioła i przyprawy|Трави та спеції|香草和香料
+hot-beverages|Heißgetränke|Hot drinks|Горячие напитки|Bebidas quentes|Warme dranken|Boissons chaudes|Bevande calde|Bebidas calientes|Napoje gorące|Гарячі напої|热饮
+juices-and-nectars|Säfte & Nektare|Juices & nectars|Соки и нектары|Sumos e néctares|Sappen en nectars|Jus et nectars|Succhi e nettari|Zumos y néctares|Soki i nektary|Соки та нектари|果汁和果蔬汁
+leaf-vegetables|Blattgemüse|Leafy vegetables|Листовые овощи|Legumes de folha|Bladgroenten|Légumes feuilles|Verdure a foglia|Verduras de hoja|Warzywa liściaste|Листові овочі|叶菜
+legumes|Hülsenfrüchte|Legumes|Бобовые|Leguminosas|Peulvruchten|Légumineuses|Legumi|Legumbres|Rośliny strączkowe|Бобові|豆类
+meat-preparations|Fleischzubereitungen|Meat preparations|Мясные полуфабрикаты|Preparados de carne|Vleesbereidingen|Préparations de viande|Preparazioni di carne|Preparados de carne|Przetwory mięsne|М'ясні напівфабрикати|肉制品
+meats|Fleisch|Meat|Мясо|Carne|Vlees|Viande|Carne|Carne|Mięso|М'ясо|肉类
+milks|Milch|Milk|Молоко|Leite|Melk|Lait|Latte|Leche|Mleko|Молоко|牛奶
+mushrooms-and-their-products|Pilze|Mushrooms|Грибы|Cogumelos|Paddenstoelen|Champignons|Funghi|Setas|Grzyby|Гриби|菌菇
+non-alcoholic-beverages|Alkoholfreie Getränke|Soft drinks|Безалкогольные напитки|Bebidas sem álcool|Alcoholvrije dranken|Boissons sans alcool|Bevande analcoliche|Bebidas sin alcohol|Napoje bezalkoholowe|Безалкогольні напої|无酒精饮料
+nuts|Nüsse|Nuts|Орехи|Frutos secos|Noten|Noix|Frutta a guscio|Frutos secos|Orzechy|Горіхи|坚果
+pastries|Gebäck|Pastries|Выпечка|Pastelaria|Gebak|Pâtisseries|Pasticceria|Bollería|Wypieki|Випічка|糕点
+pickled-vegetables|Eingelegtes Gemüse|Pickled vegetables|Маринованные овощи|Legumes em conserva de vinagre|Ingelegde groenten|Légumes au vinaigre|Verdure sott'aceto|Verduras encurtidas|Warzywa marynowane|Мариновані овочі|腌制蔬菜
+plant-based-foods|Pflanzliche Lebensmittel|Plant-based foods|Растительные продукты|Alimentos de origem vegetal|Plantaardige voeding|Aliments d'origine végétale|Alimenti di origine vegetale|Alimentos de origen vegetal|Żywność roślinna|Рослинні продукти|植物性食品
+poultries|Geflügel|Poultry|Птица|Aves|Gevogelte|Volaille|Pollame|Aves|Drób|Птиця|禽肉
+root-vegetables|Wurzelgemüse|Root vegetables|Корнеплоды|Raízes|Wortelgroenten|Légumes racines|Ortaggi a radice|Hortalizas de raíz|Warzywa korzeniowe|Коренеплоди|根茎类蔬菜
+sandwiches|Sandwiches|Sandwiches|Сэндвичи|Sanduíches|Sandwiches|Sandwichs|Panini e tramezzini|Sándwiches|Kanapki|Сендвічі|三明治
+sausages|Würste|Sausages|Колбасы|Salsichas|Worsten|Saucisses|Salsicce|Salchichas|Kiełbasy|Ковбаси|香肠
+seafood|Meeresfrüchte|Seafood|Морепродукты|Marisco|Zeevruchten|Fruits de mer|Frutti di mare|Marisco|Owoce morza|Морепродукти|海鲜
+snacks|Snacks|Snacks|Снеки|Snacks|Snacks|Snacks|Snack|Aperitivos|Przekąski|Снеки|零食
+soups|Suppen|Soups|Супы|Sopas|Soepen|Soupes|Zuppe|Sopas|Zupy|Супи|汤
+spices|Gewürze|Spices|Специи|Especiarias|Specerijen|Épices|Spezie|Especias|Przyprawy|Спеції|香料
+spreads|Aufstriche|Spreads|Намазки|Pastas de barrar|Smeersels|Pâtes à tartiner|Creme spalmabili|Cremas para untar|Smarowidła|Пасти для намазування|涂抹酱
+starches|Stärke|Starch|Крахмал|Amido|Zetmeel|Amidon|Amido|Almidón|Skrobia|Крохмаль|淀粉
+sweet-snacks|Süße Snacks|Sweet snacks|Сладкие снеки|Snacks doces|Zoete snacks|Snacks sucrés|Snack dolci|Aperitivos dulces|Słodkie przekąski|Солодкі снеки|甜点零食
+sweet-spreads|Süße Aufstriche|Sweet spreads|Сладкие намазки|Pastas doces|Zoete smeersels|Pâtes à tartiner sucrées|Creme dolci spalmabili|Cremas dulces para untar|Słodkie smarowidła|Солодкі пасти|甜味涂抹酱
+sweeteners|Süßungsmittel|Sweeteners|Подсластители|Adoçantes|Zoetstoffen|Édulcorants|Dolcificanti|Edulcorantes|Słodziki|Підсолоджувачі|甜味剂
+tropical-fruits|Tropische Früchte|Tropical fruit|Тропические фрукты|Frutas tropicais|Tropisch fruit|Fruits tropicaux|Frutta tropicale|Frutas tropicales|Owoce tropikalne|Тропічні фрукти|热带水果
+vegetable-fats|Pflanzenfette|Vegetable fats|Растительные жиры|Gorduras vegetais|Plantaardige vetten|Matières grasses végétales|Grassi vegetali|Grasas vegetales|Tłuszcze roślinne|Рослинні жири|植物油脂
+vegetable-soups|Gemüsesuppen|Vegetable soups|Овощные супы|Sopas de legumes|Groentesoepen|Soupes de légumes|Zuppe di verdure|Sopas de verduras|Zupy warzywne|Овочеві супи|蔬菜汤
+seeds|Samen & Kerne|Seeds|Семена|Sementes|Zaden|Graines|Semi|Semillas|Nasiona|Насіння|种子
+appetizers|Vorspeisen & Antipasti|Appetisers & antipasti|Закуски|Aperitivos e antipasti|Voorgerechten en antipasti|Entrées et antipasti|Antipasti|Entrantes y antipasti|Przystawki|Закуски|开胃菜
+sprouts|Sprossen|Sprouts|Ростки|Rebentos|Kiemen|Pousses|Germogli|Brotes|Kiełki|Паростки|芽菜
+herbs|Kräuter|Herbs|Травы|Ervas aromáticas|Kruiden|Herbes aromatiques|Erbe aromatiche|Hierbas aromáticas|Zioła|Трави|香草
+sauces|Saucen|Sauces|Соусы|Molhos|Sauzen|Sauces|Salse|Salsas|Sosy|Соуси|酱料
+beverages|Getränke|Beverages|Напитки|Bebidas|Dranken|Boissons|Bevande|Bebidas|Napoje|Напої|饮料
+plant-based-beverages|Pflanzliche Getränke|Plant-based drinks|Растительные напитки|Bebidas vegetais|Plantaardige dranken|Boissons végétales|Bevande vegetali|Bebidas vegetales|Napoje roślinne|Рослинні напої|植物饮品
+nut-based-drinks|Nussdrinks|Nut drinks|Ореховые напитки|Bebidas de frutos secos|Notendranken|Boissons aux noix|Bevande alle noci|Bebidas de frutos secos|Napoje orzechowe|Горіхові напої|坚果饮品
+cabbages|Kohl|Cabbage|Капуста|Couve|Kool|Chou|Cavolo|Col|Kapusta|Капуста|卷心菜
+legume-seeds|Getrocknete Hülsenfrüchte|Dried legumes|Сухие бобовые|Leguminosas secas|Gedroogde peulvruchten|Légumineuses sèches|Legumi secchi|Legumbres secas|Suszone strączki|Сухі бобові|干豆类
+bonbons|Pralinen & Konfekt|Chocolates & pralines|Конфеты и пралине|Bombons|Bonbons|Chocolats et pralines|Cioccolatini|Bombones|Praliny|Цукерки та праліне|巧克力糖果
