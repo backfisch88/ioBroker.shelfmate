@@ -248,6 +248,24 @@
             "lg": 8,
             "xl": 8
         },
+        "_hCheck": {
+            "type": "header",
+            "text": "hCheck",
+            "size": 3,
+            "newLine": true,
+            "xs": 12
+        },
+        "checkAddMissing": {
+            "type": "checkbox",
+            "label": "checkAddMissing",
+            "help": "checkAddMissingHelp",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
         "_hBb": {
             "type": "header",
             "text": "hBestBefore",

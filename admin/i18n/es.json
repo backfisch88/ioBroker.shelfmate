@@ -70,5 +70,8 @@
     "autoShelfLifeHelp": "Para productos sin caducidad propia, la pasta, el arroz, las conservas y similares reciben una fecha sugerida al almacenar. Los productos frescos no.",
     "dateFormat": "Formato de fecha",
     "dateFormatHelp": "Formato de todas las fechas en la aplicación web, por ejemplo la caducidad.",
-    "hGeneral": "General"
+    "hGeneral": "General",
+    "hCheck": "Comprobación de ingredientes",
+    "checkAddMissing": "Poner los ingredientes que faltan en la lista de la compra",
+    "checkAddMissingHelp": "Tras cada comprobación de check.request, los ingredientes que faltan o no bastan van a la lista de la compra. Desactivado, solo obtienes el resultado y usas check.addMissing cuando quieras."
 }

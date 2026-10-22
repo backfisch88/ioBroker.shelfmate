@@ -70,5 +70,8 @@
     "autoShelfLifeHelp": "Für Produkte ohne eigene Haltbarkeit wird bei Nudeln, Reis, Konserven und Ähnlichem beim Einlagern ein MHD vorgeschlagen. Frische Ware bekommt keins.",
     "dateFormat": "Datumsformat",
     "dateFormatHelp": "Format aller Datumsangaben in der Web-App, zum Beispiel beim MHD.",
-    "hGeneral": "Allgemein"
+    "hGeneral": "Allgemein",
+    "hCheck": "Zutaten-Prüfung",
+    "checkAddMissing": "Fehlende Zutaten auf die Einkaufsliste setzen",
+    "checkAddMissingHelp": "Nach jeder Prüfung von check.request kommen fehlende oder nicht ausreichende Zutaten auf die Einkaufsliste. Ausgeschaltet gibt es nur das Ergebnis, und mit dem Datenpunkt check.addMissing setzt du sie bei Bedarf auf die Liste."
 }

@@ -70,5 +70,8 @@
     "autoShelfLifeHelp": "Para produtos sem validade própria, massa, arroz, conservas e semelhantes recebem uma validade sugerida ao armazenar. Produtos frescos não recebem.",
     "dateFormat": "Formato da data",
     "dateFormatHelp": "Formato de todas as datas na aplicação web, por exemplo a validade.",
-    "hGeneral": "Geral"
+    "hGeneral": "Geral",
+    "hCheck": "Verificação de ingredientes",
+    "checkAddMissing": "Pôr ingredientes em falta na lista de compras",
+    "checkAddMissingHelp": "Após cada verificação de check.request, os ingredientes em falta ou insuficientes vão para a lista de compras. Desligado, só recebe o resultado e pode usar check.addMissing quando quiser."
 }

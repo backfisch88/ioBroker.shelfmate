@@ -70,5 +70,8 @@
     "autoShelfLifeHelp": "Voor producten zonder eigen houdbaarheid krijgen pasta, rijst, conserven en dergelijke bij het inruimen een voorgestelde THT. Verse waren krijgen er geen.",
     "dateFormat": "Datumnotatie",
     "dateFormatHelp": "Notatie van alle datums in de web-app, bijvoorbeeld de THT.",
-    "hGeneral": "Algemeen"
+    "hGeneral": "Algemeen",
+    "hCheck": "Ingrediëntencontrole",
+    "checkAddMissing": "Ontbrekende ingrediënten op de boodschappenlijst zetten",
+    "checkAddMissingHelp": "Na elke controle van check.request komen ontbrekende of onvoldoende ingrediënten op de boodschappenlijst. Uitgeschakeld krijg je alleen het resultaat en gebruik je check.addMissing wanneer je wilt."
 }

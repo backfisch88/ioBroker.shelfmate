@@ -138,6 +138,15 @@ With Bring, Bring special or Script (with a remove state) there are two independ
 - **Remove from the list when the stock is refilled**: when the stock rises above the minimum again, the item is taken off the list (default: off).
 - **Remove from the list when I untick the check mark in the app**: tapping the check mark of a listed item in the app also removes it from the list (default: on). If disabled, only the mark in the app is cleared.
 
+### Ingredient check
+
+I use this to compare the ingredients of my planned recipes with what I have at home. ShelfMate does not know any recipes, it only gets a list of ingredients and says what is there.
+
+1. Write the ingredients to `check.request`: separated by commas, semicolons or lines (`200 g Mehl, 3 Eier, Milch`), or as a JSON array of texts or `{"name","amount","unit"}`. The amount can stand in front of or behind the name (`200 g Mehl`, `Mehl 200g`); `kg`, `g`, `l`, `ml`, `cl` and pieces are understood, `EL`, `TL` and the like only count as "present". The same ingredient twice is added up.
+2. An ingredient is found by product name, product group or tag, so `Mehl` adds up all products of the group Mehl. With an amount in g or ml the stock is compared (500 g in stock, 200 g needed: fine); a counted product with a package size like `1 kg` is converted. Without an amount, stock above zero is enough. Unknown ingredients count as missing, so things that are not food still end up on the list.
+3. `check.result` holds the result per ingredient (wanted, have, ok, missing amount), `check.available` and `check.missing` hold the names, `check.allAvailable` is `true` if nothing is missing.
+4. With "Put missing ingredients on the shopping list" in the adapter settings the missing ones go to the shopping list (only their names) after every check. Otherwise write `true` to `check.addMissing` when I want them on the list.
+
 ## Tutorials
 
 Short walk-throughs of the main functions. All of them are done in the app.
@@ -221,6 +230,9 @@ The labels are created as PNG images in the label size you set in the app, and a
 | `stats.consumption` | Consumption of the last 30 days per product (JSON, moves between locations do not count) |
 | `stats.expiringCount`, `stats.expiring`, `stats.expiringHtml` | Products that are expired or expire within the warning period (count, JSON, HTML table) |
 | `shopping.addItem` | Write an item name (`ack=false`) to put it on the shopping list |
+| `check.request` | Write ingredients here (`ack=false`) to compare them with the stock, see "Ingredient check" |
+| `check.result`, `check.available`, `check.missing`, `check.allAvailable` | Result of the last check (JSON per ingredient, comma separated lists, true if everything is in stock) |
+| `check.addMissing` | Button: put the missing ingredients of the last check on the shopping list |
 | `scanner.active` | Switch for the scanner mode (see below) |
 | `scanner.input` | Write a scanned code here (`ack=false`); a scanner connected to the host will do this later |
 | `scanner.lastCode`, `scanner.result` | Last code and the result of the last scan in scanner mode (for example "Fusilli ×1 stocked in at Shelf 1") |
@@ -242,6 +254,7 @@ Ideas and bug reports are welcome as [GitHub issues](https://github.com/backfisc
 - New: a product without its own shelf life takes the one of its product group; settings list to review, change and remove all own shelf lives
 - New: shelf life after opening is suggested automatically as well (own value, product group, then the list); same switch as the standard shelf life
 - Improved: much larger standard shelf life list (specific words first, compound words, soups, spices, baking, drinks), fixed wrongly excluded products such as milk porridge and chopped tomatoes
+- New: ingredient check: write ingredients to `check.request`, get what is in stock and what is missing as datapoints, optionally put the missing ones on the shopping list
 - New: date format setting (31.10.2026, 31/10/2026 or 2026-10-31) applied to all dates in the web app
 - New: set the best-before date of every package of existing stock on its own line on the product page, or headless for all unopened stock with the scanner codes `SM:DATE:<days>` (undoable)
 - New: quick date input for the best-before date (`+3d`, `+2w`, `+1m`, `+1y`, `12/26`, `2412`, `24.12.26`, `tomorrow`, `x` = no date), with a live preview

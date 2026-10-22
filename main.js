@@ -8,6 +8,7 @@ const { WebServer } = require('@iobroker/webserver');
 const { createCertificate, NAMES } = require('./lib/cert');
 const { Inventory, clean } = require('./lib/core');
 const { Shopping } = require('./lib/shopping');
+const { parseItems, checkItems } = require('./lib/pantryCheck');
 const { texts } = require('./lib/i18n');
 const { NOTIFY_ADAPTERS, TEXT: NOTIFY_TEXT, lowText, expiryText, msUntil, deliver } = require('./lib/notify');
 const { ShelfMateServer } = require('./lib/server');
@@ -63,6 +64,7 @@ class Shelfmate extends utils.Adapter {
         this.queue = Promise.resolve();
         this.seen = new Map();
         this.shopping = null;
+        this.lastCheck = [];
         this.web = null;
         this.httpServer = null;
         this.closing = false;
@@ -98,6 +100,8 @@ class Shelfmate extends utils.Adapter {
             await this.subscribeForeignStatesAsync(id);
         }
         await this.subscribeStatesAsync('shopping.addItem');
+        await this.subscribeStatesAsync('check.request');
+        await this.subscribeStatesAsync('check.addMissing');
         await this.subscribeStatesAsync('scanner.input');
         await this.subscribeStatesAsync('scanner.active');
         if ((await this.getStateAsync('scanner.active')) === null) {
@@ -174,6 +178,24 @@ class Shelfmate extends utils.Adapter {
             ['stats.expiring', 'Products expired or expiring soon (JSON)', 'string', 'json', false],
             ['stats.expiringHtml', 'Products expired or expiring soon (HTML table for VIS)', 'string', 'html', false],
             ['shopping.addItem', 'Add an item to the shopping list', 'string', 'text', true],
+            [
+                'check.request',
+                'Ingredients to check against the stock (comma separated, one per line or JSON)',
+                'string',
+                'text',
+                true,
+            ],
+            ['check.result', 'Result of the last check per ingredient (JSON)', 'string', 'json', false],
+            ['check.available', 'Ingredients that are in stock (comma separated)', 'string', 'text', false],
+            ['check.missing', 'Ingredients that are missing or not enough (comma separated)', 'string', 'text', false],
+            ['check.allAvailable', 'Everything of the last check is in stock', 'boolean', 'indicator', false],
+            [
+                'check.addMissing',
+                'Put the missing ingredients of the last check on the shopping list',
+                'boolean',
+                'button',
+                true,
+            ],
             ['scanner.input', 'Scanned code (write a code here to simulate a scan)', 'string', 'text', true],
             ['scanner.lastCode', 'Last scanned code', 'string', 'text', false],
             ['scanner.result', 'Result of the last scan in scanner mode', 'string', 'text', false],
@@ -185,12 +207,17 @@ class Shelfmate extends utils.Adapter {
             common: { name: 'Shopping list' },
             native: {},
         });
+        await this.setObjectNotExistsAsync('check', {
+            type: 'channel',
+            common: { name: 'Ingredient check' },
+            native: {},
+        });
         await this.setObjectNotExistsAsync('scanner', { type: 'channel', common: { name: 'Scanner' }, native: {} });
         await Promise.all(
             states.map(([id, name, type, role, write]) =>
                 this.setObjectNotExistsAsync(id, {
                     type: 'state',
-                    common: { name, type, role, read: true, write },
+                    common: { name, type, role, read: role !== 'button', write },
                     native: {},
                 }),
             ),
@@ -347,6 +374,39 @@ class Shelfmate extends utils.Adapter {
     }
 
     /**
+     * Compare a list of ingredients with the stock and publish the result.
+     *
+     * @param {string} request ingredients
+     */
+    async runCheck(request) {
+        const result = checkItems(this.inv.data, parseItems(request));
+        this.lastCheck = result;
+        const text = r => (r.length ? r.map(x => x.name).join(', ') : '');
+        await this.setState('check.result', JSON.stringify(result), true);
+        await this.setState('check.available', text(result.filter(x => x.ok)), true);
+        await this.setState('check.missing', text(result.filter(x => !x.ok)), true);
+        await this.setState('check.allAvailable', result.length > 0 && result.every(x => x.ok), true);
+        if (this.config.checkAddMissing) {
+            await this.addMissingToList();
+        }
+    }
+
+    /**
+     * Put the ingredients of the last check that are missing on the shopping list.
+     */
+    async addMissingToList() {
+        for (const x of this.lastCheck || []) {
+            if (!x.ok) {
+                const r = await this.addToList(x.name);
+                if (!r.ok) {
+                    this.log.warn(`Ingredient check: ${x.name} not added: ${r.error}`);
+                    break;
+                }
+            }
+        }
+    }
+
+    /**
      * @param {string} name item name
      */
     async addToList(name) {
@@ -467,6 +527,12 @@ class Shelfmate extends utils.Adapter {
                     this.clearTimeout(this.scanTimer);
                 }
                 await this.setState('scanner.active', !!state.val, true);
+            }
+            if (id === `${this.namespace}.check.request` && !state.ack) {
+                await this.runCheck(String(state.val ?? ''));
+                await this.setState('check.request', state.val, true);
+            } else if (id === `${this.namespace}.check.addMissing` && !state.ack) {
+                await this.addMissingToList();
             }
             if (id === `${this.namespace}.shopping.addItem` && !state.ack) {
                 const r = await this.addToList(String(state.val ?? ''));

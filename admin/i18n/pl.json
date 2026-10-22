@@ -70,5 +70,8 @@
     "autoShelfLifeHelp": "Dla produktów bez własnego terminu makaron, ryż, konserwy i podobne dostają przy dodawaniu sugerowaną datę ważności. Świeże produkty jej nie dostają.",
     "dateFormat": "Format daty",
     "dateFormatHelp": "Format wszystkich dat w aplikacji webowej, na przykład daty ważności.",
-    "hGeneral": "Ogólne"
+    "hGeneral": "Ogólne",
+    "hCheck": "Sprawdzanie składników",
+    "checkAddMissing": "Dodawaj brakujące składniki do listy zakupów",
+    "checkAddMissingHelp": "Po każdym sprawdzeniu check.request brakujące lub niewystarczające składniki trafiają na listę zakupów. Wyłączone: dostajesz tylko wynik i używasz check.addMissing, gdy chcesz."
 }

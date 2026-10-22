@@ -101,6 +101,15 @@ Unter **Einstellungen / Daten**: **JSON-Backup** (herunterladen und wieder impor
 ### Offline nutzen
 Sobald das Zertifikat vertraut ist, startet die App auch ohne Verbindung. Buchungen und Einkaufslisten-Einträge, die offline entstehen, werden gesammelt und automatisch gesendet, sobald die Verbindung wieder da ist.
 
+### Zutaten-Prüfung
+
+Damit vergleiche ich die Zutaten meiner geplanten Rezepte mit dem, was ich zu Hause habe. ShelfMate kennt keine Rezepte, es bekommt nur eine Zutatenliste und sagt, was da ist.
+
+1. Die Zutaten in `check.request` schreiben: durch Komma, Semikolon oder Zeilen getrennt (`200 g Mehl, 3 Eier, Milch`) oder als JSON-Liste mit Texten oder `{"name","amount","unit"}`. Die Menge darf vor oder hinter dem Namen stehen (`200 g Mehl`, `Mehl 200g`). `kg`, `g`, `l`, `ml`, `cl` und Stück werden verstanden, `EL`, `TL` und Ähnliches zählen nur als „vorhanden“. Gleiche Zutaten werden addiert.
+2. Gefunden wird über Produktname, Gruppe oder Tag, `Mehl` zählt also alle Produkte der Gruppe Mehl zusammen. Bei Mengen in g oder ml wird der Bestand verglichen (500 g da, 200 g gebraucht: passt), Zählprodukte mit Packungsgröße wie `1 kg` werden umgerechnet. Ohne Menge reicht Bestand über null. Unbekannte Zutaten gelten als fehlend, damit auch Nicht-Lebensmittel auf der Liste landen.
+3. `check.result` enthält das Ergebnis je Zutat, `check.available` und `check.missing` die Namen, `check.allAvailable` ist `true`, wenn nichts fehlt.
+4. Mit „Fehlende Zutaten auf die Einkaufsliste setzen“ in den Adapter-Einstellungen kommen die fehlenden nach jeder Prüfung (nur mit Namen) auf die Einkaufsliste. Sonst schreibe ich `true` in `check.addMissing`, wenn ich sie auf der Liste haben will.
+
 ## Zertifikat und Installation auf dem Handy
 
 Kamera und Offline-Modus brauchen HTTPS mit einem Zertifikat, dem das Handy vertraut.
@@ -125,7 +134,7 @@ Danach eine Instanz anlegen und `https://<Host>:8120/` öffnen. Voraussetzungen:
 
 ## Datenpunkte
 
-`stats.products`, `stats.locations`, `stats.lowStockCount`, `stats.lowStockList`, `stats.inventory`, `stats.inventoryHtml`, `stats.consumption`, `stats.expiringCount`, `stats.expiring`, `stats.expiringHtml`, `shopping.addItem`, `scanner.active`, `scanner.input`, `scanner.lastCode`, `scanner.result`, `info.connection`.
+`stats.products`, `stats.locations`, `stats.lowStockCount`, `stats.lowStockList`, `stats.inventory`, `stats.inventoryHtml`, `stats.consumption`, `stats.expiringCount`, `stats.expiring`, `stats.expiringHtml`, `shopping.addItem`, `check.request`, `check.result`, `check.available`, `check.missing`, `check.allAvailable`, `check.addMissing`, `scanner.active`, `scanner.input`, `scanner.lastCode`, `scanner.result`, `info.connection`.
 
 ## In Arbeit und geplant
 

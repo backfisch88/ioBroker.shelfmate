@@ -70,5 +70,8 @@
     "autoShelfLifeHelp": "对于没有自己保质期的产品，入库时会为面食、大米、罐头等建议保质期。生鲜食品不会。",
     "dateFormat": "日期格式",
     "dateFormatHelp": "网页应用中所有日期的格式，例如保质期。",
-    "hGeneral": "常规"
+    "hGeneral": "常规",
+    "hCheck": "食材检查",
+    "checkAddMissing": "将缺少的食材加入购物清单",
+    "checkAddMissingHelp": "每次检查 check.request 后，缺少或不足的食材会加入购物清单。关闭后只返回结果，需要时可使用数据点 check.addMissing。"
 }

@@ -70,5 +70,8 @@
     "autoShelfLifeHelp": "Pour les produits sans durée propre, les pâtes, le riz, les conserves et similaires reçoivent une DLC suggérée au stockage. Les produits frais n'en reçoivent pas.",
     "dateFormat": "Format de date",
     "dateFormatHelp": "Format de toutes les dates dans l'application web, par exemple la DLC.",
-    "hGeneral": "Général"
+    "hGeneral": "Général",
+    "hCheck": "Vérification des ingrédients",
+    "checkAddMissing": "Mettre les ingrédients manquants sur la liste de courses",
+    "checkAddMissingHelp": "Après chaque vérification de check.request, les ingrédients manquants ou insuffisants sont ajoutés à la liste de courses. Désactivé, vous n'obtenez que le résultat et utilisez check.addMissing au besoin."
 }

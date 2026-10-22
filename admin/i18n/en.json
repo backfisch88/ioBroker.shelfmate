@@ -70,5 +70,8 @@
     "autoShelfLifeHelp": "For products without their own shelf life, pasta, rice, tins and similar get a suggested best-before date when stocking. Fresh goods get none.",
     "dateFormat": "Date format",
     "dateFormatHelp": "Format of all dates in the web app, for example the best-before date.",
-    "hGeneral": "General"
+    "hGeneral": "General",
+    "hCheck": "Ingredient check",
+    "checkAddMissing": "Put missing ingredients on the shopping list",
+    "checkAddMissingHelp": "After every check of check.request, the ingredients that are missing or not enough are put on the shopping list. Switch it off to only get the result and use the datapoint check.addMissing when you want them on the list."
 }

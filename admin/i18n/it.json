@@ -70,5 +70,8 @@
     "autoShelfLifeHelp": "Per i prodotti senza durata propria, pasta, riso, conserve e simili ricevono una scadenza suggerita all'inserimento. I prodotti freschi non ne ricevono.",
     "dateFormat": "Formato della data",
     "dateFormatHelp": "Formato di tutte le date nell'app web, ad esempio la scadenza.",
-    "hGeneral": "Generale"
+    "hGeneral": "Generale",
+    "hCheck": "Verifica degli ingredienti",
+    "checkAddMissing": "Metti gli ingredienti mancanti nella lista della spesa",
+    "checkAddMissingHelp": "Dopo ogni verifica di check.request, gli ingredienti mancanti o insufficienti vanno nella lista della spesa. Se disattivato ottieni solo il risultato e usi check.addMissing quando vuoi."
 }
