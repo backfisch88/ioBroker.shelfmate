@@ -202,6 +202,7 @@
         "bestBeforeMode": "off",
         "bestBeforeWarnDays": 7,
         "autoShelfMode": "always",
+        "autoShelfScope": "all",
         "dateFormat": "dmy",
         "checkAddMissing": false,
         "notifyAdapter": "",

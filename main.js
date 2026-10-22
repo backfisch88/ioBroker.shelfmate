@@ -280,6 +280,7 @@ class Shelfmate extends utils.Adapter {
                 labelButtons: this.labelButtons(),
                 autoShelfLife: this.autoShelfMode() !== 'off',
                 autoShelfMode: this.autoShelfMode(),
+                autoShelfScope: this.config.autoShelfScope === 'dry' ? 'dry' : 'all',
                 dateFormat: ['dmy', 'slash', 'iso'].includes(this.config.dateFormat) ? this.config.dateFormat : 'dmy',
                 inventoryDays: this.inventoryDays(),
             },
@@ -457,6 +458,7 @@ class Shelfmate extends utils.Adapter {
         const mode = this.autoShelfMode();
         this.inv.autoShelf = mode !== 'off';
         this.inv.autoDate = fromApp ? mode === 'always' : mode !== 'off';
+        this.inv.autoScope = this.config.autoShelfScope === 'dry' ? 'dry' : 'all';
     }
 
     /**

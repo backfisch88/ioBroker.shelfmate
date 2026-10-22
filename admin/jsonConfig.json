@@ -338,6 +338,28 @@
             "lg": 4,
             "xl": 4
         },
+        "autoShelfScope": {
+            "type": "select",
+            "label": "autoShelfScope",
+            "help": "autoShelfScopeHelp",
+            "options": [
+                {
+                    "value": "all",
+                    "label": "scAll"
+                },
+                {
+                    "value": "dry",
+                    "label": "scDry"
+                }
+            ],
+            "hidden": "data.bestBeforeMode === 'off' || data.autoShelfMode === 'off'",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
         "_hNotify": {
             "type": "header",
             "text": "hNotify",
