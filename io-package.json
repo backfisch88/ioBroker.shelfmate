@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "shelfmate",
-        "version": "0.1.14",
+        "version": "0.2.0",
         "news": {
+            "0.2.0": {
+                "en": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync",
+                "de": "Neu: optionale Menge auf der Einkaufsliste, Verbrauchswaren-Lagerorte mit Datenpunkten, unbekannte Produkte per Scanner anlegen, Ablauf-Meldung anpassbar. Fixes: Gruppen in der Suche zuklappbar, Hinweis-Sync",
+                "ru": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync",
+                "pt": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync",
+                "nl": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync",
+                "fr": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync",
+                "it": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync",
+                "es": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync",
+                "pl": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync",
+                "uk": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync",
+                "zh-cn": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync"
+            },
             "0.1.14": {
                 "en": "New: scanner mode - book stock in and out with scanned codes via data points, without the app (also with a wireless scanner on the server)",
                 "de": "Neu: Scanner-Modus - Ein- und Auslagern per gescannten Codes über Datenpunkte, ohne die App (auch mit Funk-Scanner am Server)",
@@ -177,12 +190,6 @@
     "encryptedNative": [
         "accessKey"
     ],
-    "protectedNative": [
-        "accessKey"
-    ],
-    "encryptedNative": [
-        "accessKey"
-    ],
     "native": {
         "port": 8120,
         "bind": "0.0.0.0",
@@ -197,6 +204,7 @@
         "shoppingContentId": "",
         "bringListId": "",
         "removeOnRestock": false,
+        "shoppingQuantity": false,
         "removeOnUncheck": true,
         "shoppingRemoveItemId": "",
         "bestBeforeMode": "off",

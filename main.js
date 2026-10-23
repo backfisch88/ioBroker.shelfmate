@@ -52,6 +52,25 @@ function expiringHtml(items, t) {
     return `<table><thead><tr><th>${esc(t.product)}</th><th>${esc(t.bestBefore)}</th><th>${esc(t.remaining)}</th><th>${esc(t.amount)}</th><th>${esc(t.location)}</th></tr></thead><tbody>${rows}</tbody></table>`;
 }
 
+/**
+ * One line of the consumables text data point.
+ *
+ * @param {{amount: number, unit: string, name: string, opened: number, bestBefore?: string, expiring: boolean}} x item
+ * @param {string} lang system language
+ * @returns {string} line
+ */
+function consumableLine(x, lang) {
+    const de = lang === 'de';
+    const extra = [];
+    if (x.opened > 0) {
+        extra.push(`${x.opened} ${de ? 'geöffnet' : 'opened'}`);
+    }
+    if (x.bestBefore && x.expiring) {
+        extra.push(`${de ? 'MHD' : 'best before'} ${x.bestBefore}`);
+    }
+    return `${x.amount} ${x.unit} ${x.name}${extra.length ? ` (${extra.join(', ')})` : ''}`;
+}
+
 class Shelfmate extends utils.Adapter {
     /**
      * @param {Partial<utils.AdapterOptions>} [options] adapter options
@@ -179,6 +198,14 @@ class Shelfmate extends utils.Adapter {
             ['stats.expiringCount', 'Products expired or expiring soon', 'number', 'value', false],
             ['stats.expiring', 'Products expired or expiring soon (JSON)', 'string', 'json', false],
             ['stats.expiringHtml', 'Products expired or expiring soon (HTML table for VIS)', 'string', 'html', false],
+            ['stats.consumables', 'Stock of locations marked as consumables (JSON)', 'string', 'json', false],
+            [
+                'stats.consumablesText',
+                'Stock of locations marked as consumables (one line each)',
+                'string',
+                'text',
+                false,
+            ],
             ['shopping.addItem', 'Add an item to the shopping list', 'string', 'text', true],
             ['check.request', 'Ingredients to check against the stock (one per line, or JSON)', 'string', 'text', true],
             ['check.result', 'Result of the last check per ingredient (JSON)', 'string', 'json', false],
@@ -329,7 +356,9 @@ class Shelfmate extends utils.Adapter {
                 suggestions: r.suggestions,
                 report: r.report,
             };
-            this.afterChange(r.reorder, r.restock).catch(e => this.log.warn(`Post-processing failed: ${e.message}`));
+            this.afterChange(r.reorder, r.restock, r.lower, r.qty).catch(e =>
+                this.log.warn(`Post-processing failed: ${e.message}`),
+            );
         } catch (e) {
             this.inv = new Inventory(JSON.parse(before), this.lang);
             result = { id, ok: false, error: e.message || String(e) };
@@ -349,19 +378,23 @@ class Shelfmate extends utils.Adapter {
      *
      * @param {string} reorder name to put on the shopping list, may be empty
      * @param {string} [restock] name to take off the shopping list again, may be empty
+     * @param {string} [lower] name whose stock dropped further while already at or below the minimum
+     * @param {number} [qty] amount to put on the list when the quantity option is on
      */
-    async afterChange(reorder, restock) {
+    async afterChange(reorder, restock, lower, qty) {
+        const withQty = !!this.config.shoppingQuantity && qty > 0;
+        const target = reorder || (withQty ? lower : '');
         if (reorder && this.config.notifyLow) {
             this.notify(lowText(this.lang, reorder), 'info');
         }
-        if (reorder) {
+        if (target) {
             try {
-                const added = await this.shopping?.add(reorder);
+                const added = await this.shopping?.add(withQty ? `${target}, ${qty}` : target);
                 if (added && added.added) {
                     this.log.info(`Minimum stock reached - "${added.name}" added to the shopping list`);
                 }
             } catch (e) {
-                this.log.warn(`Could not add "${reorder}" to the shopping list: ${e.message}`);
+                this.log.warn(`Could not add "${target}" to the shopping list: ${e.message}`);
             }
         }
         if (restock) {
@@ -493,7 +526,10 @@ class Shelfmate extends utils.Adapter {
         const items = this.inv.inventoryList();
         const bb = this.bestBeforeConfig();
         const expiring = this.inv.expiryList(bb.bestBeforeMode, bb.bestBeforeWarnDays);
+        const cons = this.inv.consumablesList(bb.bestBeforeMode, bb.bestBeforeWarnDays);
         await Promise.all([
+            this.setState('stats.consumables', JSON.stringify(cons), true),
+            this.setState('stats.consumablesText', cons.map(x => consumableLine(x, this.lang)).join('\n'), true),
             this.setState('stats.products', Object.keys(this.inv.data.products).length, true),
             this.setState('stats.locations', Object.keys(this.inv.data.locations).length, true),
             this.setState('stats.lowStockCount', low.length, true),
@@ -588,7 +624,9 @@ class Shelfmate extends utils.Adapter {
         this.applyAuto(false);
         const r = this.inv.handle(cmd);
         this.scheduleSave();
-        this.afterChange(r.reorder, r.restock).catch(e => this.log.warn(`Post-processing failed: ${e.message}`));
+        this.afterChange(r.reorder, r.restock, r.lower, r.qty).catch(e =>
+            this.log.warn(`Post-processing failed: ${e.message}`),
+        );
         return r;
     }
 

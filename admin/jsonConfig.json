@@ -224,6 +224,18 @@
             "lg": 8,
             "xl": 8
         },
+        "shoppingQuantity": {
+            "type": "checkbox",
+            "label": "shoppingQuantity",
+            "help": "shoppingQuantityHelp",
+            "hidden": "data.shoppingMode !== 'bringSpecial' && data.shoppingMode !== 'script'",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 8,
+            "xl": 8
+        },
         "removeOnRestock": {
             "type": "checkbox",
             "label": "removeOnRestock",

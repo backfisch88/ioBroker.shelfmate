@@ -43,6 +43,8 @@ You use it through a web app that you open on your phone and add to the home scr
 - Manage the shopping list through data points, Bring! or Bring! special
 - With Bring! special, quantities and variants are merged on the same entry instead of creating duplicates
 - Remove products from the shopping list automatically when the stock is refilled
+- Optionally write the missing quantity on the shopping list
+- List the stock of consumables locations (for example the fridge) in data points
 - Evaluate the consumption of the last 30 days
 - Suggest a fitting minimum stock based on past consumption
 
@@ -269,7 +271,16 @@ Next up is the direct connection of serial (USB) and Bluetooth scanners on the i
 Ideas, wishes or bugs are welcome as a [GitHub issue](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
 ## Changelog
-### **WORK IN PROGRESS**
+### 0.2.0 (2026-10-23)
+- New: optional quantity on the shopping list ("Flour, 2"): the missing amount (minimum stock minus stock) is written when the minimum is reached, and only the difference when the stock keeps falling (Bring! special and script mode)
+- New: mark a storage location as consumables (for example the fridge); its stock appears in the data points `stats.consumables` (JSON, with opened amount and nearest best-before date) and `stats.consumablesText` (one line per product)
+- New: headless scanner creates unknown products (Open Food Facts lookup, tags, shown under "edit new products" when incomplete)
+- New: wording of the expiry message can be changed (title, line with placeholders for brand, days and amount)
+- New: the short scanner code of a location can be switched back to the normal QR code
+- Changed: the shopping button sits flush with the tab menu on the phone
+- Fixed: product groups can be collapsed while searching or filtering by tag, and the list keeps its position when a group is opened or closed
+- Fixed: hints are synchronised between devices, long group keys are no longer cut off
+- Fixed: a doubled adapter start no longer resets `info.connection` of the running process
 - New: when creating a product by hand, the name field suggests products from a ready-made list (about 1,200) and sets the category
 - Changed: documentation split into a short README and a guide (English and German); the Bring! special examples now show how quantities and variants merge on one entry
 - New: product editor in collapsible sections (basics, stock, group and tags, shelf life, more) with a short summary on every closed section, Nutri-Score as a coloured row of buttons, package size next to the unit

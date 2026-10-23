@@ -88,5 +88,7 @@
     "notifyExpiredTitle": "Heading for expired products (empty = default)",
     "notifyExpiredTitleHelp": "For example: Expired, please check:",
     "notifyExpiryLine": "Line per product (empty = default)",
-    "notifyExpiryLineHelp": "Placeholders: {name} {brand} {date} {days} {when} {amount} {place}. Default: • {name} ({date}) – {place}. Example: • {brand} {name}: {when}, {place}"
+    "notifyExpiryLineHelp": "Placeholders: {name} {brand} {date} {days} {when} {amount} {place}. Default: • {name} ({date}) – {place}. Example: • {brand} {name}: {when}, {place}",
+    "shoppingQuantity": "Write the missing amount to the list",
+    "shoppingQuantityHelp": "Writes how many are missing (minimum minus stock), e.g. \"Flour, 2\". If the stock drops further, only the difference is added. Bring! Special adds up on the list; in script mode your script gets \"Name, amount\" every time and has to add up itself"
 }

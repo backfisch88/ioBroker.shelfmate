@@ -88,5 +88,7 @@
     "notifyExpiredTitle": "Überschrift für abgelaufene Produkte (leer = Standard)",
     "notifyExpiredTitleHelp": "Zum Beispiel: Abgelaufen, bitte prüfen:",
     "notifyExpiryLine": "Zeile pro Produkt (leer = Standard)",
-    "notifyExpiryLineHelp": "Platzhalter: {name} {brand} {date} {days} {when} {amount} {place}. Standard: • {name} ({date}) – {place}. Beispiel: • {brand} {name}: {when}, {place}"
+    "notifyExpiryLineHelp": "Platzhalter: {name} {brand} {date} {days} {when} {amount} {place}. Standard: • {name} ({date}) – {place}. Beispiel: • {brand} {name}: {when}, {place}",
+    "shoppingQuantity": "Fehlende Menge auf die Liste schreiben",
+    "shoppingQuantityHelp": "Schreibt, wie viele fehlen (Mindestbestand minus Bestand), z. B. „Mehl, 2“. Fällt der Bestand weiter, wird nur die Differenz ergänzt. Bei Bring! Spezial rechnet die Liste selbst; im Skript-Modus bekommt dein Skript jedes Mal „Name, Menge“ und muss selbst addieren"
 }
