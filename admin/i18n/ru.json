@@ -82,5 +82,11 @@
     "hGeneral": "Общие",
     "hCheck": "Проверка ингредиентов",
     "checkAddMissing": "Добавлять недостающие ингредиенты в список покупок",
-    "checkAddMissingHelp": "После каждой проверки check.request недостающие ингредиенты попадают в список покупок. Если выключено, вы получаете только результат, а недостающее можно добавить через check.addMissing."
+    "checkAddMissingHelp": "После каждой проверки check.request недостающие ингредиенты попадают в список покупок. Если выключено, вы получаете только результат, а недостающее можно добавить через check.addMissing.",
+    "notifySoonTitle": "Heading for products expiring soon (empty = default)",
+    "notifySoonTitleHelp": "For example: Use these up soon:",
+    "notifyExpiredTitle": "Heading for expired products (empty = default)",
+    "notifyExpiredTitleHelp": "For example: Expired, please check:",
+    "notifyExpiryLine": "Line per product (empty = default)",
+    "notifyExpiryLineHelp": "Placeholders: {name} {brand} {date} {days} {when} {amount} {place}. Default: • {name} ({date}) – {place}. Example: • {brand} {name}: {when}, {place}"
 }

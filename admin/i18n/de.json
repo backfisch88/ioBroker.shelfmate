@@ -82,5 +82,11 @@
     "hGeneral": "Allgemein",
     "hCheck": "Zutaten-Prüfung",
     "checkAddMissing": "Fehlende Zutaten auf die Einkaufsliste setzen",
-    "checkAddMissingHelp": "Nach jeder Prüfung von check.request kommen fehlende oder nicht ausreichende Zutaten auf die Einkaufsliste. Ausgeschaltet gibt es nur das Ergebnis, und mit dem Datenpunkt check.addMissing setzt du sie bei Bedarf auf die Liste."
+    "checkAddMissingHelp": "Nach jeder Prüfung von check.request kommen fehlende oder nicht ausreichende Zutaten auf die Einkaufsliste. Ausgeschaltet gibt es nur das Ergebnis, und mit dem Datenpunkt check.addMissing setzt du sie bei Bedarf auf die Liste.",
+    "notifySoonTitle": "Überschrift für bald ablaufende Produkte (leer = Standard)",
+    "notifySoonTitleHelp": "Zum Beispiel: Bald aufbrauchen:",
+    "notifyExpiredTitle": "Überschrift für abgelaufene Produkte (leer = Standard)",
+    "notifyExpiredTitleHelp": "Zum Beispiel: Abgelaufen, bitte prüfen:",
+    "notifyExpiryLine": "Zeile pro Produkt (leer = Standard)",
+    "notifyExpiryLineHelp": "Platzhalter: {name} {brand} {date} {days} {when} {amount} {place}. Standard: • {name} ({date}) – {place}. Beispiel: • {brand} {name}: {when}, {place}"
 }

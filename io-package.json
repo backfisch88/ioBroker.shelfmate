@@ -211,6 +211,9 @@
         "notifyLow": false,
         "notifyExpiry": false,
         "notifyTime": "08:00",
+        "notifyExpiryLine": "",
+        "notifyExpiredTitle": "",
+        "notifySoonTitle": "",
         "labelButtons": [
             "ean",
             "qr"

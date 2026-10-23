@@ -82,5 +82,11 @@
     "hGeneral": "Geral",
     "hCheck": "Verificação de ingredientes",
     "checkAddMissing": "Pôr ingredientes em falta na lista de compras",
-    "checkAddMissingHelp": "Após cada verificação de check.request, os ingredientes em falta ou insuficientes vão para a lista de compras. Desligado, só recebe o resultado e pode usar check.addMissing quando quiser."
+    "checkAddMissingHelp": "Após cada verificação de check.request, os ingredientes em falta ou insuficientes vão para a lista de compras. Desligado, só recebe o resultado e pode usar check.addMissing quando quiser.",
+    "notifySoonTitle": "Heading for products expiring soon (empty = default)",
+    "notifySoonTitleHelp": "For example: Use these up soon:",
+    "notifyExpiredTitle": "Heading for expired products (empty = default)",
+    "notifyExpiredTitleHelp": "For example: Expired, please check:",
+    "notifyExpiryLine": "Line per product (empty = default)",
+    "notifyExpiryLineHelp": "Placeholders: {name} {brand} {date} {days} {when} {amount} {place}. Default: • {name} ({date}) – {place}. Example: • {brand} {name}: {when}, {place}"
 }

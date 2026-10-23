@@ -82,5 +82,11 @@
     "hGeneral": "常规",
     "hCheck": "食材检查",
     "checkAddMissing": "将缺少的食材加入购物清单",
-    "checkAddMissingHelp": "每次检查 check.request 后，缺少或不足的食材会加入购物清单。关闭后只返回结果，需要时可使用数据点 check.addMissing。"
+    "checkAddMissingHelp": "每次检查 check.request 后，缺少或不足的食材会加入购物清单。关闭后只返回结果，需要时可使用数据点 check.addMissing。",
+    "notifySoonTitle": "Heading for products expiring soon (empty = default)",
+    "notifySoonTitleHelp": "For example: Use these up soon:",
+    "notifyExpiredTitle": "Heading for expired products (empty = default)",
+    "notifyExpiredTitleHelp": "For example: Expired, please check:",
+    "notifyExpiryLine": "Line per product (empty = default)",
+    "notifyExpiryLineHelp": "Placeholders: {name} {brand} {date} {days} {when} {amount} {place}. Default: • {name} ({date}) – {place}. Example: • {brand} {name}: {when}, {place}"
 }

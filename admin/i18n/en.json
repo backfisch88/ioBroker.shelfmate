@@ -82,5 +82,11 @@
     "hGeneral": "General",
     "hCheck": "Ingredient check",
     "checkAddMissing": "Put missing ingredients on the shopping list",
-    "checkAddMissingHelp": "After every check of check.request, the ingredients that are missing or not enough are put on the shopping list. Switch it off to only get the result and use the datapoint check.addMissing when you want them on the list."
+    "checkAddMissingHelp": "After every check of check.request, the ingredients that are missing or not enough are put on the shopping list. Switch it off to only get the result and use the datapoint check.addMissing when you want them on the list.",
+    "notifySoonTitle": "Heading for products expiring soon (empty = default)",
+    "notifySoonTitleHelp": "For example: Use these up soon:",
+    "notifyExpiredTitle": "Heading for expired products (empty = default)",
+    "notifyExpiredTitleHelp": "For example: Expired, please check:",
+    "notifyExpiryLine": "Line per product (empty = default)",
+    "notifyExpiryLineHelp": "Placeholders: {name} {brand} {date} {days} {when} {amount} {place}. Default: • {name} ({date}) – {place}. Example: • {brand} {name}: {when}, {place}"
 }

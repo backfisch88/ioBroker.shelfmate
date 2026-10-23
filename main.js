@@ -854,7 +854,15 @@ class Shelfmate extends utils.Adapter {
                 this.notifyTimer = null;
                 if (expiry) {
                     const list = this.inv.expiryList(bb.bestBeforeMode, bb.bestBeforeWarnDays);
-                    const message = expiryText(this.lang, list);
+                    const wording = k =>
+                        String(this.config[k] || '')
+                            .trim()
+                            .slice(0, 300);
+                    const message = expiryText(this.lang, list, {
+                        line: wording('notifyExpiryLine'),
+                        expiredTitle: wording('notifyExpiredTitle'),
+                        soonTitle: wording('notifySoonTitle'),
+                    });
                     this.notify(message, list.some(x => x.expired) ? 'warn' : 'info');
                 }
                 this.inventoryReminder().catch(e => this.log.debug(`Stocktaking reminder: ${e.message}`));

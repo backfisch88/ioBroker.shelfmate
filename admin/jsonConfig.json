@@ -450,6 +450,42 @@
             "lg": 4,
             "xl": 4
         },
+        "notifySoonTitle": {
+            "type": "text",
+            "label": "notifySoonTitle",
+            "help": "notifySoonTitleHelp",
+            "hidden": "!data.notifyAdapter || !data.notifyExpiry || data.bestBeforeMode === 'off'",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 8,
+            "xl": 8
+        },
+        "notifyExpiredTitle": {
+            "type": "text",
+            "label": "notifyExpiredTitle",
+            "help": "notifyExpiredTitleHelp",
+            "hidden": "!data.notifyAdapter || !data.notifyExpiry || data.bestBeforeMode === 'off'",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 8,
+            "xl": 8
+        },
+        "notifyExpiryLine": {
+            "type": "text",
+            "label": "notifyExpiryLine",
+            "help": "notifyExpiryLineHelp",
+            "hidden": "!data.notifyAdapter || !data.notifyExpiry || data.bestBeforeMode === 'off'",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 8,
+            "xl": 8
+        },
         "notifyTest": {
             "type": "sendTo",
             "command": "testNotification",
