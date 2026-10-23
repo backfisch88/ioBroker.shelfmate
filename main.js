@@ -160,6 +160,7 @@ class Shelfmate extends utils.Adapter {
             this.log.info(
                 `ShelfMate is running on ${this.config.secure ? 'https' : 'http'}://${bind}:${port}/ (${Object.keys(this.inv.data.products).length} products)`,
             );
+            this.connectionUp = true;
             this.setState('info.connection', true, true);
         });
     }
@@ -925,7 +926,10 @@ class Shelfmate extends utils.Adapter {
             if (this.dirty && this.dataPath) {
                 await this.saveNow();
             }
-            await this.setState('info.connection', false, true);
+            // a second process that was started at the same time and stops itself must not reset the state of the one that runs
+            if (this.connectionUp) {
+                await this.setState('info.connection', false, true);
+            }
         } catch (e) {
             this.log.error(`Error during unload: ${e.message}`);
         }
