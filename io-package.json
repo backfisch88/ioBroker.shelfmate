@@ -4,30 +4,17 @@
         "version": "0.2.0",
         "news": {
             "0.2.0": {
-                "en": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync",
-                "de": "Neu: optionale Menge auf der Einkaufsliste, Verbrauchswaren-Lagerorte mit Datenpunkten, unbekannte Produkte per Scanner anlegen, Ablauf-Meldung anpassbar. Fixes: Gruppen in der Suche zuklappbar, Hinweis-Sync",
-                "ru": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync",
-                "pt": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync",
-                "nl": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync",
-                "fr": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync",
-                "it": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync",
-                "es": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync",
-                "pl": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync",
-                "uk": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync",
-                "zh-cn": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync"
-            },
-            "0.1.14": {
-                "en": "New: scanner mode - book stock in and out with scanned codes via data points, without the app (also with a wireless scanner on the server)",
-                "de": "Neu: Scanner-Modus - Ein- und Auslagern per gescannten Codes über Datenpunkte, ohne die App (auch mit Funk-Scanner am Server)",
-                "ru": "Новое: режим сканера - приход и расход по отсканированным кодам через объекты, без приложения (также с беспроводным сканером на сервере)",
-                "pt": "Novo: modo scanner - entrada e saída de stock com códigos lidos através de pontos de dados, sem a app (também com leitor sem fios no servidor)",
-                "nl": "Nieuw: scannermodus - in- en uitboeken met gescande codes via datapunten, zonder de app (ook met draadloze scanner op de server)",
-                "fr": "Nouveau : mode scanner - entrées et sorties de stock par codes scannés via des points de données, sans l'app (aussi avec un scanner sans fil sur le serveur)",
-                "it": "Novità: modalità scanner - carico e scarico con codici scansionati tramite punti dati, senza l'app (anche con scanner wireless sul server)",
-                "es": "Novedad: modo escáner - entradas y salidas de stock con códigos escaneados mediante puntos de datos, sin la app (también con escáner inalámbrico en el servidor)",
-                "pl": "Nowość: tryb skanera - przyjęcia i wydania zeskanowanymi kodami przez punkty danych, bez aplikacji (także ze skanerem bezprzewodowym na serwerze)",
-                "uk": "Нове: режим сканера - надходження та видача за відсканованими кодами через об'єкти, без застосунку (також з бездротовим сканером на сервері)",
-                "zh-cn": "新增：扫描器模式 - 通过数据点使用扫描的代码入库和出库，无需应用（也支持服务器上的无线扫描器）"
+                "en": "New: configurable actions for repeated scans, best-before workflow (date block, copy date, tab Tasks, products without date), tick-off circles, optional scan button, staggered expiry messages (e.g. 7,4,3,2,1,0), optional quantity on the shopping list, consumables locations, unknown products created by the headless scanner. Fixes: multi-line QR codes, umlauts in location names, certificate no longer written to the debug log, layout fixes for iPad",
+                "de": "Neu: einstellbare Aktionen für mehrfaches Scannen, MHD-Ablauf (Datumsblock, Datum übernehmen, Tab Aufgaben, Produkte ohne Datum), runde Abhak-Kreise, optionaler Scan-Knopf, gestaffelte Ablauf-Meldungen (z. B. 7,4,3,2,1,0), optionale Menge auf der Einkaufsliste, Verbrauchswaren-Lagerorte, unbekannte Produkte per Scanner anlegen. Fixes: mehrzeilige QR-Codes, Umlaute in Lagerortnamen, Zertifikat nicht mehr im Debug-Log, Layout-Korrekturen für das iPad",
+                "ru": "Новое: настраиваемые действия при повторном сканировании, работа со сроком годности (блок даты, копирование даты, вкладка «Задачи», продукты без даты), круглые отметки, необязательная кнопка сканирования, поэтапные уведомления о сроке (напр. 7,4,3,2,1,0), количество в списке покупок, места расходников, создание неизвестных продуктов сканером. Исправления: многострочные QR-коды, умлауты в названиях мест, сертификат больше не пишется в журнал отладки, правки макета для iPad",
+                "pt": "Novo: ações configuráveis para leituras repetidas, fluxo de validade (bloco de data, copiar data, separador Tarefas, produtos sem data), círculos de seleção, botão de leitura opcional, avisos de validade escalonados (p. ex. 7,4,3,2,1,0), quantidade na lista de compras, locais de consumíveis, criação de produtos desconhecidos pelo leitor. Correções: códigos QR de várias linhas, tremas em nomes de locais, certificado já não vai para o registo de depuração, ajustes de layout no iPad",
+                "nl": "Nieuw: instelbare acties bij herhaald scannen, THT-werkwijze (datumblok, datum overnemen, tabblad Taken, producten zonder datum), ronde aanvinkcirkels, optionele scanknop, gespreide THT-meldingen (bijv. 7,4,3,2,1,0), hoeveelheid op de boodschappenlijst, locaties voor verbruiksartikelen, onbekende producten aanmaken met de scanner. Fixes: meerregelige QR-codes, umlauten in locatienamen, certificaat niet meer in het debuglogboek, lay-outverbeteringen voor iPad",
+                "fr": "Nouveau : actions configurables pour les scans répétés, gestion de la DLC (bloc de date, copier la date, onglet Tâches, produits sans date), cercles de sélection, bouton de scan optionnel, messages de DLC échelonnés (p. ex. 7,4,3,2,1,0), quantité dans la liste de courses, lieux de consommables, création de produits inconnus par le scanner. Corrections : codes QR multilignes, trémas dans les noms de lieux, certificat plus écrit dans le journal de débogage, ajustements de mise en page pour iPad",
+                "it": "Novità: azioni configurabili per scansioni ripetute, gestione della scadenza (blocco data, copia data, scheda Attività, prodotti senza data), cerchi di selezione, pulsante di scansione opzionale, avvisi di scadenza graduati (es. 7,4,3,2,1,0), quantità nella lista della spesa, luoghi di materiali di consumo, creazione di prodotti sconosciuti con lo scanner. Correzioni: codici QR su più righe, dieresi nei nomi dei luoghi, certificato non più nel log di debug, correzioni di layout per iPad",
+                "es": "Novedades: acciones configurables para escaneos repetidos, gestión de la caducidad (bloque de fecha, copiar fecha, pestaña Tareas, productos sin fecha), círculos de selección, botón de escaneo opcional, avisos de caducidad escalonados (p. ej. 7,4,3,2,1,0), cantidad en la lista de la compra, ubicaciones de consumibles, creación de productos desconocidos con el escáner. Correcciones: códigos QR de varias líneas, diéresis en nombres de ubicaciones, el certificado ya no se escribe en el registro de depuración, ajustes de diseño para iPad",
+                "pl": "Nowości: konfigurowalne akcje przy wielokrotnym skanowaniu, obsługa terminów (blok daty, kopiowanie daty, karta Zadania, produkty bez daty), okrągłe pola wyboru, opcjonalny przycisk skanowania, rozłożone w czasie powiadomienia o terminie (np. 7,4,3,2,1,0), ilość na liście zakupów, miejsca na artykuły zużywalne, tworzenie nieznanych produktów skanerem. Poprawki: wielowierszowe kody QR, umlauty w nazwach miejsc, certyfikat nie trafia już do dziennika debugowania, poprawki układu na iPadzie",
+                "uk": "Нове: налаштовувані дії при повторному скануванні, робота зі строком придатності (блок дати, копіювання дати, вкладка «Завдання», продукти без дати), круглі позначки, необов’язкова кнопка сканування, поетапні сповіщення про термін (напр. 7,4,3,2,1,0), кількість у списку покупок, місця витратних матеріалів, створення невідомих продуктів сканером. Виправлення: багаторядкові QR-коди, умляути в назвах місць, сертифікат більше не потрапляє в журнал налагодження, виправлення макета для iPad",
+                "zh-cn": "新增：可配置的重复扫描操作、保质期流程（日期块、复制日期、任务标签页、无日期产品）、圆形勾选框、可选扫描按钮、分阶段到期提醒（如 7,4,3,2,1,0）、购物清单数量、耗材存放位置、扫描器创建未知产品。修复：多行二维码、位置名称中的变音符号、证书不再写入调试日志、iPad 布局修正"
             },
             "0.1.13": {
                 "en": "New: area filter in the overview. Fixes: flickering product list, camera stayed on, stocktaking rows on small screens",
@@ -218,6 +205,7 @@
         "notifyArea": "ShelfMate",
         "notifyLow": false,
         "notifyExpiry": false,
+        "notifyDays": "",
         "notifyTime": "08:00",
         "notifyExpiryLine": "",
         "notifyExpiredTitle": "",
@@ -231,7 +219,25 @@
         "scannerDevice": "",
         "scannerLayout": "us",
         "scannerPrefix": "",
-        "scannerSuffix": ""
+        "scannerSuffix": "",
+        "scanWindow": 3,
+        "scanRules": [
+            {
+                "count": 3,
+                "action": "stockLast",
+                "value": ""
+            },
+            {
+                "count": 4,
+                "action": "empty",
+                "value": ""
+            },
+            {
+                "count": 5,
+                "action": "shopAdd",
+                "value": ""
+            }
+        ]
     },
     "objects": [],
     "instanceObjects": [

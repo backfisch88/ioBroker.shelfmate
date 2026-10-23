@@ -10,7 +10,15 @@ const { Inventory, clean } = require('./lib/core');
 const { Shopping } = require('./lib/shopping');
 const { parseItems, checkItems } = require('./lib/pantryCheck');
 const { texts } = require('./lib/i18n');
-const { NOTIFY_ADAPTERS, TEXT: NOTIFY_TEXT, lowText, expiryText, msUntil, deliver } = require('./lib/notify');
+const {
+    NOTIFY_ADAPTERS,
+    TEXT: NOTIFY_TEXT,
+    lowText,
+    expiryText,
+    msUntil,
+    deliver,
+    parseNotifyDays,
+} = require('./lib/notify');
 const { ShelfMateServer } = require('./lib/server');
 const { ScanEngine } = require('./lib/scanner');
 const { lookupBarcode } = require('./lib/offLookup');
@@ -128,8 +136,11 @@ class Shelfmate extends utils.Adapter {
             await this.setState('scanner.active', false, true);
         }
         const wait = Number(this.config.scannerTimeout);
+        const win = Number(this.config.scanWindow);
         this.scanEngine = new ScanEngine(this.inv, {
             timeoutMs: (Number.isFinite(wait) && wait >= 3 && wait <= 120 ? wait : 10) * 1000,
+            windowMs: (Number.isFinite(win) && win >= 1 && win <= 30 ? win : 3) * 1000,
+            rules: this.config.scanRules,
             lang: this.lang,
             run: cmd => this.scanBook(cmd),
         });
@@ -155,8 +166,31 @@ class Shelfmate extends utils.Adapter {
         }
         this.web.start((fn, ms) => this.setInterval(fn, ms));
 
+        // the web server library logs the complete certificate collection including the private key on debug: hide that
+        const realLog = this.log;
+        const safeLog = new Proxy(realLog, {
+            get: (t, k) =>
+                typeof t[k] === 'function'
+                    ? (msg, ...a) =>
+                          t[k](
+                              typeof msg === 'string' && msg.startsWith('Loaded custom certificates')
+                                  ? 'Loaded custom certificates (content hidden)'
+                                  : msg,
+                              ...a,
+                          )
+                    : t[k],
+        });
+        const adapterView = new Proxy(this, {
+            get: (t, k) => {
+                if (k === 'log') {
+                    return safeLog;
+                }
+                const v = t[k];
+                return typeof v === 'function' ? v.bind(t) : v;
+            },
+        });
         const webserver = new WebServer({
-            adapter: this,
+            adapter: adapterView,
             app: this.web.handler,
             secure: !!this.config.secure,
             http2: false,
@@ -207,6 +241,13 @@ class Shelfmate extends utils.Adapter {
                 false,
             ],
             ['shopping.addItem', 'Add an item to the shopping list', 'string', 'text', true],
+            [
+                'shopping.lastItem',
+                'Script mode: last item put on the list as JSON (name, quantity, unit, text)',
+                'string',
+                'json',
+                false,
+            ],
             ['check.request', 'Ingredients to check against the stock (one per line, or JSON)', 'string', 'text', true],
             ['check.result', 'Result of the last check per ingredient (JSON)', 'string', 'json', false],
             ['check.available', 'Ingredients that are in stock (one line each, as they came)', 'string', 'text', false],
@@ -227,6 +268,7 @@ class Shelfmate extends utils.Adapter {
             ],
             ['scanner.input', 'Scanned code (write a code here to simulate a scan)', 'string', 'text', true],
             ['scanner.lastCode', 'Last scanned code', 'string', 'text', false],
+            ['scanner.lastAction', 'Last action triggered by a repeated scan (rule)', 'string', 'text', false],
             ['scanner.result', 'Result of the last scan in scanner mode', 'string', 'text', false],
             ['scanner.active', 'Scanner mode: bookings by scanned codes without the app', 'boolean', 'switch', true],
         ];
@@ -640,8 +682,10 @@ class Shelfmate extends utils.Adapter {
         }
         await this.setState('scanner.lastCode', text, true);
         if ((await this.getStateAsync('scanner.active'))?.val !== true) {
+            this.log.debug(`Scanner is off, ignoring code: ${text}`);
             return;
         }
+        this.log.debug(`Scanned code: ${text}`);
         this.scanEngine.inv = this.inv;
         // a barcode nobody knows yet is created first (Open Food Facts), then booked like any other
         const made = this.scanEngine.isNewBarcode(text) ? await this.createScannedProduct(text) : null;
@@ -689,8 +733,24 @@ class Shelfmate extends utils.Adapter {
         if (r.earlier) {
             await this.publishScan(r.earlier);
         }
-        this.log.debug(`Scanner: ${r.text}`);
+        if (r.text) {
+            this.log.info(
+                `Scanner: ${String(r.text)
+                    .replace(/\s*\n\s*/g, ' ')
+                    .trim()}`,
+            );
+        }
         await this.setState('scanner.result', r.text, true);
+        if (r.rule) {
+            await this.setState('scanner.lastAction', r.text, true);
+        }
+        if (r.shop) {
+            if (r.shop.op === 'add') {
+                await this.addToList(r.shop.name);
+            } else {
+                await this.removeFromList(r.shop.names.filter(Boolean));
+            }
+        }
     }
 
     /** Reads the keyboard-like scanner chosen in the settings. */
@@ -708,12 +768,20 @@ class Shelfmate extends utils.Adapter {
             clearTimeout: h => h && this.clearTimeout(h),
             log: this.log,
             onScan: text => {
-                if (!this.closing) {
+                if (this.closing) {
+                    return;
+                }
+                // a QR code with several lines (group + name) arrives as separate scans a split second apart: join them
+                this.lineBuf = this.lineBuf ? `${this.lineBuf}\n${text}` : text;
+                this.clearTimeout(this.lineTimer);
+                this.lineTimer = this.setTimeout(() => {
+                    const joined = this.lineBuf;
+                    this.lineBuf = '';
                     // one scan after the other, a lookup of a new barcode must not overtake the next scan
                     this.scanChain = (this.scanChain || Promise.resolve())
-                        .then(() => this.handleScan(text))
+                        .then(() => this.handleScan(joined))
                         .catch(e => this.log.warn(`Scan failed: ${e.message}`));
-                }
+                }, 300);
             },
         });
         this.reader.start();
@@ -891,7 +959,14 @@ class Shelfmate extends utils.Adapter {
             () => {
                 this.notifyTimer = null;
                 if (expiry) {
-                    const list = this.inv.expiryList(bb.bestBeforeMode, bb.bestBeforeWarnDays);
+                    // with a list of days (e.g. 7,4,3,2,1,0) a message goes out only on exactly these days
+                    const days = parseNotifyDays(this.config.notifyDays);
+                    const list = this.inv
+                        .expiryList(
+                            bb.bestBeforeMode,
+                            days.length ? Math.max(bb.bestBeforeWarnDays, ...days) : bb.bestBeforeWarnDays,
+                        )
+                        .filter(x => !days.length || days.includes(x.days));
                     const wording = k =>
                         String(this.config[k] || '')
                             .trim()
@@ -963,6 +1038,9 @@ class Shelfmate extends utils.Adapter {
             }
             if (this.scanTimer) {
                 this.clearTimeout(this.scanTimer);
+            }
+            if (this.lineTimer) {
+                this.clearTimeout(this.lineTimer);
             }
             this.web?.stop(h => this.clearInterval(h));
             if (this.httpServer) {

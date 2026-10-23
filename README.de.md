@@ -38,6 +38,7 @@ Die Bedienung erfolgt über eine Web-App, die du auf dem Smartphone öffnen und 
 - Mindestbestand für einzelne Produkte oder ganze Produktgruppen festlegen
 - Produkte automatisch auf die Einkaufsliste setzen, sobald der Mindestbestand erreicht ist
 - Einkaufslisten über Datenpunkte, Bring! oder Bring! Spezial verwalten
+- Optional die fehlende Menge mitschreiben (Bring! Spezial und Script-Modus)
 - Bei Bring! Spezial werden Mengen und Zusätze auf demselben Eintrag zusammengeführt, statt doppelte Einträge anzulegen
 - Produkte beim Auffüllen automatisch von der Einkaufsliste entfernen
 - Verbrauch der letzten 30 Tage auswerten
@@ -68,7 +69,10 @@ Fehlende Zutaten lassen sich direkt auf die Einkaufsliste setzen. Was bereits vo
 - EAN- und QR-Etiketten in eigenen Größen drucken, zum Beispiel 50 × 30 mm
 - Etiketten für Regale, Boxen, Gefrierfach und geöffnete Produkte
 - Einstellen, welche Etiketten in der App angeboten werden
-- Scanner-Modus für das Ein- und Auslagern ohne geöffnete Web-App
+- Scanner-Modus für das Ein- und Auslagern ohne geöffnete Web-App, auch mit Scannern mit Speicher
+- MHD für mehrere Produkte auf einmal: im Einräum-Modus per Scan-Code, über `SM:COPY` kopieren oder in der Liste „Ohne MHD“ für markierte Lagerorte
+- Mehrfach scannen löst frei wählbare Aktionen aus (am letzten Lagerort einlagern, als leer markieren, auf die Einkaufsliste setzen und mehr)
+- Unbekannte Barcodes werden im Scanner-Modus automatisch angelegt (Daten von Open Food Facts) und bei fehlenden Daten zum Ergänzen vorgemerkt
 - Inventur per Produktliste oder Scanner durchführen
 
 ### Übersicht und Benachrichtigungen
@@ -76,9 +80,11 @@ Fehlende Zutaten lassen sich direkt auf die Einkaufsliste setzen. Was bereits vo
 - Gesamten Bestand nach Lagerort anzeigen
 - Warnungen bei Mindestbestand und ablaufenden Produkten
 - Benachrichtigungen über Telegram, telegrammenu2, Pushover, Signal, WhatsApp, Matrix oder E-Mail
-- Tägliche Übersicht über bald ablaufende und abgelaufene Produkte
+- Tägliche Übersicht über bald ablaufende und abgelaufene Produkte, auf Wunsch nur an bestimmten Tagen vor dem Datum (zum Beispiel 7,4,3,2,1,0)
+- Der Reiter „Aufgaben“ sammelt alles Offene: neue Produkte ergänzen, fällige Inventur, Vorschläge für Gruppen und Mindestbestand sowie Produkte ohne Datum (Datum leer lassen = die angekreuzten Packungen bleiben ohne MHD)
 - Inventur-Erinnerungen
 - Vorschläge für Produktgruppen und Mindestbestände
+- Bestand ausgewählter Lagerorte (zum Beispiel Kühlschrank) als Verbrauchswaren-Liste in Datenpunkten, mit geöffneten Produkten und bald ablaufendem MHD
 - Datenpunkte für die Einbindung in VIS oder eigene Skripte
 - JSON-Backups sowie Export als CSV oder PDF
 
@@ -163,7 +169,7 @@ ShelfMate kann außerdem Standard-Haltbarkeiten automatisch eintragen. Selbst ei
 ShelfMate unterstützt vier Modi:
 
 - **Aus:** Keine automatische Einkaufsliste.
-- **Script:** Übergabe über ioBroker-Datenpunkte.
+- **Script:** Übergabe über ioBroker-Datenpunkte. Mit der Option für die fehlende Menge erhält das Script `Name, Menge` (zum Beispiel `Milch, 2`); der Listen-Datenpunkt darf mehr Felder als `name` enthalten, sie werden ignoriert. Der zuletzt hinzugefügte Artikel steht außerdem als JSON in `shopping.lastItem`.
 - **Bring!:** Produkte werden zur Bring!-Einkaufsliste hinzugefügt.
 - **Bring! Spezial:** Vorhandene Einträge werden nicht übersprungen. Mengen werden hochgezählt, Zusätze ergänzt (zum Beispiel `Feta, Kräuter, 200g`).
 
@@ -184,7 +190,7 @@ Meldungen können über folgende Adapter gesendet werden:
 
 Du kannst auswählen, ob ShelfMate bei niedrigem Bestand, bei ablaufenden Produkten oder bei einer fälligen Inventur benachrichtigen soll.
 
-Für die tägliche Ablaufmeldung lässt sich eine feste Uhrzeit einstellen.
+Für die tägliche Ablaufmeldung lässt sich eine feste Uhrzeit einstellen und dazu die Tage vor dem Datum, an denen gemeldet wird (zum Beispiel `7,4,3,2,1,0`; `0` = am Tag selbst, leer = täglich innerhalb der Warnfrist).
 
 ---
 
@@ -213,6 +219,7 @@ ShelfMate stellt wichtige Informationen und Funktionen als ioBroker-Datenpunkte 
 | Datenpunkt | Beschreibung |
 | --- | --- |
 | `shopping.addItem` | Produkt zur Einkaufsliste hinzufügen (`ack=false`) |
+| `shopping.lastItem` | Script-Modus: zuletzt hinzugefügter Artikel als JSON (Name, Menge, Einheit, Text) |
 | `check.request` | Zutatenliste zur Prüfung übergeben (`ack=false`) |
 | `check.result` | Ergebnis der letzten Zutaten-Prüfung als JSON |
 | `check.available` | Vorhandene Zutaten |
@@ -227,6 +234,7 @@ ShelfMate stellt wichtige Informationen und Funktionen als ioBroker-Datenpunkte 
 | `scanner.active` | Scanner-Modus ein- oder ausschalten |
 | `scanner.input` | Barcode oder QR-Code übergeben (`ack=false`) |
 | `scanner.lastCode` | Zuletzt gescannter Code |
+| `scanner.lastAction` | Letzte Aktion eines mehrfachen Scans (Regel) als Text |
 | `scanner.result` | Ergebnis des letzten Scans |
 
 Beispiel für `scanner.result`:

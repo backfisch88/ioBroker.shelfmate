@@ -52,6 +52,7 @@ You use it through a web app that you open on your phone and add to the home scr
 
 - Store the best-before date (MHD) optionally per product or per stocking
 - Warn about products that expire soon or have expired
+- Tab "Tasks" collects everything to do: new products to complete, due stocktaking, group and minimum stock suggestions, and products without a date (leave the date empty to keep chosen packages without one)
 - Suggest a standard shelf life for many foods automatically
 - Take the shelf life after opening into account
 - Mark products as opened or spoiled
@@ -72,6 +73,7 @@ Missing ingredients can be put on the shopping list directly. What is already in
 - Labels for shelves, boxes, the freezer and opened products
 - Choose which labels the app offers
 - Scanner mode for stocking in and out without the web app open
+- Repeated scans (three or more) trigger actions you choose: stock in at the last location, mark as empty, put on the shopping list and more
 - Do a stocktaking by product list or by scanner
 
 ### Overview and notifications
@@ -79,7 +81,7 @@ Missing ingredients can be put on the shopping list directly. What is already in
 - Show the whole stock by storage location
 - Warnings for minimum stock and expiring products
 - Notifications through Telegram, telegrammenu2, Pushover, Signal, WhatsApp, Matrix or e-mail
-- Daily summary of products that expire soon or have expired
+- Daily summary of products that expire soon or have expired, optionally only on chosen days before the date (for example 7,4,3,2,1,0)
 - Stocktaking reminders
 - Suggestions for product groups and minimum stock
 - Data points for VIS or your own scripts
@@ -166,7 +168,7 @@ ShelfMate can also fill in standard shelf lives automatically. Values you enter 
 ShelfMate supports four modes:
 
 - **Off:** No automatic shopping list.
-- **Script:** Handed over through ioBroker data points.
+- **Script:** Handed over through ioBroker data points. With the option to write the missing amount, the script receives `Name, amount` (for example `Milk, 2`); the list state may contain more fields than `name`, they are ignored. The item added last is also available as JSON in `shopping.lastItem`.
 - **Bring!:** Products are added to the Bring! shopping list.
 - **Bring! special:** Existing entries are not skipped. Quantities are counted up and variants are added (for example `Feta, Kräuter, 200g`).
 
@@ -186,7 +188,7 @@ Messages can be sent through these adapters:
 - E-mail
 
 You choose whether ShelfMate notifies you about low stock, expiring products or a stocktaking that is due.
-For the daily expiry message you can set a fixed time.
+For the daily expiry message you can set a fixed time and the days before the date on which it is sent (for example `7,4,3,2,1,0`; `0` = on the day, empty = every day within the warning period).
 
 ---
 
@@ -215,6 +217,7 @@ ShelfMate provides important information and functions as ioBroker data points.
 | Data point | Description |
 | --- | --- |
 | `shopping.addItem` | Add a product to the shopping list (`ack=false`) |
+| `shopping.lastItem` | Script mode: item added last as JSON (name, quantity, unit, text) |
 | `check.request` | Hand over a list of ingredients to check (`ack=false`) |
 | `check.result` | Result of the last ingredient check as JSON |
 | `check.available` | Ingredients in stock |
@@ -229,6 +232,7 @@ ShelfMate provides important information and functions as ioBroker data points.
 | `scanner.active` | Turn scanner mode on or off |
 | `scanner.input` | Hand over a barcode or QR code (`ack=false`) |
 | `scanner.lastCode` | Last scanned code |
+| `scanner.lastAction` | Last action of a repeated scan (rule), as text |
 | `scanner.result` | Result of the last scan |
 
 Example for `scanner.result`:
@@ -272,8 +276,16 @@ Ideas, wishes or bugs are welcome as a [GitHub issue](https://github.com/backfis
 
 ## Changelog
 ### 0.2.0 (2026-10-23)
+- New: expiry messages can be staggered with a list of days before the date (for example `7,4,3,2,1,0`); empty keeps one message per day within the warning period
+- New: tab "Tasks" replaces "Scan" in the bottom navigation with a dot when something is to do; the scan button above the navigation can be switched off per device
+- New: settings to show products with a soon best-before date and opened products first, per device
+- New: leave the date empty in "Ohne MHD" to keep the ticked packages without a date; round tick circles everywhere; numeric keypad and a "+" shortcut for the date fields
+- Fixed: multi-line QR codes of locations are joined into one scan; umlauts in location names match; the private key of the certificate is no longer written to the debug log; layout fixes (filter chips scroll sideways, history undo tile on iPad landscape, sticky search bar)
 - New: optional quantity on the shopping list ("Flour, 2"): the missing amount (minimum stock minus stock) is written when the minimum is reached, and only the difference when the stock keeps falling (Bring! special and script mode)
 - New: mark a storage location as consumables (for example the fridge); its stock appears in the data points `stats.consumables` (JSON, with opened amount and nearest best-before date) and `stats.consumablesText` (one line per product)
+- New: script mode also writes the last item as JSON to the data point `shopping.lastItem` (name, quantity, unit, text)
+- New: best-before date block while stocking (`SM:DATE:7` in stocking mode), `SM:COPY` copies a date, locations can be marked "record best-before date" and the filter "Ohne MHD" sets one date for several products
+- New: repeated scans (3 times and more) trigger configurable actions (stock in at the last location, several at once, mark as empty, toggle opened/closed, shopping list), with a time window and the data point `scanner.lastAction`
 - New: headless scanner creates unknown products (Open Food Facts lookup, tags, shown under "edit new products" when incomplete)
 - New: wording of the expiry message can be changed (title, line with placeholders for brand, days and amount)
 - New: the short scanner code of a location can be switched back to the normal QR code

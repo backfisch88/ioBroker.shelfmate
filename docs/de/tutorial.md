@@ -53,7 +53,13 @@ Ein erneuter Tipp auf einen aktiven Status oder Tag hebt den jeweiligen Filter w
 
 Produktgruppen werden zusammengefasst dargestellt. Über das kleine Dreieck kannst du die enthaltenen Produkte aufklappen.
 
+Die Liste ist sortiert: Zuerst kommen Produkte, die bald ablaufen oder abgelaufen sind, danach geöffnete Produkte, danach alle anderen (nachzukaufende zuerst). Leere Produkte stehen ganz unten.
+
 Beim Zurückkehren von einer Produktseite landest du wieder an deiner vorherigen Position in der Übersicht.
+
+<p align="center"><img src="../images/filterOpen.jpg" width="250"><br><sub>Die Status-Filter und Tags über der Liste. Der rote Rahmen zeigt den aktiven Filter „Geöffnet“.</sub></p>
+
+Der Scan-Knopf liegt auf jedem Reiter über der Leiste und klappt beim Scrollen zusammen. Wer ihn nicht braucht, schaltet ihn unter Einstellungen → Bedienung → Scan-Knopf aus. Die Einstellung gilt nur für dieses Gerät.
 
 ### Produktseite
 
@@ -75,6 +81,8 @@ Darunter stehen die verfügbaren Aktionen in fester Reihenfolge:
 
 ---
 
+<p align="center"><img src="../images/productButtons.jpg" width="250"><br><sub>Die Produktseite mit Bestand, Lagerorten und Knöpfen. Das Funkel-Symbol (rot) zeigt eine automatisch eingetragene Haltbarkeit.</sub></p>
+
 ## Produkte bearbeiten
 
 Über Bearbeiten öffnest du die Produkteinstellungen.
@@ -92,6 +100,8 @@ Das Formular ist in fünf aufklappbare Bereiche unterteilt. Geschlossene Bereich
 | Mehr | Barcode, eigene EAN, Nutri-Score, Bild-Link und Open Food Facts |
 
 Die Grunddaten sind standardmäßig geöffnet, bei neuen Produkten zusätzlich der Bereich „Bestand“.
+
+<p align="center"><img src="../images/editProduct.jpg" width="250"><br><sub>Der Editor hat zuklappbare Bereiche, zum Beispiel Grunddaten und Bestand.</sub></p>
 
 ### Produktgruppen
 
@@ -202,7 +212,7 @@ Bei Produkten aus Open Food Facts ist der Barcode im Editor gesperrt.
 
 So funktioniert eine normale Buchung:
 
-1. Scannen auswählen und den Barcode mit der Kamera erfassen oder manuell eingeben.
+1. Unten rechts in der Übersicht auf Scannen tippen und den Barcode mit der Kamera erfassen oder manuell eingeben.
 2. Bei bekannten Produkten öffnet sich die Produktseite.
 3. Unbekannte Barcodes werden über Open Food Facts gesucht. Die gefundenen Angaben können geprüft und gespeichert werden.
 4. Einlagern, Entnehmen oder Verschieben auswählen.
@@ -224,6 +234,19 @@ Beispiel:
 - Lagerort: Regal 1
 
 Unter Lagerorte kannst du beides anlegen und bearbeiten.
+
+<p align="center"><img src="../images/locationEdit.jpg" width="250"><br><sub>Ein Lagerort mit seinem QR-Code-Text. Die Checkbox „Verbrauchswaren“ listet den Bestand dieses Lagerorts in einem Datenpunkt auf.</sub></p>
+
+### Verbrauchswaren
+
+Beim Bearbeiten eines Lagerorts, zum Beispiel des Kühlschranks, „Verbrauchswaren“ ankreuzen. Der Bestand aller angekreuzten Lagerorte steht dann in zwei Datenpunkten:
+
+| Datenpunkt | Beschreibung |
+| --- | --- |
+| `stats.consumables` | JSON-Liste mit Name, Marke, Menge, Einheit, Lagerorten, geöffneter Menge, nächstem MHD, Resttagen und `expiring` |
+| `stats.consumablesText` | Eine Zeile pro Produkt, zum Beispiel `2 Stück Joghurt (1 geöffnet, MHD 2026-10-25)` |
+
+Der Text zeigt geöffnete Menge und MHD nur, wenn etwas geöffnet ist oder bald abläuft. Das ist praktisch, um Rezepte zu planen oder für eigene Skripte.
 
 ### QR-Codes für Lagerorte
 
@@ -280,6 +303,14 @@ In der Übersicht zeigt ein Haken an, welche Produkte bereits auf der Einkaufsli
 
 Die Verbindung zur Einkaufsliste wird in den Adapter-Einstellungen eingerichtet.
 
+### Fehlende Menge schreiben
+
+Mit der Option „Fehlende Menge auf die Liste schreiben“ (Bring! Spezial und Skript-Modus) schreibt ShelfMate auch, wie viele fehlen. Beispiel: Mindestbestand 5 bei Mehl.
+
+- Der Bestand fällt auf 5: Die Liste bekommt `Mehl, 1`.
+- Der Bestand fällt weiter auf 3: Es wird nur die Differenz ergänzt. Bei Bring! Spezial wird daraus `Mehl, 3`. Im Skript-Modus bekommt dein Skript `Mehl, 2` und addiert die Menge selbst.
+- Der Bestand fällt von 8 direkt auf 3: Die Liste bekommt `Mehl, 2`.
+
 ---
 
 ## Mindesthaltbarkeit
@@ -325,6 +356,8 @@ Verdorbene Produkte zählen nicht zum normalen Verbrauch. In der Historie werden
 Im Scanner-Modus steht dafür der Steuer-Code `SM:UNDO` zur Verfügung.
 
 Dort gilt die Funktion nicht für Verschiebungen und Inventuren.
+
+<p align="center"><img src="../images/history.jpg" width="250"><br><sub>Der Verlauf mit dem Knopf, der die letzte Buchung rückgängig macht.</sub></p>
 
 ### MHD nachträglich ändern
 
@@ -400,6 +433,18 @@ Optional kannst du zusätzlich einen Datenpunkt mit der aktuellen Einkaufsliste 
 ```
 
 Damit erkennt ShelfMate bereits vorhandene Produkte und vermeidet doppelte Einträge.
+
+Die Objekte dürfen weitere Felder enthalten, zum Beispiel eine Menge oder eine Beschreibung. ShelfMate liest nur den `name` und ignoriert den Rest.
+
+Ist „Fehlende Menge schreiben“ aktiv, schreibt ShelfMate statt des reinen Namens den Text `Name, Menge` in den Datenpunkt, zum Beispiel `Milch, 2`. Dein Script trennt den Text am Komma und rechnet die Mengen selbst zusammen, denn ShelfMate prüft in diesem Fall nicht auf doppelte Einträge.
+
+Alternativ liest dein Script den Datenpunkt `shopping.lastItem`. Darin steht der zuletzt hinzugefügte Artikel als JSON, ohne dass du Text trennen musst:
+
+```json
+{ "name": "Mehl", "quantity": 500, "unit": "g", "text": "500 g" }
+```
+
+`quantity` ist eine Zahl oder `null`, `unit` ist leer, wenn keine Einheit dabei war. Der Datenpunkt wird nur im Script-Modus gefüllt.
 
 Für das Entfernen von Artikeln lässt sich ein weiterer Datenpunkt festlegen. Auch dort wird der Artikelname mit `ack=false` geschrieben.
 
@@ -584,7 +629,7 @@ Unbekanntes Produkt 1234567890123
 
 Das Produkt wird trotzdem mitgezählt.
 
-Über die Glühbirne erscheint anschließend der Hinweis Neue Produkte bearbeiten, bis der Eintrag ergänzt und gespeichert wurde.
+In den Einstellungen erscheint anschließend der Hinweis Neue Produkte bearbeiten, bis der Eintrag ergänzt und gespeichert wurde.
 
 ---
 
@@ -625,6 +670,8 @@ Eine regelmäßige Inventur-Erinnerung lässt sich in den Adapter-Einstellungen 
 
 ---
 
+<p align="center"><img src="../images/inventory.jpg" width="250"><br><sub>Inventur: Lagerort wählen und die Produkte in einer Liste oder per Scan prüfen.</sub></p>
+
 ## Scanner-Modus ohne App
 
 ShelfMate unterstützt das Ein- und Auslagern über einen externen Barcode-Scanner, ohne dass die Web-App geöffnet sein muss.
@@ -648,6 +695,37 @@ Wird beim Entnehmen kein Lagerort angegeben, wählt ShelfMate den Bestand mit de
 
 Ist kein MHD vorhanden, wird der Lagerort mit der größten Menge verwendet.
 
+### Mehrfach scannen
+
+Ein Scan wartet auf einen Lagerort, zwei Scans entnehmen. Ab drei Scans desselben Produkts hintereinander führt ShelfMate eine Aktion aus, die du selbst festlegst.
+
+Die Aktionen stellst du in den Adapter-Einstellungen unter „Aktionen bei mehrfachem Scannen“ ein. Pro Anzahl gibt es eine Zeile, jede Anzahl von 3 bis 20 kann einmal vergeben werden.
+
+| Aktion | Wirkung |
+| --- | --- |
+| Am letzten bekannten Lagerort einlagern | Ein Stück kommt dorthin zurück, wo das Produkt zuletzt eingelagert wurde. Ein anschließend gescannter Lagerort gilt stattdessen. |
+| Mehrere am letzten Lagerort einlagern | Wie oben, aber mit der Menge aus dem Feld „Wert“. Ist es leer, zählt die Anzahl der Scans. |
+| Als leer markieren | Der gesamte Bestand wird auf 0 gesetzt. Bei Mindestbestand landet das Produkt auf der Einkaufsliste. |
+| Geöffnet / geschlossen umschalten | Markiert eine Packung als geöffnet, wie `SM:OPEN`, nur ohne Steuer-Code. Gibt es schon eine geöffnete Packung, schließt derselbe Scan sie wieder. |
+| Auf die Einkaufsliste setzen | Das Produkt wird vorgemerkt. Das Feld „Wert“ kann eine Menge enthalten. |
+| Von der Einkaufsliste entfernen | Das Produkt wird von der Liste genommen. |
+
+Voreingestellt sind dreimal scannen = am letzten Lagerort einlagern, viermal = als leer markieren und fünfmal = auf die Einkaufsliste setzen. Ein- und zweimaliges Scannen bleibt unverändert.
+
+Ab dem dritten Scan muss jeder Scan innerhalb der Zeit zwischen wiederholten Scans folgen (Standard 3 Sekunden). Wird es länger, beginnt das Zählen von vorn und die bisherigen Scans werden als Entnahme gebucht.
+
+Jede ausgelöste Aktion steht im Log und im Datenpunkt `scanner.lastAction` mit der Anzahl der Scans, zum Beispiel `3x: Nudeln ×1 eingelagert in Vorratsregal`. Darüber kannst du eine Sprachausgabe oder eine Benachrichtigung auslösen. Die Buchungen erscheinen außerdem im Verlauf.
+
+### Unbekannte Produkte im Scanner-Modus
+
+Ist ein gescannter Barcode noch nicht bekannt, legt ShelfMate das Produkt selbst an, bevor es gebucht wird. Die Daten (Name, Marke, Kategorie und Tags) kommen von Open Food Facts, auch aus den Datenbanken für Kosmetik und Tiernahrung. Danach wird der Scan wie gewohnt gebucht.
+
+Wird nichts gefunden, legt ShelfMate das Produkt als unvollständig mit einem Namen wie `Neues Produkt 1234567890123` an und bucht es trotzdem. Das Scanner-Ergebnis weist darauf hin. Unter Aufgaben → Neue Produkte bearbeiten kannst du diese Einträge später ergänzen.
+
+### Scanner mit Speicher
+
+Manche Scanner merken sich Scans außerhalb der Reichweite und senden sie später alle auf einmal. ShelfMate trennt einen solchen Schwung in einzelne Scans und verarbeitet sie in der gescannten Reihenfolge. Auch eine Abfolge wie Lagerort → Produkte → Lagerort (Einräum-Modus) funktioniert. Dauert die Abfrage vieler unbekannter Produkte länger als die Wartezeit zwischen zwei Scans, die Wartezeit erhöhen.
+
 ### Einräum-Modus
 
 Scanne zuerst den Lagerort-Code.
@@ -660,6 +738,26 @@ Ein anderer Lagerort-Code wechselt direkt den Lagerort.
 
 Nach fünf Minuten ohne Scan endet der Modus automatisch.
 
+### MHD beim Einräumen
+
+Mehrere Produkte mit demselben Datum musst du nicht einzeln eintragen.
+
+1. Lagerort-Code scannen, das startet den Einräum-Modus.
+2. `SM:DATE:7` scannen, das bedeutet „heute plus 7 Tage“.
+3. Alle Produkte scannen. Jedes wird eingelagert und bekommt das Datum gleich dazu. Für mehrere gleiche Packungen vorher `SM:QTY:3` scannen.
+4. Für ein anderes Datum den nächsten `SM:DATE:…`-Code scannen. `SM:DATE:0` schaltet das Datum aus.
+5. Zum Schluss den Lagerort erneut scannen.
+
+Ist das Datum eines anderen Produkts richtig, scanne `SM:COPY` und dann dieses Produkt. Die folgenden Produkte im Einräum-Modus bekommen sein Datum. Außerhalb des Einräum-Modus bekommt das nächste gescannte Produkt das Datum auf seinen vorhandenen Bestand.
+
+Ohne Einräum-Modus gilt weiterhin: `SM:DATE:7`, dann das Produkt, setzt das Datum für den Bestand, der schon im Lager liegt.
+
+### Ohne MHD: mehrere Produkte auf einmal
+
+Hake bei einem Lagerort „MHD beim Einlagern erfassen“ an, zum Beispiel beim Kühlschrank. Dann erscheinen die Produkte dieses Lagerorts, die noch kein Datum haben, im Reiter Aufgaben und als Filter „Ohne MHD“ in der Übersicht. Ein von ShelfMate geschätztes Datum (Funken-Symbol) zählt dabei als fehlend, bis du es bestätigst.
+
+Gib ein Datum ein (zum Beispiel `0511` oder `+7d`), hake die Produkte an, für die es gilt, und tippe auf „Datum setzen“. Produkte in anderen Lagerorten, zum Beispiel Nudeln im Vorratsregal, erscheinen dort nicht.
+
 ### Steuer-Codes
 
 Für weitere Aktionen gibt es spezielle Codes:
@@ -671,10 +769,13 @@ Für weitere Aktionen gibt es spezielle Codes:
 | `SM:OPEN` | Nächstes Produkt als geöffnet markieren |
 | `SM:DATE:<Tage>` | MHD für den ungeöffneten Bestand setzen |
 | `SM:DATE:0` | MHD entfernen |
+| `SM:COPY` | MHD eines Produkts übernehmen |
 | `SM:QTY:5` | Nächste Buchung mit Menge 5 durchführen |
 | `SM:CANCEL` | Wartenden Scan abbrechen |
 
 Die Steuer-Codes lassen sich über die Einstellungen als PDF drucken.
+
+<p align="center"><img src="../images/controlCodes.jpg" width="250"><br><sub>In den Einstellungen liegen die Steuer-Codes für den Scanner als PDF.</sub></p>
 
 ### Zeit zwischen zwei Scans
 
@@ -684,15 +785,17 @@ Möglich sind 3 bis 120 Sekunden.
 
 Standard: 10 Sekunden.
 
+Für mehrfaches Scannen (ab dem dritten Scan) gibt es eine eigene kurze Zeit zwischen wiederholten Scans, Standard 3 Sekunden.
+
 ### Externen Funk-Scanner anschließen
 
 Vorgesehen ist beispielsweise der Tera HW0009 mit 2,4-GHz-Dongle.
 
-1. Den USB-Dongle am ioBroker-Rechner anschließen.
-2. Den Scanner auf 2,4-GHz-Modus einstellen.
-3. Scanner anhand der Herstelleranleitung mit dem Dongle koppeln.
-4. Tastaturlayout auf US und Code-Ende auf Enter einstellen.
-5. Unter den ShelfMate-Adapter-Einstellungen das Scanner-Gerät auswählen.
+1. Den Scanner in den Kopplungsmodus bringen und über 2,4 GHz mit dem Dongle koppeln, wie in der Anleitung des Herstellers beschrieben.
+2. Den USB-Dongle am ioBroker-Rechner anschließen. Läuft ioBroker in einer virtuellen Maschine, das USB-Gerät an die VM durchreichen. Wie das geht, hängt von der Virtualisierungssoftware ab.
+3. Tastaturlayout des Scanners auf US oder Deutsch und Code-Ende auf Enter einstellen. In den ShelfMate-Adapter-Einstellungen dasselbe Layout wählen (Tastaturlayout des Scanners). Scanner und Einstellung müssen übereinstimmen.
+4. ioBroker das Recht geben, das Eingabegerät zu lesen (siehe unten), und ioBroker neu starten. Das Recht gilt erst nach dem Neustart.
+5. In den ShelfMate-Adapter-Einstellungen das Scanner-Gerät auswählen.
 6. Den Scanner-Modus über `scanner.active` aktivieren.
 
 Der Scanner wird als USB-Tastatur erkannt. Ein zusätzlicher Treiber ist normalerweise nicht nötig.
@@ -703,7 +806,7 @@ Damit ioBroker auf das Eingabegerät zugreifen kann, muss der Benutzer die passe
 sudo adduser iobroker input
 ```
 
-Anschließend die Instanz neu starten.
+Danach startest du ioBroker selbst neu, nicht nur die Instanz. Das neue Recht gilt erst danach.
 
 Soll der Scanner Umlaute und ß lesen (zum Beispiel in Lagerortnamen), stellst du am Scanner das deutsche Tastaturlayout ein (beim Tera HW0009 der Code „Deutschland") und in den ShelfMate-Einstellungen „Tastaturlayout des Scanners" auf Deutsch. Beides muss übereinstimmen.
 
@@ -759,9 +862,13 @@ Eine Inventur findet weiterhin über die Web-App statt, da dafür eine Anzeige b
 
 ## Vorschläge
 
-Über die Glühbirne in der Kopfzeile findest du verschiedene Hinweise von ShelfMate.
+Hat ShelfMate etwas für dich, zeigt der Reiter Aufgaben in der unteren Leiste einen Punkt. Dort stehen alle Vorschläge und offenen Aufgaben an einer Stelle. Der Scan-Knopf liegt in der Übersicht.
 
 Dazu gehören:
+
+### MHD erfassen
+
+In Lagerorten mit „MHD beim Einlagern erfassen“ stehen hier alle Produkte ohne Datum. Datum eingeben, Packungen ankreuzen und setzen. Jede Packung steht einzeln in der Liste, zwei Parmesan erscheinen also zweimal. So kannst du ihnen verschiedene Daten geben. Der Scan-Knopf ist auf allen Reitern über der Leiste.
 
 ### Produktgruppen
 
@@ -776,6 +883,10 @@ Anhand des Verbrauchs der letzten 30 Tage kann ShelfMate einen passenden Mindest
 Die Funktion berücksichtigt regelmäßig verbrauchte Produkte.
 
 Mit ✓ übernimmst du den Vorschlag, mit × verwirfst du ihn.
+
+### Neue Produkte
+
+Produkte, die der Scanner ohne Daten angelegt hat (siehe Unbekannte Produkte im Scanner-Modus), warten hier auf ihre Ergänzung.
 
 ### Inventur
 
@@ -813,7 +924,7 @@ Meldung, sobald ein Produkt seinen Mindestbestand erreicht oder unterschreitet.
 
 Tägliche Übersicht über bald ablaufende und bereits abgelaufene Produkte.
 
-Die Uhrzeit lässt sich einstellen.
+Die Uhrzeit lässt sich einstellen. Unter „Meldung an diesen Tagen vor dem Datum“ trägst du die Tage ein, an denen gemeldet wird, zum Beispiel `7,4,3,2,1,0`: Du bekommst eine Meldung 7 Tage vorher, dann am 4., 3., 2. und 1. Tag davor und am Tag selbst, dazwischen nichts. `0` ist der Tag selbst, `-1` ein Tag danach. Leer bedeutet täglich innerhalb der Warnfrist. In den Adapter-Einstellungen kannst du die Überschriften und die Zeile pro Produkt ändern. Folgende Platzhalter stehen zur Verfügung: `{name}`, `{brand}`, `{date}`, `{days}`, `{when}`, `{amount}`, `{place}`. Standard: `• {name} ({date}) – {place}`. Beispiel: `• {brand} {name}: {when}, {place}`.
 
 ### Inventur-Erinnerung
 
@@ -861,7 +972,11 @@ Beim Import eines Backups oder beim Löschen aller Daten wird der vorherige Stan
 
 ShelfMate kann auch bei kurzzeitig unterbrochener Verbindung genutzt werden, sofern die Web-App zuvor eingerichtet wurde und ein vertrauenswürdiges HTTPS-Zertifikat vorhanden ist.
 
-Einlagerungen, Entnahmen und Einkaufslisten-Einträge werden offline zwischengespeichert.
+Die App behält eine Kopie aller Daten auf dem Gerät: Produkte, Bestand, Lagerorte, Verlauf, MHD-Daten, Einstellungen, Hinweise und die Einkaufsliste. Sie wird angezeigt, wenn die Verbindung fehlt.
+
+Einlagerungen, Entnahmen, das Anlegen und Ändern von Produkten und Lagerorten und die Inventur-Markierung werden offline zwischengespeichert. Ein Paket öffnen, als verdorben markieren, Rückgängig und die Abfrage unbekannter Barcodes bei Open Food Facts brauchen eine Verbindung.
+
+Eine offline gebuchte Einlagerung ändert den Bestand sofort. MHD und geöffnet-Status der neuen Stücke werden ergänzt, sobald die Buchung gesendet wurde.
 
 Sobald die Verbindung wieder verfügbar ist, überträgt ShelfMate die wartenden Aktionen automatisch.
 

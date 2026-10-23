@@ -90,5 +90,21 @@
     "notifyExpiryLine": "Zeile pro Produkt (leer = Standard)",
     "notifyExpiryLineHelp": "Platzhalter: {name} {brand} {date} {days} {when} {amount} {place}. Standard: • {name} ({date}) – {place}. Beispiel: • {brand} {name}: {when}, {place}",
     "shoppingQuantity": "Fehlende Menge auf die Liste schreiben",
-    "shoppingQuantityHelp": "Schreibt, wie viele fehlen (Mindestbestand minus Bestand), z. B. „Mehl, 2“. Fällt der Bestand weiter, wird nur die Differenz ergänzt. Bei Bring! Spezial rechnet die Liste selbst; im Skript-Modus bekommt dein Skript jedes Mal „Name, Menge“ und muss selbst addieren"
+    "shoppingQuantityHelp": "Schreibt, wie viele fehlen (Mindestbestand minus Bestand), z. B. „Mehl, 2“. Fällt der Bestand weiter, wird nur die Differenz ergänzt. Bei Bring! Spezial rechnet die Liste selbst; im Skript-Modus bekommt dein Skript jedes Mal „Name, Menge“ und muss selbst addieren",
+    "scanWindow": "Zeit zwischen wiederholten Scans (s)",
+    "scanWindowHelp": "Ab dem dritten Scan muss jeder weitere Scan desselben Produkts innerhalb dieser Zeit folgen, sonst beginnt das Zählen von vorn (1 bis 30, Standard 3).",
+    "scanRules": "Aktionen bei mehrfachem Scannen",
+    "scanRulesHelp": "Ein Scan wartet auf einen Lagerort, zwei Scans lagern aus. Ab drei Scans legst du hier die Aktion fest. Jede Anzahl kann nur einmal vergeben werden.",
+    "scanRuleCount": "Scans",
+    "scanRuleAction": "Aktion",
+    "scanRuleValue": "Wert (optional)",
+    "scanAct_none": "Nichts",
+    "scanAct_stockLast": "Am letzten bekannten Lagerort einlagern",
+    "scanAct_stockQty": "Mehrere am letzten Lagerort einlagern (Wert = Menge, sonst Anzahl der Scans)",
+    "scanAct_empty": "Als leer markieren (Bestand auf 0)",
+    "scanAct_open": "Geöffnet / geschlossen umschalten",
+    "scanAct_shopAdd": "Auf die Einkaufsliste setzen (Wert = Menge)",
+    "scanAct_shopRemove": "Von der Einkaufsliste entfernen",
+    "notifyDays": "Meldung an diesen Tagen vor dem Datum (z. B. 7,4,3,2,1,0)",
+    "notifyDaysHelp": "Kommagetrennte Tage vor dem MHD, an denen gemeldet wird, z. B. 7,4,3,2,1,0. 0 = am Tag selbst, -1 = einen Tag danach. Leer = täglich innerhalb der Warnfrist."
 }

@@ -90,5 +90,21 @@
     "notifyExpiryLine": "Line per product (empty = default)",
     "notifyExpiryLineHelp": "Placeholders: {name} {brand} {date} {days} {when} {amount} {place}. Default: • {name} ({date}) – {place}. Example: • {brand} {name}: {when}, {place}",
     "shoppingQuantity": "Write the missing amount to the list",
-    "shoppingQuantityHelp": "Writes how many are missing (minimum minus stock), e.g. \"Flour, 2\". If the stock drops further, only the difference is added. Bring! Special adds up on the list; in script mode your script gets \"Name, amount\" every time and has to add up itself"
+    "shoppingQuantityHelp": "Writes how many are missing (minimum minus stock), e.g. \"Flour, 2\". If the stock drops further, only the difference is added. Bring! Special adds up on the list; in script mode your script gets \"Name, amount\" every time and has to add up itself",
+    "scanWindow": "Time between repeated scans (s)",
+    "scanWindowHelp": "From the third scan on, each further scan of the same product must follow within this time, otherwise counting starts over (1 to 30, default 3).",
+    "scanRules": "Actions for repeated scans",
+    "scanRulesHelp": "Scanning a product once waits for a location, twice takes it out. From three scans on you choose the action here. Each number of scans can be used once.",
+    "scanRuleCount": "Scans",
+    "scanRuleAction": "Action",
+    "scanRuleValue": "Value (optional)",
+    "scanAct_none": "Nothing",
+    "scanAct_stockLast": "Stock in at the last known location",
+    "scanAct_stockQty": "Stock in several at the last location (value = quantity, otherwise the number of scans)",
+    "scanAct_empty": "Mark as empty (stock to 0)",
+    "scanAct_open": "Toggle opened / closed",
+    "scanAct_shopAdd": "Put on the shopping list (value = quantity)",
+    "scanAct_shopRemove": "Remove from the shopping list",
+    "notifyDays": "Message on these days before the date (e.g. 7,4,3,2,1,0)",
+    "notifyDaysHelp": "Comma separated days before the best-before date on which a message is sent, e.g. 7,4,3,2,1,0. 0 = on the day, -1 = one day after. Empty = a message every day within the warning period."
 }

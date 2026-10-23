@@ -128,9 +128,18 @@
             "label": "dateFormat",
             "help": "dateFormatHelp",
             "options": [
-                { "label": "31.10.2026", "value": "dmy" },
-                { "label": "31/10/2026", "value": "slash" },
-                { "label": "2026-10-31", "value": "iso" }
+                {
+                    "label": "31.10.2026",
+                    "value": "dmy"
+                },
+                {
+                    "label": "31/10/2026",
+                    "value": "slash"
+                },
+                {
+                    "label": "2026-10-31",
+                    "value": "iso"
+                }
             ],
             "newLine": true,
             "xs": 12,
@@ -438,6 +447,18 @@
             "lg": 4,
             "xl": 4
         },
+        "notifyDays": {
+            "type": "text",
+            "label": "notifyDays",
+            "help": "notifyDaysHelp",
+            "hidden": "!data.notifyAdapter || !data.notifyExpiry || data.bestBeforeMode === 'off'",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
         "notifyInventoryDays": {
             "type": "number",
             "label": "notifyInventoryDays",
@@ -600,8 +621,14 @@
             "label": "scannerLayout",
             "help": "scannerLayoutHelp",
             "options": [
-                { "label": "US", "value": "us" },
-                { "label": "Deutsch", "value": "de" }
+                {
+                    "label": "US",
+                    "value": "us"
+                },
+                {
+                    "label": "Deutsch",
+                    "value": "de"
+                }
             ],
             "newLine": true,
             "xs": 12,
@@ -630,6 +657,86 @@
             "md": 6,
             "lg": 4,
             "xl": 4
+        },
+        "scanWindow": {
+            "type": "number",
+            "label": "scanWindow",
+            "help": "scanWindowHelp",
+            "min": 1,
+            "max": 30,
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "scanRules": {
+            "type": "table",
+            "label": "scanRules",
+            "help": "scanRulesHelp",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 8,
+            "xl": 8,
+            "noDelete": false,
+            "items": [
+                {
+                    "type": "number",
+                    "attr": "count",
+                    "title": "scanRuleCount",
+                    "width": "15%",
+                    "min": 3,
+                    "max": 20,
+                    "default": 3
+                },
+                {
+                    "type": "select",
+                    "attr": "action",
+                    "title": "scanRuleAction",
+                    "width": "50%",
+                    "default": "none",
+                    "options": [
+                        {
+                            "label": "scanAct_none",
+                            "value": "none"
+                        },
+                        {
+                            "label": "scanAct_stockLast",
+                            "value": "stockLast"
+                        },
+                        {
+                            "label": "scanAct_stockQty",
+                            "value": "stockQty"
+                        },
+                        {
+                            "label": "scanAct_empty",
+                            "value": "empty"
+                        },
+                        {
+                            "label": "scanAct_open",
+                            "value": "open"
+                        },
+                        {
+                            "label": "scanAct_shopAdd",
+                            "value": "shopAdd"
+                        },
+                        {
+                            "label": "scanAct_shopRemove",
+                            "value": "shopRemove"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "attr": "value",
+                    "title": "scanRuleValue",
+                    "width": "35%",
+                    "maxLength": 40
+                }
+            ]
         }
     }
 }

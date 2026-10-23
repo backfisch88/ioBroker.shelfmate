@@ -53,7 +53,13 @@ Tapping an active status or tag again removes that filter.
 
 Product groups are shown together. Tap the small triangle to unfold the products inside.
 
+The list is sorted: products that expire soon or have expired come first, then opened products, then all others (products to buy first). Empty products come last.
+
 When you come back from a product page, you land at your previous position in the overview.
+
+<p align="center"><img src="../images/filterOpen.jpg" width="250"><br><sub>The status filters and tags above the list. The red frame shows the active filter "Opened".</sub></p>
+
+The scan button sits above the bar on every tab and folds in while you scroll. If you do not need it, switch it off under Settings → Controls → Scan-Knopf. The setting applies to this device only.
 
 ### Product page
 
@@ -75,6 +81,8 @@ Below that, the actions are always in the same order:
 
 ---
 
+<p align="center"><img src="../images/productButtons.jpg" width="250"><br><sub>The product page with stock, locations and buttons. The sparkle symbol (red) marks an automatically filled in shelf life.</sub></p>
+
 ## Editing products
 
 Tap Edit to open the product settings.
@@ -92,6 +100,8 @@ The form is split into five sections that you can unfold. Closed sections show a
 | More | Barcode, own EAN, Nutri-Score, image link and Open Food Facts |
 
 Basics is open by default, and for new products the Stock section as well.
+
+<p align="center"><img src="../images/editProduct.jpg" width="250"><br><sub>The editor has sections that can be folded, for example Basics and Stock.</sub></p>
 
 ### Product groups
 
@@ -202,7 +212,7 @@ For products from Open Food Facts the barcode is locked in the editor.
 
 This is how a normal booking works:
 
-1. Choose Scan and capture the barcode with the camera or type it in.
+1. Tap Scan at the bottom right of the overview and capture the barcode with the camera or type it in.
 2. For known products the product page opens.
 3. Unknown barcodes are looked up on Open Food Facts. You can check and save what was found.
 4. Choose Stock in, Take out or Move.
@@ -224,6 +234,19 @@ Example:
 - Location: Shelf 1
 
 Under Locations you can create and edit both.
+
+<p align="center"><img src="../images/locationEdit.jpg" width="250"><br><sub>A storage location with its QR code text. The checkbox "Consumables" lists the stock of this location in a data point.</sub></p>
+
+### Consumables
+
+Tick "Consumables" when editing a storage location, for example for the fridge. The stock of all ticked locations is listed in two data points:
+
+| Data point | Description |
+| --- | --- |
+| `stats.consumables` | JSON list with name, brand, amount, unit, locations, opened amount, nearest best-before date, days left and `expiring` |
+| `stats.consumablesText` | One line per product, for example `2 Stück Joghurt (1 geöffnet, MHD 2026-10-25)` |
+
+The text shows the opened amount and the best-before date only if there is something opened or it expires soon. This is handy for planning recipes or for your own scripts.
 
 ### QR codes for storage locations
 
@@ -280,6 +303,14 @@ In the overview, a check mark shows which products are already on the shopping l
 
 The connection to the shopping list is set up in the adapter settings.
 
+### Writing the missing amount
+
+With the option "Write the missing amount to the list" (Bring! special and script mode), ShelfMate also writes how many are missing. Example: minimum stock 5 for flour.
+
+- The stock falls to 5: the list gets `Flour, 1`.
+- The stock falls further to 3: only the difference is added. With Bring! special the entry becomes `Flour, 3`. In script mode your script gets `Flour, 2` and adds the amount itself.
+- The stock falls from 8 straight to 3: the list gets `Flour, 2`.
+
 ---
 
 ## Best-before date
@@ -325,6 +356,8 @@ In the history you can undo the last booking.
 In scanner mode the control code `SM:UNDO` is available for this.
 
 It does not work there for moves and stocktakings.
+
+<p align="center"><img src="../images/history.jpg" width="250"><br><sub>The history with the button to undo the last booking.</sub></p>
 
 ### Changing a best-before date later
 
@@ -400,6 +433,18 @@ Optionally you can also name a data point with the current shopping list. A JSON
 ```
 
 With it, ShelfMate recognises products that are already there and avoids duplicate entries.
+
+The objects may contain further fields, for example an amount or a description. ShelfMate reads only the `name` and ignores the rest.
+
+If "Write the missing amount" is on, ShelfMate writes the text `Name, amount` instead of the plain name into the data point, for example `Milk, 2`. Your script splits the text at the comma and adds the amounts up itself, because ShelfMate does not check for duplicates in this case.
+
+Alternatively your script reads the data point `shopping.lastItem`. It holds the item added last as JSON, so you do not have to split text:
+
+```json
+{ "name": "Mehl", "quantity": 500, "unit": "g", "text": "500 g" }
+```
+
+`quantity` is a number or `null`, `unit` is empty when there was no unit. The data point is only filled in script mode.
 
 For removing items you can set one more data point. The item name is written there with `ack=false` as well.
 
@@ -584,7 +629,7 @@ Unbekanntes Produkt 1234567890123
 
 The product is counted anyway.
 
-Via the light bulb, the hint "Edit new products" then appears until the entry has been completed and saved.
+In the settings, the hint "Edit new products" then appears until the entry has been completed and saved.
 
 ---
 
@@ -625,6 +670,8 @@ A regular stocktaking reminder can be turned on in the adapter settings.
 
 ---
 
+<p align="center"><img src="../images/inventory.jpg" width="250"><br><sub>Stocktaking: choose a location and check the products in a list or by scanning.</sub></p>
+
 ## Scanner mode without the app
 
 ShelfMate supports stocking in and out with an external barcode scanner, without the web app having to be open.
@@ -648,6 +695,37 @@ If no location is given when taking out, ShelfMate uses the stock with the short
 
 If there is no best-before date, the location with the largest amount is used.
 
+### Scanning several times
+
+One scan waits for a location, two scans take out. From three scans of the same product in a row, ShelfMate runs an action that you choose yourself.
+
+You set the actions in the adapter settings under "Actions for repeated scans". Each number of scans from 3 to 20 has one row and can be used once.
+
+| Action | Effect |
+| --- | --- |
+| Stock in at the last known location | One item goes back to where the product was stocked last. A location scanned afterwards is used instead. |
+| Stock in several at the last location | Like above, but with the quantity from the "Value" field. If it is empty, the number of scans counts. |
+| Mark as empty | The whole stock is set to 0. At a minimum stock the product lands on the shopping list. |
+| Toggle opened / closed | Marks one package as opened, like `SM:OPEN`, without the control code. If a package is already opened, the same scan closes it again. |
+| Put on the shopping list | The product is noted. The "Value" field can hold a quantity. |
+| Remove from the shopping list | The product is taken off the list. |
+
+By default three scans stock in at the last location, four mark the product as empty and five put it on the shopping list. One and two scans stay as they are.
+
+From the third scan on, each scan must follow within the time between repeated scans (3 seconds by default). If it takes longer, counting starts over and the earlier scans are booked as a take-out.
+
+Every triggered action is written to the log and to the data point `scanner.lastAction` with the number of scans, for example `3x: Pasta ×1 stocked in at Pantry`. You can use it for speech output or a notification. The bookings also show up in the history.
+
+### Unknown products in scanner mode
+
+If a scanned barcode is not known yet, ShelfMate creates the product by itself before booking it. The data (name, brand, category and tags) comes from Open Food Facts, also from its databases for cosmetics and pet food. The scan is then booked as usual.
+
+If nothing is found, ShelfMate creates the product as incomplete with a name like `New product 1234567890123` and books it anyway. The scanner result says so. Under Tasks → Edit new products you can complete these entries later.
+
+### Scanner with memory
+
+Some scanners keep scans while they are out of range and send them all at once later. ShelfMate splits such a burst into single scans and processes them in the order they were scanned. A sequence like location → products → location (stocking mode) works as well. If looking up many unknown products takes longer than the waiting time between two scans, raise that time.
+
 ### Stocking mode
 
 First scan the location code.
@@ -660,6 +738,26 @@ Another location code switches the location directly.
 
 After five minutes without a scan, the mode ends automatically.
 
+### Best-before date while stocking
+
+Several products with the same date do not have to be entered one by one.
+
+1. Scan the location code to start stocking mode.
+2. Scan `SM:DATE:7`, meaning "today plus 7 days".
+3. Scan all products. Each one is stocked in and gets the date right away. For several identical packages scan `SM:QTY:3` first.
+4. For a different date scan the next `SM:DATE:…` code. `SM:DATE:0` switches the date off.
+5. Scan the location again at the end.
+
+If another product has the right date, scan `SM:COPY` and then that product. The following products in stocking mode get its date. Outside stocking mode the next scanned product gets the date for its existing stock.
+
+Without stocking mode, `SM:DATE:7` followed by the product still sets the date for stock that is already in storage.
+
+### Without best-before date: several products at once
+
+Tick "Record the best-before date when stocking in" on a location, for example the fridge. The products of that location that have no date yet then appear in the Tasks tab and as the filter "Ohne MHD" on the overview. A date estimated by ShelfMate (spark symbol) counts as missing until you confirm it.
+
+Enter a date (for example `0511` or `+7d`), tick the products it applies to and tap "Datum setzen" (set date). Products in other locations, such as pasta in the pantry, do not appear there.
+
 ### Control codes
 
 There are special codes for further actions:
@@ -671,10 +769,13 @@ There are special codes for further actions:
 | `SM:OPEN` | Mark the next product as opened |
 | `SM:DATE:<days>` | Set the best-before date for the unopened stock |
 | `SM:DATE:0` | Remove the best-before date |
+| `SM:COPY` | Copy the best-before date of a product |
 | `SM:QTY:5` | Make the next booking with amount 5 |
 | `SM:CANCEL` | Cancel a waiting scan |
 
 The control codes can be printed as a PDF from the settings.
+
+<p align="center"><img src="../images/controlCodes.jpg" width="250"><br><sub>The settings have the control codes for the scanner as a PDF.</sub></p>
 
 ### Time between two scans
 
@@ -684,14 +785,16 @@ Possible are 3 to 120 seconds.
 
 Default: 10 seconds.
 
+For repeated scans (from the third scan on) there is a separate short time between repeated scans, 3 seconds by default.
+
 ### Connecting an external wireless scanner
 
 Intended, for example, is the Tera HW0009 with a 2.4 GHz dongle.
 
-1. Plug the USB dongle into the ioBroker computer.
-2. Set the scanner to 2.4 GHz mode.
-3. Pair the scanner with the dongle following the manufacturer's manual.
-4. Set the keyboard layout to US and the end of the code to Enter.
+1. Put the scanner into pairing mode and pair it with the dongle over 2.4 GHz, following the manufacturer's manual.
+2. Plug the USB dongle into the ioBroker computer. If ioBroker runs in a virtual machine, pass the USB device through to the VM. How this works depends on the virtualisation software.
+3. Set the keyboard layout of the scanner to US or German and the end of the code to Enter. In the ShelfMate adapter settings, choose the same layout (keyboard layout of the scanner). Scanner and setting must match.
+4. Give ioBroker the right to read the input device (see below) and restart ioBroker. The right only applies after the restart.
 5. In the ShelfMate adapter settings, choose the scanner device.
 6. Turn on scanner mode through `scanner.active`.
 
@@ -703,7 +806,7 @@ For ioBroker to access the input device, the user needs the right permissions:
 sudo adduser iobroker input
 ```
 
-Then restart the instance.
+Then restart ioBroker itself, not only the instance. The new right only applies after that.
 
 If the scanner uses a prefix or suffix, the matching settings in ShelfMate must be the same.
 
@@ -757,9 +860,13 @@ A stocktaking still takes place in the web app, because it needs a display.
 
 ## Suggestions
 
-Via the light bulb in the header you find different hints from ShelfMate.
+Whenever ShelfMate has something for you, the Tasks tab in the bottom bar shows a dot. All suggestions and open tasks are in one place there. The scan button is on the overview.
 
 They include:
+
+### Record best-before dates
+
+For locations with "Record the best-before date when stocking in" this lists all products without a date. Enter a date, tick the packages and set it. Every package is listed on its own, so two Parmesan appear twice. That way you can give them different dates. The scan button is above the bar on all tabs.
 
 ### Product groups
 
@@ -774,6 +881,10 @@ Based on the consumption of the last 30 days, ShelfMate can suggest a fitting mi
 This considers regularly used products.
 
 With ✓ you accept the suggestion, with × you reject it.
+
+### New products
+
+Products that were created by the scanner without data (see Unknown products in scanner mode) wait here until they are completed.
 
 ### Stocktaking
 
@@ -811,7 +922,7 @@ A message as soon as a product reaches or falls below its minimum stock.
 
 A daily summary of products that expire soon and have already expired.
 
-The time can be set.
+The time can be set. Under "Message on these days before the date" you can list the days on which a message is sent, for example `7,4,3,2,1,0`: you get one message 7 days before, then on days 4, 3, 2 and 1 before and on the day itself, and nothing in between. `0` is the day itself, `-1` one day after. Empty means a message every day within the warning period. In the adapter settings you can change the headings and the line per product. These placeholders are available: `{name}`, `{brand}`, `{date}`, `{days}`, `{when}`, `{amount}`, `{place}`. Default: `• {name} ({date}) – {place}`. Example: `• {brand} {name}: {when}, {place}`.
 
 ### Stocktaking reminder
 
@@ -859,7 +970,11 @@ When you import a backup or delete all data, the previous state is saved as `she
 
 ShelfMate can also be used when the connection is briefly interrupted, as long as the web app was set up before and a trusted HTTPS certificate exists.
 
-Stock-ins, take-outs and shopping list entries are kept in a queue while offline.
+The app keeps a copy of all data on the device: products, stock, locations, history, best-before data, settings, hints and the shopping list. It is shown when the connection is missing.
+
+Stock-ins, take-outs, creating and editing products and locations and the stocktaking mark are kept in a queue while offline. Opening a package, marking spoiled, undoing and looking up unknown barcodes at Open Food Facts need a connection.
+
+A stock-in that was booked offline changes the stock at once. Best-before date and opened state of the new items are completed when the booking has been sent.
 
 As soon as the connection is back, ShelfMate sends the waiting actions automatically.
 
