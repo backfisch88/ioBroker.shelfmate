@@ -69,7 +69,7 @@
     "scannerPrefix": "Prefix des Scanners (entfernen)",
     "scannerSuffix": "Suffix des Scanners (entfernen)",
     "autoShelfMode": "Haltbarkeit automatisch eintragen",
-    "autoShelfModeHelp": "Ob die Standard-Haltbarkeit beim Einlagern ohne Datum als MHD eingetragen wird. „Nur ohne App“ gilt für Scanner-Modus und Datenpunkte, wo niemand ein Datum tippen kann; die App lässt das Datum dann leer. „Nie“ schaltet auch die Vorschläge für Trockenware ab.",
+    "autoShelfModeHelp": "Ob beim Einlagern ohne Datum automatisch ein MHD aus der Standard-Haltbarkeit des Produkts eingetragen wird (eigener Wert, Gruppenwert oder eingebauter Vorschlag für Trockenware). Produkte ohne Standard-Haltbarkeit, etwa Frischware, bekommen kein Datum. „Immer“: auch in der App. „Nur ohne App“: nur im Scanner-Modus und über Datenpunkte, wo niemand ein Datum tippen kann; in der App bleibt das Datum leer. „Nie“ schaltet auch die Vorschläge für Trockenware ab.",
     "asAlways": "Immer",
     "asHeadless": "Nur ohne App (Scanner-Modus, Datenpunkte)",
     "asOff": "Nie",

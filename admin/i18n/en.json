@@ -69,7 +69,7 @@
     "scannerPrefix": "Prefix of the scanner (remove)",
     "scannerSuffix": "Suffix of the scanner (remove)",
     "autoShelfMode": "Fill in shelf life automatically",
-    "autoShelfModeHelp": "Whether the default shelf life is entered as best-before date when stocking in without a date. \"Only without the app\" covers scanner mode and data points, where nobody can type a date; the app then leaves the date empty. Never also stops the suggestions for dry goods.",
+    "autoShelfModeHelp": "Whether a best-before date is entered automatically from the default shelf life of the product when stocking in without a date (own value, group value or the built-in suggestion for dry goods). Products without a default shelf life, such as fresh goods, get no date. \"Always\": in the app too. \"Only without the app\": only in scanner mode and via data points, where nobody can type a date; in the app the date stays empty. \"Never\" also stops the suggestions for dry goods.",
     "asAlways": "Always",
     "asHeadless": "Only without the app (scanner mode, data points)",
     "asOff": "Never",
