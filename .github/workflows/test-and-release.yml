@@ -12,13 +12,6 @@ on:
       # pre-releases
       - "v[0-9]+.[0-9]+.[0-9]+-**"
   pull_request: {}
-  release:
-    types: [published]
-  workflow_dispatch:
-    inputs:
-      tag:
-        description: 'Tag to publish to npm (e.g. v0.1.0)'
-        required: true
 
 # Cancel previous PR/branch runs when a new commit is pushed
 concurrency:
@@ -59,8 +52,9 @@ jobs:
           # Uncomment the following line if your adapter cannot be installed using 'npm ci'
           # install-command: 'npm install'
 
-  # Creates the GitHub release for every version tag (v*); pre-release tags (v1.2.3-beta.1) are marked as pre-release.
-  github-release:
+  # Pushing a version tag (v1.2.3) publishes to npm with trusted publishing (OIDC, no token) and creates the GitHub release.
+  # Set up the trusted publisher for this repository and workflow on npmjs.com first.
+  deploy:
     needs: [check-and-lint, adapter-tests]
     if: |
       contains(github.event.head_commit.message, '[skip ci]') == false &&
@@ -68,49 +62,10 @@ jobs:
       startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
     permissions:
+      id-token: write
       contents: write
     steps:
-      - uses: actions/checkout@v7
-      - name: Create GitHub release
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release create "${{ github.ref_name }}" --title "${{ github.ref_name }}" --generate-notes ${{ contains(github.ref_name, '-') && '--prerelease' || '--latest' }}
-
-  # Pushing a version tag (v1.2.3) publishes the GitHub release and then npm. Pre-release tags (v1.2.3-beta.1)
-  # only create a GitHub pre-release. A release published by hand or a manual start also publishes to npm.
-  # Uses npm trusted publishing (OIDC), no secret needed.
-  deploy:
-    needs: [github-release]
-    if: |
-      !cancelled() && (
-        github.event_name == 'release' ||
-        github.event_name == 'workflow_dispatch' ||
-        (needs.github-release.result == 'success' && contains(github.ref_name, '-') == false)
-      )
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      id-token: write
-    steps:
-      - uses: actions/checkout@v7
-        with:
-          ref: ${{ github.event.release.tag_name || inputs.tag || github.ref_name }}
-      - uses: actions/setup-node@v7
+      - uses: ioBroker/testing-action-deploy@v1
         with:
           node-version: '24.x'
-          registry-url: 'https://registry.npmjs.org'
-      - name: Check that the tag matches the package version
-        run: |
-          TAG="${{ github.event.release.tag_name || inputs.tag || github.ref_name }}"
-          VER=$(node -p "require('./package.json').version")
-          if [ "$TAG" != "v$VER" ]; then echo "Tag $TAG does not match package.json version $VER"; exit 1; fi
-      - run: npm ci
-      - run: npm run lint
-      - run: npm run test:package
-      - name: Publish to npm (pre-release versions only get the "next" tag, never "latest")
-        run: |
-          VER=$(node -p "require('./package.json').version")
-          case "$VER" in
-            *-*) npm publish --access public --tag next ;;
-            *) npm publish --access public ;;
-          esac
+          github-token: ${{ secrets.GITHUB_TOKEN }}

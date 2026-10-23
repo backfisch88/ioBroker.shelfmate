@@ -135,10 +135,10 @@ class Shelfmate extends utils.Adapter {
         if ((await this.getStateAsync('scanner.active')) === null) {
             await this.setState('scanner.active', false, true);
         }
-        const wait = Number(this.config.scannerTimeout);
+        const scanWait = Number(this.config.scannerTimeout);
         const win = Number(this.config.scanWindow);
         this.scanEngine = new ScanEngine(this.inv, {
-            timeoutMs: (Number.isFinite(wait) && wait >= 3 && wait <= 120 ? wait : 10) * 1000,
+            timeoutMs: (Number.isFinite(scanWait) && scanWait >= 3 && scanWait <= 120 ? scanWait : 10) * 1000,
             windowMs: (Number.isFinite(win) && win >= 1 && win <= 30 ? win : 3) * 1000,
             rules: this.config.scanRules,
             lang: this.lang,
