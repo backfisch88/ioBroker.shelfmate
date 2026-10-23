@@ -275,12 +275,14 @@ Next up is the direct connection of serial (USB) and Bluetooth scanners on the i
 Ideas, wishes or bugs are welcome as a [GitHub issue](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
 ## Changelog
-### 0.2.0 (2026-10-23)
+### 0.2.1 (2026-10-23)
 - New: expiry messages can be staggered with a list of days before the date (for example `7,4,3,2,1,0`); empty keeps one message per day within the warning period
 - New: tab "Tasks" replaces "Scan" in the bottom navigation with a dot when something is to do; the scan button above the navigation can be switched off per device
 - New: settings to show products with a soon best-before date and opened products first, per device
 - New: leave the date empty in "Ohne MHD" to keep the ticked packages without a date; round tick circles everywhere; numeric keypad and a "+" shortcut for the date fields
 - Fixed: multi-line QR codes of locations are joined into one scan; umlauts in location names match; the private key of the certificate is no longer written to the debug log; layout fixes (filter chips scroll sideways, history undo tile on iPad landscape, sticky search bar)
+
+### 0.2.0 (2026-10-23)
 - New: optional quantity on the shopping list ("Flour, 2"): the missing amount (minimum stock minus stock) is written when the minimum is reached, and only the difference when the stock keeps falling (Bring! special and script mode)
 - New: mark a storage location as consumables (for example the fridge); its stock appears in the data points `stats.consumables` (JSON, with opened amount and nearest best-before date) and `stats.consumablesText` (one line per product)
 - New: script mode also writes the last item as JSON to the data point `shopping.lastItem` (name, quantity, unit, text)

@@ -1,9 +1,9 @@
 {
     "common": {
         "name": "shelfmate",
-        "version": "0.2.0",
+        "version": "0.2.1",
         "news": {
-            "0.2.0": {
+            "0.2.1": {
                 "en": "New: configurable actions for repeated scans, best-before workflow (date block, copy date, tab Tasks, products without date), tick-off circles, optional scan button, staggered expiry messages (e.g. 7,4,3,2,1,0), optional quantity on the shopping list, consumables locations, unknown products created by the headless scanner. Fixes: multi-line QR codes, umlauts in location names, certificate no longer written to the debug log, layout fixes for iPad",
                 "de": "Neu: einstellbare Aktionen für mehrfaches Scannen, MHD-Ablauf (Datumsblock, Datum übernehmen, Tab Aufgaben, Produkte ohne Datum), runde Abhak-Kreise, optionaler Scan-Knopf, gestaffelte Ablauf-Meldungen (z. B. 7,4,3,2,1,0), optionale Menge auf der Einkaufsliste, Verbrauchswaren-Lagerorte, unbekannte Produkte per Scanner anlegen. Fixes: mehrzeilige QR-Codes, Umlaute in Lagerortnamen, Zertifikat nicht mehr im Debug-Log, Layout-Korrekturen für das iPad",
                 "ru": "Новое: настраиваемые действия при повторном сканировании, работа со сроком годности (блок даты, копирование даты, вкладка «Задачи», продукты без даты), круглые отметки, необязательная кнопка сканирования, поэтапные уведомления о сроке (напр. 7,4,3,2,1,0), количество в списке покупок, места расходников, создание неизвестных продуктов сканером. Исправления: многострочные QR-коды, умлауты в названиях мест, сертификат больше не пишется в журнал отладки, правки макета для iPad",
@@ -15,6 +15,19 @@
                 "pl": "Nowości: konfigurowalne akcje przy wielokrotnym skanowaniu, obsługa terminów (blok daty, kopiowanie daty, karta Zadania, produkty bez daty), okrągłe pola wyboru, opcjonalny przycisk skanowania, rozłożone w czasie powiadomienia o terminie (np. 7,4,3,2,1,0), ilość na liście zakupów, miejsca na artykuły zużywalne, tworzenie nieznanych produktów skanerem. Poprawki: wielowierszowe kody QR, umlauty w nazwach miejsc, certyfikat nie trafia już do dziennika debugowania, poprawki układu na iPadzie",
                 "uk": "Нове: налаштовувані дії при повторному скануванні, робота зі строком придатності (блок дати, копіювання дати, вкладка «Завдання», продукти без дати), круглі позначки, необов’язкова кнопка сканування, поетапні сповіщення про термін (напр. 7,4,3,2,1,0), кількість у списку покупок, місця витратних матеріалів, створення невідомих продуктів сканером. Виправлення: багаторядкові QR-коди, умляути в назвах місць, сертифікат більше не потрапляє в журнал налагодження, виправлення макета для iPad",
                 "zh-cn": "新增：可配置的重复扫描操作、保质期流程（日期块、复制日期、任务标签页、无日期产品）、圆形勾选框、可选扫描按钮、分阶段到期提醒（如 7,4,3,2,1,0）、购物清单数量、耗材存放位置、扫描器创建未知产品。修复：多行二维码、位置名称中的变音符号、证书不再写入调试日志、iPad 布局修正"
+            },
+            "0.2.0": {
+                "en": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync",
+                "de": "Neu: optionale Menge auf der Einkaufsliste, Verbrauchswaren-Lagerorte mit Datenpunkten, unbekannte Produkte per Scanner anlegen, Ablauf-Meldung anpassbar. Fixes: Gruppen in der Suche zuklappbar, Hinweis-Sync",
+                "ru": "Новое: количество в списке покупок, места расходников с объектами данных, создание неизвестных продуктов сканером, настраиваемое сообщение о сроке. Исправления: сворачиваемые группы при поиске, синхронизация подсказок",
+                "pt": "Novo: quantidade opcional na lista de compras, locais de consumíveis com pontos de dados, produtos desconhecidos criados pelo leitor, mensagem de validade editável. Correções: grupos recolhíveis na pesquisa, sincronização de avisos",
+                "nl": "Nieuw: optionele hoeveelheid op de boodschappenlijst, locaties voor verbruiksartikelen met datapunten, onbekende producten aanmaken met de scanner, aanpasbare THT-melding. Fixes: inklapbare groepen bij zoeken, synchronisatie van tips",
+                "fr": "Nouveau : quantité facultative dans la liste de courses, lieux de consommables avec points de données, création de produits inconnus par le scanner, message de DLC modifiable. Corrections : groupes repliables pendant la recherche, synchronisation des conseils",
+                "it": "Novità: quantità facoltativa nella lista della spesa, luoghi di materiali di consumo con punti dati, creazione di prodotti sconosciuti con lo scanner, messaggio di scadenza modificabile. Correzioni: gruppi comprimibili durante la ricerca, sincronizzazione dei suggerimenti",
+                "es": "Novedades: cantidad opcional en la lista de la compra, ubicaciones de consumibles con puntos de datos, creación de productos desconocidos con el escáner, mensaje de caducidad editable. Correcciones: grupos plegables al buscar, sincronización de avisos",
+                "pl": "Nowości: opcjonalna ilość na liście zakupów, miejsca na artykuły zużywalne z punktami danych, tworzenie nieznanych produktów skanerem, edytowalne powiadomienie o terminie. Poprawki: zwijane grupy podczas wyszukiwania, synchronizacja wskazówek",
+                "uk": "Нове: необов’язкова кількість у списку покупок, місця витратних матеріалів з точками даних, створення невідомих продуктів сканером, редаговане сповіщення про термін. Виправлення: згортання груп під час пошуку, синхронізація підказок",
+                "zh-cn": "新增：购物清单的可选数量、带数据点的耗材存放位置、扫描器创建未知产品、可编辑的到期提醒。修复：搜索时可折叠分组、提示同步"
             },
             "0.1.13": {
                 "en": "New: area filter in the overview. Fixes: flickering product list, camera stayed on, stocktaking rows on small screens",
@@ -80,19 +93,6 @@
                 "pl": "Lista zakupów: pozycje są kolejkowane offline i wysyłane po połączeniu",
                 "uk": "Список покупок: записи ставляться в чергу офлайн і надсилаються після підключення",
                 "zh-cn": "购物清单：离线时条目进入队列，恢复连接后发送"
-            },
-            "0.1.8": {
-                "en": "New: \"Delete all data\" button in the settings (with two confirmations and automatic backup); confirmation dialogs are translated",
-                "de": "Neu: Button „Alle Daten löschen\" in den Einstellungen (mit zwei Rückfragen und automatischer Sicherung); Rückfragen sind übersetzt",
-                "ru": "Новое: кнопка «Удалить все данные» в настройках (два подтверждения и автоматическая резервная копия); диалоги подтверждения переведены",
-                "pt": "Novo: botão «Apagar todos os dados» nas definições (com duas confirmações e cópia de segurança automática); diálogos de confirmação traduzidos",
-                "nl": "Nieuw: knop «Alle gegevens wissen» in de instellingen (met twee bevestigingen en automatische back-up); bevestigingsvragen vertaald",
-                "fr": "Nouveau : bouton « Supprimer toutes les données » dans les réglages (deux confirmations et sauvegarde automatique); dialogues de confirmation traduits",
-                "it": "Novità: pulsante «Elimina tutti i dati» nelle impostazioni (con due conferme e backup automatico); finestre di conferma tradotte",
-                "es": "Novedad: botón «Borrar todos los datos» en los ajustes (con dos confirmaciones y copia de seguridad automática); diálogos de confirmación traducidos",
-                "pl": "Nowość: przycisk „Usuń wszystkie dane” w ustawieniach (dwa potwierdzenia i automatyczna kopia zapasowa); okna potwierdzeń przetłumaczone",
-                "uk": "Нове: кнопка «Видалити всі дані» в налаштуваннях (два підтвердження та автоматична резервна копія); діалоги підтвердження перекладено",
-                "zh-cn": "新增：设置中的“删除所有数据”按钮（两次确认并自动备份）；确认对话框已翻译"
             }
         },
         "titleLang": {
