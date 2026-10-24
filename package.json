@@ -1,6 +1,6 @@
 {
   "name": "iobroker.shelfmate",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Household inventory with barcode scanning, storage locations, minimum stock and shopping list",
   "author": {
     "name": "Henrik Schoenhofen",
@@ -48,6 +48,7 @@
     "lib/",
     "!lib/**/*.test.js",
     "www/",
+    "!www/sfPro.woff2",
     "docs/",
     "io-package.json",
     "LICENSE",

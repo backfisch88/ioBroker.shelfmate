@@ -30,6 +30,7 @@ English version: [Tutorial](../en/tutorial.md)
 18. [Offline-Modus](#offline-modus)
 19. [HTTPS und Zertifikate](#https-und-zertifikate)
 20. [Etiketten drucken](#etiketten-drucken)
+21. [Darstellung](#darstellung)
 
 ---
 
@@ -394,6 +395,8 @@ ShelfMate versteht neben normalen Datumsangaben auch Kurzformen.
 | x | Kein Datum |
 
 Unter dem Eingabefeld erscheint eine Vorschau des erkannten Datums.
+
+Mit × im Feld leerst du es, die Tastatur schließt sich dabei. Hat das Produkt schon Daten im Bestand, erscheinen sie als Knöpfe unter dem Feld, sodass du eines mit einem Tipp übernimmst. Wenn du mehrere Packungen gleichzeitig bearbeitest, kopiert „wie oben“ das Datum der Zeile darüber. Nach „Datum setzen“ ist das Feld wieder leer.
 
 Zusätzlich gibt es Schnellwahl-Knöpfe für +1 bis +14 Tage, +3 Wochen, +1 Monat, +3 Monate, +6 Monate und +1 Jahr.
 
@@ -1080,3 +1083,18 @@ Weitere Informationen findest du unter dem Suchbegriff Niimbot CUPS AirPrint.
 Falls etwas nicht funktioniert oder du eine Idee für ShelfMate hast, kannst du gerne ein Issue auf GitHub erstellen:
 
 [GitHub – ShelfMate Issues](https://github.com/backfisch88/ioBroker.shelfmate/issues)
+
+---
+
+## Darstellung
+
+Unter Einstellungen → Darstellung änderst du das Aussehen der App. Die Einstellungen gelten nur für dieses Gerät.
+
+- Design: hell, dunkel oder automatisch.
+- Akzentfarbe: die Farbe von gewählten Reitern, Knöpfen, Schaltern und den Abhak-Kreisen. Standard ist Blau. Wähle eine der Farben oder tippe auf das Farbrad für eine eigene Farbe. Plus und Minus bleiben immer grün und rot, egal welche Akzentfarbe du wählst.
+- Hintergrundfarbe: die Farbe hinter den Kacheln. Standard ist Grau. Auch hier kannst du eine eigene Farbe wählen.
+- Transparenz: der Regler bestimmt, wie durchsichtig die gläsernen Teile sind: die Leiste unten, der Scan-Knopf und die Meldungen. Die Kacheln bleiben unverändert. In der mittleren Stellung ist die Leiste fast klar wie bei iOS. Hat dein Gerät „Transparenz reduzieren“ eingeschaltet, bleibt das Glas milchig.
+
+Die Leiste unten faltet sich beim Runterscrollen zu einem kleinen Kreis mit dem aktuellen Symbol zusammen und öffnet sich beim Hochscrollen oder Antippen wieder.
+
+Solange du einen Schalter, einen Abhak-Kreis oder den Regler-Knopf gedrückt hältst, erscheint eine Glasblase darum, wie du es von iOS kennst.

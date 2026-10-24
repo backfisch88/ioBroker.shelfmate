@@ -30,6 +30,7 @@ Deutsche Version: [Anleitung](../de/tutorial.md)
 18. [Offline mode](#offline-mode)
 19. [HTTPS and certificates](#https-and-certificates)
 20. [Printing labels](#printing-labels)
+21. [Appearance](#appearance)
 
 ---
 
@@ -394,6 +395,8 @@ Besides normal dates, ShelfMate understands short forms.
 | x | No date |
 
 Below the input field a preview of the recognised date appears.
+
+Tap × in the field to clear it; the keyboard closes. If the product already has dates in stock, they appear as buttons below the field so you can pick one with a tap. When you edit several packages at once, "same as above" copies the date of the row above. After "Set date" the field is empty again.
 
 There are also quick buttons for +1 to +14 days, +3 weeks, +1 month, +3 months, +6 months and +1 year.
 
@@ -1078,3 +1081,18 @@ For more information, search for "Niimbot CUPS AirPrint".
 If something does not work or you have an idea for ShelfMate, feel free to open an issue on GitHub:
 
 [GitHub – ShelfMate Issues](https://github.com/backfisch88/ioBroker.shelfmate/issues)
+
+---
+
+## Appearance
+
+Under Settings → Appearance you change how the app looks. The settings apply to this device only.
+
+- Theme: light, dark or automatic.
+- Accent colour: the colour of selected tabs, buttons, switches and the tick circles. The default is blue. Pick one of the colours or tap the colour wheel for your own. Plus and minus always stay green and red, whatever accent colour you choose.
+- Background colour: the colour behind the cards. The default is grey. You can pick your own colour here too.
+- Transparency: the slider sets how see-through the glass parts are: the bar at the bottom, the scan button and the messages. The cards are not affected. In the middle position the bar is almost clear like in iOS. If your device has "Reduce transparency" switched on, the glass stays frosted.
+
+The bar at the bottom folds into a small circle with the current icon while you scroll down and opens again when you scroll up or tap it.
+
+While you press a switch, a tick circle or the slider knob, a glass bubble appears around it, as you know it from iOS.

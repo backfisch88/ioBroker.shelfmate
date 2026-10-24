@@ -21,3 +21,8 @@ Ohne MHD übernommen ({1})|Kept without best-before date ({1})|Оставлен�
 Produktdatenbank nicht erreichbar|Product database not reachable|База продуктов недоступна|Base de dados de produtos inacessível|Productdatabase niet bereikbaar|Base de données produits inaccessible|Database prodotti non raggiungibile|Base de datos de productos no accesible|Baza produktów niedostępna|База продуктів недоступна|无法访问产品数据库
 MHD übernehmen|Copy date|Копировать срок|Copiar validade|THT overnemen|Reprendre la DLC|Copia scadenza|Copiar caducidad|Kopiuj termin|Копіювати термін|复制保质期
 Barcode vor die Kamera halten|Hold the barcode in front of the camera|Поднесите штрихкод к камере|Aponte o código de barras à câmara|Houd de barcode voor de camera|Placez le code-barres devant la caméra|Inquadra il codice a barre|Coloca el código de barras ante la cámara|Pokaż kod kreskowy przed kamerą|Піднесіть штрихкод до камери|将条形码对准摄像头
+Akzentfarbe|Accent colour|Цвет акцента|Cor de destaque|Accentkleur|Couleur d’accent|Colore d’accento|Color de acento|Kolor akcentu|Колір акценту|强调色
+Hintergrundfarbe|Background colour|Цвет фона|Cor de fundo|Achtergrondkleur|Couleur d’arrière-plan|Colore di sfondo|Color de fondo|Kolor tła|Колір тла|背景色
+wie oben|same as above|как выше|igual ao anterior|zoals boven|comme au-dessus|come sopra|igual que arriba|jak wyżej|як вище|同上
+Alle wie das erste|All like the first|Все как первое|Todos como o primeiro|Alle zoals de eerste|Tous comme le premier|Tutti come il primo|Todos como el primero|Wszystkie jak pierwszy|Усі як перший|全部同第一个
+Transparenz|Transparency|Прозрачность|Transparência|Transparantie|Transparence|Trasparenza|Transparencia|Przezroczystość|Прозорість|透明度

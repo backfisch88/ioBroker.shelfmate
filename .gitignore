@@ -16,3 +16,5 @@ Thumbs.db
 # i18n intermediate files
 admin/i18n/flat.txt
 admin/i18n/*/flat.txt
+# Apple SF Pro (licence does not allow redistribution; the app falls back to the system font)
+www/sfPro.woff2

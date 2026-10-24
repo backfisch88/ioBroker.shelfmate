@@ -91,6 +91,8 @@ Missing ingredients can be put on the shopping list directly. What is already in
 
 - Runs directly in the browser on phone, tablet and PC
 - Can be added to the iPhone or Android home screen
+- Modern glass look in the style of iOS 27: glass tab bar that folds into a circle while scrolling, glass switches and sliders, system-like fonts
+- Choose the accent colour and the background colour; a slider sets how transparent the glass parts are
 - Offline queue for bookings when the connection is lost
 - Give each device a name so bookings can be told apart in the history
 - Undo the last booking
@@ -136,6 +138,7 @@ The most important functions can be adjusted directly in the adapter configurati
 
 | Setting | Description |
 | --- | --- |
+| Appearance (in the app) | Theme, accent colour (default blue), background colour (default grey) and transparency of the glass parts. Applies to this device only |
 | Port / bind address | Port and network interface of the web server (default: 8120) |
 | HTTPS | Turn on HTTPS and choose the certificates |
 | Create certificate | Creates a self-signed certificate for the host name and IP addresses, valid for 825 days. Restart the instance afterwards |
@@ -275,6 +278,15 @@ Next up is the direct connection of serial (USB) and Bluetooth scanners on the i
 Ideas, wishes or bugs are welcome as a [GitHub issue](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
 ## Changelog
+### 0.3.0 (2026-10-24)
+- New: glass look in the style of iOS 27 – glass tab bar that folds into a circle while scrolling (the icon shrinks with it), glass scan button, glass switches, tick circles and sliders that light up while pressed, system-like fonts and text sizes
+- New: accent colour (default blue) and background colour (default grey) under Settings → Appearance, with custom colours; plus and minus stay green and red
+- New: slider "Transparency" for the glass parts (tab bar, scan button, messages); the cards stay as they are
+- New: entering a best-before date: × button to clear a field, quick buttons with the dates already stored for the same product, "same as above" when editing several packages; the field is emptied after "Set date"
+- New: the brand is shown next to the product name in the task lists
+- Changed: the back arrow and the swipe-back gesture return to the page you came from (also when a product was opened from Tasks); the page behind a swipe uses the current background
+- Fixed: the app no longer reports a new version on every start
+
 ### 0.2.1 (2026-10-23)
 - New: expiry messages can be staggered with a list of days before the date (for example `7,4,3,2,1,0`); empty keeps one message per day within the warning period
 - New: tab "Tasks" replaces "Scan" in the bottom navigation with a dot when something is to do; the scan button above the navigation can be switched off per device

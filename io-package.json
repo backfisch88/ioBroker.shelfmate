@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "shelfmate",
-        "version": "0.2.1",
+        "version": "0.3.0",
         "news": {
+            "0.3.0": {
+                "en": "New: glass look in the style of iOS 27 (glass tab bar that folds into a circle, glass switches and sliders), accent colour and background colour, transparency slider, easier best-before date entry (clear button, quick buttons with stored dates, same as above), brand next to the product name in Tasks. Fixes: back arrow and swipe-back return to the previous page, no false \"new version\" message at every start",
+                "de": "Neu: Glasoptik im Stil von iOS 27 (gläserne Leiste, die sich zum Kreis zusammenfaltet, gläserne Schalter und Regler), Akzentfarbe und Hintergrundfarbe, Transparenz-Regler, einfachere MHD-Eingabe (Löschen-Knopf, Schnellwahl mit vorhandenen Daten, wie oben), Hersteller neben dem Produktnamen in den Aufgaben. Fixes: Zurück-Pfeil und Zurück-Wischen führen zur vorherigen Seite, keine falsche „Neue Version“-Meldung mehr bei jedem Start",
+                "ru": "Новое: стеклянный вид в стиле iOS 27 (стеклянная панель, сворачивающаяся в круг, стеклянные переключатели и ползунки), цвет акцента и фона, регулятор прозрачности, более удобный ввод срока годности (кнопка очистки, быстрый выбор сохранённых дат, «как выше»), бренд рядом с названием продукта в задачах. Исправления: стрелка назад и жест назад ведут на предыдущую страницу, больше нет ложного сообщения «Новая версия» при каждом запуске",
+                "pt": "Novo: aspeto de vidro ao estilo do iOS 27 (barra de vidro que se dobra num círculo, interruptores e controlos de vidro), cor de destaque e cor de fundo, controlo de transparência, introdução de validade mais fácil (botão de limpar, botões rápidos com datas guardadas, igual ao anterior), marca junto ao nome do produto nas tarefas. Correções: seta e gesto de voltar levam à página anterior, sem falso aviso de nova versão em cada arranque",
+                "nl": "Nieuw: glaslook in de stijl van iOS 27 (glazen balk die tot een cirkel inklapt, glazen schakelaars en schuifregelaars), accentkleur en achtergrondkleur, transparantieregelaar, eenvoudiger THT-invoer (wisknop, snelkeuze met opgeslagen data, zoals boven), merk naast de productnaam bij Taken. Fixes: terugpijl en terugvegen gaan naar de vorige pagina, geen onterechte melding \"nieuwe versie\" bij elke start",
+                "fr": "Nouveau : aspect verre dans le style d’iOS 27 (barre en verre qui se replie en cercle, interrupteurs et curseurs en verre), couleur d’accent et couleur d’arrière-plan, curseur de transparence, saisie de la DLC simplifiée (bouton d’effacement, boutons rapides avec les dates enregistrées, comme au-dessus), marque à côté du nom du produit dans les tâches. Corrections : la flèche et le geste de retour mènent à la page précédente, plus de faux message « nouvelle version » à chaque démarrage",
+                "it": "Novità: aspetto in vetro nello stile di iOS 27 (barra di vetro che si richiude in un cerchio, interruttori e cursori di vetro), colore d’accento e colore di sfondo, cursore di trasparenza, inserimento della scadenza più semplice (pulsante per cancellare, pulsanti rapidi con le date salvate, come sopra), marca accanto al nome del prodotto nelle attività. Correzioni: freccia e gesto indietro portano alla pagina precedente, niente più falso avviso «nuova versione» a ogni avvio",
+                "es": "Novedades: aspecto de cristal al estilo de iOS 27 (barra de cristal que se pliega en un círculo, interruptores y deslizadores de cristal), color de acento y color de fondo, control de transparencia, introducción de la caducidad más sencilla (botón de borrar, botones rápidos con fechas guardadas, igual que arriba), marca junto al nombre del producto en las tareas. Correcciones: la flecha y el gesto de volver llevan a la página anterior, sin falso aviso de nueva versión en cada inicio",
+                "pl": "Nowości: szklany wygląd w stylu iOS 27 (szklany pasek składający się w koło, szklane przełączniki i suwaki), kolor akcentu i tła, suwak przezroczystości, łatwiejsze wpisywanie terminu (przycisk czyszczenia, szybkie przyciski z zapisanymi datami, jak wyżej), marka obok nazwy produktu w zadaniach. Poprawki: strzałka i gest cofania prowadzą do poprzedniej strony, koniec z fałszywym komunikatem o nowej wersji przy każdym uruchomieniu",
+                "uk": "Нове: скляний вигляд у стилі iOS 27 (скляна панель, що складається в коло, скляні перемикачі та повзунки), колір акценту й тла, регулятор прозорості, зручніше введення строку придатності (кнопка очищення, швидкий вибір збережених дат, «як вище»), бренд поруч із назвою продукту в завданнях. Виправлення: стрілка й жест назад ведуть на попередню сторінку, більше немає хибного повідомлення «Нова версія» при кожному запуску",
+                "zh-cn": "新增：iOS 27 风格的玻璃外观（可折叠成圆形的玻璃导航栏、玻璃开关和滑块）、强调色与背景色、透明度滑块、更简便的保质期输入（清除按钮、已存日期快捷按钮、同上）、任务中产品名称旁显示品牌。修复：返回箭头和返回手势回到上一页，不再每次启动都误报“新版本”"
+            },
             "0.2.1": {
                 "en": "New: configurable actions for repeated scans, best-before workflow (date block, copy date, tab Tasks, products without date), tick-off circles, optional scan button, staggered expiry messages (e.g. 7,4,3,2,1,0), optional quantity on the shopping list, consumables locations, unknown products created by the headless scanner. Fixes: multi-line QR codes, umlauts in location names, certificate no longer written to the debug log, layout fixes for iPad",
                 "de": "Neu: einstellbare Aktionen für mehrfaches Scannen, MHD-Ablauf (Datumsblock, Datum übernehmen, Tab Aufgaben, Produkte ohne Datum), runde Abhak-Kreise, optionaler Scan-Knopf, gestaffelte Ablauf-Meldungen (z. B. 7,4,3,2,1,0), optionale Menge auf der Einkaufsliste, Verbrauchswaren-Lagerorte, unbekannte Produkte per Scanner anlegen. Fixes: mehrzeilige QR-Codes, Umlaute in Lagerortnamen, Zertifikat nicht mehr im Debug-Log, Layout-Korrekturen für das iPad",
@@ -80,19 +93,6 @@
                 "pl": "Konserwacja: poprawki z weryfikatora repozytorium (testy Node 26, workflow, metadane)",
                 "uk": "Обслуговування: виправлення за результатами перевірки репозиторію (тести Node 26, workflow, метадані)",
                 "zh-cn": "维护：仓库检查器修复（Node 26 测试、工作流、元数据）"
-            },
-            "0.1.9": {
-                "en": "Shopping list: items are queued while offline and sent once the connection is back",
-                "de": "Einkaufsliste: Einträge werden offline vorgemerkt und bei Verbindung gesendet",
-                "ru": "Список покупок: записи ставятся в очередь офлайн и отправляются после подключения",
-                "pt": "Lista de compras: os itens ficam em fila offline e são enviados quando houver ligação",
-                "nl": "Boodschappenlijst: items worden offline in de wachtrij gezet en verstuurd zodra er verbinding is",
-                "fr": "Liste de courses : les éléments sont mis en file d'attente hors ligne et envoyés à la reconnexion",
-                "it": "Lista della spesa: gli elementi vengono messi in coda offline e inviati alla riconnessione",
-                "es": "Lista de la compra: los elementos se ponen en cola sin conexión y se envían al reconectar",
-                "pl": "Lista zakupów: pozycje są kolejkowane offline i wysyłane po połączeniu",
-                "uk": "Список покупок: записи ставляться в чергу офлайн і надсилаються після підключення",
-                "zh-cn": "购物清单：离线时条目进入队列，恢复连接后发送"
             }
         },
         "titleLang": {

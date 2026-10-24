@@ -92,6 +92,8 @@ Fehlende Zutaten lassen sich direkt auf die Einkaufsliste setzen. Was bereits vo
 
 - Läuft direkt im Browser auf Smartphone, Tablet und PC
 - Kann auf dem iPhone- oder Android-Homescreen abgelegt werden
+- Moderne Glasoptik im Stil von iOS 27: gläserne Navigationsleiste, die sich beim Scrollen zu einem Kreis zusammenfaltet, gläserne Schalter und Regler, systemnahe Schrift
+- Akzentfarbe und Hintergrundfarbe wählbar; ein Regler bestimmt, wie durchsichtig die gläsernen Teile sind
 - Offline-Warteschlange für Buchungen bei Verbindungsproblemen
 - Gerätenamen vergeben, damit Buchungen in der Historie zugeordnet werden können
 - Letzte Buchung rückgängig machen
@@ -137,6 +139,7 @@ Die wichtigsten Funktionen lassen sich direkt in der Adapterkonfiguration anpass
 
 | Einstellung | Beschreibung |
 | --- | --- |
+| Darstellung (in der App) | Design, Akzentfarbe (Standard: Blau), Hintergrundfarbe (Standard: Grau) und Transparenz der gläsernen Teile. Gilt nur für dieses Gerät |
 | Port / Bind-Adresse | Port und Netzwerkschnittstelle des Webservers (Standard: 8120) |
 | HTTPS | HTTPS aktivieren und Zertifikate auswählen |
 | Zertifikat erstellen | Erstellt ein selbstsigniertes Zertifikat für Hostname und IP-Adressen, gültig für 825 Tage. Danach die Instanz neu starten |
