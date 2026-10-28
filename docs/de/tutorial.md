@@ -82,7 +82,7 @@ Darunter stehen die verfügbaren Aktionen in fester Reihenfolge:
 
 ---
 
-<p align="center"><img src="../images/productButtons.jpg" width="250"><br><sub>Die Produktseite mit Bestand, Lagerorten und Knöpfen. Das Funkel-Symbol (rot) zeigt eine automatisch eingetragene Haltbarkeit.</sub></p>
+<p align="center"><img src="../images/productButtons.jpg" width="250"><br><sub>Die Produktseite mit Bestand, Lagerorten und Knöpfen. Mit „Einlagern“ und „Entnehmen“ (rot) buchst du den Bestand.</sub></p>
 
 ## Produkte bearbeiten
 
@@ -102,7 +102,7 @@ Das Formular ist in fünf aufklappbare Bereiche unterteilt. Geschlossene Bereich
 
 Die Grunddaten sind standardmäßig geöffnet, bei neuen Produkten zusätzlich der Bereich „Bestand“.
 
-<p align="center"><img src="../images/editProduct.jpg" width="250"><br><sub>Der Editor hat zuklappbare Bereiche, zum Beispiel Grunddaten und Bestand.</sub></p>
+<p align="center"><img src="../images/editProduct.jpg" width="250"><br><sub>Der Editor hat zuklappbare Bereiche, zum Beispiel „Bestand“ (offen) und „Gruppe & Tags“ (rot, zugeklappt).</sub></p>
 
 ### Produktgruppen
 

@@ -82,7 +82,7 @@ Below that, the actions are always in the same order:
 
 ---
 
-<p align="center"><img src="../images/productButtons.jpg" width="250"><br><sub>The product page with stock, locations and buttons. The sparkle symbol (red) marks an automatically filled in shelf life.</sub></p>
+<p align="center"><img src="../images/productButtons.jpg" width="250"><br><sub>The product page with stock, locations and buttons. "Stock in" and "Take out" (red) book the stock.</sub></p>
 
 ## Editing products
 
@@ -102,7 +102,7 @@ The form is split into five sections that you can unfold. Closed sections show a
 
 Basics is open by default, and for new products the Stock section as well.
 
-<p align="center"><img src="../images/editProduct.jpg" width="250"><br><sub>The editor has sections that can be folded, for example Basics and Stock.</sub></p>
+<p align="center"><img src="../images/editProduct.jpg" width="250"><br><sub>The editor has sections that can be folded, for example "Stock" (open) and "Group & tags" (red, closed).</sub></p>
 
 ### Product groups
 
