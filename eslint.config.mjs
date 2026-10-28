@@ -11,6 +11,7 @@ export default [
             '.vscode/',
             '*.test.js',
             'lib/*.test.js',
+            'tools/*.test.js',
             'test/**/*.js',
             '*.config.mjs',
             'build',

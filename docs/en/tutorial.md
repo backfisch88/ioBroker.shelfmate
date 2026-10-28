@@ -114,6 +114,13 @@ ShelfMate adds up the stock of these products and takes it into account for the 
 
 If a product has no standard shelf life of its own, the value of its group can be used.
 
+#### Finding and managing groups
+
+- **New product:** If you create a product that fits an existing group, it joins that group automatically. ShelfMate compares the first word of the name, without the brand. "Fuchs Zimt" and "Zimt gemahlen" both fit the group Zimt. If several groups fit, ShelfMate does not choose one. The group is shown in the message after saving.
+- **Suggestions:** Under Tasks → Groups you find suggestions for products that are not in a group yet.
+- **Several at once:** Under Tasks → Groups → Set group for several you search and filter like for the minimum stock, tick products and enter the group name. An empty name removes them from the group.
+- **Manage:** Under Tasks → Groups → Manage groups you see all groups. You can rename them, add or remove products and dissolve the group. The products are kept. If you give a group the name of another one, the two are merged.
+
 ### Nutri-Score
 
 You choose the Nutri-Score under More with the coloured buttons A to E.
@@ -174,15 +181,33 @@ The built-in list contains, for example, pasta, rice, flour, tins and sweets.
 
 Fresh and chilled products such as milk, meat, sausage, cheese, eggs or yoghurt deliberately get no automatically calculated standard value.
 
+Baby food in jars (for example jars from Hipp or Bebivita) gets 120 days and, after opening, only 1 to 2 days, because opened jars spoil quickly.
+
 Important: automatic shelf lives are guide values, not an actual manufacturer's best-before date. A printed or manually entered date wins. Opening a package also never extends an earlier date.
 
 ### Managing shelf life values
 
-Under Settings → Shelf life → Manage shelf lives you find all products with their own shelf life values.
+Under Tasks → Shelf life → Manage shelf lives you find all products with their own shelf life values.
 
 There you can edit values, remove them one by one with × or delete them all at once with Remove all own values.
 
 Changes apply immediately.
+
+Use the search at the top to find a product quickly. The search bar stays at the top while you scroll, and × clears the text. Every product shows the shelf life and the shelf life after opening. A grey value was estimated by ShelfMate, a black value was entered by you.
+
+### Shelf life rules
+
+Under Tasks → Shelf life → Manage shelf lives → Shelf life rules you change how ShelfMate guesses a shelf life from the product name.
+
+Every rule consists of keywords, the shelf life in days and the shelf life after opening in days. If a product name contains one of the keywords, the rule applies.
+
+- + Rule adds a rule, Save keeps your changes.
+- Your own rules are listed first. They win over the built-in defaults.
+- Below you find the defaults with their values. Tap Edit and the entry opens right there with fields for the keywords and the days. Cancel closes it without changing anything.
+- Suggestions appear while you type keywords. They come from the products in your stock.
+- The search at the top filters rules and defaults by keyword.
+
+After you change a rule, run "Fill in shelf life automatically" in the Tasks tab once to apply it to products that were estimated before.
 
 ---
 
@@ -240,7 +265,9 @@ Under Locations you can create and edit both.
 
 ### Consumables
 
-Tick "Consumables" when editing a storage location, for example for the fridge. The stock of all ticked locations is listed in two data points:
+"Consumables" outputs the stock of a storage location as a data point. It is meant for locations you regularly take things from, for example the fridge, the pantry or the freezer. A script, VIS or a voice output can then tell what is in the fridge right now, what is opened and what expires soon.
+
+Tick "Consumables" when editing the location. The stock of all ticked locations is then combined and listed in two data points under `shelfmate.0.stats`:
 
 | Data point | Description |
 | --- | --- |
@@ -303,6 +330,17 @@ For product groups, the stock of the products in the group is counted together.
 In the overview, a check mark shows which products are already on the shopping list. Tapping it removes the entry again, if the matching settings are active.
 
 The connection to the shopping list is set up in the adapter settings.
+
+### Setting the minimum stock for several products
+
+If many products should get the same minimum stock, for example 1 for all spices, you do not have to open each product.
+
+1. Open the "Tasks" page and tap "Set minimum stock for several" under "Minimum stock".
+2. Search for a keyword such as "spice", or choose an area, location or category like in the overview. "Not set" shows only products without a minimum stock.
+3. Tick the products, or tap "Select all" to mark everything that is shown.
+4. Enter the number and tap "Set". Enter 0 to remove the minimum stock again.
+
+The selection is kept when you change the search, so you can collect products from several searches and set them all at once.
 
 ### Writing the missing amount
 
@@ -778,6 +816,17 @@ There are special codes for further actions:
 
 The control codes can be printed as a PDF from the settings.
 
+### Code library
+
+Under Settings → Scanner → Code library you manage your own codes.
+
+- Scan a code or enter its content by hand, give it a name and save it.
+- Print a saved code as a label.
+- The standard control codes from the table above are listed below your own codes. They cannot be deleted.
+- A checkbox on every code decides whether it goes into the control code PDF.
+
+If no code is ticked, the PDF cannot be created and the app says so.
+
 <p align="center"><img src="../images/controlCodes.jpg" width="250"><br><sub>The settings have the control codes for the scanner as a PDF.</sub></p>
 
 ### Time between two scans
@@ -1092,6 +1141,12 @@ Under Settings → Appearance you change how the app looks. The settings apply t
 - Accent colour: the colour of selected tabs, buttons, switches and the tick circles. The default is blue. Pick one of the colours or tap the colour wheel for your own. Plus and minus always stay green and red, whatever accent colour you choose.
 - Background colour: the colour behind the cards. The default is grey. You can pick your own colour here too.
 - Transparency: the slider sets how see-through the glass parts are: the bar at the bottom, the scan button and the messages. The cards are not affected. In the middle position the bar is almost clear like in iOS. If your device has "Reduce transparency" switched on, the glass stays frosted.
+
+- Blur: the second slider sets how strongly the glass blurs what is behind it. The middle position is a light blur like in iOS; move it down for almost sharp glass or up for frostier glass. It works together with the transparency slider. With "Reduce transparency" switched on the glass stays frosted and both sliders have no effect.
+
+The search bars have the same glass look as the bottom bar and follow both sliders. They stay at the top while you scroll.
+
+The text follows the text size of your device (iOS: Settings → Display & Brightness → Text Size; Android: font size). Pinching to zoom stays off.
 
 The bar at the bottom folds into a small circle with the current icon while you scroll down and opens again when you scroll up or tap it.
 

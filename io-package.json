@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "shelfmate",
-        "version": "0.3.0",
+        "version": "0.4.0",
         "news": {
+            "0.4.0": {
+                "en": "New: set minimum stock and group for several products at once, editable shelf life rules, code library with printable codes, help texts behind an \"i\" icon, Inter font on devices without the Apple font, dates in messages follow the system date format. Improved: glass look, product details page, all buttons the same height. Fixes: back navigation and scroll position, texts that stayed German in other languages",
+                "de": "Neu: Mindestbestand und Gruppe für mehrere Produkte gleichzeitig setzen, eigene Haltbarkeitsregeln, Code-Bibliothek mit druckbaren Codes, Hilfetexte hinter einem „i“-Symbol, Schrift Inter auf Geräten ohne Apple-Schrift, Datumsangaben in Meldungen nach dem Datumsformat des Systems. Verbessert: Glasoptik, Produkt-Detailseite, alle Buttons gleich hoch. Fixes: Zurück-Navigation und Scroll-Position, Texte, die in anderen Sprachen deutsch blieben",
+                "ru": "Новое: минимальный запас и группа сразу для нескольких продуктов, редактируемые правила сроков годности, библиотека кодов с печатью, подсказки за значком «i», шрифт Inter на устройствах без шрифта Apple, даты в сообщениях в формате системы. Улучшено: стеклянный вид, страница продукта, все кнопки одной высоты. Исправления: навигация назад и позиция прокрутки, тексты, оставшиеся на немецком в других языках",
+                "pt": "Novo: definir stock mínimo e grupo para vários produtos de uma vez, regras de validade editáveis, biblioteca de códigos com impressão, textos de ajuda atrás de um ícone «i», tipo de letra Inter em dispositivos sem o tipo de letra da Apple, datas nas mensagens no formato de data do sistema. Melhorado: aspeto de vidro, página de detalhes do produto, todos os botões com a mesma altura. Correções: navegação para trás e posição de deslocação, textos que ficavam em alemão noutros idiomas",
+                "nl": "Nieuw: minimumvoorraad en groep voor meerdere producten tegelijk instellen, bewerkbare houdbaarheidsregels, codebibliotheek met afdrukbare codes, helpteksten achter een «i»-pictogram, lettertype Inter op apparaten zonder Apple-lettertype, datums in meldingen volgens de systeemdatumnotatie. Verbeterd: glasoptiek, productdetailpagina, alle knoppen even hoog. Opgelost: terugnavigatie en scrollpositie, teksten die in andere talen Duits bleven",
+                "fr": "Nouveau : définir le stock minimum et le groupe de plusieurs produits à la fois, règles de conservation modifiables, bibliothèque de codes avec impression, textes d'aide derrière une icône « i », police Inter sur les appareils sans la police Apple, dates des messages selon le format de date du système. Amélioré : aspect verre, page de détails du produit, tous les boutons à la même hauteur. Corrections : navigation retour et position de défilement, textes restés en allemand dans d'autres langues",
+                "it": "Novità: impostare scorta minima e gruppo per più prodotti contemporaneamente, regole di conservazione modificabili, libreria di codici con stampa, testi di aiuto dietro un'icona «i», carattere Inter sui dispositivi senza il carattere Apple, date nei messaggi nel formato data del sistema. Migliorato: aspetto vetro, pagina dei dettagli del prodotto, tutti i pulsanti della stessa altezza. Correzioni: navigazione indietro e posizione di scorrimento, testi rimasti in tedesco in altre lingue",
+                "es": "Nuevo: definir stock mínimo y grupo de varios productos a la vez, reglas de caducidad editables, biblioteca de códigos con impresión, textos de ayuda tras un icono «i», fuente Inter en dispositivos sin la fuente de Apple, fechas en los mensajes según el formato de fecha del sistema. Mejorado: aspecto de cristal, página de detalles del producto, todos los botones con la misma altura. Correcciones: navegación hacia atrás y posición de desplazamiento, textos que seguían en alemán en otros idiomas",
+                "pl": "Nowość: ustawianie zapasu minimalnego i grupy dla wielu produktów naraz, edytowalne reguły terminów ważności, biblioteka kodów z drukowaniem, teksty pomocy pod ikoną „i”, czcionka Inter na urządzeniach bez czcionki Apple, daty w komunikatach w formacie daty systemu. Ulepszono: wygląd szkła, strona szczegółów produktu, wszystkie przyciski tej samej wysokości. Poprawki: nawigacja wstecz i pozycja przewijania, teksty, które w innych językach pozostawały po niemiecku",
+                "uk": "Нове: мінімальний запас і група для кількох продуктів одразу, правила термінів придатності, що редагуються, бібліотека кодів з друком, підказки за значком «i», шрифт Inter на пристроях без шрифту Apple, дати в повідомленнях у форматі системи. Покращено: скляний вигляд, сторінка продукту, усі кнопки однакової висоти. Виправлення: навігація назад і позиція прокручування, тексти, що в інших мовах лишалися німецькими",
+                "zh-cn": "新增：一次为多个产品设置最低库存和分组，可编辑的保质期规则，可打印的代码库，“i”图标后的帮助文字，没有 Apple 字体的设备使用 Inter 字体，消息中的日期遵循系统日期格式。改进：玻璃外观、产品详情页、所有按钮等高。修复：返回导航和滚动位置，其他语言中仍为德语的文本"
+            },
             "0.3.0": {
                 "en": "New: glass look in the style of iOS 27 (glass tab bar that folds into a circle, glass switches and sliders), accent colour and background colour, transparency slider, easier best-before date entry (clear button, quick buttons with stored dates, same as above), brand next to the product name in Tasks. Fixes: back arrow and swipe-back return to the previous page, no false \"new version\" message at every start",
                 "de": "Neu: Glasoptik im Stil von iOS 27 (gläserne Leiste, die sich zum Kreis zusammenfaltet, gläserne Schalter und Regler), Akzentfarbe und Hintergrundfarbe, Transparenz-Regler, einfachere MHD-Eingabe (Löschen-Knopf, Schnellwahl mit vorhandenen Daten, wie oben), Hersteller neben dem Produktnamen in den Aufgaben. Fixes: Zurück-Pfeil und Zurück-Wischen führen zur vorherigen Seite, keine falsche „Neue Version“-Meldung mehr bei jedem Start",
@@ -80,19 +93,6 @@
                 "pl": "Nowość: powiadomienia (Telegram, telegrammenu2, Pushover, ...), statystyka zużycia i nazwa urządzenia w historii",
                 "uk": "Нове: сповіщення (Telegram, telegrammenu2, Pushover, ...), статистика витрат та назва пристрою в історії",
                 "zh-cn": "新增：通知（Telegram、telegrammenu2、Pushover 等）、消耗统计以及历史记录中的设备名称"
-            },
-            "0.1.10": {
-                "en": "Maintenance: repository checker fixes (Node 26 tests, workflow, metadata)",
-                "de": "Wartung: Korrekturen aus dem Repository-Checker (Node-26-Tests, Workflow, Metadaten)",
-                "ru": "Обслуживание: исправления по результатам проверки репозитория (тесты Node 26, workflow, метаданные)",
-                "pt": "Manutenção: correções do verificador de repositório (testes Node 26, workflow, metadados)",
-                "nl": "Onderhoud: correcties uit de repository-checker (Node 26-tests, workflow, metadata)",
-                "fr": "Maintenance : corrections du vérificateur de dépôt (tests Node 26, workflow, métadonnées)",
-                "it": "Manutenzione: correzioni dal controllo del repository (test Node 26, workflow, metadati)",
-                "es": "Mantenimiento: correcciones del verificador del repositorio (pruebas Node 26, workflow, metadatos)",
-                "pl": "Konserwacja: poprawki z weryfikatora repozytorium (testy Node 26, workflow, metadane)",
-                "uk": "Обслуговування: виправлення за результатами перевірки репозиторію (тести Node 26, workflow, метадані)",
-                "zh-cn": "维护：仓库检查器修复（Node 26 测试、工作流、元数据）"
             }
         },
         "titleLang": {

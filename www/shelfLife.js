@@ -18,6 +18,8 @@
         ].join('|'),
     );
     const RULES = [
+        // Babynahrung (Gläschen, Breie, Quetschies): bewusst kurz angesetzt, das echte MHD bitte nachkontrollieren
+        [120, 'baby|gläschen|babynahrung|babykost|beikost|babybrei|getreidebrei|früchtebrei|quetschie|quetschbeutel|hipp|babydream|bebivita|alete|holle|sinnlack|kleine feinschmecker|kindermenü', 'gläschen|babynahrung|babybrei|getreidebrei'],
         // Mehl, Backen
         [120, 'vollkornmehl|mandelmehl', 'vollkornmehl|mandelmehl'],
         [180, 'vollkornreis|naturreis', ''],
@@ -74,8 +76,59 @@
         if (anywhere) {
             parts.push(`(?:${anywhere})`);
         }
-        return [days, new RegExp(parts.join('|'))];
+        return [days, new RegExp(parts.join('|')), start];
     });
+
+    // Eigene, bearbeitbare Regeln: [{words: 'a, b', shelf: Tage, opened: Tage}], gelten vor den Standardwerten
+    let custom = [];
+    let customKey = '[]';
+    function setShelfRules(list) {
+        const key = JSON.stringify(list || []);
+        if (key === customKey) {
+            return;
+        }
+        customKey = key;
+        custom = [];
+        for (const r of Array.isArray(list) ? list : []) {
+            const ws = String((r && r.words) || '')
+                .toLowerCase()
+                .split(/[,|\n]/)
+                .map(x => x.trim())
+                .filter(Boolean)
+                .map(x => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+            if (ws.length) {
+                custom.push({
+                    re: new RegExp(`(?:^|[^${L}])(?:${ws.join('|')})`),
+                    shelf: Number(r.shelf) > 0 ? Number(r.shelf) : 0,
+                    opened: Number(r.opened) > 0 ? Number(r.opened) : 0,
+                });
+            }
+        }
+    }
+    function customDays(t, kind) {
+        for (const r of custom) {
+            if (r[kind] > 0 && r.re.test(t)) {
+                return r[kind];
+            }
+        }
+        return 0;
+    }
+    // Standardregeln zum Anzeigen: nur einfache Stichwörter (ohne Regex-Sonderzeichen)
+    function defaultRules() {
+        const conv = list =>
+            list
+                .map(([days, , start], k) => {
+                    const words = String(start || '')
+                        .split('|')
+                        .filter(w => w && !/[()?!\\[\]]/.test(w));
+                    const vals = [...new Set(words.map(w => (list === RULES ? plainOpened(w) : plainShelf(w))))]
+                        .filter(v => v > 0)
+                        .sort((a, b) => a - b);
+                    return { days, words, other: vals, k };
+                })
+                .filter(r => r.words.length);
+        return { shelf: conv(RULES), opened: conv(OPENED) };
+    }
 
     /**
      * @param {string} text product name, category, group and tags as one text
@@ -87,6 +140,14 @@
         if (!t) {
             return 0;
         }
+        const own = customDays(t, 'shelf');
+        if (own > 0) {
+            return own;
+        }
+        return plainShelf(t, name);
+    }
+
+    function plainShelf(t, name) {
         const n = String(name === undefined ? t : name).toLowerCase();
         const soup = /suppe|brei(pulver)?\b|milchbrei/.test(n) && !/frisch|kühl|gekühlt/.test(n);
         if (!soup && EXCLUDE.test(n)) {
@@ -102,6 +163,8 @@
 
     // Haltbarkeit nach dem Öffnen (Tage), Spezielles zuerst. Gleicher Aufbau wie oben, hier auch für Frisches.
     const OPENED = [
+        // Babynahrung nach dem Öffnen: höchstens 1 bis 2 Tage
+        [2, 'baby|gläschen|babynahrung|babykost|beikost|babybrei|getreidebrei|früchtebrei|quetschie|quetschbeutel|hipp|babydream|bebivita|alete|holle|sinnlack|kleine feinschmecker|kindermenü', 'gläschen|babynahrung|babybrei|getreidebrei'],
         [1, 'hackfleisch|hack|mett|tartar', ''],
         [2, 'fleisch|geflügel|hähnchen|hühnchen|steak|filet|fisch|lachs|garnelen|frischmilch|sahne|schlagsahne|tomaten dose|dosentomaten|passierte tomaten|gehackte tomaten|pizzatomaten|passata|mais dose|kichererbsen dose|bohnen dose|linsen dose|gemüsekonserve', 'passata'],
         [3, 'milch|h-milch|milch haltbar|kondensmilch|kokosmilch|quark|frischkäse|schmand|crème fraîche|creme fraiche|aufschnitt|schinken|wurst|salami|tofu|hummus|konserve|ananas|pfirsiche|mandarinen|fruchtcocktail|mozzarella', 'konserve|vollmilch|fettarme milch|laktosefreie milch'],
@@ -123,7 +186,7 @@
         if (anywhere) {
             parts.push(`(?:${anywhere})`);
         }
-        return [days, new RegExp(parts.join('|'))];
+        return [days, new RegExp(parts.join('|')), start];
     });
 
     /**
@@ -135,6 +198,14 @@
         if (!t) {
             return 0;
         }
+        const own = customDays(t, 'opened');
+        if (own > 0) {
+            return own;
+        }
+        return plainOpened(t);
+    }
+
+    function plainOpened(t) {
         for (const [days, re] of OPENED) {
             if (re.test(t)) {
                 return days;
@@ -144,9 +215,11 @@
     }
 
     if (typeof module === 'object' && module.exports) {
-        module.exports = { guessShelfLife, guessOpenedDays };
+        module.exports = { guessShelfLife, guessOpenedDays, setShelfRules, defaultRules };
     } else {
         root.guessShelfLife = guessShelfLife;
         root.guessOpenedDays = guessOpenedDays;
+        root.setShelfRules = setShelfRules;
+        root.defaultRules = defaultRules;
     }
 })(typeof window !== 'undefined' ? window : globalThis);

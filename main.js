@@ -15,6 +15,7 @@ const {
     TEXT: NOTIFY_TEXT,
     lowText,
     expiryText,
+    formatDate,
     msUntil,
     deliver,
     parseNotifyDays,
@@ -49,12 +50,13 @@ function inventoryHtml(items, t) {
 /**
  * @param {object[]} items expiring products
  * @param {Record<string, string>} t texts
+ * @param {string} [dateFormat] date format from the system settings
  */
-function expiringHtml(items, t) {
+function expiringHtml(items, t, dateFormat) {
     const rows = items
         .map(
             i =>
-                `<tr><td>${esc(i.name)}</td><td>${esc(i.date)}</td><td>${i.expired ? esc(t.expired) : `${i.days} ${esc(t.days)}`}</td><td>${i.amount}</td><td>${esc(i.place)}</td></tr>`,
+                `<tr><td>${esc(i.name)}</td><td>${esc(formatDate(i.date, dateFormat))}</td><td>${i.expired ? esc(t.expired) : `${i.days} ${esc(t.days)}`}</td><td>${i.amount}</td><td>${esc(i.place)}</td></tr>`,
         )
         .join('');
     return `<table><thead><tr><th>${esc(t.product)}</th><th>${esc(t.bestBefore)}</th><th>${esc(t.remaining)}</th><th>${esc(t.amount)}</th><th>${esc(t.location)}</th></tr></thead><tbody>${rows}</tbody></table>`;
@@ -65,16 +67,17 @@ function expiringHtml(items, t) {
  *
  * @param {{amount: number, unit: string, name: string, opened: number, bestBefore?: string, expiring: boolean}} x item
  * @param {string} lang system language
+ * @param {string} [dateFormat] date format from the system settings
  * @returns {string} line
  */
-function consumableLine(x, lang) {
+function consumableLine(x, lang, dateFormat) {
     const de = lang === 'de';
     const extra = [];
     if (x.opened > 0) {
         extra.push(`${x.opened} ${de ? 'geöffnet' : 'opened'}`);
     }
     if (x.bestBefore && x.expiring) {
-        extra.push(`${de ? 'MHD' : 'best before'} ${x.bestBefore}`);
+        extra.push(`${de ? 'MHD' : 'best before'} ${formatDate(x.bestBefore, dateFormat)}`);
     }
     return `${x.amount} ${x.unit} ${x.name}${extra.length ? ` (${extra.join(', ')})` : ''}`;
 }
@@ -571,7 +574,11 @@ class Shelfmate extends utils.Adapter {
         const cons = this.inv.consumablesList(bb.bestBeforeMode, bb.bestBeforeWarnDays);
         await Promise.all([
             this.setState('stats.consumables', JSON.stringify(cons), true),
-            this.setState('stats.consumablesText', cons.map(x => consumableLine(x, this.lang)).join('\n'), true),
+            this.setState(
+                'stats.consumablesText',
+                cons.map(x => consumableLine(x, this.lang, this.config.dateFormat)).join('\n'),
+                true,
+            ),
             this.setState('stats.products', Object.keys(this.inv.data.products).length, true),
             this.setState('stats.locations', Object.keys(this.inv.data.locations).length, true),
             this.setState('stats.lowStockCount', low.length, true),
@@ -581,7 +588,7 @@ class Shelfmate extends utils.Adapter {
             this.setState('stats.consumption', JSON.stringify(this.inv.consumption(30)), true),
             this.setState('stats.expiringCount', expiring.length, true),
             this.setState('stats.expiring', JSON.stringify(expiring), true),
-            this.setState('stats.expiringHtml', expiringHtml(expiring, texts(this.lang)), true),
+            this.setState('stats.expiringHtml', expiringHtml(expiring, texts(this.lang), this.config.dateFormat), true),
         ]);
     }
 
@@ -975,6 +982,7 @@ class Shelfmate extends utils.Adapter {
                         line: wording('notifyExpiryLine'),
                         expiredTitle: wording('notifyExpiredTitle'),
                         soonTitle: wording('notifySoonTitle'),
+                        dateFormat: this.config.dateFormat,
                     });
                     this.notify(message, list.some(x => x.expired) ? 'warn' : 'info');
                 }

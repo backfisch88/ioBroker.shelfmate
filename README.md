@@ -58,6 +58,8 @@ You use it through a web app that you open on your phone and add to the home scr
 - Mark products as opened or spoiled
 - Recognise automatically filled-in values by the sparkle symbol
 - Set your own shelf life values for products and groups
+- Baby food in jars gets a short standard shelf life after opening (1 to 2 days)
+- Edit the shelf life rules (keywords with days before and after opening) and search all products with their shelf life, including the value after opening
 
 ### Check ingredients
 
@@ -72,6 +74,7 @@ Missing ingredients can be put on the shopping list directly. What is already in
 - Print EAN and QR labels in your own sizes, for example 50 × 30 mm
 - Labels for shelves, boxes, the freezer and opened products
 - Choose which labels the app offers
+- Code library: save your own codes (for example from other scanners or apps), print them as labels and choose which of the control codes go into the PDF
 - Scanner mode for stocking in and out without the web app open
 - Repeated scans (three or more) trigger actions you choose: stock in at the last location, mark as empty, put on the shopping list and more
 - Do a stocktaking by product list or by scanner
@@ -92,7 +95,8 @@ Missing ingredients can be put on the shopping list directly. What is already in
 - Runs directly in the browser on phone, tablet and PC
 - Can be added to the iPhone or Android home screen
 - Modern glass look in the style of iOS 27: glass tab bar that folds into a circle while scrolling, glass switches and sliders, system-like fonts
-- Choose the accent colour and the background colour; a slider sets how transparent the glass parts are
+- Search bars in glass look that stay at the top while you scroll, with a button to clear the text
+- Choose the accent colour and the background colour; two sliders set how transparent and how blurred the glass parts are
 - Offline queue for bookings when the connection is lost
 - Give each device a name so bookings can be told apart in the history
 - Undo the last booking
@@ -138,7 +142,7 @@ The most important functions can be adjusted directly in the adapter configurati
 
 | Setting | Description |
 | --- | --- |
-| Appearance (in the app) | Theme, accent colour (default blue), background colour (default grey) and transparency of the glass parts. Applies to this device only |
+| Appearance (in the app) | Theme, accent colour (default blue), background colour (default grey), transparency and blur of the glass parts. Applies to this device only |
 | Port / bind address | Port and network interface of the web server (default: 8120) |
 | HTTPS | Turn on HTTPS and choose the certificates |
 | Create certificate | Creates a self-signed certificate for the host name and IP addresses, valid for 825 days. Restart the instance afterwards |
@@ -278,10 +282,23 @@ Next up is the direct connection of serial (USB) and Bluetooth scanners on the i
 Ideas, wishes or bugs are welcome as a [GitHub issue](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
 ## Changelog
+### 0.4.0 (2026-10-28)
+- New: set minimum stock and group for several products at once (Tasks → Minimum stock / Groups); new products join a matching group automatically
+- New: editable shelf life rules (Tasks → Shelf life), search in the shelf life list, baby food in jars now has 120 days
+- New: code library under Settings → Scanner with your own codes and printable labels
+- New: help texts behind a small "i" icon; they fold away again when you tap elsewhere or change the page
+- New: Inter font on devices without the Apple system font
+- Changed: dates in expiry messages, the HTML list and the consumables text follow the date format from the system settings
+- Improved: glass look of search bars, tab bar and buttons, redesigned product details page, all buttons the same height
+- Fixed: back arrow and swipe-back in the scanner, scroll position when going back, texts that stayed German in other languages
+
 ### 0.3.0 (2026-10-24)
 - New: glass look in the style of iOS 27 – glass tab bar that folds into a circle while scrolling (the icon shrinks with it), glass scan button, glass switches, tick circles and sliders that light up while pressed, system-like fonts and text sizes
 - New: accent colour (default blue) and background colour (default grey) under Settings → Appearance, with custom colours; plus and minus stay green and red
-- New: slider "Transparency" for the glass parts (tab bar, scan button, messages); the cards stay as they are
+- New: sliders "Transparency" and "Blur" for the glass parts (tab bar, scan button, back button, search bars, messages); the cards stay as they are
+- New: the text size follows the system text size (iOS Dynamic Type, Android font size); pinching to zoom stays off
+- Changed: Tasks → "Tools" groups shelf life and database; re-reading all tags now asks first; "Customize" in the shelf life rules is now "Edit"
+- Changed: one scale for corner radii, the same empty and loading states everywhere, transitions for suggestion lists, the clear button, segmented controls and sections
 - New: entering a best-before date: × button to clear a field, quick buttons with the dates already stored for the same product, "same as above" when editing several packages; the field is emptied after "Set date"
 - New: the brand is shown next to the product name in the task lists
 - Changed: the back arrow and the swipe-back gesture return to the page you came from (also when a product was opened from Tasks); the page behind a swipe uses the current background
@@ -411,6 +428,8 @@ Ideas, wishes or bugs are welcome as a [GitHub issue](https://github.com/backfis
 Older entries: [CHANGELOG_OLD.md](CHANGELOG_OLD.md)
 
 ## License
+The bundled font Inter (`www/fonts/`) is licensed under the SIL Open Font License 1.1, see `www/fonts/interLicense.txt`.
+
 MIT License
 
 Copyright (c) 2026 Henrik Schoenhofen <henrik.schoenhofen@icloud.com>

@@ -53,6 +53,8 @@ Die Bedienung erfolgt über eine Web-App, die du auf dem Smartphone öffnen und 
 - Produkte als geöffnet oder verdorben markieren
 - Automatisch eingetragene Werte am Funken-Symbol erkennen
 - Eigene Haltbarkeitswerte für Produkte und Gruppen festlegen
+- Babynahrung im Gläschen bekommt nach dem Öffnen nur 1 bis 2 Tage
+- Haltbarkeitsregeln (Stichwörter mit Tagen vor und nach dem Öffnen) selbst bearbeiten und alle Produkte mit ihrer Haltbarkeit durchsuchen
 
 ### Zutaten prüfen
 
@@ -68,6 +70,7 @@ Fehlende Zutaten lassen sich direkt auf die Einkaufsliste setzen. Was bereits vo
 - QR-Codes für Lagerorte erstellen und drucken
 - EAN- und QR-Etiketten in eigenen Größen drucken, zum Beispiel 50 × 30 mm
 - Etiketten für Regale, Boxen, Gefrierfach und geöffnete Produkte
+- Code-Bibliothek: eigene Codes speichern, als Etikett drucken und wählen, welche Steuer-Codes ins PDF kommen
 - Einstellen, welche Etiketten in der App angeboten werden
 - Scanner-Modus für das Ein- und Auslagern ohne geöffnete Web-App, auch mit Scannern mit Speicher
 - MHD für mehrere Produkte auf einmal: im Einräum-Modus per Scan-Code, über `SM:COPY` kopieren oder in der Liste „Ohne MHD“ für markierte Lagerorte
@@ -92,6 +95,7 @@ Fehlende Zutaten lassen sich direkt auf die Einkaufsliste setzen. Was bereits vo
 
 - Läuft direkt im Browser auf Smartphone, Tablet und PC
 - Kann auf dem iPhone- oder Android-Homescreen abgelegt werden
+- Suchleisten im Glas-Look, die beim Scrollen oben bleiben, mit Knopf zum Löschen des Textes
 - Moderne Glasoptik im Stil von iOS 27: gläserne Navigationsleiste, die sich beim Scrollen zu einem Kreis zusammenfaltet, gläserne Schalter und Regler, systemnahe Schrift
 - Akzentfarbe und Hintergrundfarbe wählbar; ein Regler bestimmt, wie durchsichtig die gläsernen Teile sind
 - Offline-Warteschlange für Buchungen bei Verbindungsproblemen
@@ -139,7 +143,7 @@ Die wichtigsten Funktionen lassen sich direkt in der Adapterkonfiguration anpass
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| Darstellung (in der App) | Design, Akzentfarbe (Standard: Blau), Hintergrundfarbe (Standard: Grau) und Transparenz der gläsernen Teile. Gilt nur für dieses Gerät |
+| Darstellung (in der App) | Design, Akzentfarbe (Standard: Blau), Hintergrundfarbe (Standard: Grau), Transparenz und Unschärfe der gläsernen Teile. Gilt nur für dieses Gerät |
 | Port / Bind-Adresse | Port und Netzwerkschnittstelle des Webservers (Standard: 8120) |
 | HTTPS | HTTPS aktivieren und Zertifikate auswählen |
 | Zertifikat erstellen | Erstellt ein selbstsigniertes Zertifikat für Hostname und IP-Adressen, gültig für 825 Tage. Danach die Instanz neu starten |
@@ -287,6 +291,8 @@ Ideen, Wünsche oder Fehler können gerne als [GitHub-Issue](https://github.com/
 Den vollständigen Änderungsverlauf findest du in der [englischen README](README.md#changelog).
 
 ## Lizenz
+
+Die mitgelieferte Schrift Inter (`www/fonts/`) steht unter der SIL Open Font License 1.1, siehe `www/fonts/interLicense.txt`.
 
 MIT-Lizenz
 

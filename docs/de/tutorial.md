@@ -114,6 +114,13 @@ ShelfMate zählt den Bestand dieser Produkte zusammen und berücksichtigt ihn be
 
 Hat ein Produkt keine eigene Standard-Haltbarkeit, kann der Wert der Gruppe verwendet werden.
 
+#### Gruppen automatisch finden und verwalten
+
+- **Neues Produkt:** Legst du ein Produkt an, das zu einer vorhandenen Gruppe passt, kommt es automatisch hinein. Dafür vergleicht ShelfMate das erste Wort des Namens, ohne Marke. „Fuchs Zimt“ und „Zimt gemahlen“ passen also beide zur Gruppe Zimt. Gibt es mehrere passende Gruppen, wählt ShelfMate keine aus. Die Gruppe steht dann in der Meldung nach dem Speichern.
+- **Vorschläge:** Unter „Aufgaben“ → „Gruppen“ findest du Vorschläge für Produkte, die noch in keiner Gruppe sind.
+- **Mehrere auf einmal:** Unter „Aufgaben“ → „Gruppen“ → „Gruppe für mehrere setzen“ suchst und filterst du wie beim Mindestbestand, kreuzt Produkte an und trägst den Gruppennamen ein. Mit leerem Namen nimmst du sie aus der Gruppe.
+- **Verwalten:** Unter „Aufgaben“ → „Gruppen“ → „Gruppen verwalten“ siehst du alle Gruppen. Du kannst sie umbenennen, Produkte hinzufügen oder entfernen und die Gruppe auflösen. Die Produkte bleiben dabei erhalten. Benennst du eine Gruppe wie eine andere, werden beide zusammengeführt.
+
 ### Nutri-Score
 
 Der Nutri-Score lässt sich im Bereich Mehr über die farbigen Knöpfe A bis E auswählen.
@@ -174,15 +181,33 @@ Die eingebaute Liste enthält beispielsweise Nudeln, Reis, Mehl, Konserven und S
 
 Frische und gekühlte Produkte wie Milch, Fleisch, Wurst, Käse, Eier oder Joghurt erhalten bewusst keinen automatisch berechneten Standardwert.
 
+Babynahrung im Gläschen (zum Beispiel Hipp oder Bebivita) bekommt 120 Tage und nach dem Öffnen nur 1 bis 2 Tage, weil geöffnete Gläschen schnell verderben.
+
 Wichtig: Automatische Haltbarkeiten sind Richtwerte und kein tatsächliches Hersteller-MHD. Ein aufgedrucktes oder manuell eingetragenes Datum hat Vorrang. Auch durch das Öffnen einer Packung wird ein früheres Datum niemals verlängert.
 
 ### Haltbarkeitswerte verwalten
 
-Unter Einstellungen → Haltbarkeit → Haltbarkeiten verwalten findest du alle Produkte mit eigenen Haltbarkeitswerten.
+Unter Aufgaben → Haltbarkeit → Haltbarkeiten verwalten findest du alle Produkte mit eigenen Haltbarkeitswerten.
 
 Dort kannst du Werte bearbeiten, einzeln über × entfernen oder über Alle eigenen Werte entfernen gesammelt löschen.
 
 Änderungen werden direkt übernommen.
+
+Mit der Suche oben findest du ein Produkt schnell. Die Suchleiste bleibt beim Scrollen oben, mit × löschst du den Text. Zu jedem Produkt stehen die Haltbarkeit und die Haltbarkeit nach dem Öffnen. Ein grauer Wert wurde von ShelfMate geschätzt, ein schwarzer Wert stammt von dir.
+
+### Haltbarkeitsregeln
+
+Unter Aufgaben → Haltbarkeit → Haltbarkeiten verwalten → Haltbarkeitsregeln änderst du, wie ShelfMate aus dem Produktnamen eine Haltbarkeit schätzt.
+
+Eine Regel besteht aus Stichwörtern, der Haltbarkeit in Tagen und der Haltbarkeit nach dem Öffnen in Tagen. Enthält ein Produktname eines der Stichwörter, gilt die Regel.
+
+- Mit + Regel legst du eine Regel an, mit Speichern übernimmst du deine Änderungen.
+- Deine eigenen Regeln stehen oben. Sie gelten vor den Standardwerten.
+- Darunter stehen die Standardwerte mit ihren Tagen. Tippe auf Bearbeiten, dann öffnet sich der Eintrag direkt dort mit Feldern für Stichwörter und Tage. Mit Abbrechen schließt du ihn, ohne etwas zu ändern.
+- Beim Tippen der Stichwörter erscheinen Vorschläge. Sie kommen aus den Produkten in deinem Vorrat.
+- Die Suche oben filtert Regeln und Standardwerte nach Stichwort.
+
+Führe nach einer Änderung einmal „Haltbarkeit automatisch eintragen“ im Reiter Aufgaben aus, damit Produkte mit geschätzten Werten die neue Regel bekommen.
 
 ---
 
@@ -240,7 +265,9 @@ Unter Lagerorte kannst du beides anlegen und bearbeiten.
 
 ### Verbrauchswaren
 
-Beim Bearbeiten eines Lagerorts, zum Beispiel des Kühlschranks, „Verbrauchswaren“ ankreuzen. Der Bestand aller angekreuzten Lagerorte steht dann in zwei Datenpunkten:
+Mit „Verbrauchswaren“ gibst du den Bestand eines Lagerorts als Datenpunkt aus. Das ist für Lagerorte gedacht, aus denen du dir regelmäßig etwas nimmst, zum Beispiel Kühlschrank, Vorratsschrank oder Gefrierschrank. So kann ein Skript, VIS oder eine Sprachausgabe sagen, was gerade im Kühlschrank liegt, was geöffnet ist und was bald abläuft.
+
+Kreuze „Verbrauchswaren“ beim Bearbeiten des Lagerorts an. Der Bestand aller angekreuzten Lagerorte wird dann zusammengefasst und steht in zwei Datenpunkten unter `shelfmate.0.stats`:
 
 | Datenpunkt | Beschreibung |
 | --- | --- |
@@ -303,6 +330,17 @@ Bei Produktgruppen werden die Bestände der zugehörigen Produkte gemeinsam ber�
 In der Übersicht zeigt ein Haken an, welche Produkte bereits auf der Einkaufsliste stehen. Durch Antippen kann der Eintrag wieder entfernt werden, sofern die entsprechenden Einstellungen aktiv sind.
 
 Die Verbindung zur Einkaufsliste wird in den Adapter-Einstellungen eingerichtet.
+
+### Mindestbestand für mehrere Produkte setzen
+
+Wenn viele Produkte denselben Mindestbestand bekommen sollen, zum Beispiel 1 für alle Gewürze, musst du nicht jedes Produkt einzeln öffnen.
+
+1. Öffne die Seite „Aufgaben“ und tippe unter „Mindestbestand“ auf „Mindestbestand für mehrere setzen“.
+2. Suche nach einem Stichwort, etwa „Gewürz“, oder wähle wie in der Übersicht einen Bereich, Lagerort oder eine Kategorie. Mit „Nicht gesetzt“ siehst du nur Produkte ohne Mindestbestand.
+3. Kreuze die Produkte an oder tippe auf „Alle auswählen“, um alle angezeigten Produkte zu markieren.
+4. Trage die Zahl ein und tippe auf „Setzen“. Mit 0 entfernst du den Mindestbestand wieder.
+
+Die Auswahl bleibt erhalten, wenn du die Suche änderst. So kannst du Produkte aus mehreren Suchen sammeln und alle auf einmal setzen.
 
 ### Fehlende Menge schreiben
 
@@ -778,6 +816,17 @@ Für weitere Aktionen gibt es spezielle Codes:
 
 Die Steuer-Codes lassen sich über die Einstellungen als PDF drucken.
 
+### Code-Bibliothek
+
+Unter Einstellungen → Scanner → Code-Bibliothek verwaltest du deine eigenen Codes.
+
+- Scanne einen Code oder gib seinen Inhalt von Hand ein, vergib einen Namen und speichere ihn.
+- Einen gespeicherten Code druckst du als Etikett.
+- Die Standard-Steuer-Codes aus der Tabelle oben stehen unter deinen eigenen Codes. Sie lassen sich nicht löschen.
+- Ein Kästchen an jedem Code bestimmt, ob er ins Steuer-Code-PDF kommt.
+
+Ist kein Code angehakt, lässt sich das PDF nicht erstellen und die App weist darauf hin.
+
 <p align="center"><img src="../images/controlCodes.jpg" width="250"><br><sub>In den Einstellungen liegen die Steuer-Codes für den Scanner als PDF.</sub></p>
 
 ### Zeit zwischen zwei Scans
@@ -1094,6 +1143,12 @@ Unter Einstellungen → Darstellung änderst du das Aussehen der App. Die Einste
 - Akzentfarbe: die Farbe von gewählten Reitern, Knöpfen, Schaltern und den Abhak-Kreisen. Standard ist Blau. Wähle eine der Farben oder tippe auf das Farbrad für eine eigene Farbe. Plus und Minus bleiben immer grün und rot, egal welche Akzentfarbe du wählst.
 - Hintergrundfarbe: die Farbe hinter den Kacheln. Standard ist Grau. Auch hier kannst du eine eigene Farbe wählen.
 - Transparenz: der Regler bestimmt, wie durchsichtig die gläsernen Teile sind: die Leiste unten, der Scan-Knopf und die Meldungen. Die Kacheln bleiben unverändert. In der mittleren Stellung ist die Leiste fast klar wie bei iOS. Hat dein Gerät „Transparenz reduzieren“ eingeschaltet, bleibt das Glas milchig.
+
+- Unschärfe: der zweite Regler bestimmt, wie stark das Glas den Hintergrund verwischt. In der mittleren Stellung ist es ein leichtes Verwischen wie bei iOS; nach unten wird das Glas fast scharf, nach oben milchiger. Er arbeitet zusammen mit dem Transparenz-Regler. Hat dein Gerät „Transparenz reduzieren“ eingeschaltet, bleibt das Glas milchig und beide Regler wirken nicht.
+
+Die Suchleisten haben dieselbe Glasoptik wie die Leiste unten und folgen beiden Reglern. Sie bleiben beim Scrollen oben.
+
+Die Schrift folgt der Textgröße deines Geräts (iOS: Einstellungen → Anzeige & Helligkeit → Textgröße; Android: Schriftgröße). Zoomen mit zwei Fingern bleibt aus.
 
 Die Leiste unten faltet sich beim Runterscrollen zu einem kleinen Kreis mit dem aktuellen Symbol zusammen und öffnet sich beim Hochscrollen oder Antippen wieder.
 
