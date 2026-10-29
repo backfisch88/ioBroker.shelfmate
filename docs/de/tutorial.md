@@ -593,11 +593,11 @@ Gleiche Zutaten werden zusammengerechnet.
 
 ### So funktioniert der Abgleich
 
-ShelfMate sucht über Produktnamen, Gruppen und Tags.
+ShelfMate sucht zuerst über den Produktnamen, dann über die Gruppe und zuletzt nach einem ganzen Wort im Namen. Der erste Treffer zählt. Tags werden beim Abgleich nicht verwendet, weil sie oft zu breit sind (zum Beispiel „Frischkäse“ an jedem Frischkäse).
 
 Dabei werden ganze Wörter verglichen.
 
-Beispiel: Cherrytomaten wird nicht automatisch als Tomaten erkannt. Ein entsprechender Tag am Produkt reicht jedoch aus.
+Beispiel: Cherrytomaten wird nicht automatisch als Tomaten erkannt. Gib dem Produkt dafür die Gruppe „Cherrytomaten“. Das Gleiche gilt für Vanillezucker und Vanillinzucker: Beide Produkte bekommen die Gruppe „Vanillezucker“.
 
 Bei Produkten mit Gewicht oder Volumen wird der tatsächliche Bestand berücksichtigt.
 

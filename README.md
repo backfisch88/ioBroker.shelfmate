@@ -282,6 +282,10 @@ Next up is the direct connection of serial (USB) and Bluetooth scanners on the i
 Ideas, wishes or bugs are welcome as a [GitHub issue](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
 ## Changelog
+### 0.4.1 (2026-10-29)
+- Changed: the ingredient check no longer uses tags; it looks at the product name, then the group, then a whole word in the name, so "Milch" no longer finds milk rice or coconut milk
+- Improved: Bring! Special waits for the next list update of the Bring adapter (changed or not, at most 150 seconds) before it writes the next batch; everything queued at that time is written in a row
+
 ### 0.4.0 (2026-10-28)
 - New: set minimum stock and group for several products at once (Tasks → Minimum stock / Groups); new products join a matching group automatically
 - New: editable shelf life rules (Tasks → Shelf life), search in the shelf life list, baby food in jars now has 120 days

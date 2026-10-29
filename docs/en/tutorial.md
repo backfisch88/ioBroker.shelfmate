@@ -593,11 +593,11 @@ Identical ingredients are added up.
 
 ### How the comparison works
 
-ShelfMate searches through product names, groups and tags.
+ShelfMate looks at the product name first, then the group, and last at a whole word inside the name. The first hit wins. Tags are not used for the comparison because they are often too broad (for example "cream cheese" on every cream cheese).
 
 Whole words are compared.
 
-Example: Cherrytomaten is not recognised as Tomaten automatically. A matching tag on the product is enough, though.
+Example: Cherrytomaten is not recognised as Tomaten automatically. Give the product the group "Cherrytomaten" for that. The same goes for two names of one thing, for example Vanillezucker and Vanillinzucker: give both products the group "Vanillezucker".
 
 For products by weight or volume, the actual stock is used.
 

@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "shelfmate",
-        "version": "0.4.0",
+        "version": "0.4.1",
         "news": {
+            "0.4.1": {
+                "en": "Changed: the ingredient check no longer uses tags and only finds whole words, so \"Milch\" no longer finds milk rice or coconut milk. Improved: Bring! Special waits for the next list update of the Bring adapter before it writes the next batch",
+                "de": "Geändert: Der Zutaten-Abgleich verwendet keine Tags mehr und findet nur ganze Wörter, „Milch“ findet also keinen Milchreis oder keine Kokosmilch mehr. Verbessert: Bring! Spezial wartet auf die nächste Listen-Aktualisierung des Bring-Adapters, bevor es die nächste Gruppe schreibt",
+                "ru": "Изменено: сверка ингредиентов больше не использует теги и находит только целые слова, поэтому «Milch» больше не находит рисовую кашу на молоке или кокосовое молоко. Улучшено: Bring! Special ждёт следующего обновления списка адаптером Bring, прежде чем записывать следующую группу",
+                "pt": "Alterado: a verificação de ingredientes já não usa etiquetas e só encontra palavras inteiras, por isso «Milch» já não encontra arroz-doce nem leite de coco. Melhorado: o Bring! Special espera pela próxima atualização da lista do adaptador Bring antes de escrever o grupo seguinte",
+                "nl": "Gewijzigd: de ingrediëntencontrole gebruikt geen tags meer en vindt alleen hele woorden, «Milch» vindt dus geen rijstebrij of kokosmelk meer. Verbeterd: Bring! Special wacht op de volgende lijstupdate van de Bring-adapter voordat de volgende groep wordt geschreven",
+                "fr": "Modifié : la vérification des ingrédients n'utilise plus les tags et ne trouve que des mots entiers, « Milch » ne trouve donc plus de riz au lait ni de lait de coco. Amélioré : Bring! Special attend la prochaine mise à jour de la liste par l'adaptateur Bring avant d'écrire le groupe suivant",
+                "it": "Modificato: il controllo degli ingredienti non usa più i tag e trova solo parole intere, quindi «Milch» non trova più riso al latte o latte di cocco. Migliorato: Bring! Special attende il prossimo aggiornamento della lista dell'adattatore Bring prima di scrivere il gruppo successivo",
+                "es": "Cambiado: la comprobación de ingredientes ya no usa etiquetas y solo encuentra palabras completas, así que «Milch» ya no encuentra arroz con leche ni leche de coco. Mejorado: Bring! Special espera a la siguiente actualización de la lista del adaptador Bring antes de escribir el grupo siguiente",
+                "pl": "Zmieniono: sprawdzanie składników nie używa już tagów i znajduje tylko całe słowa, więc „Milch” nie znajduje już ryżu na mleku ani mleka kokosowego. Ulepszono: Bring! Special czeka na następną aktualizację listy przez adapter Bring, zanim zapisze kolejną grupę",
+                "uk": "Змінено: звірка інгредієнтів більше не використовує теги й знаходить лише цілі слова, тому «Milch» більше не знаходить рисову кашу на молоці чи кокосове молоко. Покращено: Bring! Special чекає наступного оновлення списку адаптером Bring, перш ніж записувати наступну групу",
+                "zh-cn": "更改：配料检查不再使用标签，只匹配完整单词，因此“Milch”不再匹配牛奶米饭或椰奶。改进：Bring! Special 会等待 Bring 适配器下一次更新列表后，再写入下一组"
+            },
             "0.4.0": {
                 "en": "New: set minimum stock and group for several products at once, editable shelf life rules, code library with printable codes, help texts behind an \"i\" icon, Inter font on devices without the Apple font, dates in messages follow the system date format. Improved: glass look, product details page, all buttons the same height. Fixes: back navigation and scroll position, texts that stayed German in other languages",
                 "de": "Neu: Mindestbestand und Gruppe für mehrere Produkte gleichzeitig setzen, eigene Haltbarkeitsregeln, Code-Bibliothek mit druckbaren Codes, Hilfetexte hinter einem „i“-Symbol, Schrift Inter auf Geräten ohne Apple-Schrift, Datumsangaben in Meldungen nach dem Datumsformat des Systems. Verbessert: Glasoptik, Produkt-Detailseite, alle Buttons gleich hoch. Fixes: Zurück-Navigation und Scroll-Position, Texte, die in anderen Sprachen deutsch blieben",
@@ -80,19 +93,6 @@
                 "pl": "Nowość: produkty, miejsca i historia są wyświetlane w kilku kolumnach na tabletach i komputerach",
                 "uk": "Нове: товари, місця зберігання та історія відображаються в кілька стовпців на планшетах і комп'ютерах",
                 "zh-cn": "新增：在平板和桌面设备上，商品、位置和历史记录以多列显示"
-            },
-            "0.1.11": {
-                "en": "New: notifications (Telegram, telegrammenu2, Pushover, ...), consumption statistics and device name in the history",
-                "de": "Neu: Benachrichtigungen (Telegram, telegrammenu2, Pushover, ...), Verbrauchsstatistik und Gerätename im Verlauf",
-                "ru": "Новое: уведомления (Telegram, telegrammenu2, Pushover, ...), статистика расхода и имя устройства в истории",
-                "pt": "Novo: notificações (Telegram, telegrammenu2, Pushover, ...), estatística de consumo e nome do dispositivo no histórico",
-                "nl": "Nieuw: meldingen (Telegram, telegrammenu2, Pushover, ...), verbruiksstatistiek en apparaatnaam in de geschiedenis",
-                "fr": "Nouveau : notifications (Telegram, telegrammenu2, Pushover, ...), statistique de consommation et nom de l'appareil dans l'historique",
-                "it": "Novità: notifiche (Telegram, telegrammenu2, Pushover, ...), statistica dei consumi e nome del dispositivo nella cronologia",
-                "es": "Novedad: notificaciones (Telegram, telegrammenu2, Pushover, ...), estadística de consumo y nombre del dispositivo en el historial",
-                "pl": "Nowość: powiadomienia (Telegram, telegrammenu2, Pushover, ...), statystyka zużycia i nazwa urządzenia w historii",
-                "uk": "Нове: сповіщення (Telegram, telegrammenu2, Pushover, ...), статистика витрат та назва пристрою в історії",
-                "zh-cn": "新增：通知（Telegram、telegrammenu2、Pushover 等）、消耗统计以及历史记录中的设备名称"
             }
         },
         "titleLang": {
