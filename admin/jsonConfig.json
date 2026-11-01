@@ -233,6 +233,53 @@
             "lg": 8,
             "xl": 8
         },
+        "listByGroup": {
+            "type": "checkbox",
+            "label": "listByGroup",
+            "help": "listByGroupHelp",
+            "hidden": "data.shoppingMode === 'off'",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 8,
+            "xl": 8
+        },
+        "webLookup": {
+            "type": "checkbox",
+            "label": "webLookup",
+            "help": "webLookupHelp",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 8,
+            "xl": 8
+        },
+        "eanSearchToken": {
+            "type": "password",
+            "label": "eanSearchToken",
+            "help": "eanSearchTokenHelp",
+            "hidden": "data.webLookup === false",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "openGtinKey": {
+            "type": "password",
+            "label": "openGtinKey",
+            "help": "openGtinKeyHelp",
+            "hidden": "data.webLookup === false",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
         "shoppingQuantity": {
             "type": "checkbox",
             "label": "shoppingQuantity",

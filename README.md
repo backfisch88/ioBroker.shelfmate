@@ -25,7 +25,8 @@ You use it through a web app that you open on your phone and add to the home scr
 ### Products and storage locations
 
 - Add products by barcode or by hand, with name suggestions and a matching category when creating by hand
-- Load product data from Open Food Facts automatically (name, brand, package size, Nutri-Score and categories)
+- Load product data from Open Food Facts and its sister databases (cosmetics, pet food, household) automatically (name, brand, package size, Nutri-Score and categories); the source is shown in the app
+- Unknown barcodes: a button searches the web for name, brand and picture, also for all new products at once (with a review page before anything is saved) or for the picture only (only on request, can be turned off)
 - Edit and refresh product data at any time
 - Create your own EAN-13 barcodes for products without a barcode
 - Upload your own product images (scaled down automatically)
@@ -149,6 +150,10 @@ The most important functions can be adjusted directly in the adapter configurati
 | Certificates | Use certificates from ioBroker or, for example, from the acme adapter |
 | Access key | Optional protection for API access, entered once per device |
 | Shopping list | Off, script, Bring! or Bring! special |
+| Web search for unknown products | Adds the "Search the web" button to the product editor (on by default). It only runs when tapped and only sends the barcode |
+| Token for ean-search.org | Optional free token. With it, the web search uses the official interface of ean-search.org and is not blocked after a few lookups |
+| Key for Open EAN database | Optional free query ID of opengtindb.org. With it, the web search also asks the Open EAN / GTIN database for the name |
+| Group name on the list | Grouped products go on the shopping list with the group name (default). Off: the first empty product of the group |
 | Best-before management | Off, per product or per stocking |
 | Date format | DD.MM.YYYY, DD/MM/YYYY or YYYY-MM-DD |
 | Notifications | Choose the adapter, the recipient and the messages you want |
@@ -215,6 +220,8 @@ ShelfMate provides important information and functions as ioBroker data points.
 | `stats.lowStockCount` | Number of products with low stock |
 | `stats.lowStockList` | List of products with low stock |
 | `stats.consumption` | Consumption of the last 30 days |
+| `history.last24h` | Everything booked in the last 24 hours as JSON, newest first |
+| `history.last24hCount` | Number of bookings in the last 24 hours |
 | `stats.expiringCount` | Number of products that expire soon or have expired |
 | `stats.expiring` | Expiring products as JSON |
 | `stats.expiringHtml` | Expiring products as an HTML table |
@@ -282,6 +289,15 @@ Next up is the direct connection of serial (USB) and Bluetooth scanners on the i
 Ideas, wishes or bugs are welcome as a [GitHub issue](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
 ## Changelog
+### 0.5.0 (2026-11-01)
+- New: web search for unknown barcodes in the product editor (dm, Shop Apotheke, vitality-fit, barcode databases, search engines); optional token for ean-search.org and key for the Open EAN database
+- New: Open Food Facts sister databases (cosmetics, pet food, household); the source is shown in the app
+- New: category Medikamente; medicines take their tags from Shop Apotheke
+- New: barcode field at the top of a new product (the one under "More" stays)
+- New: group name on the shopping list (setting), data points `history.last24h` and `history.last24hCount`
+- Improved: never more than two requests to the outside at once
+- Fixed: the camera restarts by itself when it hangs after a scan (iPhone)
+
 ### 0.4.1 (2026-10-29)
 - Changed: the ingredient check no longer uses tags; it looks at the product name, then the group, then a whole word in the name, so "Milch" no longer finds milk rice or coconut milk
 - Improved: Bring! Special waits for the next list update of the Bring adapter (changed or not, at most 150 seconds) before it writes the next batch; everything queued at that time is written in a row

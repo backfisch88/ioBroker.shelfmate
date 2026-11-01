@@ -23,6 +23,7 @@ const {
 const { ShelfMateServer } = require('./lib/server');
 const { ScanEngine } = require('./lib/scanner');
 const { lookupBarcode } = require('./lib/offLookup');
+const { webLookup, nameImages } = require('./lib/webLookup');
 const { InputReader, listDevices } = require('./lib/inputDevice');
 
 const DATA_FILE = 'shelfmate.json';
@@ -243,6 +244,8 @@ class Shelfmate extends utils.Adapter {
                 'text',
                 false,
             ],
+            ['history.last24h', 'Everything booked in the last 24 hours, newest first (JSON)', 'string', 'json', false],
+            ['history.last24hCount', 'Number of bookings in the last 24 hours', 'number', 'value', false],
             ['shopping.addItem', 'Add an item to the shopping list', 'string', 'text', true],
             [
                 'shopping.lastItem',
@@ -276,6 +279,7 @@ class Shelfmate extends utils.Adapter {
             ['scanner.active', 'Scanner mode: bookings by scanned codes without the app', 'boolean', 'switch', true],
         ];
         await this.setObjectNotExistsAsync('stats', { type: 'channel', common: { name: 'Statistics' }, native: {} });
+        await this.setObjectNotExistsAsync('history', { type: 'channel', common: { name: 'Bookings' }, native: {} });
         await this.setObjectNotExistsAsync('shopping', {
             type: 'channel',
             common: { name: 'Shopping list' },
@@ -357,8 +361,86 @@ class Shelfmate extends utils.Adapter {
                 autoShelfScope: this.config.autoShelfScope === 'dry' ? 'dry' : 'all',
                 dateFormat: ['dmy', 'slash', 'iso'].includes(this.config.dateFormat) ? this.config.dateFormat : 'dmy',
                 inventoryDays: this.inventoryDays(),
+                listByGroup: this.config.listByGroup !== false,
+                webLookup: this.config.webLookup !== false,
             },
         };
+    }
+
+    /**
+     * Search the web for a barcode no product database knows (button in the product editor, never automatic).
+     *
+     * @param {object} cmd command with the barcode
+     * @returns {Promise<object>} result for the app
+     */
+    async findOnWeb(cmd) {
+        const id = clean(cmd.id, 100);
+        const ean = String(cmd.ean || '').trim();
+        if (this.config.webLookup === false) {
+            return { id, ok: true, product: null, reason: 'disabled' };
+        }
+        if (!/^\d{8,14}$/.test(ean)) {
+            return { id, ok: false, error: 'Invalid barcode' };
+        }
+        // the language of the app decides the search sites and the language the names should have
+        const lang = /^[a-z]{2}(?:-[a-z]{2})?$/i.test(String(cmd.lang || '')) ? String(cmd.lang).toLowerCase() : 'de';
+        const given = String(cmd.name || '').trim();
+        if (given.length >= 3) {
+            // the editor has a name already: only pictures for it are wanted
+            let n;
+            try {
+                n = await nameImages(given, { ean, lang });
+            } catch (e) {
+                n = { trace: `error: ${e.message}`, images: [] };
+            }
+            this.log.info(`Picture search for "${given.slice(0, 60)}": ${n.images.length} found (${n.trace})`);
+            const product = n.images.length
+                ? {
+                      name: given,
+                      brand: '',
+                      packageSize: '',
+                      image: n.images[0].url,
+                      images: n.images,
+                      source: n.images[0].source,
+                      url: '',
+                  }
+                : null;
+            return { id, ok: true, product, reason: product ? '' : 'none', trace: n.trace };
+        }
+        this.webCache ||= new Map();
+        const cacheKey = `${ean}|${lang}|${cmd.dmOnly ? 'dm' : ''}${cmd.dmDeep ? 'deep' : ''}`;
+        const cached = this.webCache.get(cacheKey);
+        if (cached && Date.now() - cached.at < 600000) {
+            return { id, ok: true, ...cached.r };
+        }
+        let r;
+        try {
+            r = await webLookup(ean, {
+                eanSearchToken: this.config.eanSearchToken ? String(this.config.eanSearchToken) : '',
+                openGtinKey: this.config.openGtinKey ? String(this.config.openGtinKey) : '',
+                dmOnly: !!cmd.dmOnly,
+                dmDeep: !!cmd.dmDeep,
+                lang,
+            });
+        } catch (e) {
+            this.log.debug(`Web search failed: ${e.message}`);
+            r = { reached: false, trace: `error: ${e.message}`, product: null };
+        }
+        const out = {
+            product: r.product,
+            reason: r.product ? '' : r.reached ? 'none' : 'unreachable',
+            trace: r.trace || '',
+        };
+        this.log.info(
+            `Web search for ${ean}: ${r.product ? `found at ${r.product.source}` : 'nothing'} (${r.trace || 'no details'})`,
+        );
+        if (r.product) {
+            if (this.webCache.size > 50) {
+                this.webCache.clear();
+            }
+            this.webCache.set(cacheKey, { at: Date.now(), r: out });
+        }
+        return { id, ok: true, ...out };
     }
 
     /**
@@ -367,6 +449,10 @@ class Shelfmate extends utils.Adapter {
      * @param {object} cmd command
      */
     runCommand(cmd) {
+        if (cmd && cmd.action === 'webLookup') {
+            // a search on the web takes seconds and changes no data: it does not wait for the bookings
+            return this.findOnWeb(cmd);
+        }
         const run = this.queue.then(() => this.execute(cmd));
         this.queue = run.catch(() => {});
         return run;
@@ -539,6 +625,7 @@ class Shelfmate extends utils.Adapter {
         this.inv.autoShelf = mode !== 'off';
         this.inv.autoDate = fromApp ? mode === 'always' : mode !== 'off';
         this.inv.autoScope = this.config.autoShelfScope === 'dry' ? 'dry' : 'all';
+        this.inv.listByGroup = this.config.listByGroup !== false;
     }
 
     /**
@@ -567,11 +654,13 @@ class Shelfmate extends utils.Adapter {
     }
 
     async updateStats() {
+        this.inv.listByGroup = this.config.listByGroup !== false;
         const low = this.inv.lowStockNames();
         const items = this.inv.inventoryList();
         const bb = this.bestBeforeConfig();
         const expiring = this.inv.expiryList(bb.bestBeforeMode, bb.bestBeforeWarnDays);
         const cons = this.inv.consumablesList(bb.bestBeforeMode, bb.bestBeforeWarnDays);
+        const recent = this.inv.recentHistory(24);
         await Promise.all([
             this.setState('stats.consumables', JSON.stringify(cons), true),
             this.setState(
@@ -579,6 +668,8 @@ class Shelfmate extends utils.Adapter {
                 cons.map(x => consumableLine(x, this.lang, this.config.dateFormat)).join('\n'),
                 true,
             ),
+            this.setState('history.last24h', JSON.stringify(recent), true),
+            this.setState('history.last24hCount', recent.length, true),
             this.setState('stats.products', Object.keys(this.inv.data.products).length, true),
             this.setState('stats.locations', Object.keys(this.inv.data.locations).length, true),
             this.setState('stats.lowStockCount', low.length, true),

@@ -17,6 +17,17 @@
             'lachs|forelle|thunfisch|hering|sardine|makrele|salami|speck|fleisch(?!klöß)|salat|tofu|hummus',
         ].join('|'),
     );
+    // Drogerie und Haushalt: Lebensmittel-Stichwörter (baby, milch, honig …) dürfen hier nichts schätzen
+    const NONFOOD = new RegExp(
+        [
+            `(?:^|[^${L}])(?:drogerie|haushalt|medikament|arzneimittel|kosmetik|körperpflege|babypflege|reinigung|waschen)(?![${L}])`,
+            `(?:^|[^${L}])(?:deo|deodorant|duschen|rasier)`,
+            'seife|shampoo|duschgel|duschbad|badezusatz|pflegebad|schaumbad|lotion|zahnpasta|zahncreme|spülung|waschmittel|weichspüler|spülmittel|reiniger|feuchttücher|sonnencreme|sonnenmilch|sonnenschutz|körpermilch|reinigungsmilch|pflegemilch|handcreme|gesichtscreme|nachtcreme|tagescreme|körperöl|haarspray|haargel|parfum|windel|waschgel|abschminke',
+        ].join('|'),
+    );
+    function isNonFood(text) {
+        return NONFOOD.test(String(text || '').toLowerCase());
+    }
     const RULES = [
         // Babynahrung (Gläschen, Breie, Quetschies): bewusst kurz angesetzt, das echte MHD bitte nachkontrollieren
         [120, 'baby|gläschen|babynahrung|babykost|beikost|babybrei|getreidebrei|früchtebrei|quetschie|quetschbeutel|hipp|babydream|bebivita|alete|holle|sinnlack|kleine feinschmecker|kindermenü', 'gläschen|babynahrung|babybrei|getreidebrei'],
@@ -98,6 +109,7 @@
                 .map(x => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
             if (ws.length) {
                 custom.push({
+                    nonfood: ws.some(w => NONFOOD.test(w)),
                     re: new RegExp(`(?:^|[^${L}])(?:${ws.join('|')})`),
                     shelf: Number(r.shelf) > 0 ? Number(r.shelf) : 0,
                     opened: Number(r.opened) > 0 ? Number(r.opened) : 0,
@@ -107,7 +119,8 @@
     }
     function customDays(t, kind) {
         for (const r of custom) {
-            if (r[kind] > 0 && r.re.test(t)) {
+            // an own rule for food words ("baby") does not reach drugstore goods, unless it names drugstore words itself
+            if (r[kind] > 0 && r.re.test(t) && (r.nonfood || !isNonFood(t))) {
                 return r[kind];
             }
         }
@@ -149,6 +162,9 @@
 
     function plainShelf(t, name) {
         const n = String(name === undefined ? t : name).toLowerCase();
+        if (isNonFood(t)) {
+            return 0;
+        }
         const soup = /suppe|brei(pulver)?\b|milchbrei/.test(n) && !/frisch|kühl|gekühlt/.test(n);
         if (!soup && EXCLUDE.test(n)) {
             return 0;
@@ -206,6 +222,9 @@
     }
 
     function plainOpened(t) {
+        if (isNonFood(t)) {
+            return 0;
+        }
         for (const [days, re] of OPENED) {
             if (re.test(t)) {
                 return days;
@@ -215,10 +234,11 @@
     }
 
     if (typeof module === 'object' && module.exports) {
-        module.exports = { guessShelfLife, guessOpenedDays, setShelfRules, defaultRules };
+        module.exports = { guessShelfLife, guessOpenedDays, setShelfRules, defaultRules, isNonFood };
     } else {
         root.guessShelfLife = guessShelfLife;
         root.guessOpenedDays = guessOpenedDays;
+        root.isNonFood = isNonFood;
         root.setShelfRules = setShelfRules;
         root.defaultRules = defaultRules;
     }

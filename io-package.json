@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "shelfmate",
-        "version": "0.4.1",
+        "version": "0.5.0",
         "news": {
+            "0.5.0": {
+                "en": "New: web search for unknown barcodes (dm, Shop Apotheke, vitality-fit, barcode databases, search engines), Open Facts sister databases, category Medikamente with tags from Shop Apotheke, barcode field at the top of new products, group name on the shopping list, data points for the last 24 hours. Fixed: the camera restarts by itself when it hangs after a scan (iPhone).",
+                "de": "Neu: Websuche für unbekannte Barcodes (dm, Shop Apotheke, vitality-fit, Barcode-Datenbanken, Suchmaschinen), Schwesterdatenbanken von Open Facts, Kategorie Medikamente mit Tags von Shop Apotheke, Barcode-Feld oben bei neuen Produkten, Gruppenname auf der Einkaufsliste, Datenpunkte für die letzten 24 Stunden. Behoben: Die Kamera startet sich selbst neu, wenn sie nach einem Scan hängt (iPhone).",
+                "ru": "Новое: поиск в интернете для неизвестных штрихкодов (dm, Shop Apotheke, vitality-fit, базы штрихкодов, поисковые системы), родственные базы Open Facts, категория «Medikamente» с тегами из Shop Apotheke, поле штрихкода вверху у новых продуктов, название группы в списке покупок, пункты данных за последние 24 часа. Исправлено: камера сама перезапускается, если зависает после сканирования (iPhone).",
+                "pt": "Novo: pesquisa na web para códigos de barras desconhecidos (dm, Shop Apotheke, vitality-fit, bases de dados de códigos de barras, motores de busca), bases de dados irmãs do Open Facts, categoria Medikamente com etiquetas da Shop Apotheke, campo do código de barras no topo dos produtos novos, nome do grupo na lista de compras, pontos de dados das últimas 24 horas. Corrigido: a câmara reinicia-se sozinha quando bloqueia após uma leitura (iPhone).",
+                "nl": "Nieuw: zoeken op het web naar onbekende barcodes (dm, Shop Apotheke, vitality-fit, barcodedatabases, zoekmachines), zusterdatabases van Open Facts, categorie Medikamente met tags van Shop Apotheke, barcodeveld bovenaan bij nieuwe producten, groepsnaam op de boodschappenlijst, datapunten voor de laatste 24 uur. Opgelost: de camera start zichzelf opnieuw als hij na een scan vastloopt (iPhone).",
+                "fr": "Nouveau : recherche web pour les codes-barres inconnus (dm, Shop Apotheke, vitality-fit, bases de codes-barres, moteurs de recherche), bases sœurs d'Open Facts, catégorie Medikamente avec tags de Shop Apotheke, champ code-barres en haut des nouveaux produits, nom du groupe dans la liste de courses, points de données des dernières 24 heures. Corrigé : la caméra redémarre toute seule quand elle se bloque après un scan (iPhone).",
+                "it": "Novità: ricerca web per codici a barre sconosciuti (dm, Shop Apotheke, vitality-fit, banche dati di codici a barre, motori di ricerca), banche dati sorelle di Open Facts, categoria Medikamente con tag di Shop Apotheke, campo del codice a barre in alto nei nuovi prodotti, nome del gruppo nella lista della spesa, punti dati delle ultime 24 ore. Corretto: la fotocamera si riavvia da sola se si blocca dopo una scansione (iPhone).",
+                "es": "Novedades: búsqueda web de códigos de barras desconocidos (dm, Shop Apotheke, vitality-fit, bases de datos de códigos de barras, buscadores), bases de datos hermanas de Open Facts, categoría Medikamente con etiquetas de Shop Apotheke, campo de código de barras arriba en los productos nuevos, nombre del grupo en la lista de la compra, puntos de datos de las últimas 24 horas. Corregido: la cámara se reinicia sola si se bloquea tras un escaneo (iPhone).",
+                "pl": "Nowości: wyszukiwanie w sieci nieznanych kodów kreskowych (dm, Shop Apotheke, vitality-fit, bazy kodów kreskowych, wyszukiwarki), siostrzane bazy Open Facts, kategoria Medikamente z tagami ze Shop Apotheke, pole kodu kreskowego na górze nowych produktów, nazwa grupy na liście zakupów, punkty danych z ostatnich 24 godzin. Naprawiono: aparat sam uruchamia się ponownie, gdy zawiesi się po skanowaniu (iPhone).",
+                "uk": "Нове: пошук в інтернеті для невідомих штрихкодів (dm, Shop Apotheke, vitality-fit, бази штрихкодів, пошукові системи), споріднені бази Open Facts, категорія «Medikamente» з тегами зі Shop Apotheke, поле штрихкоду вгорі в нових товарів, назва групи у списку покупок, пункти даних за останні 24 години. Виправлено: камера сама перезапускається, якщо зависає після сканування (iPhone).",
+                "zh-cn": "新增：对未知条码进行网络搜索（dm、Shop Apotheke、vitality-fit、条码数据库、搜索引擎）、Open Facts 姊妹数据库、带有 Shop Apotheke 标签的“Medikamente”类别、新产品顶部的条码输入框、购物清单上的分组名称、最近 24 小时的数据点。修复：相机在扫描后卡住时会自动重新启动（iPhone）。"
+            },
             "0.4.1": {
                 "en": "Changed: the ingredient check no longer uses tags and only finds whole words, so \"Milch\" no longer finds milk rice or coconut milk. Improved: Bring! Special waits for the next list update of the Bring adapter before it writes the next batch",
                 "de": "Geändert: Der Zutaten-Abgleich verwendet keine Tags mehr und findet nur ganze Wörter, „Milch“ findet also keinen Milchreis oder keine Kokosmilch mehr. Verbessert: Bring! Spezial wartet auf die nächste Listen-Aktualisierung des Bring-Adapters, bevor es die nächste Gruppe schreibt",
@@ -80,19 +93,6 @@
                 "pl": "Nowość: filtr obszaru w przeglądzie. Poprawki: migająca lista produktów, kamera pozostawała włączona, wiersze inwentaryzacji na małych ekranach",
                 "uk": "Нове: фільтр за зоною в огляді. Виправлення: миготіння списку товарів, камера залишалася ввімкненою, рядки інвентаризації на малих екранах",
                 "zh-cn": "新增：概览中的区域筛选。修复：商品列表闪烁、相机保持开启、小屏幕上的盘点行布局"
-            },
-            "0.1.12": {
-                "en": "New: products, storage locations and history are shown in several columns on tablets and desktops",
-                "de": "Neu: Produkte, Lagerorte und Verlauf werden auf Tablets und Desktops in mehreren Spalten angezeigt",
-                "ru": "Новое: товары, места хранения и история отображаются в несколько столбцов на планшетах и компьютерах",
-                "pt": "Novo: produtos, locais e histórico são mostrados em várias colunas em tablets e computadores",
-                "nl": "Nieuw: producten, locaties en geschiedenis worden op tablets en desktops in meerdere kolommen getoond",
-                "fr": "Nouveau : produits, emplacements et historique s'affichent sur plusieurs colonnes sur tablette et ordinateur",
-                "it": "Novità: prodotti, luoghi e cronologia sono mostrati su più colonne su tablet e desktop",
-                "es": "Novedad: productos, ubicaciones e historial se muestran en varias columnas en tabletas y ordenadores",
-                "pl": "Nowość: produkty, miejsca i historia są wyświetlane w kilku kolumnach na tabletach i komputerach",
-                "uk": "Нове: товари, місця зберігання та історія відображаються в кілька стовпців на планшетах і комп'ютерах",
-                "zh-cn": "新增：在平板和桌面设备上，商品、位置和历史记录以多列显示"
             }
         },
         "titleLang": {
@@ -172,10 +172,14 @@
         "messagebox": true
     },
     "protectedNative": [
-        "accessKey"
+        "accessKey",
+        "eanSearchToken",
+        "openGtinKey"
     ],
     "encryptedNative": [
-        "accessKey"
+        "accessKey",
+        "eanSearchToken",
+        "openGtinKey"
     ],
     "native": {
         "port": 8120,
@@ -199,6 +203,10 @@
         "autoShelfMode": "always",
         "autoShelfScope": "all",
         "dateFormat": "dmy",
+        "listByGroup": true,
+        "webLookup": true,
+        "eanSearchToken": "",
+        "openGtinKey": "",
         "checkAddMissing": false,
         "notifyAdapter": "",
         "notifyTarget": "",
