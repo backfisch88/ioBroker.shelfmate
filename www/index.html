@@ -982,7 +982,7 @@ function offTags(f){const ids=(Array.isArray(f.categories_tags)?f.categories_tag
 function openEditor(id=null,ean=''){{const ip=$('imgPick');if(ip)ip.hidden=true}editorFrom=currentPage;editId=id;sugAdded=[];const p=id?data.products[id]:null;$('editorTitle').textContent=p?'Produkt bearbeiten':'Produkt anlegen';$('eanTop').hidden=!!p;$('editName').value=p?.name||'';$('editBrand').value=p?.brand||'';$('editBarcode').value=p?.ean||ean;editImgData=String(p?.image||'').startsWith('data:')?p.image:'';$('editImage').value=editImgData?'':(p?.image||'');showImgPrev();editOff=!!p&&(p.source==='off'||/\.open(food|beauty|petfood|products)facts\./i.test(p.image||''));editSrc=p?srcOf(p):'Open Food Facts';editWebSrc=p&&p.source&&p.source!=='off'?p.source:'';applyEanLock();updateEanPrev();setCategory(p?.category||'');$('editType').value=p?.type||'count';$('editUnit').value=p?.unit||'Packung';$('editSize').value=p?.packageSize||'';$('editNutri').value=p?.nutriscore||'';$('editMin').value=p?.minStock||'';$('bbBox').hidden=bbMode()!=='product';$('shelfBox').hidden=bbMode()==='off';$('openBox').hidden=bbMode()==='off';$('edS4').hidden=bbMode()==='off';$('editShelf').value=p?.shelfLifeDays||'';{const g=shelfDays({name:p?.name,category:p?.category,group:p?.group,tags:p?.tags});$('shelfHint').textContent=!(p?.shelfLifeDays>0)&&g>0?'Leer lassen: Vorschlag '+g+' Tage (aus dem Produktnamen)':'Optional. Beim Einlagern wird das MHD damit vorbelegt.'}$('editOpened').value=p?.openedDays||'';{const g=!(p?.openedDays>0)&&data.config&&data.config.autoShelfLife!==false&&window.guessOpenedDays?window.guessOpenedDays([p?.name,p?.category,p?.group,...(p?.tags||[])].join(' ')):0;$('openedHint').textContent=g>0?'Leer lassen: Vorschlag '+g+' Tage (aus dem Produktnamen)':'Optional. Gilt ab dem Markieren als geöffnet.'}$('editBB').value=p?.bestBefore||'';smartDate('editBB');smartDateSync('editBB');$('editGroup').value=p?.group||'';$('groupChips').innerHTML=[...new Set(Object.values(data.products).map(x=>x.group).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'de')).map(g=>`<button type="button" class="tag tagLink" data-grp="${safe(g)}">${safe(g)}</button>`).join('');$('groupChips').querySelectorAll('[data-grp]').forEach(b=>b.onclick=()=>{$('editGroup').value=b.dataset.grp});$('groupList').innerHTML=[...new Set(Object.values(data.products).map(x=>x.group).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'de')).map(g=>`<option value="${safe(g)}">`).join('');$('editTags').value=(p?.tags||[]).join(', ');$('edS1').open=true;$('edS2').open=!p;for(const k of ['edS3','edS4','edS5'])$(k).open=false;edSums();updateWebFind();go('editor')}
 function edSums(){const v=id=>$(id).value.trim(),t=$('editType').value;$('unitBox').hidden=t!=='count';$('nutriRow').querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.n===$('editNutri').value));$('edSum1').textContent=[v('editBrand'),$('editCategory').value].filter(Boolean).join(' · ');$('edSum2').textContent=[t==='count'?v('editUnit'):t==='weight'?'g':'ml',v('editSize'),Number(v('editMin'))>0?'min '+v('editMin'):''].filter(Boolean).join(' · ');$('edSum3').textContent=[v('editGroup'),v('editTags')].filter(Boolean).join(' · ');$('edSum4').textContent=[v('editShelf')&&v('editShelf')+' d',v('editOpened')&&'geöffnet '+v('editOpened')+' d'].filter(Boolean).join(' · ');$('edSum5').textContent=v('editBarcode')}
 $('editor').addEventListener('input',edSums);$('editor').addEventListener('change',edSums);$('nutriRow').onclick=e=>{const b=e.target.closest('button');if(!b)return;$('editNutri').value=b.dataset.n;edSums()};
-$('updInfo').textContent='Version 557 · '+(typeof KL_BUILD==='function'?KL_BUILD()||'noch nicht geprüft':'?');$('updNow').onclick=async()=>{const b=$('updNow');b.disabled=true;try{const r=await window.klManual();$('updInfo').textContent='Version 557 · Installiert: '+r.boot+' · Server: '+r.remote;toast(r.same?'App ist aktuell':'Neue Version – lade neu …')}catch(e){toast('Prüfung fehlgeschlagen: '+e.message)}b.disabled=false};
+$('updInfo').textContent='Version 558 · '+(typeof KL_BUILD==='function'?KL_BUILD()||'noch nicht geprüft':'?');$('updNow').onclick=async()=>{const b=$('updNow');b.disabled=true;try{const r=await window.klManual();$('updInfo').textContent='Version 558 · Installiert: '+r.boot+' · Server: '+r.remote;toast(r.same?'App ist aktuell':'Neue Version – lade neu …')}catch(e){toast('Prüfung fehlgeschlagen: '+e.message)}b.disabled=false};
 function effOpened(p){if(Number(p.openedDays)>0)return{v:Number(p.openedDays),own:true};rulesSync();const g=data.config&&data.config.autoShelfLife!==false&&typeof window.guessOpenedDays==='function'?window.guessOpenedDays([p.name,p.category,p.group,...(p.tags||[])].join(' ')):0;return{v:g,own:false}}
 function effShelf(p){return{v:shelfDays(p),own:Number(p.shelfLifeDays)>0&&!p.shelfLifeAuto}}
 function renderShelfList(){const box=$('shelfList'),q=norm($('slSearch').value),F=fillFilters('slArea','slLoc','slCat'),nf=[F.area,F.loc,F.cat].filter(Boolean).length;$('slBadge').hidden=!nf;$('slBadge').textContent=nf;$('slFilterBtn').classList.toggle('active',nf>0);const all=Object.values(data.products).filter(p=>Number(p.shelfLifeDays)>0||Number(p.openedDays)>0).sort((a,b)=>a.name.localeCompare(b.name,'de')),ps=all.filter(p=>passFilters(p,F.area,F.loc,F.cat)&&(!q||norm([p.name,p.brand,p.category,p.group].join(' ')).includes(q)));
@@ -1424,7 +1424,7 @@ async function startCamera(){
   const formats=copyScan?[Html5QrcodeSupportedFormats.QR_CODE,Html5QrcodeSupportedFormats.CODE_128,Html5QrcodeSupportedFormats.EAN_13]:qrMode?[Html5QrcodeSupportedFormats.QR_CODE,Html5QrcodeSupportedFormats.CODE_128]:[Html5QrcodeSupportedFormats.EAN_13,Html5QrcodeSupportedFormats.EAN_8,Html5QrcodeSupportedFormats.UPC_A,Html5QrcodeSupportedFormats.UPC_E,Html5QrcodeSupportedFormats.CODE_128,...(invScanning||stockScanning?[Html5QrcodeSupportedFormats.QR_CODE,Html5QrcodeSupportedFormats.CODE_128]:[])];
   const scanner=new Html5Qrcode('html5scanner',{formatsToSupport:formats,verbose:false,useBarCodeDetectorIfSupported:true});
   qrScanner=scanner;
-  await scanner.start({facingMode:'environment'},{fps:30,disableFlip:true,videoConstraints:{facingMode:'environment',width:{ideal:1280},height:{ideal:720}},qrbox:qrMode&&!copyScan?{width:220,height:220}:{width:Math.min(340,Math.max(200,window.innerWidth-50)),height:invScanning||stockScanning||copyScan?200:120}},async (code,dec)=>{
+  await scanner.start({facingMode:'environment'},{fps:30,disableFlip:true,videoConstraints:{facingMode:'environment',width:{ideal:1920},height:{ideal:1080}},qrbox:qrMode&&!copyScan?{width:220,height:220}:{width:Math.min(340,Math.max(200,window.innerWidth-50)),height:invScanning||stockScanning||copyScan?200:220}},async (code,dec)=>{
     camBoost(scanner);
     if(!scannerRun||code===lastScan&&Date.now()-lastScanAt<(invScanning||stockScanning?900:2200))return;
     lastScan=code;lastScanAt=Date.now();if(invScanning){invScanCode(code,true);return}if(stockScanning){stScanCode(code,true);return}scannerRun=false;
@@ -1461,22 +1461,42 @@ async function stopCamera(){
  }
 }
 /* the library shrinks the scan area to its size on the screen (about 340 px) before it reads it, so a barcode had to fill the whole box and the phone had to be held so close that the picture got blurry; read it at the real camera resolution instead */
-const camBoosted=new WeakSet();let camCap=720;
+const camBoosted=new WeakSet(),camStat={};let camCap=900,camN=0;
 function camBoost(sc){
  try{
   if(camBoosted.has(sc)||!sc.context||!sc.canvasElement)return;
-  camBoosted.add(sc);
+  camBoosted.add(sc);camStat.native=!!(sc.qrcode&&sc.qrcode.secondaryDecoder);
+  const hd=[sc.qrcode&&sc.qrcode.primaryDecoder,sc.qrcode&&sc.qrcode.secondaryDecoder],hard=on=>hd.forEach(d=>{try{d&&d.hints&&d.hints.set&&d.hints.set(3,on)}catch(e){}});
   const ctx=sc.context,cv=sc.canvasElement,draw=ctx.drawImage.bind(ctx);
   let last=0,avg=0;
   ctx.drawImage=(v,sx,sy,sw,sh)=>{
    /* a slow phone reads fewer pictures per second: if one round takes too long, the area is read a little smaller until it is quick again */
-   const t=performance.now();if(last){avg=avg?avg*.7+(t-last)*.3:t-last;if(avg>140&&camCap>480){camCap=Math.max(480,Math.round(camCap*.85));avg=0}}last=t;
+   const t=performance.now();if(last&&camN%4!==3){avg=avg?avg*.7+(t-last)*.3:t-last;camStat.ms=Math.round(avg);if(avg>160&&camCap>480){camCap=Math.max(480,Math.round(camCap*.85));avg=0}}last=t;
+   /* the picture fills the box with object-fit:cover, so part of it is cut off; work out the area that is really shown (the library assumes the whole picture is shown) */
+   const r=sc.qrRegion,vw=v.videoWidth,vh=v.videoHeight,cw=v.clientWidth,ch=v.clientHeight;
+   if(r&&vw&&vh&&cw&&ch){const f=Math.max(cw/vw,ch/vh),ox=(cw-vw*f)/2,oy=(ch-vh*f)/2;sx=Math.max(0,(r.x-ox)/f);sy=Math.max(0,(r.y-oy)/f);sw=Math.min(vw-sx,r.width/f);sh=Math.min(vh-sy,r.height/f)}
    const k=Math.min(1,camCap/Math.max(1,sw)),w=Math.max(1,Math.round(sw*k)),h=Math.max(1,Math.round(sh*k));
    if(cv.width!==w||cv.height!==h){cv.width=w;cv.height=h}
+   camStat.vid=vw+'×'+vh;camStat.cv=w+'×'+h;
    draw(v,sx,sy,sw,sh,0,0,w,h);
+   /* 3 of 4 pictures: keep only the darkest bars against everything else (a dark area around the label confuses the reader); every 4th picture is also read over the full height, not just 15 lines around the middle */
+   camN++;const mode=camN%4;hard(mode===3);
+   if(mode){try{
+    const im=ctx.getImageData(0,0,w,h),d=im.data,hist=new Uint32Array(256);let n=0;
+    for(let i=0;i<d.length;i+=16){hist[(d[i]*77+d[i+1]*150+d[i+2]*29)>>8]++;n++}
+    let a=0,lo=0,md=0;
+    for(let g=0;g<256;g++){a+=hist[g];if(!lo&&a>=n*.03)lo=g+1;if(a>=n*.5){md=g;break}}
+    if(md-lo>=15){
+     const T=lo+[0,.3,.5,.4][mode]*(md-lo);
+     for(let i=0;i<d.length;i+=4){const v2=((d[i]*77+d[i+1]*150+d[i+2]*29)>>8)<T?0:255;d[i]=d[i+1]=d[i+2]=v2}
+     ctx.putImageData(im,0,0);
+    }
+   }catch(e){}}
   };
  }catch(e){}
 }
+/* tap the status line of the camera to see what the camera and the reader are doing (for error reports) */
+$('cameraStatus').onclick=()=>{if(!qrScanner)return;toast('Kamera '+(camStat.vid||'?')+' · Lesen '+(camStat.cv||'?')+' · '+(camStat.ms||'?')+' ms · '+(camStat.native?'nativ+ZXing':'ZXing'))};
 /* the library reports the start before the video really plays; if the scan loop never begins, start the camera again */
 function camCheck(scanner){
  if(qrScanner!==scanner||currentPage!=='scanner')return;
