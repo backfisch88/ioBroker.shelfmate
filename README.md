@@ -73,10 +73,10 @@ Missing ingredients can be put on the shopping list directly. What is already in
 - Capture barcodes with the phone camera or a scanner
 - Create and print QR codes for storage locations
 - Print EAN and QR labels in your own sizes, for example 50 × 30 mm
-- Labels for shelves, boxes, the freezer and opened products
+- Labels for shelves, boxes, the freezer (with a free text line, for example the weight) and opened products
 - Choose which labels the app offers
 - Code library: save your own codes (for example from other scanners or apps), print them as labels and choose which of the control codes go into the PDF
-- Scanner mode for stocking in and out without the web app open
+- Scanner mode for stocking in and out without the web app open; scanners with a USB dongle or Bluetooth are read directly on the ioBroker host
 - Repeated scans (three or more) trigger actions you choose: stock in at the last location, mark as empty, put on the shopping list and more
 - Do a stocktaking by product list or by scanner
 
@@ -282,13 +282,16 @@ It explains the web app, storage locations, product groups, minimum stock, best-
 
 ---
 
-## Planned
+## Feedback
 
-ShelfMate is developed continuously.
-Next up is the direct connection of serial (USB) and Bluetooth scanners on the ioBroker host.
 Ideas, wishes or bugs are welcome as a [GitHub issue](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
 ## Changelog
+### 0.5.1 (2026-11-04)
+- New: free text instead of "Haltbar bis" on the freezer label (settings, labels)
+- Improved: the scanner finds the barcode anywhere in the picture, also on dark backgrounds; faster product lookup
+- Fixed: product database reported as unreachable on single scans
+
 ### 0.5.0 (2026-11-01)
 - New: web search for unknown barcodes in the product editor (dm, Shop Apotheke, vitality-fit, barcode databases, search engines); optional token for ean-search.org and key for the Open EAN database
 - New: Open Food Facts sister databases (cosmetics, pet food, household); the source is shown in the app

@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "shelfmate",
-        "version": "0.5.0",
+        "version": "0.5.1",
         "news": {
+            "0.5.1": {
+                "en": "New: free text instead of \"Haltbar bis\" on the freezer label. Improved: the scanner finds the barcode anywhere in the picture, also on dark backgrounds; faster product lookup. Fixed: product database often reported as unreachable on single scans.",
+                "de": "Neu: Freitext statt „Haltbar bis“ auf dem Gefrieretikett. Verbessert: Der Scanner findet den Barcode überall im Bild, auch auf dunklem Grund; schnellere Produktsuche. Behoben: Produktdatenbank wurde bei Einzelscans oft als nicht erreichbar gemeldet.",
+                "ru": "Новое: свободный текст вместо «Haltbar bis» на этикетке для морозилки. Улучшено: сканер находит штрихкод в любом месте кадра, в том числе на тёмном фоне; быстрее поиск продуктов. Исправлено: база продуктов часто сообщалась как недоступная при одиночных сканированиях.",
+                "pt": "Novo: texto livre em vez de «Haltbar bis» na etiqueta do congelador. Melhorado: o leitor encontra o código de barras em qualquer parte da imagem, também em fundos escuros; pesquisa de produtos mais rápida. Corrigido: a base de dados de produtos era muitas vezes indicada como inacessível em leituras individuais.",
+                "nl": "Nieuw: vrije tekst in plaats van «Haltbar bis» op het vriezeretiket. Verbeterd: de scanner vindt de barcode overal in het beeld, ook op een donkere ondergrond; sneller zoeken naar producten. Opgelost: de productdatabase werd bij losse scans vaak als onbereikbaar gemeld.",
+                "fr": "Nouveau : texte libre à la place de « Haltbar bis » sur l'étiquette congélateur. Amélioré : le scanner trouve le code-barres n'importe où dans l'image, même sur fond sombre ; recherche de produits plus rapide. Corrigé : la base de produits était souvent signalée comme injoignable lors de scans isolés.",
+                "it": "Novità: testo libero al posto di «Haltbar bis» sull'etichetta del congelatore. Migliorato: lo scanner trova il codice a barre in qualsiasi punto dell'immagine, anche su sfondo scuro; ricerca prodotti più veloce. Corretto: la banca dati dei prodotti veniva spesso segnalata come non raggiungibile nelle scansioni singole.",
+                "es": "Novedades: texto libre en lugar de «Haltbar bis» en la etiqueta del congelador. Mejorado: el escáner encuentra el código de barras en cualquier parte de la imagen, también sobre fondo oscuro; búsqueda de productos más rápida. Corregido: la base de datos de productos se notificaba a menudo como inaccesible en escaneos individuales.",
+                "pl": "Nowości: dowolny tekst zamiast «Haltbar bis» na etykiecie do zamrażarki. Ulepszono: skaner znajduje kod kreskowy w dowolnym miejscu obrazu, także na ciemnym tle; szybsze wyszukiwanie produktów. Naprawiono: baza produktów była często zgłaszana jako niedostępna przy pojedynczych skanach.",
+                "uk": "Нове: довільний текст замість «Haltbar bis» на етикетці для морозилки. Покращено: сканер знаходить штрихкод у будь-якому місці кадру, також на темному тлі; швидший пошук продуктів. Виправлено: база продуктів часто повідомлялась як недоступна під час одиночних сканувань.",
+                "zh-cn": "新增：冷冻标签上可用自由文本代替“Haltbar bis”。改进：扫描器可在画面任意位置找到条码，深色背景上也可以；产品查询更快。修复：单次扫描时产品数据库常被报告为无法访问。"
+            },
             "0.5.0": {
                 "en": "New: web search for unknown barcodes (dm, Shop Apotheke, vitality-fit, barcode databases, search engines), Open Facts sister databases, category Medikamente with tags from Shop Apotheke, barcode field at the top of new products, group name on the shopping list, data points for the last 24 hours. Fixed: the camera restarts by itself when it hangs after a scan (iPhone).",
                 "de": "Neu: Websuche für unbekannte Barcodes (dm, Shop Apotheke, vitality-fit, Barcode-Datenbanken, Suchmaschinen), Schwesterdatenbanken von Open Facts, Kategorie Medikamente mit Tags von Shop Apotheke, Barcode-Feld oben bei neuen Produkten, Gruppenname auf der Einkaufsliste, Datenpunkte für die letzten 24 Stunden. Behoben: Die Kamera startet sich selbst neu, wenn sie nach einem Scan hängt (iPhone).",
@@ -80,19 +93,6 @@
                 "pl": "Nowości: opcjonalna ilość na liście zakupów, miejsca na artykuły zużywalne z punktami danych, tworzenie nieznanych produktów skanerem, edytowalne powiadomienie o terminie. Poprawki: zwijane grupy podczas wyszukiwania, synchronizacja wskazówek",
                 "uk": "Нове: необов’язкова кількість у списку покупок, місця витратних матеріалів з точками даних, створення невідомих продуктів сканером, редаговане сповіщення про термін. Виправлення: згортання груп під час пошуку, синхронізація підказок",
                 "zh-cn": "新增：购物清单的可选数量、带数据点的耗材存放位置、扫描器创建未知产品、可编辑的到期提醒。修复：搜索时可折叠分组、提示同步"
-            },
-            "0.1.13": {
-                "en": "New: area filter in the overview. Fixes: flickering product list, camera stayed on, stocktaking rows on small screens",
-                "de": "Neu: Bereichsfilter in der Übersicht. Korrekturen: flackernde Produktliste, Kamera blieb an, Inventur-Zeilen auf kleinen Displays",
-                "ru": "Новое: фильтр по области в обзоре. Исправления: мерцание списка товаров, камера оставалась включённой, строки инвентаризации на малых экранах",
-                "pt": "Novo: filtro por área na visão geral. Correções: lista de produtos a piscar, câmara que ficava ligada, linhas do inventário em ecrãs pequenos",
-                "nl": "Nieuw: gebiedsfilter in het overzicht. Correcties: flikkerende productlijst, camera bleef aan, inventarisatieregels op kleine schermen",
-                "fr": "Nouveau : filtre par zone dans la vue d'ensemble. Corrections : liste de produits qui clignote, caméra restée allumée, lignes d'inventaire sur petits écrans",
-                "it": "Novità: filtro per area nella panoramica. Correzioni: elenco prodotti che sfarfalla, fotocamera rimasta accesa, righe dell'inventario su schermi piccoli",
-                "es": "Novedad: filtro por zona en la vista general. Correcciones: lista de productos parpadeante, cámara que seguía encendida, filas del inventario en pantallas pequeñas",
-                "pl": "Nowość: filtr obszaru w przeglądzie. Poprawki: migająca lista produktów, kamera pozostawała włączona, wiersze inwentaryzacji na małych ekranach",
-                "uk": "Нове: фільтр за зоною в огляді. Виправлення: миготіння списку товарів, камера залишалася ввімкненою, рядки інвентаризації на малих екранах",
-                "zh-cn": "新增：概览中的区域筛选。修复：商品列表闪烁、相机保持开启、小屏幕上的盘点行布局"
             }
         },
         "titleLang": {

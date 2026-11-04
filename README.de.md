@@ -69,10 +69,10 @@ Fehlende Zutaten lassen sich direkt auf die Einkaufsliste setzen. Was bereits vo
 - Barcodes mit der Smartphone-Kamera oder einem Scanner erfassen
 - QR-Codes für Lagerorte erstellen und drucken
 - EAN- und QR-Etiketten in eigenen Größen drucken, zum Beispiel 50 × 30 mm
-- Etiketten für Regale, Boxen, Gefrierfach und geöffnete Produkte
+- Etiketten für Regale, Boxen, Gefrierfach (mit freier Textzeile, zum Beispiel dem Gewicht) und geöffnete Produkte
 - Code-Bibliothek: eigene Codes speichern, als Etikett drucken und wählen, welche Steuer-Codes ins PDF kommen
 - Einstellen, welche Etiketten in der App angeboten werden
-- Scanner-Modus für das Ein- und Auslagern ohne geöffnete Web-App, auch mit Scannern mit Speicher
+- Scanner-Modus für das Ein- und Auslagern ohne geöffnete Web-App, auch mit Scannern mit Speicher; Scanner mit USB-Dongle oder Bluetooth werden direkt am ioBroker-Host gelesen
 - MHD für mehrere Produkte auf einmal: im Einräum-Modus per Scan-Code, über `SM:COPY` kopieren oder in der Liste „Ohne MHD“ für markierte Lagerorte
 - Mehrfach scannen löst frei wählbare Aktionen aus (am letzten Lagerort einlagern, als leer markieren, auf die Einkaufsliste setzen und mehr)
 - Unbekannte Barcodes werden im Scanner-Modus automatisch angelegt (Daten von Open Food Facts) und bei fehlenden Daten zum Ergänzen vorgemerkt
@@ -278,11 +278,7 @@ Darin werden unter anderem die Bedienung der Web-App, Lagerorte, Produktgruppen,
 
 ---
 
-## Geplant
-
-ShelfMate wird laufend weiterentwickelt.
-
-Als Nächstes ist die direkte Anbindung serieller Scanner (USB) und Bluetooth-Scanner am ioBroker-Host geplant.
+## Rückmeldung
 
 Ideen, Wünsche oder Fehler können gerne als [GitHub-Issue](https://github.com/backfisch88/ioBroker.shelfmate/issues) gemeldet werden.
 
