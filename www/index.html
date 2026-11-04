@@ -982,7 +982,7 @@ function offTags(f){const ids=(Array.isArray(f.categories_tags)?f.categories_tag
 function openEditor(id=null,ean=''){{const ip=$('imgPick');if(ip)ip.hidden=true}editorFrom=currentPage;editId=id;sugAdded=[];const p=id?data.products[id]:null;$('editorTitle').textContent=p?'Produkt bearbeiten':'Produkt anlegen';$('eanTop').hidden=!!p;$('editName').value=p?.name||'';$('editBrand').value=p?.brand||'';$('editBarcode').value=p?.ean||ean;editImgData=String(p?.image||'').startsWith('data:')?p.image:'';$('editImage').value=editImgData?'':(p?.image||'');showImgPrev();editOff=!!p&&(p.source==='off'||/\.open(food|beauty|petfood|products)facts\./i.test(p.image||''));editSrc=p?srcOf(p):'Open Food Facts';editWebSrc=p&&p.source&&p.source!=='off'?p.source:'';applyEanLock();updateEanPrev();setCategory(p?.category||'');$('editType').value=p?.type||'count';$('editUnit').value=p?.unit||'Packung';$('editSize').value=p?.packageSize||'';$('editNutri').value=p?.nutriscore||'';$('editMin').value=p?.minStock||'';$('bbBox').hidden=bbMode()!=='product';$('shelfBox').hidden=bbMode()==='off';$('openBox').hidden=bbMode()==='off';$('edS4').hidden=bbMode()==='off';$('editShelf').value=p?.shelfLifeDays||'';{const g=shelfDays({name:p?.name,category:p?.category,group:p?.group,tags:p?.tags});$('shelfHint').textContent=!(p?.shelfLifeDays>0)&&g>0?'Leer lassen: Vorschlag '+g+' Tage (aus dem Produktnamen)':'Optional. Beim Einlagern wird das MHD damit vorbelegt.'}$('editOpened').value=p?.openedDays||'';{const g=!(p?.openedDays>0)&&data.config&&data.config.autoShelfLife!==false&&window.guessOpenedDays?window.guessOpenedDays([p?.name,p?.category,p?.group,...(p?.tags||[])].join(' ')):0;$('openedHint').textContent=g>0?'Leer lassen: Vorschlag '+g+' Tage (aus dem Produktnamen)':'Optional. Gilt ab dem Markieren als geöffnet.'}$('editBB').value=p?.bestBefore||'';smartDate('editBB');smartDateSync('editBB');$('editGroup').value=p?.group||'';$('groupChips').innerHTML=[...new Set(Object.values(data.products).map(x=>x.group).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'de')).map(g=>`<button type="button" class="tag tagLink" data-grp="${safe(g)}">${safe(g)}</button>`).join('');$('groupChips').querySelectorAll('[data-grp]').forEach(b=>b.onclick=()=>{$('editGroup').value=b.dataset.grp});$('groupList').innerHTML=[...new Set(Object.values(data.products).map(x=>x.group).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'de')).map(g=>`<option value="${safe(g)}">`).join('');$('editTags').value=(p?.tags||[]).join(', ');$('edS1').open=true;$('edS2').open=!p;for(const k of ['edS3','edS4','edS5'])$(k).open=false;edSums();updateWebFind();go('editor')}
 function edSums(){const v=id=>$(id).value.trim(),t=$('editType').value;$('unitBox').hidden=t!=='count';$('nutriRow').querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.n===$('editNutri').value));$('edSum1').textContent=[v('editBrand'),$('editCategory').value].filter(Boolean).join(' · ');$('edSum2').textContent=[t==='count'?v('editUnit'):t==='weight'?'g':'ml',v('editSize'),Number(v('editMin'))>0?'min '+v('editMin'):''].filter(Boolean).join(' · ');$('edSum3').textContent=[v('editGroup'),v('editTags')].filter(Boolean).join(' · ');$('edSum4').textContent=[v('editShelf')&&v('editShelf')+' d',v('editOpened')&&'geöffnet '+v('editOpened')+' d'].filter(Boolean).join(' · ');$('edSum5').textContent=v('editBarcode')}
 $('editor').addEventListener('input',edSums);$('editor').addEventListener('change',edSums);$('nutriRow').onclick=e=>{const b=e.target.closest('button');if(!b)return;$('editNutri').value=b.dataset.n;edSums()};
-$('updInfo').textContent='Version 559 · '+(typeof KL_BUILD==='function'?KL_BUILD()||'noch nicht geprüft':'?');$('updNow').onclick=async()=>{const b=$('updNow');b.disabled=true;try{const r=await window.klManual();$('updInfo').textContent='Version 559 · Installiert: '+r.boot+' · Server: '+r.remote;toast(r.same?'App ist aktuell':'Neue Version – lade neu …')}catch(e){toast('Prüfung fehlgeschlagen: '+e.message)}b.disabled=false};
+$('updInfo').textContent='Version 560 · '+(typeof KL_BUILD==='function'?KL_BUILD()||'noch nicht geprüft':'?');$('updNow').onclick=async()=>{const b=$('updNow');b.disabled=true;try{const r=await window.klManual();$('updInfo').textContent='Version 560 · Installiert: '+r.boot+' · Server: '+r.remote;toast(r.same?'App ist aktuell':'Neue Version – lade neu …')}catch(e){toast('Prüfung fehlgeschlagen: '+e.message)}b.disabled=false};
 function effOpened(p){if(Number(p.openedDays)>0)return{v:Number(p.openedDays),own:true};rulesSync();const g=data.config&&data.config.autoShelfLife!==false&&typeof window.guessOpenedDays==='function'?window.guessOpenedDays([p.name,p.category,p.group,...(p.tags||[])].join(' ')):0;return{v:g,own:false}}
 function effShelf(p){return{v:shelfDays(p),own:Number(p.shelfLifeDays)>0&&!p.shelfLifeAuto}}
 function renderShelfList(){const box=$('shelfList'),q=norm($('slSearch').value),F=fillFilters('slArea','slLoc','slCat'),nf=[F.area,F.loc,F.cat].filter(Boolean).length;$('slBadge').hidden=!nf;$('slBadge').textContent=nf;$('slFilterBtn').classList.toggle('active',nf>0);const all=Object.values(data.products).filter(p=>Number(p.shelfLifeDays)>0||Number(p.openedDays)>0).sort((a,b)=>a.name.localeCompare(b.name,'de')),ps=all.filter(p=>passFilters(p,F.area,F.loc,F.cat)&&(!q||norm([p.name,p.brand,p.category,p.group].join(' ')).includes(q)));
@@ -1424,7 +1424,7 @@ async function startCamera(){
   const formats=copyScan?[Html5QrcodeSupportedFormats.QR_CODE,Html5QrcodeSupportedFormats.CODE_128,Html5QrcodeSupportedFormats.EAN_13]:qrMode?[Html5QrcodeSupportedFormats.QR_CODE,Html5QrcodeSupportedFormats.CODE_128]:[Html5QrcodeSupportedFormats.EAN_13,Html5QrcodeSupportedFormats.EAN_8,Html5QrcodeSupportedFormats.UPC_A,Html5QrcodeSupportedFormats.UPC_E,Html5QrcodeSupportedFormats.CODE_128,...(invScanning||stockScanning?[Html5QrcodeSupportedFormats.QR_CODE,Html5QrcodeSupportedFormats.CODE_128]:[])];
   const scanner=new Html5Qrcode('html5scanner',{formatsToSupport:formats,verbose:false,useBarCodeDetectorIfSupported:true});
   qrScanner=scanner;
-  await scanner.start({facingMode:'environment'},{fps:30,disableFlip:true,videoConstraints:{facingMode:'environment',width:{ideal:1920},height:{ideal:1080}},qrbox:qrMode&&!copyScan?{width:220,height:220}:{width:Math.min(340,Math.max(200,window.innerWidth-50)),height:invScanning||stockScanning||copyScan?200:220}},async (code,dec)=>{
+  await scanner.start({facingMode:'environment'},{fps:30,disableFlip:true,videoConstraints:{facingMode:'environment',width:{ideal:1920},height:{ideal:1080}},qrbox:(w,h)=>({width:Math.floor(w*.96),height:Math.floor(h*.96)})},async (code,dec)=>{
     camBoost(scanner);
     if(!scannerRun||code===lastScan&&Date.now()-lastScanAt<(invScanning||stockScanning?900:2200))return;
     lastScan=code;lastScanAt=Date.now();if(invScanning){invScanCode(code,true);return}if(stockScanning){stScanCode(code,true);return}scannerRun=false;
@@ -1475,29 +1475,30 @@ function camBoost(sc){
    /* the picture fills the box with object-fit:cover, so part of it is cut off; work out the area that is really shown (the library assumes the whole picture is shown) */
    const r=sc.qrRegion,vw=v.videoWidth,vh=v.videoHeight,cw=v.clientWidth,ch=v.clientHeight;
    if(r&&vw&&vh&&cw&&ch){const f=Math.max(cw/vw,ch/vh),ox=(cw-vw*f)/2,oy=(ch-vh*f)/2;sx=Math.max(0,(r.x-ox)/f);sy=Math.max(0,(r.y-oy)/f);sw=Math.min(vw-sx,r.width/f);sh=Math.min(vh-sy,r.height/f)}
-   const k=Math.min(1,camCap/Math.max(1,sw)),w=Math.max(1,Math.round(sw*k)),h=Math.max(1,Math.round(sh*k));
-   if(cv.width!==w||cv.height!==h){cv.width=w;cv.height=h}
-   camStat.vid=vw+'×'+vh;camStat.cv=w+'×'+h;
-   draw(v,sx,sy,sw,sh,0,0,w,h);
-   /* 4 kinds of pictures in turn: (0) the white label cut out tightly, (1) the whole area, (2) the label with a little more margin, (3) the whole area, only the darkest bars kept, read over the full height.
-      The reader fails when a dark area (dark blue / brown box) lies even a few pixels around the label, so the label is found first and cut out. */
-   camN++;const mode=camN%4;hard(mode===3);
+   /* the barcode may be anywhere in the picture, so it is searched in the whole visible picture, not only in the box */
+   let vx=0,vy=0,vww=vw,vhh=vh;
+   if(vw&&vh&&cw&&ch){const f=Math.max(cw/vw,ch/vh);vww=Math.min(vw,cw/f);vhh=Math.min(vh,ch/f);vx=(vw-vww)/2;vy=(vh-vhh)/2}
+   camN++;const mode=camN%4;hard(mode===3);camStat.vid=vw+'×'+vh;
+   /* 4 kinds of pictures in turn: (0) the barcode found and cut out with a small margin, (2) the same with a wider margin, (1) the whole area, (3) the whole area with only the darkest bars kept, read over the full height.
+      The reader fails when a dark area (dark blue / brown box) lies around the label, so the barcode is located first and cut out; QR codes are read from the whole-area pictures. */
    try{
-    if(mode===1)return;
-    const im=ctx.getImageData(0,0,w,h),d=im.data;
-    if(mode!==3){
-     const bb=camLabel(d,w,h);
-     camStat.lb=bb?1:0;
+    if(mode===0||mode===2){
+     const bb=camFind(v,vx,vy,vww,vhh);camStat.lb=bb?1:0;
      if(bb){
-      const ins=mode===0?.02:-.03,ix=bb[2]*ins,iy=bb[3]*ins,x0=Math.max(0,bb[0]+ix),y0=Math.max(0,bb[1]+iy),bw=Math.min(w-x0,bb[2]-2*ix),bh=Math.min(h-y0,bb[3]-2*iy);
-      const tw=Math.round(Math.min(camCap,Math.max(300,bw*2))),th=Math.max(1,Math.round(tw*bh/bw));
-      if(cv.width!==tw||cv.height!==th){cv.width=tw;cv.height=th}
-      draw(v,sx+x0/w*sw,sy+y0/h*sh,bw/w*sw,bh/h*sh,0,0,tw,th);
-      camStat.cv=tw+'×'+th;
+      const mod=bb[2]/95,mg=(mode===0?2:4)*mod,x0=Math.max(0,bb[0]-mg),y0=Math.max(0,bb[1]-mg),x1=Math.min(vw,bb[0]+bb[2]+mg),y1=Math.min(vh,bb[1]+bb[3]+mg),
+       k=Math.min(3,Math.max(.5,4/mod),camCap/Math.max(1,x1-x0)),pad=Math.round(12*k),w2=Math.round((x1-x0)*k)+2*pad,h2=Math.round((y1-y0)*k)+2*pad;
+      if(cv.width!==w2||cv.height!==h2){cv.width=w2;cv.height=h2}
+      ctx.fillStyle='#fff';ctx.fillRect(0,0,w2,h2);
+      draw(v,x0,y0,x1-x0,y1-y0,pad,pad,w2-2*pad,h2-2*pad);
+      camStat.cv=w2+'×'+h2;return;
      }
-     return;
     }
-    const hist=new Uint32Array(256);let n=0;
+    const k=Math.min(1,camCap/Math.max(1,sw)),w=Math.max(1,Math.round(sw*k)),h=Math.max(1,Math.round(sh*k));
+    if(cv.width!==w||cv.height!==h){cv.width=w;cv.height=h}
+    camStat.cv=w+'×'+h;
+    draw(v,sx,sy,sw,sh,0,0,w,h);
+    if(mode!==3)return;
+    const im=ctx.getImageData(0,0,w,h),d=im.data,hist=new Uint32Array(256);let n=0;
     for(let i=0;i<d.length;i+=16){hist[(d[i]*77+d[i+1]*150+d[i+2]*29)>>8]++;n++}
     let a=0,lo=0,md=0;
     for(let g=0;g<256;g++){a+=hist[g];if(!lo&&a>=n*.03)lo=g+1;if(a>=n*.5){md=g;break}}
@@ -1510,23 +1511,43 @@ function camBoost(sc){
   };
  }catch(e){}
 }
-/* find the bright label in the picture: returns [x,y,width,height] or null when there is none (or the whole area is bright anyway) */
-function camLabel(d,w,h){
- const n=w*h,L=new Uint8Array(n),hist=new Uint32Array(256);
- for(let i=0,j=0;i<d.length;i+=4,j++){const l=(d[i]*77+d[i+1]*150+d[i+2]*29)>>8;L[j]=l;hist[l]++}
- let a=0,md=0,hi=255;
- for(let g=0;g<256;g++){a+=hist[g];if(!md&&a>=n*.5)md=g;if(a>=n*.99){hi=g;break}}
- if(hi-md<50)return null;
- const tb=md+(hi-md)*.5,cc=new Uint16Array(w),rc=new Uint16Array(h);let mc=0,mr=0;
- for(let y=0;y<h;y++)for(let x=0;x<w;x++)if(L[y*w+x]>tb){cc[x]++;rc[y]++}
- for(let x=0;x<w;x++)if(cc[x]>mc)mc=cc[x];
- for(let y=0;y<h;y++)if(rc[y]>mr)mr=rc[y];
- const tx=Math.max(4,mc*.08),ty=Math.max(4,mr*.08);let x0=0,x1=w-1,y0=0,y1=h-1;
- while(x0<w&&cc[x0]<tx)x0++;while(x1>x0&&cc[x1]<tx)x1--;
- while(y0<h&&rc[y0]<ty)y0++;while(y1>y0&&rc[y1]<ty)y1--;
- const bw=x1-x0+1,bh=y1-y0+1;
- if(bw<w*.12||bh<h*.05||(bw>w*.92&&bh>h*.92))return null;
- return[x0,y0,bw,bh];
+/* find the barcode in the picture: the bars are many close vertical edges (strong sideways change, weak up-down change). Works on a small copy of the picture; returns [x,y,width,height] in picture pixels or null */
+const camTiny=document.createElement('canvas'),camTc=camTiny.getContext('2d',{willReadFrequently:true});
+function camFind(v,sx,sy,sw,sh){
+ const tw=640,th=Math.max(16,Math.round(tw*sh/sw));
+ if(camTiny.width!==tw||camTiny.height!==th){camTiny.width=tw;camTiny.height=th}
+ camTc.drawImage(v,sx,sy,sw,sh,0,0,tw,th);
+ const px=camTc.getImageData(0,0,tw,th).data,n=tw*th,G=new Uint8Array(n),E=new Uint8Array(n);
+ for(let i=0,j=0;j<n;i+=4,j++)G[j]=(px[i]*77+px[i+1]*150+px[i+2]*29)>>8;
+ for(let y=1;y<th-1;y++)for(let x=1;x<tw-1;x++){const p=y*tw+x,gx=Math.abs(G[p+1]-G[p-1]),gy=Math.abs(G[p+tw]-G[p-tw]);if(gx>=24&&gx>=2*gy)E[p]=1}
+ const W1=tw+1,I=new Int32Array(W1*(th+1));
+ for(let y=0;y<th;y++){let q=0;for(let x=0;x<tw;x++){q+=E[y*tw+x];I[(y+1)*W1+x+1]=I[y*W1+x+1]+q}}
+ const D=new Float32Array(n);let mx=0,mp=0;
+ for(let y=0;y<th;y++){const y0=Math.max(0,y-3),y1=Math.min(th,y+4);for(let x=0;x<tw;x++){const x0=Math.max(0,x-8),x1=Math.min(tw,x+9),d=(I[y1*W1+x1]-I[y0*W1+x1]-I[y1*W1+x0]+I[y0*W1+x0])/((x1-x0)*(y1-y0));D[y*tw+x]=d;if(d>mx){mx=d;mp=y*tw+x}}}
+ if(mx<.3)return null;
+ const lim=mx*.35,seen=new Uint8Array(n),st=[mp];seen[mp]=1;let X0=tw,X1=0,Y0=th,Y1=0;
+ while(st.length){
+  const p=st.pop(),x=p%tw,y=(p/tw)|0;
+  if(x<X0)X0=x;if(x>X1)X1=x;if(y<Y0)Y0=y;if(y>Y1)Y1=y;
+  if(x>0&&!seen[p-1]&&D[p-1]>=lim){seen[p-1]=1;st.push(p-1)}
+  if(x<tw-1&&!seen[p+1]&&D[p+1]>=lim){seen[p+1]=1;st.push(p+1)}
+  if(y>0&&!seen[p-tw]&&D[p-tw]>=lim){seen[p-tw]=1;st.push(p-tw)}
+  if(y<th-1&&!seen[p+tw]&&D[p+tw]>=lim){seen[p+tw]=1;st.push(p+tw)}
+ }
+ /* tighten the box with the raw edges: rows first, then columns, then rows again */
+ const rows=(a,b)=>{let m=0;const s=[];for(let y=Y0;y<=Y1;y++){let c=0;for(let x=a;x<=b;x++)c+=E[y*tw+x];s[y]=c;if(c>m)m=c}let f=-1,l=-1;for(let y=Y0;y<=Y1;y++)if(s[y]>=m*.3){if(f<0)f=y;l=y}return[f,l]};
+ let[ya,yb]=rows(X0,X1);if(ya<0)return null;
+ const hh=yb-ya+1;let xa=-1,xb=-1;
+ /* a lone vertical edge (the border of the label) is not a bar: a bar edge always has another one within a few pixels */
+ X0=Math.max(1,X0-12);X1=Math.min(tw-2,X1+12);
+ const ec=[];for(let x=X0;x<=X1;x++){let c=0;for(let y=ya;y<=yb;y++)c+=E[y*tw+x];ec[x]=c>=hh*.5}
+ for(let x=X0;x<=X1;x++){if(!ec[x])continue;let nb=false;for(let k=1;k<=12&&!nb;k++)nb=!!(ec[x-k]||ec[x+k]);if(nb){if(xa<0)xa=x;xb=x}}
+ if(xa<0)return null;
+ Y0=ya;Y1=yb;[ya,yb]=rows(xa,xb);if(ya<0)return null;
+ const bw=xb-xa+1,bh=yb-ya+1;
+ if(bw<tw*.1||bh<6||bw<bh)return null;
+ const fx=sw/tw,fy=sh/th;
+ return[sx+xa*fx,sy+ya*fy,bw*fx,bh*fy];
 }
 /* tap the status line of the camera to see what the camera and the reader are doing (for error reports) */
 $('cameraStatus').onclick=()=>{if(!qrScanner)return;toast('Kamera '+(camStat.vid||'?')+' · Lesen '+(camStat.cv||'?')+' · '+(camStat.ms||'?')+' ms · '+(camStat.native?'nativ+ZXing':'ZXing')+' · Etikett '+(camStat.lb?'ja':'nein'))};
