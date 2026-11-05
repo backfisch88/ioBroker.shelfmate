@@ -69,7 +69,7 @@ Fehlende Zutaten lassen sich direkt auf die Einkaufsliste setzen. Was bereits vo
 - Barcodes mit der Smartphone-Kamera oder einem Scanner erfassen
 - QR-Codes für Lagerorte erstellen und drucken
 - EAN- und QR-Etiketten in eigenen Größen drucken, zum Beispiel 50 × 30 mm
-- Etiketten für Regale, Boxen, Gefrierfach (mit freier Textzeile, zum Beispiel dem Gewicht) und geöffnete Produkte
+- Etiketten für Regale, Boxen, Gefrierfach (mit freier Textzeile, zum Beispiel dem Gewicht) und geöffnete Produkte; ein EAN-Etikett lässt sich auch auf der Produktseite drucken
 - Code-Bibliothek: eigene Codes speichern, als Etikett drucken und wählen, welche Steuer-Codes ins PDF kommen
 - Einstellen, welche Etiketten in der App angeboten werden
 - Scanner-Modus für das Ein- und Auslagern ohne geöffnete Web-App, auch mit Scannern mit Speicher; Scanner mit USB-Dongle oder Bluetooth werden direkt am ioBroker-Host gelesen

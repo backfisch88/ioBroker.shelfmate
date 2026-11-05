@@ -58,6 +58,7 @@
     "lbBox": "Box label with contents (storage location)",
     "lbOpened": "\"Opened on\" label (product)",
     "lbFreezer": "Freezer label (product)",
+    "lbEanProduct": "EAN label (product page)",
     "notifyInventoryDays": "Remind once about a stocktaking after … days without one (0 = off)",
     "hScanner": "Scanner (headless mode)",
     "scannerTimeout": "Time between product and location (seconds)",

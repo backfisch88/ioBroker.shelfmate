@@ -58,6 +58,7 @@
     "lbBox": "Boxen-Etikett mit Inhalt (Lagerort)",
     "lbOpened": "„Geöffnet am“-Etikett (Produkt)",
     "lbFreezer": "Gefrierfach-Etikett (Produkt)",
+    "lbEanProduct": "EAN-Etikett (Produktseite)",
     "notifyInventoryDays": "Einmalige Inventur-Erinnerung nach … Tagen ohne Inventur (0 = aus)",
     "hScanner": "Scanner (headless-Modus)",
     "scannerTimeout": "Zeit zwischen Produkt und Lagerort (Sekunden)",

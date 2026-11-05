@@ -648,7 +648,7 @@ class Shelfmate extends utils.Adapter {
      * @returns {string[]} names of the enabled buttons
      */
     labelButtons() {
-        const known = ['ean', 'qr', 'qrOnly', 'shelf', 'box', 'opened', 'freezer'];
+        const known = ['ean', 'qr', 'qrOnly', 'shelf', 'box', 'opened', 'freezer', 'eanProduct'];
         const a = Array.isArray(this.config.labelButtons) ? this.config.labelButtons : ['ean', 'qr'];
         return a.filter(x => known.includes(x));
     }

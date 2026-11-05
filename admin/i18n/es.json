@@ -58,6 +58,7 @@
     "lbBox": "Etiqueta de caja con contenido (ubicación)",
     "lbOpened": "Etiqueta «Abierto el» (producto)",
     "lbFreezer": "Etiqueta de congelador (producto)",
+    "lbEanProduct": "Etiqueta EAN (página del producto)",
     "notifyInventoryDays": "Recordatorio único de inventario tras … días sin inventario (0 = desactivado)",
     "hScanner": "Escáner (modo sin pantalla)",
     "scannerTimeout": "Tiempo entre producto y ubicación (segundos)",

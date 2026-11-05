@@ -621,6 +621,10 @@
                 {
                     "label": "lbFreezer",
                     "value": "freezer"
+                },
+                {
+                    "label": "lbEanProduct",
+                    "value": "eanProduct"
                 }
             ],
             "newLine": true,

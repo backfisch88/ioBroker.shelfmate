@@ -73,7 +73,7 @@ Missing ingredients can be put on the shopping list directly. What is already in
 - Capture barcodes with the phone camera or a scanner
 - Create and print QR codes for storage locations
 - Print EAN and QR labels in your own sizes, for example 50 × 30 mm
-- Labels for shelves, boxes, the freezer (with a free text line, for example the weight) and opened products
+- Labels for shelves, boxes, the freezer (with a free text line, for example the weight) and opened products; an EAN label can also be printed from the product page
 - Choose which labels the app offers
 - Code library: save your own codes (for example from other scanners or apps), print them as labels and choose which of the control codes go into the PDF
 - Scanner mode for stocking in and out without the web app open; scanners with a USB dongle or Bluetooth are read directly on the ioBroker host

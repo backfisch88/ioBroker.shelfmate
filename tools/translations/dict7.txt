@@ -248,3 +248,4 @@ Neu geladen – bitte speichern|Reloaded – please save|Загружено за
 Standard-Haltbarkeit|Default shelf life|Срок хранения по умолчанию|Durabilidade padrão|Standaard houdbaarheid|Durée de conservation par défaut|Durata di conservazione predefinita|Duración predeterminada|Domyślna trwałość|Стандартний термін зберігання|默认保质期
 nach dem Öffnen|after opening|после вскрытия|depois de aberto|na openen|après ouverture|dopo l'apertura|tras abrir|po otwarciu|після відкриття|开封后
 Öffnen|Open|Вскрыть|Abrir|Openen|Ouvrir|Apri|Abrir|Otwórz|Відкрити|开封
+EAN-Etikett|EAN label|Этикетка с EAN|Etiqueta EAN|EAN-etiket|Étiquette EAN|Etichetta EAN|Etiqueta EAN|Etykieta EAN|Етикетка з EAN|EAN 标签

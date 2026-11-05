@@ -58,6 +58,7 @@
     "lbBox": "Etykieta pudełka z zawartością (miejsce)",
     "lbOpened": "Etykieta „Otwarto dnia” (produkt)",
     "lbFreezer": "Etykieta do zamrażarki (produkt)",
+    "lbEanProduct": "Etykieta EAN (strona produktu)",
     "notifyInventoryDays": "Jednorazowe przypomnienie o inwentaryzacji po … dniach bez niej (0 = wyłączone)",
     "hScanner": "Skaner (tryb bez ekranu)",
     "scannerTimeout": "Czas między produktem a miejscem (sekundy)",
