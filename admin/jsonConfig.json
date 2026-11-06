@@ -722,6 +722,40 @@
             "lg": 4,
             "xl": 4
         },
+        "scanMode": {
+            "type": "select",
+            "label": "scanMode",
+            "help": "scanModeHelp",
+            "options": [
+                {
+                    "label": "scanMode_standard",
+                    "value": "standard"
+                },
+                {
+                    "label": "scanMode_count",
+                    "value": "count"
+                }
+            ],
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "scanDefaultLocation": {
+            "type": "selectSendTo",
+            "command": "getLocations",
+            "manual": true,
+            "label": "scanDefaultLocation",
+            "help": "scanDefaultLocationHelp",
+            "hidden": "data.scanMode !== 'count'",
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
         "scanRules": {
             "type": "table",
             "label": "scanRules",

@@ -229,6 +229,8 @@
         "scannerPrefix": "",
         "scannerSuffix": "",
         "scanWindow": 3,
+        "scanMode": "standard",
+        "scanDefaultLocation": "",
         "scanRules": [
             {
                 "count": 3,

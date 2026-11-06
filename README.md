@@ -78,6 +78,7 @@ Missing ingredients can be put on the shopping list directly. What is already in
 - Code library: save your own codes (for example from other scanners or apps), print them as labels and choose which of the control codes go into the PDF
 - Scanner mode for stocking in and out without the web app open; scanners with a USB dongle or Bluetooth are read directly on the ioBroker host
 - Repeated scans (three or more) trigger actions you choose: stock in at the last location, mark as empty, put on the shopping list and more
+- Counting mode: every scan stocks in one piece without a location, three scans are three pieces
 - Do a stocktaking by product list or by scanner
 
 ### Overview and notifications
@@ -161,7 +162,7 @@ The most important functions can be adjusted directly in the adapter configurati
 | Which standard values | All stored shelf lives or only the built-in dry goods list |
 | Expiry warning | How many days before expiry to warn |
 | Ingredient check | Put missing ingredients on the shopping list automatically |
-| Scanner mode | Set the scanner device, time gaps, prefix, suffix and the QR code type |
+| Scanner mode | Set the scanner device, time gaps, prefix, suffix and the QR code type; "Scans = quantity" stocks in one piece per scan without a location (default location for new products, `SM:OUT` to take out) |
 | Labels | Choose the available label types and print options |
 | Stocktaking reminder | Reminder after a set number of days without a stocktaking |
 
@@ -287,6 +288,12 @@ It explains the web app, storage locations, product groups, minimum stock, best-
 Ideas, wishes or bugs are welcome as a [GitHub issue](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
 ## Changelog
+### **WORK IN PROGRESS**
+- New: scanner mode "Scans = quantity" (every scan stocks in one piece, default location in the settings) and the control code `SM:OUT` to take out
+- New: EAN label button on the product page (setting under labels)
+- New: history entries open the product
+- Changed: the ingredient check counts only products named like the ingredient (or in a group of that name), no longer "Gehackte Tomaten" for "Tomaten"
+
 ### 0.5.1 (2026-11-04)
 - New: free text instead of "Haltbar bis" on the freezer label (settings, labels)
 - Improved: the scanner finds the barcode anywhere in the picture, also on dark backgrounds; faster product lookup

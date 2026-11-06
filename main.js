@@ -145,6 +145,8 @@ class Shelfmate extends utils.Adapter {
             timeoutMs: (Number.isFinite(scanWait) && scanWait >= 3 && scanWait <= 120 ? scanWait : 10) * 1000,
             windowMs: (Number.isFinite(win) && win >= 1 && win <= 30 ? win : 3) * 1000,
             rules: this.config.scanRules,
+            countMode: this.config.scanMode === 'count',
+            defaultLocation: this.config.scanDefaultLocation,
             lang: this.lang,
             run: cmd => this.scanBook(cmd),
         });
@@ -985,6 +987,14 @@ class Shelfmate extends utils.Adapter {
                 this.log.warn(`Could not read the certificate collections: ${e.message}`);
             }
             this.sendTo(obj.from, obj.command, collections, obj.callback);
+            return;
+        }
+        if (obj && obj.command === 'getLocations' && obj.callback) {
+            const list = Object.values(this.inv.data.locations || {}).map(l => ({
+                label: l.group ? `${l.group} · ${l.name}` : l.name,
+                value: l.id,
+            }));
+            this.sendTo(obj.from, obj.command, list, obj.callback);
             return;
         }
         if (obj && obj.command === 'getInputDevices' && obj.callback) {

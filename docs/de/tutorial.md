@@ -769,6 +769,18 @@ Wird nichts gefunden, legt ShelfMate das Produkt als unvollständig mit einem Na
 
 Manche Scanner merken sich Scans außerhalb der Reichweite und senden sie später alle auf einmal. ShelfMate trennt einen solchen Schwung in einzelne Scans und verarbeitet sie in der gescannten Reihenfolge. Auch eine Abfolge wie Lagerort → Produkte → Lagerort (Einräum-Modus) funktioniert. Dauert die Abfrage vieler unbekannter Produkte länger als die Wartezeit zwischen zwei Scans, die Wartezeit erhöhen.
 
+### Zähl-Modus (Scans = Menge)
+
+Wer gar keinen Lagerort scannen möchte, wählt in den Adapter-Einstellungen als Scanner-Modus „Scans = Menge“.
+
+- Jeder Scan eines Produkts lagert ein Stück an dem Lagerort ein, an dem das Produkt zuletzt eingelagert wurde. Drei Scans sind drei Stück.
+- Produkte, die noch nie eingelagert wurden, nehmen den Standard-Lagerort aus den Einstellungen, bei nur einem Lagerort diesen. Bei mehreren Lagerorten ohne Standard-Lagerort wird der Scan abgelehnt und das Ergebnis sagt es.
+- `SM:QTY:5` vor einem Scan lagert gleich fünf Stück ein.
+- Zum Entnehmen `SM:OUT` scannen. Jedes danach gescannte Produkt wird entnommen. Zum Beenden `SM:OUT` nochmal scannen oder fünf Minuten warten.
+- Ein zuerst gescannter Lagerort lagert weiterhin an diesem Lagerort ein, wie im Einräum-Modus.
+
+`SM:OUT` funktioniert auch im Standard-Modus.
+
 ### Einräum-Modus
 
 Scanne zuerst den Lagerort-Code.
@@ -810,6 +822,7 @@ Für weitere Aktionen gibt es spezielle Codes:
 | `SM:UNDO` | Letzte unterstützte Buchung rückgängig machen |
 | `SM:SPOIL` | Nächstes Produkt als verdorben entnehmen |
 | `SM:OPEN` | Nächstes Produkt als geöffnet markieren |
+| `SM:OUT` | Jedes folgende Produkt entnehmen, bis der Code nochmal gescannt wird |
 | `SM:DATE:<Tage>` | MHD für den ungeöffneten Bestand setzen |
 | `SM:DATE:0` | MHD entfernen |
 | `SM:COPY` | MHD eines Produkts übernehmen |

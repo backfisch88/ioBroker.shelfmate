@@ -72,6 +72,7 @@ Fehlende Zutaten lassen sich direkt auf die Einkaufsliste setzen. Was bereits vo
 - Etiketten für Regale, Boxen, Gefrierfach (mit freier Textzeile, zum Beispiel dem Gewicht) und geöffnete Produkte; ein EAN-Etikett lässt sich auch auf der Produktseite drucken
 - Code-Bibliothek: eigene Codes speichern, als Etikett drucken und wählen, welche Steuer-Codes ins PDF kommen
 - Einstellen, welche Etiketten in der App angeboten werden
+- Zähl-Modus: Jeder Scan lagert ohne Lagerort ein Stück ein, drei Scans sind drei Stück
 - Scanner-Modus für das Ein- und Auslagern ohne geöffnete Web-App, auch mit Scannern mit Speicher; Scanner mit USB-Dongle oder Bluetooth werden direkt am ioBroker-Host gelesen
 - MHD für mehrere Produkte auf einmal: im Einräum-Modus per Scan-Code, über `SM:COPY` kopieren oder in der Liste „Ohne MHD“ für markierte Lagerorte
 - Mehrfach scannen löst frei wählbare Aktionen aus (am letzten Lagerort einlagern, als leer markieren, auf die Einkaufsliste setzen und mehr)
@@ -157,7 +158,7 @@ Die wichtigsten Funktionen lassen sich direkt in der Adapterkonfiguration anpass
 | Standardwerte verwenden | Alle hinterlegten Haltbarkeiten oder nur die eingebaute Trockenwarenliste |
 | Ablaufwarnung | Festlegen, wie viele Tage vor Ablauf gewarnt wird |
 | Zutaten-Prüfung | Fehlende Zutaten automatisch auf die Einkaufsliste setzen |
-| Scanner-Modus | Scanner-Gerät, Zeitabstände, Präfix, Suffix und QR-Code-Art einstellen |
+| Scanner-Modus | Scanner-Gerät, Zeitabstände, Präfix, Suffix und QR-Code-Art einstellen; „Scans = Menge“ lagert pro Scan ein Stück ohne Lagerort ein (Standard-Lagerort für neue Produkte, `SM:OUT` zum Entnehmen) |
 | Etiketten | Verfügbare Etikettentypen und Druckoptionen auswählen |
 | Inventur-Erinnerung | Erinnerung nach einer festgelegten Anzahl von Tagen ohne Inventur |
 

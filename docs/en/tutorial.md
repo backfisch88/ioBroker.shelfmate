@@ -781,6 +781,18 @@ Another location code switches the location directly.
 
 After five minutes without a scan, the mode ends automatically.
 
+### Counting mode (scans = quantity)
+
+If you do not want to scan a location at all, choose "Scans = quantity" as the scanner mode in the adapter settings.
+
+- Every scan of a product stocks in one piece at the location where the product was stocked in last. Three scans are three pieces.
+- Products that were never stocked in use the default location from the settings, or the only location if you have just one. With several locations and no default location the scan is refused and the result says so.
+- `SM:QTY:5` before a scan stocks in five pieces at once.
+- To take out, scan `SM:OUT`. Every product scanned afterwards is taken out. Scan `SM:OUT` again to finish, or wait five minutes.
+- A location code scanned first still stocks in at that location, as in stocking mode.
+
+`SM:OUT` also works in the standard mode.
+
 ### Best-before date while stocking
 
 Several products with the same date do not have to be entered one by one.
@@ -810,6 +822,7 @@ There are special codes for further actions:
 | `SM:UNDO` | Undo the last supported booking |
 | `SM:SPOIL` | Take out the next product as spoiled |
 | `SM:OPEN` | Mark the next product as opened |
+| `SM:OUT` | Take out every following product until the code is scanned again |
 | `SM:DATE:<days>` | Set the best-before date for the unopened stock |
 | `SM:DATE:0` | Remove the best-before date |
 | `SM:COPY` | Copy the best-before date of a product |
