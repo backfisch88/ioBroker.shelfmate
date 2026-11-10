@@ -278,6 +278,18 @@ Kreuze „Verbrauchswaren“ beim Bearbeiten des Lagerorts an. Der Bestand aller
 
 Der Text zeigt geöffnete Menge und MHD nur, wenn etwas geöffnet ist oder bald abläuft. Das ist praktisch, um Rezepte zu planen oder für eigene Skripte.
 
+### Gefrierorte
+
+Kreuze beim Bearbeiten eines Lagerorts „Gefrierort“ an (Tiefkühltruhe, Gefrierfach). Was dort eingelagert wird, bekommt die Gefrier-Haltbarkeit statt der normalen, denn Gefrorenes hält deutlich länger.
+
+- **Eigener Wert pro Produkt:** trage auf der Produktseite „Eingefroren in Tagen“ ein. Ohne Wert gilt der Standard aus den Adapter-Einstellungen (180 Tage; 0 schaltet das ab).
+- **Umlagern ins Gefrierfach:** verschiebst du ein Produkt von einem normalen Lagerort in einen Gefrierort, wird das MHD neu auf heute plus Gefrier-Haltbarkeit gesetzt. Beim Zurücklegen bleibt das Datum.
+- **Öffnen:** Wähle am Gefrierort „Beim Öffnen verschieben nach“ (zum Beispiel den Kühlschrank). Öffnest du eine Packung aus dem Gefrierfach, wandert sie automatisch dorthin. Das Datum richtet sich dann nach der Haltbarkeit nach dem Öffnen, und Rückgängig macht das Verschieben wieder rückgängig. Der Verlauf zeigt die Verschiebung (zum Beispiel „Truhe → Kühlschrank“), und „Öffnen rückgängig“ auf der Produktseite legt die Packung zurück ins Gefrierfach.
+- **TK-Ware:** hake auf der Produktseite „TK-Produkt“ an, wenn du ein Produkt tiefgekühlt kaufst, zum Beispiel Pommes. Es behält seine normale Haltbarkeit, auch im Gefrierfach.
+- **Aufschnitt vakuumiert und eingefroren:** der Barcode bleibt derselbe. Gib dem Produkt einen eigenen Gefrierwert und drucke auf der Produktseite das „Gefrier-EAN-Etikett“.
+
+Das Datum wird nur automatisch eingetragen, wenn die automatische Haltbarkeit beim Einlagern aktiv ist; du kannst es jederzeit von Hand ändern.
+
 ### QR-Codes für Lagerorte
 
 Jeder Lagerort bekommt einen eigenen Code.
@@ -319,6 +331,36 @@ Zusätzlich kannst du ein eigenes Produktbild hochladen. ShelfMate verkleinert e
 
 ---
 
+### Eigene Produktdatenbank
+
+Neben Open Food Facts kann ShelfMate eine eigene Datenbank nutzen. Sie wird beim Scannen oder Eingeben eines Barcodes zuerst gefragt, deine Namen, Gruppen und Haltbarkeiten gewinnen also.
+
+Der Datenpunkt `ownDb.data` existiert immer. Trage dort deine Datenbank als JSON-Liste ein, zum Beispiel:
+
+`[{"ean":"4006381333931","name":"Haferflocken","brand":"Demo","shelfLifeDays":365}]`
+
+Produkte mit einem Barcode, den ShelfMate selbst erzeugt hat (EAN erzeugen), werden automatisch zu dieser Liste ergänzt. Werden Daten wiederhergestellt oder umgezogen, bekommt dasselbe Produkt wieder denselben Barcode. Einträge, die du selbst gemacht hast, bleiben unberührt.
+
+In den Adapter-Einstellungen kannst du weitere Quellen angeben, alle nur lesend:
+
+- ein Datenpunkt mit der Datenbank (JSON- oder CSV-Text)
+- eine Datei auf dem System oder auf einem eingebundenen Netzlaufwerk
+- die Netzwerk-Adresse einer Datei (http oder https), die nach der Aktualisierungszeit neu geladen wird
+
+Verstanden werden eine JSON-Liste, ein JSON-Objekt mit den Barcodes als Schlüssel und CSV mit Kopfzeile; „Automatisch erkennen“ wählt das Richtige.
+
+Heißen die Felder in deinen Daten anders, trägst du sie in der Tabelle „Feldnamen in deinen Daten“ ein, zum Beispiel das Feld „Name“ → `Krömpel`. Mit einem Punkt greifst du in verschachtelte Daten (`data.title`). Jedes Produktfeld lässt sich zuordnen: Barcode, Name, Marke, Packungsgröße, Einheit, Kategorie, Produktgruppe, Tags, Bild-URL, Mindestbestand und die Haltbarkeiten (normal, nach dem Öffnen, eingefroren). Außer dem Barcode ist nur der Name Pflicht. Der Datenpunkt `ownDb.data` verwendet immer die ShelfMate-Namen.
+
+Unter „Nutzung der eigenen Datenbank“ wählst du:
+
+| Einstellung | Verhalten |
+| --- | --- |
+| Eigene Datenbank zuerst, dann Internet | Eigene Daten gewinnen, Open Food Facts und das Web helfen nur, wenn nichts gefunden wird |
+| Nur eigene Datenbank | Das Internet wird gar nicht gefragt |
+| Nicht verwenden | Nur das Internet, wie bisher |
+
+Ein Fund wird wie jedes andere Produkt in den Editor eingetragen, beim Einlagern oder Scannen direkt angelegt.
+
 ## Mindestbestand und Einkaufsliste
 
 Für jedes Produkt kannst du einen Mindestbestand festlegen.
@@ -332,6 +374,20 @@ Bei Produktgruppen werden die Bestände der zugehörigen Produkte gemeinsam ber�
 In der Übersicht zeigt ein Haken an, welche Produkte bereits auf der Einkaufsliste stehen. Durch Antippen kann der Eintrag wieder entfernt werden, sofern die entsprechenden Einstellungen aktiv sind.
 
 Die Verbindung zur Einkaufsliste wird in den Adapter-Einstellungen eingerichtet.
+
+### Obst und Gemüse von der Waage (PLU)
+
+Loses Obst und Gemüse hat keinen Barcode, sondern nur eine Warennummer (PLU) mit vier Ziffern, zum Beispiel 4011 für gelbe Bananen. Bio-Ware hat eine 9 davor (94011). ShelfMate kennt die internationale Liste dieser Nummern (rund 1.500 Nummern, IFPS-Liste 2024, mit Name in allen Sprachen des Adapters). Ein Scan oder eine eingetippte Nummer legt das Produkt deshalb von selbst an. Die Kategorie ist immer „Lebensmittel“.
+
+Etiketten von Waagen (zum Beispiel bei REWE) tragen die Nummer in einem Data-Matrix-Code. ShelfMate liest die Nummer daraus, auch mit Scanner oder Kamera. Preis und Gewicht vom Etikett nutze ich nicht.
+
+Manche Nummern vergibt der Händler selbst und sie bedeuten nur „Bananen“. REWE druckt für 4238 zum Beispiel „Banane Bio“ aufs Etikett, im Code steckt aber nur die Nummer. Für einen eigenen Namen trägst du ihn im Datenpunkt `plu.data` ein:
+
+```json
+{ "4238": "Banane Bio", "4400": { "name": "Pfirsich", "packageSize": "500 g" } }
+```
+
+Deine Einträge gehen der eingebauten Liste vor. Du kannst die Felder der eigenen Produktdatenbank verwenden (`name`, `category`, `group`, `unit`, `shelfLifeDays`, ...). Ein Produkt wird nur einmal angelegt, danach wird es über die Nummer gefunden.
 
 ### Mindestbestand für mehrere Produkte setzen
 
@@ -629,6 +685,12 @@ Mit `check.addMissing` kannst du die fehlenden Zutaten auf die Einkaufsliste set
 Alternativ aktivierst du in den Adapter-Einstellungen Fehlende Zutaten auf die Einkaufsliste setzen. Dann erfolgt die Übertragung automatisch nach jeder Prüfung.
 
 Bring! Spezial berücksichtigt dabei auch Mengen und Zusätze, während die anderen Modi nur den Artikelnamen übertragen.
+
+Um die Prüfung im Blick zu behalten, aktivierst du „Nicht eingetragene Zutaten melden“. Nach jeder Prüfung bekommst du dann über deinen Benachrichtigungs-Adapter eine Nachricht, zum Beispiel:
+
+`Nicht auf die Einkaufsliste gesetzt, weil vorhanden:` und darunter Zeilen wie `- Kartoffeln: Kartoffeln Rewe`
+
+Jede Zeile zeigt die Zutat und die Produkte, die dafür gezählt wurden, sodass du eine falsche Zuordnung sofort erkennst. Dafür brauchst du einen Benachrichtigungs-Adapter in den Einstellungen; die Option arbeitet zusammen mit „Fehlende Zutaten auf die Einkaufsliste setzen“.
 
 ### Mindestbestand berücksichtigen
 
@@ -1064,6 +1126,15 @@ Für die Kamera und den Offline-Modus benötigt ShelfMate HTTPS mit einem Zertif
 Über Selbstsigniertes Zertifikat erstellen erzeugt ShelfMate ein Zertifikat für den Hostnamen und die IP-Adressen des ioBroker-Rechners.
 
 Das Zertifikat wird im ioBroker-Zertifikatsspeicher abgelegt, automatisch ausgewählt und ist 825 Tage gültig.
+
+### Das iPhone fragt jedes Mal nach der Kamera
+
+Auf dem iPhone fragt die App nach jedem Start erneut „Kamera erlauben?“. So werde ich die Frage los:
+
+1. ShelfMate in Safari über seine Adresse öffnen, nicht über das Symbol auf dem Home-Bildschirm.
+2. Den Scanner öffnen, auf Kamera starten tippen und auf Erlauben drücken.
+
+Danach kommt die Frage nicht mehr, auch nicht in der App auf dem Home-Bildschirm. Kommt sie doch wieder, haben Safari und die Home-Bildschirm-App die Erlaubnis vergessen, dann die beiden Schritte wiederholen.
 
 Alternativ kannst du eigene Zertifikate oder eine Zertifikatssammlung verwenden, beispielsweise über den ioBroker-Adapter acme.
 

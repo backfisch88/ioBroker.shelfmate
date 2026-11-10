@@ -334,6 +334,204 @@
             "lg": 4,
             "xl": 4
         },
+        "checkNotifySkipped": {
+            "type": "checkbox",
+            "label": "checkNotifySkipped",
+            "help": "checkNotifySkippedHelp",
+            "hidden": "!data.checkAddMissing",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "_hOwnDb": {
+            "type": "header",
+            "text": "hOwnDb",
+            "size": 3,
+            "newLine": true,
+            "xs": 12
+        },
+        "ownDbMode": {
+            "type": "select",
+            "label": "ownDbMode",
+            "help": "ownDbModeHelp",
+            "options": [
+                {
+                    "value": "first",
+                    "label": "odmFirst"
+                },
+                {
+                    "value": "only",
+                    "label": "odmOnly"
+                },
+                {
+                    "value": "off",
+                    "label": "odmOff"
+                }
+            ],
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6,
+            "xl": 6
+        },
+        "ownDbState": {
+            "type": "objectId",
+            "types": "state",
+            "label": "ownDbState",
+            "hidden": "data.ownDbMode === 'off'",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6,
+            "xl": 6
+        },
+        "ownDbFile": {
+            "type": "text",
+            "label": "ownDbFile",
+            "help": "ownDbFileHelp",
+            "hidden": "data.ownDbMode === 'off'",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6,
+            "xl": 6
+        },
+        "ownDbUrl": {
+            "type": "text",
+            "label": "ownDbUrl",
+            "help": "ownDbUrlHelp",
+            "hidden": "data.ownDbMode === 'off'",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 6,
+            "xl": 6
+        },
+        "ownDbFormat": {
+            "type": "select",
+            "label": "ownDbFormat",
+            "options": [
+                {
+                    "value": "auto",
+                    "label": "ofAuto"
+                },
+                {
+                    "value": "list",
+                    "label": "ofList"
+                },
+                {
+                    "value": "object",
+                    "label": "ofObject"
+                },
+                {
+                    "value": "csv",
+                    "label": "ofCsv"
+                }
+            ],
+            "hidden": "data.ownDbMode === 'off'",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "ownDbRefresh": {
+            "type": "number",
+            "label": "ownDbRefresh",
+            "min": 1,
+            "max": 1440,
+            "hidden": "data.ownDbMode === 'off'",
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "ownDbMap": {
+            "type": "table",
+            "label": "ownDbMap",
+            "help": "ownDbMapHelp",
+            "hidden": "data.ownDbMode === 'off'",
+            "newLine": true,
+            "xs": 12,
+            "items": [
+                {
+                    "type": "select",
+                    "attr": "field",
+                    "title": "ownDbField",
+                    "default": "name",
+                    "width": "40%",
+                    "options": [
+                        {
+                            "value": "ean",
+                            "label": "ofdEan"
+                        },
+                        {
+                            "value": "name",
+                            "label": "ofdName"
+                        },
+                        {
+                            "value": "brand",
+                            "label": "ofdBrand"
+                        },
+                        {
+                            "value": "packageSize",
+                            "label": "ofdPackageSize"
+                        },
+                        {
+                            "value": "unit",
+                            "label": "ofdUnit"
+                        },
+                        {
+                            "value": "category",
+                            "label": "ofdCategory"
+                        },
+                        {
+                            "value": "group",
+                            "label": "ofdGroup"
+                        },
+                        {
+                            "value": "tags",
+                            "label": "ofdTags"
+                        },
+                        {
+                            "value": "image",
+                            "label": "ofdImage"
+                        },
+                        {
+                            "value": "minStock",
+                            "label": "ofdMinStock"
+                        },
+                        {
+                            "value": "shelfLifeDays",
+                            "label": "ofdShelfLifeDays"
+                        },
+                        {
+                            "value": "openedDays",
+                            "label": "ofdOpenedDays"
+                        },
+                        {
+                            "value": "freezeDays",
+                            "label": "ofdFreezeDays"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "attr": "key",
+                    "title": "ownDbKey",
+                    "width": "60%"
+                }
+            ]
+        },
         "_hBb": {
             "type": "header",
             "text": "hBestBefore",
@@ -420,6 +618,20 @@
                     "label": "scDry"
                 }
             ],
+            "hidden": "data.bestBeforeMode === 'off' || data.autoShelfMode === 'off'",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 6,
+            "lg": 4,
+            "xl": 4
+        },
+        "freezeDefaultDays": {
+            "type": "number",
+            "label": "freezeDefaultDays",
+            "help": "freezeDefaultDaysHelp",
+            "min": 0,
+            "max": 3650,
             "hidden": "data.bestBeforeMode === 'off' || data.autoShelfMode === 'off'",
             "newLine": true,
             "xs": 12,
@@ -625,6 +837,10 @@
                 {
                     "label": "lbEanProduct",
                     "value": "eanProduct"
+                },
+                {
+                    "label": "lbFreezerEan",
+                    "value": "freezerEan"
                 }
             ],
             "newLine": true,

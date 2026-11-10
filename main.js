@@ -14,6 +14,7 @@ const {
     NOTIFY_ADAPTERS,
     TEXT: NOTIFY_TEXT,
     lowText,
+    skippedText,
     expiryText,
     formatDate,
     msUntil,
@@ -22,6 +23,8 @@ const {
 } = require('./lib/notify');
 const { ShelfMateServer } = require('./lib/server');
 const { ScanEngine } = require('./lib/scanner');
+const { OwnDb, mergeOwnProducts, isOwnEan } = require('./lib/ownDb');
+const { scanCode, pluOf, parseUser, findPlu } = require('./lib/plu');
 const { lookupBarcode } = require('./lib/offLookup');
 const { webLookup, nameImages } = require('./lib/webLookup');
 const { InputReader, listDevices } = require('./lib/inputDevice');
@@ -127,6 +130,12 @@ class Shelfmate extends utils.Adapter {
         this.dataPath = path.join(dir, DATA_FILE);
         await this.loadData();
 
+        this.ownDb = new OwnDb({
+            config: this.config,
+            builtin: `${this.namespace}.ownDb.data`,
+            readState: async id => (await this.getForeignStateAsync(id))?.val,
+            warn: msg => this.log.warn(msg),
+        });
         this.shopping = new Shopping(this);
         for (const id of this.shopping.subscriptions()) {
             await this.subscribeForeignStatesAsync(id);
@@ -274,6 +283,20 @@ class Shelfmate extends utils.Adapter {
                 'button',
                 true,
             ],
+            [
+                'ownDb.data',
+                'Own product database (JSON list); products with own barcodes are added automatically',
+                'string',
+                'json',
+                true,
+            ],
+            [
+                'plu.data',
+                'Own produce numbers (PLU) as JSON, for example {"4238": "Banane Bio"}; they win over the built-in list',
+                'string',
+                'json',
+                true,
+            ],
             ['scanner.input', 'Scanned code (write a code here to simulate a scan)', 'string', 'text', true],
             ['scanner.lastCode', 'Last scanned code', 'string', 'text', false],
             ['scanner.lastAction', 'Last action triggered by a repeated scan (rule)', 'string', 'text', false],
@@ -293,6 +316,16 @@ class Shelfmate extends utils.Adapter {
             native: {},
         });
         await this.setObjectNotExistsAsync('scanner', { type: 'channel', common: { name: 'Scanner' }, native: {} });
+        await this.setObjectNotExistsAsync('plu', {
+            type: 'channel',
+            common: { name: 'Produce numbers (PLU)' },
+            native: {},
+        });
+        await this.setObjectNotExistsAsync('ownDb', {
+            type: 'channel',
+            common: { name: 'Own product database' },
+            native: {},
+        });
         await Promise.all(
             states.map(([id, name, type, role, write]) =>
                 this.setObjectNotExistsAsync(id, {
@@ -343,6 +376,7 @@ class Shelfmate extends utils.Adapter {
     }
 
     async snapshot() {
+        await this.ownDb?.refresh();
         let bring = [];
         try {
             bring = this.shopping ? await this.shopping.content() : [];
@@ -361,10 +395,12 @@ class Shelfmate extends utils.Adapter {
                 autoShelfLife: this.autoShelfMode() !== 'off',
                 autoShelfMode: this.autoShelfMode(),
                 autoShelfScope: this.config.autoShelfScope === 'dry' ? 'dry' : 'all',
+                freezeDefaultDays: this.freezeDefaultDays(),
                 dateFormat: ['dmy', 'slash', 'iso'].includes(this.config.dateFormat) ? this.config.dateFormat : 'dmy',
                 inventoryDays: this.inventoryDays(),
                 listByGroup: this.config.listByGroup !== false,
                 webLookup: this.config.webLookup !== false,
+                ownDbMode: this.ownDb ? this.ownDb.mode : 'off',
             },
         };
     }
@@ -446,11 +482,97 @@ class Shelfmate extends utils.Adapter {
     }
 
     /**
+     * Look a produce number (PLU) up: own entries in plu.data first, then the built-in list.
+     *
+     * @param {string} code number
+     * @returns {Promise<object | null>} product fields, null when unknown
+     */
+    async pluProduct(code) {
+        let user = new Map();
+        try {
+            user = parseUser((await this.getStateAsync('plu.data'))?.val);
+        } catch (e) {
+            this.log.debug(`PLU data point: ${e.message}`);
+        }
+        return findPlu(code, { lang: this.lang, user });
+    }
+
+    /**
+     * Answer the app: product fields for a produce number.
+     *
+     * @param {object} cmd command with the number
+     */
+    async findPlu(cmd) {
+        const id = clean(cmd.id, 100);
+        const ean = String(cmd.ean || '').trim();
+        if (!pluOf(ean)) {
+            return { id, ok: false, error: 'Invalid number' };
+        }
+        return { id, ok: true, product: await this.pluProduct(ean) };
+    }
+
+    /**
+     * Look a barcode up in the own product database (data point, file or web address).
+     *
+     * @param {object} cmd command with the barcode
+     * @returns {Promise<object>} result for the app
+     */
+    async findInOwnDb(cmd) {
+        const id = clean(cmd.id, 100);
+        const ean = String(cmd.ean || '').trim();
+        if (!/^\d{8,14}$/.test(ean)) {
+            return { id, ok: false, error: 'Invalid barcode' };
+        }
+        try {
+            const product = await this.ownDb.find(ean);
+            return { id, ok: true, product, mode: this.ownDb.mode };
+        } catch (e) {
+            this.log.debug(`Own database: ${e.message}`);
+            return { id, ok: true, product: null, mode: this.ownDb.mode };
+        }
+    }
+
+    /**
+     * Products with a barcode ShelfMate made up are kept in the own database, so they get the same barcode again.
+     */
+    async syncOwnDb() {
+        const state = await this.getStateAsync('ownDb.data');
+        const current = typeof state?.val === 'string' ? state.val : '';
+        const out = mergeOwnProducts(current, Object.values(this.inv.data.products));
+        if (out === null) {
+            if (current.trim()) {
+                try {
+                    if (!Array.isArray(JSON.parse(current))) {
+                        throw new Error('not a list');
+                    }
+                } catch {
+                    if (!this.ownDbWarned) {
+                        this.ownDbWarned = true;
+                        this.log.warn('ownDb.data is not a JSON list: products with own barcodes are not added to it');
+                    }
+                }
+            }
+            return;
+        }
+        this.ownDbWarned = false;
+        await this.setState('ownDb.data', out, true);
+        const count = Object.values(this.inv.data.products).filter(p => isOwnEan(p.ean)).length;
+        this.log[this.ownDbLogged ? 'debug' : 'info'](`Own barcodes saved in ownDb.data: ${count} products`);
+        this.ownDbLogged = true;
+    }
+
+    /**
      * Run a command from the web app. Commands run one after another and are idempotent per id.
      *
      * @param {object} cmd command
      */
     runCommand(cmd) {
+        if (cmd && cmd.action === 'ownLookup') {
+            return this.findInOwnDb(cmd);
+        }
+        if (cmd && cmd.action === 'pluLookup') {
+            return this.findPlu(cmd);
+        }
         if (cmd && cmd.action === 'webLookup') {
             // a search on the web takes seconds and changes no data: it does not wait for the bookings
             return this.findOnWeb(cmd);
@@ -558,6 +680,15 @@ class Shelfmate extends utils.Adapter {
         await this.setState('check.allAvailable', result.length > 0 && result.every(x => x.ok), true);
         if (this.config.checkAddMissing) {
             await this.addMissingToList();
+            if (this.config.checkNotifySkipped) {
+                this.notify(
+                    skippedText(
+                        this.lang,
+                        result.filter(x => x.ok),
+                    ),
+                    'info',
+                );
+            }
         }
     }
 
@@ -618,6 +749,20 @@ class Shelfmate extends utils.Adapter {
     }
 
     /**
+     * Shelf life in a freezer location for products without their own value.
+     *
+     * @returns {number} days, 0 if switched off
+     */
+    freezeDefaultDays() {
+        const v = this.config.freezeDefaultDays;
+        if (v === undefined || v === null || v === '') {
+            return 180;
+        }
+        const n = Math.round(Number(v));
+        return Number.isFinite(n) && n > 0 ? Math.min(n, 3650) : 0;
+    }
+
+    /**
      * Switches the automatic shelf life on or off for the next booking.
      *
      * @param {boolean} fromApp booking comes from the app (someone can type a date)
@@ -628,6 +773,7 @@ class Shelfmate extends utils.Adapter {
         this.inv.autoDate = fromApp ? mode === 'always' : mode !== 'off';
         this.inv.autoScope = this.config.autoShelfScope === 'dry' ? 'dry' : 'all';
         this.inv.listByGroup = this.config.listByGroup !== false;
+        this.inv.freezeDefault = this.freezeDefaultDays();
     }
 
     /**
@@ -650,12 +796,13 @@ class Shelfmate extends utils.Adapter {
      * @returns {string[]} names of the enabled buttons
      */
     labelButtons() {
-        const known = ['ean', 'qr', 'qrOnly', 'shelf', 'box', 'opened', 'freezer', 'eanProduct'];
+        const known = ['ean', 'qr', 'qrOnly', 'shelf', 'box', 'opened', 'freezer', 'eanProduct', 'freezerEan'];
         const a = Array.isArray(this.config.labelButtons) ? this.config.labelButtons : ['ean', 'qr'];
         return a.filter(x => known.includes(x));
     }
 
     async updateStats() {
+        await this.syncOwnDb().catch(e => this.log.warn(`Own database: ${e.message}`));
         this.inv.listByGroup = this.config.listByGroup !== false;
         const low = this.inv.lowStockNames();
         const items = this.inv.inventoryList();
@@ -788,8 +935,13 @@ class Shelfmate extends utils.Adapter {
         this.log.debug(`Scanned code: ${text}`);
         this.scanEngine.inv = this.inv;
         // a barcode nobody knows yet is created first (Open Food Facts), then booked like any other
-        const made = this.scanEngine.isNewBarcode(text) ? await this.createScannedProduct(text) : null;
-        const r = this.scanEngine.handle(text);
+        // a label of a scale (GS1 data matrix) is reduced to its article number, produce numbers (PLU) included
+        const scanned = scanCode(text);
+        const made =
+            this.scanEngine.isNewBarcode(scanned) || this.scanEngine.isNewPlu(scanned)
+                ? await this.createScannedProduct(scanned)
+                : null;
+        const r = this.scanEngine.handle(scanned);
         if (made) {
             r.text = this.scanEngine.say(made.incomplete ? 'createdIncomplete' : 'created', made.name) + r.text;
         }
@@ -805,9 +957,33 @@ class Shelfmate extends utils.Adapter {
      * @returns {Promise<{name: string, incomplete: boolean} | null>} the new product, null when it could not be saved
      */
     async createScannedProduct(ean) {
+        if (pluOf(ean)) {
+            const plu = await this.pluProduct(ean);
+            if (!plu || this.closing) {
+                return null;
+            }
+            try {
+                this.scanBook({ action: 'saveProduct', product: { ...plu, ean, source: 'plu', incomplete: false } });
+                return { name: plu.name, incomplete: false };
+            } catch (e) {
+                this.log.warn(`Could not create product for PLU ${ean}: ${e.message}`);
+                return null;
+            }
+        }
         let found = null;
+        let own = null;
         try {
-            found = await lookupBarcode(ean, { lang: this.lang });
+            own = await this.ownDb.find(ean);
+        } catch (e) {
+            this.log.debug(`Own database lookup failed: ${e.message}`);
+        }
+        if (own) {
+            found = { ...own, incomplete: false };
+        }
+        try {
+            if (!found && this.ownDb.mode !== 'only') {
+                found = await lookupBarcode(ean, { lang: this.lang });
+            }
         } catch (e) {
             this.log.debug(`Open Food Facts lookup failed: ${e.message}`);
         }
@@ -815,7 +991,7 @@ class Shelfmate extends utils.Adapter {
             return null;
         }
         const product = found
-            ? { ...found, ean, source: 'off', incomplete: false }
+            ? { ...found, ean, source: own ? 'own' : 'off', incomplete: false }
             : { name: `${this.lang === 'de' ? 'Neues Produkt' : 'New product'} ${ean}`, ean, incomplete: true };
         try {
             this.scanBook({ action: 'saveProduct', product });

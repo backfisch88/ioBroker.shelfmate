@@ -25,6 +25,8 @@ You use it through a web app that you open on your phone and add to the home scr
 ### Products and storage locations
 
 - Add products by barcode or by hand, with name suggestions and a matching category when creating by hand
+- Produce numbers (PLU) of fruit and vegetables and the data matrix labels of scales are recognised; an own list in `plu.data` names retailer-assigned numbers
+- Use an own product database (data point, file or web address; JSON or CSV with free field names) that is asked first; products with own barcodes keep their barcode
 - Load product data from Open Food Facts and its sister databases (cosmetics, pet food, household) automatically (name, brand, package size, Nutri-Score and categories); the source is shown in the app
 - Unknown barcodes: a button searches the web for name, brand and picture, also for all new products at once (with a review page before anything is saved) or for the picture only (only on request, can be turned off)
 - Edit and refresh product data at any time
@@ -56,6 +58,7 @@ You use it through a web app that you open on your phone and add to the home scr
 - Tab "Tasks" collects everything to do: new products to complete, due stocktaking, group and minimum stock suggestions, and products without a date (leave the date empty to keep chosen packages without one)
 - Suggest a standard shelf life for many foods automatically
 - Take the shelf life after opening into account
+- Freezer locations with their own frozen shelf life; products bought frozen keep their normal shelf life
 - Mark products as opened or spoiled
 - Recognise automatically filled-in values by the sparkle symbol
 - Set your own shelf life values for products and groups
@@ -73,7 +76,7 @@ Missing ingredients can be put on the shopping list directly. What is already in
 - Capture barcodes with the phone camera or a scanner
 - Create and print QR codes for storage locations
 - Print EAN and QR labels in your own sizes, for example 50 × 30 mm
-- Labels for shelves, boxes, the freezer (with a free text line, for example the weight) and opened products; an EAN label can also be printed from the product page
+- Labels for shelves, boxes, the freezer (with a free text line, for example the weight) and opened products; an EAN label and a freezer label with EAN and freezing date can also be printed from the product page
 - Choose which labels the app offers
 - Code library: save your own codes (for example from other scanners or apps), print them as labels and choose which of the control codes go into the PDF
 - Scanner mode for stocking in and out without the web app open; scanners with a USB dongle or Bluetooth are read directly on the ioBroker host
@@ -161,7 +164,8 @@ The most important functions can be adjusted directly in the adapter configurati
 | Fill in shelf life automatically | Enter standard values always, only in scanner mode or never |
 | Which standard values | All stored shelf lives or only the built-in dry goods list |
 | Expiry warning | How many days before expiry to warn |
-| Ingredient check | Put missing ingredients on the shopping list automatically |
+| Ingredient check | Put missing ingredients on the shopping list automatically and, optionally, get a message about the ingredients that were not put on it |
+| Own product database | Choose whether it is asked first, only or never; add a data point, a file or a web address (JSON or CSV) and map your own field names |
 | Scanner mode | Set the scanner device, time gaps, prefix, suffix and the QR code type; "Scans = quantity" stocks in one piece per scan without a location (default location for new products, `SM:OUT` to take out) |
 | Labels | Choose the available label types and print options |
 | Stocktaking reminder | Reminder after a set number of days without a stocktaking |
@@ -244,6 +248,8 @@ ShelfMate provides important information and functions as ioBroker data points.
 
 | Data point | Description |
 | --- | --- |
+| `ownDb.data` | Own product database as a JSON list; products with own barcodes are added automatically |
+| `plu.data` | Own produce numbers (PLU) as JSON, for example `{"4238": "Banane Bio"}`; they win over the built-in list |
 | `scanner.active` | Turn scanner mode on or off |
 | `scanner.input` | Hand over a barcode or QR code (`ack=false`) |
 | `scanner.lastCode` | Last scanned code |
@@ -288,9 +294,16 @@ It explains the web app, storage locations, product groups, minimum stock, best-
 Ideas, wishes or bugs are welcome as a [GitHub issue](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
 ## Changelog
-### **WORK IN PROGRESS**
+### 0.5.2 (2026-11-10)
 - New: scanner mode "Scans = quantity" (every scan stocks in one piece, default location in the settings) and the control code `SM:OUT` to take out
-- New: EAN label button on the product page (setting under labels)
+- New: EAN label and freezer label with EAN and freezing date as buttons on the product page (settings under labels)
+- New: a freezer location can move opened packages to another location automatically (for example the fridge); the history shows the move, and "Undo opening" puts the package back into the freezer
+- New: produce numbers (PLU) and GS1 data matrix labels of scales are recognised; built-in list of about 1,500 numbers (IFPS 2024) with names in all languages, own entries in the data point `plu.data`
+- Docs: tip against the camera question on every start of the iPhone app
+- Changed: product groups in the overview start closed and no longer remember being opened
+- New: own product database, asked before Open Food Facts: data point `ownDb.data` (always there, own barcodes are added to it), plus data point, file or web address from the settings; JSON list, JSON object or CSV; free field names; own first, own only or off
+- New: optional message through the notification adapter with the ingredients of a check that were not put on the shopping list because they are in stock, with the products that were counted
+- New: mark storage locations as freezer; stock in there gets a frozen shelf life (own value per product or a default from the settings, 180 days), moving into the freezer sets a new date, and "Frozen product" keeps the normal shelf life for products bought frozen
 - New: history entries open the product
 - Changed: the ingredient check counts only products named like the ingredient (or in a group of that name), no longer "Gehackte Tomaten" for "Tomaten"
 

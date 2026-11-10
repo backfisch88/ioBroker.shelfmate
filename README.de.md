@@ -22,6 +22,8 @@ Die Bedienung erfolgt über eine Web-App, die du auf dem Smartphone öffnen und 
 ### Produkte und Lagerorte
 
 - Produkte per Barcode oder manuell hinzufügen, beim manuellen Anlegen mit Namensvorschlägen und passender Kategorie
+- Warennummern (PLU) von Obst und Gemüse und Data-Matrix-Etiketten von Waagen werden erkannt; eine eigene Liste in `plu.data` benennt Händler-Nummern
+- Eigene Produktdatenbank (Datenpunkt, Datei oder Netzwerk-Adresse; JSON oder CSV mit freien Feldnamen), die zuerst gefragt wird; Produkte mit eigenen Barcodes behalten ihren Barcode
 - Produktdaten automatisch über Open Food Facts laden (Name, Marke, Packungsgröße, Nutri-Score und Kategorien)
 - Produktdaten jederzeit bearbeiten und aktualisieren
 - Eigene EAN-13-Barcodes für Produkte ohne Barcode erstellen
@@ -50,6 +52,7 @@ Die Bedienung erfolgt über eine Web-App, die du auf dem Smartphone öffnen und 
 - Vor bald ablaufenden und abgelaufenen Produkten warnen
 - Standard-Haltbarkeit für viele Lebensmittel automatisch vorschlagen
 - Haltbarkeit nach dem Öffnen berücksichtigen
+- Gefrierorte mit eigener Gefrier-Haltbarkeit; TK-Produkte behalten ihre normale Haltbarkeit
 - Produkte als geöffnet oder verdorben markieren
 - Automatisch eingetragene Werte am Funken-Symbol erkennen
 - Eigene Haltbarkeitswerte für Produkte und Gruppen festlegen
@@ -69,7 +72,7 @@ Fehlende Zutaten lassen sich direkt auf die Einkaufsliste setzen. Was bereits vo
 - Barcodes mit der Smartphone-Kamera oder einem Scanner erfassen
 - QR-Codes für Lagerorte erstellen und drucken
 - EAN- und QR-Etiketten in eigenen Größen drucken, zum Beispiel 50 × 30 mm
-- Etiketten für Regale, Boxen, Gefrierfach (mit freier Textzeile, zum Beispiel dem Gewicht) und geöffnete Produkte; ein EAN-Etikett lässt sich auch auf der Produktseite drucken
+- Etiketten für Regale, Boxen, Gefrierfach (mit freier Textzeile, zum Beispiel dem Gewicht) und geöffnete Produkte; ein EAN-Etikett und ein Gefrier-Etikett mit EAN und Einfrierdatum lassen sich auch auf der Produktseite drucken
 - Code-Bibliothek: eigene Codes speichern, als Etikett drucken und wählen, welche Steuer-Codes ins PDF kommen
 - Einstellen, welche Etiketten in der App angeboten werden
 - Zähl-Modus: Jeder Scan lagert ohne Lagerort ein Stück ein, drei Scans sind drei Stück
@@ -157,7 +160,8 @@ Die wichtigsten Funktionen lassen sich direkt in der Adapterkonfiguration anpass
 | Automatische Haltbarkeit | Standardwerte immer, nur im Scanner-Modus oder nie eintragen |
 | Standardwerte verwenden | Alle hinterlegten Haltbarkeiten oder nur die eingebaute Trockenwarenliste |
 | Ablaufwarnung | Festlegen, wie viele Tage vor Ablauf gewarnt wird |
-| Zutaten-Prüfung | Fehlende Zutaten automatisch auf die Einkaufsliste setzen |
+| Zutaten-Prüfung | Fehlende Zutaten automatisch auf die Einkaufsliste setzen und optional eine Nachricht über Zutaten bekommen, die nicht auf die Liste kamen |
+| Eigene Produktdatenbank | Festlegen, ob sie zuerst, allein oder gar nicht gefragt wird; Datenpunkt, Datei oder Netzwerk-Adresse (JSON oder CSV) angeben und eigene Feldnamen zuordnen |
 | Scanner-Modus | Scanner-Gerät, Zeitabstände, Präfix, Suffix und QR-Code-Art einstellen; „Scans = Menge“ lagert pro Scan ein Stück ohne Lagerort ein (Standard-Lagerort für neue Produkte, `SM:OUT` zum Entnehmen) |
 | Etiketten | Verfügbare Etikettentypen und Druckoptionen auswählen |
 | Inventur-Erinnerung | Erinnerung nach einer festgelegten Anzahl von Tagen ohne Inventur |
@@ -239,6 +243,8 @@ ShelfMate stellt wichtige Informationen und Funktionen als ioBroker-Datenpunkte 
 
 | Datenpunkt | Beschreibung |
 | --- | --- |
+| `ownDb.data` | Eigene Produktdatenbank als JSON-Liste; Produkte mit eigenen Barcodes werden automatisch ergänzt |
+| `plu.data` | Eigene Warennummern (PLU) als JSON, zum Beispiel `{"4238": "Banane Bio"}`; sie gehen der eingebauten Liste vor |
 | `scanner.active` | Scanner-Modus ein- oder ausschalten |
 | `scanner.input` | Barcode oder QR-Code übergeben (`ack=false`) |
 | `scanner.lastCode` | Zuletzt gescannter Code |

@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "shelfmate",
-        "version": "0.5.1",
+        "version": "0.5.2",
         "news": {
+            "0.5.2": {
+                "en": "New: produce numbers (PLU) and GS1 labels of scales are recognised; scanner mode \"Scans = quantity\" and control code SM:OUT; EAN and freezer labels on the product page; freezer locations (frozen shelf life, opened packages can move to another location); own product database; optional message about ingredients in stock; history entries open the product. Changed: the ingredient check counts only products named like the ingredient; product groups start closed.",
+                "de": "Neu: Obst- und Gemüsenummern (PLU) und GS1-Etiketten von Waagen werden erkannt; Scanner-Modus „Scans = Menge“ und Steuercode SM:OUT; EAN- und Gefrieretikett auf der Produktseite; Gefrierorte (Gefrier-Haltbarkeit, geöffnete Packungen können an einen anderen Ort wandern); eigene Produktdatenbank; optionale Meldung zu Zutaten auf Vorrat; Verlaufseinträge öffnen das Produkt. Geändert: Die Zutatenprüfung zählt nur Produkte, die wie die Zutat heißen; Produktgruppen starten zugeklappt.",
+                "ru": "Новое: распознаются номера PLU овощей и фруктов и этикетки GS1 с весов; режим сканера «Сканирование = количество» и управляющий код SM:OUT; этикетки EAN и для морозилки на странице продукта; места-морозилки (срок хранения в замороженном виде, открытые упаковки можно переносить в другое место); собственная база продуктов; необязательное сообщение об ингредиентах, имеющихся в запасе; записи истории открывают продукт. Изменено: проверка ингредиентов учитывает только продукты с названием ингредиента; группы продуктов по умолчанию свёрнуты.",
+                "pt": "Novo: números PLU de frutas e legumes e etiquetas GS1 de balanças são reconhecidos; modo de leitor «Leituras = quantidade» e código de controlo SM:OUT; etiquetas EAN e de congelador na página do produto; locais de congelador (validade congelado, embalagens abertas podem mudar para outro local); base de dados de produtos própria; mensagem opcional sobre ingredientes em stock; as entradas do histórico abrem o produto. Alterado: a verificação de ingredientes conta apenas produtos com o nome do ingrediente; os grupos de produtos começam fechados.",
+                "nl": "Nieuw: PLU-nummers van groente en fruit en GS1-etiketten van weegschalen worden herkend; scannermodus «Scans = aantal» en besturingscode SM:OUT; EAN- en vriezeretiket op de productpagina; vrieslocaties (houdbaarheid ingevroren, geopende verpakkingen kunnen naar een andere locatie verhuizen); eigen productdatabase; optioneel bericht over ingrediënten op voorraad; geschiedenisitems openen het product. Gewijzigd: de ingrediëntencontrole telt alleen producten die zo heten als het ingrediënt; productgroepen starten ingeklapt.",
+                "fr": "Nouveau : les numéros PLU des fruits et légumes et les étiquettes GS1 des balances sont reconnus ; mode scanner « Scans = quantité » et code de commande SM:OUT ; étiquettes EAN et congélateur sur la page du produit ; emplacements congélateur (durée de conservation congelé, les paquets ouverts peuvent passer à un autre emplacement) ; base de produits personnelle ; message facultatif sur les ingrédients en stock ; les entrées de l'historique ouvrent le produit. Modifié : le contrôle des ingrédients ne compte que les produits portant le nom de l'ingrédient ; les groupes de produits démarrent repliés.",
+                "it": "Novità: vengono riconosciuti i numeri PLU di frutta e verdura e le etichette GS1 delle bilance; modalità scanner «Scansioni = quantità» e codice di controllo SM:OUT; etichette EAN e congelatore nella pagina del prodotto; posizioni congelatore (durata da congelato, le confezioni aperte possono passare a un'altra posizione); banca dati prodotti personale; messaggio facoltativo sugli ingredienti in scorta; le voci della cronologia aprono il prodotto. Modificato: il controllo ingredienti conta solo prodotti con il nome dell'ingrediente; i gruppi di prodotti partono chiusi.",
+                "es": "Novedades: se reconocen los números PLU de frutas y verduras y las etiquetas GS1 de básculas; modo de escáner «Escaneos = cantidad» y código de control SM:OUT; etiquetas EAN y de congelador en la página del producto; ubicaciones de congelador (caducidad congelado, los envases abiertos pueden pasar a otra ubicación); base de datos de productos propia; mensaje opcional sobre ingredientes en existencias; las entradas del historial abren el producto. Cambiado: la comprobación de ingredientes solo cuenta productos con el nombre del ingrediente; los grupos de productos empiezan cerrados.",
+                "pl": "Nowości: rozpoznawane są numery PLU owoców i warzyw oraz etykiety GS1 z wag; tryb skanera «Skany = ilość» i kod sterujący SM:OUT; etykiety EAN i do zamrażarki na stronie produktu; miejsca zamrażarki (okres przydatności po zamrożeniu, otwarte opakowania mogą przechodzić w inne miejsce); własna baza produktów; opcjonalna wiadomość o składnikach w zapasie; wpisy historii otwierają produkt. Zmieniono: sprawdzanie składników liczy tylko produkty o nazwie składnika; grupy produktów startują zwinięte.",
+                "uk": "Нове: розпізнаються номери PLU овочів і фруктів та етикетки GS1 з ваг; режим сканера «Сканування = кількість» і керівний код SM:OUT; етикетки EAN і для морозилки на сторінці продукту; місця-морозилки (термін зберігання в замороженому вигляді, відкриті упаковки можна переносити в інше місце); власна база продуктів; необов'язкове повідомлення про інгредієнти в запасі; записи історії відкривають продукт. Змінено: перевірка інгредієнтів враховує лише продукти з назвою інгредієнта; групи продуктів за замовчуванням згорнуті.",
+                "zh-cn": "新增：识别蔬果PLU编号和秤的GS1标签；扫描模式“扫描=数量”和控制码SM:OUT；产品页上的EAN标签和冷冻标签；冷冻位置（冷冻保质期，已开封的包装可移到其他位置）；自有产品数据库；可选的库存食材提醒；历史记录条目可打开产品。更改：食材检查只计算名称与食材相同的产品；产品分组默认折叠。"
+            },
             "0.5.1": {
                 "en": "New: free text instead of \"Haltbar bis\" on the freezer label. Improved: the scanner finds the barcode anywhere in the picture, also on dark backgrounds; faster product lookup. Fixed: product database often reported as unreachable on single scans.",
                 "de": "Neu: Freitext statt „Haltbar bis“ auf dem Gefrieretikett. Verbessert: Der Scanner findet den Barcode überall im Bild, auch auf dunklem Grund; schnellere Produktsuche. Behoben: Produktdatenbank wurde bei Einzelscans oft als nicht erreichbar gemeldet.",
@@ -80,19 +93,6 @@
                 "pl": "Nowości: konfigurowalne akcje przy wielokrotnym skanowaniu, obsługa terminów (blok daty, kopiowanie daty, karta Zadania, produkty bez daty), okrągłe pola wyboru, opcjonalny przycisk skanowania, rozłożone w czasie powiadomienia o terminie (np. 7,4,3,2,1,0), ilość na liście zakupów, miejsca na artykuły zużywalne, tworzenie nieznanych produktów skanerem. Poprawki: wielowierszowe kody QR, umlauty w nazwach miejsc, certyfikat nie trafia już do dziennika debugowania, poprawki układu na iPadzie",
                 "uk": "Нове: налаштовувані дії при повторному скануванні, робота зі строком придатності (блок дати, копіювання дати, вкладка «Завдання», продукти без дати), круглі позначки, необов’язкова кнопка сканування, поетапні сповіщення про термін (напр. 7,4,3,2,1,0), кількість у списку покупок, місця витратних матеріалів, створення невідомих продуктів сканером. Виправлення: багаторядкові QR-коди, умляути в назвах місць, сертифікат більше не потрапляє в журнал налагодження, виправлення макета для iPad",
                 "zh-cn": "新增：可配置的重复扫描操作、保质期流程（日期块、复制日期、任务标签页、无日期产品）、圆形勾选框、可选扫描按钮、分阶段到期提醒（如 7,4,3,2,1,0）、购物清单数量、耗材存放位置、扫描器创建未知产品。修复：多行二维码、位置名称中的变音符号、证书不再写入调试日志、iPad 布局修正"
-            },
-            "0.2.0": {
-                "en": "New: optional quantity on the shopping list, consumables locations with data points, unknown products created by the headless scanner, editable expiry message. Fixes: collapsible groups while searching, hint sync",
-                "de": "Neu: optionale Menge auf der Einkaufsliste, Verbrauchswaren-Lagerorte mit Datenpunkten, unbekannte Produkte per Scanner anlegen, Ablauf-Meldung anpassbar. Fixes: Gruppen in der Suche zuklappbar, Hinweis-Sync",
-                "ru": "Новое: количество в списке покупок, места расходников с объектами данных, создание неизвестных продуктов сканером, настраиваемое сообщение о сроке. Исправления: сворачиваемые группы при поиске, синхронизация подсказок",
-                "pt": "Novo: quantidade opcional na lista de compras, locais de consumíveis com pontos de dados, produtos desconhecidos criados pelo leitor, mensagem de validade editável. Correções: grupos recolhíveis na pesquisa, sincronização de avisos",
-                "nl": "Nieuw: optionele hoeveelheid op de boodschappenlijst, locaties voor verbruiksartikelen met datapunten, onbekende producten aanmaken met de scanner, aanpasbare THT-melding. Fixes: inklapbare groepen bij zoeken, synchronisatie van tips",
-                "fr": "Nouveau : quantité facultative dans la liste de courses, lieux de consommables avec points de données, création de produits inconnus par le scanner, message de DLC modifiable. Corrections : groupes repliables pendant la recherche, synchronisation des conseils",
-                "it": "Novità: quantità facoltativa nella lista della spesa, luoghi di materiali di consumo con punti dati, creazione di prodotti sconosciuti con lo scanner, messaggio di scadenza modificabile. Correzioni: gruppi comprimibili durante la ricerca, sincronizzazione dei suggerimenti",
-                "es": "Novedades: cantidad opcional en la lista de la compra, ubicaciones de consumibles con puntos de datos, creación de productos desconocidos con el escáner, mensaje de caducidad editable. Correcciones: grupos plegables al buscar, sincronización de avisos",
-                "pl": "Nowości: opcjonalna ilość na liście zakupów, miejsca na artykuły zużywalne z punktami danych, tworzenie nieznanych produktów skanerem, edytowalne powiadomienie o terminie. Poprawki: zwijane grupy podczas wyszukiwania, synchronizacja wskazówek",
-                "uk": "Нове: необов’язкова кількість у списку покупок, місця витратних матеріалів з точками даних, створення невідомих продуктів сканером, редаговане сповіщення про термін. Виправлення: згортання груп під час пошуку, синхронізація підказок",
-                "zh-cn": "新增：购物清单的可选数量、带数据点的耗材存放位置、扫描器创建未知产品、可编辑的到期提醒。修复：搜索时可折叠分组、提示同步"
             }
         },
         "titleLang": {
@@ -202,12 +202,21 @@
         "bestBeforeWarnDays": 7,
         "autoShelfMode": "always",
         "autoShelfScope": "all",
+        "freezeDefaultDays": 180,
         "dateFormat": "dmy",
         "listByGroup": true,
         "webLookup": true,
         "eanSearchToken": "",
         "openGtinKey": "",
         "checkAddMissing": false,
+        "checkNotifySkipped": false,
+        "ownDbMode": "first",
+        "ownDbState": "",
+        "ownDbFile": "",
+        "ownDbUrl": "",
+        "ownDbFormat": "auto",
+        "ownDbRefresh": 10,
+        "ownDbMap": [],
         "notifyAdapter": "",
         "notifyTarget": "",
         "notifyArea": "ShelfMate",

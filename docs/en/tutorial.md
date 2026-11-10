@@ -278,6 +278,18 @@ Tick "Consumables" when editing the location. The stock of all ticked locations 
 
 The text shows the opened amount and the best-before date only if there is something opened or it expires soon. This is handy for planning recipes or for your own scripts.
 
+### Freezer locations
+
+Tick "Freezer location" when editing a location (chest freezer, freezer drawer). Anything stocked in there gets the frozen shelf life instead of the normal one, because food keeps much longer frozen.
+
+- **Own value per product:** enter "Frozen, in days" on the product page. Without it, the default from the adapter settings is used (180 days; 0 switches this off).
+- **Moving into the freezer:** when you move a product from a normal location into a freezer location, the best-before date is set to today plus the frozen shelf life. Moving it back keeps that date.
+- **Opening:** choose "When opened, move to" (for example the fridge) on the freezer location. If you open a package from the freezer, it moves there automatically. The date then follows the shelf life after opening, and undo takes the move back. The history shows the move (for example "Chest → Fridge"), and "Undo opening" on the product page puts the package back into the freezer.
+- **Bought frozen:** tick "Frozen product" on the product page for products you buy frozen, such as chips. They keep their normal shelf life, also in the freezer.
+- **Vacuum-sealed and frozen:** cold cuts keep the same barcode. Give the product its own frozen value and print the "Freezer EAN label" from the product page.
+
+The date is only filled in automatically if automatic shelf life is switched on for stocking in; you can always change it by hand.
+
 ### QR codes for storage locations
 
 Every storage location gets its own code.
@@ -317,6 +329,37 @@ After that, the product can be scanned like any other.
 
 You can also upload your own product image. ShelfMate scales it down automatically.
 
+### Your own product database
+
+Besides Open Food Facts, ShelfMate can use a database of your own. It is asked first when you scan or enter a barcode, so your own names, groups and shelf lives win.
+
+The data point `ownDb.data` always exists. Paste your database there as a JSON list, for example:
+
+`[{"ean":"4006381333931","name":"Oat flakes","brand":"Demo","shelfLifeDays":365}]`
+
+Products with a barcode that ShelfMate made up itself (Generate EAN) are added to this list automatically. If data is restored or moved, the same product gets the same barcode again. Entries you added yourself stay untouched.
+
+In the adapter settings you can add more sources, all read only:
+
+- a data point with the database (JSON or CSV text)
+- a file on the system or on a mounted network drive
+- the web address of a file (http or https), loaded again after the refresh time
+
+JSON list, JSON object with the barcodes as keys and CSV with a header line are understood; "Detect automatically" picks the right one.
+
+If your data uses other names, enter them in the table "Field names in your data", for example the field "name" → `Krömpel`. A dot reaches into nested data (`data.title`). Every product field can be mapped: barcode, name, brand, package size, unit, category, product group, tags, image URL, minimum stock and the shelf lives (normal, after opening, frozen). Only the name is required besides the barcode. The data point `ownDb.data` always uses the ShelfMate names.
+
+Under "Use of the own database" you choose:
+
+| Setting | Behaviour |
+| --- | --- |
+| Own database first, then internet | Own data wins, Open Food Facts and the web only help if nothing is found |
+| Own database only | The internet is not asked at all |
+| Not used | Only the internet, as before |
+
+A product found there is filled into the editor like any other, or created directly when you stock in or scan.
+
+
 ---
 
 ## Minimum stock and shopping list
@@ -332,6 +375,20 @@ For product groups, the stock of the products in the group is counted together.
 In the overview, a check mark shows which products are already on the shopping list. Tapping it removes the entry again, if the matching settings are active.
 
 The connection to the shopping list is set up in the adapter settings.
+
+### Fruit and vegetables from the scale (PLU)
+
+Loose fruit and vegetables have no barcode, only a produce number (PLU) with four digits, for example 4011 for yellow bananas. Organic produce has a 9 in front (94011). ShelfMate knows the international list of these numbers (about 1,500 numbers, IFPS list 2024, with a name in every language of the adapter), so a scan or a typed number creates the product by itself. The category is always "Food".
+
+Labels from scales (for example at REWE) carry the number in a data matrix code. ShelfMate reads the number out of it, also with a scanner or with the camera. The price and weight on the label are not used.
+
+Some numbers are assigned by the retailer and say only "bananas". REWE, for example, prints "Banane Bio" on the label for 4238, but the code only contains the number. To get your own name, enter it in the data point `plu.data`:
+
+```json
+{ "4238": "Banane Bio", "4400": { "name": "Pfirsich", "packageSize": "500 g" } }
+```
+
+Your own entries win over the built-in list. You can use the fields of the own product database (`name`, `category`, `group`, `unit`, `shelfLifeDays`, ...). A product is only created once; after that it is found by its number.
 
 ### Setting the minimum stock for several products
 
@@ -629,6 +686,12 @@ With `check.addMissing` you can put the missing ingredients on the shopping list
 Alternatively, turn on "Put missing ingredients on the shopping list" in the adapter settings. Then they are passed on automatically after every check.
 
 Bring! special also takes quantities and variants into account, while the other modes pass on only the item name.
+
+To keep an eye on the check, turn on "Report ingredients that were not put on the list". After every check you then get a message through your notification adapter, for example:
+
+`Not put on the shopping list, already in stock:` followed by lines like `- Potatoes: Potatoes Rewe`
+
+Each line shows the ingredient and the products that were counted for it, so you can spot a wrong match right away. This needs a notification adapter in the settings and works together with "Put missing ingredients on the shopping list".
 
 ### Taking the minimum stock into account
 
@@ -1062,6 +1125,15 @@ For the camera and offline mode, ShelfMate needs HTTPS with a certificate that t
 With Create self-signed certificate, ShelfMate creates a certificate for the host name and the IP addresses of the ioBroker computer.
 
 The certificate is stored in the ioBroker certificate store, selected automatically and valid for 825 days.
+
+### The iPhone asks for the camera every time
+
+On the iPhone the app asks "Allow camera?" again after every start. I get rid of the question like this:
+
+1. Open ShelfMate in Safari at its address, not from the Home Screen icon.
+2. Open the scanner, tap Start camera and tap Allow.
+
+From then on the question stays away, also in the app on the Home Screen. If it comes back, Safari and the Home Screen app have forgotten the permission; repeat the two steps.
 
 Alternatively you can use your own certificates or a certificate collection, for example through the ioBroker adapter acme.
 
