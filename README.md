@@ -295,6 +295,8 @@ Ideas, wishes or bugs are welcome as a [GitHub issue](https://github.com/backfis
 
 ## Changelog
 ### **WORK IN PROGRESS**
+- Changed: the locations page is grouped by area; areas fold open and closed, and are edited inside the area (no separate areas list)
+- New: small icons in the locations list for freezer, consumables and "record best-before when stocking in"; areas show the total
 - Improved: the consumables text data point is translated into all languages
 - Fixed: English example for the data point `plu.data`
 
