@@ -294,6 +294,10 @@ It explains the web app, storage locations, product groups, minimum stock, best-
 Ideas, wishes or bugs are welcome as a [GitHub issue](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
 ## Changelog
+### **WORK IN PROGRESS**
+- Improved: the consumables text data point is translated into all languages
+- Fixed: English example for the data point `plu.data`
+
 ### 0.5.2 (2026-11-10)
 - New: scanner mode "Scans = quantity" (every scan stocks in one piece, default location in the settings) and the control code `SM:OUT` to take out
 - New: EAN label and freezer label with EAN and freezing date as buttons on the product page (settings under labels)

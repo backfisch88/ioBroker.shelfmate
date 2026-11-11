@@ -75,13 +75,13 @@ function expiringHtml(items, t, dateFormat) {
  * @returns {string} line
  */
 function consumableLine(x, lang, dateFormat) {
-    const de = lang === 'de';
+    const t = texts(lang);
     const extra = [];
     if (x.opened > 0) {
-        extra.push(`${x.opened} ${de ? 'geöffnet' : 'opened'}`);
+        extra.push(`${x.opened} ${t.opened}`);
     }
     if (x.bestBefore && x.expiring) {
-        extra.push(`${de ? 'MHD' : 'best before'} ${formatDate(x.bestBefore, dateFormat)}`);
+        extra.push(`${t.bestBefore} ${formatDate(x.bestBefore, dateFormat)}`);
     }
     return `${x.amount} ${x.unit} ${x.name}${extra.length ? ` (${extra.join(', ')})` : ''}`;
 }
@@ -292,7 +292,7 @@ class Shelfmate extends utils.Adapter {
             ],
             [
                 'plu.data',
-                'Own produce numbers (PLU) as JSON, for example {"4238": "Banane Bio"}; they win over the built-in list',
+                'Own produce numbers (PLU) as JSON, for example {"4238": "Banana organic"}; they win over the built-in list',
                 'string',
                 'json',
                 true,
