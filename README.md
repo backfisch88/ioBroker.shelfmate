@@ -301,6 +301,7 @@ Ideas, wishes or bugs are welcome as a [GitHub issue](https://github.com/backfis
 - Fixed: English example for the data point `plu.data`
 - New: clear feedback for every camera scan (vibration, coloured frame and a status bar with product name and count: searching, found, new, unknown)
 - New: stocking in by camera has the buttons "To the list" and "Stock in (n)" under the picture
+- Fixed: the web search left the name of products created by scanning as "Unknown product …" (only brand and size were taken over)
 - Fixed: stocking in - a new product scanned while the lookup was still running, or when the location was scanned right after, ended up with 0 pieces; finishing now waits for running lookups
 
 ### 0.5.2 (2026-11-10)
