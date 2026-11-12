@@ -266,3 +266,5 @@ PLU-Nummer unbekannt: {1}|Unknown produce number: {1}|Неизвестный н�
 Ohne Bereich|No area|Без области|Sem área|Geen gebied|Sans zone|Senza area|Sin área|Bez obszaru|Без області|无区域
 Gefrierort|Freezer location|Место-морозилка|Local de congelador|Vrieslocatie|Emplacement congélateur|Posizione congelatore|Ubicación de congelador|Miejsce zamrażarki|Місце-морозилка|冷冻位置
 Verbrauchswaren|Consumables|Расходные товары|Consumíveis|Verbruiksgoederen|Consommables|Beni di consumo|Consumibles|Artykuły zużywalne|Витратні товари|消耗品
+
+Produkt konnte nicht gezählt werden|The product could not be counted|Не удалось учесть продукт|Não foi possível contar o produto|Het product kon niet worden geteld|Le produit n'a pas pu être compté|Impossibile contare il prodotto|No se pudo contar el producto|Nie udało się policzyć produktu|Не вдалося врахувати продукт|无法计入该产品

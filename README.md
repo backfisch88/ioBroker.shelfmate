@@ -299,6 +299,8 @@ Ideas, wishes or bugs are welcome as a [GitHub issue](https://github.com/backfis
 - New: small icons in the locations list for freezer, consumables and "record best-before when stocking in"; areas show the total
 - Improved: the consumables text data point is translated into all languages
 - Fixed: English example for the data point `plu.data`
+- New: clear feedback for every camera scan (vibration, coloured frame and a status bar with product name and count: searching, found, new, unknown)
+- Fixed: stocking in - a new product scanned while the lookup was still running, or when the location was scanned right after, ended up with 0 pieces; finishing now waits for running lookups
 
 ### 0.5.2 (2026-11-10)
 - New: scanner mode "Scans = quantity" (every scan stocks in one piece, default location in the settings) and the control code `SM:OUT` to take out
