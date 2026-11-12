@@ -268,3 +268,4 @@ Gefrierort|Freezer location|Место-морозилка|Local de congelador|Vr
 Verbrauchswaren|Consumables|Расходные товары|Consumíveis|Verbruiksgoederen|Consommables|Beni di consumo|Consumibles|Artykuły zużywalne|Витратні товари|消耗品
 
 Produkt konnte nicht gezählt werden|The product could not be counted|Не удалось учесть продукт|Não foi possível contar o produto|Het product kon niet worden geteld|Le produit n'a pas pu être compté|Impossibile contare il prodotto|No se pudo contar el producto|Nie udało się policzyć produktu|Не вдалося врахувати продукт|无法计入该产品
+Zur Liste|To the list|К списку|Para a lista|Naar de lijst|Vers la liste|All'elenco|A la lista|Do listy|До списку|返回列表
