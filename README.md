@@ -297,6 +297,9 @@ It explains the web app, storage locations, product groups, minimum stock, best-
 Ideas, wishes or bugs are welcome as a [GitHub issue](https://github.com/backfisch88/ioBroker.shelfmate/issues).
 
 ## Changelog
+### **WORK IN PROGRESS**
+- Fixed: labels of scales with a store's own number (for example 2806 for carrots at REWE) are recognised; the product is created as "New product 2806" to be renamed once, the number is remembered
+
 ### 0.6.0 (2026-11-18)
 - New: the action for two scans is configurable (for example two scans = open, three scans = take out); new action "Take out"; one scan stays stock in
 - New: stock bookings and new products made in the app are written to the log; fewer messages at info level, the rest at debug

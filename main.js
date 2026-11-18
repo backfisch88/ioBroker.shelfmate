@@ -1124,13 +1124,19 @@ class Shelfmate extends utils.Adapter {
      */
     async createScannedProduct(ean) {
         if (pluOf(ean)) {
-            const plu = await this.pluProduct(ean);
-            if (!plu || this.closing) {
+            // a number that is on no list (a store's own number on a scale label) gets a placeholder to be renamed once
+            const plu = (await this.pluProduct(ean)) || {
+                name: `${this.lang === 'de' ? 'Neues Produkt' : 'New product'} ${ean}`,
+                category: 'Lebensmittel',
+                type: 'count',
+                incomplete: true,
+            };
+            if (this.closing) {
                 return null;
             }
             try {
-                this.scanBook({ action: 'saveProduct', product: { ...plu, ean, source: 'plu', incomplete: false } });
-                return { name: plu.name, incomplete: false };
+                this.scanBook({ action: 'saveProduct', product: { incomplete: false, ...plu, ean, source: 'plu' } });
+                return { name: plu.name, incomplete: !!plu.incomplete };
             } catch (e) {
                 this.log.warn(`Could not create product for PLU ${ean}: ${e.message}`);
                 return null;
