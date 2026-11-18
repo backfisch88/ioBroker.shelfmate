@@ -869,7 +869,7 @@ You set the actions in the adapter settings under "Actions for repeated scans". 
 | Put on the shopping list | The product is noted. The "Value" field can hold a quantity. |
 | Remove from the shopping list | The product is taken off the list. |
 
-By default three scans stock in at the last location, four mark the product as empty and five put it on the shopping list. One scan stays as it is, and two scans take out unless you add a row for two. Example: row 2 = "Toggle opened / closed" and row 3 = "Take out" make two scans open a package and three scans take out one.
+By default two scans take out, three scans stock in at the last location, four mark the product as empty and five put it on the shopping list. One scan stays as it is, and two scans take out unless you add a row for two. Example: row 2 = "Toggle opened / closed" and row 3 = "Take out" make two scans open a package and three scans take out one.
 
 From the first scan with a row on (from the second scan if you use a row for two), each scan must follow within the time between repeated scans (3 seconds by default). If it takes longer, counting starts over and the earlier scans are booked as a take-out.
 

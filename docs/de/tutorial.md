@@ -866,7 +866,7 @@ Die Aktionen stellst du in den Adapter-Einstellungen unter „Aktionen bei mehrf
 | Auf die Einkaufsliste setzen | Das Produkt wird vorgemerkt. Das Feld „Wert“ kann eine Menge enthalten. |
 | Von der Einkaufsliste entfernen | Das Produkt wird von der Liste genommen. |
 
-Voreingestellt sind dreimal scannen = am letzten Lagerort einlagern, viermal = als leer markieren und fünfmal = auf die Einkaufsliste setzen. Einmal scannen bleibt unverändert, zweimal scannen entnimmt, solange du keine Zeile für zwei anlegst. Beispiel: Zeile 2 = „Geöffnet / geschlossen umschalten“ und Zeile 3 = „Entnehmen“ ergeben zweimal scannen = Packung öffnen und dreimal scannen = ein Stück entnehmen.
+Voreingestellt sind zweimal scannen = entnehmen, dreimal scannen = am letzten Lagerort einlagern, viermal = als leer markieren und fünfmal = auf die Einkaufsliste setzen. Einmal scannen bleibt unverändert, zweimal scannen entnimmt, solange du keine Zeile für zwei anlegst. Beispiel: Zeile 2 = „Geöffnet / geschlossen umschalten“ und Zeile 3 = „Entnehmen“ ergeben zweimal scannen = Packung öffnen und dreimal scannen = ein Stück entnehmen.
 
 Ab dem ersten Scan mit Regel (bei einer Zeile für zwei ab dem zweiten Scan) muss jeder Scan innerhalb der Zeit zwischen wiederholten Scans folgen (Standard 3 Sekunden). Wird es länger, beginnt das Zählen von vorn und die bisherigen Scans werden als Entnahme gebucht.
 
