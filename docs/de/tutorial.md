@@ -17,20 +17,21 @@ English version: [Tutorial](../en/tutorial.md)
 5. [Einlagern, entnehmen und verschieben](#einlagern-entnehmen-und-verschieben)
 6. [Lagerorte anlegen](#lagerorte-anlegen)
 7. [Produkte ohne Barcode](#produkte-ohne-barcode)
-8. [Mindestbestand und Einkaufsliste](#mindestbestand-und-einkaufsliste)
-9. [Mindesthaltbarkeit](#mindesthaltbarkeit)
-10. [Einkaufslisten-Modi](#einkaufslisten-modi)
-11. [Zutaten prüfen](#zutaten-prüfen)
-12. [Ein ganzes Regal einräumen](#ein-ganzes-regal-einräumen)
-13. [Inventur durchführen](#inventur-durchführen)
-14. [Scanner-Modus ohne App](#scanner-modus-ohne-app)
-15. [Vorschläge](#vorschläge)
-16. [Benachrichtigungen](#benachrichtigungen)
-17. [Export und Backup](#export-und-backup)
-18. [Offline-Modus](#offline-modus)
-19. [HTTPS und Zertifikate](#https-und-zertifikate)
-20. [Etiketten drucken](#etiketten-drucken)
-21. [Darstellung](#darstellung)
+8. [Bücher, Zeitschriften, Noten und Medikamente](#bücher-zeitschriften-noten-und-medikamente)
+9. [Mindestbestand und Einkaufsliste](#mindestbestand-und-einkaufsliste)
+10. [Mindesthaltbarkeit](#mindesthaltbarkeit)
+11. [Einkaufslisten-Modi](#einkaufslisten-modi)
+12. [Zutaten prüfen](#zutaten-prüfen)
+13. [Ein ganzes Regal einräumen](#ein-ganzes-regal-einräumen)
+14. [Inventur durchführen](#inventur-durchführen)
+15. [Scanner-Modus ohne App](#scanner-modus-ohne-app)
+16. [Vorschläge](#vorschläge)
+17. [Benachrichtigungen](#benachrichtigungen)
+18. [Export und Backup](#export-und-backup)
+19. [Offline-Modus](#offline-modus)
+20. [HTTPS und Zertifikate](#https-und-zertifikate)
+21. [Etiketten drucken](#etiketten-drucken)
+22. [Darstellung](#darstellung)
 
 ---
 
@@ -217,7 +218,9 @@ Produkte mit einem bekannten Barcode können ihre Informationen von Open Food Fa
 
 Im Produkteditor findest du ganz unten den Knopf Von Open Food Facts neu laden. Er sucht immer in der Quelle, aus der das Produkt stammt; bei Produkten ohne sichere Quelle heißt er Daten im Web aktualisieren und sucht im Web. Beim Scannen fragt ShelfMate nach Open Food Facts automatisch dm, erst danach Open Beauty Facts und die anderen Schwesterdatenbanken; Rossmann und die übrige Websuche startest du selbst. ShelfMate merkt sich, woher ein Produkt stammt, und „Tags & Nutri-Score neu einlesen" lädt Produkte aus dm wieder bei dm nach. Bei dm und Rossmann übernimmt ShelfMate zusätzlich die Kategorie des Shops als Schlagwörter und leitet daraus die Kategorie (Drogerie, Haushalt …) ab; bei Rossmann kommt sie aus dem Produktlink. Drogerie- und Haushaltsprodukte bekommen keine automatische Lebensmittel-Haltbarkeit. Die Bildersuche geht bei Produkten aus einer Datenbank ebenfalls nur dort, das Web wird nur für Produkte ohne sichere Quelle befragt. Bei Drogerie-, Tierbedarf- und Haushaltsprodukten heißt die Quelle Open Beauty Facts, Open Pet Food Facts oder Open Products Facts, und ShelfMate schreibt den passenden Namen dorthin.
 
-Kennt keine dieser Datenbanken einen Barcode, ist das Produkt neu. Im Editor erscheint dann ganz oben der Knopf Im Web suchen. Er geht der Reihe nach vor und hört beim ersten sicheren Treffer auf: Zuerst fragt er den offiziellen MCP-Dienst von dm (kostenlos, ohne Schlüssel) nach Name, Marke und Bildern. Danach folgen die Barcode-Datenbanken ean-suche.net (kostenlos, höchstens 50 Abfragen pro Stunde, liefert auch das Bild der Produktseite), ean-search.org und, wenn ein Schlüssel eingetragen ist, Open EAN (opengtindb.org). Die Webseite von ean-search.org sperrt nach wenigen Abfragen; mit einem kostenlosen Token in den Adapter-Einstellungen nutzt ShelfMate stattdessen deren offizielle Schnittstelle, und zwar zuerst. Zuletzt sucht er den Barcode im Web, so wie ich es von Hand tun würde: bei DuckDuckGo und Bing mit `ean "<Barcode>" <Land>`, wobei das Land aus der Vorsilbe des Barcodes folgt (400–440 ist Deutschland), danach nur mit der Nummer. Ein Treffer auf rossmann.de zählt, wenn seine Adresse mit dem Barcode endet, da Rossmann seine Seiten für Skripte sperrt; der Name kommt dann aus dem Suchergebnis. Seiten anderer Länder (zum Beispiel polnische Shops derselben Marke) ignoriert er. Kennen die Quellen nur den Namen, sucht er Bilder dazu in der Bildersuche von DuckDuckGo und Bing, hier nur Treffer, deren Titel mindestens zwei Wörter des Produktnamens enthält. Die Quelle steht in der Meldung, und die Angaben solltest du vor dem Speichern prüfen. Ein Treffer der Websuche zählt nur, wenn die Seite oder das Suchergebnis den Barcode wirklich zeigt; sonst bleibt das Produkt unverändert. Unter dem Knopf steht eine graue Zeile, welche Schritte gelaufen sind. Das läuft nie von selbst, nur auf Knopfdruck, und es wird nur der Barcode gesendet. Nur ein Bild suchst du mit Bilder suchen neben dem Bild: Das fragt zuerst die offenen Datenbanken und nur wenn dort nichts ist, das Web. Bei einem Produkt, dessen Daten nicht aus so einer Datenbank stammen, sucht Daten im Web aktualisieren ganz unten im Editor noch einmal und füllt die Felder (gespeichert wird erst mit Speichern). Findet eine Suche nichts, steht unter Technische Details ganz unten ein kurzes Protokoll, das du für einen Fehlerbericht kopieren kannst. Liegen mehrere neue Produkte unter Aufgaben → Neue Produkte bearbeiten, sucht Alle im Web suchen sie nacheinander, mit Fortschrittsanzeige. Danach zeigt eine Übersicht alle Treffer mit Name, Marke, Größe, Bild und Quelle. Haken bei falschen Treffern entfernen und Ausgewählte übernehmen tippen. Nur die angehakten Produkte werden gespeichert, die anderen bleiben unverändert in der Liste. In den Adapter-Einstellungen lässt sich die Websuche abschalten.
+Legst du ein Produkt selbst an (Aufgaben → Neues Produkt anlegen) und gibst oben den Barcode ein, erscheint der Knopf Produktdaten suchen. Er fragt alle Quellen wie beim Scannen, in der Reihenfolge aus den Adapter-Einstellungen (Open Food Facts und die Schwester-Datenbanken, dm, die Buchkataloge, die Apotheken-Shops), und geht erst zuletzt ins Web.
+
+Kennt keine dieser Datenbanken einen Barcode, ist das Produkt neu und steht unter Aufgaben → Neue Produkte bearbeiten. Weil die Datenbanken dafür schon gefragt wurden, sucht der Knopf Im Web suchen im Editor dieses Produkts nur noch im Web. Er geht der Reihe nach vor und hört beim ersten sicheren Treffer auf: Zuerst fragt er den offiziellen MCP-Dienst von dm (kostenlos, ohne Schlüssel) nach Name, Marke und Bildern. Danach folgen die Barcode-Datenbanken ean-suche.net (kostenlos, höchstens 50 Abfragen pro Stunde, liefert auch das Bild der Produktseite), ean-search.org und, wenn ein Schlüssel eingetragen ist, Open EAN (opengtindb.org). Die Webseite von ean-search.org sperrt nach wenigen Abfragen; mit einem kostenlosen Token in den Adapter-Einstellungen nutzt ShelfMate stattdessen deren offizielle Schnittstelle, und zwar zuerst. Zuletzt sucht er den Barcode im Web, so wie ich es von Hand tun würde: bei DuckDuckGo und Bing mit `ean "<Barcode>" <Land>`, wobei das Land aus der Vorsilbe des Barcodes folgt (400–440 ist Deutschland), danach nur mit der Nummer. Ein Treffer auf rossmann.de zählt, wenn seine Adresse mit dem Barcode endet, da Rossmann seine Seiten für Skripte sperrt; der Name kommt dann aus dem Suchergebnis. Seiten anderer Länder (zum Beispiel polnische Shops derselben Marke) ignoriert er. Kennen die Quellen nur den Namen, sucht er Bilder dazu in der Bildersuche von DuckDuckGo und Bing, hier nur Treffer, deren Titel mindestens zwei Wörter des Produktnamens enthält. Die Quelle steht in der Meldung, und die Angaben solltest du vor dem Speichern prüfen. Ein Treffer der Websuche zählt nur, wenn die Seite oder das Suchergebnis den Barcode wirklich zeigt; sonst bleibt das Produkt unverändert. Unter dem Knopf steht eine graue Zeile, welche Schritte gelaufen sind. Das läuft nie von selbst, nur auf Knopfdruck, und es wird nur der Barcode gesendet. Nur ein Bild suchst du mit Bilder suchen neben dem Bild: Das fragt zuerst die offenen Datenbanken und nur wenn dort nichts ist, das Web. Bei einem Produkt, dessen Daten nicht aus so einer Datenbank stammen, sucht Daten im Web aktualisieren ganz unten im Editor noch einmal und füllt die Felder (gespeichert wird erst mit Speichern). Findet eine Suche nichts, steht unter Technische Details ganz unten ein kurzes Protokoll, das du für einen Fehlerbericht kopieren kannst. Liegen mehrere neue Produkte unter Aufgaben → Neue Produkte bearbeiten, sucht Alle im Web suchen sie nacheinander, mit Fortschrittsanzeige. Danach zeigt eine Übersicht alle Treffer mit Name, Marke, Größe, Bild und Quelle. Haken bei falschen Treffern entfernen und Ausgewählte übernehmen tippen. Nur die angehakten Produkte werden gespeichert, die anderen bleiben unverändert in der Liste. In den Adapter-Einstellungen lässt sich die Websuche abschalten.
 
 Dabei werden folgende Angaben aktualisiert:
 
@@ -242,7 +245,7 @@ So funktioniert eine normale Buchung:
 
 1. Unten rechts in der Übersicht auf Scannen tippen und den Barcode mit der Kamera erfassen oder manuell eingeben.
 2. Bei bekannten Produkten öffnet sich die Produktseite.
-3. Unbekannte Barcodes werden über Open Food Facts gesucht. Die gefundenen Angaben können geprüft und gespeichert werden.
+3. Unbekannte Barcodes werden über Open Food Facts gesucht, Bücher, Zeitschriften und Noten in den Buchkatalogen, Medikamente (PZN) bei Shop Apotheke. Die gefundenen Angaben können geprüft und gespeichert werden.
 4. Einlagern, Entnehmen oder Verschieben auswählen.
 5. Menge und Lagerort festlegen und die Buchung speichern.
 
@@ -289,6 +292,12 @@ Kreuze beim Bearbeiten eines Lagerorts „Gefrierort“ an (Tiefkühltruhe, Gefr
 - **Aufschnitt vakuumiert und eingefroren:** der Barcode bleibt derselbe. Gib dem Produkt einen eigenen Gefrierwert und drucke auf der Produktseite das „Gefrier-EAN-Etikett“.
 
 Das Datum wird nur automatisch eingetragen, wenn die automatische Haltbarkeit beim Einlagern aktiv ist; du kannst es jederzeit von Hand ändern.
+
+### Standard-Lagerort für Kategorien
+
+Im Lagerort steht unten „Standard für Kategorien“. Hake dort zum Beispiel „Bücher“ beim Bücherschrank an. Ein Produkt dieser Kategorie wird dann beim Einlagern an diesem Lagerort vorgeschlagen, und beim Scannen mit dem externen Scanner dorthin gebucht, wenn du keinen Lagerort angibst. Eine Kategorie gehört immer zu einem Lagerort; hakst du sie bei einem anderen an, wandert sie dorthin. Hat ein Produkt schon einen eigenen letzten Lagerort, gilt dieser.
+
+Am externen Scanner reicht dann ein einziger Scan: Scanne den Barcode des Buchs und scanne danach nichts weiter. Nach der Wartezeit (Standard 10 Sekunden) bucht ShelfMate es in den Standard-Lagerort, und die Rückmeldung nennt ihn schon beim Scannen. Scannst du innerhalb der Zeit einen Lagerort, gilt dieser, und scannst du das Buch nochmal, entnimmst du es wie gewohnt. Startest du das Einräumen (Lagerort scannen, dann die Produkte), gilt der gescannte Lagerort und der Standard wird überschrieben. Das Einräumen in der App bucht ebenfalls an den gewählten Lagerort. Im Zählmodus gilt zuerst der letzte Lagerort des Produkts, dann der Standard der Kategorie.
 
 ### QR-Codes für Lagerorte
 
@@ -360,6 +369,47 @@ Unter „Nutzung der eigenen Datenbank“ wählst du:
 | Nicht verwenden | Nur das Internet, wie bisher |
 
 Ein Fund wird wie jedes andere Produkt in den Editor eingetragen, beim Einlagern oder Scannen direkt angelegt.
+
+## Bücher, Zeitschriften, Noten und Medikamente
+
+ShelfMate erkennt diese Produkte an der Nummer im Strichcode und sucht sie in den passenden Katalogen. Lebensmittel-Datenbanken kennen sie nicht.
+
+### Bücher, Zeitschriften und Noten
+
+- **Bücher:** Der Strichcode auf der Rückseite ist die ISBN-13 (beginnt mit 978 oder 979). Auch eine ISBN-10 oder eine ISBN mit Bindestrichen (`ISBN 3-16-148410-0`), die du eintippst oder scannst, wird erkannt.
+- **Zeitschriften:** Der Strichcode beginnt mit 977, darin steckt die ISSN.
+- **Noten:** Die ISMN beginnt mit 9790.
+
+Gesucht wird bei Open Library, bei der Deutschen Nationalbibliothek (über lobid.org) und zuletzt bei Google Books. Bei deutschen Büchern (978-3) frage ich zuerst die Nationalbibliothek. Das Produkt bekommt die Kategorie „Bücher“, als Marke den Autor, als Packungsgröße die Seitenzahl (zum Beispiel „96 S.“) und, wenn vorhanden, das Cover als Bild. Noten tragen zusätzlich das Tag „Noten“, Zeitschriften das Tag „Zeitschrift“. Als Tags übernehme ich bekannte Genres wie „Kinderbuch“, „Krimi“ oder „Kochbuch“ aus den Themen des Katalogs, bei deutschen Büchern dazu bis zu drei Schlagwörter der Nationalbibliothek. Fehlen Cover oder Seitenzahl in einem Katalog, ergänzt ShelfMate sie aus einem anderen; hat keiner ein Bild, frage ich den Cover-Dienst der Nationalbibliothek und Open Library über die ISBN ab. Kleine Cover speichere ich direkt im Produkt, damit sie auch ohne Verbindung da sind. Findet keine Quelle das Buch, bleibt es als unvollständiges Produkt in der Liste Aufgaben → Neue Produkte bearbeiten.
+
+Bei Produkten der Kategorie „Bücher“ blendet der Editor alles aus, was nur für Lebensmittel gilt: Haltbarkeit (MHD, Standard-Haltbarkeit, nach dem Öffnen, eingefroren), Bestandsart, Einheit und Nutri-Score. Ein Buch wird immer als Stück gezählt. Beim Einlagern fragt ShelfMate kein MHD ab, und ein MHD aus einem Data-Matrix-Code wird bei Büchern ignoriert. Auch Geöffnet- und Gefrier-Etiketten und „Verdorben“ beim Entnehmen entfallen. „Marke“ heißt hier „Autor / Verlag“, „Packungsinhalt“ heißt „Seiten“.
+
+### Medikamente
+
+Medikamente erkennst du an der Pharmazentralnummer (PZN). ShelfMate liest sie aus dem Strichcode der Packung (Code 39 oder die 13-stellige Nummer, die mit 4150 beginnt), aus der reinen PZN (8 Ziffern, auch mit `PZN-` davor) und aus dem Data-Matrix-Code der Packung.
+
+Beim Scannen sucht ShelfMate die PZN automatisch bei Shop Apotheke und, wenn dort nichts steht, bei vitality-fit.de. Name, Marke, Packungsgröße und Bild werden übernommen, die Kategorie ist „Medikamente“. Shop Apotheke kennt auch gewöhnliche Barcodes: Findet keine andere Quelle ein Produkt, fragt ShelfMate auch dafür die Apotheken-Shops, zum Beispiel bei Nahrungsergänzungsmitteln oder Pflegeprodukten. Ein Treffer zählt dann nur, wenn die Produktseite den Barcode wirklich nennt; die Kategorie ist „Medikamente“, wenn die Seite ein Arzneimittel zeigt, sonst „Sonstiges“. Kennt kein Shop die Nummer, entsteht „Unbekanntes Produkt …“ in der Kategorie Medikamente, und du kannst es mit Im Web suchen oder von Hand ergänzen.
+
+### Mindesthaltbarkeit aus dem Data-Matrix-Code
+
+Der Data-Matrix-Code auf Medikamentenpackungen (PPN) enthält neben der PZN das Verfallsdatum und die Chargennummer. Auch GS1-Codes mit Verfallsdatum (Anwendungskennung 17) werden gelesen. ShelfMate bucht das Datum beim Einräumen in der App und im Scanner-Modus gleich als MHD mit. Steht beim Tag „00“, gilt der letzte Tag des Monats.
+
+### Reihenfolge der Produktquellen
+
+Wer viele Bücher scannt, will nicht bei jedem Scan zuerst die Lebensmittel-Datenbanken fragen. Deshalb gibt es in den Adapter-Einstellungen unter Produktsuche die Tabelle Reihenfolge der Produktquellen. Die Standardreihenfolge ist:
+
+1. Lebensmittel (Open Food Facts)
+2. Drogerie (Open Beauty Facts, dm)
+3. Tierbedarf (Open Pet Food Facts)
+4. Haushalt (Open Products Facts)
+5. Medikamente und Apotheke (PZN und Barcode: Shop Apotheke, vitality-fit)
+6. Bücher, Zeitschriften, Noten (Open Library, Deutsche Nationalbibliothek)
+
+Ändere die Reihenfolge, indem du die Zeilen verschiebst oder die Quelle in einer Zeile änderst. Was oben steht, wird zuerst gefragt. Fehlende Quellen hängt ShelfMate hinten an. Die Apotheken-Shops fragt ShelfMate für jeden Barcode, bei Büchern gilt das nur für ISBN, ISSN und ISMN. Nach einer Änderung startest du den Adapter neu. Die Einstellung gilt für die App und den Scanner-Modus.
+
+ShelfMate erkennt am Code, was es ist: Eine ISBN, ISSN oder ISMN fragt zuerst die Buchkataloge, eine PZN zuerst die Apotheken-Shops, und zwar unabhängig von der Tabelle. Kennt der Katalog den Artikel, ist die Suche damit beendet und es werden keine Lebensmittel-Datenbanken gefragt. Nur wenn er ihn nicht kennt, folgen die anderen Quellen. Alle anderen Barcodes folgen der Tabelle, dm sitzt direkt hinter der ersten Open-Facts-Datenbank.
+
+Diese Kette gilt überall gleich: beim Scannen mit dem Handy, mit dem externen Scanner, beim Einräumen, beim Anlegen eines Produkts und beim Sammel-Import. Davor steht immer deine eigene Datenbank. Das Web wird nie allein durchsucht, sondern nur nach den Datenbanken und auf Knopfdruck: im Produkteditor mit „Produktdaten suchen“ und im Sammel-Import mit „Offene im Web suchen“. Die Textsuche im Web läuft mit strikter Jugendschutz-Einstellung (SafeSearch) bei DuckDuckGo, Bing und Mojeek.
 
 ## Mindestbestand und Einkaufsliste
 
@@ -724,7 +774,7 @@ Bei Produkten nach Gewicht oder Volumen zählt jeder Scan als ganze Packung. Daf
 
 ### Unbekannte Produkte
 
-Ist ein Barcode noch nicht bekannt, fragt ShelfMate die Produktdaten bei Open Food Facts ab und legt das Produkt an.
+Ist ein Barcode noch nicht bekannt, fragt ShelfMate die Produktdaten bei Open Food Facts ab und legt das Produkt an. Bücher, Zeitschriften und Noten sucht es in den Buchkatalogen, Medikamente über die PZN in der Apotheke; ein Verfallsdatum im Data-Matrix-Code einer Packung wird als MHD mitgebucht (siehe [Bücher, Zeitschriften, Noten und Medikamente](#bücher-zeitschriften-noten-und-medikamente)).
 
 Wird dort nichts gefunden, erstellt ShelfMate vorläufig einen Eintrag wie:
 
@@ -802,12 +852,13 @@ Ist kein MHD vorhanden, wird der Lagerort mit der größten Menge verwendet.
 
 ### Mehrfach scannen
 
-Ein Scan wartet auf einen Lagerort, zwei Scans entnehmen. Ab drei Scans desselben Produkts hintereinander führt ShelfMate eine Aktion aus, die du selbst festlegst.
+Ein Scan wartet auf einen Lagerort und lagert immer ein. Ab zwei Scans desselben Produkts hintereinander führt ShelfMate eine Aktion aus, die du selbst festlegst. Ohne Zeile für zwei Scans entnehmen zwei Scans.
 
-Die Aktionen stellst du in den Adapter-Einstellungen unter „Aktionen bei mehrfachem Scannen“ ein. Pro Anzahl gibt es eine Zeile, jede Anzahl von 3 bis 20 kann einmal vergeben werden.
+Die Aktionen stellst du in den Adapter-Einstellungen unter „Aktionen bei mehrfachem Scannen“ ein. Pro Anzahl gibt es eine Zeile, jede Anzahl von 2 bis 20 kann einmal vergeben werden.
 
 | Aktion | Wirkung |
 | --- | --- |
+| Entnehmen | Ein Stück mit dem nächsten MHD wird entnommen, wie bei zwei Scans ohne Regel. Ein anschließend gescannter Lagerort gilt stattdessen. |
 | Am letzten bekannten Lagerort einlagern | Ein Stück kommt dorthin zurück, wo das Produkt zuletzt eingelagert wurde. Ein anschließend gescannter Lagerort gilt stattdessen. |
 | Mehrere am letzten Lagerort einlagern | Wie oben, aber mit der Menge aus dem Feld „Wert“. Ist es leer, zählt die Anzahl der Scans. |
 | Als leer markieren | Der gesamte Bestand wird auf 0 gesetzt. Bei Mindestbestand landet das Produkt auf der Einkaufsliste. |
@@ -815,15 +866,15 @@ Die Aktionen stellst du in den Adapter-Einstellungen unter „Aktionen bei mehrf
 | Auf die Einkaufsliste setzen | Das Produkt wird vorgemerkt. Das Feld „Wert“ kann eine Menge enthalten. |
 | Von der Einkaufsliste entfernen | Das Produkt wird von der Liste genommen. |
 
-Voreingestellt sind dreimal scannen = am letzten Lagerort einlagern, viermal = als leer markieren und fünfmal = auf die Einkaufsliste setzen. Ein- und zweimaliges Scannen bleibt unverändert.
+Voreingestellt sind dreimal scannen = am letzten Lagerort einlagern, viermal = als leer markieren und fünfmal = auf die Einkaufsliste setzen. Einmal scannen bleibt unverändert, zweimal scannen entnimmt, solange du keine Zeile für zwei anlegst. Beispiel: Zeile 2 = „Geöffnet / geschlossen umschalten“ und Zeile 3 = „Entnehmen“ ergeben zweimal scannen = Packung öffnen und dreimal scannen = ein Stück entnehmen.
 
-Ab dem dritten Scan muss jeder Scan innerhalb der Zeit zwischen wiederholten Scans folgen (Standard 3 Sekunden). Wird es länger, beginnt das Zählen von vorn und die bisherigen Scans werden als Entnahme gebucht.
+Ab dem ersten Scan mit Regel (bei einer Zeile für zwei ab dem zweiten Scan) muss jeder Scan innerhalb der Zeit zwischen wiederholten Scans folgen (Standard 3 Sekunden). Wird es länger, beginnt das Zählen von vorn und die bisherigen Scans werden als Entnahme gebucht.
 
 Jede ausgelöste Aktion steht im Log und im Datenpunkt `scanner.lastAction` mit der Anzahl der Scans, zum Beispiel `3x: Nudeln ×1 eingelagert in Vorratsregal`. Darüber kannst du eine Sprachausgabe oder eine Benachrichtigung auslösen. Die Buchungen erscheinen außerdem im Verlauf.
 
 ### Unbekannte Produkte im Scanner-Modus
 
-Ist ein gescannter Barcode noch nicht bekannt, legt ShelfMate das Produkt selbst an, bevor es gebucht wird. Die Daten (Name, Marke, Kategorie und Tags) kommen von Open Food Facts, auch aus den Datenbanken für Kosmetik und Tiernahrung. Danach wird der Scan wie gewohnt gebucht.
+Ist ein gescannter Barcode noch nicht bekannt, legt ShelfMate das Produkt selbst an, bevor es gebucht wird. Die Daten (Name, Marke, Kategorie und Tags) kommen von Open Food Facts, auch aus den Datenbanken für Kosmetik und Tiernahrung. Bücher, Zeitschriften und Noten kommen aus den Buchkatalogen, Medikamente (PZN) aus der Apotheke. Danach wird der Scan wie gewohnt gebucht.
 
 Wird nichts gefunden, legt ShelfMate das Produkt als unvollständig mit einem Namen wie `Neues Produkt 1234567890123` an und bucht es trotzdem. Das Scanner-Ergebnis weist darauf hin. Unter Aufgaben → Neue Produkte bearbeiten kannst du diese Einträge später ergänzen.
 
@@ -914,7 +965,7 @@ Möglich sind 3 bis 120 Sekunden.
 
 Standard: 10 Sekunden.
 
-Für mehrfaches Scannen (ab dem dritten Scan) gibt es eine eigene kurze Zeit zwischen wiederholten Scans, Standard 3 Sekunden.
+Für mehrfaches Scannen (ab dem dritten Scan, mit einer Zeile für zwei ab dem zweiten) gibt es eine eigene kurze Zeit zwischen wiederholten Scans, Standard 3 Sekunden.
 
 ### Externen Funk-Scanner anschließen
 

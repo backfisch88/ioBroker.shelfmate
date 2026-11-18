@@ -2,5 +2,8 @@ Lebensmittel|Food|Продукты питания|Alimentos|Voeding|Alimentation
 Drogerie|Drugstore|Бытовая химия и косметика|Drogaria|Drogisterij|Droguerie|Drogheria|Droguería|Drogeria|Побутова хімія й косметика|日化用品
 Haushalt|Household|Хозяйственные товары|Casa|Huishouden|Maison|Casa|Hogar|Dom|Господарські товари|家居用品
 Tierbedarf|Pet supplies|Товары для животных|Artigos para animais|Dierbenodigdheden|Articles pour animaux|Articoli per animali|Artículos para mascotas|Artykuły dla zwierząt|Товари для тварин|宠物用品
+Bücher|Books|Книги|Livros|Boeken|Livres|Libri|Libros|Książki|Книги|书籍
+Zeitschrift|Magazine|Журнал|Revista|Tijdschrift|Magazine|Rivista|Revista|Czasopismo|Журнал|杂志
+Noten|Sheet music|Ноты|Partituras|Bladmuziek|Partitions|Spartiti|Partituras|Nuty|Ноти|乐谱
 Medikamente|Medicines|Лекарства|Medicamentos|Medicijnen|Médicaments|Farmaci|Medicamentos|Leki|Ліки|药品
 Sonstiges|Other|Прочее|Outros|Overig|Autre|Altro|Otros|Inne|Інше|其他

@@ -346,6 +346,59 @@
             "lg": 4,
             "xl": 4
         },
+        "_hLookup": {
+            "type": "header",
+            "text": "hLookup",
+            "size": 3,
+            "newLine": true,
+            "xs": 12
+        },
+        "lookupOrder": {
+            "type": "table",
+            "label": "lookupOrder",
+            "help": "lookupOrderHelp",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 12,
+            "xl": 12,
+            "items": [
+                {
+                    "type": "select",
+                    "attr": "source",
+                    "title": "lookupSource",
+                    "default": "food",
+                    "width": "100%",
+                    "options": [
+                        {
+                            "value": "food",
+                            "label": "lsFood"
+                        },
+                        {
+                            "value": "drogerie",
+                            "label": "lsDrogerie"
+                        },
+                        {
+                            "value": "pet",
+                            "label": "lsPet"
+                        },
+                        {
+                            "value": "household",
+                            "label": "lsHousehold"
+                        },
+                        {
+                            "value": "pharmacy",
+                            "label": "lsPharmacy"
+                        },
+                        {
+                            "value": "books",
+                            "label": "lsBooks"
+                        }
+                    ]
+                }
+            ]
+        },
         "_hOwnDb": {
             "type": "header",
             "text": "hOwnDb",
@@ -993,7 +1046,7 @@
                     "attr": "count",
                     "title": "scanRuleCount",
                     "width": "15%",
-                    "min": 3,
+                    "min": 2,
                     "max": 20,
                     "default": 3
                 },
@@ -1007,6 +1060,10 @@
                         {
                             "label": "scanAct_none",
                             "value": "none"
+                        },
+                        {
+                            "label": "scanAct_takeOut",
+                            "value": "takeOut"
                         },
                         {
                             "label": "scanAct_stockLast",

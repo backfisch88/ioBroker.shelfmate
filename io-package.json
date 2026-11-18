@@ -217,6 +217,14 @@
         "ownDbFormat": "auto",
         "ownDbRefresh": 10,
         "ownDbMap": [],
+        "lookupOrder": [
+            { "source": "food" },
+            { "source": "drogerie" },
+            { "source": "pet" },
+            { "source": "household" },
+            { "source": "pharmacy" },
+            { "source": "books" }
+        ],
         "notifyAdapter": "",
         "notifyTarget": "",
         "notifyArea": "ShelfMate",

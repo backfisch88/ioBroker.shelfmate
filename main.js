@@ -26,7 +26,10 @@ const { ScanEngine } = require('./lib/scanner');
 const { OwnDb, mergeOwnProducts, isOwnEan } = require('./lib/ownDb');
 const { scanCode, pluOf, parseUser, findPlu } = require('./lib/plu');
 const { lookupBarcode } = require('./lib/offLookup');
-const { webLookup, nameImages } = require('./lib/webLookup');
+const { bookLookup } = require('./lib/books');
+const { lookupOrder, SOURCES } = require('./lib/lookupOrder');
+const codes = require('./www/scanCodes');
+const { webLookup, nameImages, pharmacyLookup } = require('./lib/webLookup');
 const { InputReader, listDevices } = require('./lib/inputDevice');
 
 const DATA_FILE = 'shelfmate.json';
@@ -88,6 +91,31 @@ function consumableLine(x, lang, dateFormat) {
 
 class Shelfmate extends utils.Adapter {
     /**
+     * The settings of the first versions with the order of the product sources lack the medicines: when the list is
+     * still one of the former standards it gets the new one (the adapter restarts once with it).
+     *
+     * @returns {Promise<boolean>} true when the settings were changed
+     */
+    async upgradeLookupOrder() {
+        const now = Array.isArray(this.config.lookupOrder)
+            ? this.config.lookupOrder.map(x => x && x.source).join()
+            : '';
+        const former = ['books,food,drogerie,pet,household', 'food,drogerie,pet,household,books'];
+        if (!former.includes(now)) {
+            return false;
+        }
+        try {
+            await this.extendForeignObjectAsync(`system.adapter.${this.namespace}`, {
+                native: { lookupOrder: SOURCES.map(source => ({ source })) },
+            });
+            return true;
+        } catch (e) {
+            this.log.debug(`Could not update the order of the product sources: ${e.message}`);
+            return false;
+        }
+    }
+
+    /**
      * @param {Partial<utils.AdapterOptions>} [options] adapter options
      */
     constructor(options) {
@@ -117,6 +145,10 @@ class Shelfmate extends utils.Adapter {
             this.lang = (sys && sys.common && sys.common.language) || 'en';
         } catch {
             this.lang = 'en';
+        }
+
+        if (await this.upgradeLookupOrder()) {
+            return;
         }
 
         const port = Number(this.config.port);
@@ -401,6 +433,7 @@ class Shelfmate extends utils.Adapter {
                 listByGroup: this.config.listByGroup !== false,
                 webLookup: this.config.webLookup !== false,
                 ownDbMode: this.ownDb ? this.ownDb.mode : 'off',
+                lookupOrder: lookupOrder(this.config.lookupOrder),
             },
         };
     }
@@ -431,7 +464,7 @@ class Shelfmate extends utils.Adapter {
             } catch (e) {
                 n = { trace: `error: ${e.message}`, images: [] };
             }
-            this.log.info(`Picture search for "${given.slice(0, 60)}": ${n.images.length} found (${n.trace})`);
+            this.log.debug(`Picture search for "${given.slice(0, 60)}": ${n.images.length} found (${n.trace})`);
             const product = n.images.length
                 ? {
                       name: given,
@@ -445,6 +478,12 @@ class Shelfmate extends utils.Adapter {
                 : null;
             return { id, ok: true, product, reason: product ? '' : 'none', trace: n.trace };
         }
+        if (['isbn', 'ismn', 'issn'].includes(codes.kindOf(ean))) {
+            const book = await this.findBook({ id, ean });
+            if (book.product) {
+                return { id, ok: true, product: book.product, reason: '', trace: 'book catalogue' };
+            }
+        }
         this.webCache ||= new Map();
         const cacheKey = `${ean}|${lang}|${cmd.dmOnly ? 'dm' : ''}${cmd.dmDeep ? 'deep' : ''}`;
         const cached = this.webCache.get(cacheKey);
@@ -453,7 +492,8 @@ class Shelfmate extends utils.Adapter {
         }
         let r;
         try {
-            r = await webLookup(ean, {
+            // medicines are asked for by their PZN, the shops do not know the barcode number
+            r = await webLookup(codes.pznOfNtin(ean) || ean, {
                 eanSearchToken: this.config.eanSearchToken ? String(this.config.eanSearchToken) : '',
                 openGtinKey: this.config.openGtinKey ? String(this.config.openGtinKey) : '',
                 dmOnly: !!cmd.dmOnly,
@@ -469,7 +509,7 @@ class Shelfmate extends utils.Adapter {
             reason: r.product ? '' : r.reached ? 'none' : 'unreachable',
             trace: r.trace || '',
         };
-        this.log.info(
+        this.log.debug(
             `Web search for ${ean}: ${r.product ? `found at ${r.product.source}` : 'nothing'} (${r.trace || 'no details'})`,
         );
         if (r.product) {
@@ -479,6 +519,83 @@ class Shelfmate extends utils.Adapter {
             this.webCache.set(cacheKey, { at: Date.now(), r: out });
         }
         return { id, ok: true, ...out };
+    }
+
+    /**
+     * Look a book, magazine or piece of sheet music up by its barcode (Open Library, German National Library).
+     *
+     * @param {object} cmd command with the barcode
+     * @returns {Promise<object>} result for the app
+     */
+    async findBook(cmd) {
+        const id = clean(cmd.id, 100);
+        const ean = String(cmd.ean || '').trim();
+        if (!['isbn', 'ismn', 'issn'].includes(codes.kindOf(ean))) {
+            return { id, ok: true, product: null, reason: 'none' };
+        }
+        let product = null;
+        const trace = [];
+        try {
+            product = await bookLookup(ean, { lang: this.lang, note: m => trace.push(m) });
+        } catch (e) {
+            this.log.debug(`Book lookup failed: ${e.message}`);
+        }
+        this.log.debug(
+            `Book lookup for ${ean}: ${product ? `found at ${product.source}` : 'nothing'}${trace.length ? ` (${trace.join('; ')})` : ''}`,
+        );
+        return { id, ok: true, product, reason: product ? '' : 'none', trace: trace.join('; ') };
+    }
+
+    /**
+     * Ask dm for a barcode (the same quick question the app asks, nothing else).
+     *
+     * @param {string} ean barcode
+     * @returns {Promise<object | null>} product data, null when dm does not know it
+     */
+    async dmProduct(ean) {
+        if (this.config.webLookup === false || !/^\d{8,14}$/.test(ean)) {
+            return null;
+        }
+        try {
+            const r = await webLookup(ean, { dmOnly: true, lang: this.lang });
+            return r && r.product ? { ...r.product } : null;
+        } catch (e) {
+            this.log.debug(`dm lookup failed: ${e.message}`);
+            return null;
+        }
+    }
+
+    /**
+     * Look an article up in the pharmacy shops by its PZN or barcode (Shop Apotheke, vitality-fit).
+     *
+     * @param {string} ean PZN, the barcode of a medicine or any other barcode
+     * @param {(msg: string) => void} [note] told what happened, for the trace
+     * @returns {Promise<object | null>} product data, null when no shop knows it
+     */
+    async pharmacyProduct(ean, note) {
+        if (this.config.webLookup === false || !/^\d{8,14}$/.test(ean)) {
+            return null;
+        }
+        const pzn = codes.pznOfNtin(ean) || (codes.kindOf(ean) === 'pzn' ? ean : '');
+        try {
+            return await pharmacyLookup(pzn || ean, { strict: !pzn, medicine: !!pzn, note });
+        } catch (e) {
+            this.log.debug(`Pharmacy lookup failed: ${e.message}`);
+            return null;
+        }
+    }
+
+    /**
+     * Answer the app: product fields from the pharmacy shops.
+     *
+     * @param {object} cmd command with the barcode
+     * @returns {Promise<object>} result for the app
+     */
+    async findPharmacy(cmd) {
+        const id = clean(cmd.id, 100);
+        const trace = [];
+        const product = await this.pharmacyProduct(String(cmd.ean || '').trim(), m => trace.push(m));
+        return { id, ok: true, product, reason: product ? '' : 'none', trace: trace.join('; ') };
     }
 
     /**
@@ -573,6 +690,12 @@ class Shelfmate extends utils.Adapter {
         if (cmd && cmd.action === 'pluLookup') {
             return this.findPlu(cmd);
         }
+        if (cmd && cmd.action === 'bookLookup') {
+            return this.findBook(cmd);
+        }
+        if (cmd && cmd.action === 'pharmacyLookup') {
+            return this.findPharmacy(cmd);
+        }
         if (cmd && cmd.action === 'webLookup') {
             // a search on the web takes seconds and changes no data: it does not wait for the bookings
             return this.findOnWeb(cmd);
@@ -580,6 +703,43 @@ class Shelfmate extends utils.Adapter {
         const run = this.queue.then(() => this.execute(cmd));
         this.queue = run.catch(() => {});
         return run;
+    }
+
+    /**
+     * Writes a stock booking or a new product made in the app (phone, browser) to the log, like the scanner does
+     *
+     * @param {object} cmd command
+     * @param {object} r result of the command
+     * @param {boolean} isNew a product was created
+     */
+    logBooking(cmd, r, isNew) {
+        try {
+            const d = this.inv.data;
+            const device = clean(cmd.device, 60);
+            const from = device ? `App (${device})` : 'App';
+            if (isNew && r.productId && d.products[r.productId]) {
+                this.log.info(`${from}: new product "${d.products[r.productId].name}"`);
+            } else if (cmd.action === 'changeStock' && d.products[cmd.productId] && d.locations[cmd.locationId]) {
+                const delta = Number(cmd.delta);
+                const what =
+                    cmd.kind === 'spoiled'
+                        ? 'spoiled'
+                        : cmd.kind === 'stocktake'
+                          ? 'counted'
+                          : cmd.kind === 'move'
+                            ? delta > 0
+                                ? 'moved in'
+                                : 'moved out'
+                            : delta > 0
+                              ? 'stocked in'
+                              : 'taken out';
+                this.log.info(
+                    `${from}: "${d.products[cmd.productId].name}" ×${Math.abs(delta)} ${what} ${delta > 0 ? 'at' : 'from'} ${d.locations[cmd.locationId].name} (${r.total} in total)`,
+                );
+            }
+        } catch (e) {
+            this.log.debug(`Booking log: ${e.message}`);
+        }
     }
 
     /**
@@ -599,7 +759,9 @@ class Shelfmate extends utils.Adapter {
         try {
             this.inv.bbMode = this.bestBeforeConfig().bestBeforeMode;
             this.applyAuto(true);
+            const isNew = cmd.action === 'saveProduct' && !this.inv.data.products[clean(cmd.product && cmd.product.id)];
             const r = this.inv.handle(cmd);
+            this.logBooking(cmd, r, isNew);
             this.scheduleSave();
             result = {
                 id,
@@ -936,12 +1098,16 @@ class Shelfmate extends utils.Adapter {
         this.scanEngine.inv = this.inv;
         // a barcode nobody knows yet is created first (Open Food Facts), then booked like any other
         // a label of a scale (GS1 data matrix) is reduced to its article number, produce numbers (PLU) included
-        const scanned = scanCode(text);
+        // a medicine pack (data matrix) is reduced to its barcode number, the best-before date on it is booked with the stock
+        const info = codes.info(text);
+        const scanned = info.code || scanCode(text);
+        this.scanEngine.dateHint = info.expiry;
         const made =
             this.scanEngine.isNewBarcode(scanned) || this.scanEngine.isNewPlu(scanned)
                 ? await this.createScannedProduct(scanned)
                 : null;
         const r = this.scanEngine.handle(scanned);
+        this.scanEngine.dateHint = '';
         if (made) {
             r.text = this.scanEngine.say(made.incomplete ? 'createdIncomplete' : 'created', made.name) + r.text;
         }
@@ -982,7 +1148,32 @@ class Shelfmate extends utils.Adapter {
         }
         try {
             if (!found && this.ownDb.mode !== 'only') {
-                found = await lookupBarcode(ean, { lang: this.lang });
+                // books and the pharmacy shops have catalogues of their own: the one that the settings put first is
+                // asked first, the other one after the food databases (the shops also know ordinary barcodes)
+                const order = lookupOrder(this.config.lookupOrder);
+                const kind = codes.kindOf(ean);
+                const isBook = ['isbn', 'ismn', 'issn'].includes(kind);
+                const own1 = isBook ? 'books' : 'pharmacy';
+                // the catalogue that belongs to the code (books for an ISBN, pharmacy shops for a PZN) is always asked first
+                const first = isBook || kind === 'pzn' ? true : order[0] === own1;
+                const ask = async () => {
+                    const r = isBook ? await bookLookup(ean, { lang: this.lang }) : await this.pharmacyProduct(ean);
+                    return r ? { ...r } : null;
+                };
+                if (first) {
+                    found = await ask();
+                }
+                if (!found) {
+                    // the same chain as in the app: the Open Facts databases, dm right after the first one
+                    found = await lookupBarcode(ean, {
+                        lang: this.lang,
+                        order,
+                        afterFirst: isBook ? undefined : () => this.dmProduct(ean),
+                    });
+                }
+                if (!found && !first) {
+                    found = await ask();
+                }
             }
         } catch (e) {
             this.log.debug(`Open Food Facts lookup failed: ${e.message}`);
@@ -991,8 +1182,13 @@ class Shelfmate extends utils.Adapter {
             return null;
         }
         const product = found
-            ? { ...found, ean, source: own ? 'own' : 'off', incomplete: false }
-            : { name: `${this.lang === 'de' ? 'Neues Produkt' : 'New product'} ${ean}`, ean, incomplete: true };
+            ? { ...found, ean, source: own ? 'own' : found.source || 'off', incomplete: false }
+            : {
+                  name: `${this.lang === 'de' ? 'Neues Produkt' : 'New product'} ${ean}`,
+                  ean,
+                  incomplete: true,
+                  ...(codes.kindOf(ean) === 'pzn' ? { category: 'Medikamente' } : {}),
+              };
         try {
             this.scanBook({ action: 'saveProduct', product });
             return { name: product.name, incomplete: product.incomplete };

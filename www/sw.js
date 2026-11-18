@@ -1,5 +1,5 @@
 /* Küchenlager Offline-Cache: Seite zuerst aus dem Netz (damit Updates ankommen), sonst aus dem Cache. */
-const CACHE = 'shelfmate-v578';
+const CACHE = 'shelfmate-v625';
 const IMG = 'shelfmate-img-v1';
 const PAGE = new URL('./', self.registration.scope).href;
 const CORE = [
@@ -9,6 +9,7 @@ const CORE = [
   new URL('code128.js', self.registration.scope).href,
   new URL('shelfLife.js', self.registration.scope).href,
   new URL('smartDate.js', self.registration.scope).href,
+  new URL('scanCodes.js', self.registration.scope).href,
   new URL('productSuggestions.js', self.registration.scope).href,
   new URL('sfPro.woff2', self.registration.scope).href,
   new URL('fonts/interLatin.woff2', self.registration.scope).href,
@@ -44,7 +45,7 @@ self.addEventListener('fetch', e => {
 
   // Seite + Transport-Skript: sofort aus dem Cache (schnell, auch offline), im Hintergrund erneuern.
   // Update-Prüfung (?_=) und Reload auf neue Version (?v=) gehen immer zuerst ins Netz.
-  if (url.origin === location.origin && (norm(req) === PAGE || url.pathname === '/shelfmateClient.js' || url.pathname === '/i18n.js' || url.pathname === '/code128.js' || url.pathname === '/shelfLife.js' || url.pathname === '/smartDate.js' || url.pathname === '/productSuggestions.js')) {
+  if (url.origin === location.origin && (norm(req) === PAGE || url.pathname === '/shelfmateClient.js' || url.pathname === '/i18n.js' || url.pathname === '/code128.js' || url.pathname === '/shelfLife.js' || url.pathname === '/smartDate.js' || url.pathname === '/scanCodes.js' || url.pathname === '/productSuggestions.js')) {
     e.respondWith((async () => {
       const key = norm(req);
       const c = await caches.open(CACHE);
