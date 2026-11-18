@@ -222,7 +222,21 @@
         return out;
     }
 
-    const api = { eanOk, isbnOf, issnOf, pznOk, ntinOfPzn, pznOfNtin, kindOf, expiryOf, info };
+    /**
+     * Codes made of letters and digits that no database knows (Amazon FNSKU like X001R86CKT, ASIN, shop article numbers):
+     * 6 to 20 characters, letters and digits (dash allowed inside), at least one of each.
+     *
+     * @param {string} text scanned text
+     * @returns {string} the code, empty when the text is none
+     */
+    function textCodeOf(text) {
+        const t = String(text ?? '').trim();
+        return /^[A-Za-z0-9][A-Za-z0-9-]{5,19}$/.test(t) && /[A-Za-z]/.test(t) && /\d/.test(t) && !/^-?PZN-?\d+$/i.test(t)
+            ? t
+            : '';
+    }
+
+    const api = { eanOk, isbnOf, issnOf, pznOk, ntinOfPzn, pznOfNtin, kindOf, expiryOf, info, textCodeOf };
     if (typeof module === 'object' && module.exports) {
         module.exports = api;
     } else {

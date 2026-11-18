@@ -1144,6 +1144,8 @@ class Shelfmate extends utils.Adapter {
         }
         let found = null;
         let own = null;
+        // a code of letters and digits (Amazon FNSKU, shop article number) is in no public database
+        const text = !/^\d+$/.test(ean);
         try {
             own = await this.ownDb.find(ean);
         } catch (e) {
@@ -1153,7 +1155,7 @@ class Shelfmate extends utils.Adapter {
             found = { ...own, incomplete: false };
         }
         try {
-            if (!found && this.ownDb.mode !== 'only') {
+            if (!found && !text && this.ownDb.mode !== 'only') {
                 // books and the pharmacy shops have catalogues of their own: the one that the settings put first is
                 // asked first, the other one after the food databases (the shops also know ordinary barcodes)
                 const order = lookupOrder(this.config.lookupOrder);
