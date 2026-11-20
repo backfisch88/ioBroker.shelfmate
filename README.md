@@ -298,7 +298,7 @@ Ideas, wishes or bugs are welcome as a [GitHub issue](https://github.com/backfis
 
 ## Changelog
 ### **WORK IN PROGRESS**
-- New: codes made of letters and digits (Amazon FNSKU like X001R86CKT, shop article numbers; 6 to 20 characters) are accepted as product codes; the product is created as "New product <code>" to be renamed once, no online search
+- New: codes made of letters and digits (Amazon FNSKU like X001R86CKT, shop article numbers; 6 to 20 characters) are accepted as product codes; the product is created as "New product" plus the code" to be renamed once, no online search
 - Fixed: labels of scales with a store's own number (for example 2806 for carrots at REWE) are recognised; the product is created as "New product 2806" to be renamed once, the number is remembered
 
 ### 0.6.0 (2026-11-18)
